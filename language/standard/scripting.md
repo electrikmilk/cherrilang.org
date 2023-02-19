@@ -644,6 +644,8 @@ statistic(operation,input)
 - Range
 - Standard Deviation
 
+---
+
 ### Rounding
 
 - `round(number,roundTo)` - Normal
