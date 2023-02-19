@@ -664,6 +664,225 @@ Shorthands for `roundTo` value:
 - `100000` - Hundred Thousands
 - `1000000` - Millions
 
+## Measurements
+
+### Measurement
+
+Create a measurement.
+
+```ruby
+measurement(magnitude,unitType,unit)
+```
+
+Example:
+
+```ruby
+measurement("2000","Information Storage","MB")
+```
+
+#### Measurement Types & Units
+
+ - Acceleration
+    - m/s²
+    - g-force
+ - Angle
+   - degrees
+   - arcminutes
+   - arcseconds
+   - radians
+   - grad
+   - revolutions
+ - Area
+   - Mm²
+   - square kilometers
+   - square meters
+   - square centimeters
+   - mm²
+   - um²
+   - nm²
+   - square inches
+   - square feet
+   - square yards
+   - square miles
+   - acres
+   - a
+   - hectares
+ - Concentration Mass
+   - g/L
+   - mg/dL
+   - µg/m³
+ - Dispersion
+   - ppm
+ - Duration
+   - milliseconds
+   - microseconds
+   - nanoseconds
+   - ps
+   - seconds
+   - minutes
+   - hours
+ - Electric Charge
+   - C
+   - MAh
+   - kAh
+   - Ah
+   - mAh
+   - µAh
+ - Electric Current
+   - MA
+   - kA
+   - amp
+   - mA
+   - µA
+ - Electric Potential Difference
+   - MV
+   - kV
+   - volt
+   - mV
+   - µV
+ - Electric Resistance
+   - MΩ
+   - kΩ
+   - ohm
+   - mΩ
+   - µΩ
+ - Energy
+   - kJ
+   - joule
+   - kcal
+   - cal
+   - kWh
+ - Frequency
+   - tHz
+   - GHz
+   - MHz
+   - kHz
+   - Hz
+   - mHz
+   - µHz
+   - nHz
+   - fps
+ - Fuel Efficiency
+   - L/100km
+   - mpg
+ - Illuminance
+   - lux
+ - Information Storage
+   - B
+   - KB
+   - MB
+   - GB
+   - TB
+   - PB
+   - EB
+   - ZB
+   - YB
+ - Length
+   - Mm
+   - km
+   - hm
+   - dam
+   - meter
+   - dm
+   - cm
+   - mm
+   - µm
+   - nm
+   - pm
+   - in
+   - ft
+   - yd
+   - mi
+   - smi
+   - ly
+   - nmi
+   - fathom
+   - furlong
+   - au
+   - parsec
+ - Mass
+   - kg
+   - gram
+   - dg
+   - cg
+   - mg
+   - µg
+   - ng
+   - pg
+   - oz
+   - lb
+   - stone
+   - t
+   - ton
+   - carat
+   - oz t
+   - slug
+ - Power
+   - TW
+   - GW
+   - MW
+   - kW
+   - watt
+   - mW
+   - µW
+   - nW
+   - pW
+   - fW
+   - hp
+ - Pressure
+   - N/m²
+   - GPa
+   - MPa
+   - kPa
+   - hPa
+   - " Hg
+   - bar
+   - mbar
+   - mm Hg
+   - psi
+ - Speed
+   - m/s
+   - km/hr
+   - mi/hr
+   - kn
+ - Temperature
+   - K
+   - ºC
+   - ºF
+ - Volume
+   - ML
+   - kL
+   - liter
+   - dL
+   - cL
+   - mL
+   - km³
+   - m³
+   - dm³
+   - cm³
+   - mm³
+   - in³
+   - ft³
+   - yd³
+   - mi³
+   - acre ft
+   - bushel
+   - tsp
+   - tbsp
+   - fl oz
+   - pt
+   - qt
+   - Imp gal
+   - mcup
+
+### Convert Measurement
+
+Convert `measurement` to `unitType` in `unit`.
+
+```ruby
+convertMeasurement(measurement,unitType,unit)
+```
+
 ## Network
 
 ### Is Online
