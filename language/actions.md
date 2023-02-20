@@ -23,7 +23,7 @@ Standard actions are always available and do not need to be imported.
 - (40/64) [Documents](standard/documents)
 - [Location](standard/location)
 - (7/68) [Media](standard/media)
-- (70/74) [Scripting](standard/scripting)
+- [Scripting](standard/scripting)
 - [Sharing](standard/sharing)
 - [Web](standard/web)
 
