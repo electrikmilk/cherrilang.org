@@ -11,9 +11,9 @@ Metadata is defined to check against collected input to ensure a valid value was
 
 ## Colors, Workflows, etc.
 
-Metadata is defined in metadata.go and contains maps of colors, workflows, content item types, etc.
+Metadata is defined in [`metadata.go`](https://github.com/electrikmilk/cherri/blob/main/metadata.go) and contains maps of colors, workflows, content item types, etc.
 
 ## Glyphs
 
-Glyphs are defined as hexadecimals in glyphs.go and originate from the ScPL compiler.
+Glyphs are defined as hexadecimals in [`glyphs.go`](https://github.com/electrikmilk/cherri/blob/main/glyphs.go) and originate from the ScPL compiler.
 
