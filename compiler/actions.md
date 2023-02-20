@@ -112,7 +112,7 @@ type parameterDefinition struct {
 }
 ```
 
-The `name` is surface level, and is mainly used as a name for the argument to show in warnings and errors.
+The `name` is surface level, and is mainly used as a name for the argument to show in documentation, warnings and errors.
 
 The `validType` specifies the type that the argument that was entered should match or evaluate to. If a `Variable` type is entered, the type check is much more forgiving and acts more like any type could be entered.
 
