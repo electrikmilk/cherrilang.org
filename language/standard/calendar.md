@@ -23,7 +23,7 @@ nav_order: 1
 
 Create a calendar with `name`.
 
-```ruby
+```
 addCalendar(name)
 ```
 
@@ -33,7 +33,7 @@ addCalendar(name)
 
 Create date value from `date`.
 
-```ruby
+```
 date(date)
 ```
 
@@ -43,7 +43,7 @@ date(date)
 
 Add to date by units of time.
 
-```ruby
+```
 addSeconds(date,magnitude)
 addMinutes(date,magnitude)
 addHours(date,magnitude)
@@ -59,7 +59,7 @@ addYears(date,magnitude)
 
 Subtract from date by units of time.
 
-```ruby
+```
 subtractSeconds(date,magnitude)
 subtractMinutes(date,magnitude)
 subtractHours(date,magnitude)
@@ -75,7 +75,7 @@ subtractYears(date,magnitude)
 
 Get various starting units of date.
 
-```ruby
+```
 getStartMinute(date)
 getStartHour(date)
 getStartWeek(date)
