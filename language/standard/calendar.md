@@ -17,94 +17,49 @@ nav_order: 1
 
 ---
 
-## Calendar
+## Calendars
 
-### `addCalendar(name)`
+### Add Calendar
 
 Create a calendar with `name`.
 
-## Date
+```ruby
+addCalendar(name)
+```
 
-### `date(date)`
+## Dates
+
+### Date
 
 Create date value from `date`.
 
-#### Add Time
+```ruby
+date(date)
+```
 
-### `addSeconds(date,magnitude)`
+### Adjust Time
 
----
+- `addSeconds(date,magnitude)`
+- `addMinutes(date,magnitude)`
+- `addHours(date,magnitude)`
+- `addDays(date,magnitude)`
+- `addWeeks(date,magnitude)`
+- `addMonths(date,magnitude)`
+- `addYears(date,magnitude)`
 
-### `addMinutes(date,magnitude)`
 
----
+- `subtractSeconds(date,magnitude)`
+- `subtractMinutes(date,magnitude)`
+- `subtractHours(date,magnitude)`
+- `subtractDays(date,magnitude)`
+- `subtractWeeks(date,magnitude)`
+- `subtractMonths(date,magnitude)`
+- `subtractYears(date,magnitude)`
 
-### `addHours(date,magnitude)`
+### Get Starting Time
 
----
-
-### `addDays(date,magnitude)`
-
----
-
-### `addWeeks(date,magnitude)`
-
----
-
-### `addMonths(date,magnitude)`
-
----
-
-### `addYears(date,magnitude)`
-
----
-
-#### Subtract Time
-
-### `addSeconds(date,magnitude)`
-
----
-
-### `addMinutes(date,magnitude)`
-
----
-
-### `addHours(date,magnitude)`
-
----
-
-### `addDays(date,magnitude)`
-
----
-
-### `addWeeks(date,magnitude)`
-
----
-
-### `addMonths(date,magnitude)`
-
----
-
-### `addYears(date,magnitude)`
-
----
-
-#### Get Starting Time
-
-### `getStartMinute(date)`
-
----
-
-### `getStartHour(date)`
-
----
-
-### `getStartWeek(date)`
-
----
-
-### `getStartMonth(date)`
-
----
-
-### `getStartYear(date)`
+- `getStartMinute(date)`
+- `getStartHour(date)`
+- `getStartWeek(date)`
+- `getStartMonth(date)`
+- `getStartYear(date)`
