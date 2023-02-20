@@ -25,12 +25,12 @@ repeat 3 {
 @menuItems = "{items}"
 @vcf = setName(menuItems,"menu.vcf",false)
 
-// Coerce type to contact
+/* Coerce type to contact */
 @contact = vcf.contact
 
-// Use chooseFromList to prompt the user with our menu
+/* Use chooseFromList to prompt the user with our menu */
 @chosenItem = chooseFromList(contact,"Prompt")
 
-// chosenItem contains the title of the chosen item
+/* chosenItem contains the title of the chosen item */
 alert(chosenItem,"You chose:",false)
 ```
