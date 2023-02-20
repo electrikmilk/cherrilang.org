@@ -37,6 +37,8 @@ Create date value from `date`.
 date(date)
 ```
 
+---
+
 ### Add to Date
 
 Add to date by units of time.
@@ -49,6 +51,8 @@ Add to date by units of time.
 - `addMonths(date,magnitude)`
 - `addYears(date,magnitude)`
 
+---
+
 ### Subtract from Date
 
 Subtract from date by units of time.
@@ -60,6 +64,8 @@ Subtract from date by units of time.
 - `subtractWeeks(date,magnitude)`
 - `subtractMonths(date,magnitude)`
 - `subtractYears(date,magnitude)`
+
+---
 
 ### Get Starting Time
 
