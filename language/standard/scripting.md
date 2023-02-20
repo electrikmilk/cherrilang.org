@@ -13,7 +13,7 @@ nav_order: 6
 {: .no_toc .text-delta }
 
 1. TOC
-   {:toc}
+{:toc}
 
 ---
 
@@ -23,7 +23,7 @@ nav_order: 6
 
 Hide app with `appId`. For example `com.apple.AppStore`.
 
-```ruby
+```
 hideApp(appId)
 ```
 
@@ -51,7 +51,7 @@ hideApp(appId)
 
 Hide all open apps. `except` is an enumerable of `appId`s, for example `com.apple.DocumentsApp`.
 
-```ruby
+```
 hideAllApps(...except)
 ```
 
@@ -61,7 +61,7 @@ hideAllApps(...except)
 
 Open app with `appId`. For example `com.apple.AppStore`.
 
-```ruby
+```
 openApp(appId)
 ```
 
@@ -73,7 +73,7 @@ _Contributed by [JosephShenton](https://github.com/JosephShenton)_.
 
 Quit app with `appId`. For example `com.apple.DocumentsApp`.
 
-```ruby
+```
 quitApp(appId)
 ```
 
@@ -83,7 +83,7 @@ quitApp(appId)
 
 Quit all open apps, asking to save changes. `except` is an enumerable of `appId`s, for example `com.apple.DocumentsApp`.
 
-```ruby
+```
 quitAllApps(...except)
 ```
 
@@ -93,7 +93,7 @@ quitAllApps(...except)
 
 Quit app with `appId` without asking to save changes. For example `com.apple.facetime`.
 
-```ruby
+```
 killApp(appId)
 ```
 
@@ -106,7 +106,7 @@ This will quit all of the apps on the device without asking to save changes!
 
 Quit all open apps, **without** asking to save changes. `except` is an enumerable of `appId`s, for example `com.apple.DocumentsApp`.
 
-```ruby
+```
 killAllApps(...except)
 ```
 
@@ -116,7 +116,7 @@ killAllApps(...except)
 
 Split two apps on the device screen.
 
-```ruby
+```
 splitApps(firstAppId,secondAppId,ratio)
 ```
 
@@ -128,7 +128,7 @@ splitApps(firstAppId,secondAppId,ratio)
 
 Get content on device screen.
 
-```ruby
+```
 getOnScreenContent()
 ```
 
@@ -143,7 +143,7 @@ These control flow actions have been abstracted into statements: [Choose From Me
 
 Stop and output `output`. Do nothing if there is nowhere to output.
 
-```ruby
+```
 output(output)
 ```
 
@@ -153,7 +153,7 @@ output(output)
 
 Stop and output `output`. Respond with `response` if there is nowhere to output.
 
-```ruby
+```
 mustOutput(output,response)
 ```
 
@@ -163,7 +163,7 @@ mustOutput(output,response)
 
 Stop and output `output`. Copy to the clipboard if there is nowhere to output.
 
-```ruby
+```
 outputOrClipboard(output)
 ```
 
@@ -173,7 +173,7 @@ outputOrClipboard(output)
 
 Stop the Shortcut. Equivalent to `exit` or `die` in other languages.
 
-```ruby
+```
 stop()
 ```
 
@@ -183,7 +183,7 @@ stop()
 
 Wait `n` number of seconds then proceed.
 
-```ruby
+```
 wait(n)
 ```
 
@@ -193,7 +193,7 @@ wait(n)
 
 Wait for the user to return to the Shortcut. This usually proceeds an action that directs the user out of the Shortcuts app.
 
-```ruby
+```
 waitToReturn()
 ```
 
@@ -203,7 +203,7 @@ waitToReturn()
 
 Get the current battery level of device.
 
-```ruby
+```
 getBatteryLevel()
 ```
 
@@ -213,7 +213,7 @@ getBatteryLevel()
 
 Returns boolean based on if the device is charging.
 
-```ruby
+```
 isCharging()
 ```
 
@@ -225,7 +225,7 @@ _**Minimum iOS version:** 16.2_
 
 Returns boolean based on if device is connected to a charger.
 
-```ruby
+```
 connectedToCharger()
 ```
 
@@ -237,7 +237,7 @@ _**Minimum iOS version:** 16.2_
 
 Get `detail` of device.
 
-```ruby
+```
 getDeviceDetail(detail)
 ```
 
@@ -260,7 +260,7 @@ getDeviceDetail(detail)
 
 Toggles system appearance from light to dark, or dark to light.
 
-```ruby
+```
 toggleApperance()
 ```
 
@@ -270,7 +270,7 @@ toggleApperance()
 
 Change system appearance to light.
 
-```ruby
+```
 lightMode()
 ```
 
@@ -280,7 +280,7 @@ lightMode()
 
 Change system appearance to dark.
 
-```ruby
+```
 darkMode()
 ```
 
@@ -290,7 +290,7 @@ darkMode()
 
 Toggle device bluetooth.
 
-```ruby
+```
 toggleBluetooth()
 ```
 
@@ -300,7 +300,7 @@ toggleBluetooth()
 
 Set device bluetooth on or off.
 
-```ruby
+```
 setBluetooth(status)
 ```
 
@@ -310,7 +310,7 @@ setBluetooth(status)
 
 Set display brightness to `level`.
 
-```ruby
+```
 setBrightness(level)
 ```
 
@@ -320,7 +320,7 @@ setBrightness(level)
 
 Set device volume to `level`.
 
-```ruby
+```
 setVolume(level)
 ```
 
@@ -330,7 +330,7 @@ setVolume(level)
 
 Start screen saver on Mac.
 
-```ruby
+```
 startScreensaver()
 ```
 
@@ -347,7 +347,7 @@ The dictionary action is abtracted into a variable value, see [Dictionary](../va
 
 Get dictionary from `input`.
 
-```ruby
+```
 getDictionary(input)
 ```
 
@@ -357,7 +357,7 @@ getDictionary(input)
 
 Get only the values from `dictionary`.
 
-```ruby
+```
 getValues(dictionary)
 ```
 
@@ -367,7 +367,7 @@ getValues(dictionary)
 
 Get only the keys from `dictionary`.
 
-```ruby
+```
 getKeys(dictionary)
 ```
 
@@ -377,7 +377,7 @@ getKeys(dictionary)
 
 Get the value of `key` in `dictionary`.
 
-```ruby
+```
 getValue(dictionary,key)
 ```
 
@@ -387,7 +387,7 @@ getValue(dictionary,key)
 
 Set the value of `key` to `value` in `dictionary`.
 
-```ruby
+```
 setValue(key,value,dictionary)
 ```
 
@@ -397,7 +397,7 @@ setValue(key,value,dictionary)
 
 Base 64 encode `input`.
 
-```ruby
+```
 base64Encode(input)
 ```
 
@@ -407,7 +407,7 @@ base64Encode(input)
 
 Base 64 decode `input`.
 
-```ruby
+```
 base64Decode(input)
 ```
 
@@ -417,7 +417,7 @@ base64Decode(input)
 
 Generate a hash of `type` using `input`.
 
-```ruby
+```
 hash(input,type)
 ```
 
@@ -434,7 +434,7 @@ hash(input,type)
 
 Returns the number of items in `input`.
 
-```ruby
+```
 countItems(input)
 ```
 
@@ -444,7 +444,7 @@ countItems(input)
 
 Returns the number of characters in `input`.
 
-```ruby
+```
 countChars(input)
 ```
 
@@ -454,7 +454,7 @@ countChars(input)
 
 Returns the number of words in `input`.
 
-```ruby
+```
 countWords(input)
 ```
 
@@ -464,7 +464,7 @@ countWords(input)
 
 Returns the number of sentences in `input`.
 
-```ruby
+```
 countSentences(input)
 ```
 
@@ -474,7 +474,7 @@ countSentences(input)
 
 Returns the number of lines in `input`.
 
-```ruby
+```
 countLines(input)
 ```
 
@@ -484,7 +484,7 @@ countLines(input)
 
 Get the name of `input`.
 
-```ruby
+```
 getName(input)
 ```
 
@@ -494,7 +494,7 @@ getName(input)
 
 Get the type of `input`.
 
-```ruby
+```
 typeOf(input)
 ```
 
@@ -504,7 +504,7 @@ typeOf(input)
 
 Set the name of `input`. `includeFileExtension` is a boolean.
 
-```ruby
+```
 setName(input,name,includeFileExtension)
 ```
 
@@ -512,7 +512,7 @@ setName(input,name,includeFileExtension)
 
 Show `input` as graph.
 
-```ruby
+```
 contentGraph(input)
 ```
 
@@ -522,7 +522,7 @@ contentGraph(input)
 
 Prompt the user with `prompt` to choose an item from `list`. Returns the item chosen. `selectMultiple` is an optional boolean, the default value is `false`.
 
-```ruby
+```
 chooseFromList(list,prompt,selectMultiple)
 ```
 
@@ -532,7 +532,7 @@ chooseFromList(list,prompt,selectMultiple)
 
 Get the first item from `list`.
 
-```ruby
+```
 firstListItem(list)
 ```
 
@@ -542,7 +542,7 @@ firstListItem(list)
 
 Get the last item from `list`.
 
-```ruby
+```
 lastListItem(list)
 ```
 
@@ -552,7 +552,7 @@ lastListItem(list)
 
 Get a random item from `list`.
 
-```ruby
+```
 randomListItem(list)
 ```
 
@@ -562,7 +562,7 @@ randomListItem(list)
 
 Get item at `index` from `list`. Counting in Shortcuts starts at `1`.
 
-```ruby
+```
 getListItem(list,index)
 ```
 
@@ -572,7 +572,7 @@ getListItem(list,index)
 
 Get items in range of `start` to `end`.
 
-```ruby
+```
 getListItems(list,start,end)
 ```
 
@@ -582,7 +582,7 @@ getListItems(list,start,end)
 
 Store a list of `item` in a variable. No limit on `item` arguments.
 
-```ruby
+```
 @myList = list(...item)
 ```
 
@@ -592,7 +592,7 @@ Store a list of `item` in a variable. No limit on `item` arguments.
 
 Complex calculation using `input`.
 
-```ruby
+```
 calculate(operation,operandOne,operandTwo)
 ```
 
@@ -619,7 +619,7 @@ The `operandTwo` is optional, as not all of the operations require a second oper
 
 To do this, create a variable and set an expression as the value:
 
-```ruby
+```
 @expression = 25 * 6 + (5 / 6) % 2
 ```
 
@@ -629,7 +629,7 @@ To do this, create a variable and set an expression as the value:
 
 Calculate statistic of `operation` on `input`.
 
-```ruby
+```
 statistic(operation,input)
 ```
 
@@ -682,198 +682,198 @@ measurement("2000","Information Storage","MB")
 
 #### Measurement Types & Units
 
-- Acceleration
+ - Acceleration
     - m/s²
     - g-force
-- Angle
-    - degrees
-    - arcminutes
-    - arcseconds
-    - radians
-    - grad
-    - revolutions
-- Area
-    - Mm²
-    - square kilometers
-    - square meters
-    - square centimeters
-    - mm²
-    - um²
-    - nm²
-    - square inches
-    - square feet
-    - square yards
-    - square miles
-    - acres
-    - a
-    - hectares
-- Concentration Mass
-    - g/L
-    - mg/dL
-    - µg/m³
-- Dispersion
-    - ppm
-- Duration
-    - milliseconds
-    - microseconds
-    - nanoseconds
-    - ps
-    - seconds
-    - minutes
-    - hours
-- Electric Charge
-    - C
-    - MAh
-    - kAh
-    - Ah
-    - mAh
-    - µAh
-- Electric Current
-    - MA
-    - kA
-    - amp
-    - mA
-    - µA
-- Electric Potential Difference
-    - MV
-    - kV
-    - volt
-    - mV
-    - µV
-- Electric Resistance
-    - MΩ
-    - kΩ
-    - ohm
-    - mΩ
-    - µΩ
-- Energy
-    - kJ
-    - joule
-    - kcal
-    - cal
-    - kWh
-- Frequency
-    - tHz
-    - GHz
-    - MHz
-    - kHz
-    - Hz
-    - mHz
-    - µHz
-    - nHz
-    - fps
-- Fuel Efficiency
-    - L/100km
-    - mpg
-- Illuminance
-    - lux
-- Information Storage
-    - B
-    - KB
-    - MB
-    - GB
-    - TB
-    - PB
-    - EB
-    - ZB
-    - YB
-- Length
-    - Mm
-    - km
-    - hm
-    - dam
-    - meter
-    - dm
-    - cm
-    - mm
-    - µm
-    - nm
-    - pm
-    - in
-    - ft
-    - yd
-    - mi
-    - smi
-    - ly
-    - nmi
-    - fathom
-    - furlong
-    - au
-    - parsec
-- Mass
-    - kg
-    - gram
-    - dg
-    - cg
-    - mg
-    - µg
-    - ng
-    - pg
-    - oz
-    - lb
-    - stone
-    - t
-    - ton
-    - carat
-    - oz t
-    - slug
-- Power
-    - TW
-    - GW
-    - MW
-    - kW
-    - watt
-    - mW
-    - µW
-    - nW
-    - pW
-    - fW
-    - hp
-- Pressure
-    - N/m²
-    - GPa
-    - MPa
-    - kPa
-    - hPa
-    - " Hg
-    - bar
-    - mbar
-    - mm Hg
-    - psi
-- Speed
-    - m/s
-    - km/hr
-    - mi/hr
-    - kn
-- Temperature
-    - K
-    - ºC
-    - ºF
-- Volume
-    - ML
-    - kL
-    - liter
-    - dL
-    - cL
-    - mL
-    - km³
-    - m³
-    - dm³
-    - cm³
-    - mm³
-    - in³
-    - ft³
-    - yd³
-    - mi³
-    - acre ft
-    - bushel
-    - tsp
-    - tbsp
-    - fl oz
-    - pt
-    - qt
-    - Imp gal
-    - mcup
+ - Angle
+   - degrees
+   - arcminutes
+   - arcseconds
+   - radians
+   - grad
+   - revolutions
+ - Area
+   - Mm²
+   - square kilometers
+   - square meters
+   - square centimeters
+   - mm²
+   - um²
+   - nm²
+   - square inches
+   - square feet
+   - square yards
+   - square miles
+   - acres
+   - a
+   - hectares
+ - Concentration Mass
+   - g/L
+   - mg/dL
+   - µg/m³
+ - Dispersion
+   - ppm
+ - Duration
+   - milliseconds
+   - microseconds
+   - nanoseconds
+   - ps
+   - seconds
+   - minutes
+   - hours
+ - Electric Charge
+   - C
+   - MAh
+   - kAh
+   - Ah
+   - mAh
+   - µAh
+ - Electric Current
+   - MA
+   - kA
+   - amp
+   - mA
+   - µA
+ - Electric Potential Difference
+   - MV
+   - kV
+   - volt
+   - mV
+   - µV
+ - Electric Resistance
+   - MΩ
+   - kΩ
+   - ohm
+   - mΩ
+   - µΩ
+ - Energy
+   - kJ
+   - joule
+   - kcal
+   - cal
+   - kWh
+ - Frequency
+   - tHz
+   - GHz
+   - MHz
+   - kHz
+   - Hz
+   - mHz
+   - µHz
+   - nHz
+   - fps
+ - Fuel Efficiency
+   - L/100km
+   - mpg
+ - Illuminance
+   - lux
+ - Information Storage
+   - B
+   - KB
+   - MB
+   - GB
+   - TB
+   - PB
+   - EB
+   - ZB
+   - YB
+ - Length
+   - Mm
+   - km
+   - hm
+   - dam
+   - meter
+   - dm
+   - cm
+   - mm
+   - µm
+   - nm
+   - pm
+   - in
+   - ft
+   - yd
+   - mi
+   - smi
+   - ly
+   - nmi
+   - fathom
+   - furlong
+   - au
+   - parsec
+ - Mass
+   - kg
+   - gram
+   - dg
+   - cg
+   - mg
+   - µg
+   - ng
+   - pg
+   - oz
+   - lb
+   - stone
+   - t
+   - ton
+   - carat
+   - oz t
+   - slug
+ - Power
+   - TW
+   - GW
+   - MW
+   - kW
+   - watt
+   - mW
+   - µW
+   - nW
+   - pW
+   - fW
+   - hp
+ - Pressure
+   - N/m²
+   - GPa
+   - MPa
+   - kPa
+   - hPa
+   - " Hg
+   - bar
+   - mbar
+   - mm Hg
+   - psi
+ - Speed
+   - m/s
+   - km/hr
+   - mi/hr
+   - kn
+ - Temperature
+   - K
+   - ºC
+   - ºF
+ - Volume
+   - ML
+   - kL
+   - liter
+   - dL
+   - cL
+   - mL
+   - km³
+   - m³
+   - dm³
+   - cm³
+   - mm³
+   - in³
+   - ft³
+   - yd³
+   - mi³
+   - acre ft
+   - bushel
+   - tsp
+   - tbsp
+   - fl oz
+   - pt
+   - qt
+   - Imp gal
+   - mcup
 
 ### Convert Measurement
 
@@ -889,7 +889,7 @@ convertMeasurement(measurement,unitType,unit)
 
 Returns a boolean based on if the user has a working internet connection. This is an alias of the default **Get IP Address** action.
 
-```ruby
+```
 isOnline()
 ```
 
@@ -897,7 +897,7 @@ isOnline()
 
 Get the local IP of the user of `type`. `type` is optional, default is "IPv4".
 
-```ruby
+```
 getLocalIP(type)
 ```
 
@@ -912,7 +912,7 @@ getLocalIP(type)
 
 Get the external IP of the user of `type`. `type` is optional, default is "IPv4".
 
-```ruby
+```
 getExternalIP(type)
 ```
 
@@ -922,7 +922,7 @@ getExternalIP(type)
 
 Turn cellular data on or off.
 
-```ruby
+```
 setCellularData(bool)
 ```
 
@@ -932,7 +932,7 @@ setCellularData(bool)
 
 Turn cellular voice and data on or off.
 
-```ruby
+```
 setCellularVoice(bool)
 ```
 
@@ -942,7 +942,7 @@ setCellularVoice(bool)
 
 Turn WiFi on or off.
 
-```ruby
+```
 setWifi(bool)
 ```
 
@@ -974,7 +974,7 @@ Either type of comment results in a comment action.
 
 Do nothing and/or output nothing.
 
-```ruby
+```
 nothing()
 ```
 
@@ -984,7 +984,7 @@ nothing()
 
 Ask for input of `type` with `prompt`, with `default` as the default input. `default` is optional.
 
-```ruby
+```
 askForInput(type,prompt,default)
 ```
 
@@ -1003,7 +1003,7 @@ askForInput(type,prompt,default)
 
 Play sound `input`.
 
-```ruby
+```
 playSound(input)
 ```
 
@@ -1013,7 +1013,7 @@ playSound(input)
 
 Show an alert with `title` as the title and `alert` as the body. `cancelButton` is an optional boolean, default is `true`.
 
-```ruby
+```
 alert(alert,title,cancelButton)
 ```
 
@@ -1023,7 +1023,7 @@ alert(alert,title,cancelButton)
 
 Trigger a custom notification. `playSound` is an optional boolean, default is `true`.
 
-```ruby
+```
 notification(body,title,playSound)
 ```
 
@@ -1033,7 +1033,7 @@ notification(body,title,playSound)
 
 Format the size of `file` to `format`.
 
-```ruby
+```
 fileSize(file,format)
 ```
 
@@ -1056,7 +1056,7 @@ fileSize(file,format)
 
 Format `number` with `decimalPlaces` number of decimal places.
 
-```ruby
+```
 formatNumber(number,decimalPlaces)
 ```
 
@@ -1066,7 +1066,7 @@ formatNumber(number,decimalPlaces)
 
 Get numbers from `input`.
 
-```ruby
+```
 getNumber(input)
 ```
 
@@ -1076,7 +1076,7 @@ getNumber(input)
 
 Generate a random number with `min` as the minimum value and `max` as the maximum value.
 
-```ruby
+```
 randomNumber(min,max)
 ```
 
@@ -1086,7 +1086,7 @@ randomNumber(min,max)
 
 Run `script` with `input` as `inputMode` in `shell`. `shell` and `inputMode` are optional. Default shell is `/bin/zsh` and input mode is `to stdin`.
 
-```ruby
+```
 runShellScript(script,input,shell,inputMode)
 ```
 
@@ -1101,7 +1101,7 @@ runShellScript(script,input,shell,inputMode)
 
 Run Apple Script `script` on `input`.
 
-```ruby
+```
 runAppleScript(input,script)
 ```
 
@@ -1111,7 +1111,7 @@ runAppleScript(input,script)
 
 Run JavaScript `script` on `input`.
 
-```ruby
+```
 runJSAutomation(input,script)
 ```
 
@@ -1121,7 +1121,7 @@ runJSAutomation(input,script)
 
 Get all the users shortcuts.
 
-```ruby
+```
 getShortcuts()
 ```
 
@@ -1131,7 +1131,7 @@ getShortcuts()
 
 Open Shortcut with name `name`.
 
-```ruby
+```
 open(name)
 ```
 
@@ -1141,7 +1141,7 @@ open(name)
 
 Run Shortcut with name `name`, providing it with `input`. `isSelf` is an optional boolean, default is `false`.
 
-```ruby
+```
 run(name,input,isSelf)
 ```
 
@@ -1151,7 +1151,7 @@ run(name,input,isSelf)
 
 Dismiss Siri and continue.
 
-```ruby
+```
 dismissSiri()
 ```
 
@@ -1161,7 +1161,7 @@ dismissSiri()
 
 Set device wallpaper to `image`.
 
-```ruby
+```
 setWallpaper(image)
 ```
 
@@ -1172,7 +1172,7 @@ setWallpaper(image)
 
 Get device wallpaper.
 
-```ruby
+```
 getWallpaper()
 ```
 
@@ -1191,7 +1191,7 @@ All arguments are optional.
 
 Get all windows and sort by `sortBy`, order by `orderBy` and limit by `limit`.
 
-```ruby
+```
 getWindows(sortBy,orderBy,limit)
 ```
 
@@ -1216,7 +1216,7 @@ getWindows(sortBy,orderBy,limit)
 
 Move `window` to `position`. `bringToFront` is a boolean, the default value is `true`.
 
-```ruby
+```
 moveWindow(window,position,bringToFront)
 ```
 
@@ -1237,7 +1237,7 @@ moveWindow(window,position,bringToFront)
 
 Resize `window` to `configuration`.
 
-```ruby
+```
 resizeWindow(window,configuration)
 ```
 
@@ -1262,7 +1262,7 @@ resizeWindow(window,configuration)
 
 Open X-Callback URL `url`.
 
-```ruby
+```
 openXCallbackURL(url)
 ```
 
@@ -1273,6 +1273,6 @@ openXCallbackURL(url)
 Open X-Callback URL `url`, with Success Key `successKey`, Cancel Key `cancelKey`, and Error Key `errorKey`, and custom
 X-Success URL `successURL`.
 
-```ruby
+```
 openXCustomCallbackURL(url,successKey,cancelKey,errorKey,successURL)
 ```
