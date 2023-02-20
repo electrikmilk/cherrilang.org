@@ -21,7 +21,7 @@ nav_order: 5
 
 Takes a photo. `showPreview` is a optional `boolean` that defaults to `true`.
 
-```ruby
+```
 takePhoto(showPreview)
 ```
 
@@ -31,7 +31,7 @@ takePhoto(showPreview)
 
 Takes `number` photo(s).
 
-```ruby
+```
 takePhotos(number)
 ```
 
@@ -41,7 +41,7 @@ takePhotos(number)
 
 Takes a video using `camera` in `quality`.
 
-```ruby
+```
 takeVideo(camera,quality,startImmediately)
 ```
 
@@ -55,7 +55,7 @@ takeVideo(camera,quality,startImmediately)
 
 Gets the current song.
 
-```ruby
+```
 getCurrentSong()
 ```
 
@@ -65,7 +65,7 @@ getCurrentSong()
 
 Clears the up next songs.
 
-```ruby
+```
 clearUpNext()
 ```
 
@@ -75,7 +75,7 @@ clearUpNext()
 
 Gets the latest photo import.
 
-```ruby
+```
 latestPhotoImport()
 ```
 
@@ -85,7 +85,7 @@ latestPhotoImport()
 
 Set device volume to `number`.
 
-```ruby
+```
 setVolume(number)
 ```
 
@@ -95,6 +95,6 @@ setVolume(number)
 
 Prompts the user to trim `video`. Returns the trimmed video.
 
-```ruby
+```
 trimVideo(video)
 ```

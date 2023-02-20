@@ -23,7 +23,7 @@ nav_order: 3
 
 Extract files from archive `file`.
 
-```ruby
+```
 extractArchive(file)
 ```
 
@@ -33,7 +33,7 @@ extractArchive(file)
 
 Create an archive of `files` named `name` in `format`.
 
-```ruby
+```
 makeArchive(name,format,files)
 ```
 
@@ -43,7 +43,7 @@ makeArchive(name,format,files)
 
 Create a disk image containing `contents`.
 
-```ruby
+```
 makeDiskImage(name,contents,encrypt)
 ```
 
@@ -53,7 +53,7 @@ makeDiskImage(name,contents,encrypt)
 
 Create a disk image of a specific size containing `contents`.
 
-```ruby
+```
 makeDiskImage(name,contents,size,encrypt)
 ```
 
@@ -79,7 +79,7 @@ makeDiskImage(name,contents,size,encrypt)
 
 Add `input` to books. `input` is expected to be a PDF.
 
-```ruby
+```
 addToBooks(input)
 ```
 
@@ -89,7 +89,7 @@ addToBooks(input)
 
 Opens `input` in a markup editor.
 
-```ruby
+```
 markup(input)
 ```
 
@@ -99,7 +99,7 @@ markup(input)
 
 Create a folder at `path` in the users Shortcuts folder in their iCloud Drive.
 
-```ruby
+```
 createFolder(path)
 ```
 
@@ -109,7 +109,7 @@ createFolder(path)
 
 Delete `files`. `immediately` is a boolean, default is `false`.
 
-```ruby
+```
 deleteFiles(files,immediately)
 ```
 
@@ -119,7 +119,7 @@ deleteFiles(files,immediately)
 
 Get contents of `folder`. `recursive` is a boolean, default is `true`.
 
-```ruby
+```
 getFolderContents(folder,recursive)
 ```
 
@@ -129,7 +129,7 @@ getFolderContents(folder,recursive)
 
 Get `path` in the users Shortcuts folder. `errorIfNotFound` is a boolean, default is `true`.
 
-```ruby
+```
 getFile(path,errorIfNotFound)
 ```
 
@@ -139,7 +139,7 @@ getFile(path,errorIfNotFound)
 
 Get `path` in `folder`. `errorIfNotFound` is a boolean, default is `true`.
 
-```ruby
+```
 getFileFromFolder(folder,path,errorIfNotFound)
 ```
 
@@ -149,7 +149,7 @@ getFileFromFolder(folder,path,errorIfNotFound)
 
 Get a link to `file`.
 
-```ruby
+```
 getFileLink(file)
 ```
 
@@ -159,7 +159,7 @@ getFileLink(file)
 
 Get selected files in Finder.
 
-```ruby
+```
 getSelectedFiles()
 ```
 
@@ -177,7 +177,7 @@ rename(file,newName)
 
 Reveal `files` in Finder.
 
-```ruby
+```
 reveal(files)
 ```
 
@@ -187,7 +187,7 @@ reveal(files)
 
 Save `file` to `path`. `overwrite` is a boolean, default is `false`.
 
-```ruby
+```
 saveFile(file,path,overwrite)
 ```
 
@@ -197,7 +197,7 @@ saveFile(file,path,overwrite)
 
 Prompt to save `file`. `overwrite` is a boolean, default is `false`.
 
-```ruby
+```
 saveFilePrompt(file,overwrite)
 ```
 
@@ -207,7 +207,7 @@ saveFilePrompt(file,overwrite)
 
 Prompt to select a file.
 
-```ruby
+```
 selectFile(multiple)
 ```
 
@@ -219,7 +219,7 @@ selectFile(multiple)
 
 Get `detail` of `file`.
 
-```ruby
+```
 getFileDetail(file,detail)
 ```
 
@@ -229,7 +229,7 @@ getFileDetail(file,detail)
 
 Get parent directory of `input`.
 
-```ruby
+```
 getParentDirectory(input)
 ```
 
@@ -239,7 +239,7 @@ getParentDirectory(input)
 
 Open given file in the default app, or prompt the user to pick a app to open the file in.
 
-```ruby
+```
 openFile(file,prompt)
 ```
 
@@ -251,7 +251,7 @@ openFile(file,prompt)
 
 Connect to server at `url`.
 
-```ruby
+```
 connectToServer(url)
 ```
 
@@ -261,7 +261,7 @@ connectToServer(url)
 
 Append `input` to `note`.
 
-```ruby
+```
 appendNote(note,input)
 ```
 
@@ -271,7 +271,7 @@ appendNote(note,input)
 
 Show `note`.
 
-```ruby
+```
 showNote(note)
 ```
 
@@ -281,7 +281,7 @@ showNote(note)
 
 Preview `input`.
 
-```ruby
+```
 quicklook(input)
 ```
 
@@ -291,7 +291,7 @@ quicklook(input)
 
 Show `input` in a dialog.
 
-```ruby
+```
 show(input)
 ```
 
@@ -301,7 +301,7 @@ show(input)
 
 Print `input`.
 
-```ruby
+```
 print(input)
 ```
 
@@ -311,7 +311,7 @@ print(input)
 
 Split `pdf` into pages.
 
-```ruby
+```
 splitPDF(pdf)
 ```
 
@@ -321,7 +321,7 @@ splitPDF(pdf)
 
 Generate a QR code using `input` with error correction level `errorCorrection`.
 
-```ruby
+```
 makeQRCode(input,errorCorrection)
 ```
 
@@ -338,7 +338,7 @@ makeQRCode(input,errorCorrection)
 
 Convert `richText` into HTML.
 
-```ruby
+```
 makeHTML(input,makeFullDocument)
 ```
 
@@ -350,7 +350,7 @@ makeHTML(input,makeFullDocument)
 
 Convert `richText` into Markdown.
 
-```ruby
+```
 makeMarkdown(richText)
 ```
 
@@ -360,7 +360,7 @@ makeMarkdown(richText)
 
 Get rich text from `html`.
 
-```ruby
+```
 getRichTextFromHTML(html)
 ```
 
@@ -370,7 +370,7 @@ getRichTextFromHTML(html)
 
 Get rich text from `markdown`.
 
-```ruby
+```
 getRichTextFromMarkdown(markdown)
 ```
 
@@ -380,7 +380,7 @@ getRichTextFromMarkdown(markdown)
 
 Get text from `image`.
 
-```ruby
+```
 getTextFromImage(image)
 ```
 
@@ -390,7 +390,7 @@ getTextFromImage(image)
 
 Get the emoji name of `emoji`.
 
-```ruby
+```
 getEmojiName(emoji)
 ```
 
@@ -400,7 +400,7 @@ getEmojiName(emoji)
 
 Get text from `input`.
 
-```ruby
+```
 getText(input)
 ```
 
@@ -410,7 +410,7 @@ getText(input)
 
 Show the definition of `word`.
 
-```ruby
+```
 define(word)
 ```
 
@@ -420,7 +420,7 @@ define(word)
 
 Get group at `index` in `matches`.
 
-```ruby
+```
 matchedTextGroupIndex(matches,index)
 ```
 
@@ -430,7 +430,7 @@ matchedTextGroupIndex(matches,index)
 
 Split `text` by `separator`.
 
-```ruby
+```
 splitText(text,separator)
 ```
 
@@ -440,7 +440,7 @@ splitText(text,separator)
 
 Combine `text` with `glue`.
 
-```ruby
+```
 combineText(text,glue)
 ```
 
@@ -450,7 +450,7 @@ combineText(text,glue)
 
 Find `find` in `subject` and replace with `replacement`.
 
-```ruby
+```
 replaceText(find,replacement,subject)
 ```
 
@@ -460,7 +460,7 @@ replaceText(find,replacement,subject)
 
 Case-insensitive find `find` in `subject` and replace with `replacement`.
 
-```ruby
+```
 iReplaceText(find,replacement,subject)
 ```
 
@@ -470,7 +470,7 @@ iReplaceText(find,replacement,subject)
 
 Use a regular-expression to find `find` in `subject` and replace with `replacement`.
 
-```ruby
+```
 regReplaceText(expression,replacement,subject)
 ```
 
@@ -480,7 +480,7 @@ regReplaceText(expression,replacement,subject)
 
 Use a case-insensitive regular-expression to find `find` in `subject` and replace with `replacement`.
 
-```ruby
+```
 iRegReplaceText(expression,replacement,subject)
 ```
 
@@ -490,7 +490,7 @@ iRegReplaceText(expression,replacement,subject)
 
 Change case of `text` to UPPERCASE.
 
-```ruby
+```
 uppercase(text)
 ```
 
@@ -500,7 +500,7 @@ uppercase(text)
 
 Change case of `text` to lowercase.
 
-```ruby
+```
 lowercase(text)
 ```
 
@@ -510,7 +510,7 @@ lowercase(text)
 
 Capitalize the first word in `text`.
 
-```ruby
+```
 capitalize(text)
 ```
 
@@ -520,7 +520,7 @@ capitalize(text)
 
 Capitalize all the words in `text`.
 
-```ruby
+```
 capitalizeAll(text)
 ```
 
@@ -530,7 +530,7 @@ capitalizeAll(text)
 
 Change case of `text` to Title Case.
 
-```ruby
+```
 titleCase(text)
 ```
 
@@ -540,7 +540,7 @@ titleCase(text)
 
 Change case of `text` to aLtErNaTiNg cAsE.
 
-```ruby
+```
 alternateCase(text)
 ```
 
@@ -550,7 +550,7 @@ alternateCase(text)
 
 Correct the spelling of `text`.
 
-```ruby
+```
 correctSpelling(text)
 ```
 
@@ -560,7 +560,7 @@ correctSpelling(text)
 
 Translate `text` from the detected language of `text` to `to`.
 
-```ruby
+```
 translate(text,to)
 ```
 
@@ -570,7 +570,7 @@ translate(text,to)
 
 Translate `text` from `from` to `to`.
 
-```ruby
+```
 translateFrom(text,from,to)
 ```
 
@@ -580,6 +580,6 @@ translateFrom(text,from,to)
 
 Detect the language of `text`.
 
-```ruby
+```
 detectLanguage(text)
 ```

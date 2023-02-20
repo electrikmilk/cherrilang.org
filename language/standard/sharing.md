@@ -23,7 +23,7 @@ nav_order: 7
 
 Get the current contents of the clipboard.
 
-```ruby
+```
 getClipboard()
 ```
 
@@ -33,7 +33,7 @@ getClipboard()
 
 Copy `input` to the clipboard. `local` is a boolean. `expire` is a date as a string (e.g. Today at 3pm).
 
-```ruby
+```
 copyToClipboard(input,local,expire)
 ```
 
@@ -45,7 +45,7 @@ copyToClipboard(input,local,expire)
 
 Prompt to AirDrop `input`.
 
-```ruby
+```
 airdrop(input)
 ```
 
@@ -55,6 +55,6 @@ airdrop(input)
 
 Share `input` via the Share Sheet.
 
-```ruby
+```
 share(input)
 ```
