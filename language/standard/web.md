@@ -23,7 +23,7 @@ nav_order: 8
 
 Get article from `webpage` in article.
 
-```
+```ruby
 getArticle(webpage)
 ```
 
@@ -33,7 +33,7 @@ getArticle(webpage)
 
 Get `detail` from `article`.
 
-```
+```ruby
 getArticleDetail(article,detail)
 ```
 
@@ -43,7 +43,7 @@ getArticleDetail(article,detail)
 
 Search Giphy for `query`.
 
-```
+```ruby
 searchGiphy(query)
 ```
 
@@ -53,7 +53,7 @@ searchGiphy(query)
 
 Get `gifs` number of gifs from Giphy for `query`.
 
-```
+```ruby
 getGifs(query,gifs)
 ```
 
@@ -63,7 +63,7 @@ getGifs(query,gifs)
 
 Get `items` number of items from RSS feed at `url`.
 
-```
+```ruby
 getRSS(items,url)
 ```
 
@@ -73,7 +73,7 @@ getRSS(items,url)
 
 Get RSS feeds from urls.
 
-```
+```ruby
 getRSSFeeds(urls)
 ```
 
@@ -83,7 +83,7 @@ getRSSFeeds(urls)
 
 Add `url` to the users reading list.
 
-```
+```ruby
 addToReadingList(url)
 ```
 
@@ -93,7 +93,7 @@ addToReadingList(url)
 
 Get current web page url.
 
-```
+```ruby
 getCurrentURL()
 ```
 
@@ -103,7 +103,7 @@ getCurrentURL()
 
 Get `detail` of `webpage`.
 
-```
+```ruby
 getWebPageDetail(webpage,detail)
 ```
 
@@ -120,7 +120,7 @@ getWebPageDetail(webpage,detail)
 
 Open `urls` in default browser.
 
-```
+```ruby
 openURLs(urls)
 ```
 
@@ -130,7 +130,7 @@ openURLs(urls)
 
 Run `script` on currently active tab as JavaScript.
 
-```
+```ruby
 runJavaScriptOnWebpage(script)
 ```
 
@@ -140,7 +140,7 @@ runJavaScriptOnWebpage(script)
 
 Search the web for `query` using `engine`.
 
-```
+```ruby
 searchWeb(engine,query)
 ```
 
@@ -162,7 +162,7 @@ searchWeb(engine,query)
 
 Show `url`. `urlReader` is a boolean, the default is `true`.
 
-```
+```ruby
 showWebpage(url,useReader)
 ```
 
@@ -172,7 +172,7 @@ showWebpage(url,useReader)
 
 Expand `url`. This is generally used for short urls.
 
-```
+```ruby
 expandURL(url)
 ```
 
@@ -182,7 +182,7 @@ expandURL(url)
 
 Get `detail` from `url`.
 
-```
+```ruby
 getURLDetail(url,detail)
 ```
 
@@ -203,7 +203,7 @@ getURLDetail(url,detail)
 
 Get urls from `input`.
 
-```
+```ruby
 getURLs(input)
 ```
 
@@ -213,13 +213,13 @@ getURLs(input)
 
 Create url value of `url`. No limit on `url` arguments.
 
-```
+```ruby
 url(...url)
 ```
 
 **Example Usage**
 
-```
+```ruby
 url("https://cherrilang.org","https://routinehub.co")
 ```
 
@@ -229,7 +229,7 @@ url("https://cherrilang.org","https://routinehub.co")
 
 Download contents of `url`.
 
-```
+```ruby
 downloadURL(url)
 ```
 
@@ -241,7 +241,7 @@ Send a `method` request to `url` with `body`.
 
 `body`and `headers` are optional.
 
-```
+```ruby
 formRequest(url,method,body,headers)
 ```
 
@@ -253,7 +253,7 @@ Send a `method` request to `url` with `body`.
 
 `body`and `headers` are optional.
 
-```
+```ruby
 jsonRequest(url,method,body,headers)
 ```
 
@@ -265,7 +265,7 @@ Send a `method` request to `url` with `body`.
 
 `body`and `headers` are optional.
 
-```
+```ruby
 fileRequest(url,method,body,headers)
 ```
 
@@ -275,7 +275,7 @@ fileRequest(url,method,body,headers)
 
 Get contents of webpage at `url`.
 
-```
+```ruby
 getWebpageContents(url)
 ```
 
@@ -285,6 +285,6 @@ getWebpageContents(url)
 
 Get headers for `url`.
 
-```
+```ruby
 getURLHeaders(url)
 ```

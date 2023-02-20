@@ -21,9 +21,9 @@ nav_order: 4
 
 Get the users current location.
 
+```ruby
+getCurrentLocation()
 ```
- getCurrentLocation()
- ```
 
 ---
 
@@ -31,7 +31,7 @@ Get the users current location.
 
 Get `detail` of `location`.
 
-```
+```ruby
 getLocationDetail(location,detail)
 ```
 
@@ -56,7 +56,7 @@ getLocationDetail(location,detail)
 
 Get addresses from `input`.
 
-```
+```ruby
 getAddresses(input)
 ```
 
@@ -66,7 +66,7 @@ getAddresses(input)
 
 Create a location value from a specific street address.
 
-```
+```ruby
 streetAddress(address1,address2,city,state,country,zip)
 ```
 
@@ -76,7 +76,7 @@ streetAddress(address1,address2,city,state,country,zip)
 
 Open `location` in the default maps app.
 
-```
+```ruby
 openInMaps(location)
 ```
 
@@ -86,7 +86,7 @@ openInMaps(location)
 
 Get the halfway point between `firstLocation` and `secondLocation`.
 
-```
+```ruby
 getHalfwayPoint(firstLocation,secondLocation)
 ```
 
@@ -96,7 +96,7 @@ getHalfwayPoint(firstLocation,secondLocation)
 
 Get current weather conditions for the users current location.
 
-```
+```ruby
 getCurrentWeather()
 ```
 
@@ -106,7 +106,7 @@ getCurrentWeather()
 
 Get current weather conditions at `location`.
 
-```
+```ruby
 getCurrentWeatherAt(location)
 ```
 
@@ -116,7 +116,7 @@ getCurrentWeatherAt(location)
 
 Get `detail` of `weather`.
 
-```
+```ruby
 getWeatherDetail(weather,detail)
 ```
 
@@ -151,7 +151,7 @@ getWeatherDetail(weather,detail)
 
 Get `type` of forecast for the users current location.
 
-```
+```ruby
 getWeatherForecast(type)
 ```
 
@@ -166,6 +166,6 @@ getWeatherForecast(type)
 
 Get `type` of forecast for `location`.
 
-```
+```ruby
 getWeatherForecastAt(type,location)
 ```

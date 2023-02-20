@@ -21,7 +21,7 @@ nav_order: 2
 
 Get `property` from `contact`.
 
-```
+```ruby
 getContactDetail(contact,property)
 ```
 
@@ -53,7 +53,7 @@ getContactDetail(contact,property)
 
 Filter `contacts` by `property` and sort by `sortOrder`, and limit to `limit` number of contacts.
 
-```
+```ruby
 filterContacts(contacts,property,sortOrder,limit)
 ```
 
@@ -68,7 +68,7 @@ filterContacts(contacts,property,sortOrder,limit)
 
 Prompt the user to select a contact.
 
-```
+```ruby
 selectContact()
 ```
 
@@ -78,7 +78,7 @@ selectContact()
 
 Create phone number value of `number`. No limit on `number` arguments.
 
-```
+```ruby
 phoneNumber(...number)
 ```
 
@@ -88,7 +88,7 @@ phoneNumber(...number)
 
 Prompt the user to select a phone number.
 
-```
+```ruby
 selectPhoneNumber()
 ```
 
@@ -98,7 +98,7 @@ selectPhoneNumber()
 
 Create email address value of `email`. No limit on `email` arguments.
 
-```
+```ruby
 emailAddress(...email)
 ```
 
@@ -108,6 +108,6 @@ emailAddress(...email)
 
 Prompt the user to select an email address.
 
-```
+```ruby
 selectEmailAddress()
 ```
