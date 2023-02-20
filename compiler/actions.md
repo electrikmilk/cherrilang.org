@@ -25,6 +25,10 @@ type actionDefinition struct {
 	parameters    []parameterDefinition
 	check         paramCheck
 	make          makeParams
+	addParams     additionalParams
+	outputType    tokenType
+	mac           bool
+	minVersion    float64
 }
 ```
 
@@ -84,6 +88,10 @@ actions["takeMorePhotos"] = actionDefinition{
 }
 ```
 
+### `appIdentifier`
+
+This is meant for 3rd-party actions added by user installed apps. This requires the full bundle identifier of the app. 3d-party actions should be defined in their own Go file outside of `actions_std.go`.
+
 ### `parameters`
 
 Parameters are defined using a `parameterDefinition` for each parameter. It has two main fields, one that defines the argument
@@ -100,17 +108,23 @@ type parameterDefinition struct {
 	key          string
 	defaultValue actionArgument
 	optional     bool
-	noMax        bool
+	infinite     bool
 }
 ```
 
-The `defaultValue` takes an `actionArgument`, you must give a value type and value. This defines a default value for this argument, this is used to compare the value given to the default value for this action paramter, we then print a warning that this argument value could be removed. This is mainly for booleans and enums.
+The `name` is surface level, and is mainly used as a name for the argument to show in warnings and errors.
 
-`optional` tells Cherri that this parameter is completely optional for this action. this defaults to false. It will not write a key value pair for this parameter if it is optional and no argument value is given.
+The `validType` specifies the type that the argument that was entered should match or evaluate to. If a `Variable` type is entered, the type check is much more forgiving and acts more like any type could be entered.
+
+The `key` is used if there is no need to process arguments. If you use `key` to specify the key of this action parameter, do not add a `make` to the action definition, otherwise this is pointless and will be ignored.
+
+The `defaultValue` allows for specifying a default value as an `actionArgument` type. This is used in the case that `optional` is set to `true` to compare the value that was entered to warn the user if the value that they entered for this argument is the same as the default value.
+
+The `optional` determines whether this parameter is completely optional for this action. This defaults to false. It will not write a key value pair for this parameter if it is optional and no argument value is given.
 
 The Shortcuts app does this with many parameters that it has a default value for, if an actions parameter is not specified, it fills in the gap and goes with the default value for that parameter for that action as defined in the Shortcuts app itself for that action. This should be done when possible as it makes for a much smaller Shortcut file on average.
 
-The `key` is used if there is no need to process arguments. If you use `key` to specify the key of this action parameter, do not add a `make` to the action definition, otherwise this is pointless and will be ignored.
+The `infinite` determines whether or not the user can enter as many arguments of this definition indefinately after the first of this argument.
 
 ### `check`
 
@@ -149,6 +163,22 @@ actions["takePhoto"] = actionDefinition{
 ```
 
 If you do this, the parameter value for that argument will be done for you, just make sure to not add the `make` property and add the `key` property to each of your parameter definitions. This is done to help make defining actions simpler and faster.
+
+### `addParams`
+
+This is similar to `make` but instead of determining the parameters output for this action, this only adds to those parameters. This is particularly useful if `make` isn't needed, but you need to set hard coded parameters for the action in addition to the automatic parameters set when `make` is not set.
+
+### `outputType`
+
+Sets the output type for this action. This isn't widely used currently and not well tested.
+
+### `mac`
+
+Sets whether or not this action is a Mac-only action. This is mainly used if `#define mac false` is set, so that we can error out and inform the user they are using a Mac-only action in a non-Mac Shortcut.
+
+### `minVersion`
+
+Sets the minimum version this action was added in. This is only relevant if the user sets `#define version 16.2` for example, if the version set does not exceed our `minVersion` we will error out and inform the user they are using a action that is not in their target version.
 
 ---
 
