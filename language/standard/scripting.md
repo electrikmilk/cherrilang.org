@@ -582,7 +582,7 @@ getListItems(list,start,end)
 
 Store a list of `item` in a variable. No limit on `item` arguments.
 
-```
+```ruby
 @myList = list(...item)
 ```
 
@@ -619,7 +619,7 @@ The `operandTwo` is optional, as not all of the operations require a second oper
 
 To do this, create a variable and set an expression as the value:
 
-```
+```ruby
 @expression = 25 * 6 + (5 / 6) % 2
 ```
 
@@ -670,13 +670,13 @@ Shorthands for `roundTo` value:
 
 Create a measurement.
 
-```ruby
+```
 measurement(magnitude,unitType,unit)
 ```
 
 Example:
 
-```ruby
+```
 measurement("2000","Information Storage","MB")
 ```
 
