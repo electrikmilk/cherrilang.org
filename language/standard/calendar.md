@@ -43,13 +43,15 @@ date(date)
 
 Add to date by units of time.
 
-- `addSeconds(date,magnitude)`
-- `addMinutes(date,magnitude)`
-- `addHours(date,magnitude)`
-- `addDays(date,magnitude)`
-- `addWeeks(date,magnitude)`
-- `addMonths(date,magnitude)`
-- `addYears(date,magnitude)`
+```ruby
+addSeconds(date,magnitude)
+addMinutes(date,magnitude)
+addHours(date,magnitude)
+addDays(date,magnitude)
+addWeeks(date,magnitude)
+addMonths(date,magnitude)
+addYears(date,magnitude)
+```
 
 ---
 
@@ -57,13 +59,15 @@ Add to date by units of time.
 
 Subtract from date by units of time.
 
-- `subtractSeconds(date,magnitude)`
-- `subtractMinutes(date,magnitude)`
-- `subtractHours(date,magnitude)`
-- `subtractDays(date,magnitude)`
-- `subtractWeeks(date,magnitude)`
-- `subtractMonths(date,magnitude)`
-- `subtractYears(date,magnitude)`
+```ruby
+subtractSeconds(date,magnitude)
+subtractMinutes(date,magnitude)
+subtractHours(date,magnitude)
+subtractDays(date,magnitude)
+subtractWeeks(date,magnitude)
+subtractMonths(date,magnitude)
+subtractYears(date,magnitude)
+```
 
 ---
 
@@ -71,8 +75,10 @@ Subtract from date by units of time.
 
 Get various starting units of date.
 
-- `getStartMinute(date)`
-- `getStartHour(date)`
-- `getStartWeek(date)`
-- `getStartMonth(date)`
-- `getStartYear(date)`
+```ruby
+getStartMinute(date)
+getStartHour(date)
+getStartWeek(date)
+getStartMonth(date)
+getStartYear(date)
+```
