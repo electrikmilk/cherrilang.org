@@ -233,6 +233,26 @@ _**Minimum iOS version:** 16.2_
 
 ---
 
+### Turn On Do Not Disturb
+
+Turn on Do Not Disturb focus mode on the device.
+
+```
+DNDOn()
+```
+
+---
+
+### Turn Off Do Not Disturb
+
+Turn off Do Not Disturb focus mode on the device.
+
+```
+DNDOff()
+```
+
+---
+
 ### Get Device Detail
 
 Get `detail` of device.
