@@ -49,6 +49,45 @@ takeVideo(camera,quality,startImmediately)
 - `quality` is a string value of `Low`, `Medium`, `High`. Default is `Medium`.
 - `startImmediately` is an optional boolean value set to `false` by default.
 
+## Audio
+
+### Shazam It
+
+Start Shazam.
+
+```
+startShazam(show,showError)
+```
+
+`show` and `showError` are optional booleans which default values are `true`.
+
+## Device
+
+### Take Screenshot
+
+{: .warning }
+Arguments will not apply to mobile devices
+
+```
+takeScreenshot(mainMonitorOnly)
+```
+
+`mainMonitorOnly` is an optional boolean, the default value is `false`.
+
+---
+
+### Take Interactive Screenshot
+
+Take an interactive Screenshot
+
+```
+takeInteractiveScreenshot(selection)
+```
+
+`selection` is an optional string with a default value of `Window`. The possible arguments are `Window` or `Custom`.
+
+**Note: Mac-only action**
+
 ## GIFs
 
 ### Add Frame to GIF
@@ -106,6 +145,16 @@ Strip metadata from image.
 stripMetadata(image)
 ```
 
+## iTunes Store
+
+### Show in iTunes Store
+
+Show `product` in the iTunes Store.
+
+```
+showIniTunes(product)
+```
+
 ## Music
 
 ### Get Current Song
@@ -127,6 +176,16 @@ addToMusic(songs)
 ```
 
 ## Photos
+
+### Save to Photo Album
+
+Save `photo` to photo album `Recents`.
+
+```
+savePhoto(photo)
+```
+
+---
 
 ### Get Last Import
 
@@ -189,6 +248,36 @@ getlatestVideos(count)
 ```
 
 ## Playback
+
+### Play Music
+
+Play Apple Music on current device.
+
+```
+play()
+```
+
+---
+
+### Pause Music
+
+Pause Apple Music on current device.
+
+```
+pause()
+```
+
+---
+
+### Toggle Play/Pause Music
+
+Play/Pause Apple Music on current device depending on the current play status.
+
+```
+togglePlayPause()
+```
+
+---
 
 ### Set Volume
 
