@@ -49,6 +49,63 @@ takeVideo(camera,quality,startImmediately)
 - `quality` is a string value of `Low`, `Medium`, `High`. Default is `Medium`.
 - `startImmediately` is an optional boolean value set to `false` by default.
 
+## GIFs
+
+### Add Frame to GIF
+
+Add a frame to a GIF.
+
+```
+addToGIF(image,gif,delay,autoSize,width,height)
+```
+
+- `autoSize` is a boolean, the default value is `true`. `width` and `height` can only be used when `autoSize` is `false`.
+- `delay` is optional, the default value is `0.25`.
+
+## Images
+
+### Convert Image
+
+Convert image to another image format.
+
+```
+convertImage(image,format,preserveMetadata)
+```
+
+`preserveMetadata` is optional, the default value is `true`.
+
+#### Image Formats
+
+- TIFF
+- GIF
+- PNG
+- BMP
+- PDF
+- HEIF
+
+---
+
+### Convert Image to JPEG
+
+Convert an image to a JPEG.
+
+```
+convertToJPEG(image,quality,preserveMetadata)
+```
+
+- `quality` is optional.
+- `preserveMetadata` is optional, the default value is `true`.
+
+---
+
+### Strip Image Metadata
+
+Strip metadata from image.
+
+```
+stripMetadata(image)
+```
+
 ## Music
 
 ### Get Current Song
@@ -61,22 +118,74 @@ getCurrentSong()
 
 ---
 
-### Clear Up Next
+### Add to Music Library
 
-Clears the up next songs.
+Add `songs` to music library.
 
 ```
-clearUpNext()
+addToMusic(songs)
 ```
 
 ## Photos
 
-### Get Latest Photo Import
+### Get Last Import
 
 Gets the latest photo import.
 
 ```
-latestPhotoImport()
+getLastImport()
+```
+
+---
+
+### Get Latest Bursts
+
+Get latest photo bursts.
+
+```
+getLatestBursts(count)
+```
+
+---
+
+### Get Latest Live Photos
+
+Get latest live photos.
+
+```
+getLatestLivePhotos(count)
+```
+
+---
+
+### Get Latest Screenshots
+
+Get latest screenshots.
+
+```
+getLatestScreenshots(count)
+```
+
+---
+
+### Get Latest Photos
+
+Get latest photos.
+
+```
+getLatestPhotos(count,includeScreenshots)
+```
+
+`includeScreenshots` is a boolean, the default value is `true`.
+
+---
+
+### Get Latest Videos
+
+Get latest videos.
+
+```
+getlatestVideos(count)
 ```
 
 ## Playback
@@ -88,6 +197,58 @@ Set device volume to `number`.
 ```
 setVolume(number)
 ```
+
+## Playing Next
+
+### Add to Playing Next
+
+Add `music` as the next to play in the queue.
+
+```
+playNext(music)
+```
+
+---
+
+### Add to Playing Later
+
+Add `music` as the last to play in the queue.
+
+```
+playLater(music)
+```
+
+---
+
+### Clear Playing Next
+
+Clears the songs up next.
+
+```
+clearUpNext()
+```
+
+## Playlists
+
+### Add to Playlist
+
+Add `songs` to playlist with `name`.
+
+```
+addToPlaylist(name,songs)
+```
+
+---
+
+### Create Playlist
+
+Create a playlist.
+
+```
+createPlaylist(name,music,description,author)
+```
+
+The arguments `music`, `description`, and `author` are optional.
 
 ## Video
 
