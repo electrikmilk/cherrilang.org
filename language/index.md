@@ -14,6 +14,9 @@ Thanks for taking an interest in the Cherri programming language. Don't worry! C
 Contributing to this open-source documentation is recommended as this language is in the early stages and while most
 things work, bugs or inaccurate documentation are very likely.
 
+{: .warning }
+The latest release may not include everything in the latest documentation, and you may run into actions or language features of a future release. To use the latest features (which are subject to change or not work properly) build from source.
+
 ## Download & Install
 
 The easiest way to start using Cherri is to install it using Go:
@@ -51,13 +54,7 @@ cd /path/to/cherri
 
 # Build
 go build
-```
 
-You should now have a `cherri` binary in the same directory. Run it using:
-
-```bash
+# Run
 ./cherri
 ```
-
-{: .note }
-You can move the binary to `/usr/local/bin/` on macOS or Linux to run it from anywhere.
