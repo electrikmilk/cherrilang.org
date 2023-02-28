@@ -15,6 +15,16 @@ nav_order: 5
 1. TOC
 {:toc}
 
+## App Store
+
+### Find App Store Apps
+
+Search the app store for apps using `query`.
+
+```
+searchAppStore(query)
+```
+
 ## Camera
 
 ### Take Photo
@@ -50,6 +60,28 @@ takeVideo(camera,quality,startImmediately)
 - `startImmediately` is an optional boolean value set to `false` by default.
 
 ## Audio
+
+### Record Audio
+
+Start recording audio.
+
+```
+record(quality,start)
+```
+
+Both `quality` and `start` are optional.
+
+#### Recording Qualities
+
+- Normal (default)
+- Very High
+
+#### Recording Starts
+
+- On Tap (default)
+- Immediately
+
+---
 
 ### Shazam It
 
@@ -100,6 +132,62 @@ addToGIF(image,gif,delay,autoSize,width,height)
 
 - `autoSize` is a boolean, the default value is `true`. `width` and `height` can only be used when `autoSize` is `false`.
 - `delay` is optional, the default value is `0.25`.
+
+---
+
+### Make Video from GIF
+
+Make video from `gif`, looping `loops` number of times. Returns GIF as video.
+
+```
+makeVideofromGIF(gif,loops)
+```
+
+`loops` is an optional integer, the default value is `1`.
+
+## Image Editing
+
+### Crop Image
+
+Crop `image` at `position` to `width` and `height`. Returns cropped image.
+
+```
+cropImage(image,position,width,height)
+```
+
+#### Crop Positions
+
+- Center
+- Top Left
+- Top Right
+- Bottom Left
+- Bottom Right
+- Custom
+
+---
+
+### Flip Image
+
+Flip `image` in `direction`. Returns the flipped image.
+
+```
+flipImage(image,direction)
+```
+
+#### Flip Directions
+
+- Horizontal
+- Vertical
+
+---
+
+### Rotate Image
+
+Rotate `image` `degrees` number of degrees. Returns rotated image.
+
+```
+rotate(image,degrees)
+```
 
 ## Images
 
@@ -177,12 +265,24 @@ addToMusic(songs)
 
 ## Photos
 
-### Save to Photo Album
+### Create Photo Album
 
-Save `photo` to photo album `Recents`.
+Create an album named `name` with `photos`.
 
 ```
-savePhoto(photo)
+createAlbum(name,photos)
+```
+
+`photos` is optional.
+
+---
+
+### Delete Photos
+
+Delete `photos` from photo library.
+
+```
+deletePhotos(photos)
 ```
 
 ---
@@ -247,6 +347,38 @@ Get latest videos.
 getlatestVideos(count)
 ```
 
+---
+
+### Remove from Photo Album
+
+Remove `photo` to photo album `album`.
+
+```
+removeFromAlbum(photo,album)
+```
+
+---
+
+### Save to Photo Album
+
+Save `photo` to photo album `Recents`.
+
+```
+savePhoto(photo)
+```
+
+---
+
+### Select Photos
+
+Select photos from photo library.
+
+```
+selectPhotos(selectMultiple)
+```
+
+`selectMultiple` is an optional boolean, the default value is `false`.
+
 ## Playback
 
 ### Play Music
@@ -285,6 +417,26 @@ Set device volume to `number`.
 
 ```
 setVolume(number)
+```
+
+---
+
+### Skip Back
+
+Skip back to the previous song.
+
+```
+skipBack()
+```
+
+---
+
+### Skip Forward
+
+Skip forward to the next song.
+
+```
+skipFwd()
 ```
 
 ## Playing Next
@@ -338,6 +490,16 @@ createPlaylist(name,music,description,author)
 ```
 
 The arguments `music`, `description`, and `author` are optional.
+
+## Podcasts
+
+### Find Podcasts
+
+Search Apple Podcasts for podcasts using `query`.
+
+```
+searchPodcasts(query)
+```
 
 ## Video
 
