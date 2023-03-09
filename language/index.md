@@ -15,7 +15,7 @@ Contributing to this open-source documentation is recommended as this language i
 things work, bugs or inaccurate documentation are very likely.
 
 {: .warning }
-The latest release may not include everything in the latest documentation, and you may run into actions or language features of a future release. To use the latest features (which are subject to change or not work properly) build from source.
+The latest release may not include everything in the latest documentation, and you may run into actions or language features of a future release. To use the latest features (which are subject to change or may not work properly) build from source.
 
 ## Download & Install
 
@@ -46,7 +46,7 @@ Install Go via the official Go website: [https://go.dev/doc/install](https://go.
 
 ### 3. Build
 
-Enter the directory of the source your downloaded and build.
+Enter the directory of the source you downloaded and build.
 
 ```bash
 # Enter directory
