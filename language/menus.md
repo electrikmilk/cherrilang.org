@@ -9,18 +9,18 @@ nav_order: 4
 
 ## Choose From Menu
 
-The syntax for menus are similar to a `switch` statement in other languages. Use the following syntax to create a menu:
+The syntax for a menu is very similar to a `switch` statement. Use the following syntax to create a menu:
 
 ```go
 menu "Prompt" {
-    case "Item 1":
-        // do something...
-    case "Item 2":
-        // do something else...
+    item "Item 1":
+        // do stuff if selected...
+    item "Item 2":
+        // do other stuff if selected...
 }
 ```
 
-The menu prompt can be a variable, so can each case label, they also support inserted variables.
+The menu prompt can be a variable, so can each case label, they also support inline variables in strings.
 
 ## Choose From List
 
