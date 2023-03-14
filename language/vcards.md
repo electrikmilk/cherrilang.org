@@ -20,7 +20,7 @@ The example below uses this built-in action to make a VCard menu:
 ```ruby
 @items
 repeat 3 {
-    @items += makeVCard("{menuPrefix} Title {RepeatIndex}","{menuPrefix} Subtitle","assets/cherri_icon.png")
+    @items += makeVCard("Title {RepeatIndex}","Subtitle {RepeatIndex}","assets/cherri_icon.png")
 }
 @menuItems = "{items}"
 @vcf = setName(menuItems,"menu.vcf",false)
