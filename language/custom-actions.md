@@ -11,14 +11,14 @@ You can define your own actions. Currently they function more like macros that a
 
 To define your own action, use the following syntax:
 
-```ruby
+```
 action myCustomAction() {
-  // ...
+  // do stuff...
 }
 ```
 
 Then reference the action to paste its contents in place of that line.
 
-```ruby
+```
 myCustomAction()
 ```
