@@ -13,7 +13,9 @@ You can easily create a VCard menu using the built-in action `makeVCard()`.
 @vcard = makeVCard("Title","Subtitle","path/to/image.jpg")
 ```
 
-This generates a VCard using your parameters at compile time, inserting the title as the name, the subtitle as the org/company, and base 64 encodes the image at the path you specified and inserts it as the photo. The only limitation being that the image path must be available at compile time, no variables unless they evaluate to a string literal.
+This generates a VCard using your parameters at compile time, inserting the title as the name, the subtitle as the org/company, and base 64 encodes the image at the path you specified and inserts it as the photo.
+
+The only limitation being that the image path must be available at compile time, no variables unless they evaluate to a string literal. The image argument is optional.
 
 The example below uses this built-in action to make a VCard menu:
 
