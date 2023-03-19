@@ -14,7 +14,8 @@ To define your own action, use the following syntax:
 ```
 action myCustomAction(arg1, arg2, ...) {
   // do stuff...
-  nothing()
+  show(arg1)
+  show(arg2)
 }
 ```
 
