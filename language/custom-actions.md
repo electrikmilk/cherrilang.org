@@ -24,3 +24,14 @@ Then reference the action to paste its contents in place of that line.
 ```
 myCustomAction("Hello", "World")
 ```
+
+Custom actions can also return a value:
+
+```
+action add(arg1, arg2, ...) {
+  return arg1 + arg2
+}
+
+@result = add(1, 2)
+show("{result}")
+```
