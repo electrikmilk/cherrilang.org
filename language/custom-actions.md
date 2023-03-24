@@ -9,6 +9,8 @@ nav_order: 12
 
 You can define your own actions containing variables, calls to other actions etc. that you can then reference anywhere.
 
+Custom actions have no scope and are able to modify variables outside of their statement body.
+
 To define your own action, use the following syntax:
 
 ```
