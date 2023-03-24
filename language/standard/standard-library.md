@@ -46,7 +46,7 @@ show("{choosenItem}")
 // showVCard sets up a VCard menu using items and prompt
 action showVCard(items, prompt) {
     @menuItems = "{items}"
-    @vcf = setName(menuItems,"menu.vcf",false)
+    @vcf = setName(menuItems,"menu.vcf")
     @contact = vcf.contact
     return chooseFromList(contact,prompt)
 }
