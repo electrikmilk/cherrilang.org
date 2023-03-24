@@ -35,3 +35,5 @@ action add(arg1, arg2, ...) {
 @result = add(1, 2)
 show("{result}")
 ```
+
+The `return` statement does not work in the way it does in other languages. Custom actions can simply return a value, it does not stop the action from continuing to run.
