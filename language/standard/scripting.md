@@ -1158,10 +1158,8 @@ _Min iOS Version: 16.4_
 Search Shortcuts.
 
 ```
-makeShortcut(name,open)
+searchShortcuts(query)
 ```
-
-`open` is a boolean, its default value is true.
 
 _Min iOS Version: 16.4_
 
