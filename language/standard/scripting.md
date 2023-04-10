@@ -169,16 +169,6 @@ outputOrClipboard(output)
 
 ---
 
-### Stop Shortcut
-
-Stop the Shortcut. Equivalent to `exit` or `die` in other languages.
-
-```
-stop()
-```
-
----
-
 ### Wait
 
 Wait `n` number of seconds then proceed.
@@ -1149,6 +1139,56 @@ getShortcuts()
 
 ---
 
+### Create Shortcut
+
+Create a new Shortcut.
+
+```
+makeShortcut(name,open)
+```
+
+`open` is a boolean, its default value is true.
+
+_Min iOS Version: 16.4_
+
+---
+
+### Search Shortcuts
+
+Search Shortcuts.
+
+```
+makeShortcut(name,open)
+```
+
+`open` is a boolean, its default value is true.
+
+_Min iOS Version: 16.4_
+
+---
+
+### Get Shortcut Detail
+
+Get detail of a Shortcut.
+
+```
+shortcutDetail(detail,shortcut)
+```
+
+#### Details
+
+- Folder
+- Icon
+- Action Count
+- File Size
+- File Extension
+- Creation Date
+- File Path
+- Last Modified Date
+- Name
+
+---
+
 ### Open Shortcut
 
 Open Shortcut with name `name`.
@@ -1165,6 +1205,16 @@ Run Shortcut with name `name`, providing it with `input`. `isSelf` is an optiona
 
 ```
 run(name,input,isSelf)
+```
+
+---
+
+### Stop Shortcut
+
+Stop the Shortcut. Equivalent to `exit` or `die` in other languages.
+
+```
+stop()
 ```
 
 ## System
