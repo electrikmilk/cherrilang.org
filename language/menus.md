@@ -26,7 +26,7 @@ The menu prompt can be a variable, so can each case label, they also support inl
 
 Create a variable with a `list()` action as its value.
 
-Just like in Shortcuts each item must be a string, but you can still insert variables.
+Just like in Shortcuts each item must be a string, but you can still have inline string variables.
 
 ```ruby
 @list = list("Item 1", "Item 2", "Item 3")
