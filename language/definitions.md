@@ -14,7 +14,7 @@ to no input, what it accepts as input, etc.
 
 Define the look of your Shortcut using one of the supported colors or glyphs.
 
-```bash
+```
 #define color red
 #define glyph apple
 ```
