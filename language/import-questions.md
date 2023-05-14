@@ -9,7 +9,7 @@ nav_order: 12
 
 To add an import question, use the following syntax:
 
-```c++
+```
 #question identifier "Prompt" "Default Value"
 ```
 
@@ -18,7 +18,7 @@ To assign the question to something, simply mention the `identifier`. However, t
 ### For Example:
 
 
-```c++
+```
 #question name "Name" "Siri"
 
 alert(name)
