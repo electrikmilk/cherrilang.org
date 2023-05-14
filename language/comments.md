@@ -9,7 +9,7 @@ nav_order: 11
 
 To write a single line comment use `//`.
 
-```js
+```
 // Single line comment
 ```
 
@@ -17,7 +17,7 @@ To write multiline comments, use the `/* ... */` syntax commonly found in other 
 
 Do not add a `*` to the front of a line, it will make its way into the compiled Shortcut.
 
-```js
+```
 /*
 This is a multiline comment
 */
