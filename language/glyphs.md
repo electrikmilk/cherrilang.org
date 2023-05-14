@@ -11,7 +11,7 @@ Here is a list of the currently supported glyphs. Please contribute and add any 
 
 Syntax example:
 
-```bash
+```
 #define glyph apple
 ```
 
