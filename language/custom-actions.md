@@ -14,28 +14,16 @@ Custom actions have no scope and are able to modify variables outside of their s
 To define your own action, use the following syntax:
 
 ```
-action myCustomAction(arg1, arg2, ...) {
+action myCustomAction() {
   // do stuff...
-  show(arg1)
-  show(arg2)
+  nothing()
 }
 ```
 
 Then reference the action to paste its contents in place of that line.
 
 ```
-myCustomAction("Hello", "World")
+myCustomAction()
 ```
 
-Custom actions can also return a value:
-
-```
-action add(arg1, arg2, ...) {
-  return arg1 + arg2
-}
-
-@result = add(1, 2)
-show("{result}")
-```
-
-The `return` statement does not work in the way it does in other languages. Custom actions can simply return a value, it does not stop the action from continuing to run.
+Custom actions do not accept arguments or return values.
