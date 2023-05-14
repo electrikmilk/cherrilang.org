@@ -47,7 +47,7 @@ Inputs and outputs accept [content item types](content-item-types.md).
 Inputs will default to all types. Outputs will default to no types. This is done to be consistent with the Shortcuts
 file format.
 
-```bash
+```
 #define inputs image, text
 #define outputs app, file
 ```
@@ -60,19 +60,19 @@ Define how your shortcut responds to no input.
 
 Stop and give a specific response:
 
-```bash
+```
 #define noinput stopwith "Response"
 ```
 
 Get the contents of the clipboard:
 
-```bash
+```
 #define noinput getclipboard
 ```
 
 Ask for a [content item type](/language/content-item-types.html):
 
-```bash
+```
 #define noinput askfor text
 ```
 
@@ -80,7 +80,7 @@ Ask for a [content item type](/language/content-item-types.html):
 
 This defines where your Shortcut shows up, `quickactions`, `sleepmode`, etc.
 
-```bash
+```
 #define from menubar, sleepmode, onscreen
 ```
 
@@ -100,7 +100,7 @@ These values must be separated by commas.
 
 This definition is not widely supported. Defines the name of your Shortcut alternative to the file name.
 
-```bash
+```
 #define name Test
 ```
 
@@ -108,6 +108,6 @@ This definition is not widely supported. Defines the name of your Shortcut alter
 
 Defines the minimum version of iOS your Shortcut supports. Warnings will be printed if you use actions that are not supported in the targeted version.
 
-```bash
+```
 #define version 16.2
 ```
