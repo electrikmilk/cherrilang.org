@@ -147,12 +147,26 @@ makeVideofromGIF(gif,loops)
 
 ## Image Editing
 
+### Combine Images
+
+Combine `images` using `mode` with `spacing`.
+
+```
+combineImages(images,mode="Horizontally",spacing=0)
+```
+
+#### Combine Modes
+
+- Horizontally
+- Vertically
+- Grid
+
 ### Crop Image
 
 Crop `image` at `position` to `width` and `height`. Returns cropped image.
 
 ```
-cropImage(image,position,width,height)
+cropImage(image,position="Center",width="100",height="100")
 ```
 
 #### Crop Positions
