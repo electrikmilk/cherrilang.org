@@ -42,7 +42,7 @@ Most glyphs are supported, but not all the newest are yet. [Click here for the f
 
 ## Inputs & Outputs
 
-Inputs and outputs accept [content item types](content-item-types.md).
+Inputs and outputs accept [content item type](/language/content-item-types.html).
 
 Inputs will default to all types. Outputs will default to no types. This is done to be consistent with the Shortcuts
 file format.
