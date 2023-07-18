@@ -31,10 +31,10 @@ getClipboard()
 
 ### Copy to Clipboard
 
-Copy `input` to the clipboard. `local` is a boolean. `expire` is a date as a string (e.g. Today at 3pm).
+Copy `input` to the clipboard. `local` is a boolean that is `false` by default. `expire` is when the information should leave the clipboard if it hasn't already and is a date as a string (e.g. Today at 3pm).
 
 ```
-copyToClipboard(input,local,expire)
+copyToClipboard(input,local=false,expire="")
 ```
 
 ---
