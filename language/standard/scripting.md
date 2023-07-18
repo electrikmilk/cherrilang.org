@@ -994,10 +994,10 @@ nothing()
 
 ### Ask for Input
 
-Ask for input of `type` with `prompt`, with `default` as the default input. `default` is optional.
+Ask for input of `type` with `prompt`, with `default` as an optional default input.
 
 ```
-askForInput(type,prompt,default)
+askForInput(prompt,defaultValue="",type="Text")
 ```
 
 #### Input Types
