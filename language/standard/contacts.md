@@ -54,7 +54,7 @@ getContactDetail(contact, property)
 Filter `contacts` by `property` and sort by `sortOrder`, and limit to `limit` number of contacts.
 
 ```
-filterContacts(contacts,sortByProperty="None",sortOrder="A to Z",limit=nil)
+filterContacts(contacts, sortByProperty="None", sortOrder="A to Z", limit=nil)
 ```
 
 #### Sort Orders
