@@ -34,8 +34,19 @@ extractArchive(file)
 Create an archive of `files` named `name` in `format`.
 
 ```
-makeArchive(name,format,files)
+makeArchive(files,format=".zip",name="")
 ```
+
+#### Archive formats
+
+ - .zip
+ - .tar.gz
+ - .tar.bz2
+ - .tar.xz
+ - .tar
+ - .gz
+ - .cpio
+ - .iso
 
 ---
 
@@ -44,22 +55,18 @@ makeArchive(name,format,files)
 Create a disk image containing `contents`.
 
 ```
-makeDiskImage(name,contents,encrypt)
+makeDiskImage(name,contents,encrypt=false)
 ```
 
-`encrypt` is a boolean value, the default value is `false`.
+---
 
 ### Make Sized Disk Image
 
 Create a disk image of a specific size containing `contents`.
 
 ```
-makeDiskImage(name,contents,size,encrypt)
+makeDiskImage(name,contents,size="1 GB",encrypt=false)
 ```
-
-`size` expects a standard storage size (e.g. 2 MB)
-
-`encrypt` is a boolean value, the default value is `false`.
 
 #### Storage Size Units
 
@@ -97,7 +104,7 @@ markup(input)
 
 ### Create Folder
 
-Create a folder at `path` in the users Shortcuts folder in their iCloud Drive.
+Create a folder at `path` in the user's Shortcuts folder in their iCloud Drive.
 
 ```
 createFolder(path)
@@ -107,40 +114,40 @@ createFolder(path)
 
 ### Delete Files
 
-Delete `files`. `immediately` is a boolean, default is `false`.
+Delete `files`, optionally immediately.
 
 ```
-deleteFiles(files,immediately)
+deleteFiles(files,immediately=false)
 ```
 
 ---
 
 ### Get Contents of Folder
 
-Get contents of `folder`. `recursive` is a boolean, default is `true`.
+Get contents of `folder`.
 
 ```
-getFolderContents(folder,recursive)
+getFolderContents(folder,recursive=true)
 ```
 
 ---
 
 ### Get File
 
-Get `path` in the users Shortcuts folder. `errorIfNotFound` is a boolean, default is `true`.
+Get `path` in the users Shortcuts folder.
 
 ```
-getFile(path,errorIfNotFound)
+getFile(path,errorIfNotFound=true)
 ```
 
 ---
 
 ### Get File From Folder
 
-Get `path` in `folder`. `errorIfNotFound` is a boolean, default is `true`.
+Get `path` in `folder`.
 
 ```
-getFileFromFolder(folder,path,errorIfNotFound)
+getFileFromFolder(folder,path,errorIfNotFound=true)
 ```
 
 ---
@@ -185,20 +192,20 @@ reveal(files)
 
 ### Save
 
-Save `file` to `path`. `overwrite` is a boolean, default is `false`.
+Save `file` to `path`.
 
 ```
-saveFile(file,path,overwrite)
+saveFile(file,path,overwrite=false)
 ```
 
 ---
 
 ### Prompt to Save
 
-Prompt to save `file`. `overwrite` is a boolean, default is `false`.
+Prompt to save `file`.
 
 ```
-saveFilePrompt(file,overwrite)
+saveFilePrompt(file,overwrite=false)
 ```
 
 ---
@@ -208,10 +215,8 @@ saveFilePrompt(file,overwrite)
 Prompt to select a file.
 
 ```
-selectFile(multiple)
+selectFile(multiple=false)
 ```
-
-`multiple` is a boolean, default is `false`.
 
 ## Files
 
@@ -227,7 +232,7 @@ getFileDetail(file,detail)
 
 ### Get Parent Directory
 
-Get parent directory of `input`.
+Get the parent directory of `input`.
 
 ```
 getParentDirectory(input)
@@ -237,19 +242,17 @@ getParentDirectory(input)
 
 ### Open File
 
-Open given file in the default app, or prompt the user to pick a app to open the file in.
+Open the given file in the default app, or prompt the user to pick an app to open the file in.
 
 ```
-openFile(file,prompt)
+openFile(file,prompt=false)
 ```
-
-`prompt` is a boolean, the default value is `false`.
 
 ## Network
 
 ### Connect to Server
 
-Connect to server at `url`.
+Connect to the server at `url`.
 
 ```
 connectToServer(url)
@@ -322,13 +325,13 @@ splitPDF(pdf)
 Generate a QR code using `input` with error correction level `errorCorrection`.
 
 ```
-makeQRCode(input,errorCorrection)
+makeQRCode(input,errorCorrection="Medium")
 ```
 
 #### Error Correction Levels
 
 - Low
-- Medium
+- Medium _(default)_
 - Quartile
 - High
 
@@ -339,10 +342,8 @@ makeQRCode(input,errorCorrection)
 Convert `richText` into HTML.
 
 ```
-makeHTML(input,makeFullDocument)
+makeHTML(input,makeFullDocument=false)
 ```
-
-`makeFullDocument` is a boolean, default is `false`.
 
 ---
 
@@ -448,7 +449,7 @@ combineText(text,glue)
 
 ### Replace Text
 
-Find `find` in `subject` and replace with `replacement`.
+Find `find` in `subject` and replace it with `replacement`.
 
 ```
 replaceText(find,replacement,subject)
@@ -468,7 +469,7 @@ iReplaceText(find,replacement,subject)
 
 ### Regular Expression Replace Text
 
-Use a regular-expression to find `find` in `subject` and replace with `replacement`.
+Use a regular-expression to find `find` in `subject` and replace it with `replacement`.
 
 ```
 regReplaceText(expression,replacement,subject)
@@ -488,7 +489,7 @@ iRegReplaceText(expression,replacement,subject)
 
 ### Change Case to Uppercase
 
-Change case of `text` to UPPERCASE.
+Change the case of `text` to UPPERCASE.
 
 ```
 uppercase(text)
@@ -498,7 +499,7 @@ uppercase(text)
 
 ### Change Case to Lowercase
 
-Change case of `text` to lowercase.
+Change the case of `text` to lowercase.
 
 ```
 lowercase(text)
@@ -506,7 +507,7 @@ lowercase(text)
 
 ---
 
-### Captialize First Word
+### Capitalize First Word
 
 Capitalize the first word in `text`.
 
@@ -528,7 +529,7 @@ capitalizeAll(text)
 
 ### Change Case to Title Case
 
-Change case of `text` to Title Case.
+Change the case of `text` to Title Case.
 
 ```
 titleCase(text)
@@ -538,7 +539,7 @@ titleCase(text)
 
 ### Change Case to Alternating Case
 
-Change case of `text` to aLtErNaTiNg cAsE.
+Change the case of `text` to aLtErNaTiNg cAsE.
 
 ```
 alternateCase(text)
@@ -555,6 +556,28 @@ correctSpelling(text)
 ```
 
 ## Translation
+
+### Languages
+
+ - Arabic
+ - Mandarin Chinese (Mainland)
+ - Mandarin Chinese (Taiwan)
+ - Dutch
+ - English (UK)
+ - English (US)
+ - French
+ - German
+ - Indonesian
+ - Italian
+ - Japanese
+ - Korean
+ - Polish
+ - Portuguese (Brazil)
+ - Russian
+ - Spanish (Spain)
+ - Thai
+ - Turkish
+ - Vietnamese
 
 ### Translate Text From Detected Language
 
