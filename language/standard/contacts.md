@@ -22,7 +22,7 @@ nav_order: 2
 Get `property` from `contact`.
 
 ```
-getContactDetail(contact,property)
+getContactDetail(contact, property)
 ```
 
 #### Contact Properties
@@ -54,7 +54,7 @@ getContactDetail(contact,property)
 Filter `contacts` by `property` and sort by `sortOrder`, and limit to `limit` number of contacts.
 
 ```
-filterContacts(contacts,property,sortOrder,limit)
+filterContacts(contacts,sortByProperty="None",sortOrder="A to Z",limit=nil)
 ```
 
 #### Sort Orders
@@ -66,17 +66,17 @@ filterContacts(contacts,property,sortOrder,limit)
 
 ### Select Contact
 
-Prompt the user to select a contact.
+Prompt the user to select contact(s).
 
 ```
-selectContact()
+selectContact(multiple=false)
 ```
 
 ## Phone
 
 ### Phone Number
 
-Create phone number value of `number`. No limit on `number` arguments.
+Create a phone number value of `number`. No limit on `number` arguments.
 
 ```
 phoneNumber(...number)
