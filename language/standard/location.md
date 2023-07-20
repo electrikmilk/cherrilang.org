@@ -94,21 +94,26 @@ getHalfwayPoint(firstLocation,secondLocation)
 
 ### Get Current Weather
 
-Get current weather conditions for the users current location.
+Get current weather conditions, optionally at a specific location.
 
 ```
-getCurrentWeather()
+getCurrentWeather(location="Current Location")
 ```
 
 ---
 
-### Get Current Weather at Location
+### Get Weather Forecast
 
-Get current weather conditions at `location`.
+Get the weather forecast of `type`, optionally for a `location`.
 
 ```
-getCurrentWeatherAt(location)
+getWeatherForecast(type="Daily",location="Current Location")
 ```
+
+#### Forecast Types
+
+- Daily
+- Hourly
 
 ---
 
@@ -120,7 +125,7 @@ Get `detail` of `weather`.
 getWeatherDetail(weather,detail)
 ```
 
-#### Weather Details
+#### Weather details
 
 - Name
 - Air Pollutants
@@ -144,28 +149,3 @@ getWeatherDetail(weather,detail)
 - Temperature
 - Location
 - Date
-
----
-
-### Get Weather Forecast
-
-Get `type` of forecast for the users current location.
-
-```
-getWeatherForecast(type)
-```
-
-#### Forecast Types
-
-- Daily
-- Hourly
-
----
-
-### Get Weather Forecast at Location
-
-Get `type` of forecast for `location`.
-
-```
-getWeatherForecastAt(type,location)
-```
