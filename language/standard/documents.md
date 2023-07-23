@@ -24,7 +24,7 @@ nav_order: 3
 Extract files from archive `file`.
 
 ```
-extractArchive(file)
+extractArchive(variable file)
 ```
 
 ---
@@ -34,7 +34,7 @@ extractArchive(file)
 Create an archive of `files` named `name` in `format`.
 
 ```
-makeArchive(files,format=".zip",name="")
+makeArchive(variable files, enum ?format = ".zip", string ?name)
 ```
 
 #### Archive formats
@@ -55,8 +55,12 @@ makeArchive(files,format=".zip",name="")
 Create a disk image containing `contents`.
 
 ```
-makeDiskImage(name,contents,encrypt=false)
+makeDiskImage(string name, variable contents, boolean ?encrypt = false)
 ```
+
+*Minimum Version: iOS 15*
+
+*macOS only*
 
 ---
 
@@ -65,7 +69,7 @@ makeDiskImage(name,contents,encrypt=false)
 Create a disk image of a specific size containing `contents`.
 
 ```
-makeDiskImage(name,contents,size="1 GB",encrypt=false)
+makeSizedDiskImage(string name, variable contents, string ?size = "1 GB", boolean ?encrypt = false)
 ```
 
 #### Storage Size Units
@@ -80,6 +84,10 @@ makeDiskImage(name,contents,size="1 GB",encrypt=false)
 - ZB
 - YB
 
+*Minimum Version: iOS 15*
+
+*macOS only*
+
 ## Books
 
 ### Add to Books
@@ -87,17 +95,17 @@ makeDiskImage(name,contents,size="1 GB",encrypt=false)
 Add `input` to books. `input` is expected to be a PDF.
 
 ```
-addToBooks(input)
+addToBooks(variable input)
 ```
 
 ## Editing
 
 ### Markup
 
-Opens `input` in a markup editor.
+Opens `document` in a markup editor.
 
 ```
-markup(input)
+markup(variable document)
 ```
 
 ## File Storage
@@ -107,7 +115,7 @@ markup(input)
 Create a folder at `path` in the user's Shortcuts folder in their iCloud Drive.
 
 ```
-createFolder(path)
+createFolder(string path)
 ```
 
 ---
@@ -117,7 +125,7 @@ createFolder(path)
 Delete `files`, optionally immediately.
 
 ```
-deleteFiles(files,immediately=false)
+deleteFiles(variable input, boolean ?immediately = false)
 ```
 
 ---
@@ -127,17 +135,17 @@ deleteFiles(files,immediately=false)
 Get contents of `folder`.
 
 ```
-getFolderContents(folder,recursive=true)
+getFolderContents(variable folder, boolean ?recursive = true)
 ```
 
 ---
 
 ### Get File
 
-Get `path` in the users Shortcuts folder.
+Get `path` in the user's Shortcuts folder.
 
 ```
-getFile(path,errorIfNotFound=true)
+getFile(string path, boolean ?errorIfNotFound = true)
 ```
 
 ---
@@ -147,7 +155,7 @@ getFile(path,errorIfNotFound=true)
 Get `path` in `folder`.
 
 ```
-getFileFromFolder(folder,path,errorIfNotFound=true)
+getFileFromFolder(variable folder, string path, boolean ?errorIfNotFound = true)
 ```
 
 ---
@@ -157,7 +165,7 @@ getFileFromFolder(folder,path,errorIfNotFound=true)
 Get a link to `file`.
 
 ```
-getFileLink(file)
+getFileLink(variable file)
 ```
 
 ---
@@ -176,7 +184,9 @@ getSelectedFiles()
 
 Rename `file` to `newName`.
 
-rename(file,newName)
+```
+rename(variable file, string newName)
+```
 
 ---
 
@@ -185,7 +195,7 @@ rename(file,newName)
 Reveal `files` in Finder.
 
 ```
-reveal(files)
+reveal(variable files)
 ```
 
 ---
@@ -195,7 +205,7 @@ reveal(files)
 Save `file` to `path`.
 
 ```
-saveFile(file,path,overwrite=false)
+saveFile(string path, variable content, boolean ?overwrite = false)
 ```
 
 ---
@@ -205,7 +215,7 @@ saveFile(file,path,overwrite=false)
 Prompt to save `file`.
 
 ```
-saveFilePrompt(file,overwrite=false)
+saveFilePrompt(variable file, boolean ?overwrite = false)
 ```
 
 ---
@@ -215,7 +225,7 @@ saveFilePrompt(file,overwrite=false)
 Prompt to select a file.
 
 ```
-selectFile(multiple=false)
+selectFile(boolean ?multiple = false)
 ```
 
 ## Files
@@ -225,7 +235,7 @@ selectFile(multiple=false)
 Get `detail` of `file`.
 
 ```
-getFileDetail(file,detail)
+getFileDetail(variable file, string detail)
 ```
 
 ---
@@ -235,7 +245,7 @@ getFileDetail(file,detail)
 Get the parent directory of `input`.
 
 ```
-getParentDirectory(input)
+getParentDirectory(variable input)
 ```
 
 ---
@@ -245,7 +255,7 @@ getParentDirectory(input)
 Open the given file in the default app, or prompt the user to pick an app to open the file in.
 
 ```
-openFile(file,prompt=false)
+openFile(variable file, boolean ?prompt = false)
 ```
 
 ## Network
@@ -255,7 +265,7 @@ openFile(file,prompt=false)
 Connect to the server at `url`.
 
 ```
-connectToServer(url)
+connectToServer(string url)
 ```
 
 ## Notes
@@ -265,7 +275,7 @@ connectToServer(url)
 Append `input` to `note`.
 
 ```
-appendNote(note,input)
+appendNote(string note, string input)
 ```
 
 ---
@@ -275,7 +285,7 @@ appendNote(note,input)
 Show `note`.
 
 ```
-showNote(note)
+showNote(variable note)
 ```
 
 ## Previewing
@@ -285,7 +295,7 @@ showNote(note)
 Preview `input`.
 
 ```
-quicklook(input)
+quicklook(variable input)
 ```
 
 ---
@@ -295,17 +305,17 @@ quicklook(input)
 Show `input` in a dialog.
 
 ```
-show(input)
+show(string input)
 ```
 
 ## Printing
 
 ### Print
 
-Print `input`.
+Prompt the user to physically print `input`.
 
 ```
-print(input)
+print(variable input)
 ```
 
 ---
@@ -315,7 +325,7 @@ print(input)
 Split `pdf` into pages.
 
 ```
-splitPDF(pdf)
+splitPDF(variable pdf)
 ```
 
 ## QR Codes
@@ -325,13 +335,13 @@ splitPDF(pdf)
 Generate a QR code using `input` with error correction level `errorCorrection`.
 
 ```
-makeQRCode(input,errorCorrection="Medium")
+makeQRCode(string input, enum ?errorCorrection = "Medium")
 ```
 
 #### Error Correction Levels
 
 - Low
-- Medium _(default)_
+- Medium
 - Quartile
 - High
 
@@ -342,7 +352,7 @@ makeQRCode(input,errorCorrection="Medium")
 Convert `richText` into HTML.
 
 ```
-makeHTML(input,makeFullDocument=false)
+makeHTML(variable input, boolean ?makeFullDocument = false)
 ```
 
 ---
@@ -352,7 +362,7 @@ makeHTML(input,makeFullDocument=false)
 Convert `richText` into Markdown.
 
 ```
-makeMarkdown(richText)
+makeMarkdown(variable richText)
 ```
 
 ---
@@ -362,7 +372,7 @@ makeMarkdown(richText)
 Get rich text from `html`.
 
 ```
-getRichTextFromHTML(html)
+getRichTextFromHTML(variable html)
 ```
 
 ---
@@ -372,7 +382,7 @@ getRichTextFromHTML(html)
 Get rich text from `markdown`.
 
 ```
-getRichTextFromMarkdown(markdown)
+getRichTextFromMarkdown(variable markdown)
 ```
 
 ## Text
@@ -382,7 +392,7 @@ getRichTextFromMarkdown(markdown)
 Get text from `image`.
 
 ```
-getTextFromImage(image)
+getTextFromImage(variable image)
 ```
 
 ---
@@ -392,7 +402,7 @@ getTextFromImage(image)
 Get the emoji name of `emoji`.
 
 ```
-getEmojiName(emoji)
+getEmojiName(string emoji)
 ```
 
 ---
@@ -402,7 +412,7 @@ getEmojiName(emoji)
 Get text from `input`.
 
 ```
-getText(input)
+getText(variable input)
 ```
 
 ---
@@ -412,7 +422,7 @@ getText(input)
 Show the definition of `word`.
 
 ```
-define(word)
+define(string word)
 ```
 
 ---
@@ -422,7 +432,7 @@ define(word)
 Get group at `index` in `matches`.
 
 ```
-matchedTextGroupIndex(matches,index)
+matchedTextGroupIndex(variable matches, integer index)
 ```
 
 ## Text Editing
@@ -432,7 +442,7 @@ matchedTextGroupIndex(matches,index)
 Split `text` by `separator`.
 
 ```
-splitText(text,separator)
+splitText(string text, string separator)
 ```
 
 ---
@@ -442,7 +452,7 @@ splitText(text,separator)
 Combine `text` with `glue`.
 
 ```
-combineText(text,glue)
+combineText(string text, string glue)
 ```
 
 ---
@@ -452,7 +462,7 @@ combineText(text,glue)
 Find `find` in `subject` and replace it with `replacement`.
 
 ```
-replaceText(find,replacement,subject)
+replaceText(string find, string replacement, string subject)
 ```
 
 ---
@@ -462,17 +472,17 @@ replaceText(find,replacement,subject)
 Case-insensitive find `find` in `subject` and replace with `replacement`.
 
 ```
-iReplaceText(find,replacement,subject)
+iReplaceText(string find, string replacement, string subject)
 ```
 
 ---
 
 ### Regular Expression Replace Text
 
-Use a regular-expression to find `find` in `subject` and replace it with `replacement`.
+Use a regular expression to find `find` in `subject` and replace it with `replacement`.
 
 ```
-regReplaceText(expression,replacement,subject)
+regReplaceText(string expression, string replacement, string subject)
 ```
 
 ---
@@ -482,7 +492,7 @@ regReplaceText(expression,replacement,subject)
 Use a case-insensitive regular-expression to find `find` in `subject` and replace with `replacement`.
 
 ```
-iRegReplaceText(expression,replacement,subject)
+iRegReplaceText(string expression, string replacement, string subject)
 ```
 
 ---
@@ -492,7 +502,7 @@ iRegReplaceText(expression,replacement,subject)
 Change the case of `text` to UPPERCASE.
 
 ```
-uppercase(text)
+uppercase(string text)
 ```
 
 ---
@@ -502,7 +512,7 @@ uppercase(text)
 Change the case of `text` to lowercase.
 
 ```
-lowercase(text)
+lowercase(string text)
 ```
 
 ---
@@ -512,7 +522,7 @@ lowercase(text)
 Capitalize the first word in `text`.
 
 ```
-capitalize(text)
+capitalize(string text)
 ```
 
 ---
@@ -522,7 +532,7 @@ capitalize(text)
 Capitalize all the words in `text`.
 
 ```
-capitalizeAll(text)
+capitalizeAll(string text)
 ```
 
 ---
@@ -532,7 +542,7 @@ capitalizeAll(text)
 Change the case of `text` to Title Case.
 
 ```
-titleCase(text)
+titleCase(string text)
 ```
 
 ---
@@ -542,7 +552,7 @@ titleCase(text)
 Change the case of `text` to aLtErNaTiNg cAsE.
 
 ```
-alternateCase(text)
+alternateCase(string text)
 ```
 
 ---
@@ -552,7 +562,7 @@ alternateCase(text)
 Correct the spelling of `text`.
 
 ```
-correctSpelling(text)
+correctSpelling(string text)
 ```
 
 ## Translation
@@ -584,7 +594,7 @@ correctSpelling(text)
 Translate `text` from the detected language of `text` to `to`.
 
 ```
-translate(text,to)
+translate(string text, string to)
 ```
 
 ---
@@ -594,7 +604,7 @@ translate(text,to)
 Translate `text` from `from` to `to`.
 
 ```
-translateFrom(text,from,to)
+translateFrom(string text, string from, string to)
 ```
 
 ---
@@ -604,5 +614,5 @@ translateFrom(text,from,to)
 Detect the language of `text`.
 
 ```
-detectLanguage(text)
+detectLanguage(string text)
 ```
