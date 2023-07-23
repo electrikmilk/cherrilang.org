@@ -34,7 +34,7 @@ getClipboard()
 Copy `input` to the clipboard. `local` is a boolean that is `false` by default. `expire` is when the information should leave the clipboard if it hasn't already and is a date as a string (e.g. Today at 3pm).
 
 ```
-copyToClipboard(input,local=false,expire="")
+copyToClipboard(variable value, boolean ?local = false, string ?expire)
 ```
 
 ---
@@ -46,7 +46,7 @@ copyToClipboard(input,local=false,expire="")
 Prompt to AirDrop `input`.
 
 ```
-airdrop(input)
+airdrop(variable input)
 ```
 
 ---
@@ -56,5 +56,5 @@ airdrop(input)
 Share `input` via the Share Sheet.
 
 ```
-share(input)
+share(string input)
 ```
