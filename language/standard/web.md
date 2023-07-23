@@ -24,7 +24,7 @@ nav_order: 8
 Get article from `webpage` in article.
 
 ```
-getArticle(webpage)
+getArticle(string webpage)
 ```
 
 ---
@@ -34,7 +34,7 @@ getArticle(webpage)
 Get `detail` from `article`.
 
 ```
-getArticleDetail(article,detail)
+getArticleDetail(variable article, string detail)
 ```
 
 ## Giphy
@@ -44,7 +44,7 @@ getArticleDetail(article,detail)
 Search Giphy for `query`.
 
 ```
-searchGiphy(query)
+searchGiphy(string query)
 ```
 
 ---
@@ -54,7 +54,7 @@ searchGiphy(query)
 Get `gifs` number of gifs from Giphy for `query`.
 
 ```
-getGifs(query,gifs)
+getGifs(string query, integer ?gifs = 1)
 ```
 
 ## RSS
@@ -64,7 +64,7 @@ getGifs(query,gifs)
 Get `items` number of items from RSS feed at `url`.
 
 ```
-getRSS(items,url)
+getRSS(integer items, string url)
 ```
 
 ---
@@ -74,7 +74,7 @@ getRSS(items,url)
 Get RSS feeds from urls.
 
 ```
-getRSSFeeds(urls)
+getRSSFeeds(string urls)
 ```
 
 ## Safari
@@ -84,7 +84,7 @@ getRSSFeeds(urls)
 Add `url` to the users reading list.
 
 ```
-addToReadingList(url)
+addToReadingList(string url)
 ```
 
 ---
@@ -104,7 +104,7 @@ getCurrentURL()
 Get `detail` of `webpage`.
 
 ```
-getWebPageDetail(webpage,detail)
+getWebPageDetail(variable webpage, enum detail)
 ```
 
 #### Details
@@ -118,10 +118,10 @@ getWebPageDetail(webpage,detail)
 
 ### Open URLs
 
-Open `urls` in default browser.
+Open `url` in default browser. Accepts a variable containing multiple URLs.
 
 ```
-openURLs(urls)
+openURL(string url)
 ```
 
 ---
