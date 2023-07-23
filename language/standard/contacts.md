@@ -22,7 +22,7 @@ nav_order: 2
 Get `property` from `contact`.
 
 ```
-getContactDetail(contact, property)
+getContactDetail(variable contact, enum property)
 ```
 
 #### Contact Properties
@@ -54,7 +54,7 @@ getContactDetail(contact, property)
 Filter `contacts` by `property` and sort by `sortOrder`, and limit to `limit` number of contacts.
 
 ```
-filterContacts(contacts, sortByProperty="None", sortOrder="A to Z", limit=nil)
+filterContacts(variable contacts, enum ?sortByProperty, enum ?sortOrder = "A to Z", integer ?limit)
 ```
 
 #### Sort Orders
@@ -69,7 +69,7 @@ filterContacts(contacts, sortByProperty="None", sortOrder="A to Z", limit=nil)
 Prompt the user to select contact(s).
 
 ```
-selectContact(multiple=false)
+selectContact(boolean ?multiple = false)
 ```
 
 ## Phone
@@ -79,7 +79,7 @@ selectContact(multiple=false)
 Create a phone number value of `number`. No limit on `number` arguments.
 
 ```
-phoneNumber(...number)
+phoneNumber(string ...number)
 ```
 
 ---
@@ -99,7 +99,7 @@ selectPhoneNumber()
 Create email address value of `email`. No limit on `email` arguments.
 
 ```
-emailAddress(...email)
+emailAddress(string ...email)
 ```
 
 ---
