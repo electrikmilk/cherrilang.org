@@ -131,7 +131,7 @@ openURL(string url)
 Run `script` on currently active tab as JavaScript.
 
 ```
-runJavaScriptOnWebpage(script)
+runJavaScriptOnWebpage(string script)
 ```
 
 ---
@@ -141,7 +141,7 @@ runJavaScriptOnWebpage(script)
 Search the web for `query` using `engine`.
 
 ```
-searchWeb(engine,query)
+searchWeb(enum engine, string query)
 ```
 
 #### Engines
@@ -160,10 +160,10 @@ searchWeb(engine,query)
 
 ### Show Webpage
 
-Show `url`. `urlReader` is a boolean, the default is `true`.
+Show the webpage at `url`, optionally with Safari reader enabled.
 
 ```
-showWebpage(url,useReader)
+showWebpage(string url, boolean ?useReader)
 ```
 
 ## URLs
@@ -173,7 +173,7 @@ showWebpage(url,useReader)
 Expand `url`. This is generally used for short urls.
 
 ```
-expandURL(url)
+expandURL(string url)
 ```
 
 ---
@@ -183,7 +183,7 @@ expandURL(url)
 Get `detail` from `url`.
 
 ```
-getURLDetail(url,detail)
+getURLDetail(string url, enum detail)
 ```
 
 #### Details
@@ -201,10 +201,10 @@ getURLDetail(url,detail)
 
 ### Get URLs from Input
 
-Get urls from `input`.
+Get URLs from `input`.
 
 ```
-getURLs(input)
+getURLs(variable input)
 ```
 
 ---
@@ -214,7 +214,7 @@ getURLs(input)
 Create url value of `url`. No limit on `url` arguments.
 
 ```
-url(...url)
+url(string ...url)
 ```
 
 **Example Usage**
@@ -230,7 +230,7 @@ url("https://cherrilang.org","https://routinehub.co")
 Download contents of `url`.
 
 ```
-downloadURL(url)
+downloadURL(string url, dictionary ?headers)
 ```
 
 ---
@@ -239,34 +239,36 @@ downloadURL(url)
 
 Send a `method` request to `url` with `body`.
 
-`body`and `headers` are optional.
+```
+formRequest(string url, enum ?method = "GET", variable ?body, dictionary ?headers)
+```
 
-```
-formRequest(url,method,body,headers)
-```
+#### Methods:
+
+- GET
+- POST
+- PUT
+- PATCH
+- DELETE
 
 ---
 
 ### JSON Request
 
-Send a `method` request to `url` with `body`.
-
-`body`and `headers` are optional.
+Send a `method` JSON request to `url` with `body`.
 
 ```
-jsonRequest(url,method,body,headers)
+jsonRequest(string url, enum ?method = "GET", variable ?body, dictionary ?headers)
 ```
 
 ---
 
 ### File Request
 
-Send a `method` request to `url` with `body`.
-
-`body`and `headers` are optional.
+Send a `method` file request to `url` with `body`.
 
 ```
-fileRequest(url,method,body,headers)
+fileRequest(string url, enum ?method = "GET", variable ?body, dictionary ?headers)
 ```
 
 ---
@@ -276,7 +278,7 @@ fileRequest(url,method,body,headers)
 Get contents of webpage at `url`.
 
 ```
-getWebpageContents(url)
+getWebpageContents(string url)
 ```
 
 ---
@@ -286,5 +288,5 @@ getWebpageContents(url)
 Get headers for `url`.
 
 ```
-getURLHeaders(url)
+getURLHeaders(string url)
 ```
