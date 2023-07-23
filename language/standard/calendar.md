@@ -24,7 +24,7 @@ nav_order: 1
 Create a calendar with `name`.
 
 ```
-addCalendar(name)
+addCalendar(string name)
 ```
 
 ## Dates
@@ -34,7 +34,13 @@ addCalendar(name)
 Create date value from `date`.
 
 ```
-date(date)
+date(string date)
+```
+
+#### Example Usage
+
+```
+date("October 5, 2022")
 ```
 
 ---
@@ -44,29 +50,29 @@ date(date)
 Add to date by units of time.
 
 ```
-addSeconds(date,magnitude)
-addMinutes(date,magnitude)
-addHours(date,magnitude)
-addDays(date,magnitude)
-addWeeks(date,magnitude)
-addMonths(date,magnitude)
-addYears(date,magnitude)
+addSeconds(string date, integer magnitude)
+addMinutes(string date, integer magnitude)
+addHours(string date, integer magnitude)
+addDays(string date, integer magnitude)
+addWeeks(string date, integer magnitude)
+addMonths(string date, integer magnitude)
+addYears(string date, integer magnitude)
 ```
 
 ---
 
 ### Subtract from Date
 
-Subtract from date by units of time.
+Subtract from the date by units of time.
 
 ```
-subtractSeconds(date,magnitude)
-subtractMinutes(date,magnitude)
-subtractHours(date,magnitude)
-subtractDays(date,magnitude)
-subtractWeeks(date,magnitude)
-subtractMonths(date,magnitude)
-subtractYears(date,magnitude)
+subtractSeconds(string date, integer magnitude)
+subtractMinutes(string date, integer magnitude)
+subtractHours(string date, integer magnitude)
+subtractDays(string date, integer magnitude)
+subtractWeeks(string date, integer magnitude)
+subtractMonths(string date, integer magnitude)
+subtractYears(string date, integer magnitude)
 ```
 
 ---
@@ -76,9 +82,9 @@ subtractYears(date,magnitude)
 Get various starting units of date.
 
 ```
-getStartMinute(date)
-getStartHour(date)
-getStartWeek(date)
-getStartMonth(date)
-getStartYear(date)
+getStartMinute(string date)
+getStartHour(string date)
+getStartWeek(string date)
+getStartMonth(string date)
+getStartYear(string date)
 ```
