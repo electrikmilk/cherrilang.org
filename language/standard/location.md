@@ -32,7 +32,7 @@ Get the users current location.
 Get `detail` of `location`.
 
 ```
-getLocationDetail(location,detail)
+getLocationDetail(variable location, enum detail)
 ```
 
 #### Location Details
@@ -57,7 +57,7 @@ getLocationDetail(location,detail)
 Get addresses from `input`.
 
 ```
-getAddresses(input)
+getAddresses(variable input)
 ```
 
 ---
@@ -67,7 +67,7 @@ getAddresses(input)
 Create a location value from a specific street address.
 
 ```
-streetAddress(address1,address2,city,state,country,zip)
+streetAddress(string addressLine2, string addressLine2, string city, string state, string country, integer zipCode)
 ```
 
 ## Maps
@@ -77,7 +77,7 @@ streetAddress(address1,address2,city,state,country,zip)
 Open `location` in the default maps app.
 
 ```
-openInMaps(location)
+openInMaps(variable location)
 ```
 
 ## Routing
@@ -87,7 +87,7 @@ openInMaps(location)
 Get the halfway point between `firstLocation` and `secondLocation`.
 
 ```
-getHalfwayPoint(firstLocation,secondLocation)
+getHalfwayPoint(variable firstLocation, variable secondLocation)
 ```
 
 ## Weather
@@ -97,7 +97,7 @@ getHalfwayPoint(firstLocation,secondLocation)
 Get current weather conditions, optionally at a specific location.
 
 ```
-getCurrentWeather(location="Current Location")
+getCurrentWeather(variable ?location = "Current Location")
 ```
 
 ---
@@ -107,7 +107,7 @@ getCurrentWeather(location="Current Location")
 Get the weather forecast of `type`, optionally for a `location`.
 
 ```
-getWeatherForecast(type="Daily",location="Current Location")
+getWeatherForecast(enum ?type = "Daily", variable ?location = "Current Location")
 ```
 
 #### Forecast Types
@@ -122,7 +122,7 @@ getWeatherForecast(type="Daily",location="Current Location")
 Get `detail` of `weather`.
 
 ```
-getWeatherDetail(weather,detail)
+getWeatherDetail(variable weather, enum detail)
 ```
 
 #### Weather details
