@@ -64,7 +64,7 @@ hideAllApps(string ...?except)
 Open app with `appId`.
 
 ```
-openApp(appId)
+openApp(string appId)
 ```
 
 _Contributed by [JosephShenton](https://github.com/JosephShenton)_.
@@ -76,7 +76,7 @@ _Contributed by [JosephShenton](https://github.com/JosephShenton)_.
 Quit app with `appId`.
 
 ```
-quitApp(appId)
+quitApp(string appId)
 ```
 
 ---
@@ -96,7 +96,7 @@ quitAllApps(string ...?except)
 Quit app with `appId` without asking to save changes. For example `com.apple.facetime`.
 
 ```
-killApp(appId)
+killApp(string appId)
 ```
 
 ---
@@ -106,10 +106,10 @@ killApp(appId)
 {: .warning }
 This will quit all of the apps on the device without asking to save changes!
 
-Quit all open apps, **without** asking to save changes. `except` is an enumerable of `appId`s, for example `com.apple.DocumentsApp`.
+Quit all open apps, **without** asking to save changes.
 
 ```
-killAllApps(...except)
+killAllApps(string ...?except)
 ```
 
 ---
@@ -119,16 +119,19 @@ killAllApps(...except)
 Split two apps on the device screen.
 
 ```
-splitApps(firstAppId,secondAppId,ratio)
+splitApps(string firstAppID, string secondAppID, enum ?ratio = "half")
 ```
 
-`ratio` is an optional enumerable that takes the string value "half" or "thirdByTwo". The default value is "half".
+#### Ratios
+
+- `half`
+- `thirdByTwo`
 
 ## Content
 
 ### Get On-Screen Content
 
-Get content on device screen.
+Get content on the device screen.
 
 ```
 getOnScreenContent()
@@ -146,7 +149,7 @@ These control flow actions have been abstracted into statements: [Choose From Me
 Stop and output `output`. Do nothing if there is nowhere to output.
 
 ```
-output(output)
+output(string output)
 ```
 
 ---
@@ -156,7 +159,7 @@ output(output)
 Stop and output `output`. Respond with `response` if there is nowhere to output.
 
 ```
-mustOutput(output,response)
+mustOutput(string output, string response)
 ```
 
 ---
@@ -166,17 +169,17 @@ mustOutput(output,response)
 Stop and output `output`. Copy to the clipboard if there is nowhere to output.
 
 ```
-outputOrClipboard(output)
+outputOrClipboard(variable output)
 ```
 
 ---
 
 ### Wait
 
-Wait `n` number of seconds then proceed.
+Wait a number of seconds then proceed.
 
 ```
-wait(n)
+wait(integer seconds)
 ```
 
 ---
@@ -193,7 +196,7 @@ waitToReturn()
 
 ### Get Battery Level
 
-Get the current battery level of device.
+Get the current battery level of the device.
 
 ```
 getBatteryLevel()
@@ -203,7 +206,7 @@ getBatteryLevel()
 
 ### Battery Is Charging
 
-Returns boolean based on if the device is charging.
+Returns a boolean based on if the device is charging.
 
 ```
 isCharging()
@@ -215,7 +218,7 @@ _**Minimum iOS version:** 16.2_
 
 ### Connected to Charger
 
-Returns boolean based on if device is connected to a charger.
+Returns a boolean based on if the device is connected to a charger.
 
 ```
 connectedToCharger()
@@ -250,7 +253,7 @@ DNDOff()
 Get `detail` of device.
 
 ```
-getDeviceDetail(detail)
+getDeviceDetail(enum detail)
 ```
 
 #### Device Details
@@ -273,7 +276,7 @@ getDeviceDetail(detail)
 Toggles system appearance from light to dark, or dark to light.
 
 ```
-toggleApperance()
+toggleAppearance()
 ```
 
 ---
@@ -313,27 +316,27 @@ toggleBluetooth()
 Set device bluetooth on or off.
 
 ```
-setBluetooth(status)
+setBluetooth(boolean status)
 ```
 
 ---
 
 ### Set Brightness
 
-Set display brightness to `level`.
+Set display brightness (0-100).
 
 ```
-setBrightness(level)
+setBrightness(integer brightness)
 ```
 
 ---
 
 ### Set Volume
 
-Set device volume to `level`.
+Set device volume (0-100).
 
 ```
-setVolume(level)
+setVolume(integer volume)
 ```
 
 --- 
@@ -346,7 +349,7 @@ Start screen saver on Mac.
 startScreensaver()
 ```
 
-_**Note:** Mac-only action_
+*macOS only*
 
 ## Dictionaries
 
@@ -360,7 +363,7 @@ The dictionary action is abtracted into a variable value, see [Dictionary](../va
 Get dictionary from `input`.
 
 ```
-getDictionary(input)
+getDictionary(variable input)
 ```
 
 ---
@@ -370,7 +373,7 @@ getDictionary(input)
 Get only the values from `dictionary`.
 
 ```
-getValues(dictionary)
+getValues(dictionary dictionary)
 ```
 
 ---
@@ -380,7 +383,7 @@ getValues(dictionary)
 Get only the keys from `dictionary`.
 
 ```
-getKeys(dictionary)
+getKeys(dictionary dictionary)
 ```
 
 ---
@@ -390,7 +393,7 @@ getKeys(dictionary)
 Get the value of `key` in `dictionary`.
 
 ```
-getValue(dictionary,key)
+getValue(dictionary dictionary, string key)
 ```
 
 ---
@@ -400,7 +403,7 @@ getValue(dictionary,key)
 Set the value of `key` to `value` in `dictionary`.
 
 ```
-setValue(key,value,dictionary)
+setValue(variable dictionary, string key, string value)
 ```
 
 ## Files
@@ -410,7 +413,7 @@ setValue(key,value,dictionary)
 Base 64 encode `input`.
 
 ```
-base64Encode(input)
+base64Encode(variable encodeInput)
 ```
 
 ---
@@ -420,7 +423,7 @@ base64Encode(input)
 Base 64 decode `input`.
 
 ```
-base64Decode(input)
+base64Decode(variable input)
 ```
 
 ---
@@ -430,7 +433,7 @@ base64Decode(input)
 Generate a hash of `type` using `input`.
 
 ```
-hash(input,type)
+hash(variable input, enum ?type = "MD5")
 ```
 
 #### Hash Types
@@ -447,7 +450,7 @@ hash(input,type)
 Returns the number of items in `input`.
 
 ```
-countItems(input)
+count(variable input)
 ```
 
 ---
@@ -457,7 +460,7 @@ countItems(input)
 Returns the number of characters in `input`.
 
 ```
-countChars(input)
+countChars(variable input)
 ```
 
 ---
@@ -467,7 +470,7 @@ countChars(input)
 Returns the number of words in `input`.
 
 ```
-countWords(input)
+countWords(variable input)
 ```
 
 ---
@@ -477,7 +480,7 @@ countWords(input)
 Returns the number of sentences in `input`.
 
 ```
-countSentences(input)
+countSentences(variable input)
 ```
 
 ---
@@ -487,7 +490,7 @@ countSentences(input)
 Returns the number of lines in `input`.
 
 ```
-countLines(input)
+countLines(variable input)
 ```
 
 ---
@@ -497,7 +500,7 @@ countLines(input)
 Get the name of `input`.
 
 ```
-getName(input)
+getName(variable item)
 ```
 
 ---
@@ -507,17 +510,17 @@ getName(input)
 Get the type of `input`.
 
 ```
-typeOf(input)
+typeOf(variable input)
 ```
 
 ---
 
 ### Set Name
 
-Set the name of `input`. `includeFileExtension` is a boolean.
+Set the name of `item`.
 
 ```
-setName(input,name,includeFileExtension)
+setName(variable item, string name, boolean ?includeFileExtension = false)
 ```
 
 ### Content Graph
@@ -525,17 +528,17 @@ setName(input,name,includeFileExtension)
 Show `input` as graph.
 
 ```
-contentGraph(input)
+contentGraph(variable input)
 ```
 
 ## Lists
 
 ### Choose from List
 
-Prompt the user with `prompt` to choose an item from `list`. Returns the item chosen. `selectMultiple` is an optional boolean, the default value is `false`.
+Prompt the user to choose an item from `list`, optionally with `prompt` . Returns the item(s) chosen.
 
 ```
-chooseFromList(list,prompt,selectMultiple)
+chooseFromList(variable list, string ?prompt, boolean ?selectMultiple = false)
 ```
 
 ---
@@ -545,7 +548,7 @@ chooseFromList(list,prompt,selectMultiple)
 Get the first item from `list`.
 
 ```
-firstListItem(list)
+firstListItem(variable list)
 ```
 
 ---
@@ -555,7 +558,7 @@ firstListItem(list)
 Get the last item from `list`.
 
 ```
-lastListItem(list)
+lastListItem(variable list)
 ```
 
 ---
@@ -565,7 +568,7 @@ lastListItem(list)
 Get a random item from `list`.
 
 ```
-randomListItem(list)
+randomListItem(variable list)
 ```
 
 ---
@@ -575,7 +578,7 @@ randomListItem(list)
 Get item at `index` from `list`. Counting in Shortcuts starts at `1`.
 
 ```
-getListItem(list,index)
+getListItem(variable list, integer index)
 ```
 
 ---
@@ -585,30 +588,30 @@ getListItem(list,index)
 Get items in range of `start` to `end`.
 
 ```
-getListItems(list,start,end)
+getListItems(variable list, integer start, integer end)
 ```
 
 ---
 
 ### List
 
-Store a list of `item` in a variable. No limit on `item` arguments.
+Create a list of items. The `listItem` argument has no limit.
 
-```ruby
-@myList = list(...item)
+```
+list(string ...listItem)
 ```
 
 ## Math
 
 ### Calculate
 
-Complex calculation using `input`.
+Perform a complex calculation.
 
 ```
-calculate(operation,operandOne,operandTwo)
+calculate(enum operation, integer operandOne, integer ?operandTwo)
 ```
 
-The `operandTwo` is optional, as not all of the operations require a second operand.
+The `operandTwo` is optional as not all of the operations require a second operand.
 
 #### Calculation Operations
 
@@ -627,11 +630,13 @@ The `operandTwo` is optional, as not all of the operations require a second oper
 - tan(x)
 - abs(x)
 
+---
+
 ### Calculate Expression
 
-To do this, create a variable and set an expression as the value:
+To do this, create a variable and set a basic mathematical expression (+,-,*,/,%) as the value.
 
-```ruby
+```
 @expression = 25 * 6 + (5 / 6) % 2
 ```
 
@@ -642,7 +647,7 @@ To do this, create a variable and set an expression as the value:
 Calculate statistic of `operation` on `input`.
 
 ```
-statistic(operation,input)
+statistic(enum operation, variable input)
 ```
 
 #### Statistics Operations
@@ -660,13 +665,27 @@ statistic(operation,input)
 
 ### Rounding
 
-- `round(number,roundTo)` - Normal
-- `roundUp(number,roundTo)` - Always Round Up
-- `roundDown(number,roundTo)` - Always Round Down
-
 Round `number` to `roundTo`.
 
-Shorthands for `roundTo` value:
+Normal
+
+```
+round(integer number, string roundTo)
+```
+
+Always Round Up
+
+```
+ceil(integer number, string roundTo)
+```
+
+Always Round Down
+
+```
+floor(integer number, string roundTo)
+```
+
+#### Shorthands for `roundTo`:
 
 - `1` - Ones Place
 - `10` - Tens Place
@@ -683,7 +702,7 @@ Shorthands for `roundTo` value:
 Create a measurement.
 
 ```
-measurement(magnitude,unitType,unit)
+measurement(string magnitude, enum unitType, string unit)
 ```
 
 Example:
@@ -894,7 +913,7 @@ measurement("2000","Information Storage","MB")
 Convert `measurement` to `unitType` in `unit`.
 
 ```ruby
-convertMeasurement(measurement,unitType,unit)
+convertMeasurement(variable measurement, enum unitType, string unit)
 ```
 
 ## Network
@@ -909,10 +928,10 @@ isOnline()
 
 ### Get Local IP
 
-Get the local IP of the user of `type`. `type` is optional, default is "IPv4".
+Get the local IP of the user.
 
 ```
-getLocalIP(type)
+getLocalIP(enum ?type = "IPv4")
 ```
 
 #### IP Types
@@ -924,10 +943,10 @@ getLocalIP(type)
 
 ### Get External IP
 
-Get the external IP of the user of `type`. `type` is optional, default is "IPv4".
+Get the external IP of the user.
 
 ```
-getExternalIP(type)
+getExternalIP(enum ?type = "IPv4")
 ```
 
 ---
@@ -937,7 +956,7 @@ getExternalIP(type)
 Turn cellular data on or off.
 
 ```
-setCellularData(bool)
+setCellularData(boolean status)
 ```
 
 ---
@@ -947,7 +966,7 @@ setCellularData(bool)
 Turn cellular voice and data on or off.
 
 ```
-setCellularVoice(bool)
+setCellularVoice(boolean status)
 ```
 
 ---
@@ -957,30 +976,15 @@ setCellularVoice(bool)
 Turn WiFi on or off.
 
 ```
-setWifi(bool)
+setWifi(boolean status)
 ```
 
 ## No-ops (noonce)
 
 ### Comments
 
-#### Single line comment
-
-```js
-// This is a single-line comment.
-```
-
-#### Multiline comment
-
-```js
-/*
-This is
-a multi-line
-comment.
-*/
-```
-
-Either type of comment results in a comment action.
+{: .note }
+These comment actions have been abstracted into programming language style comments: [Comments](../comments)
 
 ---
 
