@@ -19,15 +19,9 @@ nav_order: 6
 
 ## Apps
 
-### Hide App
+### App ID Shorthands
 
-Hide app with `appId`. For example `com.apple.AppStore`.
-
-```
-hideApp(appId)
-```
-
-#### App ID Shorthands
+Shorthands are built into any of the following actions accepting App IDs.
 
 - `appstore`
 - `files`
@@ -45,21 +39,29 @@ hideApp(appId)
 - `health`
 - `photos`
 
+### Hide App
+
+Hide app with `appId`.
+
+```
+hideApp(string appId)
+```
+
 ---
 
 ### Hide All Apps
 
-Hide all open apps. `except` is an enumerable of `appId`s, for example `com.apple.DocumentsApp`.
+Hide all open apps.
 
 ```
-hideAllApps(...except)
+hideAllApps(string ...?except)
 ```
 
 ---
 
 ### Open App
 
-Open app with `appId`. For example `com.apple.AppStore`.
+Open app with `appId`.
 
 ```
 openApp(appId)
@@ -71,7 +73,7 @@ _Contributed by [JosephShenton](https://github.com/JosephShenton)_.
 
 ### Quit App
 
-Quit app with `appId`. For example `com.apple.DocumentsApp`.
+Quit app with `appId`.
 
 ```
 quitApp(appId)
@@ -81,10 +83,10 @@ quitApp(appId)
 
 ### Quit All Apps
 
-Quit all open apps, asking to save changes. `except` is an enumerable of `appId`s, for example `com.apple.DocumentsApp`.
+Quit all open apps, asking to save changes.
 
 ```
-quitAllApps(...except)
+quitAllApps(string ...?except)
 ```
 
 ---
