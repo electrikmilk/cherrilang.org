@@ -984,7 +984,7 @@ setWifi(boolean status)
 ### Comments
 
 {: .note }
-These comment actions have been abstracted into programming language style comments: [Comments](../comments)
+Comment actions have been abstracted into programming language style comments: [Comments](../comments)
 
 ---
 
