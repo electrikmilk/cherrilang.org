@@ -95,7 +95,7 @@ quitAllApps(string ...?except)
 
 ### Kill App
 
-Quit app with `appId` without asking to save changes. For example `com.apple.facetime`.
+Quit an app with `appId` without asking to save changes.
 
 ```
 killApp(string appId)
@@ -232,7 +232,7 @@ _**Minimum iOS version:** 16.2_
 
 ### Turn On Do Not Disturb
 
-Turn on Do Not Disturb focus mode on the device.
+Turn on the Do Not Disturb focus mode on the device.
 
 ```
 DNDOn()
@@ -242,7 +242,7 @@ DNDOn()
 
 ### Turn Off Do Not Disturb
 
-Turn off Do Not Disturb focus mode on the device.
+Turn off the Do Not Disturb focus mode on the device.
 
 ```
 DNDOff()
@@ -372,7 +372,7 @@ getDictionary(variable input)
 
 ### Get Values from Dictionary
 
-Get only the values from `the dictionary`.
+Get only the values from the `dictionary`.
 
 ```
 getValues(dictionary dictionary)
