@@ -214,7 +214,7 @@ Returns a boolean based on if the device is charging.
 isCharging()
 ```
 
-_**Minimum iOS version:** 16.2_
+*iOS 16.2+ only*
 
 ---
 
@@ -226,7 +226,7 @@ Returns a boolean based on if the device is connected to a charger.
 connectedToCharger()
 ```
 
-_**Minimum iOS version:** 16.2_
+*iOS 16.2+ only*
 
 ---
 
