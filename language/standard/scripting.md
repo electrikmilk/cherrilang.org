@@ -39,6 +39,8 @@ Shorthands are built into any of the following actions accepting App IDs.
 - `health`
 - `photos`
 
+---
+
 ### Hide App
 
 Hide app with `appId`.
@@ -250,7 +252,7 @@ DNDOff()
 
 ### Get Device Detail
 
-Get `detail` of device.
+Get `detail` of the device.
 
 ```
 getDeviceDetail(enum detail)
@@ -281,7 +283,7 @@ toggleAppearance()
 
 ---
 
-### Light Apperance
+### Light Appearance
 
 Change system appearance to light.
 
@@ -303,7 +305,7 @@ darkMode()
 
 ### Toggle Bluetooth
 
-Toggle device bluetooth.
+Toggle device Bluetooth.
 
 ```
 toggleBluetooth()
@@ -313,7 +315,7 @@ toggleBluetooth()
 
 ### Set Bluetooth
 
-Set device bluetooth on or off.
+Set the device Bluetooth on or off.
 
 ```
 setBluetooth(boolean status)
@@ -354,13 +356,13 @@ startScreensaver()
 ## Dictionaries
 
 {: .note }
-The dictionary action is abtracted into a variable value, see [Dictionary](../variables-globals.html#dictionaries).
+The dictionary action is abstracted into a variable value, see [Dictionary](../variables-globals.html#dictionaries).
 
 ---
 
 ### Get Dictionary
 
-Get dictionary from `input`.
+Get the dictionary from `input`.
 
 ```
 getDictionary(variable input)
@@ -370,7 +372,7 @@ getDictionary(variable input)
 
 ### Get Values from Dictionary
 
-Get only the values from `dictionary`.
+Get only the values from `the dictionary`.
 
 ```
 getValues(dictionary dictionary)
@@ -380,7 +382,7 @@ getValues(dictionary dictionary)
 
 ### Get Keys from Dictionary
 
-Get only the keys from `dictionary`.
+Get only the keys from the `dictionary`.
 
 ```
 getKeys(dictionary dictionary)
@@ -410,7 +412,7 @@ setValue(variable dictionary, string key, string value)
 
 ### Base 64 Encode
 
-Base 64 encode `input`.
+Base 64 encodes `input`.
 
 ```
 base64Encode(variable encodeInput)
@@ -420,7 +422,7 @@ base64Encode(variable encodeInput)
 
 ### Base 64 Decode
 
-Base 64 decode `input`.
+Base 64 decodes `input`.
 
 ```
 base64Decode(variable input)
@@ -523,9 +525,11 @@ Set the name of `item`.
 setName(variable item, string name, boolean ?includeFileExtension = false)
 ```
 
+---
+
 ### Content Graph
 
-Show `input` as graph.
+Show `input` as a graph.
 
 ```
 contentGraph(variable input)
@@ -545,7 +549,7 @@ chooseFromList(variable list, string ?prompt, boolean ?selectMultiple = false)
 
 ### Get First Item
 
-Get the first item from `list`.
+Get the first item from `the list`.
 
 ```
 firstListItem(variable list)
@@ -555,7 +559,7 @@ firstListItem(variable list)
 
 ### Get Last Item
 
-Get the last item from `list`.
+Get the last item from `the list`.
 
 ```
 lastListItem(variable list)
@@ -565,7 +569,7 @@ lastListItem(variable list)
 
 ### Get Random Item
 
-Get a random item from `list`.
+Get a random item from `the list`.
 
 ```
 randomListItem(variable list)
@@ -575,7 +579,7 @@ randomListItem(variable list)
 
 ### Get Item at Index
 
-Get item at `index` from `list`. Counting in Shortcuts starts at `1`.
+Get the item at `index` from `list`. Counting in Shortcuts starts at `1`.
 
 ```
 getListItem(variable list, integer index)
@@ -585,7 +589,7 @@ getListItem(variable list, integer index)
 
 ### Get List Items in Range
 
-Get items in range of `start` to `end`.
+Get items in the list within the range of `start` to `end`.
 
 ```
 getListItems(variable list, integer start, integer end)
@@ -998,12 +1002,12 @@ nothing()
 
 ## Notification
 
-### Ask for Input
+### Prompt
 
-Ask for input of `type` with `prompt`, with `default` as an optional default input.
+Ask for an input of `inputType` with `prompt`, with `defaultValue` as an optional default input.
 
 ```
-askForInput(prompt,defaultValue="",type="Text")
+prompt(string prompt, string ?defaultValue, enum ?inputType = "Text")
 ```
 
 #### Input Types
@@ -1022,37 +1026,47 @@ askForInput(prompt,defaultValue="",type="Text")
 Play sound `input`.
 
 ```
-playSound(input)
+playSound(variable input)
 ```
 
 ---
 
-### Show Alert
+### Alert
 
-Show an alert with `title` as the title and `alert` as the body. `cancelButton` is an optional boolean, default is `true`.
+Show an alert with `title` as the title and `alert` as the body.
 
 ```
-alert(alert,title,cancelButton)
+alert(string alert, string ?title)
+```
+
+---
+
+### Confirm
+
+Show a confirmation alert with `title` as the title and `alert` as the body. If the user presses cancel, the Shortcut will stop.
+
+```
+confirm(string alert, string ?title)
 ```
 
 ---
 
 ### Show Notification
 
-Trigger a custom notification. `playSound` is an optional boolean, default is `true`.
+Trigger a custom notification.
 
 ```
-notification(body,title,playSound)
+notification(string body, string ?title, boolean ?playSound = true)
 ```
 
 ## Numbers
 
 ### Format File Size
 
-Format the size of `file` to `format`.
+Format the size of the `file` to `format`.
 
 ```
-fileSize(file,format)
+fileSize(variable file, enum format)
 ```
 
 #### File Size Format Units
@@ -1075,7 +1089,7 @@ fileSize(file,format)
 Format `number` with `decimalPlaces` number of decimal places.
 
 ```
-formatNumber(number,decimalPlaces)
+formatNumber(integer number, integer ?decimalPlaces = 2)
 ```
 
 ---
@@ -1085,7 +1099,7 @@ formatNumber(number,decimalPlaces)
 Get numbers from `input`.
 
 ```
-getNumber(input)
+getNumbers(variable input)
 ```
 
 ---
@@ -1095,17 +1109,17 @@ getNumber(input)
 Generate a random number with `min` as the minimum value and `max` as the maximum value.
 
 ```
-randomNumber(min,max)
+randomNumber(integer min, integer max)
 ```
 
 ## Shell
 
 ### Run Shell Script
 
-Run `script` with `input` as `inputMode` in `shell`. `shell` and `inputMode` are optional. Default shell is `/bin/zsh` and input mode is `to stdin`.
+Run `script` with `input` as `inputMode` in `shell`.
 
 ```
-runShellScript(script,input,shell,inputMode)
+runShellScript(string script, variable input, string ?shell = "/bin/zsh", string ?inputMode = "to stdin")
 ```
 
 #### Input Modes
@@ -1120,8 +1134,10 @@ runShellScript(script,input,shell,inputMode)
 Run Apple Script `script` on `input`.
 
 ```
-runAppleScript(input,script)
+runAppleScript(variable input, string script)
 ```
+
+*macOS only*
 
 ---
 
@@ -1130,14 +1146,14 @@ runAppleScript(input,script)
 Run JavaScript `script` on `input`.
 
 ```
-runJSAutomation(input,script)
+runJSAutomation(variable input, string script)
 ```
 
 ## Shortcuts
 
 ### Get Shortcuts
 
-Get all the users shortcuts.
+Get all the user's shortcuts.
 
 ```
 getShortcuts()
@@ -1150,12 +1166,10 @@ getShortcuts()
 Create a new Shortcut.
 
 ```
-makeShortcut(name,open)
+makeShortcut(string name, boolean ?open = true)
 ```
 
-`open` is a boolean, its default value is true.
-
-_Min iOS Version: 16.4_
+*iOS 16.4+ only*
 
 ---
 
@@ -1164,19 +1178,19 @@ _Min iOS Version: 16.4_
 Search Shortcuts.
 
 ```
-searchShortcuts(query)
+searchShortcuts(string query)
 ```
 
-_Min iOS Version: 16.4_
+*iOS 16.4+ only*
 
 ---
 
 ### Get Shortcut Detail
 
-Get detail of a Shortcut.
+Get a detail of a Shortcut.
 
 ```
-shortcutDetail(detail,shortcut)
+shortcutDetail(string detail, variable shortcut)
 ```
 
 #### Details
@@ -1198,17 +1212,17 @@ shortcutDetail(detail,shortcut)
 Open Shortcut with name `name`.
 
 ```
-open(name)
+open(variable name)
 ```
 
 ---
 
 ### Run Shortcut
 
-Run Shortcut with name `name`, providing it with `input`. `isSelf` is an optional boolean, default is `false`.
+Run Shortcut with name `shortcutName`, providing it with `output`.
 
 ```
-run(name,input,isSelf)
+run(string shortcutName, variable output, boolean ?isSelf = false)
 ```
 
 ---
@@ -1238,7 +1252,7 @@ dismissSiri()
 Set device wallpaper to `image`.
 
 ```
-setWallpaper(image)
+setWallpaper(variable image)
 ```
 
 ---
@@ -1252,7 +1266,7 @@ Get device wallpaper.
 getWallpaper()
 ```
 
-_**Minimum iOS version:** 16.2_
+*iOS 16.2+ only*
 
 ## Variables
 
@@ -1265,10 +1279,10 @@ Variables are abstracted into variable statements, see [Variables & Globals](/la
 
 All arguments are optional.
 
-Get all windows and sort by `sortBy`, order by `orderBy` and limit by `limit`.
+Get all windows and sort by `sortBy`, order by `orderBy`, and limit by `limit`.
 
 ```
-getWindows(sortBy,orderBy,limit)
+getWindows(enum ?sortBy, enum ?orderBy, integer ?limit)
 ```
 
 ### Sort By
@@ -1290,10 +1304,10 @@ getWindows(sortBy,orderBy,limit)
 
 ### Move Windows
 
-Move `window` to `position`. `bringToFront` is a boolean, the default value is `true`.
+Move `window` to `position`.
 
 ```
-moveWindow(window,position,bringToFront)
+moveWindow(variable window, enum position, boolean ?bringToFront = true)
 ```
 
 #### Window Positions
@@ -1314,7 +1328,7 @@ moveWindow(window,position,bringToFront)
 Resize `window` to `configuration`.
 
 ```
-resizeWindow(window,configuration)
+resizeWindow(variable window, enum configuration)
 ```
 
 #### Window Configurations
@@ -1339,16 +1353,16 @@ resizeWindow(window,configuration)
 Open X-Callback URL `url`.
 
 ```
-openXCallbackURL(url)
+openXCallbackURL(string url)
 ```
 
 ---
 
 ### Open Custom X-Callback URL
 
-Open X-Callback URL `url`, with Success Key `successKey`, Cancel Key `cancelKey`, and Error Key `errorKey`, and custom
+Open X-Callback URL `url`, with success key `successKey`, cancel key `cancelKey`, and error key `errorKey`, and custom
 X-Success URL `successURL`.
 
 ```
-openXCustomCallbackURL(url,successKey,cancelKey,errorKey,successURL)
+openCustomXCallbackURL(string url, string ?successKey, string ?cancelKey, string ?errorKey, string ?successURL)
 ```
