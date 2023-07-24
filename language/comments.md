@@ -7,19 +7,19 @@ nav_order: 11
 
 # Comments
 
-To write a single line comment use `//`.
+To write a single-line comment use `//`.
 
 ```
-// Single line comment
+// Single-line comment
 ```
 
-To write multiline comments, use the `/* ... */` syntax commonly found in other languages.
+To write multiline comments, use `/* ... */`.
 
 Do not add a `*` to the front of a line, it will make its way into the compiled Shortcut.
 
 ```
 /*
-This is a multiline comment
+This is a multi-line comment
 */
 
 /*
