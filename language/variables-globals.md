@@ -135,7 +135,7 @@ Boolean variables can be used in conditionals.
 
 ```ruby
 if boolVarTrue == true {
-    // ...
+    /* ... */
 }
 ```
 
