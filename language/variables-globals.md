@@ -133,7 +133,7 @@ Booleans translate to a number value of 1 for true, and 0 for false.
 
 Boolean variables can be used in conditionals.
 
-```
+```ruby
 if boolVarTrue == true {
     // ...
 }
