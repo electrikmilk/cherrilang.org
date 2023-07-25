@@ -25,7 +25,7 @@ Get as...
 @inserted = "Value: {text[Get]}"
 ```
 
-Type coersion...
+Type coercion...
 
 ```ruby
 @inserted = "Value: {text(type)}"
@@ -43,7 +43,7 @@ Get as...
 @inserted = variable[Get]
 ```
 
-Type coersion...
+Type coercion...
 
 ```ruby
 @inserted = variable.type
@@ -58,11 +58,9 @@ All globals are implemented. Globals are case-sensitive.
 @date = CurrentDate
 @clipboard = Clipboard
 @device = Device
-
-alert(Ask, "", false)
 ```
 
-But you can also just inline a global in a string like other variables
+But you can also just inline a global in a string like other variables.
 
 ```ruby
 @shortcutInput = "{ShortcutInput}"
@@ -83,7 +81,7 @@ text"
 
 ```ruby
 @number = 42
-@expression = 54 * 4 + (6 * 7)
+@expression = 54 * {number} + (6 * 7)
 ```
 
 ### Action Variables
@@ -116,14 +114,18 @@ You can declare a dictionary using a valid JSON object.
 
 ### Booleans
 
-Booleans translate to a number value of 1 for true, and 0 for false. Boolean variables can be used in conditionals.
+Booleans translate to a number value of 1 for true, and 0 for false.
 
 ```ruby
 @boolVarTrue = true
 @boolVarFalse = false
+```
 
+Boolean variables can be used in conditionals.
+
+```
 if boolVarTrue == true {
-    ...
+    // ...
 }
 ```
 
