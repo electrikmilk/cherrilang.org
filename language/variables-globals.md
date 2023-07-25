@@ -49,6 +49,16 @@ Type coercion...
 @inserted = variable.type
 ```
 
+## Constants
+
+While constants are not officially implemented into Shortcuts, Cherri will keep track of variables declared as constants and throw an error if something tries to redefine it.
+
+Constants are just like variables except they cannot be changed.
+
+```ruby
+const immutable = 5
+```
+
 ## Globals
 
 All globals are implemented. Globals are case-sensitive.
