@@ -1002,12 +1002,12 @@ nothing()
 
 ## Notification
 
-### Prompt
+### Ask for Input
 
-Ask for an input of `inputType` with `prompt`, with `defaultValue` as an optional default input.
+Ask for input with `prompt`, with optional `inputType` and `defaultValue`.
 
 ```
-prompt(string prompt, string ?defaultValue, enum ?inputType = "Text")
+prompt(string prompt, enum ?inputType = "Text", string ?defaultValue)
 ```
 
 #### Input Types
