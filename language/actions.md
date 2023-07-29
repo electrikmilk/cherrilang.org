@@ -19,7 +19,7 @@ may be inaccurate. Not all standard actions in each category are implemented yet
 Standard actions are always available and do not need to be imported.
 
 - (3/23) [Calendar](standard/calendar)
-- (7/15) [Contacts](standard/contacts)
+- [Contacts](standard/contacts)
 - (40/64) [Documents](standard/documents)
 - [Location](standard/location)
 - (35/68) [Media](standard/media)
