@@ -53,7 +53,7 @@ Type coercion...
 
 Constants are the implementation of Magic Variables as they cannot be modified. When referenced, the output of the action is used (magic variable), instead of inserting a reference to a variable that the action output has been saved to.
 
-Array constants are not allowed as creating and appending to an array variable involves adding to a variable, action outputs cannot be added to.
+Array constants are not allowed as creating an array value involves adding to a variable, action outputs cannot be added to.
 
 Otherwise, constants can be used just like variables except that they cannot be redefined or appended to. An error will be thrown if you try to redefine or append to a constant.
 
