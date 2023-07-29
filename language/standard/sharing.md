@@ -37,7 +37,25 @@ Copy `input` to the clipboard. `local` is a boolean that is `false` by default. 
 copyToClipboard(variable value, boolean ?local = false, string ?expire)
 ```
 
+## Messaging
+
+### Send Email
+
+Send an email to a `contact`.
+
+```
+sendEmail(variable contact, string from, string subject, string body, boolean ?prompt = true, boolean ?draft = false)
+```
+
 ---
+
+### Send Message
+
+Send a message to a `contact`.
+
+```
+sendMessage(variable contact, string message, boolean ?prompt = true)
+```
 
 ## System
 
