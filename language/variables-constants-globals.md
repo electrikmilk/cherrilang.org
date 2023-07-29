@@ -1,11 +1,11 @@
 ---
-title: Variables & Globals
+title: Variables, Constants & Globals
 layout: default
 parent: Documentation
 nav_order: 2
 ---
 
-# Variables & Globals
+# Variables, Constants & Globals
 
 Variables are initialized using the following syntax:
 
@@ -51,11 +51,15 @@ Type coercion...
 
 ## Constants
 
-While constants are not officially implemented into Shortcuts, Cherri will keep track of variables declared as constants and throw an error if something tries to redefine it.
+Constants are the implementation of Magic Variables as they cannot be modified. When referenced, the output of the action is used (magic variable), instead of inserting a reference to a variable that the action output has been saved to.
 
-Constants are just like variables except they cannot be changed.
+Array constants are not allowed as creating and appending to an array variable involves adding to a variable, action outputs cannot be added to.
 
-```ruby
+Otherwise, constants can be used just like variables except that they cannot be redefined or appended to. An error will be thrown if you try to redefine or append to a constant.
+
+It is recommended to use constants when applicable as it will produce a smaller Shortcut.
+
+```javascript
 const immutable = 5
 ```
 
