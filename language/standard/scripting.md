@@ -1271,7 +1271,7 @@ getWallpaper()
 ## Variables
 
 {: .note }
-Variables are abstracted into variable statements, see [Variables & Globals](/language/variables-globals.html).
+Variables are abstracted into variable statements, see [Variables, Constants & Globals](/language/variables-constants-globals.html).
 
 ## Windows
 
