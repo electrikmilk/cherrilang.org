@@ -149,6 +149,16 @@ Prompt the user to select a phone number.
 selectPhoneNumber()
 ```
 
+---
+
+### Send Message
+
+Send a message to a `contact`.
+
+```
+sendMessage(variable contact, string message, boolean ?prompt = true)
+```
+
 ## Email
 
 ### Email Address
@@ -167,4 +177,14 @@ Prompt the user to select an email address.
 
 ```
 selectEmailAddress()
+```
+
+---
+
+### Send Email
+
+Send an email to a `contact`.
+
+```
+sendEmail(variable contact, string from, string subject, string body, boolean ?prompt = true, boolean ?draft = false)
 ```
