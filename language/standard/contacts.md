@@ -17,15 +17,7 @@ nav_order: 2
 
 ## Contacts
 
-### Get Contact Detail
-
-Get `property` from `contact`.
-
-```
-getContactDetail(variable contact, enum property)
-```
-
-#### Contact Properties
+### Contact Details
 
 - First Name
 - Middle Name
@@ -49,6 +41,36 @@ getContactDetail(variable contact, enum property)
 
 ---
 
+### Add New Contact
+
+Create a new contact.
+
+```
+newContact(string firstName, string lastName, string phoneNumber, string emailAddress, string company, string notes, boolean ?prompt = false)
+```
+
+---
+
+### Edit Contact
+
+Update `detail` of `contact` to `value`.
+
+```
+updateContact(variable contact, enum detail, string value)
+```
+
+---
+
+### Remove Contact Detail
+
+Remove `detail` from `contact`.
+
+```
+removeContactDetail(variable contact, enum detail)
+```
+
+---
+
 ### Filter Contacts
 
 Filter `contacts` by `property` and sort by `sortOrder`, and limit to `limit` number of contacts.
@@ -64,15 +86,50 @@ filterContacts(variable contacts, enum ?sortByProperty, enum ?sortOrder = "A to 
 
 ---
 
+### Get Detail of Contacts
+
+Get `property` from `contact`.
+
+```
+getContactDetail(variable contact, enum property)
+```
+
+---
+
 ### Select Contact
 
-Prompt the user to select contact(s).
+Prompt the user to select a contact(s).
 
 ```
 selectContact(boolean ?multiple = false)
 ```
 
 ## Phone
+
+### Call
+
+Call a `contact`.
+
+```
+call(variable contact)
+```
+
+---
+
+### FaceTime Call
+
+Facetime `type` call `contact`.
+
+```
+facetimeCall(variable contact, enum ?type = "Video")
+```
+
+#### FaceTime call types
+
+- Video
+- Audio
+
+---
 
 ### Phone Number
 
@@ -96,7 +153,7 @@ selectPhoneNumber()
 
 ### Email Address
 
-Create email address value of `email`. No limit on `email` arguments.
+Create an email address value of `email`. No limit on `email` arguments.
 
 ```
 emailAddress(string ...email)
