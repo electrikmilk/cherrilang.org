@@ -10,12 +10,12 @@ nav_order: 4
 You can easily create a VCard menu using the built-in action `makeVCard()`.
 
 ```ruby
-@vcard = makeVCard("Title","Subtitle","path/to/image.jpg")
+makeVCard(string title, string subtitle, string ?imagePath)
 ```
 
 This generates a VCard using your parameters at compile time, inserting the title as the name, the subtitle as the org/company, and base 64 encodes the image at the path you specified and inserts it as the photo.
 
-The only limitation being that the image path must be available at compile time, no variables unless they evaluate to a string literal. The image argument is optional.
+The only limitation is that the image path must be available at compile time. No variables are allowed unless they evaluate a string literal. The image argument is optional.
 
 The example below uses this built-in action to make a VCard menu:
 
