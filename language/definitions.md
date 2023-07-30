@@ -42,7 +42,7 @@ Most glyphs are supported, but not all the newest are yet. [Click here for the f
 
 ## Inputs & Outputs
 
-Inputs and outputs accept [content item type](/language/content-item-types.html).
+Inputs and outputs accept [content item type](/language/types.html#content-item-types).
 
 Inputs will default to all types. Outputs will default to no types. This is done to be consistent with the Shortcuts
 file format.
@@ -70,7 +70,7 @@ Get the contents of the clipboard:
 #define noinput getclipboard
 ```
 
-Ask for a [content item type](/language/content-item-types.html):
+Ask for a [content item type](/language/types.html#content-item-types):
 
 ```
 #define noinput askfor text
