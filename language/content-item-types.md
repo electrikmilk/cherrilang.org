@@ -32,3 +32,48 @@ In Cherri, they are shortened into singular names.
 | richtext 	| WFRichTextContentItem 	|
 | webpage 	| WFSafariWebPageContentItem 	|
 | text 	| WFStringContentItem 	|
+
+## Type Casting
+
+You can currently do the following typecasting.
+
+### Text
+
+```ruby
+@var = 5
+@textVar = var.text
+```
+
+```ruby
+@var = 5
+@textVar = getText(var)
+```
+
+```ruby
+@var = 5
+@textVar = "{var}"
+```
+
+### Number
+
+```ruby
+@var = "5"
+@textVar = var.number
+```
+
+```ruby
+@var = "5"
+@textVar = getNumbers(var)
+```
+
+```ruby
+@var = "5"
+@textVar = number(var)
+```
+
+### Dictionary
+
+```ruby
+@var = "{"json":"string"}"
+@textVar = getDictionary(var)
+```
