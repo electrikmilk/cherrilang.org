@@ -1222,7 +1222,17 @@ open(variable name)
 Run Shortcut with name `shortcutName`, providing it with `output`.
 
 ```
-run(string shortcutName, variable output, boolean ?isSelf = false)
+run(string shortcutName, variable output)
+```
+
+---
+
+### Run Self
+
+Run the current Shortcut providing it with `output`.
+
+```
+runSelf(variable output)
 ```
 
 ---
