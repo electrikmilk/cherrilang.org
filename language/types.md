@@ -1,11 +1,13 @@
 ---
-title: Content Item Types
+title: Types
 layout: default
 parent: Documentation
 nav_order: 10
 ---
 
-# Content Item Types
+# Types
+
+## Content Item Types
 
 There is a concept of data types in Shortcuts known as a "content item".
 
