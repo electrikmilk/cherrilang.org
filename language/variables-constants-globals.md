@@ -95,7 +95,8 @@ text"
 
 ```ruby
 @number = 42
-@expression = 54 * {number} + (6 * 7)
+@add = 2 + 2
+@expression = 54 * number + (6 * 7)
 ```
 
 ### Action Variables
