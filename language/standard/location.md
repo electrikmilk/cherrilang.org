@@ -92,6 +92,33 @@ getHalfwayPoint(variable firstLocation, variable secondLocation)
 
 ## Weather
 
+### Weather details
+
+- Name
+- Air Pollutants
+- Air Quality Category
+- Air Quality Index
+- Sunset Time
+- Sunrise Time
+- UV Index
+- Wind Direction
+- Wind Speed
+- Precipitation Chance
+- Precipitation Amount
+- Pressure
+- Humidity
+- Dewpoint
+- Visibility
+- Condition
+- Feels Like
+- Low
+- High
+- Temperature
+- Location
+- Date
+
+---
+
 ### Get Current Weather
 
 Get current weather conditions, optionally at a specific location.
@@ -124,28 +151,3 @@ Get `detail` of `weather`.
 ```
 getWeatherDetail(variable weather, enum detail)
 ```
-
-#### Weather details
-
-- Name
-- Air Pollutants
-- Air Quality Category
-- Air Quality Index
-- Sunset Time
-- Sunrise Time
-- UV Index
-- Wind Direction
-- Wind Speed
-- Precipitation Chance
-- Precipitation Amount
-- Pressure
-- Humidity
-- Dewpoint
-- Visibility
-- Condition
-- Feels Like
-- Low
-- High
-- Temperature
-- Location
-- Date
