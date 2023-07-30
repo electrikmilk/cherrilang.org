@@ -98,10 +98,10 @@ These values must be separated by commas.
 
 ## Name
 
-This definition is not widely supported. Defines the name of your Shortcut alternative to the file name.
+This will be used as the name of the resulting Shortcut file. 
 
 ```
-#define name Test
+#define name My Shortcut
 ```
 
 ## Version
