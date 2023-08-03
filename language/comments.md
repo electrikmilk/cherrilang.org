@@ -28,4 +28,6 @@ Line 2
 */
 ```
 
-Any comments of either type are translated over into the compiled Shortcut as comment actions.
+Comments of either type are translated over into the compiled Shortcut as comment actions.
+
+Unless, you use the `--comments` (`-c`) argument, that will strip comments and not include them in the compiled Shortcut. This is useful for Shortcuts where the in code comments are not relevant, and if they are removed, the resulting Shortcut will be smaller.
