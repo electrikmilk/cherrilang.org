@@ -20,7 +20,7 @@ menu "Prompt" {
 }
 ```
 
-The menu prompt can be a variable, so can each case label, they also support inline variables in strings.
+The menu prompt can be a variable, so can each item label, they also support inline variables in strings.
 
 ## Choose From List
 
