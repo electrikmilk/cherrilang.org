@@ -76,6 +76,6 @@ You can currently do the following typecasting.
 ### Dictionary
 
 ```ruby
-@var = "{"json":"string"}"
+@var = "{\"json\":\"string\"}"
 @textVar = getDictionary(var)
 ```
