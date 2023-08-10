@@ -83,7 +83,7 @@ Use the following syntax:
 ```ruby
 @items = list("item 1","item 2","item 3")
 for list {
-    alert(RepeatIndex,RepeatItem, false)
+    alert(RepeatIndex,RepeatItem)
 }
 ```
 
