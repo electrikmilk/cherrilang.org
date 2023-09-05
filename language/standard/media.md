@@ -525,6 +525,8 @@ Strip metadata from video or video.
 stripMediaMetadata(variable media)
 ```
 
+---
+
 ### Set Media Metadata
 
 Set metadata for a video or audio.
@@ -532,6 +534,8 @@ Set metadata for a video or audio.
 ```
 setMetadata(variable media, variable ?artwork, string ?title, string ?artist, string ?album, string ?genre, string ?year)
 ```
+
+---
 
 ### Encode Video
 
@@ -557,6 +561,8 @@ encodeVideo(variable video, enum ?size = "Passthrough", enum ?speed = "Normal", 
 - Normal
 - 2X
 
+---
+
 ### Encode Audio
 
 Encode audio.
@@ -569,6 +575,8 @@ encodeAudio(variable audio, enum ?format = "M4A", enum ?speed = "0.5")
 
 - M4A
 - AIFF
+
+---
 
 ### Trim Video
 
