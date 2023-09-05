@@ -568,7 +568,7 @@ encodeVideo(variable video, enum ?size = "Passthrough", enum ?speed = "Normal", 
 Encode audio.
 
 ```
-encodeAudio(variable audio, enum ?format = "M4A", enum ?speed = "0.5")
+encodeAudio(variable audio, enum ?format = "M4A", enum ?speed = "Normal")
 ```
 
 #### Formats
