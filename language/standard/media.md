@@ -241,10 +241,10 @@ convertToJPEG(image,quality,preserveMetadata)
 
 ### Strip Image Metadata
 
-Strip metadata from image.
+Strip metadata from an image.
 
 ```
-stripMetadata(image)
+stripImageMetadata(variable image)
 ```
 
 ## iTunes Store
@@ -517,10 +517,63 @@ searchPodcasts(query)
 
 ## Video
 
+### Strip Media Metadata
+
+Strip metadata from video or video.
+
+```
+stripMediaMetadata(variable media)
+```
+
+### Set Media Metadata
+
+Set metadata for a video or audio.
+
+```
+setMetadata(variable media, variable ?artwork, string ?title, string ?artist, string ?album, string ?genre, string ?year)
+```
+
+### Encode Video
+
+Encode a video.
+
+```
+encodeVideo(variable video, enum ?size = "Passthrough", enum ?speed = "Normal", boolean ?preserveTransparency = false)
+```
+
+#### Sizes:
+
+- 640×480
+- 960×540
+- 1280×720
+- 1920×1080
+- 3840×2160
+- HEVC 1920×1080
+- HEVC 3840x2160
+- ProRes 422
+
+#### Speeds:
+- 0.5X
+- Normal
+- 2X
+
+### Encode Audio
+
+Encode audio.
+
+```
+encodeAudio(variable audio, enum ?format = "M4A", enum ?speed = "0.5")
+```
+
+#### Formats
+
+- M4A
+- AIFF
+
 ### Trim Video
 
 Prompts the user to trim `video`. Returns the trimmed video.
 
 ```
-trimVideo(video)
+trimVideo(variable video)
 ```
