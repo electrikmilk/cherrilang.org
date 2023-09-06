@@ -99,6 +99,44 @@ if boolVarTrue == true {
 }
 ```
 
+### Empty
+
+You can declare a variable with no value
+
+```ruby
+@empty
+```
+
+Or more explicitly, set the value as `nil`
+
+```ruby
+@empty = nil
+```
+
+You can use nil anywhere you need to cancel out a value for whatever reason. However, if the value has a default, it will be set to its default, not empty.
+
+```ruby
+getFile(nil)
+
+if var == nil {
+
+}
+
+repeat nil {
+
+}
+
+for nil {
+
+}
+```
+
+`nil` can be used to skip an argument that is optional to set an argument after it.
+
+```
+setMetadata(media, nil, "Title")
+```
+
 ## Type Casting
 
 You can currently do the following typecasting.
