@@ -19,6 +19,7 @@ Syntax example:
 - folder
 - redo
 - parking
+- robot
 - cloudservice
 - city
 - book
