@@ -7,15 +7,13 @@ nav_order: 11
 
 # Comments
 
-To write a single-line comment use `//`.
+### Single-line comment:
 
 ```
 // Single-line comment
 ```
 
-To write multiline comments, use `/* ... */`.
-
-Do not add a `*` to the front of a line, it will make its way into the compiled Shortcut.
+### Multi-line comment:
 
 ```
 /*
@@ -28,6 +26,12 @@ Line 2
 */
 ```
 
-Comments of either type are translated over into the compiled Shortcut as comment actions. Unless, you use the `--comments` (`-c`) argument, that will strip comments and not include them in the compiled Shortcut.
+Do not add a `*` to the front of a line, it will make its way into the compiled Shortcut.
 
-This is useful for Shortcuts where the comments in your code are not relevant to the final Shortcut. For example, If your Shortcut ends up being too large of a file, and the code is filled with comments, use this option and the resulting Shortcut will be marginally smaller.
+### Result
+
+Comments are not included in the final Shortcut to help reduce the size of the Shortcut.
+
+This is useful for Shortcuts where the comments in your code are not relevant to the user of the Shortcut.
+
+To include them as comment actions, use the `--comments` (`-c`) argument. 
