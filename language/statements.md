@@ -69,8 +69,8 @@ Use the following syntax:
 
 ```ruby
 @items
-repeat 6 {
-    @items += "Item {RepeatIndex}"
+repeat i for 6 {
+    @items += "Item {i}"
 }
 ```
 
@@ -82,8 +82,8 @@ Use the following syntax:
 
 ```ruby
 @items = list("item 1","item 2","item 3")
-for list {
-    alert(RepeatIndex,RepeatItem)
+for item in list {
+    alert(item)
 }
 ```
 
@@ -91,10 +91,10 @@ for list {
 
 ### Repeat Globals
 
-In `repeat`, the `RepeatIndex` is accessible.
+The `repeat` and `for` statements create variables as the `RepeatIndex` and `RepeatItem` globals need to be numbered after more than one nested repeat.
 
-In `foreach` (repeat with each), `RepeatIndex` and `RepeatItem` are available.
+The globals `RepeatIndex` and `RepeatItem` are still available, but it is recommended to use the variables these statements create.
 
 ## Nesting
 
-`if/else`, `repeat`, `foreach`, and `menu` can all be nested inside each other and vice versa.
+`if/else`, `repeat`, `for`, and `menu` can all be nested inside each other and vice versa.
