@@ -447,12 +447,12 @@ splitText(string text, string separator)
 
 ---
 
-### Combine Text
+### Join Text
 
-Combine `text` with `glue`.
+Combine `text` with `separator`.
 
 ```
-combineText(string text, string glue)
+joinText(string text, string separator)
 ```
 
 ---
