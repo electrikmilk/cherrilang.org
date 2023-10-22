@@ -26,12 +26,21 @@ Line 2
 */
 ```
 
-Do not add a `*` to the front of a line, it will make its way into the compiled Shortcut.
-
 ### Result
 
-Comments are not included in the final Shortcut to help reduce the size of the Shortcut.
+Comments are not included by default in the Shortcut to help reduce the size of the file.
 
 This is useful for Shortcuts where the comments in your code are not relevant to the user of the Shortcut.
 
+```javascript
+// ...
+nothing()
+// TODO: Fix weird bug here
+something()
+nothing()
+// ...
+```
+
 To include them as comment actions, use the `--comments` (`-c`) argument. 
+
+If you do, do not add a `*` to the front of a line in multiline comments, it will make its way into the Shortcut.
