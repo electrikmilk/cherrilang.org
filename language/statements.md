@@ -74,7 +74,7 @@ repeat i for 6 {
 }
 ```
 
-The number after repeat could also be a variable as long as it evaluates to a number value.
+The number of times to repeat can also be a variable as long as it evaluates to a number value.
 
 ### Repeat With Each
 
