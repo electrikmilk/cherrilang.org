@@ -122,11 +122,11 @@ if var == nil {
 
 }
 
-repeat nil {
+repeat i for nil {
 
 }
 
-for nil {
+for item in nil {
 
 }
 ```
