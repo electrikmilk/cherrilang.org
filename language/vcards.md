@@ -21,8 +21,8 @@ The example below uses this built-in action to make a VCard menu:
 
 ```ruby
 @items
-repeat 3 {
-    @items += makeVCard("Title {RepeatIndex}","Subtitle {RepeatIndex}","assets/cherri_icon.png")
+repeat i for 3 {
+    @items += makeVCard("Title {i}","Subtitle {i}","assets/cherri_icon.png")
 }
 @menuItems = "{items}"
 @vcf = setName(menuItems,"menu.vcf",false)
