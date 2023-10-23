@@ -20,7 +20,7 @@ if intVar > 6 {
 }
 ```
 
-If statements are not required to contain the else statement, but do require the ending curly brace as in other
+If statements are not required to contain the else statement but do require the ending curly brace as in other
 languages.
 
 The first operand of the if statement must be a variable. The second can optionally be a variable.
@@ -98,3 +98,7 @@ The globals `RepeatIndex` and `RepeatItem` are still available, but it is recomm
 ## Nesting
 
 `if/else`, `repeat`, `for`, and `menu` can all be nested inside each other and vice versa.
+
+## Nothing actions at the end of statements
+
+Nothing actions are automatically added to the ending block of any statement to reduce the overall usage of memory as otherwise data is being passed to that block and allocated for.
