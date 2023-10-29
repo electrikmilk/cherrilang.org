@@ -28,7 +28,7 @@ Get as...
 Type coercion...
 
 ```ruby
-@inserted = "Value: {text(type)}"
+@inserted = "Value: {text.type}"
 ```
 
 ## Variable as a value
