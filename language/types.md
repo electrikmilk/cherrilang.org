@@ -146,6 +146,7 @@ You can currently do the following typecasting.
 ```ruby
 @var = 5
 @textVar = var.text
+@textVar = "{var.text}"
 ```
 
 ```ruby
@@ -163,6 +164,7 @@ You can currently do the following typecasting.
 ```ruby
 @var = "5"
 @textVar = var.number
+@inlineVar = "{var.number}"
 ```
 
 ```ruby
