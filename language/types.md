@@ -55,7 +55,7 @@ text"
 
 ### Expression
 
-```
+```ruby
 @expression = 54 * number + (6 * 7)
 ```
 
