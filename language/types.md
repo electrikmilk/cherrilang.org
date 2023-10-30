@@ -35,7 +35,7 @@ In Cherri, they are shortened into singular names.
 | webpage 	| WFSafariWebPageContentItem 	|
 | text 	| WFStringContentItem 	|
 
-## Types
+## Data Types
 
 ### Text
 
@@ -46,15 +46,20 @@ line
 text"
 ```
 
-### Numbers
+### Number
 
 ```ruby
 @number = 42
 @add = 2 + 2
+```
+
+### Expression
+
+```
 @expression = 54 * number + (6 * 7)
 ```
 
-### Action Variables
+### Action Result
 
 ```ruby
 @urls = url("https://apple.com","https://google.com")
@@ -65,7 +70,7 @@ text"
 @location = getCurrentLocation()
 ```
 
-### Dictionaries
+### Dictionary
 
 You can declare a dictionary using a valid JSON object.
 
@@ -82,7 +87,7 @@ You can declare a dictionary using a valid JSON object.
 }
 ```
 
-### Booleans
+### Boolean
 
 Booleans translate to a number value of 1 for true, and 0 for false.
 
@@ -113,7 +118,9 @@ Or more explicitly, set the value as `nil`
 @empty = nil
 ```
 
-You can use nil anywhere you need to cancel out a value for whatever reason. However, if the value has a default, it will be set to its default, not empty.
+You can use nil just ahout anywhere you need to cancel out an optional value.
+
+However, if due to the value being optional it has a default, it will be set to its default, not empty.
 
 ```ruby
 getFile(nil)
@@ -136,6 +143,38 @@ for item in nil {
 ```
 setMetadata(media, nil, "Title")
 ```
+
+## Type Declaration
+
+You can declare a variable with a type but no initial value.
+
+This is particularly useful for creating a variable and then appending to it, then using it with an action that expects that type of value.
+
+```ruby
+@string: text
+@integer: number
+@list: array
+@dict: dictionary
+@boolean: bool
+@reference: var
+
+@builder: text
+for item in list {
+    @builder += "{item}"
+}
+
+/* This would have thrown an error if @builder was not of type text. */
+show(builder)
+```
+
+The following types may be used:
+
+- `text`
+- `number`
+- `bool`
+- `dictionary`
+- `array`
+- `var`
 
 ## Type Casting
 
