@@ -171,10 +171,10 @@ The following types may be used:
 
 - `text`
 - `number`
-- `bool`
+- `bool` (number, 1 or 0)
 - `dictionary`
 - `array`
-- `var`
+- `var` (variable reference)
 
 ## Type Casting
 
