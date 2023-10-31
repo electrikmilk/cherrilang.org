@@ -9,7 +9,7 @@ nav_order: 4
 
 The input file is parsed entirely at once character by character. Lines are counted when advanced to a line feed
 character. The current character is stored as a `rune`. If we have run out of characters, the current character is set
-to `-1`, many loops are set to stop when this happens.
+to `-1`, and many loops are set to stop when this happens.
 
 Tokens are typed `tokenType` which is a string type.
 
@@ -50,17 +50,13 @@ as the current character is a rune and tokens are stored as strings so that they
 value. This function simply converts the current character to a string and compares it to the token instead of writing
 that logic over and over.
 
-### `lookAhead()`
+### `lookAheadUntil(until rune)`
 
-This does not advance characters, but pseudo collects characters until it reaches a space or runs out of characters.
-This can be used to see if a character exists ahead without moving there.
-
-This function is an alias for `lookAheadUntil(until rune)`, this allows you to specify the character that it
-must stop looking ahead at.
+This does not advance characters but pseudo-collects characters until it reaches the character specified or runs out of characters, and then returns the characters it collected. This can be used to see if a character or token exists ahead without moving there.
 
 ### `collectUntil(until rune)`
 
-This function will collect characters until it reaches the character specified and then returns the characters it
+This function will collect characters until it reaches the character specified or runs out of characters and then returns the characters it
 collected. Any spaces will be stripped from the value it collects.
 
 ### `collectValue(valueType *tokenType, value *any, until rune)`
@@ -68,7 +64,7 @@ collected. Any spaces will be stripped from the value it collects.
 This takes pointers to a type and a value, and a character to collect until. This will collect the value ahead and
 return its type and value.
 
-It uses these functions to collect the detected value. Actions, variables and globals are collected on the spot by this
+It uses these functions to collect the detected value. Actions, variables, and globals are collected on the spot by this
 function, however.
 
 - `collectString()`
@@ -94,16 +90,12 @@ Prints `message` along with the current line and column number.
 
 The line and column number will be used to print the line with the error and point to the column where we stopped parsing.
 
-### `parserErr(err error)`
-
-An alias that formats `err` as a string then passes it to `parserError()`.
-
 ### `makeKeyList(title string, list map[string]string) string`
 
-This quickly creates a list based on a `map[string]string`
+This quickly creates a list based on a `map[string]string` useful for printing out a map of expected values.
 
 ## Debugging functions
 
-### `printCurrentChar()`
+### `printChar(rune)`
 
-This will print out the current character but also print out names of invisible characters like tabs, spaces, and line feeds.
+This will print out the current character but also print out the names of the common invisible characters like tab, space, and line feed (new line).
