@@ -29,20 +29,10 @@ searchAppStore(query)
 
 ### Take Photo
 
-Takes a photo. `showPreview` is a optional `boolean` that defaults to `true`.
+Takes `number` of photo(s).
 
 ```
-takePhoto(showPreview)
-```
-
----
-
-### Take Photos
-
-Takes `number` photo(s).
-
-```
-takePhotos(number)
+takePhoto(integer ?count = "1", boolean ?showPreview = true)
 ```
 
 ---
