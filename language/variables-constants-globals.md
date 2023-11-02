@@ -95,7 +95,7 @@ Add to a variable using the standard `+=` syntax:
 
 ### Numbers
 
-You can increment, decrement, multiply or divide an existing variable using the following syntax:
+Increment, decrement, multiply, or divide an existing number variable using the following syntax:
 
 ```ruby
 @i = 0
@@ -115,7 +115,7 @@ You can increment, decrement, multiply or divide an existing variable using the 
 
 ### Text
 
-You can append text to the end of an existing text variable using the following syntax:
+Append text to the end of an existing text variable using the following syntax:
 
 ```ruby
 @string = "Existing text"
@@ -131,5 +131,5 @@ Declare an array and use the following syntax to add values to it:
 @var += "test"
 @var += 5
 @var += {"test": 5}
-// etc..
+/* etc... */
 ```
