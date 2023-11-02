@@ -89,8 +89,47 @@ You can declare a variable without a value:
 @nilVar = nil
 ```
 
+## Add to variables
+
 Add to a variable using the standard `+=` syntax:
 
+### Numbers
+
+You can increment, decrement, multiply or divide an existing variable using the following syntax:
+
 ```ruby
-@arrayVar += "test"
+@i = 0
+
+/* Add */
+@i += 1
+
+/* Subtract */
+@i -= 1
+
+/* Multiply */
+@i *= 1
+
+/* Divide */
+@i /= 1
+```
+
+### Text
+
+You can append text to the end of an existing text variable using the following syntax:
+
+```ruby
+@string = "Existing text"
+@string += "Additional text"
+```
+
+### Arrays
+
+Declare an array and use the following syntax to add values to it:
+
+```ruby
+@var = [5, 6]
+@var += "test"
+@var += 5
+@var += {"test": 5}
+// etc..
 ```
