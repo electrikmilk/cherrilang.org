@@ -46,6 +46,18 @@ line
 text"
 ```
 
+Text variables support the standard escaped characters:
+
+- `\"` double quote
+- `\n` new line
+- `\t` tab
+- `\r` carriage return
+- `\\` backslash
+
+```ruby
+@multi = "multi\nline\ntext"
+```
+
 ### Number
 
 ```ruby
