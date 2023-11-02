@@ -32,7 +32,7 @@ searchAppStore(query)
 Takes `number` of photo(s).
 
 ```
-takePhoto(integer ?count = "1", boolean ?showPreview = true)
+takePhoto(integer ?count = 1, boolean ?showPreview = true)
 ```
 
 ---
