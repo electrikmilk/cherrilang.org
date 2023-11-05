@@ -328,7 +328,7 @@ setBluetooth(boolean status)
 Set display brightness (0-100).
 
 ```
-setBrightness(integer brightness)
+setBrightness(text brightness)
 ```
 
 ---
@@ -338,7 +338,7 @@ setBrightness(integer brightness)
 Set device volume (0-100).
 
 ```
-setVolume(integer volume)
+setVolume(text volume)
 ```
 
 --- 
