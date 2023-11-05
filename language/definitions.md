@@ -104,6 +104,8 @@ This will be used as the name of the resulting Shortcut file.
 #define name My Shortcut
 ```
 
+Cherri will ignore the name of the file and use the definition instead to create `My Shortcut.shortcut`.
+
 ## Version
 
 Defines the minimum version of iOS your Shortcut supports. Warnings will be printed if you use actions that are not supported in the targeted version.
