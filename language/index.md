@@ -26,7 +26,7 @@ The easiest way to start using Cherri is to download the latest release from Git
 Then move the binary to `/usr/local/bin` or execute it in the directory you extracted it to.
 
 {: .warning }
-You will likely need to allow the binary to run with Gatekeeper. If it gives you too much trouble, build from source.
+You will likely need to allow the binary to run with Gatekeeper. If it gives you too much trouble, build from source using the instructions below.
 
 {: .note }
 **The official releases are compiled for the arm64 and x86_64 macOS platform only.** [Why?](https://github.com/electrikmilk/cherri/wiki/Why-macOS-only%3F)
@@ -35,7 +35,7 @@ You will likely need to allow the binary to run with Gatekeeper. If it gives you
 
 ### 1. Download the source
 
-Clone the source tree from Github: 
+Clone the source tree from GitHub: 
 
 ```
 git clone https://github.com/electrikmilk/cherri.git
