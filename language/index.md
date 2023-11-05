@@ -28,7 +28,7 @@ Then move the binary to `/usr/local/bin` or execute it in the directory you extr
 {: .warning }
 You will likely need to allow the binary to run with Gatekeeper. If it gives you too much trouble, build from source.
 
-{: .info }
+{: .note }
 **The official releases are compiled for the arm64 and x86_64 macOS platform only.** [Why?](https://github.com/electrikmilk/cherri/wiki/Why-macOS-only%3F)
 
 ## Build from Source
