@@ -62,10 +62,15 @@ Text variables support the standard escaped characters:
 
 ```ruby
 @number = 42
-@add = 2 + 2
 ```
 
 ### Expression
+
+```ruby
+@expression = 54 + (6 * 7)
+```
+
+You can use a variable in an expression:
 
 ```ruby
 @expression = 54 * number + (6 * 7)
@@ -188,11 +193,13 @@ The following types may be used:
 - `array`
 - `var` (variable reference)
 
-## Type Casting
+## Type Coercion
 
-You can currently do the following typecasting.
+You can currently do the following type coercions.
 
 ### Text
+
+There exists no `text()` action, as string literals create a text action. To coerce another value to a string, simply reference it as an inline variable.
 
 ```ruby
 @var = 5
@@ -200,14 +207,11 @@ You can currently do the following typecasting.
 @textVar = "{var.text}"
 ```
 
-```ruby
-@var = 5
-@textVar = getText(var)
-```
+If for some reason that doesn't work, use the `getText()` action.
 
 ```ruby
 @var = 5
-@textVar = "{var}"
+@textVar = getText(var)
 ```
 
 ### Number
@@ -222,6 +226,8 @@ You can currently do the following typecasting.
 @var = "5"
 @textVar = getNumbers(var)
 ```
+
+The `number()` action should only be used to coerce another value to a number, as an integer literal produces the same output.
 
 ```ruby
 @var = "5"
