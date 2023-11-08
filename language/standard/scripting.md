@@ -1061,6 +1061,28 @@ notification(string body, string ?title, boolean ?playSound = true)
 
 ## Numbers
 
+### Number
+
+Create a number value.
+
+```
+number(number number)
+```
+
+Keep in mind the following statements have the exact same output. A Number action is created automatically for an integer literal, just as a Text action is created for a string literal.
+
+```ruby
+@int = 5
+@int = number(5)
+```
+
+The `number()` action should only be used to coerce a string to a number.
+
+```ruby
+@five = "5"
+@fiveNum = number(five)
+```
+
 ### Format File Size
 
 Format the size of the `file` to `format`.
