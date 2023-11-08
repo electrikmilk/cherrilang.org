@@ -199,11 +199,14 @@ You can currently do the following type coercions.
 
 ### Text
 
-There exists no `text()` action, as string literals create a text action. To coerce another value to a string, simply reference it as an inline variable.
-
 ```ruby
 @var = 5
 @textVar = var.text
+```
+
+There exists no `text()` action, as string literals create a text action. To coerce another value to a string, simply reference it as an inline variable just as you would in Shortcuts.
+
+```ruby
 @textVar = "{var.text}"
 ```
 
