@@ -80,6 +80,8 @@ But you can also just inline a global in a string like other variables.
 @shortcutInput = "{ShortcutInput}"
 ```
 
+The `Ask` global may be used for an action argument, but not as an inline string variable.
+
 ## Empty variables
 
 You can declare a variable without a value:
