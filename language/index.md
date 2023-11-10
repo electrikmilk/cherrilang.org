@@ -14,9 +14,6 @@ Thanks for taking an interest in the Cherri programming language. Don't worry! C
 Contributing to this open-source documentation is more than welcome as this language is in the early stages and while most
 things work, bugs, or inaccurate documentation are very likely.
 
-{: .warning }
-The latest release may not include everything in the latest documentation, and you may run into actions or language features of a future release. To use the latest features (which are subject to change or may not work properly) build from source.
-
 ## Download & Install
 
 The easiest way to start using Cherri is to download the latest release from GitHub:
@@ -26,10 +23,11 @@ The easiest way to start using Cherri is to download the latest release from Git
 Then move the binary to `/usr/local/bin` or execute it in the directory you extracted it to.
 
 {: .warning }
+The latest release may not include everything in the latest documentation, and you may run into actions or language features of a future release. To use the latest features (which are subject to change or may not work properly) build from source.
+
 You will likely need to allow the binary to run with Gatekeeper. If it gives you too much trouble, build from source using the instructions below.
 
-{: .note }
-**The official releases are compiled for the arm64 and x86_64 macOS platform only.** [Why?](https://github.com/electrikmilk/cherri/wiki/Why-macOS-only%3F)
+**The official releases are compiled for the arm64 (Apple Silicon) and x86_64 (Intel) macOS platforms only.** [Why?](https://github.com/electrikmilk/cherri/wiki/Why-macOS-only%3F)
 
 ## Build from Source
 
