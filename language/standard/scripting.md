@@ -422,7 +422,7 @@ startScreensaver()
 ## Dictionaries
 
 {: .note }
-The dictionary action is abstracted into a variable value, see [Dictionary](../variables-globals.html#dictionaries).
+The dictionary action is abstracted into a variable value, see [Dictionary](../types.html#dictionary).
 
 ---
 
