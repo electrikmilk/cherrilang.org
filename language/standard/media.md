@@ -185,6 +185,16 @@ flipImage(image,direction)
 
 ---
 
+### Remove Image Background
+
+Remove the background from an image.
+
+```
+removeBackground(boolean ?crop = false)
+```
+
+---
+
 ### Rotate Image
 
 Rotate `image` `degrees` number of degrees. Returns rotated image.
