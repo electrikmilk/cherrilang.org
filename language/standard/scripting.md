@@ -21,7 +21,7 @@ nav_order: 6
 
 ### App ID Shorthands
 
-Shorthands are built into any of the following actions accepting App IDs.
+Shorthands are built into any of the following actions accepting App IDs. However, if you use these values they must be available at compile time.
 
 - `appstore`
 - `files`
