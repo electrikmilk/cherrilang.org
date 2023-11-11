@@ -15,6 +15,6 @@ The Cherri compiler internally runs the macOS binary `shortcuts`, specifically i
 
 We pass it the input path (`-i`) of the unsigned Shortcut which is determined by where the input file is located. It is kept there if it is rejected by the binary which refuses to sign it for whatever reason, usually a formatting error.
 
-We also pass it the output path (`-o`) for the Shortcut which is defaulted to the current directory or can be set by the user using the `-o=` or `--output=` argument.
+We also pass it the output path (`-o`) for the Shortcut which is defaulted to where the input file is located or can be set by the user using the `-o=` or `--output=` argument.
 
 And finally, we pass it the signing mode (`-m`) which is set to `contacts` by default but can be set to `anyone` by the user using the `-s=` or `--share=` argument.
