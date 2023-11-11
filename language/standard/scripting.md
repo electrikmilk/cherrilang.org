@@ -273,6 +273,40 @@ getDeviceDetail(enum detail)
 
 ---
 
+### Lock Screen
+
+Lock the device's screen.
+
+```
+lockScreen()
+```
+
+---
+
+### Log Out User
+
+Logout the current user.
+
+```
+logout()
+```
+
+*macOS only*
+
+---
+
+### Put Display to Sleep
+
+Put the display to sleep.
+
+```
+displaySleep()
+```
+
+*macOS only*
+
+---
+
 ### Toggle Appearance
 
 Toggles system appearance from light to dark, or dark to light.
@@ -341,7 +375,39 @@ Set device volume (0-100).
 setVolume(text volume)
 ```
 
---- 
+---
+
+### Shut Down
+
+Shut down the device.
+
+```
+shutdown()
+```
+
+---
+
+### Restart
+
+Restart the device.
+
+```
+reboot()
+```
+
+---
+
+### Sleep
+
+Set the device to enter sleep mode.
+
+```
+sleep()
+```
+
+*macOS only*
+
+---
 
 ### Start Screensaver
 
