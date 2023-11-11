@@ -280,12 +280,12 @@ appendNote(string note, string input)
 
 ---
 
-### Show Note
+### Open Note
 
-Show `note`.
+Open `note` in Notes.
 
 ```
-showNote(variable note)
+openNote(variable note)
 ```
 
 ## Previewing

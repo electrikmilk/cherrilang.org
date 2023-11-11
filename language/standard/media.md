@@ -53,22 +53,20 @@ takeVideo(camera,quality,startImmediately)
 
 ### Record Audio
 
-Start recording audio.
+Record some audio.
 
 ```
-record(quality,start)
+recordAudio(enum ?quality = "Normal", enum ?start = "On Tap")
 ```
-
-Both `quality` and `start` are optional.
 
 #### Recording Qualities
 
-- Normal (default)
+- Normal
 - Very High
 
 #### Recording Starts
 
-- On Tap (default)
+- On Tap
 - Immediately
 
 ---
