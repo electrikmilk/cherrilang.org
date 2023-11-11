@@ -190,7 +190,7 @@ flipImage(image,direction)
 Remove the background from an image.
 
 ```
-removeBackground(boolean ?crop = false)
+removeBackground(variable image, boolean ?crop = false)
 ```
 
 ---
