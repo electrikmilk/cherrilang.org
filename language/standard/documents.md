@@ -425,77 +425,7 @@ Show the definition of `word`.
 define(string word)
 ```
 
----
-
-### Get Group from Matched Text
-
-Get group at `index` in `matches`.
-
-```
-matchedTextGroupIndex(variable matches, integer index)
-```
-
 ## Text Editing
-
-### Split Text
-
-Split `text` by `separator`.
-
-```
-splitText(string text, string separator)
-```
-
----
-
-### Join Text
-
-Combine `text` with `separator`.
-
-```
-joinText(string text, string separator)
-```
-
----
-
-### Replace Text
-
-Find `find` in `subject` and replace it with `replacement`.
-
-```
-replaceText(string find, string replacement, string subject)
-```
-
----
-
-### Case Insensitive Replace Text
-
-Case-insensitive find `find` in `subject` and replace with `replacement`.
-
-```
-iReplaceText(string find, string replacement, string subject)
-```
-
----
-
-### Regular Expression Replace Text
-
-Use a regular expression to find `find` in `subject` and replace it with `replacement`.
-
-```
-regReplaceText(string expression, string replacement, string subject)
-```
-
----
-
-### Case Insensitive Regular Expression Replace Text
-
-Use a case-insensitive regular-expression to find `find` in `subject` and replace with `replacement`.
-
-```
-iRegReplaceText(string expression, string replacement, string subject)
-```
-
----
 
 ### Change Case to Uppercase
 
@@ -557,12 +487,82 @@ alternateCase(string text)
 
 ---
 
+### Join Text
+
+Combine `text` with `separator`.
+
+```
+joinText(string text, string separator)
+```
+
+---
+
 ### Correct Spelling
 
 Correct the spelling of `text`.
 
 ```
 correctSpelling(string text)
+```
+
+---
+
+### Get Group from Matched Text
+
+Get group at `index` in `matches`.
+
+```
+matchedTextGroupIndex(variable matches, integer index)
+```
+
+---
+
+### Replace Text
+
+Find `find` in `subject` and replace it with `replacement`.
+
+```
+replaceText(string find, string replacement, string subject)
+```
+
+---
+
+### Case Insensitive Replace Text
+
+Case-insensitive find `find` in `subject` and replace with `replacement`.
+
+```
+iReplaceText(string find, string replacement, string subject)
+```
+
+---
+
+### Regular Expression Replace Text
+
+Use a regular expression to find `find` in `subject` and replace it with `replacement`.
+
+```
+regReplaceText(string expression, string replacement, string subject)
+```
+
+---
+
+### Case Insensitive Regular Expression Replace Text
+
+Use a case-insensitive regular-expression to find `find` in `subject` and replace with `replacement`.
+
+```
+iRegReplaceText(string expression, string replacement, string subject)
+```
+
+---
+
+### Split Text
+
+Split `text` by `separator`.
+
+```
+splitText(string text, string separator)
 ```
 
 ## Translation
