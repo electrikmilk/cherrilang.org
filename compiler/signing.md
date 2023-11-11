@@ -17,4 +17,4 @@ We pass it the input path (`-i`) of the unsigned Shortcut which is determined by
 
 We also pass it the output path (`-o`) for the Shortcut which is defaulted to where the input file is located or can be set by the user using the `-o=` or `--output=` argument.
 
-And finally, we pass it the signing mode (`-m`) which is set to `contacts` by default but can be set to `anyone` by the user using the `-s=` or `--share=` argument.
+And finally, we pass it the signing mode (`-m`) which is set to `contacts` by default (`people-who-know-me`) but can be set to `anyone` by the user using the `-s=` or `--share=` argument.
