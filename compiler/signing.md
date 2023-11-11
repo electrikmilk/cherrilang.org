@@ -7,7 +7,7 @@ nav_order: 6
 
 # Signing Shortcuts
 
-Apple has used an internal algorithm to "sign" Shortcuts since iOS 15 and macOS 12. It is required to sign a Shortcut in order to share/import them into the app and run them on Apple platforms.
+Apple has used an internal algorithm to "sign" Shortcuts since iOS 15 and macOS 12. It is required to sign a Shortcut in order to share/import them into the Shortcuts app and run them on Apple platforms.
 
 This is built into the Shortcuts app, but must be implemented manually outside of it. The compiler runs the `shortcuts` binary, specifically with its `sign` subcommand (if we are running on macOS).
 
