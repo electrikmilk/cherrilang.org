@@ -7,9 +7,9 @@ nav_order: 6
 
 # Signing Shortcuts
 
-Apple has an internal algorithm to "sign" Shortcuts since iOS 15 and macOS 12 that are required in order to share/import them into the app and run them on Apple platforms.
+Apple has used an internal algorithm to "sign" Shortcuts since iOS 15 and macOS 12. It is required to sign a Shortcut in order to share/import them into the app and run them on Apple platforms.
 
-The Cherri compiler internally runs the macOS binary `shortcuts`, specifically it's `sign` subcommand if we are on Darwin (macOS kernel).
+This is built into the Shortcuts app, but must be implemented manually outside of it. The compiler runs the `shortcuts` binary, specifically with its `sign` subcommand (if we are running on macOS).
 
 ![shortcuts sign](https://github.com/electrikmilk/cherrilang.org/assets/4368524/7403e7d6-309b-499d-a1a0-a5f3468a333a)
 
