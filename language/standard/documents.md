@@ -425,6 +425,18 @@ Show the definition of `word`.
 define(string word)
 ```
 
+---
+
+### Transcribe Text
+
+Transcribe the text of `audioFile`.
+
+```
+transcribeText(variable audioFile)
+```
+
+*iOS 17+ only*
+
 ## Text Editing
 
 ### Change Case to Uppercase
