@@ -243,13 +243,13 @@ Send a `method` request to `url` with `body`.
 formRequest(string url, enum ?method = "GET", variable ?body, dictionary ?headers)
 ```
 
-#### Methods:
+#### HTTP Methods
 
-- GET
-- POST
-- PUT
-- PATCH
-- DELETE
+- `GET`
+- `POST`
+- `PUT`
+- `PATCH`
+- `DELETE`
 
 ---
 
