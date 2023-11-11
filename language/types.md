@@ -11,7 +11,7 @@ nav_order: 10
 
 There is a concept of data types in Shortcuts known as a "content item".
 
-These are defined in Shortcuts for example as `WFAppStoreAppContentItem`.
+These are defined in Shortcuts for example `WFAppStoreAppContentItem`.
 
 In Cherri, they are shortened into singular names.
 
@@ -106,7 +106,7 @@ You can declare a dictionary using a valid JSON object.
 
 ### Boolean
 
-Booleans translate to a number value of 1 for true, and 0 for false.
+Booleans translate to a number value of `1` for `true`, and `0` for `false`.
 
 ```ruby
 @boolVarTrue = true
@@ -135,7 +135,7 @@ Or more explicitly, set the value as `nil`
 @empty = nil
 ```
 
-You can use nil just ahout anywhere you need to cancel out an optional value.
+You can use `nil` just about anywhere you need to cancel out an optional value.
 
 However, if due to the value being optional it has a default, it will be set to its default, not empty.
 
@@ -180,7 +180,7 @@ for item in list {
     @builder += "{item}"
 }
 
-/* This would have thrown an error if @builder was not of type text. */
+/* This would have thrown an error if `@builder` was not of type text. */
 show(builder)
 ```
 
@@ -188,7 +188,7 @@ The following types may be used:
 
 - `text`
 - `number`
-- `bool` (number, 1 or 0)
+- `bool` (boolean)
 - `dictionary`
 - `array`
 - `var` (variable reference)
