@@ -9,13 +9,12 @@ nav_order: 1
 <div class="code-example" markdown="1">
 
 ```ruby
-/* Hello, World! */
+// Hello, Cherri!
 
-#define color yellow
 #define glyph smiley
+#define color yellow
 
-@title = "Cherri"
-@message = "Alert"
-alert(message, "Hello, {title}!", false)
+@message = "Hello!"
+alert("Message: {message}", "Alert")
 ```
 [Try it out!](https://playground.cherrilang.org){: .btn }
