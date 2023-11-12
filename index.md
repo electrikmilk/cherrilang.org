@@ -9,7 +9,7 @@ nav_order: 1
 <div class="code-example" markdown="1">
 
 ```ruby
-// Hello, Cherri!
+/* Hello, Cherri! */
 
 #define glyph smiley
 #define color yellow
