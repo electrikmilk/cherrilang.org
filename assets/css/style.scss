@@ -1,3 +1,7 @@
+/*!
+ * Copyright (c) Brandon Jordan
+ */
+
 html,body{
   background: #222;
   color: #fafafa
@@ -64,4 +68,17 @@ code {
 
 .text-gray {
     color: #ababab !important;
+}
+
+.shortcut-result-image {
+    background: #1e1e1e;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid #555;
+    text-align: center;
+    padding: 1rem;
+
+    img {
+         width: 70%;
+     }
 }
