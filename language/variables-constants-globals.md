@@ -57,6 +57,10 @@ const immutable = 5
 
 Constants are the implementation of Magic Variables as they cannot be modified. When referenced, the output of the action assigned to the constant is used (magic variable), instead of inserting a reference to a variable that the action output has been saved to.
 
+<div class="shortcut-result-image">
+  <img src="https://github.com/electrikmilk/cherrilang.org/assets/4368524/a519b540-fba0-497f-b07e-4e2927110682" alt="Output"/>
+</div>
+
 Constants can be used just like variables except that they cannot be redefined or appended to or the compiler will throw an error.
 
 Array or variable constants are not allowed as creating an array value involves adding to a variable, action outputs cannot be added to.
