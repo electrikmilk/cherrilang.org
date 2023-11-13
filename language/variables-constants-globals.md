@@ -63,7 +63,7 @@ Constants are the implementation of Magic Variables as they cannot be modified. 
 
 Constants can be used just like variables except that they cannot be redefined or appended to or the compiler will throw an error.
 
-Array or variable constants are not allowed as creating an array value involves adding to a variable, action outputs cannot be added to.
+Array constants are not allowed as creating an array value involves adding to a variable, action outputs cannot be added to. Variable reference constants are also not allowed as the value of a variable can change.
 
 **It is recommended to use constants when applicable as it will produce a smaller Shortcut.**
 
