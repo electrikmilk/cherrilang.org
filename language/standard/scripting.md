@@ -1142,11 +1142,15 @@ Keep in mind the following statements have the exact same output. A Number actio
 @int = number(5)
 ```
 
+<div style="text-align:center">
+   <img src="https://github.com/electrikmilk/cherrilang.org/assets/4368524/746e9105-9c42-4cc6-a3c7-9d2138e5e209" width="70%" alt="Output"/>
+</div>
+
 The `number()` action should only be used to coerce a string to a number.
 
 ```ruby
-@five = "5"
-@fiveNum = number(five)
+@five = "five (5)"
+@fiveNum = number(five) /* 5 */
 ```
 
 ### Format File Size
