@@ -92,16 +92,37 @@ You can use a variable in an expression:
 You can declare a dictionary using a valid JSON object.
 
 ```ruby
+/* Empty dictionaries */
+@x: dictionary
+@y = {}
+
+@string = "text"
 @dictionary = {
-    "key1": "value",
+    "key1": "value {string}",
     "key2": 5,
     "key3": true,
     "key4": [
         "item1",
         "item 2",
         "item3"
-    ]
+    ],
 }
+```
+
+### Array
+
+An array is a variable that has been or will be added to in order to create a variable with multiple values, an array.
+
+```ruby
+/* Empty arrays */
+@x: array
+@y = []
+
+@int = 42
+@array = [5, "test", {"test":5}, "{int}"]
+
+/* Add a value to the array variable */
+@array += "another test"
 ```
 
 ### Boolean
