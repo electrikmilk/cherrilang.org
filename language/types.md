@@ -207,10 +207,10 @@ show(builder)
 
 The following types may be used:
 
-- `text`
-- `number`
-- `bool` (boolean)
-- `dictionary`
+- `text` (default: `""`)
+- `number` (default: `0`)
+- `bool` (default: `false`)
+- `dictionary` (default: `{}`)
 - `array`
 - `var` (variable reference)
 
