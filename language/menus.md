@@ -14,19 +14,19 @@ The syntax for a menu is very similar to a `switch` statement. Use the following
 ```ruby
 menu "Prompt" {
     item "Item 1":
-        // do stuff if selected...
+        /* do stuff if selected... */
     item "Item 2":
-        // do other stuff if selected...
+        /* do other stuff if selected... */
 }
 ```
 
-The menu prompt can be a variable, so can each item label, they also support inline variables in strings.
+The menu prompt can be a variable, and so can each item label, they also support inline variables in strings.
 
 ## Choose From List
 
 Create a variable with a `list()` action as its value.
 
-Just like in Shortcuts each item must be a string, but you can still have inline string variables.
+Just like in Shortcuts, each item must be a string, but you can still have inline string variables.
 
 ```ruby
 @list = list("Item 1", "Item 2", "Item 3")
@@ -39,4 +39,4 @@ Then simply use the `chooseFromList()` action with the list and a prompt.
 @chosenItem = chooseFromList(list,"Choose a item")
 ```
 
-`chosenItem` will hold the item chosen from your list by the user.
+The variable `chosenItem` will hold the item chosen from your list by the user.
