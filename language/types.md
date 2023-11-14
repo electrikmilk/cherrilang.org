@@ -134,6 +134,7 @@ Booleans translate to a number value of `1` for `true`, and `0` for `false`.
 Boolean variables can be used in conditionals.
 
 ```ruby
+@boolVarTrue = true
 if boolVarTrue == true {
     /* ... */
 }
@@ -176,6 +177,7 @@ for item in nil {
 `nil` can be used to skip an argument that is optional to set an argument after it.
 
 ```
+@media = nil
 setMetadata(media, nil, "Title")
 ```
 
@@ -225,6 +227,7 @@ You can currently do the following type coercions.
 There exists no `text()` action, as string literals create a text action. To coerce another value to a string, simply reference it as an inline variable just as you would in Shortcuts.
 
 ```ruby
+@var = 5
 @textVar = "{var.text}"
 ```
 
