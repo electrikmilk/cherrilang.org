@@ -247,15 +247,15 @@ If for some reason that doesn't work, use the `getText()` action.
 ```
 
 ```ruby
-@var = "5"
-@textVar = getNumbers(var)
+@textVar = "5"
+@numVar = getNumbers(var)
 ```
 
 The `number()` action should only be used to coerce another value to a number, as an integer literal produces the same output.
 
 ```ruby
 @textVar = "5"
-@numVar = number(var)
+@numVar = number(textVar)
 ```
 
 ### Dictionary
