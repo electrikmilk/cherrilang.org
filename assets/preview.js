@@ -9,6 +9,7 @@ window.onload = () => {
         iframe.frameBorder = '0';
         iframe.height = '250px';
         iframe.style.width = '100%';
+        iframe.style.borderRadius = '0 0 5px 5px';
         iframe.loading = 'lazy';
         iframe.src = 'https://playground.cherrilang.org/preview?code=' + encodeURIComponent(highlight.innerText);
         highlight.appendChild(iframe);
