@@ -6,6 +6,11 @@
 
 $link-color: $red-000;
 
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
 .color {
     display: inline-block;
     height: 15px;
