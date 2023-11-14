@@ -10,6 +10,9 @@ window.onload = () => {
         iframe.height = '250px';
         iframe.style.width = '100%';
         iframe.loading = 'lazy';
+        iframe.onload = () => {
+            iframe.style.height = iframe.contentWindow.document.documentElement.scrollHeight + 'px';
+        };
         iframe.src = 'https://playground.cherrilang.org/preview?code=' + encodeURIComponent(highlight.innerText);
         highlight.appendChild(iframe);
     });
