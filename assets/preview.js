@@ -3,7 +3,7 @@
  */
 
 window.onload = () => {
-    const codes = document.querySelectorAll('.language-ruby');
+    const codes = document.querySelectorAll('.language-ruby, .language-javascript');
     codes.forEach(highlight => {
         const iframe = document.createElement('iframe');
         iframe.frameBorder = '0';
