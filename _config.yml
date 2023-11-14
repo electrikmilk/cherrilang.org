@@ -21,10 +21,10 @@ mermaid:
   version: "9.1.3"
 
 aux_links:
-  "View Source on GitHub":
-    - "//github.com/electrikmilk/cherri"
   "Playground":
     - "//playground.cherrilang.org/"
+  "View Source on GitHub":
+    - "//github.com/electrikmilk/cherri"
 aux_links_new_tab: true
 
 nav_external_links:
