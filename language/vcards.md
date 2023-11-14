@@ -9,7 +9,7 @@ nav_order: 4
 
 You can easily create a VCard menu using the built-in action `makeVCard()`.
 
-```ruby
+```
 makeVCard(string title, string subtitle, string ?imagePath)
 ```
 
@@ -22,17 +22,17 @@ The example below uses this built-in action to make a VCard menu:
 ```ruby
 @items
 repeat i for 3 {
-    @items += makeVCard("Title {i}","Subtitle {i}","assets/cherri_icon.png")
+    @items += makeVCard("Title {i}", "Subtitle {i}", "assets/cherri_icon.png")
 }
 @menuItems = "{items}"
-@vcf = setName(menuItems,"menu.vcf",false)
+@vcf = setName(menuItems, "menu.vcf", false)
 
 /* Coerce type to contact */
 @contact = vcf.contact
 
 /* Use chooseFromList to prompt the user with our menu */
-@chosenItem = chooseFromList(contact,"Prompt")
+@chosenItem = chooseFromList(contact, "Prompt")
 
 /* chosenItem contains the title of the chosen item */
-alert(chosenItem,"You chose:",false)
+alert(chosenItem, "You chose:")
 ```
