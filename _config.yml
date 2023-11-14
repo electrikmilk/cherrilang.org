@@ -15,6 +15,11 @@ callouts:
     title: Important
     color: red
 
+mermaid:
+  # Version of mermaid library
+  # Pick an available version from https://cdn.jsdelivr.net/npm/mermaid/
+  version: "9.1.3"
+
 aux_links:
   "View Source on GitHub":
     - "//github.com/electrikmilk/cherri"
