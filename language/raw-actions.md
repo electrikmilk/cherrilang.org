@@ -9,7 +9,7 @@ nav_order: 13
 
 You can write your own definition of an action not defined inside of Cherri, in Cherri.
 
-```
+```ruby
 rawAction("is.workflow.actions.gettext", [
       {
           "key": "WFTextActionText",
