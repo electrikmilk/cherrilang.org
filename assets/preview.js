@@ -11,7 +11,7 @@ window.onload = () => {
         iframe.style.width = '100%';
         iframe.loading = 'lazy';
         iframe.onload = () => {
-            iframe.style.height = iframe.contentWindow.document.documentElement.scrollHeight + 'px';
+            iframe.style.height = iframe.contentWindow.outerHeight + 'px';
         };
         iframe.src = 'https://playground.cherrilang.org/preview?code=' + encodeURIComponent(highlight.innerText);
         highlight.appendChild(iframe);
