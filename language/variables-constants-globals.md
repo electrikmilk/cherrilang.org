@@ -64,7 +64,10 @@ Constants are the implementation of Magic Variables as they cannot be modified. 
 
 ```ruby
 const immutable = 5
+alert("{immutable}")
+
 @mutable = 5
+alert("{mutable}")
 ```
 
 Constants can be used just like variables except that they cannot be redefined or appended to or the compiler will throw an error.
