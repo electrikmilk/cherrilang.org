@@ -102,7 +102,7 @@ You can declare a dictionary using a valid JSON object.
         "item1",
         "item 2",
         "item3"
-    ],
+    ]
 }
 ```
 
