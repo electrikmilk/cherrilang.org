@@ -36,7 +36,6 @@ This is useful for Shortcuts where the comments in your code are not relevant to
 // ...
 nothing()
 // TODO: Fix weird bug here
-something()
 nothing()
 // ...
 ```
