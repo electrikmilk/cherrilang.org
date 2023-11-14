@@ -40,13 +40,14 @@ The first operand of the if statement must be a variable. The second can optiona
 
 ### Has Value/Does Not
 
-```go
+```ruby
+@variable: text
 // Has Any Value
-if intVar {
+if variable {
     
 }
 // Does not have any value
-if !intVar {
+if !variable {
     
 }
 ```
@@ -55,7 +56,8 @@ if !intVar {
 
 This checks if `intVar` is between `5` and `7`.
 
-```go
+```ruby
+@intVar = 5
 if intVar <> 5 7 {
     // ...
 }
@@ -68,7 +70,7 @@ if intVar <> 5 7 {
 Use the following syntax:
 
 ```ruby
-@items
+@items: array
 repeat i for 6 {
     @items += "Item {i}"
 }
@@ -82,7 +84,7 @@ Use the following syntax:
 
 ```ruby
 @items = list("item 1","item 2","item 3")
-for item in list {
+for item in items {
     alert(item)
 }
 ```
