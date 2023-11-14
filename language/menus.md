@@ -11,7 +11,7 @@ nav_order: 4
 
 The syntax for a menu is very similar to a `switch` statement. Use the following syntax to create a menu:
 
-```go
+```ruby
 menu "Prompt" {
     item "Item 1":
         // do stuff if selected...
