@@ -40,10 +40,7 @@ In Cherri, they are shortened into singular names.
 ### Text
 
 ```ruby
-@text = "text"
-@multi = "multi
-line
-text"
+@string = "text"
 ```
 
 Text variables support the standard escaped characters:
