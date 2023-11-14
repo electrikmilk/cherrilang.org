@@ -159,7 +159,7 @@ You can use `nil` just about anywhere you need to cancel out an optional value.
 However, if due to the value being optional it has a default, it will be set to its default, not empty.
 
 ```ruby
-getFile(nil)
+@var = getFile(nil)
 
 if var == nil {
 
@@ -254,13 +254,13 @@ If for some reason that doesn't work, use the `getText()` action.
 The `number()` action should only be used to coerce another value to a number, as an integer literal produces the same output.
 
 ```ruby
-@var = "5"
-@textVar = number(var)
+@textVar = "5"
+@numVar = number(var)
 ```
 
 ### Dictionary
 
 ```ruby
-@var = "{\"json\":\"string\"}"
+@var
 @textVar = getDictionary(var)
 ```
