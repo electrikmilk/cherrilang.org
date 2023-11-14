@@ -42,11 +42,11 @@ The first operand of the if statement must be a variable. The second can optiona
 
 ```ruby
 @variable: text
-// Has Any Value
+/* Has Any Value */
 if variable {
     
 }
-// Does not have any value
+/* Does not have any value */
 if !variable {
     
 }
@@ -59,7 +59,7 @@ This checks if `intVar` is between `5` and `7`.
 ```ruby
 @intVar = 5
 if intVar <> 5 7 {
-    // ...
+    
 }
 ```
 
