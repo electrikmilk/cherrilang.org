@@ -16,37 +16,42 @@ Variables are initialized using the following syntax:
 Insert variables into a string value:
 
 ```ruby
+@text = "value"
 @inserted = "Value: {text}"
 ```
 
 Get as...
 
 ```ruby
-@inserted = "Value: {text[Get]}"
+@deviceOS = "OS: {Device[OS]}"
 ```
 
 Type coercion...
 
 ```ruby
-@inserted = "Value: {text.type}"
+@text = "five 5"
+@number = "Number: {text.number}"
 ```
 
 ## Variable as a value
 
 ```ruby
-@inserted = variable
+@variable = nil
+@ref = variable
 ```
 
 Get as...
 
 ```ruby
-@inserted = variable[Get]
+@variable = nil
+@getAs = variable[Name]
 ```
 
 Type coercion...
 
 ```ruby
-@inserted = variable.type
+@variable: text
+@type = variable.number
 ```
 
 ## Constants
@@ -57,9 +62,10 @@ const immutable = 5
 
 Constants are the implementation of Magic Variables as they cannot be modified. When referenced, the output of the action assigned to the constant is used (magic variable), instead of inserting a reference to a variable that the action output has been saved to.
 
-<div class="shortcut-result-image">
-  <img src="https://github.com/electrikmilk/cherrilang.org/assets/4368524/a519b540-fba0-497f-b07e-4e2927110682" alt="Output"/>
-</div>
+```ruby
+const immutable = 5
+@mutable = 5
+```
 
 Constants can be used just like variables except that they cannot be redefined or appended to or the compiler will throw an error.
 
