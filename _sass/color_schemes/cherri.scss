@@ -35,3 +35,10 @@ p.note::before, blockquote.note::before {
         width: 70%;
     }
 }
+
+.language-ruby, .language-javascript {
+    iframe {
+        height: 300px;
+        width: 100%
+    }
+}
