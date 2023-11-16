@@ -2,9 +2,22 @@
  * Copyright (c) Brandon Jordan
  */
 
+::-moz-selection { /* Code for Firefox */
+    background: rgba(227,117,118,.5);
+}
+
+::selection {
+    background: rgba(227,117,118,.5);
+}
+
 @import "./color_schemes/dark";
 
 $link-color: $red-000;
+
+html, body, input, textarea, select, button {
+    accent-color: $red-000;
+    caret-color: $red-000;
+}
 
 body {
     -webkit-font-smoothing: antialiased;
