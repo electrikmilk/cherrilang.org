@@ -6,7 +6,6 @@ nav_order: 8
 ---
 
 # Definitions
-
 {: .no_toc }
 
 ## Table of contents
