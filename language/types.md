@@ -7,6 +7,14 @@ nav_order: 10
 
 # Types
 
+{: .no_toc }
+
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
 ## Content Item Types
 
 There is a concept of data types in Shortcuts known as a "content item".
