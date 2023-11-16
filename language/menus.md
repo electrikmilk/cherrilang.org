@@ -7,6 +7,14 @@ nav_order: 4
 
 # Menus
 
+{: .no_toc }
+
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
 ## Choose From Menu
 
 The syntax for a menu is very similar to a `switch` statement. Use the following syntax to create a menu:
