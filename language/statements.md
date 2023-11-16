@@ -7,6 +7,14 @@ nav_order: 3
 
 # Statements
 
+{: .no_toc }
+
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
 ## If/Else
 
 Use the following syntax:
