@@ -6,7 +6,6 @@ nav_order: 10
 ---
 
 # Types
-
 {: .no_toc }
 
 ## Table of contents
