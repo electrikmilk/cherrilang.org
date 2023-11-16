@@ -7,6 +7,14 @@ nav_order: 8
 
 # Definitions
 
+{: .no_toc }
+
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
 Define aspects of your Shortcut, such as the color and glyph of the icon, how it responds
 to no input, what it accepts as input, etc.
 
