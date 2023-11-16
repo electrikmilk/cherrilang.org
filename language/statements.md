@@ -6,7 +6,6 @@ nav_order: 3
 ---
 
 # Statements
-
 {: .no_toc }
 
 ## Table of contents
