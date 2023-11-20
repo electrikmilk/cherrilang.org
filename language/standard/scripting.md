@@ -608,7 +608,7 @@ contentGraph(variable input)
 Prompt the user to choose an item from `list`, optionally with `prompt` . Returns the item(s) chosen.
 
 ```
-chooseFromList(variable list, string ?prompt, boolean ?selectMultiple = false)
+chooseFromList(variable list, text ?prompt, bool ?selectMultiple = false, bool ?selectAll = false)
 ```
 
 ---
