@@ -22,7 +22,7 @@ The example below uses this built-in action to make a VCard menu:
 ```ruby
 @items
 repeat i for 3 {
-    @items += makeVCard("Title {i}", "Subtitle {i}", "assets/cherri_icon.png")
+    @items += makeVCard("Title {i}", "Subtitle {i}")
 }
 @menuItems = "{items}"
 @vcf = setName(menuItems, "menu.vcf", false)
