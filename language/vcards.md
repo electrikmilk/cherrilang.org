@@ -26,7 +26,7 @@ repeat i for 3 {
     @items += vcard
 }
 @menuItems = "{items}"
-@vcf = setName(menuItems, "menu.vcf", false)
+@vcf = setName(menuItems, "menu.vcf")
 
 /* Coerce type to contact */
 @contact = vcf.contact
