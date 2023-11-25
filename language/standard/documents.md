@@ -504,7 +504,7 @@ alternateCase(string text)
 Combine `text` with `separator`.
 
 ```
-joinText(string text, string separator)
+joinText(string text, string glue)
 ```
 
 ---
