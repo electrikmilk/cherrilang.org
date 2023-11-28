@@ -11,7 +11,7 @@ Notes on creating memory efficient, small file size, low action count Shortcuts 
 
 ## Use constants
 
-Using constants when applicable allows you to referencr the output of an action instead of assigning it to a varaible. For every variable you never mutate the value of, you can reduce your Shortcut by 1 action. This is not a lot, but it adds up the more complex a Shortcut becomes.
+Using constants when applicable allows you to reference the output of an action instead of assigning it to a varaible. For every variable you never mutate the value of, you can reduce your Shortcut by 1 action. This is not a lot, but it adds up the more complex a Shortcut becomes.
 
 ```javascript
 const immutable = 5
