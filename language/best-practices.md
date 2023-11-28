@@ -33,4 +33,4 @@ This is done automatically for statements, such as if/else, menu, etc to clear t
 
 ## Default or optional values
 
-If an action has an optional value and/or default value, avoid filling it in. If you must fill it in with its default value to set the value of an argument after it, use `nil` instead. This will prevent the parameter from being set, resulting in a smaller Shortcut.
+If an action has an optional argument and/or default value, avoid filling it in. If you must fill it in with its default value to set the value of an argument after it, use `nil` instead. This will prevent the parameter from being set, resulting in a smaller Shortcut.
