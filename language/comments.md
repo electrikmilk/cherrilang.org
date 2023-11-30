@@ -54,5 +54,5 @@ You can use the comment action to explicitly add a comment action, without inclu
 
 ```javascript
 comment("This will always show up in the Shortcut.")
-// This will not show up in the shortcut (unless you use the comment arguement).
+// This will not show up in the shortcut (unless you use the comment argument).
 ```
