@@ -13,9 +13,9 @@ You can easily create a VCard menu using the built-in action `makeVCard()`.
 makeVCard(string title, string subtitle, string ?imagePath)
 ```
 
-This generates a VCard using your parameters at compile time, inserting the title as the name, the subtitle as the org/company, and base 64 encodes the image at the path you specified and inserts it as the photo.
+This generates a VCard using your parameters at compile time, inserting the title as the name, the subtitle as the org/company, and base 64 encodes at compile time the image at the path specified as the photo.
 
-The only limitation is that the image path must be available at compile time. No variables are allowed unless they evaluate a string literal. The image argument is optional.
+Since this happens at compile time, the image path must be available at compile time. No variables are allowed unless they evaluate to a string literal. The image argument is optional.
 
 The example below uses this built-in action to make a VCard menu:
 
