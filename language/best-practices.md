@@ -27,9 +27,9 @@ show("{mutable}")
 
 ## Clear unused outputs
 
-If an action produces an output you wil not use, consider adding the `nothing()` action after it. This will clear the current output, reducing runtime memory.
+If an action produces an output you will not use, consider adding the `nothing()` action after it. This will clear the current output, reducing runtime memory.
 
-This is done automatically for statements, such as if/else, menu, etc to clear their output.
+This is done automatically for statements, such as if/else, menu, etc. to clear their output.
 
 ## Default or optional values
 
