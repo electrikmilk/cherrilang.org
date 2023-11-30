@@ -7,6 +7,8 @@ nav_order: 11
 
 # Comments
 
+## Usage
+
 ### Single-line comment:
 
 ```
@@ -40,6 +42,17 @@ nothing()
 // ...
 ```
 
-To include them as comment actions, use the `--comments` (`-c`) argument. 
+## Including comments
 
-If you do, do not add a `*` to the front of a line in multiline comments, it will make its way into the Shortcut.
+### Slash syntax comments
+
+To include your comments as actions, use the `--comments` (`-c`) argument. If you do, do not add a `*` to the front of a line in multiline comments, it will make its way into the Shortcut.
+
+### Explicit comments
+
+You can use the comment action to explicitly add a comment action, without including your slash syntax comments.
+
+```javascript
+comment("This will always show up in the Shortcut.")
+// This will not show up in the shortcut (unless you use the comment arguement).
+```
