@@ -20,7 +20,7 @@ Standard actions are always available and do not need to be imported.
 
 - (3/23) [Calendar](standard/calendar)
 - [Contacts](standard/contacts)
-- (40/64) [Documents](standard/documents)
+- (42/64) [Documents](standard/documents)
 - [Location](standard/location)
 - (35/68) [Media](standard/media)
 - [Scripting](standard/scripting)
