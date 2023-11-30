@@ -100,7 +100,7 @@ These values must be separated by commas.
 - `sharesheet` - Share Sheet
 - `notifications` - Notifications Center Widget
 - `sleepmode` - Sleep Mode
-- `watch` - Apple Watch
+- `watch` - Show on Apple Watch
 - `onscreen` - Receive On-Screen Content
 
 ## Name
