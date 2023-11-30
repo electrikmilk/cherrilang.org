@@ -387,6 +387,22 @@ getRichTextFromMarkdown(variable markdown)
 
 ## Text
 
+### Dictate Text
+
+Get text from user using dictation (text-to-speech).
+
+```
+listen(enum ?stopListening = "After Pause", text ?language)
+```
+
+#### When to stop listening
+
+- After Pause
+- After Short Pause
+- On Tap
+
+----
+
 ### Get Text from Image
 
 Get text from `image`.
@@ -423,6 +439,16 @@ Show the definition of `word`.
 
 ```
 define(string word)
+```
+
+---
+
+### Speak Text
+
+Have the device's default voice say `prompt`.
+
+```
+speak(text prompt, bool ?waitUntilFinished = true, text ?language)
 ```
 
 ---
