@@ -20,12 +20,13 @@ The only limitation is that the image path must be available at compile time. No
 The example below uses this built-in action to make a VCard menu:
 
 ```ruby
-@items
+@items = []
 repeat i for 3 {
-    const vcard = makeVCard("Title {i}", "Subtitle {i}")
-    @items += vcard
+    @items += makeVCard("Title {i}", "Subtitle {i}")
 }
 @menuItems = "{items}"
+
+/* Create contact card file */
 @vcf = setName(menuItems, "menu.vcf")
 
 /* Coerce type to contact */
