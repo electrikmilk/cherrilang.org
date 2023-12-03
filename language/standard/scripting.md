@@ -883,7 +883,7 @@ measurement("2000","Information Storage","MB")
    - km
    - hm
    - dam
-   - meter
+   - m
    - dm
    - cm
    - mm
