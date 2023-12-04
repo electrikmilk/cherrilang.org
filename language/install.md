@@ -6,7 +6,7 @@ has_children: false
 nav_order: 0
 ---
 
-# Getting Started
+# Install
 
 ## Download & Install
 
