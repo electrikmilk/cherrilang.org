@@ -2,7 +2,7 @@
 title: Best practices
 layout: default
 parent: Documentation
-nav_order: 14
+nav_order: 15
 ---
 
 # Creating Efficient Shortcuts
