@@ -23,6 +23,8 @@ mermaid:
 aux_links:
   "Playground":
     - "//playground.cherrilang.org/"
+  "macOS App":
+    - "//github.com/electrikmilk/cherri-macos-app"
   "View Source on GitHub":
     - "//github.com/electrikmilk/cherri"
 aux_links_new_tab: true
