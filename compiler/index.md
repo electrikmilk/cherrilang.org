@@ -12,7 +12,7 @@ Welcome to the Cherri programming language compiler documentation!
 Before contributing, please make sure you have read the [contributing guidelines](https://github.com/electrikmilk/cherri/blob/main/CONTRIBUTING.md).
 
 {: .warning }
-Apologies, this documentation may be out of date in some places, in those cases, the source code is your friend. There are plans to update it soon.
+Apologies, this documentation may be out of date in some places, in those cases, the source code is your friend.
 
 {: .warning }
 Keep in mind that this compiler is in the early stages and is undergoing heavy development. There is much refactoring to be done, the compiler has not yet reached the desired level of maturity and simplicity, and things are always subject to change.
