@@ -651,6 +651,9 @@ Get the item at `index` from `list`. Counting in Shortcuts starts at `1`.
 getListItem(variable list, integer index)
 ```
 
+{: .warning }
+Shortcuts start counting indexes at 1.
+
 ---
 
 ### Get List Items in Range
@@ -660,6 +663,9 @@ Get items in the list within the range of `start` to `end`.
 ```
 getListItems(variable list, integer start, integer end)
 ```
+
+{: .warning }
+Shortcuts start counting indexes at 1.
 
 ---
 
