@@ -194,6 +194,8 @@ You can declare a variable with a type but no initial value.
 
 This is particularly useful for creating a variable and then appending to it, then using it with an action that expects that type of value.
 
+This is also useful because it's faster. Setting a variable's value type explicitly is faster than having to infer the type and read the empty value such as `""`, `[]`, or `{}`. The last two in particular have a JSON parser read their empty values.
+
 ```ruby
 @string: text
 @integer: number
