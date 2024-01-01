@@ -39,4 +39,18 @@ If an action has an optional argument and/or default value, avoid filling it in.
 
 Whenever possible when declaring variables with empty values, rather than setting an empty value either do not set any value or type, set it to `nil`, or declare the type of the variable value.
 
+```ruby
+/* slowest, sets empty value of type */
+@string = ""
+@array = []
+@dict = {}
 
+/* faster, set the type of the variable with an empty value */
+@string: text
+
+/* explicitly sets the value to empty if you like, but no value type has been set */
+@string = nil
+
+/* fastest, but no value type set */
+@string
+```
