@@ -37,4 +37,6 @@ If an action has an optional argument and/or default value, avoid filling it in.
 
 ## Type declaration of empty variables
 
-Whenever possible, declare the type of a value or set it to `nil` rather than setting an empty value.
+Whenever possible when declaring variables with empty values, rather than setting an empty value either do not set any value or type, set it to `nil`, or declare the type of the variable value.
+
+
