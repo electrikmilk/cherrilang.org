@@ -41,7 +41,7 @@ If an action has an optional argument and/or default value, avoid filling it in.
 
 Notes on ensuring your Shortcut compiles as quickly as possible.
 
-### Variables with empty values
+### Declare variable value types without empty typed values
 
 Whenever possible when declaring variables with empty values, rather than setting an empty value either do not set any value or type, set it to `nil`, or declare the type of the variable value.
 
