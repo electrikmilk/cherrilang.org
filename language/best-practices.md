@@ -27,12 +27,6 @@ Setting a value that will never change to a variable uses more actions.
 show("{mutable}")
 ```
 
-### Clear unused outputs
-
-If an action produces an output you will not use, consider adding the `nothing()` action after it. This will clear the current output, reducing runtime memory.
-
-This is done automatically for statements, such as if/else, menu, etc. to clear their output.
-
 ### Default or optional values
 
 If an action has an optional argument and/or default value, avoid filling it in. If you must fill it in with its default value to set the value of an argument after it, use `nil` instead. This will prevent the parameter from being set, resulting in a smaller Shortcut.
