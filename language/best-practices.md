@@ -9,7 +9,7 @@ nav_order: 15
 
 ## Efficiency
 
-Notes on creating memory efficient, small file size, low action count Shortcuts in Cherri.
+Notes on creating memory efficient Shortcuts in Cherri.
 
 ### Clear unused outputs
 
@@ -39,6 +39,8 @@ Shortcuts will run a Dictionary action and move on, but for an array, Shortcuts 
 
 ## Small Shortcut File Size
 
+Notes on reducing the action count and file size of compiled Shortcuts.
+
 ### Use constants
 
 Using constants when applicable allows you to reference the output of an action instead of assigning it to a variable. For every variable you never mutate the value of, you can reduce your Shortcut by 1 action. This is not a lot if you have one variable, but it adds up the more variables you add to a Shortcut.
@@ -61,7 +63,7 @@ If an action has an optional argument and/or default value, avoid filling it in.
 
 ## Fast compilation
 
-Notes on ensuring your Shortcut compiles as quickly as possible.
+Notes on ensuring your Cherri code compiles as quickly as possible.
 
 ### Declare variable value types without empty typed values
 
