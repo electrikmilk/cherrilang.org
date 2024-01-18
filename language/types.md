@@ -80,7 +80,9 @@ text"
 @raw = 'i\'m text'
 ```
 
-Raw text cancels out interpolation other than single quotes. As a result they compile much faster than standard text literals.
+Raw text cancels out interpolation other than escaped single quotes. As a result they compile much faster than standard text literals.
+
+One caveat to raw text is that it is not allowed in Dictionaries or Arrays. This is due to the fact that a dictionary or array must be valid JSON objects.
 
 ### Number
 
