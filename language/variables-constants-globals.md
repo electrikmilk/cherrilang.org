@@ -19,7 +19,7 @@ nav_order: 2
 Variables are initialized using the following syntax:
 
 ```ruby
-@text = "value"
+@identifier = "value"
 ```
 
 Insert variables into a text value:
