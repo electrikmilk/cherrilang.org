@@ -122,7 +122,7 @@ if boolVarTrue == true {
 
 ### Dictionary
 
-You can declare a dictionary using a valid JSON object.
+You can declare a dictionary using a valid JSON string.
 
 ```ruby
 /* Empty dictionaries */
@@ -145,6 +145,8 @@ You can declare a dictionary using a valid JSON object.
 ### Array
 
 An array is a variable that has been or will be added to in order to create a variable with multiple iterable values.
+
+The contents of an array value, must be a valid JSON string.
 
 ```ruby
 /* Empty arrays */
