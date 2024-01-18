@@ -60,9 +60,27 @@ Text literals support interpolation of variables and escape characters.
 - `\r` carriage return
 - `\\` backslash
 
+For example:
+
 ```ruby
 @multi = "multi\nline\ntext"
 ```
+
+Multiline line text is also supported however:
+
+```ruby
+@multi = "multi
+line
+text"
+```
+
+### Raw Text
+
+```ruby
+@raw = 'i\'m text'
+```
+
+Raw text cancels out interpolation other than single quotes. As a result they compile much faster than standard text literals.
 
 ### Number
 
