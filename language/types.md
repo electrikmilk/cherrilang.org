@@ -47,10 +47,12 @@ In Cherri, they are shortened into singular names.
 ### Text
 
 ```ruby
-@string = "text"
+@string = "text {variable} \n"
 ```
 
-Text variables support the standard escaped characters:
+Text literals support interpolation of variables and escape characters.
+
+**Standard escaped characters interpolated:**
 
 - `\"` double quote
 - `\n` new line
