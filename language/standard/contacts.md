@@ -46,7 +46,7 @@ nav_order: 2
 Create a new contact.
 
 ```
-newContact(string firstName, string lastName, string phoneNumber, string emailAddress, string company, string notes, boolean ?prompt = false)
+newContact(text firstName, text lastName, text phoneNumber, text emailAddress, text company, text notes, boolean ?prompt = false)
 ```
 
 ---
@@ -56,7 +56,7 @@ newContact(string firstName, string lastName, string phoneNumber, string emailAd
 Update `detail` of `contact` to `value`.
 
 ```
-updateContact(variable contact, enum detail, string value)
+updateContact(variable contact, enum detail, text value)
 ```
 
 ---
@@ -136,7 +136,7 @@ facetimeCall(variable contact, enum ?type = "Video")
 Create a phone number value of `number`. No limit on `number` arguments.
 
 ```
-phoneNumber(string ...number)
+phoneNumber(text ...number)
 ```
 
 ---
@@ -156,7 +156,7 @@ selectPhoneNumber()
 Create an email address value of `email`. No limit on `email` arguments.
 
 ```
-emailAddress(string ...email)
+emailAddress(text ...email)
 ```
 
 ---

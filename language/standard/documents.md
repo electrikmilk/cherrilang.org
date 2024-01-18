@@ -34,7 +34,7 @@ extractArchive(variable file)
 Create an archive of `files` named `name` in `format`.
 
 ```
-makeArchive(variable files, enum ?format = ".zip", string ?name)
+makeArchive(variable files, enum ?format = ".zip", text ?name)
 ```
 
 #### Archive formats
@@ -55,7 +55,7 @@ makeArchive(variable files, enum ?format = ".zip", string ?name)
 Create a disk image containing `contents`.
 
 ```
-makeDiskImage(string name, variable contents, boolean ?encrypt = false)
+makeDiskImage(text name, variable contents, boolean ?encrypt = false)
 ```
 
 *Minimum Version: iOS 15*
@@ -69,7 +69,7 @@ makeDiskImage(string name, variable contents, boolean ?encrypt = false)
 Create a disk image of a specific size containing `contents`.
 
 ```
-makeSizedDiskImage(string name, variable contents, string ?size = "1 GB", boolean ?encrypt = false)
+makeSizedDiskImage(text name, variable contents, text ?size = "1 GB", boolean ?encrypt = false)
 ```
 
 #### Storage Size Units
@@ -115,7 +115,7 @@ markup(variable document)
 Create a folder at `path` in the user's Shortcuts folder in their iCloud Drive.
 
 ```
-createFolder(string path)
+createFolder(text path)
 ```
 
 ---
@@ -145,7 +145,7 @@ getFolderContents(variable folder, boolean ?recursive = true)
 Get `path` in the user's Shortcuts folder.
 
 ```
-getFile(string path, boolean ?errorIfNotFound = true)
+getFile(text path, boolean ?errorIfNotFound = true)
 ```
 
 ---
@@ -155,7 +155,7 @@ getFile(string path, boolean ?errorIfNotFound = true)
 Get `path` in `folder`.
 
 ```
-getFileFromFolder(variable folder, string path, boolean ?errorIfNotFound = true)
+getFileFromFolder(variable folder, text path, boolean ?errorIfNotFound = true)
 ```
 
 ---
@@ -185,7 +185,7 @@ getSelectedFiles()
 Rename `file` to `newName`.
 
 ```
-rename(variable file, string newName)
+rename(variable file, text newName)
 ```
 
 ---
@@ -205,7 +205,7 @@ reveal(variable files)
 Save `file` to `path`.
 
 ```
-saveFile(string path, variable content, boolean ?overwrite = false)
+saveFile(text path, variable content, boolean ?overwrite = false)
 ```
 
 ---
@@ -235,7 +235,7 @@ selectFile(boolean ?multiple = false)
 Get `detail` of `file`.
 
 ```
-getFileDetail(variable file, string detail)
+getFileDetail(variable file, text detail)
 ```
 
 ---
@@ -265,7 +265,7 @@ openFile(variable file, boolean ?prompt = false)
 Connect to the server at `url`.
 
 ```
-connectToServer(string url)
+connectToServer(text url)
 ```
 
 ## Notes
@@ -275,7 +275,7 @@ connectToServer(string url)
 Append `input` to `note`.
 
 ```
-appendNote(string note, string input)
+appendNote(text note, text input)
 ```
 
 ---
@@ -305,7 +305,7 @@ quicklook(variable input)
 Show `input` in a dialog.
 
 ```
-show(string input)
+show(text input)
 ```
 
 ## Printing
@@ -335,7 +335,7 @@ splitPDF(variable pdf)
 Generate a QR code using `input` with error correction level `errorCorrection`.
 
 ```
-makeQRCode(string input, enum ?errorCorrection = "Medium")
+makeQRCode(text input, enum ?errorCorrection = "Medium")
 ```
 
 #### Error Correction Levels
@@ -418,7 +418,7 @@ getTextFromImage(variable image)
 Get the emoji name of `emoji`.
 
 ```
-getEmojiName(string emoji)
+getEmojiName(text emoji)
 ```
 
 ---
@@ -438,7 +438,7 @@ getText(variable input)
 Show the definition of `word`.
 
 ```
-define(string word)
+define(text word)
 ```
 
 ---
@@ -470,7 +470,7 @@ transcribeText(variable audioFile)
 Change the case of `text` to UPPERCASE.
 
 ```
-uppercase(string text)
+uppercase(text text)
 ```
 
 ---
@@ -480,7 +480,7 @@ uppercase(string text)
 Change the case of `text` to lowercase.
 
 ```
-lowercase(string text)
+lowercase(text text)
 ```
 
 ---
@@ -490,7 +490,7 @@ lowercase(string text)
 Capitalize the first word in `text`.
 
 ```
-capitalize(string text)
+capitalize(text text)
 ```
 
 ---
@@ -500,7 +500,7 @@ capitalize(string text)
 Capitalize all the words in `text`.
 
 ```
-capitalizeAll(string text)
+capitalizeAll(text text)
 ```
 
 ---
@@ -510,7 +510,7 @@ capitalizeAll(string text)
 Change the case of `text` to Title Case.
 
 ```
-titleCase(string text)
+titleCase(text text)
 ```
 
 ---
@@ -520,7 +520,7 @@ titleCase(string text)
 Change the case of `text` to aLtErNaTiNg cAsE.
 
 ```
-alternateCase(string text)
+alternateCase(text text)
 ```
 
 ---
@@ -530,7 +530,7 @@ alternateCase(string text)
 Combine `text` with `separator`.
 
 ```
-joinText(string text, string glue)
+joinText(text text, text glue)
 ```
 
 ---
@@ -540,7 +540,7 @@ joinText(string text, string glue)
 Correct the spelling of `text`.
 
 ```
-correctSpelling(string text)
+correctSpelling(text text)
 ```
 
 ---
@@ -560,7 +560,7 @@ matchedTextGroupIndex(variable matches, integer index)
 Find `find` in `subject` and replace it with `replacement`.
 
 ```
-replaceText(string find, string replacement, string subject)
+replaceText(text find, text replacement, text subject)
 ```
 
 ---
@@ -570,7 +570,7 @@ replaceText(string find, string replacement, string subject)
 Case-insensitive find `find` in `subject` and replace with `replacement`.
 
 ```
-iReplaceText(string find, string replacement, string subject)
+iReplaceText(text find, text replacement, string subject)
 ```
 
 ---

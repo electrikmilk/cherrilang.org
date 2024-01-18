@@ -24,7 +24,7 @@ nav_order: 1
 Create a calendar with `name`.
 
 ```
-addCalendar(string name)
+addCalendar(text name)
 ```
 
 ## Dates
@@ -34,7 +34,7 @@ addCalendar(string name)
 Create date value from `date`.
 
 ```
-date(string date)
+date(text date)
 ```
 
 #### Example Usage
@@ -50,13 +50,13 @@ date("October 5, 2022")
 Add to date by units of time.
 
 ```
-addSeconds(string date, integer magnitude)
-addMinutes(string date, integer magnitude)
-addHours(string date, integer magnitude)
-addDays(string date, integer magnitude)
-addWeeks(string date, integer magnitude)
-addMonths(string date, integer magnitude)
-addYears(string date, integer magnitude)
+addSeconds(text date, integer magnitude)
+addMinutes(text date, integer magnitude)
+addHours(text date, integer magnitude)
+addDays(text date, integer magnitude)
+addWeeks(text date, integer magnitude)
+addMonths(text date, integer magnitude)
+addYears(text date, integer magnitude)
 ```
 
 ---
@@ -66,13 +66,13 @@ addYears(string date, integer magnitude)
 Subtract from the date by units of time.
 
 ```
-subtractSeconds(string date, integer magnitude)
-subtractMinutes(string date, integer magnitude)
-subtractHours(string date, integer magnitude)
-subtractDays(string date, integer magnitude)
-subtractWeeks(string date, integer magnitude)
-subtractMonths(string date, integer magnitude)
-subtractYears(string date, integer magnitude)
+subtractSeconds(text date, integer magnitude)
+subtractMinutes(text date, integer magnitude)
+subtractHours(text date, integer magnitude)
+subtractDays(text date, integer magnitude)
+subtractWeeks(text date, integer magnitude)
+subtractMonths(text date, integer magnitude)
+subtractYears(text date, integer magnitude)
 ```
 
 ---
@@ -82,9 +82,9 @@ subtractYears(string date, integer magnitude)
 Get various starting units of date.
 
 ```
-getStartMinute(string date)
-getStartHour(string date)
-getStartWeek(string date)
-getStartMonth(string date)
-getStartYear(string date)
+getStartMinute(text date)
+getStartHour(text date)
+getStartWeek(text date)
+getStartMonth(text date)
+getStartYear(text date)
 ```

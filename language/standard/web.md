@@ -24,7 +24,7 @@ nav_order: 8
 Get article from `webpage` in article.
 
 ```
-getArticle(string webpage)
+getArticle(text webpage)
 ```
 
 ---
@@ -34,7 +34,7 @@ getArticle(string webpage)
 Get `detail` from `article`.
 
 ```
-getArticleDetail(variable article, string detail)
+getArticleDetail(variable article, text detail)
 ```
 
 ## Giphy
@@ -44,7 +44,7 @@ getArticleDetail(variable article, string detail)
 Search Giphy for `query`.
 
 ```
-searchGiphy(string query)
+searchGiphy(text query)
 ```
 
 ---
@@ -54,7 +54,7 @@ searchGiphy(string query)
 Get `gifs` number of gifs from Giphy for `query`.
 
 ```
-getGifs(string query, integer ?gifs = 1)
+getGifs(text query, integer ?gifs = 1)
 ```
 
 ## RSS
@@ -64,7 +64,7 @@ getGifs(string query, integer ?gifs = 1)
 Get `items` number of items from RSS feed at `url`.
 
 ```
-getRSS(integer items, string url)
+getRSS(integer items, text url)
 ```
 
 ---
@@ -74,7 +74,7 @@ getRSS(integer items, string url)
 Get RSS feeds from urls.
 
 ```
-getRSSFeeds(string urls)
+getRSSFeeds(text urls)
 ```
 
 ## Safari
@@ -84,7 +84,7 @@ getRSSFeeds(string urls)
 Add `url` to the users reading list.
 
 ```
-addToReadingList(string url)
+addToReadingList(text url)
 ```
 
 ---
@@ -121,7 +121,7 @@ getWebPageDetail(variable webpage, enum detail)
 Open `url` in default browser. Accepts a variable containing multiple URLs.
 
 ```
-openURL(string url)
+openURL(text url)
 ```
 
 ---
@@ -131,7 +131,7 @@ openURL(string url)
 Run `script` on currently active tab as JavaScript.
 
 ```
-runJavaScriptOnWebpage(string script)
+runJavaScriptOnWebpage(text script)
 ```
 
 ---
@@ -141,7 +141,7 @@ runJavaScriptOnWebpage(string script)
 Search the web for `query` using `engine`.
 
 ```
-searchWeb(enum engine, string query)
+searchWeb(enum engine, text query)
 ```
 
 #### Engines
@@ -163,7 +163,7 @@ searchWeb(enum engine, string query)
 Show the webpage at `url`, optionally with Safari reader enabled.
 
 ```
-showWebpage(string url, boolean ?useReader)
+showWebpage(text url, boolean ?useReader)
 ```
 
 ## URLs
@@ -173,7 +173,7 @@ showWebpage(string url, boolean ?useReader)
 Expand `url`. This is generally used for short urls.
 
 ```
-expandURL(string url)
+expandURL(text url)
 ```
 
 ---
@@ -183,7 +183,7 @@ expandURL(string url)
 Get `detail` from `url`.
 
 ```
-getURLDetail(string url, enum detail)
+getURLDetail(text url, enum detail)
 ```
 
 #### Details
@@ -214,7 +214,7 @@ getURLs(variable input)
 Create url value of `url`. No limit on `url` arguments.
 
 ```
-url(string ...url)
+url(text ...url)
 ```
 
 **Example Usage**
@@ -230,7 +230,7 @@ url("https://cherrilang.org","https://routinehub.co")
 Download contents of `url`.
 
 ```
-downloadURL(string url, dictionary ?headers)
+downloadURL(text url, dictionary ?headers)
 ```
 
 ---
@@ -240,7 +240,7 @@ downloadURL(string url, dictionary ?headers)
 Send a `method` request to `url` with `body`.
 
 ```
-formRequest(string url, enum ?method = "GET", variable ?body, dictionary ?headers)
+formRequest(text url, enum ?method = "GET", variable ?body, dictionary ?headers)
 ```
 
 #### HTTP Methods
@@ -258,7 +258,7 @@ formRequest(string url, enum ?method = "GET", variable ?body, dictionary ?header
 Send a `method` JSON request to `url` with `body`.
 
 ```
-jsonRequest(string url, enum ?method = "GET", variable ?body, dictionary ?headers)
+jsonRequest(text url, enum ?method = "GET", variable ?body, dictionary ?headers)
 ```
 
 ---
@@ -268,7 +268,7 @@ jsonRequest(string url, enum ?method = "GET", variable ?body, dictionary ?header
 Send a `method` file request to `url` with `body`.
 
 ```
-fileRequest(string url, enum ?method = "GET", variable ?body, dictionary ?headers)
+fileRequest(text url, enum ?method = "GET", variable ?body, dictionary ?headers)
 ```
 
 ---
@@ -278,7 +278,7 @@ fileRequest(string url, enum ?method = "GET", variable ?body, dictionary ?header
 Get contents of webpage at `url`.
 
 ```
-getWebpageContents(string url)
+getWebpageContents(text url)
 ```
 
 ---
@@ -288,5 +288,5 @@ getWebpageContents(string url)
 Get headers for `url`.
 
 ```
-getURLHeaders(string url)
+getURLHeaders(text url)
 ```

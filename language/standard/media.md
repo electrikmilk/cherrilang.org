@@ -45,8 +45,8 @@ Takes a video using `camera` in `quality`.
 takeVideo(camera,quality,startImmediately)
 ```
 
-- `camera` is a string value of `Front` or `Back`.
-- `quality` is a string value of `Low`, `Medium`, `High`. Default is `Medium`.
+- `camera` is a text value of `Front` or `Back`.
+- `quality` is a text value of `Low`, `Medium`, `High`. Default is `Medium`.
 - `startImmediately` is an optional boolean value set to `false` by default.
 
 ## Audio
@@ -104,7 +104,7 @@ Take an interactive Screenshot
 takeInteractiveScreenshot(selection)
 ```
 
-`selection` is an optional string with a default value of `Window`. The possible arguments are `Window` or `Custom`.
+`selection` is an optional text with a default value of `Window`. The possible arguments are `Window` or `Custom`.
 
 **Note: Mac-only action**
 
@@ -530,7 +530,7 @@ stripMediaMetadata(variable media)
 Set metadata for a video or audio.
 
 ```
-setMetadata(variable media, variable ?artwork, string ?title, string ?artist, string ?album, string ?genre, string ?year)
+setMetadata(variable media, variable ?artwork, text ?title, text ?artist, text ?album, text ?genre, text ?year)
 ```
 
 ---

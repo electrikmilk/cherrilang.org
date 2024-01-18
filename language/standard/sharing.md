@@ -31,10 +31,10 @@ getClipboard()
 
 ### Copy to Clipboard
 
-Copy `input` to the clipboard. `local` is a boolean that is `false` by default. `expire` is when the information should leave the clipboard if it hasn't already and is a date as a string (e.g. Today at 3pm).
+Copy `input` to the clipboard. `local` is a boolean that is `false` by default. `expire` is when the information should leave the clipboard if it hasn't already and is a date as text (e.g. Today at 3pm).
 
 ```
-copyToClipboard(variable value, boolean ?local = false, string ?expire)
+copyToClipboard(variable value, boolean ?local = false, text ?expire)
 ```
 
 ## Messaging
@@ -44,7 +44,7 @@ copyToClipboard(variable value, boolean ?local = false, string ?expire)
 Send an email to a `contact`.
 
 ```
-sendEmail(variable contact, string from, string subject, string body, boolean ?prompt = true, boolean ?draft = false)
+sendEmail(variable contact, text from, text subject, text body, boolean ?prompt = true, boolean ?draft = false)
 ```
 
 ---
@@ -54,7 +54,7 @@ sendEmail(variable contact, string from, string subject, string body, boolean ?p
 Send a message to a `contact`.
 
 ```
-sendMessage(variable contact, string message, boolean ?prompt = true)
+sendMessage(variable contact, text message, boolean ?prompt = true)
 ```
 
 ## System
@@ -74,5 +74,5 @@ airdrop(variable input)
 Share `input` via the Share Sheet.
 
 ```
-share(string input)
+share(text input)
 ```

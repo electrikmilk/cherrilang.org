@@ -46,7 +46,7 @@ Shorthands are built into any of the following actions accepting App IDs. Howeve
 Hide app with `appId`.
 
 ```
-hideApp(string appId)
+hideApp(text appId)
 ```
 
 ---

@@ -67,7 +67,7 @@ getAddresses(variable input)
 Create a location value from a specific street address.
 
 ```
-streetAddress(string addressLine2, string addressLine2, string city, string state, string country, integer zipCode)
+streetAddress(text addressLine2, text addressLine2, text city, text state, text country, integer zipCode)
 ```
 
 ## Maps
