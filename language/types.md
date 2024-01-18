@@ -47,7 +47,7 @@ In Cherri, they are shortened into singular names.
 ### Text
 
 ```ruby
-@string = "text {variable} \n"
+@text = "text {variable} \n"
 ```
 
 Text literals support interpolation of variables and escape characters.
@@ -122,16 +122,16 @@ if boolVarTrue == true {
 
 ### Dictionary
 
-You can declare a dictionary using a valid JSON string.
+You can declare a dictionary using valid JSON syntax.
 
 ```ruby
 /* Empty dictionaries */
 @x: dictionary
 @y = {}
 
-@string = "text"
+@text = "text"
 @dictionary = {
-    "key1": "value {string}",
+    "key1": "value {text}",
     "key2": 5,
     "key3": true,
     "key4": [
@@ -146,7 +146,7 @@ You can declare a dictionary using a valid JSON string.
 
 An array is a variable that has been or will be added to in order to create a variable with multiple iterable values.
 
-The contents of an array value, must be a valid JSON string.
+The contents of an array value must be valid JSON syntax.
 
 ```ruby
 /* Empty arrays */
@@ -232,7 +232,7 @@ for item in nil {
 setMetadata(media, nil, "Title")
 ```
 
-`nil` is also faster to compile than an empty string `""`, array, etc.
+`nil` is also faster to compile than empty text `""`, array, etc.
 
 ## Type Declaration
 
@@ -243,10 +243,10 @@ This is particularly useful for creating a variable and then appending to it, th
 Setting a variable's value type explicitly also compiles faster than having to infer the type and read the empty value such as `""`, `[]`, or `{}`. The last two in particular have a JSON parser read their empty values.
 
 ```ruby
-@string: text
-@integer: number
+@t: text
+@num: number
 @list: array
-@dict: dictionary
+@obj: dictionary
 @boolean: bool
 @reference: var
 
@@ -279,7 +279,7 @@ You can currently do the following type coercions.
 @textVar = var.text
 ```
 
-There exists no `text()` action, as string literals create a text action. To coerce another value to a string, simply reference it as an inline variable just as you would in Shortcuts.
+There exists no `text()` action, as text literals create a text action. To coerce another value to text, simply reference it as an inline variable just as you would in Shortcuts.
 
 ```ruby
 @var = 5

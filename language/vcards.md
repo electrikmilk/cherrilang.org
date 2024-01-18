@@ -10,12 +10,12 @@ nav_order: 4
 You can easily create a VCard menu using the built-in action `makeVCard()`.
 
 ```
-makeVCard(string title, string subtitle, string ?imagePath)
+makeVCard(text title, text subtitle, text ?imagePath)
 ```
 
 This generates a VCard using your parameters at compile time, inserting the title as the name, the subtitle as the org/company, and base 64 encodes at compile time the image at the path specified as the photo.
 
-Since this happens at compile time, the image path must be available at compile time. No variables are allowed unless they evaluate to a string literal. The image argument is optional.
+Since this happens at compile time, the image path must be available at compile time. No variables are allowed unless they evaluate to a text literal. The image argument is optional.
 
 The example below uses this built-in action to make a VCard menu:
 
@@ -26,7 +26,7 @@ repeat i for 3 {
     @items += makeVCard("Title {i}", "Subtitle {i}")
 }
 
-/* Flatten to one string */
+/* Flatten items to text */
 @menuItems = "{items}"
 
 /* Create contact card file */

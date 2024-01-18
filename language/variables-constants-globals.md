@@ -20,7 +20,7 @@ Variables are initialized using the following syntax:
 @text = "value"
 ```
 
-Insert variables into a string value:
+Insert variables into a text value:
 
 ```ruby
 @text = "value"
@@ -94,13 +94,13 @@ All globals are implemented. Globals are case-sensitive.
 @device = Device
 ```
 
-But you can also just inline a global in a string like other variables.
+But you can also just inline a global in text like other variables.
 
 ```ruby
 @shortcutInput = "{ShortcutInput}"
 ```
 
-The `Ask` global may be used for an action argument, but not as an inline string variable.
+The `Ask` global may be used for an action argument, but may not be used as an inline variable in text.
 
 ## Empty variables
 
@@ -140,8 +140,8 @@ Increment, decrement, multiply, or divide an existing number variable using the 
 Append text to the end of an existing text variable using the following syntax:
 
 ```ruby
-@string = "Existing text"
-@string += "Additional text"
+@text = "Existing text"
+@text += "Additional text"
 ```
 
 ### Arrays

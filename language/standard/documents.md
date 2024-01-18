@@ -570,7 +570,7 @@ replaceText(text find, text replacement, text subject)
 Case-insensitive find `find` in `subject` and replace with `replacement`.
 
 ```
-iReplaceText(text find, text replacement, string subject)
+iReplaceText(text find, text replacement, text subject)
 ```
 
 ---
@@ -580,7 +580,7 @@ iReplaceText(text find, text replacement, string subject)
 Use a regular expression to find `find` in `subject` and replace it with `replacement`.
 
 ```
-regReplaceText(string expression, string replacement, string subject)
+regReplaceText(text expression, text replacement, text subject)
 ```
 
 ---
@@ -590,7 +590,7 @@ regReplaceText(string expression, string replacement, string subject)
 Use a case-insensitive regular-expression to find `find` in `subject` and replace with `replacement`.
 
 ```
-iRegReplaceText(string expression, string replacement, string subject)
+iRegReplaceText(text expression, text replacement, text subject)
 ```
 
 ---
@@ -600,7 +600,7 @@ iRegReplaceText(string expression, string replacement, string subject)
 Split `text` by `separator`.
 
 ```
-splitText(string text, string separator)
+splitText(text text, text separator)
 ```
 
 ## Translation
@@ -632,7 +632,7 @@ splitText(string text, string separator)
 Translate `text` from the detected language of `text` to `to`.
 
 ```
-translate(string text, string to)
+translate(text text, text to)
 ```
 
 ---
@@ -642,7 +642,7 @@ translate(string text, string to)
 Translate `text` from `from` to `to`.
 
 ```
-translateFrom(string text, string from, string to)
+translateFrom(text text, text from, text to)
 ```
 
 ---
@@ -652,5 +652,5 @@ translateFrom(string text, string from, string to)
 Detect the language of `text`.
 
 ```
-detectLanguage(string text)
+detectLanguage(text text)
 ```

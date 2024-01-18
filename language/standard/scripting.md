@@ -56,7 +56,7 @@ hideApp(text appId)
 Hide all open apps.
 
 ```
-hideAllApps(string ...?except)
+hideAllApps(text ...?except)
 ```
 
 ---
@@ -66,7 +66,7 @@ hideAllApps(string ...?except)
 Open app with `appId`.
 
 ```
-openApp(string appId)
+openApp(text appId)
 ```
 
 _Contributed by [JosephShenton](https://github.com/JosephShenton)_.
@@ -78,7 +78,7 @@ _Contributed by [JosephShenton](https://github.com/JosephShenton)_.
 Quit app with `appId`.
 
 ```
-quitApp(string appId)
+quitApp(text appId)
 ```
 
 ---
@@ -88,7 +88,7 @@ quitApp(string appId)
 Quit all open apps, asking to save changes.
 
 ```
-quitAllApps(string ...?except)
+quitAllApps(text ...?except)
 ```
 
 ---
@@ -98,7 +98,7 @@ quitAllApps(string ...?except)
 Quit an app with `appId` without asking to save changes.
 
 ```
-killApp(string appId)
+killApp(text appId)
 ```
 
 ---
@@ -111,7 +111,7 @@ This will quit all of the apps on the device without asking to save changes!
 Quit all open apps, **without** asking to save changes.
 
 ```
-killAllApps(string ...?except)
+killAllApps(text ...?except)
 ```
 
 ---
@@ -121,7 +121,7 @@ killAllApps(string ...?except)
 Split two apps on the device screen.
 
 ```
-splitApps(string firstAppID, string secondAppID, enum ?ratio = "half")
+splitApps(text firstAppID, text secondAppID, enum ?ratio = "half")
 ```
 
 #### Ratios
@@ -151,7 +151,7 @@ These control flow actions have been abstracted into statements: [Choose From Me
 Stop and output `output`. Do nothing if there is nowhere to output.
 
 ```
-output(string output)
+output(text output)
 ```
 
 ---
@@ -161,7 +161,7 @@ output(string output)
 Stop and output `output`. Respond with `response` if there is nowhere to output.
 
 ```
-mustOutput(string output, string response)
+mustOutput(text output, text response)
 ```
 
 ---
@@ -461,7 +461,7 @@ getKeys(dictionary dictionary)
 Get the value of `key` in `dictionary`.
 
 ```
-getValue(dictionary dictionary, string key)
+getValue(dictionary dictionary, text key)
 ```
 
 ---
@@ -471,7 +471,7 @@ getValue(dictionary dictionary, string key)
 Set the value of `key` to `value` in `dictionary`.
 
 ```
-setValue(variable dictionary, string key, string value)
+setValue(variable dictionary, text key, text value)
 ```
 
 ## Files
@@ -588,7 +588,7 @@ typeOf(variable input)
 Set the name of `item`.
 
 ```
-setName(variable item, string name, boolean ?includeFileExtension = false)
+setName(variable item, text name, boolean ?includeFileExtension = false)
 ```
 
 ---
@@ -674,7 +674,7 @@ Shortcuts start counting indexes at 1.
 Create a list of items. The `listItem` argument has no limit.
 
 ```
-list(string ...listItem)
+list(text ...listItem)
 ```
 
 ## Math
@@ -746,19 +746,19 @@ Round `number` to `roundTo`.
 Normal
 
 ```
-round(integer number, string roundTo)
+round(integer number, text roundTo)
 ```
 
 Always Round Up
 
 ```
-ceil(integer number, string roundTo)
+ceil(integer number, text roundTo)
 ```
 
 Always Round Down
 
 ```
-floor(integer number, string roundTo)
+floor(integer number, text roundTo)
 ```
 
 #### Shorthands for `roundTo`:
@@ -778,7 +778,7 @@ floor(integer number, string roundTo)
 Create a measurement.
 
 ```
-measurement(string magnitude, enum unitType, string unit)
+measurement(text magnitude, enum unitType, text unit)
 ```
 
 Example:
@@ -989,7 +989,7 @@ measurement("2000","Information Storage","MB")
 Convert `measurement` to `unitType` in `unit`.
 
 ```ruby
-convertMeasurement(variable measurement, enum unitType, string unit)
+convertMeasurement(variable measurement, enum unitType, text unit)
 ```
 
 ## Network
@@ -1079,7 +1079,7 @@ nothing()
 Ask for input with `prompt`, with optional `inputType` and `defaultValue`.
 
 ```
-prompt(string prompt, enum ?inputType = "Text", string ?defaultValue)
+prompt(text prompt, enum ?inputType = "Text", text ?defaultValue)
 ```
 
 #### Input Types
@@ -1108,7 +1108,7 @@ playSound(variable input)
 Show an alert with `title` as the title and `alert` as the body.
 
 ```
-alert(string alert, string ?title)
+alert(text alert, text ?title)
 ```
 
 ---
@@ -1118,7 +1118,7 @@ alert(string alert, string ?title)
 Show a confirmation alert with `title` as the title and `alert` as the body. If the user presses cancel, the Shortcut will stop.
 
 ```
-confirm(string alert, string ?title)
+confirm(text alert, text ?title)
 ```
 
 ---
@@ -1128,7 +1128,7 @@ confirm(string alert, string ?title)
 Trigger a custom notification.
 
 ```
-notification(string body, string ?title, boolean ?playSound = true)
+notification(text body, text ?title, boolean ?playSound = true)
 ```
 
 ## Numbers
@@ -1141,7 +1141,7 @@ Create a number value.
 number(number number)
 ```
 
-Keep in mind the following statements have the exact same output. A Number action is created automatically for an integer literal, just as a Text action is created for a string literal.
+Keep in mind the following statements have the exact same output. A Number action is created automatically for an integer literal, just as a Text action is created for a text literal.
 
 ```ruby
 @int = 5
@@ -1152,7 +1152,7 @@ Keep in mind the following statements have the exact same output. A Number actio
    <img src="https://github.com/electrikmilk/cherrilang.org/assets/4368524/746e9105-9c42-4cc6-a3c7-9d2138e5e209" alt="Output"/>
 </div>
 
-The `number()` action should only be used to coerce a string to a number.
+The `number()` action should only be used to coerce text to a number.
 
 ```ruby
 @five = "five (5)"
@@ -1217,7 +1217,7 @@ randomNumber(integer min, integer max)
 Run `script` with `input` as `inputMode` in `shell`.
 
 ```
-runShellScript(string script, variable input, string ?shell = "/bin/zsh", string ?inputMode = "to stdin")
+runShellScript(text script, variable input, text ?shell = "/bin/zsh", text ?inputMode = "to stdin")
 ```
 
 #### Input Modes
@@ -1232,7 +1232,7 @@ runShellScript(string script, variable input, string ?shell = "/bin/zsh", string
 Run Apple Script `script` on `input`.
 
 ```
-runAppleScript(variable input, string script)
+runAppleScript(variable input, text script)
 ```
 
 *macOS only*
@@ -1244,7 +1244,7 @@ runAppleScript(variable input, string script)
 Run JavaScript `script` on `input`.
 
 ```
-runJSAutomation(variable input, string script)
+runJSAutomation(variable input, text script)
 ```
 
 ## Shortcuts
@@ -1264,7 +1264,7 @@ getShortcuts()
 Create a new Shortcut.
 
 ```
-makeShortcut(string name, boolean ?open = true)
+makeShortcut(text name, boolean ?open = true)
 ```
 
 *iOS 16.4+ only*
@@ -1276,7 +1276,7 @@ makeShortcut(string name, boolean ?open = true)
 Search Shortcuts.
 
 ```
-searchShortcuts(string query)
+searchShortcuts(text query)
 ```
 
 *iOS 16.4+ only*
@@ -1288,7 +1288,7 @@ searchShortcuts(string query)
 Get a detail of a Shortcut.
 
 ```
-shortcutDetail(string detail, variable shortcut)
+shortcutDetail(text detail, variable shortcut)
 ```
 
 #### Details
@@ -1320,7 +1320,7 @@ open(variable name)
 Run Shortcut with name `shortcutName`, providing it with `output`.
 
 ```
-run(string shortcutName, variable output)
+run(text shortcutName, variable output)
 ```
 
 ---
@@ -1461,7 +1461,7 @@ resizeWindow(variable window, enum configuration)
 Open X-Callback URL `url`.
 
 ```
-openXCallbackURL(string url)
+openXCallbackURL(text url)
 ```
 
 ---
@@ -1472,5 +1472,5 @@ Open X-Callback URL `url`, with success key `successKey`, cancel key `cancelKey`
 X-Success URL `successURL`.
 
 ```
-openCustomXCallbackURL(string url, string ?successKey, string ?cancelKey, string ?errorKey, string ?successURL)
+openCustomXCallbackURL(text url, text ?successKey, text ?cancelKey, text ?errorKey, text ?successURL)
 ```

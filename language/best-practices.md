@@ -71,16 +71,16 @@ Whenever possible when declaring variables with empty values, rather than settin
 
 ```ruby
 /* slowest, sets empty value of type */
-@string = ""
+@text = ""
 @array = []
 @dict = {}
 
 /* faster, set the type of the variable with an empty value */
-@string: text
+@textVar: text
 
 /* explicitly sets the value to empty if you like, but no value type has been set */
-@string = nil
+@var = nil
 
 /* fastest, but no value type set */
-@string
+@var
 ```

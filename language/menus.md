@@ -27,13 +27,13 @@ menu "Prompt" {
 }
 ```
 
-The menu prompt can be a variable, and so can each item label, they also support inline variables in strings.
+The menu prompt can be a variable or a literal value, and so can each item label.
 
 ## Choose From List
 
 Create a variable with a `list()` action as its value.
 
-Just like in Shortcuts, each item must be a string, but you can still have inline string variables.
+Just like in Shortcuts, each item must be text, but you can still use inline variables.
 
 ```ruby
 @list = list("Item 1", "Item 2", "Item 3")
