@@ -176,6 +176,10 @@ You can easily append to an array using the `+=` syntax.
 @x += 5
 ```
 
+This adds the output of the **Number** action with a value of 5 to the array variable `x`.
+
+So `x` now contains 1 item with an number value of `5`.
+
 ### Action Result
 
 ```ruby
