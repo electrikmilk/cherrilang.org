@@ -42,7 +42,7 @@ Type coercion...
 @number = "Number: {text.number}"
 ```
 
-## Variable as a value
+### Variable as a value
 
 ```ruby
 @variable = nil
