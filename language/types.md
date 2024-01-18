@@ -100,6 +100,7 @@ One caveat to raw text is that it is not allowed in Dictionaries or Arrays. This
 You can use a variable reference in an expression:
 
 ```ruby
+@number = 42
 @expression = 54 * number + (6 * 7)
 ```
 
