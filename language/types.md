@@ -47,6 +47,7 @@ In Cherri, they are shortened into singular names.
 ### Text
 
 ```ruby
+@variable = "text"
 @text = "text {variable} \n"
 ```
 
