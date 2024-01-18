@@ -142,7 +142,7 @@ You can declare a dictionary using a valid JSON object.
 
 ### Array
 
-An array is a variable that has been or will be added to in order to create a variable with multiple values, an array.
+An array is a variable that has been or will be added to in order to create a variable with multiple iterable values.
 
 ```ruby
 /* Empty arrays */
@@ -156,22 +156,31 @@ An array is a variable that has been or will be added to in order to create a va
 @array += "another test"
 ```
 
-### Boolean
-
-Booleans translate to a number value of `1` for `true`, and `0` for `false`.
+You can use the [`for`](statements#repeat-with-each) statement to iterate over the values contained in the array variable.
 
 ```ruby
-@boolVarTrue = true
-@boolVarFalse = false
-```
-
-Boolean variables can be used in conditionals.
-
-```ruby
-@boolVarTrue = true
-if boolVarTrue == true {
+@items = ["Item 1","Item 2"]
+for item in items {
     /* ... */
 }
+```
+
+You can easily append to an array using the `+=` syntax.
+
+```ruby
+@x: array
+@x += 5
+```
+
+### Action Result
+
+```ruby
+@urls = url("https://apple.com","https://google.com")
+@list = list("Item 1","Item 2","Item 3")
+@email = emailAddress("test@test.org")
+@phone = phoneNumber("(555) 555-5555")
+@date = date("October 5, 2022")
+@location = getCurrentLocation()
 ```
 
 ### Empty
