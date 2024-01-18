@@ -94,21 +94,28 @@ Raw text cancels out interpolation other than single quotes. As a result they co
 @expression = 54 + (6 * 7)
 ```
 
-You can use a variable in an expression:
+You can use a variable reference in an expression:
 
 ```ruby
 @expression = 54 * number + (6 * 7)
 ```
 
-### Action Result
+### Boolean
+
+Booleans translate to a number value of `1` for `true`, and `0` for `false`.
 
 ```ruby
-@urls = url("https://apple.com","https://google.com")
-@list = list("Item 1","Item 2","Item 3")
-@email = emailAddress("test@test.org")
-@phone = phoneNumber("(555) 555-5555")
-@date = date("October 5, 2022")
-@location = getCurrentLocation()
+@boolVarTrue = true
+@boolVarFalse = false
+```
+
+Boolean variables can be used in conditionals.
+
+```ruby
+@boolVarTrue = true
+if boolVarTrue == true {
+    /* ... */
+}
 ```
 
 ### Dictionary
