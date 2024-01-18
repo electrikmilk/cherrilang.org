@@ -35,7 +35,23 @@ Even though it's not explicit, the value of the `someArray` variable is now an a
 
 However, unless you are unable to use a dictionary (which you can trust will be faster), be careful declaring large pre-defined arrays.
 
-Shortcuts will run a Dictionary action and move on, but for an array, Shortcuts will need to run through adding each and every value you have defined in the array to the assigned variable. Depending on if you have large pre-defined values (multiple dictionaries, etc.) and how many of them you have, this may impact runtime performance.
+Shortcuts will run a Dictionary action and move on, but for an array, Shortcuts will need to run through adding each value you have pre-defined for the array to contain to the assigned variable. Depending on if you have large pre-defined values (multiple dictionaries, etc.) and how many of them you have, this may impact runtime performance.
+
+To be clear, this does not at all impact creating an empty array and then later in your Shortcut adding values to it, this is primarily to address pre-defined top of Shortcut arrays or adding to an array that already exists at the top of your Shortcut, as your Shortcut may then take slightly longer to start or perform actions while adding a lot of items to an array that you pre-defined.
+
+Also, note that these two statements will produce the same output.
+
+```ruby
+@someArray = ["Test", 5, {}, 8]
+```
+
+```ruby
+@someArray: array
+@someArray += "Test"
+@someArray += 5
+@someArray += {}
+@someArray += 8
+```
 
 ## Small Shortcut File Size
 
