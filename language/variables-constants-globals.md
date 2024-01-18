@@ -14,6 +14,8 @@ nav_order: 2
 1. TOC
 {:toc}
 
+## Variables
+
 Variables are initialized using the following syntax:
 
 ```ruby
