@@ -618,7 +618,7 @@ chooseFromList(variable list, text ?prompt, bool ?selectMultiple = false, bool ?
 Get the first item from `the list`.
 
 ```
-firstListItem(variable list)
+getFirstItem(variable list)
 ```
 
 ---
@@ -628,7 +628,7 @@ firstListItem(variable list)
 Get the last item from `the list`.
 
 ```
-lastListItem(variable list)
+getLastItem(variable list)
 ```
 
 ---
@@ -638,7 +638,7 @@ lastListItem(variable list)
 Get a random item from `the list`.
 
 ```
-randomListItem(variable list)
+getRandomItem(variable list)
 ```
 
 ---
