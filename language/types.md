@@ -42,7 +42,7 @@ In Cherri, they are shortened into singular names.
 | webpage 	| WFSafariWebPageContentItem 	|
 | text 	| WFStringContentItem 	|
 
-## Data Types
+## Value Types
 
 ### Text
 
@@ -51,14 +51,13 @@ In Cherri, they are shortened into singular names.
 @text = "text {variable} \n"
 ```
 
-Text literals support interpolation of variables and escape characters.
+Text literals support the interpolation of variables and escape characters.
 
 **Standard escaped characters interpolated:**
 
 - `\"` double quote
 - `\n` new line
 - `\t` tab
-- `\r` carriage return
 - `\\` backslash
 
 For example:
@@ -67,7 +66,7 @@ For example:
 @multi = "multi\nline\ntext"
 ```
 
-Multiline line text is also supported however:
+Multiline line text is also supported, however:
 
 ```ruby
 @multi = "multi
