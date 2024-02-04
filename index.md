@@ -8,10 +8,10 @@ nav_order: 1
 
 **Cherri** (pronounced cherry) is a [Siri Shortcuts](https://apps.apple.com/us/app/shortcuts/id915249334) programming language, that compiles directly to a valid runnable Shortcut.
 
-Scale your Shortcut projects and maintain them long term.
+Scale your Shortcut projects and maintain them long-term.
 
 <div class="code-example" markdown="1">
-
+  
 ```ruby
 /* Hello, Cherri! */
 
@@ -25,8 +25,10 @@ alert("Message: {message}", "Alert")
 
 </div>
 
-What makes Cherri different from previous Shortcuts programming languages is that its primary platform is macOS. Not only due to restrictions placed on iOS, which unfortunately discontinued many iOS app-based Shortcut languages but for better sustainability (fewer restrictions placed on macOS) and developer experience (no tiny tapping!).
+### What's a Shortcut?
 
-A Shortcut is a custom automation created by users on Apple platforms (Mac, iPhone, etc.). It is composed of metadata, and "actions" which each perform a task on the device based on the configuration similar to a programming language with functions and control flow. In this way, it becomes a way to program custom software for Apple devices without needing to write an app for approval on the Apple App Store.
+A Shortcut is a custom automation created by users on Apple platforms (Mac, iPhone, etc.). It is composed of metadata, and "actions" which each perform a task on the device based on the configuration similar to a programming language with functions and control flow. In this way, it becomes a way to program custom software for Apple devices without needing to write an app in Swift and wait for approval from the Apple App Store.
 
-Typically, it can be cumbersome for a Shortcut developer to go past the scale of a couple of hundred actions. Cherri makes it possible for a Shortcut project to scale. The language features things typical software developers would expect (e.g. `#includes`, macros) to make a Shortcut project take less time and effort and ultimately much more maintainable in the long term.
+### What makes Cherri different from previous Shortcuts programming languages?
+
+Its primary platform is macOS. The restriction where Shortcuts must be signed, which unfortunately discontinued many iOS app-based Shortcut languages, has shown that a Shortcuts language will likely be more sustainable (fewer restrictions placed on macOS, macOS can sign Shortcuts) and give a better developer experience (no tiny tapping!).
