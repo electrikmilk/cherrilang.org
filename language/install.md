@@ -26,32 +26,36 @@ You will likely need to allow the binary to run with Gatekeeper. If it gives you
 
 ## Build from Source
 
-### 1. Download the source
+### 1. Install Go
+
+Install the Go programming language via the official Go website: [https://go.dev/doc/install](https://go.dev/doc/install)
+
+
+### 2. Download the source
 
 Clone the source tree from GitHub: 
 
 ```
-git clone https://github.com/electrikmilk/cherri.git
+$ git clone https://github.com/electrikmilk/cherri.git
 ```
 
-### 2. Install Go
-
-Install the Go programming language via the official Go website: [https://go.dev/doc/install](https://go.dev/doc/install)
-
-### 3. Build
+### 3. Build Cherri
 
 Enter the directory of the source you downloaded and built.
 
 ```bash
 # Enter directory
-cd /path/to/cherri
+$ cd /path/to/cherri
 
 # Build
-go build
+$ go build
 
 # Run
-./cherri
+$ ./cherri
+```
 
-# Move to local binaries to run from anywhere
-sudo mv cherri /usr/local/bin
+To run Cherri from anywhere, you could optionally move it to your user binaries
+
+```bash
+$ sudo mv cherri /usr/local/bin
 ```
