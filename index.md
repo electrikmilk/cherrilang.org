@@ -11,7 +11,7 @@ nav_order: 1
 Scale your Shortcut projects and maintain them long-term.
 
 <div class="code-example" markdown="1">
-  
+
 ```ruby
 /* Hello, Cherri! */
 
@@ -22,7 +22,6 @@ Scale your Shortcut projects and maintain them long-term.
 alert("Message: {message}", "Alert")
 ```
 [Try it out!](https://playground.cherrilang.org){: .btn }
-
 </div>
 
 ### What's a Shortcut?
