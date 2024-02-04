@@ -69,7 +69,7 @@ Type coercion...
 @type = variable.number
 ```
 
-To learn more about variable value types, check the [types](standard/types) reference.
+To learn more about variable value types, check the [value types](standard/types#value-types) reference.
 
 ## Constants
 
