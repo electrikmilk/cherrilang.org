@@ -8,7 +8,7 @@ nav_order: 1
 
 **Cherri** (pronounced cherry) is a [Siri Shortcuts](https://apps.apple.com/us/app/shortcuts/id915249334) programming language, that compiles directly to a valid runnable Shortcut.
 
-Scale your Shortcut projects and maintain them term.
+Scale your Shortcut projects and maintain them long term.
 
 <div class="code-example" markdown="1">
 
