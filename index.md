@@ -21,7 +21,7 @@ Scale your Shortcut projects and maintain them long-term.
 @message = "Hello!"
 alert("Message: {message}", "Alert")
 ```
-<span class="fs-4">
+<span class="fs-5">
 [Try Me!](https://playground.cherrilang.org){: .btn .btn-red }
 </span>
 </div>
