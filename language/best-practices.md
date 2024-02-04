@@ -61,7 +61,9 @@ show("{mutable}")
 
 ### Default or optional values
 
-If an action has an optional argument and/or default value, avoid filling it in. If you must fill it in with its default value to set the value of an argument after it, use `nil` instead. This will prevent the parameter from being set, resulting in a smaller Shortcut.
+If an action has an optional argument and/or default value, avoid filling it in unless you need to specify a value. If you must fill it in with its default value to set the value of an argument after it, use `nil` as the value instead. This will prevent the parameter from being set with any default value, resulting in a smaller Shortcut.
+
+Keep in mind, that setting the value of an action argument to `nil` or not setting it if it has a default value or is optional, depending on the parameter, does not mean that the value for that argument will be empty in the Shortcut, but rather that it will use the default value for that argument.
 
 ## Fast compilation
 
