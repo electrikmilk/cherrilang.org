@@ -19,7 +19,7 @@ This is done automatically for statements, such as if/else, menu, etc. to clear 
 
 ### Pre-defined arrays may be slow
 
-Here is an example of a pre-defined an array.
+Here is an example of a pre-defined array.
 
 ```ruby
 @someArray = ["Test", 5, {}, 8]
@@ -29,7 +29,7 @@ Let's go over what's happening in the preview.
 
 We use the **Set Variable** action to set the variable `someArray` with no value.
 
-Then, for each value we will create the appropriate action and input it into an **Add to Variable** action to add that value to the variable `someArray`.
+Then, for each value, we will create the appropriate action and input it into an **Add to Variable** action to add that value to the variable `someArray`.
 
 Even though it's not explicit, the value of the `someArray` variable is now an array. It will now treat the variable as having multiple values. You would be able to use the `for` statement with `someArray` for instance.
 
@@ -89,4 +89,4 @@ Whenever possible when declaring variables with empty values, rather than settin
 
 ### Use raw text when possible
 
-[Raw text](types#raw-text) literals compile faster than standard text literals because they skip string interpolation other than escaped single quotes. They can be used as a substitute anywhere text can be used, and other than those limitations on contents, should behave identically.
+[Raw text](types#raw-text) literals compile faster than standard text literals because they skip string interpolation other than escaped single quotes. They can be used as a substitute anywhere text can be used, and other than those limitations on contents should behave identically.
