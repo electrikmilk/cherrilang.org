@@ -16,10 +16,16 @@ nav_order: 2
 
 ## Variables
 
-Variables are initialized using the following syntax:
+Initialize a variable using the syntax below. Variables work just like they do in Shortcuts. This creates a **Set Variable** action and assigns the value to a **Text** action containing "value".
 
 ```ruby
 @identifier = "value"
+```
+
+Variables are not required to be assigned a value:
+
+```
+@identifier
 ```
 
 Insert variables into a text value:
@@ -62,6 +68,8 @@ Type coercion...
 @variable: text
 @type = variable.number
 ```
+
+To learn more about variable value types, check the [types](standard/types) reference.
 
 ## Constants
 
