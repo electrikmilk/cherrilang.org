@@ -11,6 +11,7 @@ nav_order: 0
 ## Download & Install
 
 The easiest way to start using Cherri is to download the latest release from GitHub.
+
 {: .note }
 The latest release may not include everything in the latest documentation, and you may run into actions or language features of a future release. To use the latest features (which are subject to change or may not work properly) build from source.
 
