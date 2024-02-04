@@ -9,7 +9,7 @@ nav_order: 15
 
 ## Efficiency
 
-Notes on creating memory efficient Shortcuts in Cherri.
+Notes on creating memory efficient Shortcuts at runtime in Cherri.
 
 ### Clear unused outputs
 
