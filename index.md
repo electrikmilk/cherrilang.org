@@ -25,7 +25,7 @@ alert("Message: {message}", "Alert")
 
 </div>
 
-What makes Cherri different from previous Shortcuts programming languages, is that its primary platform is macOS. Not only due to restrictions placed on iOS, which unfortunately discontinued many iOS app-based Shortcut languages but for better sustainability (fewer restrictions placed on macOS) and developer experience (no tiny tapping!).
+What makes Cherri different from previous Shortcuts programming languages is that its primary platform is macOS. Not only due to restrictions placed on iOS, which unfortunately discontinued many iOS app-based Shortcut languages but for better sustainability (fewer restrictions placed on macOS) and developer experience (no tiny tapping!).
 
 A Shortcut is a custom automation created by users on Apple platforms (Mac, iPhone, etc.). It is composed of metadata, and "actions" which each perform a task on the device based on the configuration similar to a programming language with functions and control flow. In this way, it becomes a way to program custom software for Apple devices without needing to write an app for approval on the Apple App Store.
 
