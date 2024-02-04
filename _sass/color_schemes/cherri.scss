@@ -26,6 +26,14 @@ body {
     font-size: 16px
 }
 
+h1,h2,h3,h4,h5 {
+    line-height: 1.2 !important;
+}
+
+h1,h2,h3 {
+    font-weight: bold !important;
+}
+
 .color {
     display: inline-block;
     height: 15px;
