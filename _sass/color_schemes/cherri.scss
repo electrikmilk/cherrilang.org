@@ -22,8 +22,8 @@ html, body, input, textarea, select, button {
 body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    line-height: 1.7;
-    font-size: 16px
+    line-height: 1.7 !important;
+    font-size: 16px !important
 }
 
 h1,h2,h3,h4,h5 {
