@@ -30,7 +30,7 @@ paste identifier
 The resulting Shortcut will have `alert("Hello")` pasted wherever you used `paste identifier`!
 
 {: .note }
-For efficiency, `copy` statements must proceed pastes. In other words, you cannot use `paste` before declaring it's `copy`.
+For efficiency, you cannot use `paste` before declaring the `copy` it's using.
 
 These work differently from custom actions in that custom actions reduce the number of actions you use to do something to just one usage that can be called over and over again. With pasteables, you don't _need_ to use the abstraction of custom actions (especially if you don't need to use arguments) to reuse the same actions if it's not necessary for what you need to reuse.
 
