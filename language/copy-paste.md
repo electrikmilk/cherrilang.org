@@ -8,6 +8,9 @@ nav_order: 12
 
 # Pasteables
 
+{: .warning }
+This feature is currently only available if you [build from source](language/install#build-from-source).
+
 Cherri has a built-in pre-processing mechanism for copy-pasting commonly used sets of actions.
 
 Use the following syntax to create a "Pasteable":
