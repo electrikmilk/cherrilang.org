@@ -32,4 +32,4 @@ A Shortcut is a custom automation created by users on Apple platforms (Mac, iPho
 
 ### What makes Cherri different from previous Shortcuts programming languages?
 
-Its primary platform is macOS. The restriction where Shortcuts must be signed, which unfortunately discontinued many iOS app-based Shortcut languages, has shown that a Shortcuts language will likely be more sustainable (fewer restrictions placed on macOS, macOS can sign Shortcuts) and give a better developer experience (no tiny tapping!).
+Its primary platform is macOS. The restriction where Shortcuts must be signed, which unfortunately discontinued many iOS app-based Shortcut languages, has shown that a Shortcuts language will likely be more sustainable with fewer restrictions placed on macOS (and only macOS can sign Shortcuts). This also creates a better developer experience (no tiny tapping!).
