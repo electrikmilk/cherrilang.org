@@ -110,7 +110,9 @@ But you can also just inline a global in text like other variables.
 @shortcutInput = "{ShortcutInput}"
 ```
 
-The `Ask` global may be used for an action argument, but may not be used as an inline variable in text.
+### Ask for Input
+
+The `Ask` global may be used for an action argument to prompt the user for input, but may not be used as an inline variable in text.
 
 ## Empty variables
 
