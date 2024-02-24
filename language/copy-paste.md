@@ -17,7 +17,8 @@ copy identifier {
     alert("Hello!")
 }
 ```
-Then to paste it somewhere in your Shortcut, use the following syntax:
+
+Then, to paste the contents of the pasteable in the resulting Shortcut, use the following syntax:
 
 ```
 paste identifier
