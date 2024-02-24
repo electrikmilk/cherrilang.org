@@ -24,11 +24,10 @@ Then, to paste the contents of the pasteable in the resulting Shortcut, use the 
 paste identifier
 ```
 
+The resulting Shortcut will have `alert("Hello")` pasted wherever you used `paste identifier`!
+
 {: .note }
-For efficiency, copy statements must proceed pastes. In other words, you cannot paste a copy before declaring it.
-
-
-The resulting Shortcut will have `alert("Hello")` placed wherever you use `paste identifier`!
+For efficiency, `copy` statements must proceed pastes. In other words, you cannot use `paste` before declaring it's `copy`.
 
 These work differently from actions in that actions reduce the amount of actions you use to do something to just one usage, this allows you to not have to use the abstraction that creates and pastes actions when needed.
 
