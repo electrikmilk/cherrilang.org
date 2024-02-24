@@ -29,7 +29,7 @@ The resulting Shortcut will have `alert("Hello")` pasted wherever you used `past
 {: .note }
 For efficiency, `copy` statements must proceed pastes. In other words, you cannot use `paste` before declaring it's `copy`.
 
-These work differently from custom actions in that custom actions reduce the number of actions you use to do something to just one usage that can be called over and over again. With pasteables, you don't _need_ to use the abstraction of custom actions to reuse the same actions if it's not necessary for what you need to reuse.
+These work differently from custom actions in that custom actions reduce the number of actions you use to do something to just one usage that can be called over and over again. With pasteables, you don't _need_ to use the abstraction of custom actions (especially if you don't need to use arguments) to reuse the same actions if it's not necessary for what you need to reuse.
 
 {: .warning }
 Strong caution against the misuse of this syntax. Make sure you understand how pasting the copied actions will affect your resulting Shortcut.
