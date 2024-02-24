@@ -8,7 +8,7 @@ nav_order: 12
 # Custom Actions
 
 {: .warning }
-This feature is currently only available if you [build from source](language/install#build-from-source). The current release supports the syntax, but not custom arguments, and works more like the upcoming [copy/paste](language/copy-paste) feature.
+This feature is currently only available if you [build from source](/language/install.html#build-from-source). The current release supports the syntax, but not custom arguments, and works more like the upcoming [copy/paste](/language/copy-paste.html) feature.
 
 You can define custom actions that can then be used later in a Shortcut the same way you would a standard action. This of course allows you to not have to repeat yourself and cut down on the total actions in your Shortcut.
 
