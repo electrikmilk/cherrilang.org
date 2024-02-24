@@ -1,23 +1,31 @@
-# Copy/Paste actions
+---
+title: Copy/Paste Actions
+layout: default
+parent: Documentation
+nav_order: 12
+---
+
+
+# Pasteables
 
 Cherri has a built-in pre-processing mechanism for copy-pasting commonly used sets of actions.
 
-Use the following syntax to create a "pastable"
+Use the following syntax to create a "Pasteable":
 
 ```
 copy identifier {
     alert("Hello!")
 }
 ```
-
-{: .note }
-For efficiency, copy statements must proceed pastes. You cannot paste a copy before declaring it.
-
 Then to paste it somewhere in your Shortcut, use the following syntax:
 
 ```
 paste identifier
 ```
+
+{: .note }
+For efficiency, copy statements must proceed pastes. In other words, you cannot paste a copy before declaring it.
+
 
 The resulting Shortcut will have `alert("Hello")` placed wherever you use `paste identifier`!
 
