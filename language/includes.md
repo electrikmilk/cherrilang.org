@@ -10,8 +10,10 @@ nav_order: 6
 Use the following syntax to include other Cherri files in a Cherri file.
 
 ```
-#include "path/to/include.cherri"
+#include 'path/to/include.cherri'
 ```
+
+(Note the single quotes)
 
 The file must exist and be a `.cherri` file.
 
