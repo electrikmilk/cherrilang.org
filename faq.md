@@ -1,9 +1,11 @@
 ---
-title: Why macOS Only?
+title: FAQ
 layout: home
 ---
 
-# Why macOS Only?
+# FAQ
+
+## Why macOS Only?
 
 Since iOS 15 and macOS 12 Monterey, Shortcuts must be signed to be shared with and run on other Apple devices.
 
@@ -23,3 +25,13 @@ You can only run the `shortcuts` binary on macOS, and as it relies on private ma
 Of course, you can still build and run the compiler on any platform the Go programming language will compile on. Cherri will skip signing the compiled Shortcut but it will still compile. I don't make builds for those platforms so that no one is confused and thinks that Shortcuts compiled using Cherri on other platforms will be able to be imported and run on any of their Apple devices.
 
 Also, the compiler is currently developed and tested on macOS only, so it will otherwise work best on a Unix-like system that can compile Go code, like Linux or BSD.
+
+## Why No iOS App?
+
+- Maybe I could link the compiler to an iOS app but I doubt iOS will like it.
+- Compiling on a remote machine via the app would be slow.
+- I cannot at present justify the cost of the developer program to publish a possible iOS app.
+
+Cherri’s primary platform is also macOS and this is on purpose. The intent is to give developers the freedom to develop Shortcuts easily on the desktop with desktop-class tools they already enjoy.
+
+However, [playground.cherrilang.org](https://playground.cherrilang.org) solves this problem. You can use it on any platform you prefer that has a web browser and load Shortcuts onto any Apple platform device.
