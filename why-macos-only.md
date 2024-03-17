@@ -1,3 +1,8 @@
+---
+title: Why macOS Only?
+layout: home
+---
+
 # Why macOS Only?
 
 Since iOS 15 and macOS 12 Monterey, Shortcuts must be signed to be shared with and run on other Apple devices.
