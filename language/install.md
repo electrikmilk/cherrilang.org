@@ -16,7 +16,7 @@ The easiest way to start using Cherri is to download the latest release from Git
 The latest release may not include everything in the latest documentation, and you may run into actions or language features of a future release. To use the latest features (which are subject to change or may not work properly) build from source.
 
 {: .warning }
-The official releases are compiled for the arm64 (Apple Silicon) and x86_64 (Intel) macOS platforms only. [Why?](https://cherrilang.org/why-macos-only)
+The official releases are compiled for the arm64 (Apple Silicon) and x86_64 (Intel) macOS platforms only. [Why?](https://cherrilang.org/faq#why-macos-only)
 
 [Download the latest release](https://github.com/electrikmilk/cherri/releases){: .btn .btn-red }
 
