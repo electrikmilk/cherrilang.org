@@ -4,11 +4,9 @@ layout: home
 nav_order: 1
 ---
 
-# Welcome!
+# Scale your Shortcut projects and maintain them long-term.
 
-**Cherri** (pronounced cherry) is a [Shortcuts](https://apps.apple.com/us/app/shortcuts/id915249334) programming language, that compiles directly to a valid runnable Shortcut.
-
-Scale your Shortcut projects and maintain them long-term.
+**Cherri** (pronounced cherry) is a [Siri Shortcuts](https://apps.apple.com/us/app/shortcuts/id915249334) programming language, that compiles directly to a valid Shortcut you can then run on your Apple devices.
 
 <div class="code-example" markdown="1">
 
