@@ -8,7 +8,7 @@ nav_order: 12
 # Pasteables
 
 {: .warning }
-Strong caution against the misuse of this syntax. Make sure you understand how pasting the copied actions will affect your resulting Shortcut.
+Strong caution against the misuse of this syntax, such as long chains of pastables pasting other pastables.
 
 Cherri has a built-in pre-processing mechanism for copy-pasting commonly used sets of actions.
 
