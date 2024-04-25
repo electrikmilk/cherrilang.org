@@ -75,9 +75,9 @@ action add(number op1, number op2) {
 }
 ```
 
-Roughly translates to this:
+It roughly translates to this:
 
-```
+```ruby
 if ShortcutInput {
     const inputType = typeOf(ShortcutInput)
     if inputType == "Dictionary" {
@@ -101,7 +101,7 @@ if ShortcutInput {
 }
 ```
 
-This is what the compiler will generate and inject into the top of the resulting Shortcut.
+The compiler will generate this and inject into the top of the resulting Shortcut.
 
 Then later, when you reference the action described `add(number, number)`
 
