@@ -8,15 +8,21 @@ nav_order: 0
 
 # Install
 
-## Download & Install
+{: .warning }
+The official releases are only compiled for the arm64 (Apple Silicon) and x86_64 (Intel) macOS platforms. [Why?](https://cherrilang.org/faq#why-macos-only)
 
-The easiest way to start using Cherri is to download the latest release from GitHub.
+## Windows, Linux, etc.
+
+Due to the limitations of signing Shortcuts, you must either run the compiler locally on a Mac or use the online web editor.
+
+[Use the Cherri Playground](https://playground.cherrilang.org/){: .btn .btn-red }
+
+## macOS
+
+The easiest way to use Cherri on your Mac is to download the latest release from GitHub.
 
 {: .note }
-The latest release may not include everything in the latest documentation, and you may run into actions or language features of a future release. To use the latest features (which are subject to change or may not work properly) build from source.
-
-{: .warning }
-The official releases are compiled for the arm64 (Apple Silicon) and x86_64 (Intel) macOS platforms only. [Why?](https://cherrilang.org/faq#why-macos-only)
+The latest release may not include everything in the newest documentation, and you may run into actions or language features of a future release. To use the latest features (which are subject to change or may not work properly) build from source.
 
 [Download the latest release](https://github.com/electrikmilk/cherri/releases){: .btn .btn-red }
 
