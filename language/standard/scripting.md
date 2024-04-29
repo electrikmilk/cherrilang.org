@@ -720,7 +720,7 @@ To do this, create a variable and set a basic mathematical expression (+,-,*,/,%
 
 ### Calculate Statistics
 
-Calculate statistic of `operation` on `input`.
+Calculate the statistic of `operation` on `input`.
 
 ```
 statistic(enum operation, variable input)
@@ -988,7 +988,7 @@ measurement("2000","Information Storage","MB")
 
 Convert `measurement` to `unitType` in `unit`.
 
-```ruby
+```
 convertMeasurement(variable measurement, enum unitType, text unit)
 ```
 
@@ -996,7 +996,7 @@ convertMeasurement(variable measurement, enum unitType, text unit)
 
 ### Is Online
 
-Returns a boolean based on if the user has a working internet connection. This is an alias of the default **Get IP Address** action.
+Returns a boolean based on whether the user has a working internet connection. This is an alias of the default **Get IP Address** action.
 
 ```
 isOnline()
@@ -1148,14 +1148,10 @@ Keep in mind the following statements have the exact same output. A Number actio
 @int = number(5)
 ```
 
-<div class="shortcut-result-image">
-   <img src="https://github.com/electrikmilk/cherrilang.org/assets/4368524/746e9105-9c42-4cc6-a3c7-9d2138e5e209" alt="Output"/>
-</div>
-
 The `number()` action should only be used to coerce text to a number.
 
 ```ruby
-@five = "five (5)"
+@five = "5"
 @fiveNum = number(five) /* 5 */
 ```
 
