@@ -17,6 +17,16 @@ This will give you access to the following actions:
 
 ## Scripting
 
+### Choose from vCard
+
+Prompt the user to choose from an array of [vCards](/language/vcards) with a prompt. Returns the chosen vCard item.
+
+```
+chooseFromVCard(array items, text prompt)
+```
+
+---
+
 ### Run JavaScript
 
 Runs the JavaScript code in `script` and returns the output.
