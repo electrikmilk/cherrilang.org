@@ -114,10 +114,6 @@ But you can also just inline a global in text like other variables.
 
 The `Ask` global may be used for an action argument to prompt the user for input, but may not be used as an inline variable in text.
 
-```ruby
-prompt("Enter:", Ask)
-```
-
 ## Empty variables
 
 You can declare a variable without a value:
