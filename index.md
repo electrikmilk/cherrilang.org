@@ -1,3 +1,8 @@
+---
+title: Scale your Shortcut projects and maintain them long-term
+layout: home
+---
+
 <div style="text-align: center">
   <img src="https://github.com/electrikmilk/cherrilang.org/assets/4368524/70975782-10d5-4ee0-a69f-00dc74443ffc" width="400px"/>
 </div>
