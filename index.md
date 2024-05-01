@@ -1,6 +1,7 @@
 ---
-title: Scale your Shortcut projects and maintain them long-term
+title: Welcome
 layout: home
+nav_order: 1
 ---
 
 <div style="text-align: center">
