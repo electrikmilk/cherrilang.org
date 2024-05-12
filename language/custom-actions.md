@@ -31,7 +31,7 @@ myCustomAction()
 
 You can define arguments for your custom action that you provide later when referencing it.
 
-```
+```ruby
 action add(number op1, number op2) {
   const result = op1 + op2
   output("{result}")
@@ -54,7 +54,7 @@ This is not required, but if you would like to return a value from your custom a
 
 Then inside the body of your custom action, use the `output()` action to return a result.
 
-```
+```ruby
 action myCustomAction() {
   output("Hello!")
 }
@@ -66,16 +66,14 @@ The contents of these actions run separately from your main code inside your Sho
 
 This is a part of the language that does not translate 1-1, but for the functionality it provides it can be a powerful tool.
 
-So this:
-
-```
+```ruby
 action add(number op1, number op2) {
   const result = op1 + op2
   output("{result}")
 }
 ```
 
-It roughly translates to this:
+This translates to this in Cherri:
 
 ```ruby
 if ShortcutInput {
@@ -101,9 +99,9 @@ if ShortcutInput {
 }
 ```
 
-The compiler will generate this and inject into the top of the resulting Shortcut.
+The compiler will generate this and inject it into the top of the resulting Shortcut.
 
-Then later, when you reference the action described `add(number, number)`
+Then as you can see later, when you reference the action described `add(number, number)`
 
 ```
 add(2,2)
