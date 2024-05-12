@@ -13,17 +13,13 @@ These can contain variables, calls to other actions, etc. that you can then refe
 
 Custom actions have scope in a sense, as they are run inside your Shortcut using generated injected code at the top of the resulting Shortcut.
 
-To define your action, use the following syntax:
+To define your action, then reference the action to run the contents of the custom action at that time isolated from the rest of your Shortcut.
 
 ```
 action myCustomAction() {
   // do stuff...
 }
-```
 
-Then reference the action to run the contents of the custom action.
-
-```
 myCustomAction()
 ```
 
@@ -40,7 +36,7 @@ action add(number op1, number op2) {
 add(2,2)
 ```
 
-Check the [types](types) reference for all of the types you can use for arguments.
+Read the [types](types) reference for all types you can use for arguments.
 
 When calling your custom action, keep in mind the arguments you use will be type-checked against your type definitions for each of your arguments.
 
