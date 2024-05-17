@@ -462,6 +462,9 @@ Get the value of `key` in `dictionary`.
 
 ```
 getValue(dictionary dictionary, text key)
+
+// or raw string get as... but no variable references are allowed.
+dictionary['key']
 ```
 
 ---
