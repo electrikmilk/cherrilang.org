@@ -80,9 +80,9 @@ text"
 @raw = 'i\'m text'
 ```
 
-Raw text cancels out interpolation other than escaped single quotes. As a result they compile much faster than standard text literals.
+Raw text cancels out interpolation other than escaped single quotes. As a result, they compile much faster than standard text literals.
 
-One caveat to raw text is that it is not allowed in Dictionaries or Arrays. This is due to the fact that a dictionary or array must be valid JSON objects.
+One caveat to raw text is that it is not allowed in Dictionaries or Arrays. This is because a dictionary or array must be a valid JSON object.
 
 ### Number
 
@@ -189,7 +189,7 @@ You can easily append to an array using the `+=` syntax.
 
 This adds the output of the **Number** action with a value of 5 to the array variable `x`.
 
-So `x` now contains 1 item with an number value of `5`.
+So `x` now contains 1 item with a number value of `5`.
 
 ### Action Result
 
@@ -317,7 +317,7 @@ If for some reason that doesn't work, use the `getText()` action.
 @numVar = getNumbers(var)
 ```
 
-The `number()` action should only be used to coerce another value to a number, as an integer literal produces the same output.
+The `number()` action should only coerce another value to a number, as an integer literally produces the same output.
 
 ```ruby
 @textVar = "5"
