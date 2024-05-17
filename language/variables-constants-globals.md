@@ -35,7 +35,7 @@ Insert variables into a text value:
 @inserted = "Value: {text}"
 ```
 
-Get as...
+Get as...key as a raw string.
 
 ```ruby
 @deviceOS = "OS: {Device[OS]}"
@@ -59,7 +59,7 @@ Get as...
 
 ```ruby
 @variable = nil
-@getAs = variable[Name]
+@getAs = variable['Name']
 ```
 
 Type coercion...
