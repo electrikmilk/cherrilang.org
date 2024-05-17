@@ -143,9 +143,19 @@ You can declare a dictionary using valid JSON syntax.
 }
 ```
 
+You can access a dictionary value by key:
+
+```ruby
+// allows for variable references
+getValue(dictionary, "key")
+
+// must be a raw string, so no variable references are allowed.
+dictionary['key']
+```
+
 ### Array
 
-An array is a variable that has been or will be added to in order to create a variable with multiple iterable values.
+An array is a variable that has been or will be added to create a variable with multiple iterable values.
 
 The contents of an array value must be valid JSON syntax.
 
