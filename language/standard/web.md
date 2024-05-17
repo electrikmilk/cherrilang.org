@@ -240,7 +240,7 @@ downloadURL(text url, dictionary ?headers)
 Send a `method` request to `url` with `body`.
 
 ```
-formRequest(text url, enum ?method = "GET", variable ?body, dictionary ?headers)
+formRequest(text url, enum ?method = "GET", dictionary ?body, dictionary ?headers)
 ```
 
 #### HTTP Methods
@@ -258,7 +258,7 @@ formRequest(text url, enum ?method = "GET", variable ?body, dictionary ?headers)
 Send a `method` JSON request to `url` with `body`.
 
 ```
-jsonRequest(text url, enum ?method = "GET", variable ?body, dictionary ?headers)
+jsonRequest(text url, enum ?method = "GET", dictionary ?body, dictionary ?headers)
 ```
 
 ---
@@ -268,7 +268,7 @@ jsonRequest(text url, enum ?method = "GET", variable ?body, dictionary ?headers)
 Send a `method` file request to `url` with `body`.
 
 ```
-fileRequest(text url, enum ?method = "GET", variable ?body, dictionary ?headers)
+fileRequest(text url, enum ?method = "GET", dictionary ?body, dictionary ?headers)
 ```
 
 ---
