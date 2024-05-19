@@ -83,16 +83,16 @@ getDates(variable input)
 
 ### Add to Date
 
-Add to date by units of time.
+Add to a date by units of time.
 
 ```
-addSeconds(text date, integer magnitude)
-addMinutes(text date, integer magnitude)
-addHours(text date, integer magnitude)
-addDays(text date, integer magnitude)
-addWeeks(text date, integer magnitude)
-addMonths(text date, integer magnitude)
-addYears(text date, integer magnitude)
+addSeconds(text date, number magnitude)
+addMinutes(text date, number magnitude)
+addHours(text date, number magnitude)
+addDays(text date, number magnitude)
+addWeeks(text date, number magnitude)
+addMonths(text date, number magnitude)
+addYears(text date, number magnitude)
 ```
 
 ---
@@ -102,13 +102,13 @@ addYears(text date, integer magnitude)
 Subtract from the date by units of time.
 
 ```
-subtractSeconds(text date, integer magnitude)
-subtractMinutes(text date, integer magnitude)
-subtractHours(text date, integer magnitude)
-subtractDays(text date, integer magnitude)
-subtractWeeks(text date, integer magnitude)
-subtractMonths(text date, integer magnitude)
-subtractYears(text date, integer magnitude)
+subtractSeconds(text date, number magnitude)
+subtractMinutes(text date, number magnitude)
+subtractHours(text date, number magnitude)
+subtractDays(text date, number magnitude)
+subtractWeeks(text date, number magnitude)
+subtractMonths(text date, number magnitude)
+subtractYears(text date, number magnitude)
 ```
 
 ---
