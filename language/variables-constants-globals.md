@@ -38,7 +38,7 @@ Insert variables into a text value:
 Get as...key as a raw string.
 
 ```ruby
-@deviceOS = "OS: {Device[OS]}"
+@deviceOS = "OS: {Device['OS']}"
 ```
 
 Type coercion...
@@ -69,7 +69,7 @@ Type coercion...
 @type = variable.number
 ```
 
-To learn more about variable value types, check the [value types](types#value-types) reference.
+Check the [value types](types#value-types) reference to learn more about variable value types.
 
 ## Constants
 
@@ -77,7 +77,7 @@ To learn more about variable value types, check the [value types](types#value-ty
 const immutable = 5
 ```
 
-Constants are the implementation of Magic Variables as they cannot be modified. When referenced, the output of the action assigned to the constant is used (magic variable), instead of inserting a reference to a variable that the action output has been saved to.
+Constants are the implementation of Magic Variables as they cannot be modified. When referenced, the output of the action assigned to the constant is used (magic variable) instead of inserting a reference to a variable to which the action output has been saved.
 
 ```ruby
 const immutable = 5
