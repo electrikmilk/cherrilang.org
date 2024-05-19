@@ -123,7 +123,7 @@ getStartYear(text date)
 formatDate(variable date, enum ?dateFormat = "Short")
 ```
 
-#### Date Formats:
+#### Date Formats
 
 - None
 - Short
@@ -144,7 +144,7 @@ _**Note:** Enum values are case-sensitive._
 formatTime(variable time, enum ?timeFormat = "Short")
 ```
 
-#### Time Formats:
+#### Time Formats
 
 - None
 - Short
