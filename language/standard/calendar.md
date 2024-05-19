@@ -27,6 +27,8 @@ Create a calendar with `name`.
 addCalendar(text name)
 ```
 
+---
+
 ### Edit Event
 
 Edit a detail of an event. Provide an event, a detail to modify, and a new value for that detail.
@@ -134,6 +136,8 @@ formatDate(variable date, enum ?dateFormat = "Short")
 
 _**Note:** Enum values are case-sensitive._
 
+---
+
 ### Format Time
 
 ```
@@ -148,7 +152,7 @@ formatTime(variable time, enum ?timeFormat = "Short")
 - Long
 - Relative
 
-Note: Enum values are case-sensitive.
+---
 
 ### Format Timestamp
 
