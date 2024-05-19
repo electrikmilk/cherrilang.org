@@ -37,7 +37,7 @@ Edit a detail of an event. Provide an event, a detail to modify, and a new value
 editEvent(variable event, enum detail, text newValue)
 ```
 
-#### Event Details:
+#### Event Details
 
 - Start Date
 - End Date
@@ -161,6 +161,8 @@ formatTime(variable time, enum ?timeFormat = "Short")
 - Medium
 - Long
 - Relative
+
+_**Note:** Enum values are case-sensitive._
 
 ---
 
