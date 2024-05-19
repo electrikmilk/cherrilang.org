@@ -27,6 +27,30 @@ Create a calendar with `name`.
 addCalendar(text name)
 ```
 
+### Edit Event
+
+Edit a detail of an event. Provide an event, a detail to modify, and a new value for that detail.
+
+```
+editEvent(variable event, enum detail, text newValue)
+```
+
+#### Event Details:
+
+- Start Date
+- End Date
+- Is All Day
+- Location
+- Duration
+- My Status
+- Attendees
+- URL
+- Title
+- Notes
+- Attachments
+
+_**Note:** Enum values are case-sensitive._
+
 ## Dates
 
 ### Date
@@ -87,4 +111,47 @@ getStartHour(text date)
 getStartWeek(text date)
 getStartMonth(text date)
 getStartYear(text date)
+```
+
+---
+
+### Format Date
+
+```
+formatDate(variable date, enum ?dateFormat = "Short")
+```
+
+#### Date Formats:
+
+- None
+- Short
+- Medium
+- Long
+- Relative
+- RFC 2822
+- ISO 8601
+- Custom
+
+_**Note:** Enum values are case-sensitive._
+
+### Format Time
+
+```
+formatTime(variable time, enum ?timeFormat = "Short")
+```
+
+#### Time Formats:
+
+- None
+- Short
+- Medium
+- Long
+- Relative
+
+Note: Enum values are case-sensitive.
+
+### Format Timestamp
+
+```
+formatTimestamp(variable date, enum ?dateFormat = "Short", enum ?timeFormat = "Short")
 ```
