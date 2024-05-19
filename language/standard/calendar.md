@@ -65,7 +65,7 @@ date(text date)
 
 #### Example Usage
 
-```
+```ruby
 date("October 5, 2022")
 ```
 
