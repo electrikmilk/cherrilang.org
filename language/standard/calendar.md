@@ -71,6 +71,16 @@ date("October 5, 2022")
 
 ---
 
+### Get Dates
+
+Get dates from value.
+
+```
+getDates(variable input)
+```
+
+---
+
 ### Add to Date
 
 Add to date by units of time.
