@@ -29,6 +29,14 @@ addCalendar(text name)
 
 ---
 
+### Open Event in Calendar
+
+```
+showInCalendar(variable event)
+```
+
+---
+
 ### Edit Event
 
 Edit a detail of an event. Provide an event, a detail to modify, and a new value for that detail.
@@ -52,6 +60,30 @@ editEvent(variable event, enum detail, text newValue)
 - Attachments
 
 _**Note:** Enum values are case-sensitive._
+
+---
+
+### Remove Events
+
+```
+removeEvents(variable events, bool ?includeFutureEvents = false)
+```
+
+## Reminders
+
+### Open Reminders List
+
+```
+openReminderList(variable list)
+```
+
+---
+
+### Remove Reminders
+
+```
+removeReminders(variable reminders)
+```
 
 ## Dates
 
