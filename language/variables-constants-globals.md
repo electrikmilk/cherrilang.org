@@ -58,7 +58,7 @@ Type coercion...
 Get as...
 
 ```ruby
-@variable = nil
+@variable = {"Name":"test"}
 @getAs = variable['Name']
 ```
 
