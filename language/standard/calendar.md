@@ -111,7 +111,7 @@ Weekdays for `repeatWeekdays` are case insensitive.
 
 ### Turn On Alarm
 
-Returns all of the alarms on the device.
+Turn on an alarm.
 
 ```
 turnOnAlarm(variable alarm)
@@ -121,7 +121,7 @@ turnOnAlarm(variable alarm)
 
 ### Turn Off Alarm
 
-Returns all of the alarms on the device.
+Turn off an alarm.
 
 ```
 turnOffAlarm(variable alarm)
@@ -131,7 +131,7 @@ turnOffAlarm(variable alarm)
 
 ### Toggle Alarm
 
-Returns all of the alarms on the device.
+Toggle an alarm on or off depending on current state.
 
 ```
 toggleAlarm(variable alarm)
