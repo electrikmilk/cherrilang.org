@@ -74,7 +74,7 @@ removeEvents(variable events, bool ?includeFutureEvents = false)
 ### Open Reminders List
 
 ```
-openReminderList(variable list)
+openRemindersList(variable list)
 ```
 
 ---
@@ -94,6 +94,18 @@ Returns all of the alarms on the device.
 ```
 getAlarms()
 ```
+
+---
+
+### Create Alarm
+
+Create an alarm.
+
+```
+createAlarm(text name, text time, bool ?allowsSnooze = true, array ?repeatWeekdays)
+```
+
+Weekdays for `repeatWeekdays` are case insensitive.
 
 ---
 
