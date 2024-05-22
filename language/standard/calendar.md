@@ -85,6 +85,72 @@ openReminderList(variable list)
 removeReminders(variable reminders)
 ```
 
+## Alarms
+
+### Get Alarms
+
+Returns all of the alarms on the device.
+
+```
+getAlarms()
+```
+
+---
+
+### Turn On Alarm
+
+Returns all of the alarms on the device.
+
+```
+turnOnAlarm(variable alarm)
+```
+
+---
+
+### Turn Off Alarm
+
+Returns all of the alarms on the device.
+
+```
+turnOffAlarm(variable alarm)
+```
+
+---
+
+### Toggle Alarm
+
+Returns all of the alarms on the device.
+
+```
+toggleAlarm(variable alarm)
+```
+
+---
+
+### Delete Alarm
+
+Delete an alarm
+
+```
+deleteAlarm(variable alarm)
+```
+
+## Clock
+
+Start a timer.
+
+```
+startTimer(number magnitude, enum ?unit = "min")
+```
+
+#### Available units:
+
+- hr
+- min
+- sec
+
+_**Note:** Enum values are case-sensitive._
+
 ## Dates
 
 ### Date
