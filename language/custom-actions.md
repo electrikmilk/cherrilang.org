@@ -44,16 +44,14 @@ When calling your custom action, keep in mind the arguments you use will be type
 
 This is not required, but if you would like to return a value from your custom action to a call of your custom action, assign the reference to your custom action to a variable just like you would a standard action.
 
-```
-@result = myCustomAction()
-```
-
 Then inside the body of your custom action, use the `output()` action to return a result.
 
 ```ruby
 action myCustomAction() {
   output("Hello!")
 }
+
+@result = myCustomAction()
 ```
 
 ## How do they work?
