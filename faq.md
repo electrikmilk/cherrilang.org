@@ -24,6 +24,8 @@ macOS. It will then be synced to your other Apple devices.
 
 However, I have made a [Cherri Playground](https://playground.cherrilang.org/) that lets you play with the Cherri compiler on any platform. It has a signing server and will turn out valid Shortcuts on any platform with a web browser, primarily for those looking to write and compile Shortcuts on their iPhone or iPad.
 
+Additionally, you can now use `--hubsign` on Unix-like systems to use a remote service HubSign provided by RoutineHub.
+
 ### Why not other \*nix systems or WSL?
 
 You can only run the `shortcuts` binary on macOS, and as it relies on private macOS frameworks, not even macOS emulation will work. It also relies on being signed into iCloud, so it needs to be an actual Mac due to the valid serial number requirement.
