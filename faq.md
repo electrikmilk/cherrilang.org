@@ -24,7 +24,11 @@ macOS. It will then be synced to your other Apple devices.
 
 However, I have made a [Cherri Playground](https://playground.cherrilang.org/) that lets you play with the Cherri compiler on any platform. It has a signing server and will turn out valid Shortcuts on any platform with a web browser, primarily for those looking to write and compile Shortcuts on their iPhone or iPad.
 
-Additionally, you can now use `--hubsign` on Unix-like systems to use a remote service HubSign provided by RoutineHub.
+### HubSign
+
+You can use `--hubsign` on Unix-like systems to use a remote service HubSign provided by RoutineHub to sign the compiled Shortcuts and then move them onto an Apple device through icloud.com or something.
+
+This may work on Windows but has not been tested so you may experience issues.
 
 ### Why not other \*nix systems or WSL?
 
