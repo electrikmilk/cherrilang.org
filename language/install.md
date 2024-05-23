@@ -11,12 +11,6 @@ nav_order: 0
 {: .warning }
 The official releases are only compiled for the arm64 (Apple Silicon) and x86_64 (Intel) macOS platforms. [Why?](https://cherrilang.org/faq#why-macos-only)
 
-## Windows, Linux, etc.
-
-Due to the limitations of signing Shortcuts, you must either run the compiler locally on a Mac or use the online web editor.
-
-[Use the Cherri Playground](https://playground.cherrilang.org/){: .btn .btn-red }
-
 ## macOS
 
 The easiest way to use Cherri on your Mac is to download the latest release from GitHub.
@@ -29,6 +23,12 @@ The latest release may not include everything in the newest documentation, and y
 After downloading and extracting, move the binary to `/usr/local/bin` or execute it in the directory you extracted it from.
 
 You will likely need to allow the binary to run with Gatekeeper. If it gives you too much trouble, build from the source using the instructions below.
+
+## Windows, Linux, etc.
+
+Due to the limitations of signing Shortcuts, you must either run the compiler locally on a Mac or use the online web editor.
+
+[Use the Cherri Playground](https://playground.cherrilang.org/){: .btn .btn-red }
 
 ## Build from Source
 
