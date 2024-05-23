@@ -10,7 +10,7 @@ nav_order: 1
 
 # Scale your Shortcut projects and maintain them long-term.
 
-**Cherri** (pronounced cherry) is a <a href="https://apps.apple.com/us/app/shortcuts/id1462947752" ref="noreferrer noopener">Siri Shortcuts</a> programming language, that compiles directly to a valid Shortcut you can then run on your Apple devices.
+**Cherri** (pronounced cherry) is a <a href="https://apps.apple.com/us/app/shortcuts/id1462947752" ref="noreferrer noopener" target="_blank">Siri Shortcuts</a> programming language, that compiles directly to a valid Shortcut you can then run on your Apple devices.
 
 <br/>
 
