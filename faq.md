@@ -26,7 +26,7 @@ However, I have made a [Cherri Playground](https://playground.cherrilang.org/) t
 
 ### HubSign
 
-You can use `--hubsign` on Unix-like systems to use a remote service HubSign provided by RoutineHub to sign the compiled Shortcuts and then move them onto an Apple device through icloud.com or something.
+You can use `--hubsign` on Unix-like systems to use a remote service HubSign provided by RoutineHub to sign the compiled Shortcuts and then move them onto an Apple device through icloud.com or a file server.
 
 This may work on Windows but has not been tested so you may experience issues.
 
