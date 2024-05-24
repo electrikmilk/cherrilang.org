@@ -329,7 +329,7 @@ Syntax example:
 - trueTone
 - dialMin
 - dialMax
-- QRViewFinder
+- qrViewFinder
 - cameraViewFinder
 - walletPass
 - appearance
