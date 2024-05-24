@@ -266,7 +266,7 @@ Syntax example:
 - circledX
 - circledPi
 - circledI
-- smileyFace
+- smiley
 - document
 - dollarSign
 - poundSign
