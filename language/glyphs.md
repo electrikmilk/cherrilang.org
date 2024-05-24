@@ -91,9 +91,9 @@ Syntax example:
 - headphonesCircle
 - ear
 - musicNote
-- speakerWave1
-- speakerWave2
-- speakerWave3
+- volumeLow
+- volumeMid
+- volumeHigh
 - mute
 - speaker
 - hifiSpeaker
@@ -244,7 +244,7 @@ Syntax example:
 - arrowCurvedRight
 - bookmark
 - barcode
-- QRCode
+- qrcode
 - play
 - boxFilled
 - boxOutline
@@ -281,12 +281,12 @@ Syntax example:
 - ellipsis
 - list
 - twelveSquares
-- Connected
+- connected
 - infinity
 - recycle
 - loadingIndicator
 - loadingIndicatorAlt
-- Target
+- target
 - podcasts
 - targetAlt
 - locationArrow
