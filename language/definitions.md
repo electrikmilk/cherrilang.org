@@ -32,20 +32,20 @@ Most glyphs are supported, but not all the newest are yet. [Click here for the f
 ### Color
 
 - <span class="color" style="background-color: #ef6065"></span> `red`
-- <span class="color" style="background-color: #fd7f60"></span> `darkOrange`
+- <span class="color" style="background-color: #fd7f60"></span> `darkorange`
 - <span class="color" style="background-color: #f39e44"></span> `orange`
 - <span class="color" style="background-color: #e7c21c"></span> `yellow`
 - <span class="color" style="background-color: #3ac054"></span> `green`
 - <span class="color" style="background-color: #00C8A8"></span> `teal`
-- <span class="color" style="background-color: #00c2d6"></span> `lightBlue`
+- <span class="color" style="background-color: #00c2d6"></span> `lightblue`
 - <span class="color" style="background-color: #00abef"></span> `blue`
-- <span class="color" style="background-color: #3e5db8"></span> `darkBlue`
+- <span class="color" style="background-color: #3e5db8"></span> `darkblue`
 - <span class="color" style="background-color: #7f51b5"></span> `violet`
 - <span class="color" style="background-color: #ac6bd7"></span> `purple`
 - <span class="color" style="background-color: #e978c6"></span> `pink`
 - <span class="color" style="background-color: #B4B2A9"></span> `taupe`
 - <span class="color" style="background-color: #808a95"></span> `gray`
-- <span class="color" style="background-color: #555555"></span> `darkGray`
+- <span class="color" style="background-color: #555555"></span> `darkgray`
 
 ## Inputs & Outputs
 
