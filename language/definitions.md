@@ -39,9 +39,9 @@ Define the look of your Shortcut using one of the supported colors or glyphs.
 - <span class="color" style="background-color: #7f51b5"></span> `violet`
 - <span class="color" style="background-color: #ac6bd7"></span> `purple`
 - <span class="color" style="background-color: #e978c6"></span> `pink`
-- <span class="color" style="background-color: #B4B2A9"></span> `taupe`
-- <span class="color" style="background-color: #808a95"></span> `gray`
-- <span class="color" style="background-color: #555555"></span> `darkgray`
+- <span class="color" style="background-color: #9b8e89"></span> `taupe`
+- <span class="color" style="background-color: #929e93"></span> `gray`
+- <span class="color" style="background-color: #85909a"></span> `darkgray`
 
 ### Glyph
 
