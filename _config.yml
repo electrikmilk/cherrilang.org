@@ -29,10 +29,10 @@ aux_links:
     - "//github.com/electrikmilk/cherri"
 aux_links_new_tab: true
 
-# nav_external_links:
-#   - title: Code Tour
-#     url: https://www.youtube.com/watch?v=gU8TsI96uww
-#     hide_icon: false
+nav_external_links:
+  - title: Glyphs
+    url: https://glyphs.cherrilang.org/
+    hide_icon: false
 
 footer_content: "Copyright &copy;. Distributed under the <a href=\"https://github.com/electrikmilk/cherri/blob/main/LICENSE\">GPL-2.0 License.</a>"
 
