@@ -149,6 +149,8 @@ deleteAlarm(variable alarm)
 
 ## Clock
 
+### Create Timer
+
 Start a timer.
 
 ```
