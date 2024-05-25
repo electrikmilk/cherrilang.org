@@ -21,15 +21,11 @@ to no input, what it accepts as input, etc.
 
 Define the look of your Shortcut using one of the supported colors or glyphs.
 
+### Color
+
 ```
 #define color red
-#define glyph apple
 ```
-
-Most glyphs are supported, but not all the newest are yet. [Click here for the full list of supported glyphs](/language/glyphs.html)
-.
-
-### Color
 
 - <span class="color" style="background-color: #ef6065"></span> `red`
 - <span class="color" style="background-color: #fd7f60"></span> `darkorange`
@@ -47,6 +43,14 @@ Most glyphs are supported, but not all the newest are yet. [Click here for the f
 - <span class="color" style="background-color: #808a95"></span> `gray`
 - <span class="color" style="background-color: #555555"></span> `darkgray`
 
+### Glyph
+
+```
+#define glyph apple
+```
+
+You can find all of the identifiers for each Shortcut glyph at [glyphs.cherrilang.org](https://glyphs.cherrilang.org/).
+
 ## Inputs & Outputs
 
 Inputs and outputs accept [content item type](/language/types.html#content-item-types).
@@ -59,7 +63,7 @@ file format.
 #define outputs app, file
 ```
 
-These values must be separated by commas.
+Commas must separate these values.
 
 ## NoInput
 
