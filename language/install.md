@@ -41,8 +41,8 @@ Install the Go programming language via the official Go website: [https://go.dev
 
 Clone the source tree from GitHub: 
 
-```
-$ git clone https://github.com/electrikmilk/cherri.git
+```console
+git clone https://github.com/electrikmilk/cherri.git
 ```
 
 ### 3. Build Cherri
@@ -50,18 +50,23 @@ $ git clone https://github.com/electrikmilk/cherri.git
 Enter the directory of the source you downloaded and built.
 
 ```bash
-# Enter directory
-$ cd /path/to/cherri
+cd /path/to/cherri
+```
 
-# Build
-$ go build
+#### Build
 
-# Run
-$ ./cherri
+```console
+go build
+```
+
+#### Run
+
+```console
+./cherri
 ```
 
 To run Cherri from anywhere, you could optionally move it to your user binaries
 
-```bash
-$ sudo mv cherri /usr/local/bin
+```console
+sudo mv cherri /usr/local/bin
 ```
