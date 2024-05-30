@@ -150,7 +150,7 @@ You can access a dictionary value by key:
 getValue(dictionary, "key")
 
 // must be a raw string, so no variable references are allowed.
-dictionary['key']
+@value = dictionary['key']
 ```
 
 ### Array
