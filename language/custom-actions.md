@@ -54,6 +54,17 @@ action myCustomAction() {
 @result = myCustomAction()
 ```
 
+## Recursion & Calling Other Actions
+
+It is possible to call other custom actions within the body of a custom action.
+
+### Can I run an action inside of another action?
+
+Yes!
+
+{: .warning }
+Strong caution against the use of recursion. Misuse can cause a Shortcut to infinitely loop.
+
 ## How do they work?
 
 The contents of these actions run separately from your main code inside your Shortcut by using the **Run Shortcut** action and passing a **Dictionary** action containing data that will be detected by injected Cherri code that contains each of the defined actions that are used in the Cherri code below it.
