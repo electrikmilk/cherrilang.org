@@ -371,6 +371,21 @@ show(text input)
 
 ## Printing
 
+### Make PDF
+
+```
+makePDF(variable input, bool ?includeMargin = false, enum ?mergeBehavior = "Append")
+```
+
+#### Merge Behaviors
+
+- Append
+- Shuffle
+
+_**Note:** Enum values are case-sensitive._
+
+---
+
 ### Optimize PDF File Size
 
 Optimize the size of a PDF file.
@@ -378,6 +393,8 @@ Optimize the size of a PDF file.
 ```
 optimizePDF(variable pdfFile)
 ```
+
+---
 
 ### Print
 
