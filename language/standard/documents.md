@@ -651,6 +651,16 @@ correctSpelling(text text)
 
 ---
 
+### Compare Text
+
+Compare `text` to `subject`.
+
+```
+compareText(text subject, text text, bool ?caseSensitive = true)
+```
+
+---
+
 ### Match Text
 
 Match text using a regular expression.
