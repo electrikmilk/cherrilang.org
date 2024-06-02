@@ -651,12 +651,12 @@ correctSpelling(text text)
 
 ---
 
-### Compare Text
+### Contains Text
 
-Compare `text` to `subject`.
+Checks if `text` occurs in `subject`.
 
 ```
-compareText(text subject, text text, bool ?caseSensitive = true)
+containsText(text subject, text text, bool ?caseSensitive = true)
 ```
 
 ---
