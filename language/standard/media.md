@@ -285,6 +285,16 @@ Add `songs` to music library.
 addToMusic(songs)
 ```
 
+---
+
+### Select Music
+
+Select song(s) from the Music app.
+
+```
+selectMusic(bool ?selectMultiple = false)
+```
+
 ## Photos
 
 ### Create Photo Album
