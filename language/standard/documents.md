@@ -110,6 +110,26 @@ markup(variable document)
 
 ## File Storage
 
+### Append to File
+
+Append text to a file.
+
+```
+appendToFile(text filePath, text text)
+```
+
+---
+
+### Prepend to File
+
+Prepend text to a file.
+
+```
+prependToFile(text filePath, text text)
+```
+
+---
+
 ### Create Folder
 
 Create a folder at `path` in the user's Shortcuts folder in their iCloud Drive.
@@ -180,7 +200,29 @@ getSelectedFiles()
 
 ---
 
-### Rename
+### Label File
+
+Add a label to the file.
+
+```
+labelFile(variable file, enum color)
+```
+
+#### Labels
+
+- red
+- orange
+- yellow
+- green
+- blue
+- purple
+- gray
+
+_**Note:** Enum values are case-sensitive._
+
+---
+
+### Rename File
 
 Rename `file` to `newName`.
 
@@ -190,7 +232,7 @@ rename(variable file, text newName)
 
 ---
 
-### Reveal
+### Reveal Files
 
 Reveal `files` in Finder.
 
@@ -200,7 +242,7 @@ reveal(variable files)
 
 ---
 
-### Save
+### Save File
 
 Save `file` to `path`.
 
@@ -229,6 +271,25 @@ selectFile(boolean ?multiple = false)
 ```
 
 ## Files
+
+### Filter Files
+
+```
+filterFiles(variable files, number ?limit, enum ?sortBy)
+```
+
+#### Sort By
+
+- File Size
+- File Extension
+- Creation Date
+- File Path
+- Last Modified Date
+- Name
+- Random
+
+_**Note:** Enum values are case-sensitive._
+
 
 ### Get File Detail
 
@@ -310,9 +371,17 @@ show(text input)
 
 ## Printing
 
+### Optimize PDF File Size
+
+Optimize the size of a PDF file.
+
+```
+optimizePDF(variable pdfFile)
+```
+
 ### Print
 
-Prompt the user to physically print `input`.
+Prompt the user to print `input` using a printer.
 
 ```
 print(variable input)
@@ -429,6 +498,26 @@ Get text from `input`.
 
 ```
 getText(variable input)
+```
+
+---
+
+### Get Text from PDF
+
+Get text from a PDF file.
+
+```
+getPDFText(variable pdfFile, bool ?richText = false, bool ?combinePages = true, text ?headerText, text ?footerText)
+```
+
+---
+
+### Make Spoken Audio
+
+Make spoken audio from text.
+
+```
+makeSpokenAudio(text text, number ?rate, number ?pitch)
 ```
 
 ---
