@@ -18,7 +18,7 @@ may be inaccurate. Not all standard actions in each category are implemented yet
 
 Standard actions are always available and do not need to be imported.
 
-- [Calendar](standard/calendar) `12/27`
+- [Calendar](standard/calendar) `12/30`
 - [Contacts](standard/contacts)
 - [Documents](standard/documents)
 - [Location](standard/location)
