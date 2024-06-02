@@ -167,7 +167,17 @@ _**Note:** Enum values are case-sensitive._
 
 ## Dates
 
-### Date
+### Current Date
+
+Create a date value with the current date.
+
+```
+currentDate()
+```
+
+---
+
+### Specific Date
 
 Create date value from `date`.
 
