@@ -525,6 +525,48 @@ Search Apple Podcasts for podcasts using `query`.
 searchPodcasts(text query)
 ```
 
+---
+
+### Get Detail of Podcast
+
+```
+getPodcastDetail(variable podcast, enum detail)
+```
+
+#### Details
+
+- Feed URL
+- Genre
+- Episode Count
+- Artist
+- Store ID
+- Store URL
+- Artwork
+- Artwork URL
+- Name
+
+_**Note:** Enum values are case-sensitive._
+
+---
+
+### Get Podcasts from Library
+
+Get the user's podcasts from their library.
+
+```
+getPodcasts()
+```
+
+---
+
+### Play Podcast
+
+Play a podcast.
+
+```
+playPodcast(variable podcast)
+```
+
 ## Video
 
 ### Strip Media Metadata
