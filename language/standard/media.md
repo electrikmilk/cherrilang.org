@@ -97,14 +97,11 @@ _**Note:** Enum values are case-sensitive._
 
 ### Take Screenshot
 
-{: .warning }
-Arguments will not apply to mobile devices
-
 ```
-takeScreenshot(mainMonitorOnly)
+takeScreenshot(bool ?mainMonitorOnly = false)
 ```
 
-`mainMonitorOnly` is an optional boolean, the default value is `false`.
+**Note: `mainMonitorOnly` will only apply to a Mac**
 
 ---
 
@@ -113,10 +110,15 @@ takeScreenshot(mainMonitorOnly)
 Take an interactive Screenshot
 
 ```
-takeInteractiveScreenshot(selection)
+takeInteractiveScreenshot(enum ?selection = "Window")
 ```
 
-`selection` is an optional text with a default value of `Window`. The possible arguments are `Window` or `Custom`.
+#### Selections
+
+- Window
+- Custom
+
+_**Note:** Enum values are case-sensitive._
 
 **Note: Mac-only action**
 
