@@ -290,9 +290,9 @@ openNote(variable note)
 
 ## Previewing
 
-### Quicklook
+### Quick Look
 
-Preview `input`.
+Preview `input` in Quick Look.
 
 ```
 quicklook(variable input)
