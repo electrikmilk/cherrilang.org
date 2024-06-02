@@ -35,12 +35,12 @@ Record some audio.
 recordAudio(enum ?quality = "Normal", enum ?start = "On Tap")
 ```
 
-#### Recording Qualities
+#### Qualities
 
 - Normal
 - Very High
 
-#### Recording Starts
+#### Start Recording
 
 - On Tap
 - Immediately
@@ -86,7 +86,7 @@ takeVideo(enum ?camera = "Front", enum ?quality = "High", enum ?recordingStart =
 - Medium
 - High
 
-#### Recording Start
+#### Start Recording
 
 - On Tap
 - Immediately
