@@ -55,6 +55,32 @@ Use Shazam to recognize music.
 startShazam(bool ?show = true, bool ?showError = true)
 ```
 
+---
+
+### Get Details of Shazam
+
+Get a detail of a Shazam match.
+
+```
+getShazamDetail(variable input, enum detail)
+```
+
+#### Details
+
+- Apple Music ID
+- Artist
+- Title
+- Is Explicit
+- Lyrics Snippet
+- Lyric Snippet Synced
+- Artwork
+- Video URL
+- Shazam URL
+- Apple Music URL
+- Name
+
+_**Note:** Enum values are case-sensitive._
+
 ## Camera
 
 ### Take Photo
