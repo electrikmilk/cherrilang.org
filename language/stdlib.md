@@ -7,9 +7,6 @@ nav_order: 16
 
 # Standard library of custom actions
 
-{: .warning }
-This is a future feature of the compiler currently only available if you build from source.
-
 You can use the Cherri standard library of [custom actions](/language/custom-actions) using the following syntax:
 
 ```
