@@ -18,7 +18,7 @@ nav_order: 1
 ```ruby
 /* Hello, Cherri! */
 
-#define glyph smiley
+#define glyph smileyFace
 #define color yellow
 
 @message = "Hello!"
