@@ -18,11 +18,11 @@ may be inaccurate. Not all standard actions in each category are implemented yet
 
 Standard actions are always available and do not need to be imported.
 
-- (12/27) [Calendar](standard/calendar)
+- [Calendar](standard/calendar) `12/27`
 - [Contacts](standard/contacts)
 - [Documents](standard/documents)
 - [Location](standard/location)
-- (35/68) [Media](standard/media)
+- [Media](standard/media) `35/68`
 - [Scripting](standard/scripting)
 - [Sharing](standard/sharing)
 - [Web](standard/web)
