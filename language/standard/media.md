@@ -22,32 +22,8 @@ nav_order: 5
 Search the app store for apps using `query`.
 
 ```
-searchAppStore(query)
+searchAppStore(text query)
 ```
-
-## Camera
-
-### Take Photo
-
-Takes `number` of photo(s).
-
-```
-takePhoto(integer ?count = 1, boolean ?showPreview = true)
-```
-
----
-
-### Take Video
-
-Takes a video using `camera` in `quality`.
-
-```
-takeVideo(camera,quality,startImmediately)
-```
-
-- `camera` is a text value of `Front` or `Back`.
-- `quality` is a text value of `Low`, `Medium`, `High`. Default is `Medium`.
-- `startImmediately` is an optional boolean value set to `false` by default.
 
 ## Audio
 
@@ -71,15 +47,51 @@ recordAudio(enum ?quality = "Normal", enum ?start = "On Tap")
 
 ---
 
-### Shazam It
+### Recognize Music
 
-Start Shazam.
+Use Shazam to recognize music.
 
 ```
-startShazam(show,showError)
+startShazam(bool ?show = true, bool ?showError = true)
 ```
 
-`show` and `showError` are optional booleans which default values are `true`.
+## Camera
+
+### Take Photo
+
+Takes `number` of photo(s).
+
+```
+takePhoto(integer ?count = 1, boolean ?showPreview = true)
+```
+
+---
+
+### Take Video
+
+Takes a video using `camera` in `quality`.
+
+```
+takeVideo(enum ?camera = "Front", enum ?quality = "High", enum ?recordingStart = "Immediately")
+```
+
+#### Cameras
+
+- Front
+- Back
+
+#### Qualities
+
+- Low
+- Medium
+- High
+
+#### Recording Start
+
+- On Tap
+- Immediately
+
+_**Note:** Enum values are case-sensitive._
 
 ## Device
 
