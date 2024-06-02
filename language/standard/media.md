@@ -522,7 +522,7 @@ createPlaylist(text title, variable ?songs, text ?description, text ?author)
 Search Apple Podcasts for podcasts using `query`.
 
 ```
-searchPodcasts(query)
+searchPodcasts(text query)
 ```
 
 ## Video
