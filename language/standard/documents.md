@@ -21,7 +21,7 @@ nav_order: 3
 
 ### Extract Archive
 
-Extract files from archive `file`.
+Extract files from the archive `file`.
 
 ```
 extractArchive(variable file)
@@ -651,12 +651,32 @@ correctSpelling(text text)
 
 ---
 
+### Match Text
+
+Match text using a regular expression.
+
+```
+matchText(text regexPattern, text text, bool ?caseSensitive = true)
+```
+
+---
+
 ### Get Group from Matched Text
 
 Get group at `index` in `matches`.
 
 ```
-matchedTextGroupIndex(variable matches, integer index)
+getMatchGroup(variable matches, integer index)
+```
+
+---
+
+### Get All Groups from Matched Text
+
+Get all groups in `matches`.
+
+```
+getMatchGroups(variable matches)
 ```
 
 ---
