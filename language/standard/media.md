@@ -129,11 +129,10 @@ _**Note:** Enum values are case-sensitive._
 Add a frame to a GIF.
 
 ```
-addToGIF(image,gif,delay,autoSize,width,height)
+addToGIF(text image, text gif, text ?delay = "0.25", bool ?autoSize = true, text ?width, text ?height)
 ```
 
-- `autoSize` is a boolean, the default value is `true`. `width` and `height` can only be used when `autoSize` is `false`.
-- `delay` is optional, the default value is `0.25`.
+**Note:** `width` and `height` can only be used when `autoSize` is `false`.
 
 ---
 
@@ -142,10 +141,8 @@ addToGIF(image,gif,delay,autoSize,width,height)
 Make video from `gif`, looping `loops` number of times. Returns GIF as video.
 
 ```
-makeVideofromGIF(gif,loops)
+makeVideoFromGIF(variable gif, number ?loops = 1)
 ```
-
-`loops` is an optional integer, the default value is `1`.
 
 ## Image Editing
 
@@ -154,10 +151,10 @@ makeVideofromGIF(gif,loops)
 Combine `images` using `mode` with `spacing`.
 
 ```
-combineImages(images,mode="Horizontally",spacing=0)
+combineImages(variable images, text ?mode = "vertically", number ?spacing = 1)
 ```
 
-#### Combine Modes
+#### Modes
 
 - Horizontally
 - Vertically
@@ -168,10 +165,10 @@ combineImages(images,mode="Horizontally",spacing=0)
 Crop `image` at `position` to `width` and `height`. Returns cropped image.
 
 ```
-cropImage(image,position="Center",width="100",height="100")
+cropImage(variable image, text ?position = "Center", text ?width = "100", enum ?height = "100")
 ```
 
-#### Crop Positions
+#### Positions
 
 - Center
 - Top Left
@@ -187,13 +184,15 @@ cropImage(image,position="Center",width="100",height="100")
 Flip `image` in `direction`. Returns the flipped image.
 
 ```
-flipImage(image,direction)
+flipImage(variable image, enum direction)
 ```
 
 #### Flip Directions
 
 - Horizontal
 - Vertical
+
+_**Note:** Enum values are case-sensitive._
 
 ---
 
@@ -243,11 +242,8 @@ convertImage(image,format,preserveMetadata)
 Convert an image to a JPEG.
 
 ```
-convertToJPEG(image,quality,preserveMetadata)
+convertToJPEG(variable image, number ?compressionQuality, bool ?preserveMetadata = true)
 ```
-
-- `quality` is optional.
-- `preserveMetadata` is optional, the default value is `true`.
 
 ---
 
@@ -296,10 +292,8 @@ addToMusic(songs)
 Create an album named `name` with `photos`.
 
 ```
-createAlbum(name,photos)
+createAlbum(text name, variable ?images)
 ```
-
-`photos` is optional.
 
 ---
 
@@ -308,7 +302,7 @@ createAlbum(name,photos)
 Delete `photos` from photo library.
 
 ```
-deletePhotos(photos)
+deletePhotos(variable photos)
 ```
 
 ---
@@ -328,7 +322,7 @@ getLastImport()
 Get latest photo bursts.
 
 ```
-getLatestBursts(count)
+getLatestBursts(number count)
 ```
 
 ---
@@ -338,7 +332,7 @@ getLatestBursts(count)
 Get latest live photos.
 
 ```
-getLatestLivePhotos(count)
+getLatestLivePhotos(number count)
 ```
 
 ---
@@ -348,7 +342,7 @@ getLatestLivePhotos(count)
 Get latest screenshots.
 
 ```
-getLatestScreenshots(count)
+getLatestScreenshots(number count)
 ```
 
 ---
@@ -358,10 +352,8 @@ getLatestScreenshots(count)
 Get latest photos.
 
 ```
-getLatestPhotos(count,includeScreenshots)
+getLatestPhotos(number count, bool ?includeScreenshots = true)
 ```
-
-`includeScreenshots` is a boolean, the default value is `true`.
 
 ---
 
@@ -370,7 +362,7 @@ getLatestPhotos(count,includeScreenshots)
 Get latest videos.
 
 ```
-getlatestVideos(count)
+getlatestVideos(number count)
 ```
 
 ---
@@ -380,7 +372,7 @@ getlatestVideos(count)
 Remove `photo` to photo album `album`.
 
 ```
-removeFromAlbum(photo,album)
+removeFromAlbum(variable photo, text album)
 ```
 
 ---
@@ -390,7 +382,7 @@ removeFromAlbum(photo,album)
 Save `photo` to photo album `Recents`.
 
 ```
-savePhoto(photo)
+savePhoto(variable photo)
 ```
 
 ---
@@ -400,10 +392,8 @@ savePhoto(photo)
 Select photos from photo library.
 
 ```
-selectPhotos(selectMultiple)
+selectPhotos(bool ?selectMultiple = false)
 ```
-
-`selectMultiple` is an optional boolean, the default value is `false`.
 
 ## Playback
 
@@ -442,7 +432,7 @@ togglePlayPause()
 Set device volume to `number`.
 
 ```
-setVolume(number)
+setVolume(number number)
 ```
 
 ---
@@ -472,7 +462,7 @@ skipFwd()
 Add `music` as the next to play in the queue.
 
 ```
-playNext(music)
+playNext(variable music)
 ```
 
 ---
@@ -482,7 +472,7 @@ playNext(music)
 Add `music` as the last to play in the queue.
 
 ```
-playLater(music)
+playLater(variable music)
 ```
 
 ---
@@ -502,7 +492,7 @@ clearUpNext()
 Add `songs` to playlist with `name`.
 
 ```
-addToPlaylist(name,songs)
+addToPlaylist(text playlistName, variable songs)
 ```
 
 ---
@@ -512,10 +502,8 @@ addToPlaylist(name,songs)
 Create a playlist.
 
 ```
-createPlaylist(name,music,description,author)
+createPlaylist(text title, variable ?songs, text ?description, text ?author)
 ```
-
-The arguments `music`, `description`, and `author` are optional.
 
 ## Podcasts
 
