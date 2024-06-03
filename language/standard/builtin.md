@@ -69,4 +69,4 @@ Create vCards without having to remember the format.
 
 ### [Raw Action](/language/raw-actions)
 
-Create vCards without having to remember the format.
+Create actions by inputting full identifiers and parameters to use actions not supported by Cherri.
