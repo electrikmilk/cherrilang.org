@@ -651,16 +651,6 @@ correctSpelling(text text)
 
 ---
 
-### Contains Text
-
-Checks if `text` occurs in `subject`.
-
-```
-containsText(text subject, text text, bool ?caseSensitive = true)
-```
-
----
-
 ### Match Text
 
 Match text using a regular expression.
