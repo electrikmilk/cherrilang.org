@@ -46,3 +46,9 @@ For example, you could enter a file path for an audio file and use **Play Audio*
 @audio = base64File("music/playme.mp3")
 playSound(audio)
 ```
+
+---
+
+### [Make vCard](/language/vcards)
+
+Create vCards without having to remember the format.
