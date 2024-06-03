@@ -35,7 +35,7 @@ Some actions may not be implemented due to difficulty implementing them practica
 
 Built-ins in Cherri are actions in the compiler that use standard actions but implement them in a way that makes it easier to use a specific Shortcuts feature. For example, the [makeVCard()](/language/vcards) action is in actuality just a text action. Still, the compiler uses it to  insert the vCard format into a text action based on your input.
 
-- [Custom built-in standard actions](standard/custom)
+[Custom built-in standard actions](standard/custom)
 
 ## Can I contribute actions, even non-standard actions?
 
