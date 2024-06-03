@@ -7,7 +7,7 @@ nav_order: 13
 
 # Raw Action
 
-You can write your own definition of an action not defined inside of Cherri, in Cherri.
+You can write a raw definition of an action not defined inside of Cherri, in Cherri.
 
 ```ruby
 rawAction("is.workflow.actions.gettext", [
