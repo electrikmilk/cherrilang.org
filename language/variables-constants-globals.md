@@ -2,7 +2,7 @@
 title: Variables, Constants & Globals
 layout: default
 parent: Documentation
-nav_order: 2
+nav_order: 4
 ---
 
 # Variables, Constants & Globals
