@@ -49,6 +49,16 @@ playSound(audio)
 
 ---
 
+### Open SpringBoard
+
+Go to the home screen.
+
+```
+springBoard()
+```
+
+---
+
 ### [Make vCard](/language/vcards)
 
 Create vCards without having to remember the format.
