@@ -65,7 +65,7 @@ This uses the [Open App](/language/standard/scripting#open-app) action to open t
 
 ### [Make vCard](/language/vcards)
 
-Create vCards without having to remember the format.
+Create vCards without having to remember the format. Embed local images as the image for a menu item.
 
 ---
 
