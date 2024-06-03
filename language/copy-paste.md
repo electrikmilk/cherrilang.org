@@ -2,7 +2,7 @@
 title: Copy/Paste Actions
 layout: default
 parent: Documentation
-nav_order: 12
+nav_order: 10
 ---
 
 # Pasteables
