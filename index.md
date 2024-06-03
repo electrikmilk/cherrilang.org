@@ -4,6 +4,16 @@ layout: home
 nav_order: 1
 ---
 
+{% seo title=false %}
+
+{% if page.title == "Welcome" %}
+<title>Scale Siri Shortcut projects and maintain them long-term | Cherri</title>
+{% endif %}
+
+{% if page.title != "Welcome" %}
+<title>{{ page.title }} | {{ site.title }}</title>
+{% endif %}
+
 <div style="text-align: center">
   <img src="https://github.com/electrikmilk/cherrilang.org/assets/4368524/70975782-10d5-4ee0-a69f-00dc74443ffc" width="400px"/>
 </div>
