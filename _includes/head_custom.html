@@ -2,5 +2,13 @@
   ~ Copyright (c) Brandon Jordan
   -->
 
+{% if page.title == "Welcome" %}
+<title>Scale Siri Shortcut projects and maintain them long-term | Cherri</title>
+{% endif %}
+
+{% if page.title != "Welcome" %}
+<title>{{ page.title }} | {{ site.title }}</title>
+{% endif %}
+
 <link rel="shortcut icon" href="/assets/cherri_icon.png" type="image/x-icon">
 <script type="text/javascript" async src="/assets/preview.js"></script>
