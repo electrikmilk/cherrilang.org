@@ -22,11 +22,6 @@ mermaid:
   # Pick an available version from https://cdn.jsdelivr.net/npm/mermaid/
   version: "9.1.3"
 
-kramdown:
-  syntax_highlighter_opts:
-    block:
-      line_numbers: true
-
 aux_links:
   "Playground":
     - "//playground.cherrilang.org/"
