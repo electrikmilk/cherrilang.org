@@ -57,6 +57,8 @@ Go to the home screen.
 springBoard()
 ```
 
+This uses the [Open App](/language/standard/scripting#open-app) action to open the SpringBoard or Homescreen.
+
 ---
 
 ### [Make vCard](/language/vcards)
