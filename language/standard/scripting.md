@@ -129,16 +129,6 @@ splitApps(text firstAppID, text secondAppID, enum ?ratio = "half")
 - `half`
 - `thirdByTwo`
 
----
-
-### Open SpringBoard
-
-Go to the home screen.
-
-```
-springBoard()
-```
-
 ## Content
 
 ### Get On-Screen Content
