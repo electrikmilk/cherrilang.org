@@ -2,7 +2,7 @@
 title: Definitions
 layout: default
 parent: Documentation
-nav_order: 8
+nav_order: 2
 ---
 
 # Definitions
