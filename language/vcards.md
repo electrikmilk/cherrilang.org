@@ -15,7 +15,12 @@ makeVCard(text title, text subtitle, text ?imagePath)
 
 This generates a vCard using your parameters at compile time, inserting the title as the name, and the subtitle as the org/company.
 
-It will also optionally base 64 encode at compile time the image at the path specified as the photo. Since this happens at compile time, the image path must be available at compile time. No variables are allowed unless they evaluate to a text literal.
+It will also optionally base 64 encode when compiling the image at the path specified as the photo.
+
+Since this happens at compile time, the image path must be available at compile time. No variables are allowed unless they evaluate to a text literal.
+
+{: .note }
+In a future release, entering a variable into the `imagePath` argument will insert that variable for `PHOTO:` instead of trying to load a file. It will only load a file if you enter a string literal for the `imagePath` argument.
 
 The example below uses this built-in action to make a vCard menu:
 
