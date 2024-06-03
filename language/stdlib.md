@@ -1,19 +1,20 @@
 ---
 title: Standard Library
 layout: default
-parent: Documentation
-nav_order: 16
+grand_parent: Documentation
+parent: Actions
+nav_order: 10
 ---
 
-# Standard library of custom actions
+# Standard Library of Custom Actions
 
-You can use the Cherri standard library of [custom actions](/language/custom-actions) using the following syntax:
+You can use the Cherri Standard Library of [custom actions](/language/custom-actions) using the following syntax:
 
 ```
 #include 'stdlib'
 ```
 
-This will give you access to the following actions:
+This will give you access to the following actions. Note that custom actions are only included with your Shortcut if you use them.
 
 ## Scripting
 
