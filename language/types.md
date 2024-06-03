@@ -2,7 +2,7 @@
 title: Types
 layout: default
 parent: Documentation
-nav_order: 10
+nav_order: 5
 ---
 
 # Types
