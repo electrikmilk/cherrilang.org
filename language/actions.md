@@ -18,14 +18,10 @@ may be inaccurate. Not all standard actions in each category are implemented yet
 
 Standard actions are always available and do not need to be imported.
 
+### In progress
+
 - [Calendar](standard/calendar) `12/30`
-- [Contacts](standard/contacts)
-- [Documents](standard/documents)
-- [Location](standard/location)
 - [Media](standard/media) `35/68`
-- [Scripting](standard/scripting)
-- [Sharing](standard/sharing)
-- [Web](standard/web)
 
 Some actions may not be implemented due to difficulty implementing them practically into the language.
 
