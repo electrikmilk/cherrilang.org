@@ -415,10 +415,10 @@ removeFromAlbum(variable photo, text album)
 
 ### Save to Photo Album
 
-Save `photo` to photo album `Recents`.
+Save `photo` to photo album `album`.
 
 ```
-savePhoto(variable photo)
+savePhoto(variable photo, text ?album = "Recents")
 ```
 
 ---
