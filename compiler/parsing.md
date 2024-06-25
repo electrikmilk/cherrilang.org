@@ -43,12 +43,9 @@ one to account for spaces so that this function can be chained.
 A helpful alias for this function is `tokensAhead(v ...tokenType) bool`. This allows for checking if one of the tokens
 given is ahead instead of doing `tokenAhead(...) || tokenAhead(...) || ...`, etc.
 
-### `isToken(token tokenType)`
+### `isChar(tokenChar rune)`
 
-This checks if the current character is the given token and if so returns true and advances one character. This is done
-as the current character is a rune and tokens are stored as strings so that they can have multiple characters as their
-value. This function simply converts the current character to a string and compares it to the token instead of writing
-that logic over and over.
+This checks if the current character is the given token rune and if so returns true and advances one character. This is done so that it can be used as a conditional and automatically advance just like with `tokenAhead()`.
 
 ### `lookAheadUntil(until rune)`
 
