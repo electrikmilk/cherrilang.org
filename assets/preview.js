@@ -12,5 +12,5 @@ window.onload = () => {
             iframe.src = 'https://playground.cherrilang.org/preview?code=' + encodeURIComponent(highlight.innerText);
             highlight.appendChild(iframe);
         });
-    }, 1000);
+    }, 700);
 };
