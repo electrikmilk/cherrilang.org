@@ -155,7 +155,7 @@ deleteFiles(variable input, boolean ?immediately = false)
 Get contents of `folder`.
 
 ```
-getFolderContents(variable folder, boolean ?recursive = true)
+getFolderContents(variable folder, boolean ?recursive = false)
 ```
 
 ---
