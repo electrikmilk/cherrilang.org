@@ -40,7 +40,7 @@ This uses a [Match Text](/language/standard/documents#match-text) action to chec
 base64File(text filePath)
 ```
 
-This built-in action will load the file at `filePath` and encode it to base 64 at compile time. This will result in a **Text** action containing the base 64 encoded contents of the file which Shortcuts can decode for showing an image, playing audio , etc.
+This built-in action will load the file at `filePath` and encode it to base 64 at compile time. This will result in a **Text** action containing the base 64 encoded contents of the file which Shortcuts can decode for showing an image, playing audio, etc.
 
 For example, you could enter a file path for an audio file and use **Play Audio** to play the audio when the Shortcut runs.
 
@@ -65,7 +65,7 @@ This uses the [Open App](/language/standard/scripting#open-app) action to open t
 
 ### [Make vCard](/language/vcards)
 
-Create vCards without having to remember the format. Embed local images as the image for a menu item.
+Create vCards without having to remember the format. Embed local images as an image for a menu item.
 
 ---
 
