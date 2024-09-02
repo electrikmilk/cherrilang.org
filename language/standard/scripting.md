@@ -474,7 +474,7 @@ dictionary['key']
 Set the value of `key` to `value` in `dictionary`.
 
 ```
-setValue(variable dictionary, text key, text value)
+setValue(variable dictionary, text key, variable value)
 ```
 
 ## Files
