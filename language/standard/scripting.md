@@ -129,6 +129,16 @@ splitApps(text firstAppID, text secondAppID, enum ?ratio = "half")
 - `half`
 - `thirdByTwo`
 
+---
+
+### Get Apps
+
+Gets all of the apps on the device.
+
+```
+getApps()
+```
+
 ## Content
 
 ### Get On-Screen Content
