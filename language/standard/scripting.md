@@ -139,6 +139,8 @@ Gets all of the apps on the device.
 getApps()
 ```
 
+_**Note:** iOS 18+, macOS only_
+
 ## Content
 
 ### Get On-Screen Content
