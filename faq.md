@@ -32,7 +32,7 @@ This may work on Windows but has not been tested so you may experience issues.
 
 ### Why not other \*nix systems or WSL?
 
-You can only run the `shortcuts` binary on macOS, and as it relies on private macOS frameworks, not even macOS emulation will work. It also relies on being signed into iCloud, so it needs to be an actual Mac due to the valid serial number requirement.
+You can only run the `shortcuts` binary on macOS, and as it relies on private macOS frameworks, however containerization of macOS is possible with Docker. The Hubsign service and emulation are available but not as fast as native signing due to varying connection speeds and emulation overhead.
 
 ### Is it possible to build and run on other platforms?
 
