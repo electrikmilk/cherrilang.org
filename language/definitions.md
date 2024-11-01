@@ -15,7 +15,7 @@ nav_order: 2
 {:toc}
 
 Define aspects of your Shortcut, such as the color and glyph of the icon, how it responds
-to no input, what it accepts as input, etc.
+to no input, what types it accepts as input and outputs, etc.
 
 ## Icon
 
@@ -51,7 +51,7 @@ Define the look of your Shortcut using one of the supported colors or glyphs.
 
 You can find all of the identifiers for each Shortcut glyph at [glyphs.cherrilang.org](https://glyphs.cherrilang.org/).
 
-## Inputs & Outputs
+## Accepted Input & Output Types
 
 Inputs and outputs accept [content item type](/language/types.html#content-item-types).
 
@@ -65,23 +65,23 @@ file format.
 
 Commas must separate these values.
 
-## NoInput
+## No Input
 
 Define how your shortcut responds to no input.
 
-Stop and give a specific response:
+### Stop and Respond
 
 ```
 #define noinput stopwith "Response"
 ```
 
-Get the contents of the clipboard:
+### Get Clipboard Contents
 
 ```
 #define noinput getclipboard
 ```
 
-Ask for a [content item type](/language/types.html#content-item-types):
+### Ask for a [content item type](/language/types.html#content-item-types):
 
 ```
 #define noinput askfor text
