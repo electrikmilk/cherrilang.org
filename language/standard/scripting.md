@@ -371,20 +371,26 @@ setBluetooth(boolean status)
 
 ### Set Brightness
 
-Set display brightness (0-100).
+{: .note }
+This feature is in an upcoming release.
+
+Set display brightness (`0.0` - `1.0`).
 
 ```
-setBrightness(text brightness)
+setBrightness(float brightness)
 ```
 
 ---
 
 ### Set Volume
 
-Set device volume (0-100).
+{: .note }
+This feature is in an upcoming release.
+
+Set device volume (`0.0` - `1.0`).
 
 ```
-setVolume(text volume)
+setVolume(float volume)
 ```
 
 ---
