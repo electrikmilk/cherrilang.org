@@ -271,6 +271,7 @@ Setting a variable's value type explicitly also compiles faster than having to i
 @obj: dictionary
 @boolean: bool
 @reference: var
+@real: float
 
 @builder: text
 for item in list {
@@ -289,6 +290,7 @@ The following types may be used:
 - `dictionary` (default: `{}`)
 - `array`
 - `var` (variable reference)
+- `float` (future release)
 
 ## Type Coercion
 
@@ -301,14 +303,14 @@ You can currently do the following type coercions.
 @textVar = var.text
 ```
 
-There exists no `text()` action, as text literals create a text action. To coerce another value to text, simply reference it as an inline variable just as you would in Shortcuts.
+No `text()` action exists, as text literals create a text action. To coerce another value to text, simply reference it as an inline variable just as you would in Shortcuts.
 
 ```ruby
 @var = 5
 @textVar = "{var.text}"
 ```
 
-If for some reason that doesn't work, use the `getText()` action.
+Or you can use...
 
 ```ruby
 @var = 5
@@ -328,7 +330,7 @@ If for some reason that doesn't work, use the `getText()` action.
 @numVar = getNumbers(var)
 ```
 
-The `number()` action should only coerce another value to a number, as an integer literally produces the same output.
+The `number()` action should only coerce another value to a number, as an integer produces the same output.
 
 ```ruby
 @textVar = "5"
