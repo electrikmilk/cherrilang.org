@@ -90,6 +90,15 @@ One caveat to raw text is that it is not allowed in Dictionaries or Arrays. This
 @number = 42
 ```
 
+### Float
+
+{: .note }
+This feature is from an upcoming release.
+
+```ruby
+@float = 0.5
+```
+
 ### Expression
 
 ```ruby
