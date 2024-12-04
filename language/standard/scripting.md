@@ -382,6 +382,58 @@ setBrightness(float brightness)
 
 ---
 
+### Set Night Shift
+
+{: .note }
+This feature is in an upcoming release.
+
+Set status of Night Shift.
+
+```
+setNightShift(bool status)
+```
+
+---
+
+### Toggle Night Shift
+
+{: .note }
+This feature is in an upcoming release.
+
+Toggle Night Shift.
+
+```
+toggleNightShift()
+```
+
+---
+
+### Set True Tone
+
+{: .note }
+This feature is in an upcoming release.
+
+Set status of True Tone.
+
+```
+setTrueTone(bool status)
+```
+
+---
+
+### Toggle True Tone
+
+{: .note }
+This feature is in an upcoming release.
+
+Toggle True Tone.
+
+```
+toggleTrueTone()
+```
+
+---
+
 ### Set Volume
 
 {: .note }
