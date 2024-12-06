@@ -30,5 +30,5 @@ This feature is in an upcoming release.
 
 ```
 setAutoAnswerCalls(bool status)
-toggleAutoAnswerCalls
+toggleAutoAnswerCalls()
 ```
