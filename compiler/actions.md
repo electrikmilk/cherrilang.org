@@ -63,16 +63,26 @@ All of these options are optional, as long as the key matches the identifier you
 actions["identifier"] = actionDefinition{}
 ```
 
+### `appIdentifier`
+
+This sets the base bundle identifier of the action that will be prepended to the `identifier`. By default, this is `is.workflow.actions`, as most standard Shortcuts actions have this base identifier.
+
+This is meant for 3rd-party actions added by stock or user-installed apps. 3d-party actions should be defined in their own Go file outside of `actions_std.go`.
+
+### `overrideIdentifer`
+
+This requires the full bundle identifier. This is used for `rawAction` to allow it to override the identifier completely with the collected identifier string.
+
 ### `identifier`
 
-The identifier is the identifier at the end of `is.workflows.actions.**identifier**`.
+The identifier is the unique ending of the action's `WFWorkflowActionIdentifier`.
 
-The identifier is optional if the key of the action matches the action identifier, even in camelCase, as if no `identifier`
-is defined, not only is the key used instead, but its case will be changed to lowercase.
+The identifier is optional if the key of the item in the `action` map matches it, even in camelCase, as if no `identifier` is defined, not only is the key used instead but its case will be changed to lowercase.
 
 So there is no need to do the below example, remove the ident property and the key will be used instead.
 
 ```go
+// DON'T:
 actions["takePhoto"] = actionDefinition{
      identifier: "takephoto",
      // ...
@@ -87,10 +97,6 @@ actions["takeMorePhotos"] = actionDefinition{
      // ...
 }
 ```
-
-### `appIdentifier`
-
-This is meant for 3rd-party actions added by user installed apps. This requires the full bundle identifier of the app. 3d-party actions should be defined in their own Go file outside of `actions_std.go`.
 
 ### `parameters`
 
