@@ -71,7 +71,7 @@ actions["identifier"] = actionDefinition{}
 
 This sets the base bundle identifier of the action that will be prepended to the `identifier`. By default, this is `is.workflow.actions`, as most standard Shortcuts actions have this base identifier.
 
-This is meant for 3rd-party actions added by stock or user-installed apps. 3d-party actions should be defined in their own Go file outside of `actions_std.go`.
+This is meant for stock apps not defined in Shortcuts or 3rd-party actions from user-installed apps. 3d-party actions should be defined in their own Go file outside of `actions_std.go`.
 
 ### `overrideIdentifer`
 
