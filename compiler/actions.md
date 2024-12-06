@@ -96,6 +96,7 @@ actions["takePhoto"] = actionDefinition{
 `identifier` exists so that you can do this:
 
 ```go
+// DO:
 actions["takeMorePhotos"] = actionDefinition{
      identifier: "takephoto",
      // ...
