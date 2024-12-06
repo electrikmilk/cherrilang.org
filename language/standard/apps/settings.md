@@ -1,0 +1,14 @@
+---
+title: Settings
+layout: default
+grand_parent: Actions
+parent: Apps
+nav_order: 12
+---
+
+<img src="https://github.com/user-attachments/assets/119e1dc4-f4b9-4c0b-8b07-4c99fb7d69cf"
+     width="256"
+/>
+
+# Settings App Actions
+
