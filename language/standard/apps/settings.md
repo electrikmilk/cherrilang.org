@@ -7,8 +7,28 @@ nav_order: 12
 ---
 
 <img src="https://github.com/user-attachments/assets/119e1dc4-f4b9-4c0b-8b07-4c99fb7d69cf"
-     width="256"
+     width="128"
 />
 
 # Settings App Actions
+{: .no_toc }
 
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
+---
+
+## Accessibility
+
+### Auto-Answer Calls
+
+{: .note }
+This feature is in an upcoming release.
+
+```
+setAutoAnswerCalls(bool status)
+toggleAutoAnswerCalls
+```
