@@ -20,15 +20,19 @@ that returns the parameters for the action.
 
 ```go
 type actionDefinition struct {
-	identifier    string
-	appIdentifier string
-	parameters    []parameterDefinition
-	check         paramCheck
-	make          makeParams
-	addParams     additionalParams
-	outputType    tokenType
-	mac           bool
-	minVersion    float64
+	identifier         string
+	appIdentifier      string
+	overrideIdentifier string
+	parameters         []parameterDefinition
+	check              checkFunc
+	make               paramsFunc
+	addParams          paramsFunc
+	appIntent          appIntent
+	outputType         tokenType
+	mac                bool
+	minVersion         float64
+	maxVersion         float64
+	setKey             string
 }
 ```
 
@@ -185,6 +189,10 @@ Sets whether or not this action is a Mac-only action. This is mainly used if `#d
 ### `minVersion`
 
 Sets the minimum version this action was added in. This is only relevant if the user sets `#define version 16.2` for example, if the version set does not exceed our `minVersion` we will error out and inform the user they are using a action that is not in their target version.
+
+### `setKey`
+
+Set key is used for toggle-set actions, actions which only function is to toggle or set something in the same format, but sometimes with a different key, hence this property.
 
 ---
 
