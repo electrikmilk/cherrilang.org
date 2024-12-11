@@ -45,3 +45,5 @@ repeat i for 3 {
 /* chosenItem contains the title of the chosen item */
 alert(chosenItem, "You chose:")
 ```
+
+You can also use the standard library action [`chooseFromVCard()`](https://cherrilang.org/language/standard/stdlib.html#choose-from-vcard).
