@@ -46,4 +46,4 @@ repeat i for 3 {
 alert(chosenItem, "You chose:")
 ```
 
-You can also use the standard library action [`chooseFromVCard()`](https://cherrilang.org/language/standard/stdlib.html#choose-from-vcard).
+You can also use the standard library action [`chooseFromVCard()`](/language/standard/stdlib#choose-from-vcard).
