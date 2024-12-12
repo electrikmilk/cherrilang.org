@@ -26,6 +26,18 @@ Prompt the user to choose from an array of [vCards](/language/vcards) with a pro
 chooseFromVCard(array items, text prompt)
 ```
 
+**Example Usage**
+```
+#include 'stdlib'
+
+@items = []
+repeat i for 6 {
+  @items += makeVCard("Title", "Subtitle")
+}
+
+chooseFromVCard(items, "Choose From Items")
+```
+
 ---
 
 ### Run JavaScript
