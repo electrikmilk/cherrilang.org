@@ -92,9 +92,6 @@ One caveat to raw text is that it is not allowed in Dictionaries or Arrays. This
 
 ### Float
 
-{: .note }
-This feature is from an upcoming release.
-
 ```ruby
 @float = 0.5
 ```

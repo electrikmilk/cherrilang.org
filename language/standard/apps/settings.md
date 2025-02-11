@@ -25,9 +25,6 @@ nav_order: 12
 
 ### Auto-Answer Calls
 
-{: .note }
-This feature is in an upcoming release.
-
 ```
 setAutoAnswerCalls(bool status)
 toggleAutoAnswerCalls()
