@@ -45,7 +45,8 @@ This built-in action will load the file at `filePath` and encode it to base 64 a
 For example, you could enter a file path for an audio file and use **Play Audio** to play the audio when the Shortcut runs.
 
 ```
-@audio = base64File("music/playme.mp3")
+const audioFile = base64File("music/playme.mp3")
+@audio = base64Decode(audioFile)
 playSound(audio)
 ```
 
