@@ -48,7 +48,7 @@ Keep in mind you will likely need to decode the contents to use them.
 
 ```
 const audioFile = base64File("music/playme.mp3")
-@audio = base64Decode(audioFile)
+const audio = base64Decode(audioFile)
 playSound(audio)
 ```
 
