@@ -7,9 +7,6 @@ nav_order: 13
 
 # Raw Action
 
-{: .note }
-In a future release, string interpolation will be possible in parameter values.
-
 You can write a raw definition of an action not defined inside of Cherri, in Cherri.
 
 ```ruby
