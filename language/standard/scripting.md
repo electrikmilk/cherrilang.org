@@ -551,6 +551,26 @@ base64Decode(variable input)
 
 ---
 
+### URL Encode
+
+URL encodes `input`.
+
+```
+urlEncode(variable input)
+```
+
+---
+
+### URL Decode
+
+URL decodes `input`.
+
+```
+urlDecode(variable input)
+```
+
+---
+
 ### Hash
 
 Generate a hash of `type` using `input`.
