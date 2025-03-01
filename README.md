@@ -5,3 +5,4 @@
 This repo determines the content of [cherrilang.org](https://cherrilang.org), a documentation site for the [Cherri Shortcuts programming language](https://github.com/electrikmilk/cherri). It teaches syntax and usage of the language, and how to contribute to the compiler.
 
 ### Uses [Shortcut Preview](https://github.com/electrikmilk/preview-shortcut)
+(hosted on the Cherri playground site)
