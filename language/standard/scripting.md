@@ -556,7 +556,7 @@ base64Decode(variable input)
 URL encodes `input`.
 
 ```
-urlEncode(variable input)
+urlEncode(text input)
 ```
 
 ---
@@ -566,7 +566,7 @@ urlEncode(variable input)
 URL decodes `input`.
 
 ```
-urlDecode(variable input)
+urlDecode(text input)
 ```
 
 ---
