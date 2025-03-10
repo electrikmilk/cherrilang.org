@@ -10,9 +10,11 @@ nav_order: 10
 {: .warning }
 Strong caution against the misuse of this syntax, such as long chains of pastables pasting other pastables.
 
-Cherri has a built-in pre-processing mechanism for copy-pasting commonly used sets of actions.
+Cherri has a built-in preprocessing mechanism for copy-pasting commonly used sets of actions, including variables and any other valid Cherri code.
 
-Use the following syntax to create a "Pasteable":
+## Setup code to copy
+
+Use a `copy` statement to create a "Pasteable":
 
 ```
 copy identifier {
@@ -20,15 +22,31 @@ copy identifier {
 }
 ```
 
-Then, to paste the contents of the pasteable in the resulting Shortcut, use the following syntax:
+## Paste
 
-```
+Use a `paste` statement to paste the contents of the pasteable on that line before the file is parsed.
+
+```ruby
+copy identifier {
+    alert("Hello!")
+}
+
+paste identifier
+
+alert("Goodbye")
+
 paste identifier
 ```
 
-The resulting Shortcut will have `alert("Hello")` pasted wherever you used `paste identifier`!
+In the example, the resulting Shortcut will have an `alert("Hello")` pasted wherever you use `paste identifier`!
 
 {: .note }
 For efficiency, you cannot use `paste` before declaring the `copy` it's using.
 
-These work differently from [custom actions](/language/custom-actions) in that they reduce the number of actions you use to do something to just one usage that can be called over and over again. With pasteables, you don't _need_ to use the abstraction of custom actions (especially if you don't need to use arguments) to reuse the same actions if it's not necessary for what you need to reuse.
+## Difference from custom actions and includes
+
+These work differently from [custom actions](/language/custom-actions) in that they reduce the number of actions as custom actions add a lot of actions. If you don't _need_ to use the abstraction of custom actions (you don't need to use arguments) to reuse the same actions if it's not necessary for what you need to reuse.
+
+However, depending on how much code is in the pastable and how many times you need to paste it, it may produce fewer actions to use custom actions instead.
+
+This also allows you to "include" code without needing a separate file. You could include a file with a bunch of pastables to selectively include code from that file.
