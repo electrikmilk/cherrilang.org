@@ -38,10 +38,10 @@ alert("Goodbye")
 paste identifier
 ```
 
-In the example, the resulting Shortcut will have an `alert("Hello")` pasted wherever you use `paste identifier`!
-
 {: .note }
 For efficiency, you cannot use `paste` before declaring the `copy` it's using.
+
+In the example, the resulting Shortcut will have an `alert("Hello")` pasted wherever you use `paste identifier`!
 
 ## Difference from custom actions and includes
 
