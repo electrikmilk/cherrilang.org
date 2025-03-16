@@ -47,7 +47,7 @@ git clone https://github.com/electrikmilk/cherri.git
 
 ### 3. Build Cherri
 
-Enter the directory of the source you downloaded and built.
+Enter the directory of the source you downloaded.
 
 ```bash
 cd /path/to/cherri
@@ -55,17 +55,21 @@ cd /path/to/cherri
 
 #### Build
 
+Build a Cherri binary.
+
 ```console
 go build
 ```
 
 #### Run
 
+Run the Cherri binary to confirm it works.
+
 ```console
 ./cherri
 ```
 
-To run Cherri from anywhere, you could optionally move it to your user binaries
+To run this binary from anywhere, you could optionally move it to your user binaries.
 
 ```console
 sudo mv cherri /usr/local/bin
