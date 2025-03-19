@@ -2,7 +2,7 @@
 title: Import Shortcuts
 layout: default
 parent: Documentation
-nav_order: 20
+nav_order: 1
 ---
 
 # Import Shortcuts
