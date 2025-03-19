@@ -31,6 +31,8 @@ cherri --import={URL or PATH} --output=path/to/output.cherri
 
 This feature is currently in **Beta** and is not ready for production use, but most Shortcuts should be able to be converted into Cherri code.
 
+The import feature works best with an iCloud link, as for the time being decompiling local signed Shortcut files is not supported.
+
 Keep in mind this is mainly meant to be a starting point and you may in some cases need to do some modification to get it working.
 
 - Uses the output of a control flow action.
