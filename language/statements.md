@@ -110,4 +110,5 @@ The globals `RepeatIndex` and `RepeatItem` are still available, but it is recomm
 
 ## Nothing actions at the end of statements
 
-Nothing actions are automatically added to the ending block of any statement to reduce the overall usage of memory as otherwise data is being passed to that block and allocated for.
+Nothing actions are automatically added to the ending block of any statement. This ensures the control flow block does not store any output to reduce memory usage.
+
