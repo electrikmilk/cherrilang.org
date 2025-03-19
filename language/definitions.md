@@ -107,6 +107,16 @@ These values must be separated by commas.
 - `watch` - Show on Apple Watch
 - `onscreen` - Receive On-Screen Content
 
+## macOS only or non-macOS
+
+Define the `mac` definition with a value of `true` if your Shortcut is mainly meant to be a Mac shortcut or false if it's primarily meant to be used on iOS.
+
+This is mainly to warn you if you use an action that is not supported on macOS or vice versa for non-macOS platforms.
+
+```
+#define mac true
+```
+
 ## Name
 
 This will be used as the name of the resulting Shortcut file. 
@@ -115,7 +125,7 @@ This will be used as the name of the resulting Shortcut file.
 #define name My Shortcut
 ```
 
-Cherri will ignore the name of the file and use the definition instead to create `My Shortcut.shortcut`.
+Cherri will ignore the file's name and use the definition instead to create `My Shortcut.` shortcut.
 
 ## Version
 
