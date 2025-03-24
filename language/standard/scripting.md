@@ -836,15 +836,15 @@ Always Round Down
 floor(integer number, text roundTo)
 ```
 
-#### Shorthands for `roundTo`:
+#### Roundings for `roundTo`:
 
-- `1` - Ones Place
-- `10` - Tens Place
-- `100` - Hundreds Place
-- `1000` - Thousands
-- `10000` - Ten Thousands
-- `100000` - Hundred Thousands
-- `1000000` - Millions
+- Ones Place
+- Tens Place
+- Hundreds Place
+- Thousands
+- Ten Thousands
+- Hundred Thousands
+- Millions
 
 ## Measurements
 
