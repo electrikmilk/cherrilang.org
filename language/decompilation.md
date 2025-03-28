@@ -9,7 +9,7 @@ nav_order: 1
 
 Import and decompile a Shortcut from a file or iCloud link into Cherri code.
 
-Then, use the `--import=` argument with an iCloud link or local unsigned Shortcut file path.
+Use the `--import=` argument with an iCloud link or local unsigned Shortcut file path.
 
 ```console
 cherri --import={URL or PATH}
