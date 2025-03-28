@@ -1,5 +1,5 @@
 ---
-title: Non-Standard Actions
+title: 3rd Party Actions
 layout: default
 parent: Documentation
 nav_order: 14
