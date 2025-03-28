@@ -9,7 +9,7 @@ nav_order: 14
 
 **Note:** No non-standard action libraries exist yet.
 
-To import a library of non-standard actions use the following sytax:
+To import a library of non-standard actions use the following syntax:
 
 ```
 #import library
