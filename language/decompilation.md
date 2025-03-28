@@ -7,15 +7,15 @@ nav_order: 1
 
 # Convert Shortcut to Cherri
 
-In a future release, the Cherri compiler as well as in future updates to the playground and macOS app, will allow for the importing and decompilation of Shortcuts from a file or iCloud link into Cherri code.
-
-To use this feature [build from source](/install#build-from-source).
+Import and decompile a Shortcut from a file or iCloud link into Cherri code.
 
 Then, use the `--import=` argument with an iCloud link or local unsigned Shortcut file path.
 
 ```console
 cherri --import={URL or PATH}
 ```
+
+Try it now in the [playground](https://playground.cherrilang.org)!
 
 ## Output File
 
@@ -37,5 +37,3 @@ Keep in mind this is mainly meant to be a starting point and you may in some cas
 
 - Uses the output of a control flow action.
 - Relies on the output of a Get Variable action.
-
-To keep up with the status of this feature, [check this issue on GitHub](https://github.com/electrikmilk/cherri/issues/47).
