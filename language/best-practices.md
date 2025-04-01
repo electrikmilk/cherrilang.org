@@ -49,14 +49,14 @@ Using constants when applicable allows you to reference the output of an action 
 
 ```javascript
 const immutable = 5
-show("{immutable}")
+show(immutable)
 ```
 
 Setting a value that will never change to a variable uses more actions and likely more memory at runtime to store the variable. Use the existing output of an action, do not assign it to a variable unless you will need to modify the output.
 
 ```ruby
 @mutable = 5
-show("{mutable}")
+show("Number result: {mutable}")
 ```
 
 ### Default or optional values
