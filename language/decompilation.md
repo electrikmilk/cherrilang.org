@@ -41,3 +41,5 @@ These two features are currently not supported in Cherri and so cannot be decomp
 
 - Uses the output of a control flow action: Set a variable inside the control flow action instead.
 - Relies on the output of a Get Variable action: Reference the variable instead, in most cases this may not be an issue.
+
+The Shortcut will still decompile, but you may see comments in the code or warnings about these caveats.
