@@ -35,5 +35,9 @@ The import feature works best with an iCloud link, as for the time being decompi
 
 Keep in mind this is mainly meant to be a starting point and you may in some cases need to do some modification to get it working.
 
-- Uses the output of a control flow action.
-- Relies on the output of a Get Variable action.
+### Caveats
+
+These two features are currently not supported in Cherri and so cannot be decompiled:
+
+- Uses the output of a control flow action: Set a variable inside the control flow action instead.
+- Relies on the output of a Get Variable action: Reference the variable instead, in most cases this may not be an issue.
