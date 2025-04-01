@@ -686,37 +686,7 @@ getMatchGroups(variable matches)
 Find `find` in `subject` and replace it with `replacement`.
 
 ```
-replaceText(text find, text replacement, text subject)
-```
-
----
-
-### Case Insensitive Replace Text
-
-Case-insensitive find `find` in `subject` and replace with `replacement`.
-
-```
-iReplaceText(text find, text replacement, text subject)
-```
-
----
-
-### Regular Expression Replace Text
-
-Use a regular expression to find `find` in `subject` and replace it with `replacement`.
-
-```
-regReplaceText(text expression, text replacement, text subject)
-```
-
----
-
-### Case Insensitive Regular Expression Replace Text
-
-Use a case-insensitive regular-expression to find `find` in `subject` and replace with `replacement`.
-
-```
-iRegReplaceText(text expression, text replacement, text subject)
+replaceText(text find, text replacement, text subject, bool ?caseSensitive = true, bool ?regExp = false)
 ```
 
 ---
