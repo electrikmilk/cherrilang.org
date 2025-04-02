@@ -238,6 +238,8 @@ maskImage(variable image, enum type, text ?radius)
 - Ellipse
 - Icon
 
+The `radius` only applies to the **Rounded Rectangle** type.
+
 _**Note:** Enum values are case-sensitive._
 
 ---
