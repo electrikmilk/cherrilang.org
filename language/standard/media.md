@@ -226,7 +226,7 @@ _**Note:** Enum values are case-sensitive._
 
 ### Mask Image
 
-Mask an image.
+Mask an image. The `radius` only applies to the **Rounded Rectangle** type.
 
 ```
 maskImage(variable image, enum type, text ?radius)
@@ -237,8 +237,6 @@ maskImage(variable image, enum type, text ?radius)
 - Rounded Rectangle
 - Ellipse
 - Icon
-
-The `radius` only applies to the **Rounded Rectangle** type.
 
 _**Note:** Enum values are case-sensitive._
 
