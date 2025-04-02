@@ -234,23 +234,21 @@ removeBackground(variable image, boolean ?crop = false)
 
 ### Rotate Image
 
-Rotate `image` `degrees` number of degrees. Returns rotated image.
+Rotate an image by degrees. Returns rotated image.
 
 ```
-rotate(image,degrees)
+rotateImage(variable image, text degrees)
 ```
 
 ## Images
 
 ### Convert Image
 
-Convert image to another image format.
+Convert an image to another image format.
 
 ```
-convertImage(image,format,preserveMetadata)
+convertImage(variable image, enum format, float ?quality, bool ?preserveMetadata = true)
 ```
-
-`preserveMetadata` is optional, the default value is `true`.
 
 #### Image Formats
 
