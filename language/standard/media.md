@@ -263,6 +263,36 @@ convertImage(image,format,preserveMetadata)
 
 ---
 
+### Resize Image
+
+Resize an image.
+
+```
+resizeImage(variable image, text width, text ?height)
+```
+
+---
+
+### Resize Image By Percentage
+
+Resize an image by a percentage.
+
+```
+resizeImageByPercent(variable image, text percentage)
+```
+
+---
+
+### Resize Image By Longest Edge
+
+Resize an image by the longest edge.
+
+```
+resizeImageByLongestEdge(variable image, text length)
+```
+
+---
+
 ### Convert Image to JPEG
 
 Convert an image to a JPEG.
