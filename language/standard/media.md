@@ -191,7 +191,7 @@ combineImages(variable images, text ?mode = "vertically", number ?spacing = 1)
 Crop `image` at `position` to `width` and `height`. Returns cropped image.
 
 ```
-cropImage(variable image, text ?position = "Center", text ?width = "100", enum ?height = "100")
+cropImage(variable image, text ?width = "100", text ?height = "100", enum ?position = "Center", text ?customPositionX, text ?customPositionY)
 ```
 
 #### Positions
@@ -202,6 +202,8 @@ cropImage(variable image, text ?position = "Center", text ?width = "100", enum ?
 - Bottom Left
 - Bottom Right
 - Custom
+
+_**Note:** Enum values are case-sensitive._
 
 ---
 
@@ -219,6 +221,95 @@ flipImage(variable image, enum direction)
 - Vertical
 
 _**Note:** Enum values are case-sensitive._
+
+---
+
+### Mask Image
+
+Mask an image.
+
+```
+maskImage(variable image, enum type, text ?radius)
+```
+
+#### Types
+
+- Rounded Rectangle
+- Ellipse
+- Icon
+
+_**Note:** Enum values are case-sensitive._
+
+---
+
+### Custom Image Mask
+
+Put a custom mask on an image.
+
+```
+customImageMask(variable image, variable customMaskImage)
+```
+
+---
+
+### Overlay Image
+
+Shows an image editor to the user to overlay an image onto another image.
+
+```
+overlayImage(variable image, variable overlayImage)
+```
+
+---
+
+### Custom Image Overlay
+
+Overlay an image onto another image.
+
+```
+customImageOverlay(variable image, variable overlayImage, text ?width, text ?height, text ?rotation = "0", text ?opacity = "100", enum ?position = "Center", text ?customPositionX, text ?customPositionY)
+```
+
+#### Positions
+
+- Center
+- Top Left
+- Top Right
+- Bottom Left
+- Bottom Right
+- Custom
+
+_**Note:** Enum values are case-sensitive._
+
+---
+
+### Resize Image
+
+Resize an image.
+
+```
+resizeImage(variable image, text width, text ?height)
+```
+
+---
+
+### Resize Image By Percentage
+
+Resize an image by a percentage.
+
+```
+resizeImageByPercent(variable image, text percentage)
+```
+
+---
+
+### Resize Image By Longest Edge
+
+Resize an image by the longest edge.
+
+```
+resizeImageByLongestEdge(variable image, text length)
+```
 
 ---
 
@@ -261,36 +352,6 @@ convertImage(variable image, enum format, float ?quality, bool ?preserveMetadata
 
 ---
 
-### Resize Image
-
-Resize an image.
-
-```
-resizeImage(variable image, text width, text ?height)
-```
-
----
-
-### Resize Image By Percentage
-
-Resize an image by a percentage.
-
-```
-resizeImageByPercent(variable image, text percentage)
-```
-
----
-
-### Resize Image By Longest Edge
-
-Resize an image by the longest edge.
-
-```
-resizeImageByLongestEdge(variable image, text length)
-```
-
----
-
 ### Convert Image to JPEG
 
 Convert an image to a JPEG.
@@ -307,6 +368,74 @@ Strip metadata from an image.
 
 ```
 stripImageMetadata(variable image)
+```
+
+---
+
+### Get Image Detail
+
+Get detail from an image.
+
+```
+getImageDetail(variable image, enum detail)
+```
+
+#### Details
+- Album
+- Width
+- Height
+- Date Taken
+- Media Type
+- Photo Type
+- Is a Screenshot
+- Is a Screen Recording
+- Location
+- Duration
+- Frame Rate
+- Orientation
+- Camera Make
+- Camera Model
+- Metadata Dictionary
+- Is Favorite
+- File Size
+- File Extension
+- Creation Date
+- File Path
+- Last Modified Date
+- Name
+
+---
+
+### Make Image from PDF Page
+
+Make an image from a PDF page.
+
+```
+makeImageFromPDFPage(variable pdf, enum ?colorSpace = "RGB", text ?pageResolution = "300")
+```
+
+#### Colorspaces
+- RGB
+- Gray
+
+---
+
+### Make Image from Rich Text
+
+Make an image from rich text.
+
+```
+makeImageFromRichText(variable pdf, text width, text height)
+```
+
+---
+
+### Extract Text from Image
+
+Extract text from an image.
+
+```
+extractImageText(variable image)
 ```
 
 ## iTunes Store
