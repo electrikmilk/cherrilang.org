@@ -24,7 +24,7 @@ macOS. It will then be synced to your other Apple devices.
 
 However, I have made a [Cherri Playground](https://playground.cherrilang.org/) that lets you play with the Cherri compiler on any platform. It has a signing server and will turn out valid Shortcuts on any platform with a web browser, primarily for those looking to write and compile Shortcuts on their iPhone or iPad.
 
-### HubSign
+### Signing Shortcuts on non-macOS Plaforms
 
 You can use the `--hubsign` option on Unix-like systems to use the remote service HubSign provided by [RoutineHub](https://routinehub.co) to sign the compiled Shortcut so you can then move it onto an Apple device through the iCloud web app or a file server.
 
@@ -51,3 +51,17 @@ Also, the compiler is currently developed and tested on macOS only, so it will o
 Cherri’s primary platform is also macOS and this is on purpose. The intent is to give developers the freedom to develop Shortcuts easily on the desktop with desktop-class tools they already enjoy.
 
 However, [playground.cherrilang.org](https://playground.cherrilang.org) solves this problem. You can use it on any platform you prefer that has a web browser and load Shortcuts onto any Apple platform device.
+
+## Project Roadmap
+
+Here is an _idealistic_ roadmap for the project. Everything after task 5 are more of a "would be nice".
+
+ - [x] ~~Be able to compile a working shortcut~~
+ - [x] ~~Implement most paradigms (if/else, vars, globals, etc.)~~
+ - [x] ~~Web editor/playground~~ [playground.cherrilang.org](https://playground.cherrilang.org)
+ - [x] ~~Add a dedicated Mac web server to sign the Shortcuts made using~~ [playground.cherrilang.org](https://playground.cherrilang.org). ~~This way anyone could use Cherri on any platform, making it accessible mostly notably to iOS users~~
+ - [x] ~~9/10 "It just works" and compiles valid and runnable Shortcuts~~
+ - [ ] Decompilation - Convert Shortcut file to as functional as possible Cherri code.
+ - [ ] Implement the full range of **standard** actions included by default in Shortcuts. [Current Progress](https://cherrilang.org/language/actions)
+ - [ ] Publish the [macOS app](https://github.com/electrikmilk/cherri-macos-app) on the Mac App Store
+ - [ ] Implement alternative Shortcut actions
