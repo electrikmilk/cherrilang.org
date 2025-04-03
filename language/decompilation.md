@@ -1,8 +1,7 @@
 ---
 title: Import Shortcut
 layout: default
-parent: Documentation
-nav_order: 1
+nav_order: 2
 ---
 
 # Convert Shortcut to Cherri
