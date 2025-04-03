@@ -1,5 +1,5 @@
 ---
-title: Scale Siri Shortcut projects and maintain them long-term
+title: Scale Your Siri Shortcut Projects
 nav_exclude: true
 layout: home
 nav_order: 1
