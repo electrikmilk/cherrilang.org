@@ -63,6 +63,44 @@ _**Note:** Enum values are case-sensitive._
 
 ---
 
+### Get Event Detail
+
+Get a detail of an event.
+
+```
+getEventDetail(variable event, enum detail)
+```
+
+Details
+
+- Start Date
+- End Date
+- Is All Day
+- Calendar
+- Location
+- Has Alarms
+- Duration
+- Is Canceled
+- My Status
+- Organizer
+- Organizer Is Me
+- Attendees
+- Number of Attendees
+- URL
+- Title
+- Notes
+- Attachments
+- File Size
+- File Extension
+- Creation Date
+- File Path
+- Last Modified Date
+- Name
+
+_**Note:** Enum values are case-sensitive._
+
+---
+
 ### Remove Events
 
 ```
