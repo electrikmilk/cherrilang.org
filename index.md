@@ -5,7 +5,7 @@ layout: home
 nav_order: 1
 ---
 
-<div class="text-center">
+<div class="hero">
   <img src="/assets/hero.png" width="400" alt="Cherri Hero Image"/>
 </div>
 
