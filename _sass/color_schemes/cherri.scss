@@ -10,7 +10,7 @@
     background: rgba(227,117,118,.5);
 }
 
-@media (min-width: 678px) {
+@media (max-width: 678px) {
     .hero {
         margin: 0 -2rem !important
     }
