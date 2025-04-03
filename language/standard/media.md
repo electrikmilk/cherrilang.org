@@ -519,6 +519,41 @@ playMusic( music, enum ?shuffle, enum ?repeat)
 
 _**Note:** Enum values are case-sensitive._
 
+---
+
+### Get Music Detail
+
+```
+getMusicDetail(variable music, enum detail)
+```
+
+#### Details
+- Title
+- Album
+- Artist
+- Album Artist
+- Genre
+- Composer
+- Date Added
+- Media Kind
+- Duration
+- Play Count
+- Track Number
+- Disc Number
+- Album Artwork
+- Is Explicit
+- Lyrics
+- Release Date
+- Comments
+- Is Cloud Item
+- Skip Count
+- Last Played Date
+- Rating
+- File Path
+- Name
+
+_**Note:** Enum values are case-sensitive._
+
 ## Photos
 
 ### Create Photo Album
