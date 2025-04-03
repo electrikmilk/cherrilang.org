@@ -4,7 +4,7 @@ layout: home
 nav_order: 1
 ---
 
-{% seo title=false %}
+{% seo_title=false %}
 
 {% if page.title == "Welcome" %}
 <title>Scale Siri Shortcut projects and maintain them long-term | Cherri</title>
