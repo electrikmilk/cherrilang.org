@@ -24,8 +24,6 @@ mermaid:
   version: "9.1.3"
 
 aux_links:
-  "Playground":
-    - "//playground.cherrilang.org/"
   "macOS App":
     - "//github.com/electrikmilk/cherri-macos-app"
   "View Source on GitHub":
