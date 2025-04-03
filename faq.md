@@ -61,7 +61,7 @@ Here is an _idealistic_ roadmap for the project. Everything after task 5 are mor
  - [x] ~~Web editor/playground~~ [playground.cherrilang.org](https://playground.cherrilang.org)
  - [x] ~~Add a dedicated Mac web server to sign the Shortcuts made using~~ [playground.cherrilang.org](https://playground.cherrilang.org). ~~This way anyone could use Cherri on any platform, making it accessible mostly notably to iOS users~~
  - [x] ~~9/10 "It just works" and compiles valid and runnable Shortcuts~~
- - [ ] Decompilation - Convert Shortcut file to as functional as possible Cherri code.
+ - [x] Decompilation - Convert Shortcut file to as functional as possible Cherri code.
  - [ ] Implement the full range of **standard** actions included by default in Shortcuts. [Current Progress](https://cherrilang.org/language/actions)
  - [ ] Publish the [macOS app](https://github.com/electrikmilk/cherri-macos-app) on the Mac App Store
  - [ ] Implement alternative Shortcut actions
