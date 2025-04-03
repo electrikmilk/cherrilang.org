@@ -4,6 +4,9 @@ layout: home
 nav_order: 1
 ---
 
+{% seo title=false %}
+<title>Scale Siri Shortcut projects and maintain them long-term | Cherri</title>
+
 <div style="text-align: center">
   <img src="https://github.com/electrikmilk/cherrilang.org/assets/4368524/90defca4-2824-4525-a58c-bacf4555c80e" width="400px"/>
 </div>
