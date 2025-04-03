@@ -12,12 +12,12 @@ The official releases are only compiled for the arm64 (Apple Silicon) and x86_64
 
 ## macOS
 
-The easiest way to use Cherri on your Mac is to download the latest release from GitHub.
+The easiest way to use Cherri on a Mac is to download the latest binary release from GitHub.
 
 {: .note }
-The latest release may not include everything in the newest documentation, and you may run into actions or language features of a future release (other than actions, these should be marked). To use the latest features (which are subject to change or may not work properly) build from source.
+The latest release may not include everything in the newest documentation, and you may run into actions or language features of a future release (other than actions, these should be marked). To use the latest features (which are subject to change or may not work properly) build from source using the instructions below.
 
-[Download the latest release](https://github.com/electrikmilk/cherri/releases){: .btn .btn-red }
+[Download the Latest Release](https://github.com/electrikmilk/cherri/releases){: .btn .btn-red }
 
 After downloading and extracting, move the binary to `/usr/local/bin` or execute it in the directory you extracted it from.
 
