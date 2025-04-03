@@ -17,7 +17,7 @@ The easiest way to use Cherri on a Mac is to download the latest binary release 
 {: .note }
 The latest release may not include everything in the newest documentation, and you may run into actions or language features of a future release (other than actions, these should be marked). To use the latest features (which are subject to change or may not work properly) [build from source](#build-from-source).
 
-[Download the Latest Release](https://github.com/electrikmilk/cherri/releases){: .btn .btn-red }
+<a href="https://github.com/electrikmilk/cherri/releases" class=".btn .btn-red" target="_blank">Download the Latest Release</a>
 
 After downloading and extracting, move the binary to `/usr/local/bin` or execute it in the directory you extracted it from.
 
@@ -27,14 +27,13 @@ You will likely need to allow the binary to run with Gatekeeper. If it gives you
 
 Due to the limitations of signing Shortcuts, you must either run the compiler locally on a Mac or use the online web editor.
 
-[Use the Cherri Playground](https://playground.cherrilang.org/){: .btn .btn-red }
+<a href="[https://github.com/electrikmilk/cherri/releases](https://playground.cherrilang.org/)" class=".btn .btn-red" target="_blank">Use the Cherri Playground</a>
 
 ## Build from Source
 
 ### 1. Install Go
 
-Install the Go programming language via the official Go website: [https://go.dev/doc/install](https://go.dev/doc/install)
-
+<a href="https://go.dev/doc/install" target="_blank">Install the Go programming language</a>
 
 ### 2. Download the source
 
