@@ -3,6 +3,7 @@ description: iOS Siri Shortcuts Programming Language
 
 theme: just-the-docs
 logo: "/assets/cherri_logo.png"
+favicon_ico: "/assets/cherri_icon.png"
 color_scheme: cherri
 callouts:
   warning:
