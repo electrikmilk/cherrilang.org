@@ -343,12 +343,12 @@ removeBackground(variable image, boolean ?crop = false)
 
 ---
 
-### Rotate Image
+### Rotate Image or Video
 
-Rotate an image by degrees. Returns rotated image.
+Rotate an image or video by degrees. Returns rotated image.
 
 ```
-rotateImage(variable image, text degrees)
+rotateMedia(variable image, text degrees)
 ```
 
 ## Images
