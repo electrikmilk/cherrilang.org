@@ -324,7 +324,7 @@ Or you can use...
 
 ```ruby
 @textVar = "5"
-@numVar = getNumbers(var)
+@numVar = getNumbers(textVar)
 ```
 
 The `number()` action should only coerce another value to a number, as an integer produces the same output.
