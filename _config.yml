@@ -1,6 +1,7 @@
 title: Cherri
 description: iOS Siri Shortcuts Programming Language
-
+plugins:
+  - jekyll-seo-tag
 theme: just-the-docs
 logo: "/assets/cherri_logo.png"
 favicon_ico: "/assets/cherri_icon.png"
