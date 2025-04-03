@@ -10,6 +10,12 @@
     background: rgba(227,117,118,.5);
 }
 
+@media (min-width: 678px) {
+    .hero {
+        margin: 0 -2rem !important
+    }
+}
+
 @import "./color_schemes/dark";
 
 $link-color: $red-000;
@@ -82,5 +88,5 @@ p.note::before, blockquote.note::before {
     text-align: center;
     background: radial-gradient(circle, rgb(207 6 6) 0%, rgb(26 1 11) 0%, rgb(0 0 0) 40%);
     box-shadow: inset 0 0 167px rgb(121 0 0 / 50%);
-    margin: -2rem 0 0 -2rem
+    margin: -2rem -2rem 0 -2rem
 }
