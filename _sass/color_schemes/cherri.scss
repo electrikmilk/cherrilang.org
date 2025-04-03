@@ -77,6 +77,8 @@ p.note::before, blockquote.note::before {
     margin: 0.75rem !important
 }
 
-.text-center {
-    text-align: center
+.hero {
+    text-align: center;
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(17,18,98,1) 0%, rgba(255,255,255,1) 74%)
 }
