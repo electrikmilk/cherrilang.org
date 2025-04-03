@@ -52,15 +52,11 @@ Enter the directory of the source you downloaded.
 cd /path/to/cherri
 ```
 
-#### Build
-
-Build a Cherri binary.
+Compile the Cherri binary.
 
 ```console
 go build
 ```
-
-#### Run
 
 Run the Cherri binary to confirm it works.
 
