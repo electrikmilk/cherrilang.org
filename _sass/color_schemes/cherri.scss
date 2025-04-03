@@ -2,7 +2,7 @@
  * Copyright (c) Cherri
  */
 
-::-moz-selection { /* Code for Firefox */
+::-moz-selection {
     background: rgba(227,117,118,.5);
 }
 
@@ -74,5 +74,5 @@ p.note::before, blockquote.note::before {
 
 .header-button {
     display: block !important;
-    margin: 0.85rem !important
+    margin: 0.80rem !important
 }
