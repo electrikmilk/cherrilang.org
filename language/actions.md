@@ -20,8 +20,7 @@ Standard actions are always available and do not need to be imported.
 
 ### In progress
 
-- [Calendar](standard/calendar) `12/30`
-- [Media](standard/media) `35/68`
+- [Calendar](standard/calendar) `23/30`
 
 Some actions may not be implemented due to difficulty implementing them practically into the language.
 
