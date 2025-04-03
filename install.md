@@ -1,9 +1,8 @@
 ---
 title: Install
 layout: default
-parent: Documentation
 has_children: false
-nav_order: 0
+nav_order: 1
 ---
 
 # Install
