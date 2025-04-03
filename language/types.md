@@ -66,7 +66,7 @@ For example:
 @multi = "multi\nline\ntext"
 ```
 
-Multiline line text is also supported, however:
+Multiline text is also supported, however:
 
 ```ruby
 @multi = "multi
@@ -111,7 +111,7 @@ You can use a variable reference in an expression:
 
 ### Boolean
 
-Booleans translate to a number value of `1` for `true`, and `0` for `false`.
+Booleans translate to a number value of `1` for `true` and `0` for `false`.
 
 ```ruby
 @boolVarTrue = true
@@ -224,9 +224,9 @@ Or more explicitly, set the value as `nil`
 @empty = nil
 ```
 
-You can use `nil` just about anywhere you need to cancel out an optional value.
+You can use `nil` just about anywhere to cancel out an optional value.
 
-However, if due to the value being optional it has a default, it will be set to its default, not empty.
+However, if, due to the value being optional, it has a default, it will be set to its default, not empty.
 
 ```ruby
 @var = getFile(nil)
@@ -244,7 +244,7 @@ for item in nil {
 }
 ```
 
-`nil` can be used to skip an argument that is optional to set an argument after it.
+`nil` can skip an argument that is optional to set an argument after it.
 
 ```
 @media = nil
@@ -285,7 +285,7 @@ The following types may be used:
 - `number` (default: `0`)
 - `bool` (default: `false`)
 - `dictionary` (default: `{}`)
-- `array`
+- `array` (default: `[]`)
 - `var` (variable reference)
 - `float` (future release)
 
