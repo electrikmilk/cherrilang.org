@@ -6,7 +6,7 @@ nav_order: 1
 ---
 
 <div style="text-align: center">
-  <img src="https://github.com/electrikmilk/cherrilang.org/assets/4368524/90defca4-2824-4525-a58c-bacf4555c80e" width="400px" alt="Cherri Hero Image"/>
+  <img src="/assets/hero.png" width="400px" alt="Cherri Hero Image"/>
 </div>
 
 # Scale your Shortcut projects and maintain them long-term.
