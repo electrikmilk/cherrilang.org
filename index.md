@@ -5,8 +5,8 @@ layout: home
 nav_order: 1
 ---
 
-<div style="text-align: center">
-  <img src="/assets/hero.png" width="100%" alt="Cherri Hero Image"/>
+<div class="text-center">
+  <img src="/assets/hero.png" width="400" alt="Cherri Hero Image"/>
 </div>
 
 # Scale your Shortcut projects and maintain them long-term.
