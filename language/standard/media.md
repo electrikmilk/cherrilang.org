@@ -150,6 +150,16 @@ _**Note:** Enum values are case-sensitive._
 
 ## GIFs
 
+### Make GIF
+
+Create a GIF.
+
+```
+makeGIF(variable input, text ?delay = "0.3", number ?loops, text ?width, text ?height)
+```
+
+---
+
 ### Add Frame to GIF
 
 Add a frame to a GIF.
