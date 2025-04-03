@@ -73,6 +73,6 @@ p.note::before, blockquote.note::before {
 }
 
 .header-button {
-    display: block;
-    margin: 0.85rem
+    display: block !important;
+    margin: 0.85rem !important
 }
