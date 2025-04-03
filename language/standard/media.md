@@ -170,6 +170,16 @@ Make video from `gif`, looping `loops` number of times. Returns GIF as video.
 makeVideoFromGIF(variable gif, number ?loops = 1)
 ```
 
+---
+
+### Get Frames from Image
+
+Get frames from an image.
+
+```
+getImageFrames(variable image)
+```
+
 ## Image Editing
 
 ### Combine Images
@@ -478,6 +488,27 @@ Select song(s) from the Music app.
 selectMusic(bool ?selectMultiple = false)
 ```
 
+---
+
+### Play Music
+
+Play `music`.
+
+```
+playMusic( music, enum ?shuffle, enum ?repeat)
+```
+
+#### Shuffles:
+- Off
+- Songs
+
+#### Repeats
+- None
+- One
+- All
+
+_**Note:** Enum values are case-sensitive._
+
 ## Photos
 
 ### Create Photo Album
@@ -696,6 +727,16 @@ Create a playlist.
 
 ```
 createPlaylist(text title, variable ?songs, text ?description, text ?author)
+```
+
+---
+
+### Get Songs From Playlist
+
+Get songs in a playlist.
+
+```
+getPlaylistSongs(variable playlistName)
 ```
 
 ## Podcasts
