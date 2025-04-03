@@ -6,7 +6,7 @@ nav_order: 1
 ---
 
 <div class="hero">
-  <img src="/assets/hero.png" width="400" alt="Cherri Hero Image"/>
+  <img src="/assets/hero.png" width="500" alt="Cherri Hero Image"/>
 </div>
 
 # Scale your Shortcut projects and maintain them long-term.
