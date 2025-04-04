@@ -22,12 +22,10 @@ window.onload = () => {
             iframe.title = 'Shortcut Preview';
             iframe.src = 'https://playground.cherrilang.org/preview?code=' + encodedSrc;
             highlight.appendChild(iframe);
-
-            wrapper.appendChild(tryMe);
             
             const parentElement = highlight.parentNode;
             parentElement.insertBefore(wrapper, highlight);
-            wrapper.appendChild(highlight);
+            wrapper.append(highlight, tryMe);
         });
     }, 700);
 };
