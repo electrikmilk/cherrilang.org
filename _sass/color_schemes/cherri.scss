@@ -94,6 +94,7 @@ p.note::before, blockquote.note::before {
   box-shadow: inset 0 0 167px rgb(140 55 49 / 50%);
   margin: -2rem -2rem 0 -2rem;
   animation: aurora 7s ease infinite;
+  white-space: break-spaces;
 }
 
 .hero-button {
