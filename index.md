@@ -119,7 +119,7 @@ rawAction("is.workflow.actions.gettext", [
 Creates a text action in the VCard format based on the arguments.
 
 ```ruby
-makeVCard("Title", "Subtitle", "path/to/local/image.jpg")
+makeVCard("Title", "Subtitle")
 ```
 
 ## 🔢 Type system and type inference
