@@ -65,7 +65,7 @@ You can build and run the Xcode project locally.
 ## 🪄 No magic variables syntax, they're constants instead
 
 ```ruby
-const int = 5
+const int = 37
 show("{int}")
 ```
 
@@ -139,5 +139,5 @@ makeVCard("Title", "Subtitle")
 
 // Inferred types
 @txt = "Test"
-@int = 7
+@int = 37
 ```
