@@ -703,25 +703,27 @@ splitText(text text, text separator)
 
 ### Languages
 
- - Arabic
- - Mandarin Chinese (Mainland)
- - Mandarin Chinese (Taiwan)
- - Dutch
- - English (UK)
- - English (US)
- - French
- - German
- - Indonesian
- - Italian
- - Japanese
- - Korean
- - Polish
- - Portuguese (Brazil)
- - Russian
- - Spanish (Spain)
- - Thai
- - Turkish
- - Vietnamese
+| Code 	| Language 	|
+|:------|:----------|
+| `ar_AE` | Arabic |
+| `zh_CN` | Mandarin Chinese (Mainland) |
+| `zh_TW` | Mandarin Chinese (Taiwan) |
+| `nl_NL` | Dutch |
+| `en_GB` | English (UK) |
+| `en_US` | English (US) |
+| `fr_FR` | French |
+| `de_DE` | German |
+| `id_ID` | Indonesian |
+| `it_IT` | Italian |
+| `jp_JP` | Japanese |
+| `ko_KR` | Korean |
+| `pl_PL` | Polish |
+| `pt_BR` | Portuguese (Brazil) |
+| `ru_RU` | Russian |
+| `es_ES` | Spanish (Spain) |
+| `th_TH` | Thai |
+| `tr_TR` | Turkish |
+| `vn_VN` | Vietnamese | 
 
 ### Translate Text From Detected Language
 
