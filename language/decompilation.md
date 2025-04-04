@@ -6,6 +6,9 @@ nav_order: 2
 
 # Convert Shortcut to Cherri
 
+{: .note }
+This feature is currently in **Beta**
+
 Import and decompile a Shortcut from a file or iCloud link into Cherri code.
 
 Use the `--import=` argument with an iCloud link or local unsigned Shortcut file path.
