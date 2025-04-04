@@ -69,6 +69,8 @@ const int = 5
 show("{int}")
 ```
 
+---
+
 ## #️⃣ Include files within others for large Shortcut projects
 
 ```
