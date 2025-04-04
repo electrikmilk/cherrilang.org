@@ -730,7 +730,7 @@ splitText(text text, text separator)
 Translate `text` from the detected language of `text` to `to`.
 
 ```
-translate(text text, text to)
+translate(text text, enum ?to)
 ```
 
 ---
@@ -740,7 +740,7 @@ translate(text text, text to)
 Translate `text` from `from` to `to`.
 
 ```
-translateFrom(text text, text from, text to)
+translateFrom(text text, enum from, enum to)
 ```
 
 ---
