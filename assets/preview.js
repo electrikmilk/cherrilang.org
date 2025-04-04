@@ -15,18 +15,19 @@ window.onload = () => {
             tryMe.href = 'https://playground.cherrilang.org/?code=' + encodedSrc;
             tryMe.classList.add('btn', 'btn-red', 'm-3');
             tryMe.innerHTML = 'Try Me!';
-            wrapper.appendChild(tryMe);
-            
-            const parentElement = highlight.parentNode;
-            parentElement.insertBefore(wrapper, highlight);
-            wrapper.appendChild(highlight);
-            
+
             const iframe = document.createElement('iframe');
             iframe.frameBorder = '0';
             iframe.loading = 'lazy';
             iframe.title = 'Shortcut Preview';
             iframe.src = 'https://playground.cherrilang.org/preview?code=' + encodedSrc;
             highlight.appendChild(iframe);
+
+            wrapper.appendChild(tryMe);
+            
+            const parentElement = highlight.parentNode;
+            parentElement.insertBefore(wrapper, highlight);
+            wrapper.appendChild(highlight);
         });
     }, 700);
 };
