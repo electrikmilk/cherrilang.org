@@ -88,19 +88,48 @@ p.note::before, blockquote.note::before {
 }
 
 .hero {
-    padding: 3rem;
-    text-align: center;
-    background: radial-gradient(circle, rgb(207 6 6) 0%, rgb(26 1 11) 0%, rgb(0 0 0) 40%);
-    box-shadow: inset 0 0 167px rgb(121 0 0 / 50%);
-    margin: -2rem -2rem 0 -2rem
+  padding: 3rem;
+  text-align: center;
+  background: radial-gradient(circle, rgb(207 6 6) 0%, rgb(26 1 11) 0%, rgb(0 0 0) 40%);
+  box-shadow: inset 0 0 167px rgb(121 0 0 / 50%);
+  margin: -2rem -2rem 0 -2rem;
+  animation: aurora 2s ease infinite;
 }
 
 .hero-button {
-    font-size: 1.2rem !important;
-    border: 0.1rem solid;
-    border-color: #ff867e #f9655b #c5443b;
-    background: none !important;
-    color: white !important;
-    box-shadow: 0 1px 17px rgba(248.6175, 100.75625, 91.1825, 1.4) !important;
-    font-weight: 500 !important;
+  font-size: 1.2rem !important;
+  border: 0.1rem solid;
+  border-color: #ff867e #f9655b #c5443b;
+  background: none !important;
+  color: white !important;
+  box-shadow: 0 1px 17px rgba(248.6175, 100.75625, 91.1825, 1.4) !important;
+  font-weight: 500 !important;
+  animation: shine 2s ease infinite;
+}
+
+@keyframes shine {
+  0% {
+    border-color: #ff867e #f9655b #f9655b #c5443b;
+  }
+  25% {
+    border-color: #f9655b #ff867e #f9655b #c5443b;
+  }
+  75% {
+    border-color: #c5443b #f9655b #f9655b #ff867e;
+  }
+  100% {
+    border-color: #f9655b #f9655b #ff867e #c5443b;
+  }
+}
+
+@keyframes aurora {
+  0% {
+    background: radial-gradient(circle, rgb(207 6 6) 0%, rgb(26 1 11) 0%, rgb(0 0 0) 40%);
+  }
+  50% {
+    background: radial-gradient(circle, rgb(43, 211, 152) 0%, rgb(26 1 11) 0%, rgb(0 0 0) 40%);
+  }
+  100% {
+    background: radial-gradient(circle, rgb(52 163 232) 0%, rgb(26 1 11) 0%, rgb(0 0 0) 40%);
+  }
 }
