@@ -133,9 +133,11 @@ makeVCard("Title", "Subtitle")
 ## 🔢 Type system and type inference
 
 ```ruby
-// Declare types
+// Declared types
 @string: text
 @integer: number
 
-@int = 5 // Inferred number type
+// Inferred types
+@txt = "Test"
+@int = 7
 ```
