@@ -6,7 +6,20 @@ window.onload = () => {
     setTimeout(() => {
         const codes = document.querySelectorAll('.language-ruby, .language-javascript');
         codes.forEach(highlight => {
-            const encodedSrc = encodeURIComponent(highlight.innerText)
+            const encodedSrc = encodeURIComponent(highlight.innerText);
+            
+            const wrapper = document.createElement('div');
+            wrapper.className = 'code-example';
+
+            const tryMe = document.createElement('a');
+            tryMe.href = 'https://playground.cherrilang.org/?code=' + encodedSrc;
+            tryMe.classList.add('btn', 'btn-red', 'm-3');
+            tryMe.innerHTML = 'Try Me!';
+            wrapper.appendChild(tryMe);
+            
+            const parentElement = highlight.parentNode;
+            parentElement.insertBefore(wrapper, highlight);
+            wrapper.appendChild(highlight);
             
             const iframe = document.createElement('iframe');
             iframe.frameBorder = '0';
@@ -14,12 +27,6 @@ window.onload = () => {
             iframe.title = 'Shortcut Preview';
             iframe.src = 'https://playground.cherrilang.org/preview?code=' + encodedSrc;
             highlight.appendChild(iframe);
-            
-            const tryMe = document.createElement('a');
-            tryMe.href = 'https://playground.cherrilang.org/?code=' + encodedSrc;
-            tryMe.classList.add('btn', 'btn-red', 'm-3');
-            tryMe.innerHTML = 'Try Me!';
-            highlight.appendChild(tryMe);
         });
     }, 700);
 };
