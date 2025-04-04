@@ -57,7 +57,7 @@ You can build and run the Xcode project locally.
 - ### 🪶 Optimized to create as small as possible Shortcuts and reduces memory usage at runtime
 - ### 📄 Embed files in base64
 
-<div class="d-flex fs-7" style="gap: 1rem" markdown="1">
+<div class="d-flex fs-5" style="gap: 1rem" markdown="1">
 [Read Documentation](/language){: .btn }
 [Install](/install){: .btn .btn-red }
 </div>
