@@ -26,6 +26,6 @@ nav_order: 1
 alert("Message: {message}", "Alert")
 ```
 <span class="fs-5">
-[Try Me!](https://playground.cherrilang.org){: .btn .btn-red }
+[Try Me!](https://playground.cherrilang.org){: .btn .btn-red .hero-button }
 </span>
 </div>
