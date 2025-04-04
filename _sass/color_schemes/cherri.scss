@@ -124,12 +124,12 @@ p.note::before, blockquote.note::before {
 
 @keyframes aurora {
   0% {
-    background: radial-gradient(circle, rgb(207 6 6) 0%, rgb(26 1 11) 0%, rgb(0 0 0) 40%);
+    box-shadow: inset 0 0 167px rgb(121 0 0 / 50%);
   }
   50% {
-    background: radial-gradient(circle, rgb(43, 211, 152) 0%, rgb(26 1 11) 0%, rgb(0 0 0) 40%);
+    box-shadow: inset 0 0 167px rgba(43, 211, 152, 0.5);
   }
   100% {
-    background: radial-gradient(circle, rgb(52 163 232) 0%, rgb(26 1 11) 0%, rgb(0 0 0) 40%);
+    box-shadow: inset 0 0 167px rgba(52 163 232, 0.5);
   }
 }
