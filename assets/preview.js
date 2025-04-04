@@ -28,5 +28,5 @@ window.onload = () => {
             parentElement.insertBefore(wrapper, highlight);
             wrapper.append(highlight, tryMe);
         });
-    }, 700);
+    }, 1000);
 };
