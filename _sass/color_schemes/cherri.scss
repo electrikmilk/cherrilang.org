@@ -98,7 +98,7 @@ p.note::before, blockquote.note::before {
 
 .hero-button {
   font-size: 1.2rem !important;
-  border: 0.1rem solid $red-100;
+  border: 0.1rem solid $red-100 !important;
   background: none !important;
   color: white !important;
   box-shadow: 0 1px 17px rgba(248.6175, 100.75625, 91.1825, 1.4) !important;
