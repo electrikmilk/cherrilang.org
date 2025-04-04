@@ -22,7 +22,7 @@ window.onload = () => {
             iframe.loading = 'lazy';
             iframe.title = 'Shortcut Preview';
             iframe.src = 'https://playground.cherrilang.org/preview?code=' + encodedSrc;
-            wrapper.appendChild(iframe);
+            highlight.appendChild(iframe);
             
             const parentElement = highlight.parentNode;
             parentElement.insertBefore(wrapper, highlight);
