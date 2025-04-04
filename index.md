@@ -16,7 +16,6 @@ nav_order: 1
 
 <br/>
 
-<div class="code-example" markdown="1">
 ```ruby
 /* Hello, Cherri! */
 
@@ -26,7 +25,6 @@ nav_order: 1
 @message = "Hello!"
 alert("Message: {message}", "Alert")
 ```
-</div>
 
 ---
 
