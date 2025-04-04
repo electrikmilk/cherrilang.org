@@ -8,7 +8,7 @@ nav_order: 1
 # Install
 
 {: .warning }
-The official releases are only compiled for the arm64 (Apple Silicon) and x86_64 (Intel) macOS platforms. [Why?](https://cherrilang.org/faq#why-macos-only)
+
 
 ## macOS
 
@@ -25,9 +25,13 @@ You will likely need to allow the binary to run with Gatekeeper. If it gives you
 
 ## Windows, Linux, etc.
 
-Due to the limitations of signing Shortcuts, you must either run the compiler locally on a Mac or use the online web editor.
+Due to the limitations of signing Shortcuts, the official releases are only compiled for the arm64 (Apple Silicon) and x86_64 (Intel) macOS platforms. [Why?](https://cherrilang.org/faq#why-macos-only)
+
+However, you can simply use the Cherri Playground site which allows using the compiler from any platform and signs Shortcuts when they are shared.
 
 <a href="[https://github.com/electrikmilk/cherri/releases](https://playground.cherrilang.org/)" class="btn btn-red" target="_blank">Use the Cherri Playground</a>
+
+You can also build from source using the instructions below and use the `--hubsign` option to sign the compiled Shortcut using RoutineHub's HubSign service.
 
 ## Build from Source
 
