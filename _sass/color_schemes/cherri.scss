@@ -70,6 +70,8 @@ p.note::before, blockquote.note::before {
 }
 
 .language-ruby, .language-javascript {
+    overflow: hidden;
+    
     iframe {
         height: 300px;
         width: 100%;
