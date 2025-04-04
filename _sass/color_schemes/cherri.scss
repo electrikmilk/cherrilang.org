@@ -72,7 +72,8 @@ p.note::before, blockquote.note::before {
 .language-ruby, .language-javascript {
     iframe {
         height: 300px;
-        width: 100%
+        width: 100%;
+        margin-bottom: -0.5rem;
     }
 }
 
