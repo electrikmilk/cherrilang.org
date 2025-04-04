@@ -26,6 +26,6 @@ nav_order: 1
 alert("Message: {message}", "Alert")
 ```
 <span class="fs-5">
-<a href="https://playground.cherrilang.org" class="btn btn-red hero-button">Try Me!</a>
+<a href="https://playground.cherrilang.org" target="_blank" class="btn btn-red hero-button">Try Me!</a>
 </span>
 </div>
