@@ -53,7 +53,7 @@ You can build and run the Xcode project locally.
 ---
 
 <div class="text-center" style="text-align: center">
-<h2>Language Features</h2>
+<h2>Why Cherri?</h2>
 </div>
 
 - ### 🎓 Easy to learn and syntax similar to other languages
@@ -61,6 +61,8 @@ You can build and run the Xcode project locally.
 - ### ❓ Define import questions
 - ### 🪶 Optimized to create as small as possible Shortcuts and reduces memory usage at runtime
 - ### 📄 Embed files in base64
+
+---
 
 ## 🪄 No magic variables syntax, they're constants instead
 
