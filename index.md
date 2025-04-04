@@ -57,6 +57,9 @@ You can build and run the Xcode project locally.
 - ### 🪶 Optimized to create as small as possible Shortcuts and reduces memory usage at runtime
 - ### 📄 Embed files in base64
 
+[Read Documentation](/language){: .btn }
+[Install](/install){: .btn .btn-red }
+
 ---
 
 ## 🪄 No magic variables syntax, they're constants instead
@@ -65,6 +68,8 @@ You can build and run the Xcode project locally.
 const int = 37
 show("{int}")
 ```
+
+[Learn more](language/variables-constants-globals#constants){: .btn }
 
 ---
 
@@ -75,6 +80,8 @@ show("{int}")
 // ...
 #include 'another-file.cherri'
 ```
+
+[Learn more](language/includes){: .btn }
 
 ---
 
@@ -87,6 +94,8 @@ action myCustomAction(text test) {
 
 myCustomAction("Test")
 ```
+
+[Learn more](language/custom-actions){: .btn }
 
 ---
 
@@ -105,6 +114,8 @@ copy checkConnection {
 paste checkConnection
 ```
 
+[Learn more](language/copy-paste){: .btn }
+
 ---
 
 ## 🥩 Define raw actions with custom identifier and parameters
@@ -119,6 +130,8 @@ rawAction("is.workflow.actions.gettext", [
 ])
 ```
 
+[Learn more](language/raw-actions){: .btn }
+
 ## 📇 Generate VCards for menus
 
 Creates a text action in the VCard format based on the arguments.
@@ -126,6 +139,8 @@ Creates a text action in the VCard format based on the arguments.
 ```ruby
 makeVCard("Title", "Subtitle")
 ```
+
+[Learn more](language/vcards){: .btn }
 
 ## 🔢 Type system and type inference
 
@@ -138,3 +153,5 @@ makeVCard("Title", "Subtitle")
 @txt = "Test"
 @int = 37
 ```
+
+[Learn more](language/types){: .btn }
