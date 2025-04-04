@@ -96,11 +96,11 @@ p.note::before, blockquote.note::before {
 }
 
 .hero-button {
-    font-size: 1.2rem;
+    font-size: 1.2rem !important;
     border: 0.1rem solid;
     border-color: #ff867e #f9655b #c5443b;
     background: none !important;
     color: white !important;
-    box-shadow: 0 1px 17px rgba(248.6175, 100.75625, 91.1825, 1.4);
+    box-shadow: 0 1px 17px rgba(248.6175, 100.75625, 91.1825, 1.4) !important;
     font-weight: 500 !important;
 }
