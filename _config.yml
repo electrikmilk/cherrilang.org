@@ -28,6 +28,10 @@ aux_links:
 aux_links_new_tab: true
 
 nav_external_links:
+  - title: VS Code Extension
+    url: https://marketplace.visualstudio.com/items?itemName=electrikmilk.cherri-vscode-extension
+    hide_icon: false
+    opens_in_new_tab: true
   - title: macOS App
     url: https://github.com/electrikmilk/cherri-macos-app
     hide_icon: false
