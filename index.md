@@ -9,8 +9,8 @@ nav_order: 1
     <img src="/assets/hero.png" width="500" alt="Cherri Hero Image"/>
     <h1>Scale your Shortcut projects and maintain them long-term.</h1>
     <p style="color: #959396">**Cherri** (pronounced cherry) is a <a href="https://apps.apple.com/us/app/shortcuts/id1462947752" ref="noreferrer noopener" target="_blank">Siri Shortcuts</a> programming language that compiles directly to a signed Shortcut you can then run on your Apple devices.</p>
-    <span class="fs-8">
-    <a href="https://playground.cherrilang.org" target="_blank" class="btn btn-red hero-button">Try Cherri</a>
+    <span class="fs-6">
+    <a href="https://playground.cherrilang.org" target="_blank" class="btn btn-red btn-outline hero-button">Try Cherri</a>
     </span>
 </div>
 
@@ -27,7 +27,7 @@ nav_order: 1
 alert("Message: {message}", "Alert")
 ```
 <span class="fs-5">
-<a href="https://playground.cherrilang.org" target="_blank" class="btn btn-red btn-outline hero-button">Try Me!</a>
+<a href="https://playground.cherrilang.org" target="_blank" class="btn btn-red">Try Me!</a>
 </span>
 </div>
 
@@ -36,13 +36,17 @@ alert("Message: {message}", "Alert")
 ## VS Code Extension
 Provides syntax highlighting and file icon.
 
-<a href="https://marketplace.visualstudio.com/items?itemName=electrikmilk.cherri-vscode-extension" target="_blank" class="btn btn-red hero-button">Install VS Code Extension</a>
+<br/>
+
+<a href="https://marketplace.visualstudio.com/items?itemName=electrikmilk.cherri-vscode-extension" target="_blank" class="btn btn-red">Install VS Code Extension</a>
 
 ---
 
 ## macOS App
 
 You can build and run the Xcode project locally.
+
+<br/>
 
 <a href="https://github.com/electrikmilk/cherri-macos-app" target="_blank" class="btn btn-red">View Source on GitHub</a>
 
