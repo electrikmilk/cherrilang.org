@@ -59,9 +59,11 @@ You can build and run the Xcode project locally.
 
 <br/>
 
-<div class="d-flex fs-7" style="gap: 1rem">
-    [Read Documentation](/language){: .btn }
-    [Install](/install){: .btn .btn-red }
+<div class="d-flex fs-7" style="gap: 1rem" markdown="1">
+
+[Read Documentation](/language){: .btn }
+[Install](/install){: .btn .btn-red }
+
 </div>
 
 ---
