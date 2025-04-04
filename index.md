@@ -52,17 +52,82 @@ You can build and run the Xcode project locally.
 
 ---
 
-## Language Features
+<div class="text-center" style="text-align: center">
+<h2>Language Features</h2>
+</div>
 
-- 🎓 Easy to learn and syntax similar to other languages
-- 🐞 1-1 translation to Shortcut actions as much as possible to make debugging easier
-- 🪄 No magic variables syntax, they're constants instead
-- 🪶 Optimized to create as small as possible Shortcuts and reduces memory usage at runtime
-- #️⃣ Include files within others for large Shortcut projects
-- 🔧 Define custom actions
-- 📋 Copy-paste actions automatically
-- 🥩 Enter actions raw with custom identifier and parameters
-- ❓ Define import questions
-- 📇 Generate VCards for menus
-- 📄 Embed files in base64
-- 🔢 Type system and type inference
+- ### 🎓 Easy to learn and syntax similar to other languages
+- ### 🐞 1-1 translation to Shortcut actions as much as possible to make debugging easier
+- ### 🪄 No magic variables syntax, they're constants instead
+- ### ❓ Define import questions
+- ### 🪶 Optimized to create as small as possible Shortcuts and reduces memory usage at runtime
+- ### 📄 Embed files in base64
+
+## #️⃣ Include files within others for large Shortcut projects
+
+```
+#include 'other-file.cherri'
+// ...
+#include 'another-file.cherri'
+```
+
+---
+
+## 🔧 Define custom actions
+
+```ruby
+action myCustomAction(text test) {
+    show("{test}")
+}
+
+myCustomAction("Test")
+```
+
+---
+
+## 📋 Copy-paste actions automatically
+
+```ruby
+copy checkConnection {
+    const online = isOnline()
+    if !online {
+        alert("No internet connection!")
+    }
+}
+
+// ...
+
+paste checkConnection
+```
+
+---
+
+## 🥩 Define raw actions with custom identifier and parameters
+
+```ruby
+rawAction("is.workflow.actions.gettext", [
+      {
+          "key": "WFTextActionText",
+          "type": "string",
+          "value": "Hello, world!"
+      }
+])
+```
+
+## 📇 Generate VCards for menus
+
+Creates a text action in the VCard format based on the arguments.
+
+```ruby
+makeVCard("Title", "Subtitle", "path/to/local/image.jpg")
+```
+
+## 🔢 Type system and type inference
+
+```ruby
+// Declare types
+@string: text
+@integer: number
+
+@int = 5 // Inferred number type
+```
