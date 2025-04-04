@@ -13,6 +13,7 @@ window.onload = () => {
 
             const tryMe = document.createElement('a');
             tryMe.href = 'https://playground.cherrilang.org/?code=' + encodedSrc;
+            tryMe.target = '_blank';
             tryMe.classList.add('btn', 'btn-red', 'm-3');
             tryMe.innerHTML = 'Try Me!';
 
