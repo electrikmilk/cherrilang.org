@@ -58,10 +58,16 @@ You can build and run the Xcode project locally.
 
 - ### 🎓 Easy to learn and syntax similar to other languages
 - ### 🐞 1-1 translation to Shortcut actions as much as possible to make debugging easier
-- ### 🪄 No magic variables syntax, they're constants instead
 - ### ❓ Define import questions
 - ### 🪶 Optimized to create as small as possible Shortcuts and reduces memory usage at runtime
 - ### 📄 Embed files in base64
+
+## 🪄 No magic variables syntax, they're constants instead
+
+```ruby
+const int = 5
+show("{int}")
+```
 
 ## #️⃣ Include files within others for large Shortcut projects
 
