@@ -93,7 +93,7 @@ p.note::before, blockquote.note::before {
   background: radial-gradient(circle, rgb(207 6 6) 0%, rgb(26 1 11) 0%, rgb(0 0 0) 40%);
   box-shadow: inset 0 0 167px rgb(121 0 0 / 50%);
   margin: -2rem -2rem 0 -2rem;
-  animation: aurora 2s ease infinite;
+  animation: aurora 7s ease infinite;
 }
 
 .hero-button {
@@ -104,7 +104,7 @@ p.note::before, blockquote.note::before {
   color: white !important;
   box-shadow: 0 1px 17px rgba(248.6175, 100.75625, 91.1825, 1.4) !important;
   font-weight: 500 !important;
-  animation: shine 2s ease infinite;
+  animation: shine 1s ease-in-out infinite;
 }
 
 @keyframes shine {
@@ -126,10 +126,13 @@ p.note::before, blockquote.note::before {
   0% {
     box-shadow: inset 0 0 167px rgb(121 0 0 / 50%);
   }
-  50% {
+  25% {
     box-shadow: inset 0 0 167px rgba(43, 211, 152, 0.5);
   }
+  50% {
+    box-shadow: inset 0 0 167px rgba(52, 163, 232, 0.5);
+  }
   100% {
-    box-shadow: inset 0 0 167px rgba(52 163 232, 0.5);
+    box-shadow: inset 0 0 167px rgb(121 0 0 / 50%);
   }
 }
