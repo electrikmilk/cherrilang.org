@@ -109,16 +109,16 @@ p.note::before, blockquote.note::before {
 
 @keyframes shine {
   0% {
-    border-color: #ff867e #f9655b #f9655b #c5443b;
+    border-color: #ff867e #f9655b #f9655b #c5443b !important;
   }
   25% {
-    border-color: #f9655b #ff867e #f9655b #c5443b;
+    border-color: #f9655b #ff867e #f9655b #c5443b !important;
   }
   75% {
-    border-color: #c5443b #f9655b #f9655b #ff867e;
+    border-color: #c5443b #f9655b #f9655b #ff867e !important;
   }
   100% {
-    border-color: #f9655b #f9655b #ff867e #c5443b;
+    border-color: #f9655b #f9655b #ff867e #c5443b !important;
   }
 }
 
