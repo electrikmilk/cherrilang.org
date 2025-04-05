@@ -102,7 +102,7 @@ p.note::before, blockquote.note::before {
   border-radius: 0.7rem;
   border: 0.1rem solid;
   border-color: #667 #555 #444;
-  animation: aurora 7s ease infinite, slide 120s linear infinite
+  animation: aurora 7s ease infinite, slide 90s ease-in-out infinite
 }
 
 @keyframes slide {
