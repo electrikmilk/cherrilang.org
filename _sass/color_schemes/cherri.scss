@@ -93,6 +93,8 @@ p.note::before, blockquote.note::before {
 .hero {
   padding: 3rem;
   text-align: center;
+  position: relative;
+  overflow: hidden;
   background-color: transparent;
   background-size: 120%;
   background-repeat: repeat-x repeat-y;
