@@ -53,7 +53,7 @@ You can build and run the Xcode project locally.
 
 <hr/>
 
-<div class="box text-center">
+<div class="box text-center" markdown="1">
 <h2>Why Cherri?</h2>
 
 - ### 🎓 Easy to learn and syntax similar to other languages
