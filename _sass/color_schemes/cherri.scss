@@ -93,9 +93,9 @@ p.note::before, blockquote.note::before {
 .hero-nav {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 1rem;
 
     p {
-        margin: 0;
 
         a {
             display: block;
