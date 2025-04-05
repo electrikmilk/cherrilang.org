@@ -52,9 +52,11 @@ To use a local image file, use the output of the built-in [base64Encode()](/lang
 /* (Declared for the demo) */
 @batteryIcon
 
-/* #include 'icons.cherri' */
-/* Include icons.cherri contents: */
-/* @batteryIcon = base64Encode("path/to/battery.png") */
+/*
+#include 'icons.cherri' */
+* Include icons.cherri contents:
+* @batteryIcon = base64Encode("path/to/battery.png")
+*/
 
 const batteryLevel = getBatteryLevel()
 
