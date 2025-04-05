@@ -2,6 +2,11 @@
  * Copyright (c) Cherri
  */
 
+const glyphsBG = {
+    x: 0,
+    y: 0,
+};
+
 window.onload = () => {
     setTimeout(() => {
         const codes = document.querySelectorAll('.language-ruby, .language-javascript');
@@ -29,4 +34,11 @@ window.onload = () => {
             wrapper.append(highlight, tryMe);
         });
     }, 1000);
+
+    setInterval(() => {
+        const x = glyphsBG.x++;
+        const y = glyphsBG.y++;
+
+        document.querySelector('.hero').style.backgroundPostition =  x + 'px ' + y + 'px';
+    }, 10);
 };
