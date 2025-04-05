@@ -18,10 +18,6 @@
         display: block !important;
         text-align: center
     }
-    .hero-nav {
-        margin-bottom: 2rem !important;
-        display: block !important;
-    }
 }
 
 @import "./color_schemes/dark";
@@ -60,19 +56,6 @@ p.note::before, blockquote.note::before {
     color: #7597ff !important
 }
 
-.shortcut-result-image {
-    background: #1e1e1e;
-    border-radius: 5px;
-    overflow: hidden;
-    border: 1px solid #555;
-    text-align: center;
-    padding: 1rem
-
-    img {
-        width: 70%
-    }
-}
-
 .language-ruby, .language-javascript {
     overflow: hidden;
     
@@ -92,26 +75,6 @@ p.note::before, blockquote.note::before {
 .header-button {
     display: block !important;
     margin: 0.75rem !important
-}
-
-.hero-nav {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 1rem;
-
-    p {
-
-        a {
-            display: block;
-            padding: 0.5rem 1rem;
-            border-radius: 0.5rem;
-
-            &:hover {
-                background: $red-100;
-                color: black;
-            }
-        }
-    }
 }
 
 .hero {
