@@ -1,27 +1,9 @@
 ---
 title: Scale Your Siri Shortcut Projects
 nav_exclude: true
-layout: minimal
+layout: home
 nav_order: 1
 ---
-
-<div class="text-center" style="margin-top: -1rem;">
-    <img src="/assets/cherri_logo.png" width="128"/>
-</div>
-
-<div class="hero-nav" markdown="1">
-
-[Install](/install)
-
-[Import Shortcut](/decompilation)
-
-[Documentation](/language)
-
-[Contributing](/compiler)
-
-[FAQ](/faq)
-
-</div>
 
 <div class="hero">
     <img src="/assets/hero.png" width="500" height="250" alt="Cherri Hero Image"/>
