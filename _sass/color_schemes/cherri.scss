@@ -125,3 +125,11 @@ p.note::before, blockquote.note::before {
     box-shadow: inset 0 0 167px #79312d, 0 3px 20px rgba(0, 0, 0, .5);
   }
 }
+
+.box {
+    background: #403f49;
+    border-radius: 0.7rem;
+    border: 0.1rem solid;
+    border-color: #667 #555 #444;
+    margin: 1rem 0;
+}
