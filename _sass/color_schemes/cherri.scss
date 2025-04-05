@@ -103,8 +103,8 @@ p.note::before, blockquote.note::before {
             border-radius: 0.5rem;
 
             &:hover {
-                background: $100;
-                color: black
+                background: $red-100;
+                color: black;
             }
         }
     }
