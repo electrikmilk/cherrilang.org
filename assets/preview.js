@@ -38,10 +38,6 @@ window.onload = () => {
     }, 1000);
 
     setInterval(() => {
-        const x = glyphsBG.x++;
-        const y = glyphsBG.y++;
-        console.log(x,y);
-
-        hero.style.backgroundPostition =  x + 'px ' + y + 'px';
+        hero.style.backgroundPostition =  glyphsBG.x++ + 'px ' + glyphsBG.y++ + 'px';
     }, 10);
 };
