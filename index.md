@@ -26,8 +26,6 @@ nav_order: 1
 alert("Message: {message}", "Alert")
 ```
 
-<hr/>
-
 <div class="box" markdown="1">
     
 ## VS Code Extension
@@ -51,10 +49,8 @@ You can build and run the Xcode project locally.
 
 </div>
 
-<hr/>
-
-<div class="box text-center" markdown="1">
-<h2>Why Cherri?</h2>
+<div class="box" markdown="1">
+## Why Cherri?
 
 - ### 🎓 Easy to learn and syntax similar to other languages
 - ### 🐞 1-1 translation to Shortcut actions as much as possible to make debugging easier
