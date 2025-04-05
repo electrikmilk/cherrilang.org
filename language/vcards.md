@@ -1,5 +1,5 @@
 ---
-title: vCards
+title: vCard Menus
 layout: default
 parent: Documentation
 nav_order: 9
