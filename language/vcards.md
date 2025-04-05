@@ -10,7 +10,7 @@ nav_order: 9
 You can easily create a vCard Text action using the built-in action `makeVCard()`.
 
 ```
-makeVCard(text title, text subtitle, text ?imagePath)
+makeVCard(text title, text subtitle, text ?base64Image)
 ```
 
 It uses the arguments at compile time using `title` as the name, the `subtitle` as the `ORG`, and `imagePath` as the `PHOTO`.
