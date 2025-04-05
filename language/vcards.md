@@ -50,7 +50,7 @@ To use a local image file, use the output of the built-in [base64Encode()](/lang
 
 ```ruby
 /* (Declared for the demo) */
-@batteryIcon
+@batteryIcon: text
 
 /*
 #include 'icons.cherri'
