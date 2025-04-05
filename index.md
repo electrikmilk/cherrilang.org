@@ -13,11 +13,11 @@ nav_order: 1
 
 [Install](/install)
 
-[Import](/decompilation)
+[Import Shortcut](/decompilation)
 
 [Documentation](/language)
 
-[Contribute](/compiler)
+[Contributing](/compiler)
 
 [FAQ](/faq)
 
