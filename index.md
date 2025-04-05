@@ -6,7 +6,7 @@ nav_order: 1
 ---
 
 <div class="text-center">
-    <img src="/assets/cherri_logo.png" width="250"/>
+    <img src="/assets/cherri_logo.png" width="128"/>
 </div>
 
 <div class="hero-nav" markdown="1">
