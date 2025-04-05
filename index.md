@@ -33,6 +33,8 @@ alert("Message: {message}", "Alert")
 - ### 🪶 Optimized to create as small as possible Shortcuts and reduces memory usage at runtime
 - ### 📄 Embed files in base64
 
+<br/>
+
 <span class="fs-5">
 [Read Documentation](/language){: .btn }
 [Install](/install){: .btn .btn-red }
