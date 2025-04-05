@@ -61,6 +61,24 @@ It is possible to call other custom actions within the body of a custom action. 
 {: .warning }
 Misuse of recursion can cause a Shortcut to infinitely loop.
 
+```ruby
+action fibonacci(number n) {
+    if n <= 1 {
+        output("{n}")
+    } else {
+        const minusOne = n - 1
+        const minusTwo = n - 2
+        const fib1 = fibonacci(minusOne)
+        const fib2 = fibonacci(minusTwo)
+        const added = fib1 + fib2
+        output("{added}")
+    }
+}
+
+const output = fibonacci(7)
+show("{output}")
+```
+
 ## How do they work?
 
 The contents of these actions run separately from your main code inside your Shortcut by using the **Run Shortcut** action and passing a **Dictionary** action containing data that will be detected by injected Cherri code that contains each of the defined actions that are used in the Cherri code below it.
