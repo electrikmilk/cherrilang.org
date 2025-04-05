@@ -27,6 +27,21 @@ alert("Message: {message}", "Alert")
 ```
 
 <div class="box" markdown="1">
+## Why Cherri?
+
+- ### 🎓 Easy to learn and syntax similar to other languages
+- ### 🐞 1-1 translation to Shortcut actions as much as possible to make debugging easier
+- ### ❓ Define import questions
+- ### 🪶 Optimized to create as small as possible Shortcuts and reduces memory usage at runtime
+- ### 📄 Embed files in base64
+
+<span class="fs-5">
+[Read Documentation](/language){: .btn }
+[Install](/install){: .btn .btn-red }
+</span>
+</div>
+
+<div class="box" markdown="1">
     
 ## VS Code Extension
 Provides syntax highlighting and file icon.
@@ -47,21 +62,6 @@ You can build and run the Xcode project locally.
 
 <a href="https://github.com/electrikmilk/cherri-macos-app" target="_blank" class="btn btn-red">View Source on GitHub</a>
 
-</div>
-
-<div class="box" markdown="1">
-## Why Cherri?
-
-- ### 🎓 Easy to learn and syntax similar to other languages
-- ### 🐞 1-1 translation to Shortcut actions as much as possible to make debugging easier
-- ### ❓ Define import questions
-- ### 🪶 Optimized to create as small as possible Shortcuts and reduces memory usage at runtime
-- ### 📄 Embed files in base64
-
-<span class="fs-5">
-[Read Documentation](/language){: .btn }
-[Install](/install){: .btn .btn-red }
-</span>
 </div>
 
 ## 🪄 No magic variables syntax, they're constants instead
