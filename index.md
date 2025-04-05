@@ -6,6 +6,7 @@ nav_order: 1
 ---
 
 <div class="hero-nav" markdown="1'>
+
 [Install](/install)
 
 &bull;
