@@ -14,7 +14,7 @@ makeVCard(text title, text subtitle, text ?base64Image)
 ```
 
 It uses the arguments at compile time using `title` as the name, the `subtitle` as the `ORG`, and `imagePath` as the `PHOTO`.
-z
+
 ## Example
 
 The example below uses this built-in action to make a vCard menu.
