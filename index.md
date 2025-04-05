@@ -5,6 +5,29 @@ layout: home
 nav_order: 1
 ---
 
+<div class="hero-nav" markdown="1'>
+[Install](/install)
+
+&bull;
+
+[Import](/decompilation)
+
+&bull;
+
+[Documentation](/language)
+
+&bull;
+
+[Contribute](/compiler)
+
+&bull;
+
+[FAQ](/faq)
+
+</div>
+
+---
+
 <div class="hero">
     <img src="/assets/hero.png" width="500" height="250" alt="Cherri Hero Image"/>
     <h1>Scale your Shortcut projects and maintain them long-term.</h1>
@@ -60,6 +83,18 @@ You can build and run the Xcode project locally.
 <br/>
 
 <a href="https://github.com/electrikmilk/cherri-macos-app" target="_blank" class="btn btn-red">View Source on GitHub</a>
+
+</div>
+
+<div class="box" markdown="1">
+
+## Glyphs Search
+
+Use the glyphs search site to easily generate a Shortcut icon for Cherri outside of Shortcuts.
+
+<br/>
+
+<a href="https://glyphs.cherrilang.org" target="_blank" class="btn btn-red">Generate Shortcut Icon</a>
 
 </div>
 
