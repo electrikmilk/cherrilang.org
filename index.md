@@ -5,7 +5,7 @@ layout: minimal
 nav_order: 1
 ---
 
-<div class="text-center">
+<div class="text-center" style="margin-top: -1rem;">
     <img src="/assets/cherri_logo.png" width="128"/>
 </div>
 
