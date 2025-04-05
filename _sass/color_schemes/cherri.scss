@@ -98,7 +98,14 @@ p.note::before, blockquote.note::before {
         margin: 0;
 
         a {
+            display: block;
             padding: 1rem;
+            border-radius: 0.5rem;
+
+            &:hover {
+                background: $100;
+                color: black
+            }
         }
     }
 }
