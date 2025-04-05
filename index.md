@@ -1,11 +1,11 @@
 ---
 title: Scale Your Siri Shortcut Projects
 nav_exclude: true
-layout: home
+layout: minimal
 nav_order: 1
 ---
 
-<div class="hero-nav" markdown="1'>
+<div class="hero-nav" markdown="1">
 
 [Install](/install)
 
