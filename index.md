@@ -9,19 +9,11 @@ nav_order: 1
 
 [Install](/install)
 
-&bull;
-
 [Import](/decompilation)
-
-&bull;
 
 [Documentation](/language)
 
-&bull;
-
 [Contribute](/compiler)
-
-&bull;
 
 [FAQ](/faq)
 
