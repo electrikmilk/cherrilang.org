@@ -64,8 +64,6 @@ You can build and run the Xcode project locally.
 </span>
 </div>
 
----
-
 ## 🪄 No magic variables syntax, they're constants instead
 
 ```ruby
@@ -74,8 +72,6 @@ show("{int}")
 ```
 
 [Learn more](language/variables-constants-globals#constants){: .btn }
-
----
 
 ## #️⃣ Include files within others for large Shortcut projects
 
@@ -86,8 +82,6 @@ show("{int}")
 ```
 
 [Learn more](language/includes){: .btn }
-
----
 
 ## 🔧 Define custom actions
 
@@ -100,8 +94,6 @@ myCustomAction("Test")
 ```
 
 [Learn more](language/custom-actions){: .btn }
-
----
 
 ## 📋 Copy-paste actions automatically
 
@@ -119,8 +111,6 @@ paste checkConnection
 ```
 
 [Learn more](language/copy-paste){: .btn }
-
----
 
 ## 🥩 Define raw actions with custom identifier and parameters
 
