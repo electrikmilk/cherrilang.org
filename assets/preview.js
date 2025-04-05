@@ -7,6 +7,8 @@ const glyphsBG = {
     y: 0,
 };
 
+const hero = document.querySelector('.hero');
+
 window.onload = () => {
     setTimeout(() => {
         const codes = document.querySelectorAll('.language-ruby, .language-javascript');
@@ -38,7 +40,8 @@ window.onload = () => {
     setInterval(() => {
         const x = glyphsBG.x++;
         const y = glyphsBG.y++;
+        console.log(x,y);
 
-        document.querySelector('.hero').style.backgroundPostition =  x + 'px ' + y + 'px';
+        hero.style.backgroundPostition =  x + 'px ' + y + 'px';
     }, 10);
 };
