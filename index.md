@@ -26,8 +26,10 @@ nav_order: 1
 alert("Message: {message}", "Alert")
 ```
 
----
+<hr/>
 
+<div class="box" markdown="1">
+    
 ## VS Code Extension
 Provides syntax highlighting and file icon.
 
@@ -35,7 +37,9 @@ Provides syntax highlighting and file icon.
 
 <a href="https://marketplace.visualstudio.com/items?itemName=electrikmilk.cherri-vscode-extension" target="_blank" class="btn btn-red">Install VS Code Extension</a>
 
----
+</div>
+
+<div class="box" markdown="1">
 
 ## macOS App
 
@@ -45,11 +49,12 @@ You can build and run the Xcode project locally.
 
 <a href="https://github.com/electrikmilk/cherri-macos-app" target="_blank" class="btn btn-red">View Source on GitHub</a>
 
----
-
-<div class="text-center" style="text-align: center">
-<h2>Why Cherri?</h2>
 </div>
+
+<hr/>
+
+<div class="box text-center">
+<h2>Why Cherri?</h2>
 
 - ### 🎓 Easy to learn and syntax similar to other languages
 - ### 🐞 1-1 translation to Shortcut actions as much as possible to make debugging easier
@@ -61,6 +66,7 @@ You can build and run the Xcode project locally.
 [Read Documentation](/language){: .btn }
 [Install](/install){: .btn .btn-red }
 </span>
+</div>
 
 ---
 
