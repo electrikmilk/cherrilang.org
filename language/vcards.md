@@ -5,19 +5,19 @@ parent: Documentation
 nav_order: 9
 ---
 
-# Generate vCard Text Actions
+# vCard Menus
 
-You can easily create a vCard using the built-in action `makeVCard()`.
+You can easily create a vCard Text action using the built-in action `makeVCard()`.
 
 ```
 makeVCard(text title, text subtitle, text ?imagePath)
 ```
 
-This generates a vCard Text action using the arguments at compile time, inserting the `title` as the name, the `subtitle` as the `ORG` and `imagePath` as the `PHOTO`.
-
+It uses the arguments at compile time using `title` as the name, the `subtitle` as the `ORG`, and `imagePath` as the `PHOTO`.
+z
 ## Example
 
-The example below uses this built-in action to make a vCard menu:
+The example below uses this built-in action to make a vCard menu.
 
 ```ruby
 /* Generate items */
