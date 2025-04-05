@@ -59,7 +59,7 @@ To use a local image file, use the output of the built-in [base64Encode()](/lang
 const batteryLevel = getBatteryLevel()
 
 @items: array
-@items += makeVCard("Battery Status", "Level: {batteryLavel}", batteryIcon)
+@items += makeVCard("Battery Status", "Level: {batteryLevel}", batteryIcon)
 ```
 
 ## Standard Library Action
