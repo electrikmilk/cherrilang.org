@@ -5,7 +5,7 @@ parent: Documentation
 nav_order: 9
 ---
 
-# vCard Menus
+# Generate vCard Text Actions
 
 You can easily create a vCard using the built-in action `makeVCard()`.
 
