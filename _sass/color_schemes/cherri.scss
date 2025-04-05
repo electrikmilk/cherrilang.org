@@ -26,7 +26,7 @@ $link-color: $red-100;
 
 html, body, input, textarea, select, button {
     accent-color: $red-100;
-    caret-color: $red-100;
+    caret-color: $red-100
 }
 
 body {
@@ -37,11 +37,11 @@ body {
 }
 
 h1,h2,h3,h4,h5 {
-    line-height: 1.2 !important;
+    line-height: 1.2 !important
 }
 
 h1,h2,h3 {
-    font-weight: bold !important;
+    font-weight: bold !important
 }
 
 .color {
@@ -62,10 +62,10 @@ p.note::before, blockquote.note::before {
     overflow: hidden;
     border: 1px solid #555;
     text-align: center;
-    padding: 1rem;
+    padding: 1rem
 
     img {
-        width: 70%;
+        width: 70%
     }
 }
 
@@ -75,7 +75,7 @@ p.note::before, blockquote.note::before {
     iframe {
         height: 300px;
         width: 100%;
-        margin-bottom: -0.5rem;
+        margin-bottom: -0.5rem
     }
 }
 
@@ -93,13 +93,15 @@ p.note::before, blockquote.note::before {
 .hero {
   padding: 3rem;
   text-align: center;
-  background: radial-gradient(circle, rgb(207 6 6) 0%, rgb(26 1 11) 0%, rgb(0 0 0) 40%);
+  background-image: url(/assets/glyphs.png);
+  background-repeat: repeat-x repeat-y;
   margin: -1rem -1rem 1rem -1rem;
   animation: aurora 7s ease infinite;
   white-space: break-spaces;
   border-radius: 0.7rem;
   border: 0.1rem solid;
   border-color: #667 #555 #444;
+  animation: aurora 7s ease infinite
 }
 
 .hero-button {
@@ -108,7 +110,7 @@ p.note::before, blockquote.note::before {
   color: white !important;
   box-shadow: 0 1px 17px rgba(248, 100, 91, 1.4) !important;
   font-weight: 500 !important;
-  animation: aurora 7s ease infinite;
+  animation: aurora 7s ease infinite
 }
 
 @keyframes aurora {
@@ -132,5 +134,5 @@ p.note::before, blockquote.note::before {
     border-radius: 0.7rem;
     border: 0.1rem solid;
     border-color: #667 #555 #444;
-    margin: 1rem 0;
+    margin: 1rem 0
 }
