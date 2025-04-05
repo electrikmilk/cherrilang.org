@@ -22,9 +22,11 @@ As far as I am aware, you can only sign Shortcuts using the `shortcuts` binary o
 A benefit is that Mac Shortcuts are synced to iCloud and therefore synced to all of your other devices, so just compile your Shortcut and import it into the Shortcuts app on
 macOS. It will then be synced to your other Apple devices.
 
-However, I have made a [Cherri Playground](https://playground.cherrilang.org/) that lets you play with the Cherri compiler on any platform. It has a signing server and will turn out valid Shortcuts on any platform with a web browser, primarily for those looking to write and compile Shortcuts on their iPhone or iPad.
+However, I have made a [Cherri Playground](https://playground.cherrilang.org/) that lets you play with the Cherri compiler on any platform. It has a signing server and will turn out valid Shortcuts on any platform with a web browser, primarily for those looking to write and compile Shortcuts on their iPhone or iPad. 
 
-### Signing Shortcuts on non-macOS Plaforms
+If you [build from source](/install#build-from-source) the compiler will use RoutineHub's HubSign to sign the Shortcut, but a Windows build is still being worked on and tested before it can be included in a release.
+
+### Signing Shortcuts on non-macOS Platforms
 
 You can use the `--hubsign` option on Unix-like systems to use the remote service HubSign provided by [RoutineHub](https://routinehub.co) to sign the compiled Shortcut so you can then move it onto an Apple device through the iCloud web app or a file server.
 
