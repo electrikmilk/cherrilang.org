@@ -5,6 +5,10 @@ layout: minimal
 nav_order: 1
 ---
 
+<div class="text-center">
+    <img src="/assets/cherri_logo.png" width="250"/>
+</div>
+
 <div class="hero-nav" markdown="1">
 
 [Install](/install)
