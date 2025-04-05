@@ -90,6 +90,11 @@ p.note::before, blockquote.note::before {
     margin: 0.75rem !important
 }
 
+.hero-nav {
+    display: flex;
+    justify-content: space-between
+}
+
 .hero {
   padding: 3rem;
   text-align: center;
