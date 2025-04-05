@@ -27,8 +27,6 @@ nav_order: 1
 
 </div>
 
----
-
 <div class="hero">
     <img src="/assets/hero.png" width="500" height="250" alt="Cherri Hero Image"/>
     <h1>Scale your Shortcut projects and maintain them long-term.</h1>
