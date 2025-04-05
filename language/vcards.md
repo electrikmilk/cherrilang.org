@@ -5,7 +5,7 @@ parent: Documentation
 nav_order: 9
 ---
 
-# vCards
+# vCard Menus
 
 You can easily create a vCard using the built-in action `makeVCard()`.
 
@@ -13,7 +13,7 @@ You can easily create a vCard using the built-in action `makeVCard()`.
 makeVCard(text title, text subtitle, text ?imagePath)
 ```
 
-This generates a vCard using your parameters at compile time, inserting the title as the name, and the subtitle as the org/company.
+This generates a vCard using your parameters at compile time, inserting the title as the name and the subtitle as the org/company.
 
 ## Photo
 
