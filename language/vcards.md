@@ -15,11 +15,17 @@ makeVCard(text title, text subtitle, text ?imagePath)
 
 This generates a vCard using your parameters at compile time, inserting the title as the name, and the subtitle as the org/company.
 
+## Photo
+
 It will also optionally base 64 encode when compiling the image at the path specified as the photo.
 
-Since this happens at compile time, the image path must be available at compile time. No variables are allowed unless they evaluate to a text literal.
+Since this happens at compile time, the image path must be available at compile time. Variables are not allowed unless they evaluate to a text literal.
+
+For instance, you may want to put it in a text constant at the top of your Shortcut so you can easily change the icon later or to have a file of icon paths you include inside another file.
 
 Entering a variable into the `imagePath` argument will insert that variable for `PHOTO:` instead of trying to load a file. It will only load a file if you enter a string literal for the `imagePath` argument.
+
+## Example
 
 The example below uses this built-in action to make a vCard menu:
 
@@ -46,4 +52,8 @@ repeat i for 3 {
 alert(chosenItem, "You chose:")
 ```
 
+## Standard Library Action
+
 You can also use the standard library action [`chooseFromVCard()`](/language/standard/stdlib#choose-from-vcard).
+
+You can use this action in the same way you'd use the `chooseFromList()` action. You just provide it an array of VCards and a prompt.
