@@ -27,10 +27,10 @@ alert("Message: {message}", "Alert")
 <div class="box" markdown="1">
 ## Why Cherri?
 
-- ### 🖥️ Laptop/Desktop based development
-- ### 🎓 Easy to learn and syntax similar to other languages
-- ### 🐞 1-1 translation to Shortcut actions as much as possible to make debugging easier
-- ### 🪶 Optimized to create as small as possible Shortcuts and reduces memory usage at runtime
+- 🖥️ Laptop/Desktop based development
+- 🎓 Easy to learn and syntax similar to other languages
+- 🐞 1-1 translation to Shortcut actions as much as possible to make debugging easier
+- 🪶 Optimized to create as small as possible Shortcuts and reduces memory usage at runtime
 
 <br/>
 
