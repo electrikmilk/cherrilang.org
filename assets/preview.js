@@ -36,10 +36,4 @@ window.onload = () => {
             wrapper.append(highlight, tryMe);
         });
     }, 1000);
-
-    setInterval(() => {
-        glyphsPosition.x++;
-        glyphsPosition.y++;
-        hero.style.backgroundPostition = glyphsPosition.x + 'px ' + glyphsPosition.y + 'px';
-    }, 10);
 };
