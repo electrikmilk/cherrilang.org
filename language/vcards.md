@@ -44,7 +44,7 @@ alert(chosenItem, "You chose:")
 
 ## Photo
 
-This accepts any base64 encoded data.
+This accepts base64 encoded image data.
 
 To use a local image file, use the output of the built-in [base64Encode()](/language/standard/builtin#base64-encode-file) action to encode that file then use it in a VCard using a variable reference.
 
