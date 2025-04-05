@@ -14,8 +14,6 @@ nav_order: 1
     </span>
 </div>
 
-<br/>
-
 ```ruby
 /* Hello, Cherri! */
 
