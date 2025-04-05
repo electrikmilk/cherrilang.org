@@ -17,11 +17,11 @@ This generates a vCard using your parameters at compile time, inserting the titl
 
 ## Photo
 
-It will also optionally base 64 encode when compiling the image at the path specified as the photo.
+It will also optionally base 64 encode the image file at the path and set that as the `PHOTO` property in the VCard.
 
 Since this happens at compile time, the image path must be available at compile time. Variables are not allowed unless they evaluate to a text literal.
 
-For instance, you may want to put it in a text constant at the top of your Shortcut so you can easily change the icon later or to have a file of icon paths you include inside another file.
+For instance, you may want to put it in a text constant at the top of your Shortcut so you can easily change the icon later or to have an icons file of icon paths you include inside another file.
 
 Entering a variable into the `imagePath` argument will insert that variable for `PHOTO:` instead of trying to load a file. It will only load a file if you enter a string literal for the `imagePath` argument.
 
