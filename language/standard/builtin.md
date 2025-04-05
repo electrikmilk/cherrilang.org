@@ -34,7 +34,7 @@ This uses a [Match Text](/language/standard/documents#match-text) action to chec
 
 ---
 
-### Encode File
+### Base64 Encode File
 
 ```
 base64File(text filePath)
