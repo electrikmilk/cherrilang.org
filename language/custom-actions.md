@@ -59,7 +59,7 @@ action myCustomAction() {
 It is possible to call other custom actions within the body of a custom action. You can then use this for recursion, running the same custom action with an eventual breakpoint.
 
 {: .warning }
-Strong caution against the use of recursion. Misuse can cause a Shortcut to infinitely loop.
+Misuse of recursion can cause a Shortcut to infinitely loop.
 
 ## How do they work?
 
