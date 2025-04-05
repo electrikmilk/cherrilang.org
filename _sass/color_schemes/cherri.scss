@@ -93,6 +93,7 @@ p.note::before, blockquote.note::before {
 .hero-nav {
     display: flex;
     justify-content: space-between;
+    margin-top: -1rem;
     margin-bottom: 1rem;
 
     p {
