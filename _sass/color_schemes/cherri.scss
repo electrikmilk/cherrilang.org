@@ -94,6 +94,7 @@ p.note::before, blockquote.note::before {
   padding: 3rem;
   text-align: center;
   background-image: url(/assets/glyphs.png);
+  background-size: 120%;
   background-repeat: repeat-x repeat-y;
   margin: -1rem -1rem 1rem -1rem;
   animation: aurora 7s ease infinite;
