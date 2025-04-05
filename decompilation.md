@@ -17,7 +17,12 @@ Use the `--import=` argument with an iCloud link or local unsigned Shortcut file
 cherri --import={URL or PATH}
 ```
 
-[Try it now in the playground!](https://playground.cherrilang.org){: .btn .btn-red }
+<a 
+    href="https://playground.cherrilang.org"
+    target="_blank"
+    class="btn btn-red">
+    Try it now in the playground!
+</a>
 
 ## Output File
 
