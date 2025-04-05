@@ -38,6 +38,8 @@ window.onload = () => {
     }, 1000);
 
     setInterval(() => {
-        hero.style.backgroundPostition =  ++glyphsPosition.x + 'px ' + ++glyphsPosition.y + 'px';
+        glyphsPosition.x++;
+        glyphsPosition.y++;
+        hero.style.backgroundPostition = glyphsPosition.x + 'px ' + glyphsPosition.y + 'px';
     }, 10);
 };
