@@ -7,13 +7,13 @@ nav_order: 10
 
 # Import Questions
 
-To add an import question, use the following syntax:
+To define an import question, use the following syntax:
 
 ```
 #question identifier "Prompt" "Default Value"
 ```
 
-To assign the question to something, simply mention the `identifier`. However, this can only be done once in an argument for an action.
+To assign the question to something, simply mention the `identifier`. However, this can only be done once in an argument for an action, not as an inline variable or variable value.
 
 ### Example
 
