@@ -24,9 +24,9 @@ nav_order: 1
 alert("Message: {message}", "Alert")
 ```
 
-<div class="box" markdown="1">
 ## Why Cherri?
 
+<div class="box" markdown="1">
 - 🖥️ Laptop/Desktop based development
 - 🎓 Easy to learn and syntax similar to other languages
 - 🐞 1-1 translation to Shortcut actions as much as possible to make debugging easier
@@ -75,7 +75,11 @@ Use the glyphs search site to easily generate a Shortcut icon for Cherri outside
 
 </div>
 
-## 🪄 No magic variables syntax, they're constants instead
+---
+
+## How does it work?
+
+### 🪄 No magic variables syntax, they're constants instead
 
 ```ruby
 const int = 37
@@ -84,7 +88,7 @@ show("{int}")
 
 [Learn more](language/variables-constants-globals#constants){: .btn }
 
-## #️⃣ Include files within others for large Shortcut projects
+### #️⃣ Include files within others for large Shortcut projects
 
 ```
 #include 'other-file.cherri'
@@ -94,7 +98,7 @@ show("{int}")
 
 [Learn more](language/includes){: .btn }
 
-## 🔧 Define custom actions
+### 🔧 Define custom actions
 
 ```ruby
 action myCustomAction(text test) {
@@ -106,7 +110,7 @@ myCustomAction("Test")
 
 [Learn more](language/custom-actions){: .btn }
 
-## 📋 Copy-paste actions automatically
+### 📋 Copy-paste actions automatically
 
 ```ruby
 copy checkConnection {
@@ -123,7 +127,7 @@ paste checkConnection
 
 [Learn more](language/copy-paste){: .btn }
 
-## 🥩 Define raw actions with custom identifier and parameters
+### 🥩 Define raw actions with custom identifier and parameters
 
 ```ruby
 rawAction("is.workflow.actions.gettext", [
@@ -137,7 +141,7 @@ rawAction("is.workflow.actions.gettext", [
 
 [Learn more](language/raw-actions){: .btn }
 
-## 📇 Generate VCards for menus
+### 📇 Generate VCards for menus
 
 Creates a text action in the VCard format based on the arguments.
 
@@ -147,7 +151,7 @@ makeVCard("Title", "Subtitle")
 
 [Learn more](language/vcards){: .btn }
 
-## 🔢 Type system and type inference
+### 🔢 Type system and type inference
 
 ```ruby
 // Declared types
