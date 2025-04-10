@@ -69,3 +69,14 @@ const batteryLevel = getBatteryLevel()
 You can also use the standard library action [`chooseFromVCard()`](/language/standard/stdlib#choose-from-vcard).
 
 You can use this action in the same way you'd use the `chooseFromList()` action. You just provide it an array of VCards and a prompt.
+
+```ruby
+#include 'stdlib'
+
+@items = []
+repeat i for 3 {
+  @items += makeVCard("Title", "Subtitle")
+}
+
+chooseFromVCard(items, "Choose From Items")
+```
