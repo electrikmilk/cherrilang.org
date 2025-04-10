@@ -27,11 +27,12 @@ chooseFromVCard(array items, text prompt)
 ```
 
 **Example Usage**
+
 ```
 #include 'stdlib'
 
 @items = []
-repeat i for 6 {
+repeat i for 3 {
   @items += makeVCard("Title", "Subtitle")
 }
 
@@ -46,4 +47,21 @@ Runs the JavaScript code in `script` and returns the output.
 
 ```
 runJS(text script)
+```
+
+**Example Usage**
+
+```
+#include 'stdlib'
+
+const jsonStr = '{\"name\": \"John\", \"age\": 30\}'
+
+const code = "
+    const json = JSON.parse('{jsonStr}')
+    document.body.append(document.createTextNode(json.name));
+"
+
+const jsResult = runJS(code)
+
+show(jsResult)
 ```
