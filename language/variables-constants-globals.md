@@ -5,7 +5,8 @@ parent: Documentation
 nav_order: 4
 ---
 
-# Variables, Constants & Globals
+# Variables, Constants, & Globals
+
 {: .no_toc }
 
 ## Table of contents
@@ -28,45 +29,34 @@ Variables are not required to be assigned a value:
 @identifier
 ```
 
-Insert variables into a text value:
+### Inline Variables
 
 ```ruby
 @text = "value"
 @inserted = "Value: {text}"
 ```
 
-Get as...key as a raw string.
+### Get As
 
 ```ruby
 @deviceOS = "OS: {Device['OS']}"
+
+@variable = {"Name":"test"}
+@getAs = variable['Name']
 ```
 
-Type coercion...
+### Type Coersion
 
 ```ruby
 @text = "five 5"
 @number = "Number: {text.number}"
 ```
 
-### Variable as a value
+### Variable as a Value
 
 ```ruby
 @variable = nil
 @ref = variable
-```
-
-Get as...
-
-```ruby
-@variable = {"Name":"test"}
-@getAs = variable['Name']
-```
-
-Type coercion...
-
-```ruby
-@variable: text
-@type = variable.number
 ```
 
 Check the [value types](types#value-types) reference to learn more about variable value types.
@@ -87,15 +77,15 @@ alert("{immutable}")
 alert("{mutable}")
 ```
 
-Constants can be used just like variables except that they cannot be redefined or appended to or the compiler will throw an error.
+Constants can be used just like variables except that they cannot be redefined or appended to, or the compiler will throw an error.
 
-Array constants are not allowed as creating an array value involves adding to a variable, action outputs cannot be added to. Variable reference constants are also not allowed as the value of a variable can change.
+Array constants are not allowed, as creating an array value involves adding to a variable, and action outputs cannot be added to. Variable reference constants are also not allowed, as the value of a variable can change.
 
 **It is recommended to use constants when applicable as it will produce a smaller Shortcut.**
 
 ## Globals
 
-All globals are implemented. Globals are case-sensitive.
+Globals are case-sensitive.
 
 ```ruby
 @input = ShortcutInput
@@ -110,11 +100,11 @@ But you can also just inline a global in text like other variables.
 @shortcutInput = "{ShortcutInput}"
 ```
 
-### Ask each time
+### Ask Each Time
 
 The `Ask` global may be used for an action argument to prompt the user for input, but may not be used as an inline variable in text.
 
-## Empty variables
+## Empty Variables
 
 You can declare a variable without a value:
 
@@ -123,11 +113,11 @@ You can declare a variable without a value:
 @nilVar = nil
 ```
 
-## Add to variables
+## Add to Variables
 
 Add to a variable using the standard `+=` syntax:
 
-### Numbers
+### Number Value Modifiers
 
 Increment, decrement, multiply, or divide an existing number variable using the following syntax:
 
@@ -147,7 +137,7 @@ Increment, decrement, multiply, or divide an existing number variable using the 
 @i /= 1
 ```
 
-### Text
+### Append Text
 
 Append text to the end of an existing text variable using the following syntax:
 
@@ -156,7 +146,7 @@ Append text to the end of an existing text variable using the following syntax:
 @text += "Additional text"
 ```
 
-### Arrays
+### Add to Array
 
 Declare an array and use the following syntax to add values to it:
 
