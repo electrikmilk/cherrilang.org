@@ -42,6 +42,10 @@ In Cherri, they are shortened into singular names.
 | webpage 	| WFSafariWebPageContentItem 	|
 | text 	| WFStringContentItem 	|
 
+## Enumerations
+
+Some actions have arguments with the type `enum`, accompanied by allowed values. This type only accepts string values.
+
 ## Value Types
 
 ### Text
