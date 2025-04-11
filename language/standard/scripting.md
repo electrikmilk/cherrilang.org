@@ -106,7 +106,7 @@ killApp(text appId)
 ### Kill All Apps
 
 {: .warning }
-This will quit all of the apps on the device without asking to save changes!
+This will quit all the apps running on the device without asking to save changes!
 
 Quit all open apps, **without** asking to save changes.
 
@@ -154,7 +154,7 @@ getOnScreenContent()
 ## Control Flow
 
 {: .note }
-These control flow actions have been abstracted into statements: [Choose From Menu](../menus#choose-from-menu), [If](../statements#ifelse), [Repeat](../statements#repeat) and [Repeat With Each](../statements#repeat-with-each).
+These control flow actions have been abstracted into statements: [Choose From Menu](../menus#choose-from-menu), [If](../statements#ifelse), [Repeat](../statements#repeat), and [Repeat With Each](../statements#repeat-with-each).
 
 ---
 
@@ -190,7 +190,7 @@ outputOrClipboard(variable output)
 
 ### Wait
 
-Wait a number of seconds then proceed.
+Wait for `seconds`, then proceed.
 
 ```
 wait(integer seconds)
@@ -200,7 +200,7 @@ wait(integer seconds)
 
 ### Wait to Return
 
-Wait for the user to return to the Shortcut. This usually proceeds an action that directs the user out of the Shortcuts app.
+Wait for the user to return to the Shortcut. This usually precedes an action that directs the user out of the Shortcuts app.
 
 ```
 waitToReturn()
@@ -210,7 +210,7 @@ waitToReturn()
 
 ### Get Battery Level
 
-Get the current battery level of the device.
+Get the device's current battery level.
 
 ```
 getBatteryLevel()
@@ -220,7 +220,7 @@ getBatteryLevel()
 
 ### Battery Is Charging
 
-Returns a boolean based on if the device is charging.
+Returns a boolean based on whether the device is charging.
 
 ```
 isCharging()
@@ -232,7 +232,7 @@ isCharging()
 
 ### Connected to Charger
 
-Returns a boolean based on if the device is connected to a charger.
+Returns a boolean based on whether the device is connected to a charger.
 
 ```
 connectedToCharger()
@@ -285,6 +285,46 @@ getDeviceDetail(enum detail)
 
 ---
 
+### Get Wi-Fi Network Detail
+
+```
+getWifiDetail(enum detail)
+```
+
+#### Wi-Fi Network Details
+
+- Network Name
+- BSSID
+- Wi-Fi Standard
+- RX Rate
+- TX Rate
+- RSSI
+- Noise
+- Channel Number
+- Hardware MAC Address
+
+_**Note:** Enum values are case-sensitive._
+
+---
+
+### Get Cellular Network Detail
+
+```
+getCellularDetail(enum detail)
+```
+
+#### Cellular Network Details
+
+- Carrier Name
+- Radio Technology
+- Country Code
+- Is Roaming Abroad
+- Number of Signal Bars
+
+_**Note:** Enum values are case-sensitive._
+
+---
+
 ### Lock Screen
 
 Lock the device's screen.
@@ -321,7 +361,7 @@ displaySleep()
 
 ### Toggle Appearance
 
-Toggles system appearance from light to dark, or dark to light.
+Toggles system appearance from light to dark or dark to light.
 
 ```
 toggleAppearance()
@@ -401,7 +441,7 @@ toggleNightShift()
 
 ### Set True Tone
 
-Set status of True Tone.
+Set the status of True Tone.
 
 ```
 setTrueTone(bool status)
