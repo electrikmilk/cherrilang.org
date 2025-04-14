@@ -83,6 +83,8 @@ output('Hello, World!');
 
 const jsFile = base64File("path/to/index.js")
 const jsCode = base64Decode(jsFile)
+
 @result = runJS(jsCode)
-show("{result}")
+
+show(result)
 ```
