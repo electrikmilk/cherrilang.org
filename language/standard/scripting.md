@@ -1379,6 +1379,16 @@ Run JavaScript `script` on `input`.
 runJSAutomation(variable input, text script)
 ```
 
+## Passwords
+
+### Search Passwords
+
+Search Passwords app.
+
+```
+searchPasswords(text query)
+```
+
 ## Shortcuts
 
 ### Get Shortcuts
