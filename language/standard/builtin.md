@@ -20,9 +20,7 @@ For example, the [makeVCard()](/language/vcards) action is, in actuality, just a
 1. TOC
 {:toc}
 
----
-
-### Contains Text
+## Contains Text
 
 Checks if `text` occurs in `subject`.
 
@@ -34,7 +32,7 @@ This uses a [Match Text](/language/standard/documents#match-text) action to chec
 
 ---
 
-### Base64 Encode File
+## Base64 Encode File
 
 ```
 base64File(text filePath)
@@ -54,7 +52,7 @@ playSound(audio)
 
 ---
 
-### Open SpringBoard
+## Open SpringBoard
 
 Go to the home screen.
 
@@ -66,12 +64,12 @@ This uses the [Open App](/language/standard/scripting#open-app) action to open t
 
 ---
 
-### [Make vCard](/language/vcards)
+## [Make vCard](/language/vcards)
 
 Create vCards without having to remember the format. Embed local images as an image for a menu item.
 
 ---
 
-### [Raw Action](/language/raw-actions)
+## [Raw Action](/language/raw-actions)
 
 Create actions by inputting full identifiers and parameters to use actions not supported by Cherri.
