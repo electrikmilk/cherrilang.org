@@ -203,7 +203,7 @@ wait(integer seconds)
 
 ### Wait to Return
 
-Wait for the user to return to the Shortcut. This usually precedes an action that directs the user out of the Shortcuts app.
+Suspend the Shortcut until the user returns to the Shortcuts app.
 
 ```
 waitToReturn()
