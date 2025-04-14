@@ -1421,6 +1421,8 @@ Create an iCloud link for a Shortcut.
 createShortcutLink(variable shortcut)
 ```
 
+---
+
 ### Search Shortcuts
 
 Search Shortcuts.
