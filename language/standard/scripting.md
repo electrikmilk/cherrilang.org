@@ -1385,6 +1385,14 @@ makeShortcut(text name, boolean ?open = true)
 
 ---
 
+### Create iCloud Shortcut Link
+
+Create an iCloud link for a Shortcut.
+
+```
+createShortcutLink(variable shortcut)
+```
+
 ### Search Shortcuts
 
 Search Shortcuts.
