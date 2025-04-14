@@ -5,7 +5,7 @@ parent: Documentation
 nav_order: 6
 ---
 
-# ControlFlow
+# Control Flow
 {: .no_toc }
 
 ## Table of contents
