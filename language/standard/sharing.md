@@ -69,6 +69,21 @@ airdrop(variable input)
 
 ---
 
+### Set Airdrop Receiving
+
+```
+setAirdropReceiving(enum ?state = "Everyone")
+```
+
+#### States
+- No One
+- Contacts Only
+- Everyone
+
+_**Note:** Enum values are case-sensitive._
+
+---
+
 ### Share
 
 Share `input` via the Share Sheet.
