@@ -154,7 +154,7 @@ getOnScreenContent()
 ## Control Flow
 
 {: .note }
-These control flow actions have been abstracted into statements: [Choose From Menu](../menus#choose-from-menu), [If](../control-flow#ifotherwise), [Repeat](../control-flow#repeat), and [Repeat With Each](../statements#repeat-with-each).
+These control flow actions have been abstracted into statements: [Choose From Menu](../menus#choose-from-menu), [If](../control-flow#ifotherwise), [Repeat](../control-flow#repeat), and [Repeat With Each](../control-flow#repeat-with-each).
 
 ---
 
