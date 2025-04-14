@@ -348,6 +348,16 @@ lockScreen()
 
 ---
 
+### Return to Homescreen
+
+Go to the home screen.
+
+```
+returnToHomescreen()
+```
+
+---
+
 ### Log Out User
 
 Logout the current user.
