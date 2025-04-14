@@ -48,6 +48,3 @@ Then, use the `chooseFromList()` action with the list and prompt.
 
 The variable `chosenItem` in the example would hold the item chosen from your list by the user.
 
----
-
-### You can also create menus using [vCards](/language/vcards).
