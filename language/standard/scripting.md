@@ -1371,6 +1371,23 @@ runAppleScript(variable input, text script)
 
 ---
 
+### Run Script over SSH
+
+Run a shell script over SSH.
+
+```
+runSSHScript(text script, variable input, text host, text port, text user, enum authType, text password)
+```
+
+#### Authentication Types
+
+- Password
+- SSH Key
+
+_**Note:** Enum values are case-sensitive._
+
+---
+
 ### Run JavaScript for Mac Automation
 
 Run JavaScript `script` on `input`.
