@@ -49,7 +49,7 @@ Runs the JavaScript code in `script` and returns the output.
 runJS(text script)
 ```
 
-**Example Usage**
+**Basic Usage**
 
 ```
 #include 'stdlib'
@@ -64,4 +64,25 @@ const code = "
 const jsResult = runJS(code)
 
 show(jsResult)
+```
+
+You can also use [`base64File()`](/language/standard/builtin#base64-encode-file) to encode a large JS file into your Shortcut without needing to paste it.
+
+`index.js`
+```
+function output(output) {
+    document.body.append(document.createTextNode(output));
+}
+
+output('Hello, World!');
+```
+
+`js.cherri`
+```
+#include 'stdlib'
+
+const jsFile = base64File("path/to/index.js")
+const jsCode = base64Decode(jsFile)
+@result = runJS(jsCode)
+show("{result}")
 ```
