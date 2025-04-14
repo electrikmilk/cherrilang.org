@@ -706,6 +706,29 @@ setVolume(number number)
 
 ---
 
+### Seek
+
+Seek currently playing.
+
+```
+seek(number magnitude, enum duration, enum ?behavior = "To Time")
+```
+
+#### Durations
+- hr
+- min
+- sec
+
+
+#### Seek Behaviors
+- To Time
+- Forward By
+- Backward By
+
+_**Note:** Enum values are case-sensitive._
+
+---
+
 ### Skip Back
 
 Skip back to the previous song.
