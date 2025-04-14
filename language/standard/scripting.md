@@ -211,6 +211,16 @@ waitToReturn()
 
 ## Device
 
+### Vibrate Device
+
+Vibrate the device. Only applies to Apple devices with the haptic engine.
+
+```
+vibrate()
+```
+
+---
+
 ### Get Battery Level
 
 Get the device's current battery level.
