@@ -132,5 +132,5 @@ Cherri will ignore the file's name and use the definition instead to create `My 
 Defines the minimum version of iOS your Shortcut supports. Warnings will be printed if you use actions that are not supported in the targeted version.
 
 ```
-#define version 16.2
+#define version 18.4
 ```
