@@ -189,7 +189,7 @@ The contents of an array value must be valid JSON syntax.
 @array += "another test"
 ```
 
-You can use the [`for`](statements#repeat-with-each) statement to iterate over the values contained in the array variable.
+You can use the [`for`](control-flow#repeat-with-each) statement to iterate over the values contained in the array variable.
 
 ```ruby
 @items = ["Item 1","Item 2"]
