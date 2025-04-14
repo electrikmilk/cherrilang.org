@@ -504,6 +504,24 @@ sleep()
 
 ---
 
+### Get Orientation
+
+Get the device orientation.
+
+```
+getOrientation(): text
+```
+
+#### Orientations
+
+- Portrait
+- Portrait Upside Down
+- Landscape Left
+- Landscape Right
+- Unknown
+
+---
+
 ### Start Screensaver
 
 Start screen saver on Mac.
