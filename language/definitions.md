@@ -111,7 +111,7 @@ These values must be separated by commas.
 
 Define the `mac` definition with a value of `true` if your Shortcut is mainly meant to be a Mac shortcut or false if it's primarily meant to be used on iOS.
 
-This is mainly to warn you if you use an action that is not supported on macOS or vice versa for non-macOS platforms.
+This will make it so an error is thrown if you use an action that is not supported on macOS or vice versa for non-macOS platforms.
 
 ```
 #define mac true
