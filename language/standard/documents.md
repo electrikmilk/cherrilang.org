@@ -752,3 +752,13 @@ Detect the language of `text`.
 ```
 detectLanguage(text text)
 ```
+
+## USDZ
+
+### Convert to USDZ
+
+Convert a file to USDZ.
+
+```
+convertToUSDZ(variable file)
+```
