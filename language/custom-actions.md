@@ -7,9 +7,9 @@ nav_order: 12
 
 # Custom Actions
 
-You can define custom actions that can then be used later in a Shortcut the same way you would a standard action. This of course allows you to not have to repeat yourself and cut down on the total actions in your Shortcut.
+You can define custom actions that can be used later in a Shortcut like a standard action. This allows you to not have to repeat yourself and cut down on the total actions in your Shortcut.
 
-These can contain variables, calls to other actions, etc. that you can then reference anywhere.
+These can contain variables, calls to other actions, etc., that you can then reference anywhere.
 
 Custom actions have scope in a sense, as they are run inside your Shortcut using generated injected code at the top of the resulting Shortcut.
 
@@ -21,6 +21,19 @@ action myCustomAction() {
 }
 
 myCustomAction()
+```
+
+## Output Type
+
+Future release
+{: .label .label-purple }
+
+You can define an output type for your custom action so that an error can be thrown if the output is used where that type is not expected.
+
+```
+action sum(number op1, number op2): number {
+    // ...
+}
 ```
 
 ## Defining arguments
@@ -38,13 +51,13 @@ add(2,2)
 
 Read the [types](types) reference for all types you can use for arguments.
 
-When calling your custom action, keep in mind the arguments you use will be type-checked against your type definitions for each of your arguments.
+When calling your custom action, keep in mind that the arguments you use will be type-checked against your type definitions for each of your arguments.
 
 ## Returning a value
 
 This is not required, but if you would like to return a value from your custom action to a call of your custom action, assign the reference to your custom action to a variable just like you would a standard action.
 
-Then inside the body of your custom action, use the `output()` action to return a result.
+Then, inside the body of your custom action, use the `output()` action to return a result.
 
 ```ruby
 action myCustomAction() {
@@ -81,9 +94,9 @@ show("{output}")
 
 ## How do they work?
 
-The contents of these actions run separately from your main code inside your Shortcut by using the **Run Shortcut** action and passing a **Dictionary** action containing data that will be detected by injected Cherri code that contains each of the defined actions that are used in the Cherri code below it.
+The contents of these actions run separately from your main code inside your Shortcut by using the **Run Shortcut** action and passing a **Dictionary** action containing data that will be detected by the injected Cherri code that contains each of the defined actions that are used in the Cherri code below it.
 
-This is a part of the language that does not translate 1-1, but for the functionality it provides it can be a powerful tool.
+This is a part of the language that does not translate 1-1, but for the functionality it provides, it can be a powerful tool.
 
 ```ruby
 action add(number op1, number op2) {
@@ -120,7 +133,7 @@ if ShortcutInput {
 
 The compiler will generate this and inject it into the top of the resulting Shortcut.
 
-Then as you can see later, when you reference the action described `add(number, number)`
+Then, as you can see later, when you reference the action described `add(number, number)`
 
 ```
 add(2,2)
