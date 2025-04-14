@@ -106,6 +106,12 @@ One caveat to raw text is that it is not allowed in Dictionaries or Arrays. This
 @expression = 54 + (6 * 7)
 ```
 
+Only two operands will compile to a **Math** action:
+
+```ruby
+@expression = 54 + 6
+```
+
 You can use a variable reference in an expression:
 
 ```ruby
