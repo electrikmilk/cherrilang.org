@@ -153,7 +153,6 @@ getOnScreenContent()
 
 ## Control Flow
 
-{: .note }
 These control flow actions have been abstracted into statements:
 - [If/Otherwise](../control-flow#ifotherwise)
 - [Repeat](../control-flow#repeat)
