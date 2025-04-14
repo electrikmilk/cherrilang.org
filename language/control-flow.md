@@ -1,11 +1,11 @@
 ---
-title: Statements
+title: Control Flow
 layout: default
 parent: Documentation
 nav_order: 6
 ---
 
-# Statements
+# ControlFlow
 {: .no_toc }
 
 ## Table of contents
@@ -14,7 +14,7 @@ nav_order: 6
 1. TOC
 {:toc}
 
-## If/Else
+## If/Otherwise
 
 Use the following syntax:
 
@@ -46,6 +46,8 @@ The first operand of the if statement must be a variable. The second can optiona
 - `<=` Less or Equal
 
 ### Has Value/Does Not
+
+For these conditional operators, you can compare the reference, or if checking for no value, prepend with a `!`.
 
 ```ruby
 @variable: text
@@ -108,7 +110,6 @@ The globals `RepeatIndex` and `RepeatItem` are still available, but it is recomm
 
 `if/else`, `repeat`, `for`, and `menu` can all be nested inside each other and vice versa.
 
-## Nothing actions at the end of statements
+## Automatic nothing actions at the end
 
-Nothing actions are automatically added to the ending block of any statement. This ensures the control flow block does not store any output to reduce memory usage.
-
+The `nothing()` actions are automatically added to the ending block of any statement. This ensures the control flow block does not store any output to reduce memory usage.
