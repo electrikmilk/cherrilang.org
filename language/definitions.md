@@ -19,7 +19,7 @@ to no input, what types it accepts as input and outputs, etc.
 
 ## Icon
 
-Define the look of your Shortcut using one of the supported colors or glyphs.
+Define the look of your Shortcut using one of the supported colors and glyphs.
 
 ### Color
 
