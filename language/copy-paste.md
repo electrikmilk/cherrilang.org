@@ -26,6 +26,9 @@ copy identifier {
 
 Use a `paste` statement to paste the contents of the pasteable on that line before the file is parsed.
 
+{: .note }
+For efficiency, you cannot use `paste` before declaring the `copy` it's using.
+
 ```ruby
 copy carbon {
     alert("Hello!")
@@ -38,10 +41,7 @@ alert("Goodbye")
 paste carbon
 ```
 
-{: .note }
-For efficiency, you cannot use `paste` before declaring the `copy` it's using.
-
-In the example, the resulting Shortcut will have an `alert("Hello")` pasted wherever you use `paste identifier`!
+In the example above, the resulting Shortcut will have an `alert("Hello")` pasted wherever you use `paste carbon`!
 
 ## Difference from custom actions and includes
 
