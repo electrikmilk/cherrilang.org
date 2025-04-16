@@ -18,7 +18,7 @@ To assign the question to something, mention the `identifier`. However, this can
 ### Example
 
 ```
-#question name "Name" "Siri"
+#question name "Enter Your Name" "Siri"
 
 alert(name, "Hello")
 ```
