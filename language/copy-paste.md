@@ -27,15 +27,15 @@ copy identifier {
 Use a `paste` statement to paste the contents of the pasteable on that line before the file is parsed.
 
 ```ruby
-copy identifier {
+copy carbon {
     alert("Hello!")
 }
 
-paste identifier
+paste carbon
 
 alert("Goodbye")
 
-paste identifier
+paste carbon
 ```
 
 {: .note }
