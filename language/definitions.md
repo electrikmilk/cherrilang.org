@@ -95,7 +95,7 @@ This defines where your Shortcut shows up, `quickactions`, `sleepmode`, etc.
 #define from menubar, sleepmode, onscreen
 ```
 
-These values must be separated by commas.
+Commas must separate these values.
 
 ### Workflows
 
@@ -106,6 +106,24 @@ These values must be separated by commas.
 - `sleepmode` - Sleep Mode
 - `watch` - Show on Apple Watch
 - `onscreen` - Receive On-Screen Content
+
+## Quick Action Types
+
+Future Release
+{: .label .label-purple }
+
+To set the quick action types, first add `quickactions` to a [`from`](#from-workflows) definition (See above).
+
+Then you can define which quick actions your Shortcut should be available in:
+
+```
+#define quickactions finder
+```
+
+### Quick Actions
+
+- `finder` - Defines it as a Quick Action in Finder.
+- `services` - Defines it as an item in the Services menu.
 
 ## macOS only or non-macOS
 
