@@ -2,13 +2,6 @@
  * Copyright (c) Cherri
  */
 
-let glyphsPosition = {
-    x: 0,
-    y: 0,
-};
-
-const hero = document.querySelector('.hero');
-
 window.onload = () => {
     setTimeout(() => {
         const codes = document.querySelectorAll('.language-ruby, .language-javascript');
