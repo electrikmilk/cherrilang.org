@@ -67,7 +67,7 @@ Commas must separate these values.
 
 ## No Input
 
-Define how your shortcut responds to no input.
+This defines how your Shortcut responds to no input.
 
 ### Stop and Respond
 
@@ -89,7 +89,7 @@ Define how your shortcut responds to no input.
 
 ## From (Workflows)
 
-This defines where your Shortcut shows up, `quickactions`, `sleepmode`, etc.
+This defines where your Shortcut appears.
 
 ```
 #define from menubar, sleepmode, onscreen
@@ -112,13 +112,15 @@ Commas must separate these values.
 Future Release
 {: .label .label-purple }
 
-To set the quick action types, first add `quickactions` to a [`from`](#from-workflows) definition (See above).
+To define quick action types, first add `quickactions` to a [`from`](#from-workflows) definition (See above).
 
-Then you can define which quick actions your Shortcut should be available in:
+Then this defines which quick actions your Shortcut should be available in.
 
 ```
-#define quickactions finder
+#define quickactions finder, services
 ```
+
+Commas must separate these values.
 
 ### Quick Actions
 
