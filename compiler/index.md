@@ -24,7 +24,3 @@ Keep in mind that this compiler is in the early stages and is undergoing heavy d
 - [sebj](https://github.com/sebj)'s [Shortcut File Format Reference](https://github.com/sebj/iOS-Shortcuts-Reference)
 
 To download property list (.plist) versions of Shortcuts for further reference, [here is a helpful Shortcut](https://routinehub.co/shortcut/13252/) (written in Cherri!)
-
-## Code Tour
-
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/gU8TsI96uww" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
