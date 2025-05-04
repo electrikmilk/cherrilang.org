@@ -24,7 +24,7 @@ Define the look of your Shortcut using one of the supported colors and glyphs.
 
 ### Color
 
-```
+```go
 #define color red
 ```
 
