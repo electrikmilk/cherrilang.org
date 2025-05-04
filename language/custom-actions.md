@@ -7,13 +7,13 @@ nav_order: 12
 
 # Custom Actions
 
-You can define custom actions that can be used later in a Shortcut like a standard action. This allows you to not have to repeat yourself and cut down on the total actions in your Shortcut.
+You can define custom actions that can be used later in a Shortcut, like standard actions. This allows you to not have to repeat yourself and cut down on the total actions in your Shortcut.
 
 These can contain variables, calls to other actions, etc., that you can then reference anywhere.
 
-Custom actions have scope in a sense, as they are run inside your Shortcut using generated injected code at the top of the resulting Shortcut.
+Custom actions have scope as they are run inside your Shortcut using generated injected code at the top of the resulting Shortcut.
 
-To define your action, then reference the action to run the contents of the custom action at that time isolated from the rest of your Shortcut.
+Define your action, then reference the action to run the contents of the custom action, isolated from the rest of your Shortcut:
 
 ```
 action myCustomAction() {
@@ -21,6 +21,21 @@ action myCustomAction() {
 }
 
 myCustomAction()
+```
+
+## Note on Instructional or Contact Comments
+
+Future Release
+{: .label .label-purple }
+
+Cherri allows for the first explicit comment action in your Shortcut to be placed at the top of the Shortcut for the user to read.
+
+```ruby
+#include 'stdlib'
+
+comment('Contact me: contact@cherrilang.org')
+
+runJS("console.log('Hello, World!')")
 ```
 
 ## Output Type
@@ -53,7 +68,7 @@ Read the [types](types) reference for all types you can use for arguments.
 
 When calling your custom action, keep in mind that the arguments you use will be type-checked against your type definitions for each of your arguments.
 
-## Returning a value
+## Returning Values
 
 This is not required, but if you would like to return a value from your custom action to a call of your custom action, assign the reference to your custom action to a variable just like you would a standard action.
 
@@ -67,7 +82,7 @@ action myCustomAction() {
 @result = myCustomAction()
 ```
 
-## Recursion & Calling Other Actions
+## Recursion & Calling Other Custom Actions
 
 It is possible to call other custom actions within the body of a custom action. You can then use this for recursion, running the same custom action with an eventual breakpoint.
 
