@@ -113,6 +113,8 @@ The contents of these actions run separately from your main code inside your Sho
 
 This is a part of the language that does not translate 1-1, but for the functionality it provides, it can be a powerful tool.
 
+### Action Definition
+
 ```ruby
 action add(number op1, number op2) {
   const result = op1 + op2
@@ -120,7 +122,7 @@ action add(number op1, number op2) {
 }
 ```
 
-This translates to this in Cherri:
+The semantics of this may change over time, but it basically translates to this in Cherri:
 
 ```ruby
 if ShortcutInput {
@@ -141,14 +143,21 @@ if ShortcutInput {
                 const result = op1 + op2
                 output("{result}")
             }
+            output(nil)
         }
     }
 }
 ```
 
-The compiler will generate this and inject it into the top of the resulting Shortcut.
+The compiler will generate this syntax and inject it into the top of the resulting Shortcut.
 
-Then, as you can see later, when you reference the action described `add(number, number)`
+It validates that the input we're receiving is a Cherri function call, then filters it down to which action is being called, then we have actions based on the action's definition that coerce the provided argument values from the input into their defined value types, then the injected custom action body is run.
+
+At the end, just in case no output was defined in the custom action body that was called, we output nothing at the end of the action call list.
+
+### Action Calls
+
+Then, when you reference the action described `add(number, number)`
 
 ```
 add(2,2)
