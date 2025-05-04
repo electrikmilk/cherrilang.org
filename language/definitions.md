@@ -6,6 +6,10 @@ nav_order: 2
 ---
 
 # Definitions
+
+Define aspects of your Shortcut, such as the color and glyph of the icon, and how it responds
+to no input, what types it accepts as input and outputs, etc.
+
 {: .no_toc }
 
 ## Table of contents
@@ -13,9 +17,6 @@ nav_order: 2
 
 1. TOC
 {:toc}
-
-Define aspects of your Shortcut, such as the color and glyph of the icon, how it responds
-to no input, what types it accepts as input and outputs, etc.
 
 ## Icon
 
