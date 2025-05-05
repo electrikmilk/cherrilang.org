@@ -24,3 +24,5 @@ Click on the info circle in the preview and go to the Setup tab to see the defin
 
 alert(name, "Hello")
 ```
+
+Normally, the title of the alert is empty. Shortcuts displays import question values this way in their native preview. This is because import questions are defined outside the actions.
