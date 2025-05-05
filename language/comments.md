@@ -34,7 +34,7 @@ Comments are not included by default in the Shortcut to help reduce the size of 
 
 This is useful for Shortcuts where the comments in your code are not relevant to the user of the Shortcut.
 
-```javascript
+```ruby
 // ...
 nothing()
 // TODO: Fix weird bug here
