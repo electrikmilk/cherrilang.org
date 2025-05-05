@@ -4,12 +4,12 @@
 
 window.onload = () => {
     setTimeout(() => {
-        const codes = document.querySelectorAll('.language-ruby, .language-javascript, .language-go');
+        const codes = document.querySelectorAll('.language-ruby, .language-javascript');
         codes.forEach(highlight => {
             const encodedSrc = encodeURIComponent(highlight.innerText);
             let frameURL = 'https://playground.cherrilang.org/preview?code=' + encodedSrc;
 
-            if (highlight.classList.contains('language-go')) {
+            if (highlight.classList.contains('language-javascript')) {
                 frameURL += '&header=1';
             }
             
