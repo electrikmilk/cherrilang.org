@@ -52,7 +52,7 @@ Use the `-comments` (`-c`) argument to include your comments as actions. If you 
 
 You can use the comment action to explicitly add a comment action without including your slash syntax comments.
 
-```javascript
+```ruby
 comment('This will always show up in the Shortcut.')
 // This will not show up in the shortcut (unless you use the comment argument).
 comment('
