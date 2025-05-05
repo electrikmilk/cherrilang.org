@@ -71,7 +71,9 @@ You can also use [`base64File()`](/language/standard/builtin#base64-encode-file)
 `index.js`
 ```
 function output(output) {
-    document.body.append(document.createTextNode(output));
+    const text = document.createElement('div');
+    text.innerHTML = output;
+    document.body.appendChild(text);
 }
 
 output('Hello, World!');
