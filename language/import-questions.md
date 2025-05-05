@@ -9,7 +9,7 @@ nav_order: 10
 
 To define an import question, use the following syntax:
 
-```
+```ruby
 #question identifier "Prompt" "Default Value"
 ```
 
@@ -17,7 +17,7 @@ To assign the question to something, mention the `identifier`. However, this can
 
 ### Example
 
-```
+```ruby
 #question name "Enter Your Name" "Siri"
 
 alert(name, "Hello")
