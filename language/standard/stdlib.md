@@ -28,7 +28,7 @@ chooseFromVCard(array items, text prompt)
 
 **Example Usage**
 
-```
+```ruby
 #include 'stdlib'
 
 @items = []
@@ -51,7 +51,7 @@ runJS(text script)
 
 **Basic Usage**
 
-```
+```ruby
 #include 'stdlib'
 
 const jsonStr = '{\"name\": \"John\", \"age\": 30\}'
