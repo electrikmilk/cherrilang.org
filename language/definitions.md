@@ -59,7 +59,7 @@ Inputs and outputs accept [content item type](/language/types.html#content-item-
 Inputs will default to all types. Outputs will default to no types. This is done to be consistent with the Shortcuts
 file format.
 
-```
+```ruby
 #define inputs image, text
 #define outputs app, file
 ```
@@ -72,19 +72,19 @@ This defines how your Shortcut responds to no input.
 
 ### Stop and Respond
 
-```
+```ruby
 #define noinput stopwith "Response"
 ```
 
 ### Get Clipboard Contents
 
-```
+```ruby
 #define noinput getclipboard
 ```
 
 ### Ask for a [content item type](/language/types.html#content-item-types):
 
-```
+```ruby
 #define noinput askfor text
 ```
 
@@ -92,7 +92,7 @@ This defines how your Shortcut responds to no input.
 
 This defines where your Shortcut appears.
 
-```
+```ruby
 #define from menubar, sleepmode, onscreen
 ```
 
@@ -117,7 +117,7 @@ To define quick action types, first add `quickactions` to a [`from`](#from-workf
 
 Then this defines which quick actions your Shortcut should be available in.
 
-```
+```ruby
 #define quickactions finder, services
 ```
 
