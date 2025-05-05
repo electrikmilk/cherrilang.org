@@ -9,7 +9,7 @@ nav_order: 10
 
 To define an import question, use the following syntax:
 
-```ruby
+```
 #question identifier "Prompt" "Default Value"
 ```
 
