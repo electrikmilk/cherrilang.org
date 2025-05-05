@@ -47,7 +47,7 @@ Notes on reducing the action count and file size of compiled Shortcuts.
 
 Using constants when applicable allows you to reference the output of an action instead of assigning it to a variable. For every variable you never mutate the value of, you can reduce your Shortcut by 1 action. This is not a lot if you have one variable, but it adds up the more variables you add to a Shortcut.
 
-```javascript
+```ruby
 const immutable = 5
 show("{immutable}")
 ```
