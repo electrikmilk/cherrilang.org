@@ -62,6 +62,8 @@ file format.
 ```ruby
 #define inputs image, text
 #define outputs app, file
+
+alert(ShortcutInput)
 ```
 
 Commas must separate these values.
@@ -74,23 +76,29 @@ This defines how your Shortcut responds to no input.
 
 ```ruby
 #define noinput stopwith "Response"
+
+alert(ShortcutInput)
 ```
 
 ### Get Clipboard Contents
 
 ```ruby
 #define noinput getclipboard
+
+alert(ShortcutInput)
 ```
 
 ### Ask for a [content item type](/language/types.html#content-item-types):
 
 ```ruby
 #define noinput askfor text
+
+alert(ShortcutInput)
 ```
 
 ## From (Workflows)
 
-This defines where your Shortcut appears.
+This defines where your Shortcut appears. Click on the info circle to view the result.
 
 ```ruby
 #define from menubar, sleepmode, onscreen
@@ -115,7 +123,7 @@ Future Release
 
 To define quick action types, first add `quickactions` to a [`from`](#from-workflows) definition (See above).
 
-Then this defines which quick actions your Shortcut should be available in.
+Then this defines which quick actions your Shortcut should be available in. Click on the info circle to view the result.
 
 ```ruby
 #define quickactions finder, services
