@@ -4,9 +4,14 @@
 
 window.onload = () => {
     setTimeout(() => {
-        const codes = document.querySelectorAll('.language-ruby, .language-javascript');
+        const codes = document.querySelectorAll('.language-ruby, .language-javascript, .language-go');
         codes.forEach(highlight => {
             const encodedSrc = encodeURIComponent(highlight.innerText);
+            let frameURL = 'https://playground.cherrilang.org/preview?code=' + encodedSrc;
+
+            if (highlight.classList.contains('language-go')) {
+                frameURL += '&header=1';
+            }
             
             const wrapper = document.createElement('div');
             wrapper.className = 'code-example';
@@ -21,7 +26,7 @@ window.onload = () => {
             iframe.frameBorder = '0';
             iframe.loading = 'lazy';
             iframe.title = 'Shortcut Preview';
-            iframe.src = 'https://playground.cherrilang.org/preview?code=' + encodedSrc;
+            iframe.src = frameURL;
             highlight.appendChild(iframe);
             
             const parentElement = highlight.parentNode;
