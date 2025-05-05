@@ -88,7 +88,7 @@ alert(ShortcutInput)
 alert(ShortcutInput)
 ```
 
-### Ask for a [content item type](/language/types.html#content-item-types):
+### Ask for a [content item type](/language/types.html#content-item-types)
 
 ```ruby
 #define noinput askfor text
