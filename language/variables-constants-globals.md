@@ -63,7 +63,7 @@ Check the [value types](types#value-types) reference to learn more about variabl
 
 ## Constants
 
-```javascript
+```ruby
 const immutable = 5
 ```
 
