@@ -17,6 +17,8 @@ To assign the question to something, mention the `identifier`. However, this can
 
 ### Example
 
+Click on the info circle in the preview and go to the Setup tab to see the defined import question.
+
 ```ruby
 #question name "Enter Your Name" "Siri"
 
