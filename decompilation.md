@@ -7,7 +7,7 @@ nav_order: 2
 # Convert Shortcut to Cherri
 
 Beta
-{: .label .label-purple }
+{: .label .label-yellow }
 
 Import and decompile a Shortcut from a file or iCloud link into Cherri code.
 
