@@ -46,7 +46,7 @@ Define the look of your Shortcut using one of the supported colors and glyphs.
 
 ### Glyph
 
-```
+```javascript
 #define glyph apple
 ```
 
