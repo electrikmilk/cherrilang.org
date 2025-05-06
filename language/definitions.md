@@ -120,14 +120,11 @@ Commas must separate these values.
 
 ## Quick Action Types
 
-Future Release
-{: .label .label-purple }
-
 To define quick action types, first add `quickactions` to a [`from`](#from-workflows) definition (See above).
 
 Then this defines which quick actions your Shortcut should be available in. Click on the info circle to view the result.
 
-```
+```ruby
 #define quickactions finder, services
 ```
 
