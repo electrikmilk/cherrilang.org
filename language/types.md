@@ -14,38 +14,6 @@ nav_order: 5
 1. TOC
 {:toc}
 
-## Content Item Types
-
-There is a concept of data types in Shortcuts known as a "content item".
-
-These are defined in Shortcuts for example `WFAppStoreAppContentItem`.
-
-In Cherri, they are shortened into singular names.
-
-| Type 	| Content Item Type 	|
-|:-------------|:------------------|
-| app 	| WFAppStoreAppContentItem 	|
-| article 	| WFArticleContentItem 	|
-| contact 	| WFContactContentItem 	|
-| date 	| WFDateContentItem 	|
-| email 	| WFEmailAddressContentItem 	|
-| folder 	| WFFolderContentItem 	|
-| file 	| WFGenericFileContentItem 	|
-| image 	| WFImageContentItem 	|
-| itunes 	| WFiTunesProductContentItem 	|
-| location 	| WFLocationContentItem 	|
-| maplink 	| WFDCMapsLinkContentItem 	|
-| media 	| WFAVAssetContentItem 	|
-| pdf 	| WFPDFContentItem 	|
-| phonenumber 	| WFPhoneNumberContentItem 	|
-| richtext 	| WFRichTextContentItem 	|
-| webpage 	| WFSafariWebPageContentItem 	|
-| text 	| WFStringContentItem 	|
-
-## Enumerations
-
-Some actions have arguments with the type `enum`, accompanied by allowed values. This type only accepts string values.
-
 ## Value Types
 
 ### Text
@@ -350,3 +318,35 @@ The `number()` action should only coerce another value to a number, as an intege
 @var
 @textVar = getDictionary(var)
 ```
+
+## Content Item Types
+
+There is a concept of data types in Shortcuts known as a "content item".
+
+These are defined in Shortcuts, for example `WFAppStoreAppContentItem`.
+
+In Cherri, they are shortened into singular names.
+
+| Type 	| Content Item Type 	|
+|:-------------|:------------------|
+| app 	| WFAppStoreAppContentItem 	|
+| article 	| WFArticleContentItem 	|
+| contact 	| WFContactContentItem 	|
+| date 	| WFDateContentItem 	|
+| email 	| WFEmailAddressContentItem 	|
+| folder 	| WFFolderContentItem 	|
+| file 	| WFGenericFileContentItem 	|
+| image 	| WFImageContentItem 	|
+| itunes 	| WFiTunesProductContentItem 	|
+| location 	| WFLocationContentItem 	|
+| maplink 	| WFDCMapsLinkContentItem 	|
+| media 	| WFAVAssetContentItem 	|
+| pdf 	| WFPDFContentItem 	|
+| phonenumber 	| WFPhoneNumberContentItem 	|
+| richtext 	| WFRichTextContentItem 	|
+| webpage 	| WFSafariWebPageContentItem 	|
+| text 	| WFStringContentItem 	|
+
+## Enumerations
+
+Some actions have arguments with the type `enum`, accompanied by allowed values. This type only accepts string values.
