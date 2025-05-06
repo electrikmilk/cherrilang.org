@@ -27,7 +27,7 @@ myCustomAction()
 
 You can define arguments for your custom action that you provide later when referencing it.
 
-```ruby
+```
 action add(number op1, number op2) {
   const result = op1 + op2
   output("{result}")
@@ -46,7 +46,7 @@ This is not required, but if you would like to return a value from your custom a
 
 Then, inside the body of your custom action, use the `output()` action to return a result.
 
-```ruby
+```
 action myCustomAction() {
   output("Hello!")
 }
@@ -144,7 +144,12 @@ At the end, just in case no output was defined in the custom action body that wa
 
 Then, when you reference the action described `add(number, number)`
 
-```
+```ruby
+action add(number op1, number op2) {
+  const result = op1 + op2
+  output("{result}")
+}
+
 add(2,2)
 ```
 
@@ -167,7 +172,7 @@ Future Release
 
 Cherri allows for the first explicit comment action in your Shortcut to be placed at the top of the Shortcut for the user to read.
 
-```ruby
+```
 #include 'stdlib'
 
 comment('Contact me: contact@cherrilang.org')
