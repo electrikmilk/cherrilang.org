@@ -125,6 +125,7 @@ To define quick action types, first add `quickactions` to a [`from`](#from-workf
 Then this defines which quick actions your Shortcut should be available in. Click on the info circle to view the result.
 
 ```ruby
+#define from quickactions
 #define quickactions finder, services
 ```
 
