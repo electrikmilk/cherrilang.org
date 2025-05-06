@@ -98,10 +98,12 @@ alert(ShortcutInput)
 
 ## From (Workflows)
 
-This defines where your Shortcut appears. Click on the info circle to view the result.
+This defines where your Shortcut appears. Click on the info circle to view the other workflows.
 
 ```ruby
 #define from menubar, sleepmode, onscreen
+
+alert(ShortcutInput)
 ```
 
 Commas must separate these values.
