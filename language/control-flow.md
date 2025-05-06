@@ -87,6 +87,10 @@ To be clear, this is a limitation of how this has been implemented in Shortcuts;
 if textVar == "test" && intVar == 1 {
     // ...
 }
+
+if textVar == "test" || intVar == 1 {
+    // ...
+}
 ```
 
 ## Loops
