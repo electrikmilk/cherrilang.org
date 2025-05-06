@@ -1284,7 +1284,7 @@ confirm(text alert, text ?title)
 Trigger a custom notification.
 
 ```
-notification(text body, text ?title, boolean ?playSound = true)
+showNotification(text body, text ?title, bool ?playSound = true, variable ?attachment)
 ```
 
 ## Numbers
