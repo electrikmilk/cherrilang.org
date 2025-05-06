@@ -5,12 +5,12 @@ parent: Documentation
 nav_order: 10
 ---
 
-# Pasteables
+# Copy/Paste Actions
 
 {: .warning }
 Strong caution against the misuse of this syntax, such as long chains of pastables pasting other pastables.
 
-Cherri has a built-in preprocessing mechanism for copy-pasting commonly used sets of actions, including variables and any other valid Cherri code.
+Cherri has a built-in preprocessing mechanism called "pastables" for copy-pasting commonly used sets of actions, including variables and any other valid Cherri code.
 
 ## Setup code to copy
 
