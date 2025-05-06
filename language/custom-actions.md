@@ -164,12 +164,9 @@ runSelf(addCherriCall)
 
 ## Note on Instructional or Contact Comments
 
-Future Release
-{: .label .label-purple }
-
 Cherri allows for the first explicit comment action in your Shortcut to be placed at the top of the Shortcut for the user to read.
 
-```
+```ruby
 #include 'stdlib'
 
 comment('Contact me: contact@cherrilang.org')
