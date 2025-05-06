@@ -9,20 +9,11 @@ nav_order: 2
 # Actions
 
 Actions in Cherri are intended to be easier to use, as in some cases, single actions have been split up into multiple
-actions to reduce the number of arguments and complexity. Some arguments are optional and some are required.
+actions to reduce the number of arguments and complexity. Some arguments are optional, and some are required.
 
 ## Standard Actions
 
-These are the standard Shortcuts actions currently supported. Currently, more are being added all the time so this list
-may be inaccurate. Not all standard actions in each category are implemented yet, Scripting is the most complete.
-
-Standard actions are always available and do not need to be imported.
-
-### In progress
-
-- [Calendar](standard/calendar) `23/30`
-
-Some actions may not be implemented due to difficulty implementing them practically into the language.
+Standard actions are always available and do not need to be imported. Below are categories of standard Shortcut actions currently supported.
 
 [Please report incomplete or non-working actions](https://github.com/electrikmilk/cherri/issues)
 
