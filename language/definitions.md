@@ -98,7 +98,7 @@ alert(ShortcutInput)
 
 ## From (Workflows)
 
-This defines where your Shortcut appears. Click on the info circle to view the other workflows.
+This defines where your Shortcut appears.
 
 ```ruby
 #define from menubar, sleepmode, onscreen
@@ -140,7 +140,7 @@ Commas must separate these values.
 
 ## macOS only or non-macOS
 
-Define the `mac` definition with a value of `true` if your Shortcut is mainly meant to be a Mac shortcut or false if it's primarily meant to be used on iOS.
+Define the `mac` definition with a value of `true` if your Shortcut is mainly meant to be a Mac shortcut, or false if it's primarily meant to be used on iOS.
 
 This will make it so an error is thrown if you use an action that is not supported on macOS or vice versa for non-macOS platforms.
 
