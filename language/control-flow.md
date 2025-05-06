@@ -74,9 +74,6 @@ if intVar <> 5 7 {
 
 ### Multiple Conditions
 
-Future Release
-{: .label .label-purple }
-
 You can use multiple conditions by separating each condition with the same logical operator:
 
 - `&&` And
@@ -84,7 +81,7 @@ You can use multiple conditions by separating each condition with the same logic
 
 To be clear, this is a limitation of how this has been implemented in Shortcuts; only "Any" (`||`) or "All" (`&&`) are allowed for logical comparison of conditions.
 
-```
+```ruby
 @textVar = "test"
 @intVar = 1
 if textVar == "test" && intVar == 1 {
