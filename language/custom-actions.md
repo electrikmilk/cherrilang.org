@@ -169,7 +169,7 @@ Cherri allows for the first explicit comment action in your Shortcut to be place
 ```ruby
 #include 'stdlib'
 
-comment('Contact me: contact@cherrilang.org')
+comment('Contact me: brandon@cherrilang.org')
 
 runJS("console.log('Hello, World!')")
 ```
