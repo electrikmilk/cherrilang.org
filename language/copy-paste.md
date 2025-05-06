@@ -41,7 +41,7 @@ alert("Goodbye")
 paste carbon
 ```
 
-In the example above, the resulting Shortcut will have an `alert("Hello")` pasted wherever you use `paste carbon`!
+In the example above, the resulting Shortcut will have an `alert("Hello")` pasted wherever `paste carbon` is used.
 
 ## Difference from custom actions and includes
 
