@@ -56,9 +56,6 @@ action myCustomAction() {
 
 ## Output Type
 
-Future Release
-{: .label .label-purple }
-
 You can define an output type for your custom action so that an error can be thrown if the output is used where that type is not expected.
 
 ```
