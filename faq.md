@@ -7,11 +7,11 @@ layout: home
 
 ## What's a Shortcut?
 
-A Shortcut is a custom automation created by users on Apple platforms (Mac, iPhone, etc.). It is composed of metadata and "actions," each performs a task on the device based on the configuration similar to a programming language with functions and control flow. In this way, it becomes a way to program custom software for Apple devices without needing to write an app in Swift and wait for approval from the Apple App Store.
+A Shortcut is a custom automation created by users on Apple platforms (Mac, iPhone, etc.). It is composed of metadata and "actions," each performs a task on the device based on the configuration, similar to a programming language with functions and control flow. In this way, it becomes a way to program custom software for Apple devices without needing to write an app in Swift and wait for approval from the Apple App Store.
 
 ## What makes Cherri different from other Shortcuts programming languages?
 
-Its primary platform is macOS. The restriction where Shortcuts must be signed, which unfortunately discontinued many iOS app-based Shortcut languages, has shown that a Shortcuts language will likely be more sustainable with fewer restrictions placed on macOS (and only macOS can sign Shortcuts). This also creates a better developer experience (no tiny tapping!).
+Its primary platform is macOS. The restriction that Shortcuts must be signed, which unfortunately discontinued many iOS app-based Shortcut languages, has shown that a Shortcuts language will likely be more sustainable with fewer restrictions placed on macOS (and only macOS can sign Shortcuts). This also creates a better developer experience (no tiny tapping!).
 
 ## Why macOS Only?
 
@@ -24,7 +24,7 @@ macOS. It will then be synced to your other Apple devices.
 
 However, I have made a [Cherri Playground](https://playground.cherrilang.org/) that lets you play with the Cherri compiler on any platform. It has a signing server and will turn out valid Shortcuts on any platform with a web browser, primarily for those looking to write and compile Shortcuts on their iPhone or iPad. 
 
-If you [build from source](/install#build-from-source) the compiler will use RoutineHub's HubSign to sign the Shortcut, but a Windows build is still being worked on and tested before it can be included in a release.
+If you [build from source](/install#build-from-source), the compiler will use RoutineHub's HubSign to sign the Shortcut, but a Windows build is still being worked on and tested before it can be included in a release.
 
 ### Signing Shortcuts on non-macOS Platforms
 
@@ -40,7 +40,7 @@ Additionally, The Hubsign service and emulation are available. However, they are
 
 ### Is it possible to build and run on other platforms?
 
-Of course, you can still build and run the compiler on any platform the Go programming language will compile on. Cherri will skip signing the compiled Shortcut but it will still compile. I don't make builds for those platforms so that no one is confused and thinks that Shortcuts compiled using Cherri on other platforms will be able to be imported and run on any of their Apple devices.
+Of course, you can still build and run the compiler on any platform the Go programming language will compile on. Cherri will skip signing the compiled Shortcut but it will still compile. I don't make builds for those platforms, so that no one is confused and thinks that Shortcuts compiled using Cherri on other platforms will be able to be imported and run on any of their Apple devices.
 
 Also, the compiler is currently developed and tested on macOS only, so it will otherwise work best on a Unix-like system that can compile Go code, like Linux or BSD.
 
@@ -61,9 +61,8 @@ Here is an _idealistic_ roadmap for the project. Everything after task 5 is more
  - [x] ~~Be able to compile a working shortcut~~
  - [x] ~~Implement most paradigms (if/else, vars, globals, etc.)~~
  - [x] ~~Web editor/playground~~ [playground.cherrilang.org](https://playground.cherrilang.org)
- - [x] ~~Add a dedicated Mac web server to sign the Shortcuts made using~~ [playground.cherrilang.org](https://playground.cherrilang.org). ~~This way, anyone could use Cherri on any platform, making it accessible mostly notably to iOS users~~
+ - [x] ~~Add a dedicated Mac web server to sign the Shortcuts made using~~ [playground.cherrilang.org](https://playground.cherrilang.org). ~~This way, anyone could use Cherri on any platform, making it accessible most notably to iOS users~~
  - [x] ~~9/10 "It just works" and compiles valid and runnable Shortcuts~~
  - [x] Decompilation - Convert Shortcut file to as functional as possible Cherri code.
- - [ ] Implement the full range of **standard** actions included by default in Shortcuts. [Current Progress](https://cherrilang.org/language/actions)
+ - [x] Implement **standard** actions included by default in Shortcuts.
  - [ ] Publish the [macOS app](https://github.com/electrikmilk/cherri-macos-app) on the Mac App Store
- - [ ] Implement alternative Shortcut actions
