@@ -23,34 +23,6 @@ action myCustomAction() {
 myCustomAction()
 ```
 
-## Note on Instructional or Contact Comments
-
-Future Release
-{: .label .label-purple }
-
-Cherri allows for the first explicit comment action in your Shortcut to be placed at the top of the Shortcut for the user to read.
-
-```ruby
-#include 'stdlib'
-
-comment('Contact me: contact@cherrilang.org')
-
-runJS("console.log('Hello, World!')")
-```
-
-## Output Type
-
-Future Release
-{: .label .label-purple }
-
-You can define an output type for your custom action so that an error can be thrown if the output is used where that type is not expected.
-
-```
-action sum(number op1, number op2): number {
-    // ...
-}
-```
-
 ## Defining arguments
 
 You can define arguments for your custom action that you provide later when referencing it.
@@ -80,6 +52,19 @@ action myCustomAction() {
 }
 
 @result = myCustomAction()
+```
+
+## Output Type
+
+Future Release
+{: .label .label-purple }
+
+You can define an output type for your custom action so that an error can be thrown if the output is used where that type is not expected.
+
+```
+action sum(number op1, number op2): number {
+    // ...
+}
 ```
 
 ## Recursion & Calling Other Custom Actions
@@ -173,4 +158,19 @@ const addCherriCall = {
 }
 
 runSelf(addCherriCall)
+```
+
+## Note on Instructional or Contact Comments
+
+Future Release
+{: .label .label-purple }
+
+Cherri allows for the first explicit comment action in your Shortcut to be placed at the top of the Shortcut for the user to read.
+
+```ruby
+#include 'stdlib'
+
+comment('Contact me: contact@cherrilang.org')
+
+runJS("console.log('Hello, World!')")
 ```
