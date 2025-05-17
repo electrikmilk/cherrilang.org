@@ -16,11 +16,13 @@ Images are 1024x300px, 72ppi.
 
 <div style="text-align: center">
 
-<img src="/assets/badge.png" width="300" alt="Standard Badge"/>
+<img src="/assets/badge.png" width="300" alt="Standard Badge"/><br/>
 
 <a href="/assets/badge.png" download="Cherri Badge.png" class="btn btn-red" target="_blank">Download Badge</a>
 
-<img src="/assets/badge_dark.png" width="300" alt="Dark Backgorund Badge"/>
+<hr/>
+
+<img src="/assets/badge_dark.png" width="300" alt="Dark Backgorund Badge"/><br/>
 
 <a href="/assets/badge_dark.png" download="Cherri Badge Dark.png" class="btn btn-red" target="_blank">Download Badge</a>
 
