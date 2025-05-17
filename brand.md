@@ -1,6 +1,6 @@
 ---
 title: Brand
-layout: home
+layout: default
 nav_order: 12
 ---
 
