@@ -18,13 +18,25 @@ Images are 1024x300px, 72ppi.
 
 <img src="/assets/badge.png" width="300" alt="Standard Badge"/><br/>
 
-<a href="/assets/badge.png" download="Cherri Badge.png" class="btn btn-red" target="_blank">Download Badge</a>
+<a href="/assets/badge_1x.png" download="Cherri Badge.png" class="btn btn-red" target="_blank">Download Badge</a>
 
 <hr/>
 
 <img src="/assets/badge_dark.png" width="300" alt="Dark Backgorund Badge"/><br/>
 
-<a href="/assets/badge_dark.png" download="Cherri Badge Dark.png" class="btn btn-red" target="_blank">Download Badge</a>
+<a href="/assets/badge_dark_1x.png" download="Cherri Badge Dark.png" class="btn btn-red" target="_blank">Download Badge</a>
+
+<hr/>
+
+<img src="/assets/badge.png" width="1024" alt="Standard Badge"/><br/>
+
+<a href="/assets/badge.png" download="Cherri Badge Large.png" class="btn btn-red" target="_blank">Download Badge</a>
+
+<hr/>
+
+<img src="/assets/badge_dark.png" width="1024" alt="Dark Backgorund Badge"/><br/>
+
+<a href="/assets/badge_dark.png" download="Cherri Badge Large Dark.png" class="btn btn-red" target="_blank">Download Badge</a>
 
 </div>
 
