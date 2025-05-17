@@ -18,21 +18,11 @@ Smaller badges are 391 × 119, 72ppi.
 
 <img src="/assets/badge.png" width="300" alt="Standard Badge"/>
 
-
-```markdown
-[![Made with Cherri](https://i.imgur.com/tEwLvwX.png)](https://cherrilang.org)
-```
-
-
 <a href="/assets/badge_1x.png" download="Cherri Badge.png" class="btn btn-red" target="_blank">Download Badge</a>
 
 <hr/>
 
 <img src="/assets/badge_dark.png" width="300" alt="Dark Backgorund Badge"/>
-
-```markdown
-[![Made with Cherri](https://i.imgur.com/tEwLvwX.png)](https://cherrilang.org)
-```
 
 <a href="/assets/badge_dark_1x.png" download="Cherri Badge Dark.png" class="btn btn-red" target="_blank">Download Badge</a>
 
