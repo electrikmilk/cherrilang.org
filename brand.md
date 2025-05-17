@@ -12,7 +12,7 @@ Here you'll find resources for advertising you use Cherri, or using Cherri brand
 
 Here you'll find some developer badges for advertising that you used Cherri to make your Shortcuts, if you'd like.
 
-Images are 1024x300px, 72ppi.
+Smaller badges are 391 × 119, 72ppi.
 
 <div style="text-align: center">
 
@@ -37,6 +37,8 @@ Images are 1024x300px, 72ppi.
 <a href="/assets/badge_dark_1x.png" download="Cherri Badge Dark.png" class="btn btn-red" target="_blank">Download Badge</a>
 
 <hr/>
+
+Larger badges are 1024x300px, 72ppi.
 
 <img src="/assets/badge.png" width="1024" alt="Standard Badge"/><br/>
 
