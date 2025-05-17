@@ -1,0 +1,28 @@
+---
+title: Donate
+nav_order: 13
+---
+
+# Donate to the Project
+
+## RoutineHub Creator Program
+
+You can support the project through my RoutineHub profile through their creator program at [https://routinehub.co/user/electrikmilk](https://routinehub.co/user/electrikmilk).
+
+You can give $5/mo, or if you really wanna help out, you can give $25/mo.
+
+## GitHub Sponsors
+
+You can support the project through my GitHub sponsors at: [https://github.com/sponsors/electrikmilk](https://github.com/sponsors/electrikmilk).
+
+You can give either a one-time or a monthly donation.
+
+## Costs
+
+As I explain (better) in my GH sponsors intro, this would help cover the server costs of the playground site, and eventually, this would help support an Apple developer account, where I could try to get the macOS IDE approved on the App Store in the same way as Jellycuts' macOS app.
+
+## Disclaimer
+
+As I say in my GH sponsors intro, I am doing this for fun out of love for Shortcuts and the developer community that has spawned around it,
+and I have a full-time job; I'm not struggling to support the costs. Please don't feel like you are expected to support me in doing this. 
+I appreciate whatever support people give, but never feel like you have to give. Thank you.
