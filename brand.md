@@ -1,6 +1,7 @@
 ---
 title: Brand
 layout: home
+nav_order: 12
 ---
 
 # Branding
