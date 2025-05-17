@@ -14,6 +14,8 @@ Here you'll find some developer badges for advertising that you used Cherri to m
 
 Images are 1024x300px, 72ppi.
 
+<div style="text-align: center">
+
 <img src="/assets/badge.png" width="300" alt="Standard Badge"/>
 
 <a href="/assets/badge.png" download="Cherri Badge.png" class="btn btn-red" target="_blank">Download Badge</a>
@@ -21,6 +23,8 @@ Images are 1024x300px, 72ppi.
 <img src="/assets/badge_dark.png" width="300" alt="Dark Backgorund Badge"/>
 
 <a href="/assets/badge_dark.png" download="Cherri Badge Dark.png" class="btn btn-red" target="_blank">Download Badge</a>
+
+</div>
 
 It is not required, but appreciated to use these badges and add a link to this website to them. Thank you.
 
