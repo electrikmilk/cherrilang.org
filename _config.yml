@@ -40,6 +40,10 @@ nav_external_links:
     url: https://glyphs.cherrilang.org/
     hide_icon: false
     opens_in_new_tab: true
+  - title: Merch
+    url: https://www.redbubble.com/people/Cherrilang/shop
+    hide_icon: false
+    opens_in_new_tab: true
 
 footer_content: "Copyright &copy;. Distributed under the <a href=\"https://github.com/electrikmilk/cherri/blob/main/LICENSE\">GPL-2.0 License.</a> Siri Shortcuts and Mac are registered trademarks of Apple Inc. Apple is not involved in this project in any way. Do not contact Apple Support unless you are having an issue with the Shortcuts app itself."
 
