@@ -5,9 +5,11 @@ layout: home
 
 # Branding
 
-Here you'll find some developer badges for advertising that you used Cherri to make your Shortcuts, if you'd like.
+Here you'll find resources for advertising you use Cherri, or using Cherri branding in your project.
 
 ## Developer Badges
+
+Here you'll find some developer badges for advertising that you used Cherri to make your Shortcuts, if you'd like.
 
 Images are 1024x300px, 72ppi.
 
@@ -15,9 +17,9 @@ Images are 1024x300px, 72ppi.
 
 <img src="/assets/badge_dark.png" width="300" alt="Dark Backgorund Badge"/>
 
-## Brand Guide
+## Brand Kit
 
-If you plan to use the Cherri logo in a graphic or in your own project in various ways, please refer to the brand guide and use the assets in the kit.
+If you plan to use the Cherri logo in a graphic or your project in various ways, please refer to the brand guide you can download below, and use the assets provided in the kit.
 
 <a href="/assets/cherri-brand-kit.zip" class="btn btn-red" target="_blank">Download Brand Kit</a>
 
