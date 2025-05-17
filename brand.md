@@ -16,13 +16,13 @@ Smaller badges are 391 × 119, 72ppi.
 
 <div style="text-align: center">
 
-<img src="/assets/badge.png" width="300" alt="Standard Badge"/>
+<img src="/assets/badge.png" width="300" alt="Standard Badge"/><br/>
 
 <a href="/assets/badge_1x.png" download="Cherri Badge.png" class="btn btn-red" target="_blank">Download Badge</a>
 
 <hr/>
 
-<img src="/assets/badge_dark.png" width="300" alt="Dark Backgorund Badge"/>
+<img src="/assets/badge_dark.png" width="300" alt="Dark Backgorund Badge"/><br/>
 
 <a href="/assets/badge_dark_1x.png" download="Cherri Badge Dark.png" class="btn btn-red" target="_blank">Download Badge</a>
 
