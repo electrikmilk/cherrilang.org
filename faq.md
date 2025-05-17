@@ -1,6 +1,6 @@
 ---
 title: FAQ
-layout: home
+layout: default
 nav_order: 11
 ---
 
