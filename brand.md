@@ -19,7 +19,7 @@ Images are 1024x300px, 72ppi.
 <img src="/assets/badge.png" width="300" alt="Standard Badge"/><br/>
 
 ```markdown
-[<img alt="Made with Cherri" src="https://i.imgur.com/tEwLvwX.png" width="128" />](https://cherrilang.org)
+[![Made with Cherri](https://i.imgur.com/tEwLvwX.png)](https://cherrilang.org)
 ```
 
 <a href="/assets/badge_1x.png" download="Cherri Badge.png" class="btn btn-red" target="_blank">Download Badge</a>
@@ -29,7 +29,7 @@ Images are 1024x300px, 72ppi.
 <img src="/assets/badge_dark.png" width="300" alt="Dark Backgorund Badge"/><br/>
 
 ```markdown
-[<img alt="Made with Cherri" src="https://i.imgur.com/tEwLvwX.png" width="128" />](https://cherrilang.org)
+[![Made with Cherri](https://i.imgur.com/tEwLvwX.png)](https://cherrilang.org)
 ```
 
 <a href="/assets/badge_dark_1x.png" download="Cherri Badge Dark.png" class="btn btn-red" target="_blank">Download Badge</a>
