@@ -20,7 +20,7 @@ You can give either a one-time or a monthly donation.
 
 ## Merch Shop
 
-We have a RedBubble shop where you can support the project by buying a T-shirt, Mug, etc.
+We have a RedBubble shop coming soon where you can support the project by buying a T-shirt, Hat, Mug, etc.
 
 <script type="text/javascript" src="https://www.redbubble.com/assets/external_portfolio.js"></script>
 <script id="rb-xzfcxvzx" type="text/javascript">new RBExternalPortfolio('www.redbubble.com', 'cherrilang', 2, 2).renderIframe();</script>
