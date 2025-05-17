@@ -22,6 +22,8 @@ Images are 1024x300px, 72ppi.
 
 <a href="/assets/badge_dark.png" download="Cherri Badge Dark.png" class="btn btn-red" target="_blank">Download Badge</a>
 
+It is not required, but appreciated to use these badges and add a link to this website to them. Thank you.
+
 ## Brand Kit
 
 If you plan to use the Cherri logo in a graphic or your project in various ways, please refer to the brand guide you can download below, and use the assets provided in the kit.
