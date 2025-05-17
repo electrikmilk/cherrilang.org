@@ -16,9 +16,10 @@ Images are 1024x300px, 72ppi.
 
 <div style="text-align: center">
 
-<img src="/assets/badge.png" width="300" alt="Standard Badge"/><br/>
+<img src="/assets/badge.png" width="300" alt="Standard Badge"/>
+<br/>
 
-```markdown
+```
 [![Made with Cherri](https://i.imgur.com/tEwLvwX.png)](https://cherrilang.org)
 ```
 
@@ -26,9 +27,10 @@ Images are 1024x300px, 72ppi.
 
 <hr/>
 
-<img src="/assets/badge_dark.png" width="300" alt="Dark Backgorund Badge"/><br/>
+<img src="/assets/badge_dark.png" width="300" alt="Dark Backgorund Badge"/>
+<br/>
 
-```markdown
+```
 [![Made with Cherri](https://i.imgur.com/tEwLvwX.png)](https://cherrilang.org)
 ```
 
