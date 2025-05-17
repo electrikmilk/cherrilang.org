@@ -22,6 +22,6 @@ Images are 1024x300px, 72ppi.
 
 If you plan to use the Cherri logo in a graphic or your project in various ways, please refer to the brand guide you can download below, and use the assets provided in the kit.
 
-<a href="/assets/cherri-brand-kit.zip" class="btn btn-red" target="_blank">Download Brand Kit</a>
+<a href="/assets/cherri-brand-kit.zip" download="Cherri Brand Kit.zip" class="btn btn-red" target="_blank">Download Brand Kit</a>
 
 Please email [brandon@cherrilang.org](mailto:brandon@cherrilang.org) for any questions the guide does not answer.
