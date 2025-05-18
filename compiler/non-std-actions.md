@@ -15,11 +15,16 @@ The easiest way to add actions from a 3rd party app or your own Shortcuts extens
 
 `my-app-actions.cherri`
 ```
-action createPost(text postText) {
+action createPost(text postText, var attachment) {
     const output = rawAction("com.example.app.createpost", {
+        "WFPost": "{postText}",
         "WFInput": "{attachment}"
     })
     output("{output}")
+}
+
+copy TurnOnTV {
+    rawAction("com.example.app.turnon")
 }
 ```
 
