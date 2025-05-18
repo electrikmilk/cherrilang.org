@@ -7,6 +7,22 @@ nav_order: 2
 
 # Defining Non-Standard Actions
 
+## Using raw actions
+
+The easiest way to add actions from a 3rd party app or your own Shortcuts extension app is to create a Cherri file with either [pastables](/language/pastables) or [custom actions](/language/custom-actions).
+
+**Example:**
+
+`my-app-actions.cherri`
+```
+action createPost(text postText) {
+    const output = rawAction("com.example.app.createpost", {
+        "WFInput": "{attachment}"
+    })
+    output("{output}")
+}
+```
+
 ## Define a library
 
 Libraries are defined in the `makeLibraries()` function in [`action.go`](https://github.com/electrikmilk/cherri/blob/main/action.go).
