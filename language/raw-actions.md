@@ -20,14 +20,14 @@ This defines a text action with the text `Hello World!`. This action is already 
 To reference a variable, you use an inline string variable (e.g.,`"{variable}"`).
 
 ```
-action saveFile(text path, var file) {
+action saveFile(text path, var file, promptSave bool, overwrite bool) {
     rawAction("is.workflow.actions.documentpicker.save", {
          "WFFileDestinationPath": "{path}",
-         "WFAskWhereToSave": true,
-         "WFSaveFileOverwrite": false,
+         "WFAskWhereToSave": "{promptSave}",
+         "WFSaveFileOverwrite": "{overwrite}",
          "WFInput": "{file}"
      })
 }
-
-
 ```
+
+Again, just like with the text action, there is already a `saveFile()` action; this is only an example.
