@@ -28,6 +28,14 @@ copy TurnOnTV {
 }
 ```
 
+`index.cherri`
+```
+#include 'my-app-actions.cherri'
+
+@file = selectFile()
+createPost(Ask, file)
+```
+
 ## Define a library
 
 Libraries are defined in the `makeLibraries()` function in [`action.go`](https://github.com/electrikmilk/cherri/blob/main/action.go).
@@ -58,9 +66,9 @@ Again, replace `app` with the unique name you gave the file or a variant of it.
 
 ## Add to an Existing Library
 
-An existing library will have it's own file and a library definition in `makeLibraries()` in [`action.go`](https://github.com/electrikmilk/cherri/blob/main/action.go).
+An existing library will have a file and a library definition in `makeLibraries()` in [`action.go`](https://github.com/electrikmilk/cherri/blob/main/action.go).
 
-Go to the file for the library (e.g. `actions_APP.go`) and define actions in the same way as explained on this page, but use the `appIdentifier` field instead of the `identifier` field. Unlike standard actions, you must specify a `appIdentifier` field even if it matches the key.
+Go to the file for the library (e.g., `actions_APP.go`) and define actions in the same way as explained on this page, but use the `appIdentifier` field instead of the `identifier` field. Unlike standard actions, you must specify a `appIdentifier` field even if it matches the key.
 
 Use the `identifier` provided to the make actions function.
 
