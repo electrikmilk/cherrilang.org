@@ -9,7 +9,7 @@ nav_order: 2
 
 ## Using raw actions
 
-The easiest way to add actions from a 3rd party app or your own Shortcuts extension app is to create a Cherri file with either [custom actions](/language/custom-actions) or [pastables](/language/copy-paste) to wrap a [raw action](/language/raw-actions). This file can then be [included](/language/includes) to easily use the 3rd party actions.
+The easiest way to add actions from a 3rd party app or your own Shortcuts extension app is to create a Cherri file and use either [custom actions](/language/custom-actions) or [pastables](/language/copy-paste) to wrap a [raw action](/language/raw-actions). This file can then be [included](/language/includes) to easily use the 3rd party actions.
 
 **Example:**
 
