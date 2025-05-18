@@ -127,7 +127,7 @@ paste checkConnection
 
 [Learn more](language/copy-paste){: .btn }
 
-### 🥩 Define raw actions with custom identifier and parameters
+### 🥩 Define raw actions with a custom identifier and parameters
 
 ```ruby
 rawAction("is.workflow.actions.gettext", [
@@ -154,11 +154,11 @@ makeVCard("Title", "Subtitle")
 ### 🔢 Type system and type inference
 
 ```ruby
-// Declared types
+/* Declared types */
 @string: text
 @integer: number
 
-// Inferred types
+/* Inferred types */
 @txt = "Test"
 @int = 37
 ```
