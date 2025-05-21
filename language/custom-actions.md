@@ -6,6 +6,13 @@ nav_order: 12
 ---
 
 # Custom Actions
+{: .no_toc }
+
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
 
 You can define custom actions that can be used later in a Shortcut, like standard actions. This allows you to not have to repeat yourself and cut down on the total actions in your Shortcut.
 
