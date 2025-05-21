@@ -6,6 +6,13 @@ nav_order: 15
 ---
 
 # Best practices
+{: .no_toc }
+
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
 
 ## Efficiency
 
