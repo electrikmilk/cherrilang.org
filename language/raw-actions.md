@@ -7,9 +7,9 @@ nav_order: 13
 
 # Raw Action
 
-## Defining an action
-
 You can write a raw definition of an action not defined inside Cherri, in Cherri.
+
+## Defining an action
 
 Provide a string of the action `WFWorkflowActionIdentifier`. Then, optionally provide a dictionary for the `WFWorkflowActionParameters`.
 
