@@ -6,11 +6,10 @@ nav_order: 2
 ---
 
 # Definitions
+{: .no_toc }
 
 Define aspects of your Shortcut, such as the color and glyph of the icon, and how it responds
 to no input, what types it accepts as input and outputs, etc.
-
-{: .no_toc }
 
 ## Table of contents
 {: .no_toc .text-delta }
