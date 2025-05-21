@@ -8,6 +8,12 @@ nav_order: 12
 # Custom Actions
 {: .no_toc }
 
+You can define custom actions that can be used later in a Shortcut, like standard actions. This allows you to not have to repeat yourself and cut down on the total actions in your Shortcut.
+
+These can contain variables, calls to other actions, etc., that you can then reference anywhere.
+
+Custom actions have scope as they are run inside your Shortcut using generated injected code at the top of the resulting Shortcut.
+
 ## Table of contents
 {: .no_toc .text-delta }
 
@@ -15,12 +21,6 @@ nav_order: 12
 {:toc}
 
 ## Define a custom action
-
-You can define custom actions that can be used later in a Shortcut, like standard actions. This allows you to not have to repeat yourself and cut down on the total actions in your Shortcut.
-
-These can contain variables, calls to other actions, etc., that you can then reference anywhere.
-
-Custom actions have scope as they are run inside your Shortcut using generated injected code at the top of the resulting Shortcut.
 
 Define your action, then reference the action to run the contents of the custom action, isolated from the rest of your Shortcut:
 
