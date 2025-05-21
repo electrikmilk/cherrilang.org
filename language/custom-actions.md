@@ -10,7 +10,7 @@ nav_order: 12
 
 You can define custom actions that can be used later in a Shortcut, like standard actions. This allows you to not have to repeat yourself and cut down on the total actions in your Shortcut.
 
-These can contain variables, calls to other actions, etc., that you can then reference anywhere.
+These can contain variables, calls to other custom actions, that you can then reference anywhere.
 
 Custom actions have scope as they are run inside your Shortcut using generated injected code at the top of the resulting Shortcut.
 
