@@ -6,7 +6,6 @@ nav_order: 4
 ---
 
 # Variables, Constants, & Globals
-
 {: .no_toc }
 
 ## Table of contents
