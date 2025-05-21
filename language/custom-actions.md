@@ -14,6 +14,8 @@ nav_order: 12
 1. TOC
 {:toc}
 
+## Define a custom action
+
 You can define custom actions that can be used later in a Shortcut, like standard actions. This allows you to not have to repeat yourself and cut down on the total actions in your Shortcut.
 
 These can contain variables, calls to other actions, etc., that you can then reference anywhere.
@@ -30,7 +32,7 @@ action myCustomAction() {
 myCustomAction()
 ```
 
-## Defining arguments
+## Define arguments
 
 You can define arguments for your custom action that you provide later when referencing it.
 
