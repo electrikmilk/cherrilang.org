@@ -106,13 +106,6 @@ This is a part of the language that does not translate 1-1, but for the function
 
 ### Action Definition
 
-```ruby
-action add(number op1, number op2) {
-  const result = op1 + op2
-  output("{result}")
-}
-```
-
 The semantics of this may change over time, but it basically translates to this in Cherri:
 
 ```ruby
