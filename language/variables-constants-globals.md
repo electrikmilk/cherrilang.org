@@ -146,7 +146,7 @@ But you can also just inline a global in text like other variables.
 
 ### Ask Each Time
 
-The `Ask` global may be used for an action argument to prompt the user for input, but may not be used as an inline variable in text or be used as a variable value, as there is no criteria for a variable value in Shortcuts; it must be an action argument.
+The `Ask` global may be used for an action argument to prompt the user for input, but cannot be used as a variable value, as there is no criteria for a variable value in Shortcuts; it must be an action argument.
 
 ```ruby
 wait(Ask)
