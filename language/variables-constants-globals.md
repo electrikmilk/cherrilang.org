@@ -54,63 +54,11 @@ Variables are not required to be assigned a value:
 ### Variable as a Value
 
 ```ruby
-@variable = nil
+@variable = 5
 @ref = variable
 ```
 
 Check the [value types](types#value-types) reference to learn more about variable value types.
-
-## Constants
-
-```ruby
-const immutable = 5
-```
-
-Constants are the implementation of Magic Variables as they cannot be modified. When referenced, the output of the action assigned to the constant is used (magic variable) instead of inserting a reference to a variable to which the action output has been saved.
-
-```ruby
-const immutable = 5
-alert("{immutable}")
-
-@mutable = 5
-alert("{mutable}")
-```
-
-Constants can be used just like variables except that they cannot be redefined or appended to, or the compiler will throw an error.
-
-Array constants are not allowed, as creating an array value involves adding to a variable, and action outputs cannot be added to. Variable reference constants are also not allowed, as the value of a variable can change.
-
-**It is recommended to use constants when applicable as it will produce a smaller Shortcut.**
-
-## Globals
-
-Globals are case-sensitive.
-
-```ruby
-@input = ShortcutInput
-@date = CurrentDate
-@clipboard = Clipboard
-@device = Device
-```
-
-But you can also just inline a global in text like other variables.
-
-```ruby
-@shortcutInput = "{ShortcutInput}"
-```
-
-### Ask Each Time
-
-The `Ask` global may be used for an action argument to prompt the user for input, but may not be used as an inline variable in text.
-
-## Empty Variables
-
-You can declare a variable without a value:
-
-```ruby
-@emptyVar
-@nilVar = nil
-```
 
 ## Add to Variables
 
@@ -155,4 +103,56 @@ Declare an array and use the following syntax to add values to it:
 @var += 5
 @var += {"test": 5}
 /* etc... */
+```
+
+## Constants
+
+```ruby
+const immutable = 5
+```
+
+Constants are the implementation of Magic Variables, as they cannot be modified. When referenced, the output of the action assigned to the constant is used (magic variable) instead of inserting a reference to a variable to which the action output has been saved.
+
+```ruby
+const immutable = 5
+alert("{immutable}")
+
+@mutable = 5
+alert("{mutable}")
+```
+
+Constants can be used just like variables, except that they cannot be redefined or appended to, or the compiler will throw an error.
+
+Array constants are not allowed, as creating an array value involves adding to a variable, and action outputs cannot be added to. Variable reference constants are also not allowed, as the value of a variable can change.
+
+**It is recommended to use constants when applicable, as it will produce a smaller Shortcut.**
+
+## Globals
+
+Globals are case-sensitive.
+
+```ruby
+@input = ShortcutInput
+@date = CurrentDate
+@clipboard = Clipboard
+@device = Device
+```
+
+But you can also just inline a global in text like other variables.
+
+```ruby
+@shortcutInput = "{ShortcutInput}"
+```
+
+### Ask Each Time
+
+The `Ask` global may be used for an action argument to prompt the user for input, but may not be used as an inline variable in text.
+
+## Empty Variables
+
+You can declare a variable without a value:
+
+```ruby
+@emptyVar
+@nilVar = nil
 ```
