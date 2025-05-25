@@ -130,13 +130,9 @@ paste checkConnection
 ### 🥩 Define raw actions with a custom identifier and parameters
 
 ```ruby
-rawAction("is.workflow.actions.gettext", [
-      {
-          "key": "WFTextActionText",
-          "type": "string",
-          "value": "Hello, world!"
-      }
-])
+rawAction("is.workflow.actions.gettext", {
+     "WFTextActionText": "Hello, world!"
+})
 ```
 
 [Learn more](language/raw-actions){: .btn }
