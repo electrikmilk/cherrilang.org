@@ -144,7 +144,7 @@ But you can also just inline a global in text like other variables.
 @shortcutInput = "{ShortcutInput}"
 ```
 
-### Ask Each Time
+## Ask Each Time
 
 The `Ask` global may be used for an action argument to prompt the user for input, or it can be used in an inline text variable to prompt for input or to complete text.
 
@@ -156,6 +156,17 @@ wait(Ask)
 ```
 
 Keep in mind that Shortcuts may be picky about the usage of this global for an action argument.
+
+### Prompt
+
+Future release
+{: .label .label-purple }
+
+In a future release, the prompt for an `Ask` used for an action argument can be set using the following syntax:
+
+```
+wait(Ask: "How many seconds?")
+```
 
 ## Empty Variables
 
