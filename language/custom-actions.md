@@ -130,7 +130,7 @@ action fibonacci(number n) {
 }
 
 const output = fibonacci(7)
-show("{output}")
+show("{output}") // 13
 ```
 
 ## Prioritization of Instructional or Contact Comments
