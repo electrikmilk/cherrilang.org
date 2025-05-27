@@ -20,7 +20,9 @@ Custom actions have scope as they are run inside your Shortcut using generated i
 1. TOC
 {:toc}
 
-## Define a custom action
+## Definition
+
+### Defining a custom action
 
 Define your action, then reference the action to run the contents of the custom action, isolated from the rest of your Shortcut:
 
@@ -32,7 +34,9 @@ action myCustomAction() {
 myCustomAction()
 ```
 
-## Define arguments
+Keep in mind, if a custom action is used, the compiler will inject some actions at the top of your Shortcut to support this feature.
+
+### Defining arguments
 
 You can define arguments for your custom action that you provide later when referencing it.
 
@@ -49,7 +53,9 @@ Read the [types](types) reference for all types you can use for arguments.
 
 When calling your custom action, keep in mind that the arguments you use will be type-checked against your type definitions for each of your arguments.
 
-## Returning Values
+## Action Behavior
+
+### Returning a Value
 
 This is not required, but if you would like to return a value from your custom action to a call of your custom action, assign the reference to your custom action to a variable just like you would a standard action.
 
@@ -63,7 +69,7 @@ action myCustomAction() {
 @result = myCustomAction()
 ```
 
-## Output Type
+### Output Type
 
 You can define an output type for your custom action so that an error can be thrown if the output is used where that type is not expected.
 
@@ -73,7 +79,7 @@ action sum(number op1, number op2): number {
 }
 ```
 
-## Recursion & Calling Other Custom Actions
+### Recursion
 
 It is possible to call other custom actions within the body of a custom action. You can then use this for recursion, running the same custom action with an eventual breakpoint.
 
@@ -98,6 +104,20 @@ const output = fibonacci(7)
 show("{output}")
 ```
 
+## Prioritization of Instructional or Contact Comments
+
+You may have noticed that using Custom Actions injects some actions at the top of your Shortcut to power this functionality.
+
+Cherri will look for the first explicit comment action in your Shortcut if you are using a custom action you have defined, and push it to the top of the actions in your Shortcut.
+
+```ruby
+#include 'stdlib'
+
+comment('Contact me: brandon@cherrilang.org')
+
+runJS("console.log('Hello, World!')")
+```
+
 ## How do they work?
 
 The contents of these actions run separately from your main code inside your Shortcut by using the **Run Shortcut** action and passing a **Dictionary** action containing data that will be detected by the injected Cherri code that contains each of the defined actions that are used in the Cherri code below it.
@@ -106,7 +126,7 @@ This is a part of the language that does not translate 1-1, but for the function
 
 ### Action Definition
 
-The semantics of this may change over time, but it basically translates to this in Cherri:
+The semantics of this may change over time, but it roughly translates to this in Cherri:
 
 ```ruby
 if ShortcutInput {
@@ -162,16 +182,4 @@ const addCherriCall = {
 }
 
 runSelf(addCherriCall)
-```
-
-## Note on Instructional or Contact Comments
-
-Cherri allows for the first explicit comment action in your Shortcut to be placed at the top of the Shortcut for the user to read.
-
-```ruby
-#include 'stdlib'
-
-comment('Contact me: brandon@cherrilang.org')
-
-runJS("console.log('Hello, World!')")
 ```
