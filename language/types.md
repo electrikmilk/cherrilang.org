@@ -280,7 +280,7 @@ You can currently do the following type coercions.
 @textVar = var.text
 ```
 
-No `text()` action exists, as text literals create a text action. To coerce another value to text, simply reference it as an inline variable just as you would in Shortcuts.
+To coerce another value to text, simply reference it as an inline variable just as you would in Shortcuts.
 
 ```ruby
 @var = 5
