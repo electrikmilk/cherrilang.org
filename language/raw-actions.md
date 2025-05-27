@@ -27,9 +27,7 @@ This defines a text action with the text `Hello World!`. This action is already 
 Future Release
 {: .label .label-purple }
 
-Some actions' parameters do not accept a string at all, let alone one with the variable you want to use referenced inline as the value for a parameter.
-
-To use a variable value for a parameter, prepend the **single** inline variable reference brackets with the character `$`.
+To use a variable value for a parameter that only accepts a variable value, prepend an inline variable reference's brackets in a string value with the character `$`.
 
 ```
 action saveFile(variable file) {
@@ -39,6 +37,6 @@ action saveFile(variable file) {
 }
 ```
 
-Again, just like with the text action, there is already a `saveFile()` action; this is only an example.
+Again, just like with the `alert()` action, there is already a `saveFile()` action; this is only an example.
 
 Only a single variable is allowed; if this is not detected, the compiler treats the value as a string with inline variable references.
