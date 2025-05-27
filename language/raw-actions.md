@@ -6,13 +6,6 @@ nav_order: 13
 ---
 
 # Raw Action
-{: .no_toc }
-
-## Table of contents
-{: .no_toc .text-delta }
-
-1. TOC
-{:toc}
 
 You can write a raw definition of an action not defined inside Cherri, in Cherri.
 
@@ -28,24 +21,7 @@ rawAction("is.workflow.actions.gettext", {
 
 This defines a text action with the text `Hello World!`. This action is already defined in Cherri using a text literal. Still, this example demonstrates how third-party action libraries can be written in Cherri, or how actions not yet implemented in Cherri can be utilized.
 
-## Variable References
-
-### Inline String References
-
-Inline string variable references work just as they would elsewhere in Cherri.
-
-```
-action saveFile(text path) {
-    const prefix = "folder/"
-    rawAction("is.workflow.actions.documentpicker.save", {
-         "WFFileDestinationPath": "{prefix}/{path}",
-     })
-}
-```
-
-Again, just like with the text action, there is already a `saveFile()` action; this is only an example.
-
-### Variable Value
+## Variable Values
 
 Future Release
 {: .label .label-purple }
@@ -61,5 +37,7 @@ action saveFile(variable file) {
      })
 }
 ```
+
+Again, just like with the text action, there is already a `saveFile()` action; this is only an example.
 
 Only a single variable is allowed; if this is not detected, the compiler treats the value as a string with inline variable references.
