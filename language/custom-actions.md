@@ -135,9 +135,9 @@ show("{output}")
 
 ## Prioritization of Instructional or Contact Comments
 
-You may have noticed that using Custom Actions injects some actions at the top of your Shortcut to power this functionality.
+As stated previously, using any defined Custom Actions injects some actions at the top of your Shortcut to provide this functionality and keep custom actions scoped separately from the Shortcut.
 
-Cherri will look for the first explicit comment action in your Shortcut if you are using a custom action you have defined, and push it to the top of the actions in your Shortcut.
+However, Cherri will look for the first explicit comment action in your Shortcut if you are using a custom action you have defined, and push it to the top of the actions in your Shortcut so it can easily be read to give instructions or details on how to contact the author without needing to scroll past a bunch of confusing actions.
 
 ```ruby
 #include 'stdlib'
