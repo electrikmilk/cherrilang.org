@@ -179,6 +179,8 @@ So `x` now contains 1 item with a number value of `5`.
 
 ### Action Result
 
+Actions have output types. View the [actions](/language/actions) documentation to check the output type of an action, or use the `--action=` argument in the CLI.
+
 ```ruby
 @urls = url("https://apple.com","https://google.com")
 @list = list("Item 1","Item 2","Item 3")
