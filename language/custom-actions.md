@@ -139,7 +139,7 @@ show("{output}") // 13
 
 ## Prioritization of Instructional or Contact Comments
 
-Note that when the compiler reaches your first comment action, if you are using a custom action, it will push that action to the top of the Shortcut instead of adding it after the injected custom actions abstraction has been added at the top.
+Note that when the compiler reaches your first explicit comment action, if you are using a custom action, it will push that action to the top of the Shortcut instead of adding it after the injected custom actions abstraction has been added at the top.
 
 This is primarily to still be able to add an instructional or contact comment at the top of a Shortcut while also using the custom actions abstraction.
 
