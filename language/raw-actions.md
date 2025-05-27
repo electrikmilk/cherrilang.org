@@ -20,7 +20,7 @@ rawAction("is.workflow.actions.alert", {
 })
 ```
 
-This defines a text action with the text `Hello World!`. This action is already defined in Cherri using the `alert()` action. Still, this example demonstrates how third-party action libraries could be written in Cherri, or how actions not yet implemented in Cherri can be used.
+This defines a text action with the text `Hello World!`. This action is already defined in Cherri using the `alert()` action. Still, this example demonstrates how third-party action libraries could be written in Cherri, but most importantly, how any actions not implemented in Cherri can be used.
 
 ## Variable Values
 
