@@ -8,11 +8,13 @@ nav_order: 12
 # Custom Actions
 {: .no_toc }
 
-You can define custom actions that can be used later in a Shortcut, like standard actions. This allows you to not have to repeat yourself and cut down on the total actions in your Shortcut.
+Custom actions are an abstraction on top of Shortcuts that allows you to run Cherri code separately from your main code, even multiple times, recurse within it, and maybe output a value.
 
-These can contain variables, calls to other custom actions, that you can then reference anywhere.
+You can define custom actions that can be called later in a Shortcut, in the same way as standard actions.
 
-Custom actions have scope as they are run inside your Shortcut using generated injected code at the top of the resulting Shortcut.
+This allows you to not have to repeat yourself and cut down on the total actions in your Shortcut if you have actions doing the same thing in multiple places.
+
+This uses an abstraction that is injected at the top of your Shortcut, [but don't worry, the first comment is preserved](#prioritization-of-instructional-or-contact-comments).
 
 ## Table of contents
 {: .no_toc .text-delta }
@@ -135,9 +137,9 @@ show("{output}") // 13
 
 ## Prioritization of Instructional or Contact Comments
 
-As stated previously, using any defined Custom Actions injects some actions at the top of your Shortcut to provide this functionality and keep custom actions scoped separately from the Shortcut.
+Note that when the compiler reaches your first comment action, if you are using a custom action, it will push that action to the top of the Shortcut instead of adding it after the injected custom actions abstraction has been added at the top.
 
-However, Cherri will look for the first explicit comment action in your Shortcut if you are using a custom action you have defined, and push it to the top of the actions in your Shortcut so it can easily be read to give instructions or details on how to contact the author without needing to scroll past a bunch of confusing actions.
+This is primarily to still be able to add an instructional or contact comment at the top of a Shortcut while also using the custom actions abstraction.
 
 ```ruby
 #include 'stdlib'
