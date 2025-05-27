@@ -27,11 +27,12 @@ Custom actions have scope as they are run inside your Shortcut using generated i
 Define your action, then reference the action to run the contents of the custom action, isolated from the rest of your Shortcut:
 
 ```
-action myCustomAction() {
-  // do stuff...
+action add(number op1, number op2) {
+  const result = op1 + op2
+  output("{result}")
 }
 
-myCustomAction()
+add(2,2)
 ```
 
 Keep in mind, if a custom action is used, the compiler will inject some actions at the top of your Shortcut to support this feature.
@@ -41,17 +42,40 @@ Keep in mind, if a custom action is used, the compiler will inject some actions 
 You can define arguments for your custom action that you provide later when referencing it.
 
 ```
-action add(number op1, number op2) {
-  const result = op1 + op2
-  output("{result}")
+action myAction(text message) {
+    // ...
 }
-
-add(2,2)
 ```
 
 Read the [types](types) reference for all types you can use for arguments.
 
 When calling your custom action, keep in mind that the arguments you use will be type-checked against your type definitions for each of your arguments.
+
+### Optional
+
+Future release
+{: .label .label-purple }
+
+Add a `?` before the argument name to mark it as optional, meaning it is not required to be filled in. Otherwise, the compiler will complain if the argument is not filled in when the custom action is called.
+
+```
+action myAction(text ?message) {
+    // ...
+}
+```
+
+### Default Value
+
+Future release
+{: .label .label-purple }
+
+You can optionally use an assignment operator to set a default value for the argument. The compiler will warn against using the default value for this argument, as that will make for a smaller shortcut.
+
+```
+action myAction(text ?message = "Hello, World!") {
+    // ...
+}
+```
 
 ## Action Behavior
 
