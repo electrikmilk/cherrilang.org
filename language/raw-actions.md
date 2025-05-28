@@ -16,7 +16,7 @@ Provide a string of the action `WFWorkflowActionIdentifier`. Then, optionally pr
 ```ruby
 rawAction("is.workflow.actions.alert", {
      "WFAlertActionMessage": "Hello, world!",
-     "WFAlertActionCancelButtonShown": false,
+     "WFAlertActionCancelButtonShown": false
 })
 ```
 
