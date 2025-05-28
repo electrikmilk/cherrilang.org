@@ -190,7 +190,7 @@ Actions have output types. View the [actions](/language/actions) documentation t
 @location = getCurrentLocation()
 ```
 
-## Enumerations
+### Enumerations
 
 Some actions have arguments with the type `enum`, accompanied by a set of allowed values. This type only accepts specific string values.
 
