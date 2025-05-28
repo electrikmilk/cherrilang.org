@@ -190,6 +190,43 @@ Actions have output types. View the [actions](/language/actions) documentation t
 @location = getCurrentLocation()
 ```
 
+## Enumerations
+
+Some actions have arguments with the type `enum`, accompanied by allowed values. This type only accepts specific string values.
+
+To define enumerations for use as a type for [custom actions](/language/custom-actions) and [defined actions](/language/define-actions), use the following syntax:
+
+```
+enum Color {
+    'Red',
+    'Green',
+    'Blue'
+}
+
+#define action 'com.example.app.action' myCustomAction(Color color)
+
+myCustomAction("Purple") // throws an error
+```
+
+It accepts raw string comma-separated values.
+
+Various formats are accepted:
+
+```
+enum Colors
+{
+    'Red',
+    'Green',
+    'Blue'
+}
+
+enum Colors {
+    'Red', 'Green', 'Blue'
+}
+
+enum Colors {'Red','Green','Blue'}
+```
+
 ### Empty
 
 You can declare a variable with no value
@@ -348,7 +385,3 @@ In Cherri, they are shortened into singular names.
 | richtext 	| WFRichTextContentItem 	|
 | webpage 	| WFSafariWebPageContentItem 	|
 | text 	| WFStringContentItem 	|
-
-## Enumerations
-
-Some actions have arguments with the type `enum`, accompanied by allowed values. This type only accepts string values.
