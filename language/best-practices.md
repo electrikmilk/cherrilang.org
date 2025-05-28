@@ -1,11 +1,11 @@
 ---
-title: Best practices
+title: Best Practices
 layout: default
 parent: Documentation
 nav_order: 15
 ---
 
-# Best practices
+# Best Practices & Tips
 {: .no_toc }
 
 ## Table of contents
@@ -16,7 +16,7 @@ nav_order: 15
 
 ## Efficiency
 
-Notes on creating memory efficient Shortcuts at runtime in Cherri.
+Notes on creating memory-efficient Shortcuts at runtime in Cherri.
 
 ### Clear unused outputs
 
