@@ -192,7 +192,10 @@ Actions have output types. View the [actions](/language/actions) documentation t
 
 ## Enumerations
 
-Some actions have arguments with the type `enum`, accompanied by allowed values. This type only accepts specific string values.
+Some actions have arguments with the type `enum`, accompanied by a set of allowed values. This type only accepts specific string values.
+
+Future release
+{: .label .label-purple }
 
 To define enumerations for use as a type for [custom actions](/language/custom-actions) and [defined actions](/language/define-actions), use the following syntax:
 
