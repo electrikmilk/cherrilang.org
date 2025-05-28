@@ -120,7 +120,7 @@ It is possible to call other custom actions within the body of a custom action. 
 Misuse of recursion can cause a Shortcut to infinitely loop.
 
 ```ruby
-action fibonacci(number n) {
+action fibonacci(number n): number {
     if n <= 1 {
         output("{n}")
     } else {
