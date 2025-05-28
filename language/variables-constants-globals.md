@@ -138,7 +138,7 @@ Globals are case-sensitive.
 @device = Device
 ```
 
-But you can also just inline a global in text like other variables.
+However, you can also inline a global variable in text, just like other variables.
 
 ```ruby
 @shortcutInput = "{ShortcutInput}"
@@ -165,7 +165,7 @@ Future release
 In a future release, the prompt for an `Ask` used for an action argument can be set using the following syntax:
 
 ```
-wait(Ask: "How many seconds?")
+wait(Ask: 'How many seconds?')
 ```
 
 ## Empty Variables
