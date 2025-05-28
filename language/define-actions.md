@@ -1,14 +1,16 @@
 ---
-title: Define Action
+title: Define Actions
 layout: default
 parent: Documentation
-nav_order: 15
+nav_order: 13
 ---
 
-# Define Action
+# Define Actions
 
 Future Release
 {: .label .label-purple }
+
+## Definition
 
 To define a Shortcut action raw, in the same reusable way as the [standard Shortcuts actions](language/actions) in the compiler, use the following syntax similar to a [definition](language/definitions):
 
