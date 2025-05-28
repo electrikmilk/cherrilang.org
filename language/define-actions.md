@@ -12,7 +12,7 @@ Future Release
 
 ## Definition
 
-To define a Shortcut action raw, in the same reusable way as the [standard Shortcuts actions](/language/actions) in the compiler, use the following syntax similar to a [definition](/language/definitions):
+To define a Shortcut action raw, in the same reusable way as the [standard Shortcut actions](/language/actions) in the compiler, use the following syntax similar to a [definition](/language/definitions):
 
 ```
 #define action 'com.example.app.action' myCustomAction()
@@ -20,13 +20,13 @@ To define a Shortcut action raw, in the same reusable way as the [standard Short
 myCustomAction()
 ```
 
-A raw string `WFWorkflowActionIdentifier` is required betweeen `#define action` and the identifier of the action.
+A raw string `WFWorkflowActionIdentifier` is required between `#define action` and the identifier of the action.
 
 ## Arguments
 
-The syntax for the action arguments is the same as [custom actions](/language/custom-actions).
+The syntax for the action arguments is the same as [custom actions](/language/custom-actions#defining-arguments).
 
-One exception is it requires the key for the parameter the arguement will be used to create. Add a `:` after the argument name, then a raw string with the parameter key:
+One exception is that it requires the key for the parameter that the argument will be used to create. Add a `:` after the argument name, then a raw string with the parameter key:
 
 ```
 #define action 'com.example.app.action' myCustomAction(variable file: 'WFInput')
