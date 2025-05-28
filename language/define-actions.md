@@ -10,7 +10,7 @@ nav_order: 15
 Future Release
 {: .label .label-purple }
 
-To define a Shortcut action, in the same reusable way as a [standard Shortcuts actions](language/actions) in Cherri, use the following syntax similar to a defintion:
+To define a Shortcut action raw, in the same reusable way as the [standard Shortcuts actions](language/actions) in the compiler, use the following syntax similar to a [definition](language/definitions):
 
 ```
 #define action 'com.example.app.action' myCustomAction()
