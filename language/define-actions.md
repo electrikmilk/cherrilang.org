@@ -29,8 +29,22 @@ The syntax for the action arguments is the same as [custom actions](/language/cu
 One exception is that it requires the key for the parameter that the argument will be used to create. Add a `:` after the argument name, then a raw string with the parameter key:
 
 ```
-#define action 'com.example.app.action' myCustomAction(variable file: 'WFInput')
+#define action 'com.example.app.action' myCustomAction(variable file: 'WFInput'): bool
 
 @file = selectFile()
 myCustomAction(file)
+```
+
+## Add Parameters
+
+To add extra parameters in the same way as a [raw action](/language/raw-actions), add a dictionary after the definition and an optional output type.
+
+```
+#define action 'dropbox.savefile' saveToDropbox(
+    variable file: 'WFInput',
+    text path: 'WFFileDestinationPath',
+    bool ?overwrite: 'WFSaveFileOverwrite' = false
+) {
+    "WFAskWhereToSave": false
+}
 ```
