@@ -74,7 +74,7 @@ Future release
 You can optionally use an assignment operator to set a default value for the argument. The compiler will warn against using the default value for this argument, as that will make for a smaller shortcut.
 
 ```
-action myAction(text ?message = "Hello, World!") {
+action myAction(text message = "Hello, World!") {
     // ...
 }
 ```
