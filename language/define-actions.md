@@ -5,7 +5,7 @@ parent: Documentation
 nav_order: 13
 ---
 
-# Define Actions
+# Action Definitions
 
 Future Release
 {: .label .label-purple }
