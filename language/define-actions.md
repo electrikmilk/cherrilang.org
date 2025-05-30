@@ -22,6 +22,8 @@ myCustomAction()
 
 A raw string `WFWorkflowActionIdentifier` is required between `#define action` and the identifier of the action.
 
+The only exception to this is for Shortcuts actions that start with `is.workflow.actions`. If the identifier namespaces are less than 4, we assume it is a classic Shortcuts action for the convenience of defining them.
+
 ## Arguments
 
 The syntax for the action arguments is the same as [custom actions](/language/custom-actions#defining-arguments), and you can also set an [output type](/language/custom-actions#output-type).
