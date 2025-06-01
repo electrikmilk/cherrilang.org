@@ -270,6 +270,16 @@ Prompt to select a file.
 selectFile(boolean ?multiple = false)
 ```
 
+---
+
+### Select Folder
+
+Prompt to select a folder.
+
+```
+selectFolder(boolean ?multiple = false)
+```
+
 ## Files
 
 ### Filter Files
