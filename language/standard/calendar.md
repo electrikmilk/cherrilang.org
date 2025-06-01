@@ -217,13 +217,13 @@ currentDate()
 
 ### Specific Date
 
-Create date value from `date`.
+Create a date value from `date`.
 
 ```
 date(text date)
 ```
 
-#### Example Usage
+**Example Usage**
 
 ```ruby
 date("October 5, 2022")
