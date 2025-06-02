@@ -739,6 +739,16 @@ typeOf(variable input)
 
 ---
 
+### Get Object of Class
+
+Get the object of `class` from a variable.
+
+```
+getObjectOfClass(text class, variable from)
+```
+
+---
+
 ### Set Name
 
 Set the name of `item`.
