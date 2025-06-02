@@ -66,6 +66,19 @@ action myAction(text ?message) {
 }
 ```
 
+### Literal
+
+Future release
+{: .label .label-purple }
+
+Add a `!` after the type of the argument name to mark it as requiring a literal value, for parameters that do not accept a variable value.
+
+```
+action myAction(text! message) {
+    // ...
+}
+```
+
 ### Default Value
 
 Future release
