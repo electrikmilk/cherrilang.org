@@ -31,7 +31,7 @@ Attribute keywords and syntax are available:
 - `default` - For decompilation, if multiple action definitions use the same identifier, use this action by default if no other actions match better.
 - `mac` - macOS-only action.
 - `!mac` - non macOS action, iOS/iPadOS only.
-- `v{version}` - Specify minimum version number.
+- `v{version}` - Max 2: Specify an iOS version number restriction. Optional, append `>` for minimum and `<` for maximum, defaults to minimum.
 
 ## Arguments
 
