@@ -1499,7 +1499,7 @@ shortcutDetail(text detail, variable shortcut)
 Open Shortcut with name `name`.
 
 ```
-open(variable name)
+openShortcut(variable name)
 ```
 
 ---
