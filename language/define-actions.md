@@ -24,6 +24,15 @@ A raw string `WFWorkflowActionIdentifier` is required between `#define action` a
 
 The only exception to this is for Shortcuts actions that start with `is.workflow.actions`. If the identifier namespaces are less than 4, we assume it is a classic Shortcuts action for the convenience of defining them.
 
+## Attributes
+
+Attribute keywords and syntax are available:
+
+- `default` - For decompilation, if multiple action definitions use the same identifier, use this action by default if no other actions match better.
+- `mac` - macOS-only action.
+- `!mac` - non macOS action, iOS/iPadOS only.
+- `v{version}` - Specify minimum version number.
+
 ## Arguments
 
 The syntax for the action arguments is the same as [custom actions](/language/custom-actions#defining-arguments), and you can also set an [output type](/language/custom-actions#output-type).
