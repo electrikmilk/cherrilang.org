@@ -34,9 +34,6 @@ We have a Redbubble shop where you can support the project by purchasing a T-shi
 
 <a href="https://Cherrilang.redbubble.com" target="_blank" class="btn btn-red">Shop Merch on Redbubble</a>
 
-<script type="text/javascript" src="https://www.redbubble.com/assets/external_portfolio.js"></script>
-<script id="rb-xzfcxvzx" type="text/javascript">new RBExternalPortfolio('www.redbubble.com', 'cherrilang', 2, 2).renderIframe();</script>
-
 ## Costs
 
 As I explain (better) in my GH sponsors intro, this would help cover the server costs of the playground site, and eventually, this would help support an Apple developer account, where I could try to get the macOS IDE approved on the App Store in the same way as Jellycuts' macOS app.
