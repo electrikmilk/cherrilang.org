@@ -77,6 +77,10 @@ Use the glyphs search site to easily generate a Shortcut icon for Cherri outside
 
 ---
 
+[![Cherri Merch](https://github.com/user-attachments/assets/5e621a45-bd2a-4f8a-ac77-31f1c858182e)](https://cherrilang.redbubble.com/)
+
+---
+
 ## How does it work?
 
 ### 🪄 No magic variables syntax, they're constants instead
