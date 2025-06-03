@@ -77,7 +77,7 @@ Use the glyphs search site to easily generate a Shortcut icon for Cherri outside
 
 ---
 
-[![Cherri Merch](https://github.com/user-attachments/assets/5e621a45-bd2a-4f8a-ac77-31f1c858182e)](https://cherrilang.redbubble.com/)
+[![Cherri Merch](/assets/merch_ad.png)](https://cherrilang.redbubble.com/)
 
 ---
 
