@@ -42,4 +42,4 @@ As I explain (better) in my GH sponsors intro, this would help cover the server 
 
 As I say in my GH sponsors intro, I am doing this for fun out of love for Shortcuts and the developer community that has spawned around it,
 and I have a full-time job; I'm not struggling to support the costs, but I'm honestly not at a point where I feel comfortable committing to the $99/yr for a Apple developer account, but maybe eventually I will be. Please don't feel like you are expected to support me in doing this. 
-I appreciate whatever support people want to give, and that's the only reason I have these set up. Never feel like you have to. Thank you.
+I appreciate whatever support people want to give, and that's the only reason, obviously other than the described costs, that I have these set up. Never feel like you have to. Thank you.
