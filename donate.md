@@ -30,9 +30,9 @@ You can give a one-time donation to the project through my GitHub sponsors.
 
 ### Merch Shop
 
-We have a RedBubble shop where you can support the project by buying a T-shirt, Hat, Mug, etc.
+We have a Redbubble shop where you can support the project by purchasing a T-shirt, a Hat, a Mug, or other stuff.
 
-<a href="https://www.redbubble.com/people/Cherrilang/shop" target="_blank" class="btn btn-red">Shop Merch on Redbubble</a>
+<a href="https://Cherrilang.redbubble.com" target="_blank" class="btn btn-red">Shop Merch on Redbubble</a>
 
 ## Costs
 
