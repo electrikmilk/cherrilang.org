@@ -4,23 +4,33 @@ layout: default
 nav_order: 13
 ---
 
-# Support the Project
+# Donate
 
-## RoutineHub Creator Program
+## Support the Project
+
+### RoutineHub Creator Program
 
 You can support the project through my RoutineHub profile through their creator program. You can give $5/mo, or if you really wanna help out, you can give $25/mo.
 
 <a href="https://routinehub.co/user/electrikmilk" target="_blank" class="btn btn-red">Support on RoutineHub</a>
 
-## GitHub Sponsors
+### GitHub Sponsors
 
 You can support the project through my GitHub sponsors. You can give either a one-time or a monthly donation.
 
 <a href="https://github.com/sponsors/electrikmilk" target="_blank" class="btn btn-red">Support on GitHub Sponsors</a>
 
-## Merch Shop
+## One-Time Donation
 
-We have a RedBubble shop coming soon where you can support the project by buying a T-shirt, Hat, Mug, etc.
+### GitHub Sponsors
+
+You can give a one-time donation to the project through my GitHub sponsors. 
+
+<a href="https://github.com/sponsors/electrikmilk" target="_blank" class="btn btn-red">Donate on GitHub Sponsors</a>
+
+### Merch Shop
+
+We have a RedBubble shop where you can support the project by buying a T-shirt, Hat, Mug, etc.
 
 <a href="https://www.redbubble.com/people/Cherrilang/shop" target="_blank" class="btn btn-red">Shop Merch on Redbubble</a>
 
