@@ -279,7 +279,7 @@ You can declare a variable with a type but no initial value.
 
 This is particularly useful for creating a variable and then appending to it, then using it with an action that expects that type of value.
 
-Setting a variable's value type explicitly also compiles faster than having to infer the type and read the empty value such as `""`, `[]`, or `{}`. The last two in particular have a JSON parser read their empty values.
+Setting a variable's value type explicitly also compiles faster than having to infer the types from empty values like `""`, `[]`, or `{}`.
 
 ```ruby
 @t: text
@@ -324,7 +324,7 @@ To coerce another value to text, simply reference it as an inline variable just 
 
 ```ruby
 @var = 5
-@textVar = "{var.text}"
+@textVar = "{var}"
 ```
 
 Or you can use...
