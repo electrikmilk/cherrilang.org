@@ -71,7 +71,7 @@ Use the glyphs search site to easily generate a Shortcut icon for Cherri outside
 
 <br/>
 
-<a href="https://glyphs.cherrilang.org" target="_blank" class="btn btn-red">Generate Shortcut Icon</a>
+<a href="https://glyphs.cherrilang.org" target="_blank" class="btn btn-red">Generate Your Shortcut Icon</a>
 
 </div>
 
