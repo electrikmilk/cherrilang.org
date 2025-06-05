@@ -51,9 +51,9 @@ Define the look of your Shortcut using one of the supported colors and glyphs.
 
 You can find all of the identifiers for each Shortcut glyph at [glyphs.cherrilang.org](https://glyphs.cherrilang.org/).
 
-## Accepted Input & Output Types
+## Input & Output Types
 
-Inputs and outputs accept [content item type](/language/types.html#content-item-types).
+You define input and output types for your Shortcut with [content item types](/language/types.html#content-item-types).
 
 Inputs will default to all types. Outputs will default to no types. This is done to be consistent with the Shortcuts
 file format.
