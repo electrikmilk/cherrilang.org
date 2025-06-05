@@ -24,7 +24,7 @@ A raw string `WFWorkflowActionIdentifier` is required between `#define action` a
 
 The only exception to this is for Shortcuts actions that start with `is.workflow.actions`. If the identifier namespaces are less than 4, we assume it is a classic Shortcuts action for the convenience of defining them.
 
-You may see `#builtin` instead of `#define` for an action definition printed by the compiler. These actions are internally defined in the compiler and require compile-time processing that either can't be abstracted to Cherri or hasn't yet been implemented.
+You may see `#builtin` instead of `#define` for an action definition printed by the compiler. These actions are internally defined in the compiler and require compile-time processing that either cannot practically be abstracted to Cherri or hasn't yet been implemented.
 
 ## Attributes
 
