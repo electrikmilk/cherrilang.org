@@ -22,7 +22,7 @@ rawAction("is.workflow.actions.alert", {
 
 This defines an alert action with the message `Hello World!`. This action is already defined in Cherri using the `alert()` action. Still, this example demonstrates how third-party actions and entire libraries could be written in Cherri, but most importantly, how any actions not implemented in Cherri can be used.
 
-You might be interested in [action definitons](/language/define-actions) upcoming in a future release.
+However, an alternative called [action definitons](/language/define-actions) is upcoming in a future release which create reusable action definitions.
 
 ## Variable Values
 
