@@ -314,7 +314,7 @@ The following types may be used:
 
 ## Type Coercion
 
-You can do the following type coercions.
+You can do the following type coercions. See [value types](types#value-types) and [content item types](#content-item-types) for available value types you can coerce to.
 
 ### Text
 
@@ -371,6 +371,8 @@ There is a concept of data types in Shortcuts known as a "content item".
 These are defined in Shortcuts, for example `WFAppStoreAppContentItem`.
 
 In Cherri, they are shortened into singular names.
+
+These types can be used for coercion, input, and output types.
 
 | Type 	| Content Item Type 	|
 |:-------------|:------------------|
