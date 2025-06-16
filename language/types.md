@@ -311,7 +311,7 @@ The following types may be used:
 
 ## Type Coercion
 
-You can currently do the following type coercions.
+You can do the following type coercions.
 
 ### Text
 
