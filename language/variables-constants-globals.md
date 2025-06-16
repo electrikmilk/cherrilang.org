@@ -35,7 +35,7 @@ Variables are not required to be assigned a value:
 @inserted = "Value: {text}"
 ```
 
-### Get As
+### Get Key
 
 ```ruby
 @deviceOS = "OS: {Device['OS']}"
@@ -49,6 +49,14 @@ Variables are not required to be assigned a value:
 ```ruby
 @text = "five 5"
 @number = "Number: {text.number}"
+```
+
+Note that you can get a key and also type coerce the value, for example:
+
+```ruby
+@variable = {"n":5}
+@getAs = variable['Name'].number
+@number = "Number: {variable['Name'].number}"
 ```
 
 ### Variable as a Value
