@@ -80,7 +80,8 @@ Expressions are numeric values or variable references that are separated by any 
 ```ruby
 @expression = 54 + (6 * 7)
 @number = 42
-@expression = 54 * number + (6 * 7)
+@number = 54 * number + (6 * 7)
+@expression = number + number
 ```
 
 Only two operands will compile to a **Math** action:
