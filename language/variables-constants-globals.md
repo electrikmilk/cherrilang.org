@@ -51,6 +51,8 @@ Variables are not required to be assigned a value:
 @number = "Number: {text.number}"
 ```
 
+See [value types](types#value-types) and [content item types](types#content-item-types) for available value types.
+
 Note that you can get a key and also type coerce the value, for example:
 
 ```ruby
