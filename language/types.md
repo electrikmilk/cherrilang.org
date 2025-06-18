@@ -180,6 +180,10 @@ This adds the output of the **Number** action with a value of 5 to the array var
 
 So `x` now contains 1 item with a number value of `5`.
 
+### Variable
+
+A variable is a type of value that can be accepted for a custom action or defined action argument. For custom actions, this means not coercing the value to any type. For defined actions, it means the value should always be handled as a variable when compiling the value for actions that have a parameter that does not accept only a variable value.
+
 ### Action Result
 
 Actions have output types. View the [actions](/language/actions) documentation to check the output type of an action, or use the `--action=` argument in the CLI.
