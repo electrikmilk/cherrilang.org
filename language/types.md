@@ -144,7 +144,7 @@ getValue(dictionary, "key")
 
 ### Array
 
-An array is a variable, that has been or will be added to, to create a variable with multiple iterable values.
+An array is a variable that has been or will be added to, to create a variable with multiple iterable values.
 
 The contents of an array value must be valid JSON syntax.
 
@@ -203,6 +203,8 @@ Some actions have arguments with the type `enum`, accompanied by a set of allowe
 
 Future release
 {: .label .label-purple }
+
+In the next release, enumerations have been implemented as proper types with values defined in code, so enumerations can have identifiers and be defined easily in code for standard actions and user-defined actions.  
 
 To define enumerations for use as a type for [custom actions](/language/custom-actions) and [action definitions](/language/define-actions), use the following syntax:
 
