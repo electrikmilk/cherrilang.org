@@ -11,6 +11,12 @@ nav_order: 2
 Actions in Cherri are intended to be easier to use, as in some cases, single actions have been split up into multiple
 actions to reduce the number of arguments and complexity. Some arguments are optional, and some are required.
 
+Actions can be used just like you would call a function in another language
+
+```
+alert("Hello!")
+```
+
 ## Standard Actions
 
 Standard actions are always available and do not need to be imported. Below are categories of standard Shortcut actions currently supported.
