@@ -35,6 +35,9 @@ You can also build from source using the instructions below and use the `--hubsi
 
 ## Build from Source
 
+{: .warning }
+Building from source may be unstable, and some features may change unexpectedly.
+
 ### 1. Install Go
 
 <a href="https://go.dev/doc/install" target="_blank">Install the Go programming language</a>
