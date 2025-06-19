@@ -7,9 +7,6 @@ nav_order: 1
 
 # Install
 
-{: .warning }
-
-
 ## macOS
 
 The easiest way to use Cherri on a Mac is to download the latest binary release from GitHub.
