@@ -13,17 +13,6 @@ The file [`shortcutgen.go`](https://github.com/electrikmilk/cherri/blob/main/sho
 while [`shortcut.go`](https://github.com/electrikmilk/cherri/blob/main/shortcut.go) contains definitions of the data types and
 helper functions used in generating the data.
 
-### `dataType`
-
-Here are the constants for the type `dataType` which is a string type that lines up with plist data types:
-
-- `Text`
-- `Number`
-- `Real`
-- `Dictionary`
-- `Array`
-- `Boolean`
-
 At the end of the day, these files generate data for the package to build a string that is saved as a `.shortcut` file.
 
 To save the output as a separate plist file from the resulting signed Shortcut, use the `--debug` (or `-d`) option when
