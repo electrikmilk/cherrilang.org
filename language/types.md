@@ -52,7 +52,7 @@ text"
 @raw = 'i\'m text'
 ```
 
-Raw text cancels out interpolation other than escaped single quotes. As a result, they compile much faster than standard text literals.
+Raw text cancels out interpolation, except for escaped single quotes. As a result, they compile much faster than standard text literals.
 
 One caveat to raw text is that it is not allowed in Dictionaries or Arrays. This is because a dictionary or array must be a valid JSON object.
 
@@ -144,7 +144,7 @@ getValue(dictionary, "key")
 
 ### Array
 
-An array is a variable that has been or will be added to, to create a variable with multiple iterable values.
+An array is a variable that has been or will be populated with multiple iterable values.
 
 The contents of an array value must be valid JSON syntax.
 
@@ -179,6 +179,8 @@ You can easily append to an array using the `+=` syntax.
 This adds the output of the **Number** action with a value of 5 to the array variable `x`.
 
 So `x` now contains 1 item with a number value of `5`.
+
+Items in an array or added to an array cannot be removed. If you need a new array of items, iterate the array using `for`  and add only specific items using a conditional to a new array.
 
 ### Variable
 
