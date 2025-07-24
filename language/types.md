@@ -328,7 +328,7 @@ The following types may be used:
 
 ## Type Coercion
 
-You can do the following type coercions. See [value types](types#value-types) and [content item types](#content-item-types) for available value types you can coerce to.
+You can do the following type coercions. See [value types](#value-types) and [content item types](#content-item-types) for available value types you can coerce to.
 
 ### Text
 
