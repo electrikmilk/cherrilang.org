@@ -39,8 +39,6 @@ Property lists are a key-value-based data format and are relatively easy to pars
 
 This is the data format Shortcuts uses to represent the state of the actions used and their parameters in a Shortcut file. However, Shortcut files are generally in a binary (encoded), encrypted (signed) format; they cannot be read without being converted to text and decrypted.
 
-Methods of getting 
-
 ### Decompilation
 
 If the action is not already implemented in Cherri, you can decompile a Shortcut containing the action into a raw action using decompilation.
