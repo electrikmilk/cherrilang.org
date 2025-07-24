@@ -52,7 +52,7 @@ If the action is not already implemented in Cherri, you can decompile a Shortcut
 
 Look for a node with the key `WFWorkflowActions`. In text, this will be an `<array>` with a `<key>` above it containing `WFWorkflowActions`. Each `<dict>` is an action. Within the dictionary, there are two 
 
-```
+```xml
 <key>WFWorkflowActions</key>
 <array>
     <!-- Action -->
@@ -71,7 +71,7 @@ Look for a node with the key `WFWorkflowActions`. In text, this will be an `<arr
 
 Below is this action in Cherri using a raw action. We use the `WFWorkflowActionParameters` key from above to make a dictionary value containing the same keys and values.
 
-```
+```ruby
 rawAction("is.workflow.actions.setvariable", {
      "WFVariableName": "x"
 })
@@ -94,7 +94,7 @@ Future Release
 
 To use a variable value for a parameter that only accepts a variable value, prepend an inline variable reference's brackets in a string value with the character `$`.
 
-```
+```swift
 action saveFile(variable file) {
     rawAction("is.workflow.actions.documentpicker.save", {
          "WFInput": "${file}"
