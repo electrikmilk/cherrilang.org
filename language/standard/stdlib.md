@@ -72,7 +72,7 @@ You can also use [`base64File()`](/language/standard/builtin#base64-encode-file)
 ```
 function output(output) {
     const text = document.createElement('div');
-    text.innerHTML = output;
+    text.innerText = output;
     document.body.appendChild(text);
 }
 
