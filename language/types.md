@@ -76,6 +76,7 @@ Expressions are numeric values or variable references that are separated by any 
 - `-` Subtract
 - `*` Multiply
 - `/` Divide
+- `%` Modulus
 
 ```ruby
 @expression = 54 + (6 * 7)
