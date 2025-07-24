@@ -79,6 +79,16 @@ rawAction("is.workflow.actions.setvariable", {
 })
 ```
 
+### Types 
+
+| Shortcuts | Cherri |
+:--------| --------- |
+| string  | text |
+| integer  | number |
+| real  | float |
+| dictionary  | dictionary |
+| array  | array |
+
 ## Variable Values
 
 Future Release
