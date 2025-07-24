@@ -43,7 +43,7 @@ This is the data format Shortcuts uses to represent the state of the actions use
 
 If the action is not already implemented in Cherri, you can decompile a Shortcut containing the action into a raw action using decompilation.
 
-[Decompilation documentation](/language/decompilation)
+[Decompilation documentation](/decompilation)
 
 ### Download Property List from iCloud
 
