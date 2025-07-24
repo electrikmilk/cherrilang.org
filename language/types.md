@@ -70,7 +70,7 @@ One caveat to raw text is that it is not allowed in Dictionaries or Arrays. This
 
 ### Expression
 
-Expressions are numeric values or variable references that are separated by any of the following operators:
+Expressions are numeric values or variable references that are separated by any of the following arithmetic operators:
 
 - `+` Add
 - `-` Subtract
@@ -90,6 +90,11 @@ Only two operands will compile to a **Math** action:
 ```ruby
 @expression = 54 + 6
 ```
+
+Future Release
+{: .label .label-purple }
+
+In a future release, expression parsing will be much improved. It fixes issues with expressions starting with a parenthesis and expressions being confused with other values containing operators.
 
 ### Boolean
 
