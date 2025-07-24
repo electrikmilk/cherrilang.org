@@ -47,8 +47,8 @@ If the action is not already implemented in Cherri, you can decompile a Shortcut
 
 ### Download Property List from iCloud
 
-1. Share the Shortcut and copy the iCloud Link and use the iCloud API to download the property list version.
-2. To download property list (.plist) versions of Shortcuts, [here is a helpful Shortcut](https://routinehub.co/shortcut/13252/) written in Cherri that shows how to do so with an iCloud Link to the Shortcut. 
+1. Share the Shortcut and copy the iCloud Link to use the iCloud API to download the property list version.
+2. [Here is a Shortcut](https://routinehub.co/shortcut/13252/) written in Cherri that shows how to download the property list using an iCloud Link to the Shortcut.
 
 Look for a node with the key `WFWorkflowActions`. In text, this will be an `<array>` with a `<key>` above it containing `WFWorkflowActions`. Each `<dict>` is an action. Within the dictionary, there are two 
 
