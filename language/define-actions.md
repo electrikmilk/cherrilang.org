@@ -1,5 +1,5 @@
 ---
-title: Define Actions
+title: Action Definitions
 layout: default
 parent: Documentation
 nav_order: 13
