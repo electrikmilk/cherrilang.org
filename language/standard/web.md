@@ -17,11 +17,17 @@ nav_order: 8
 
 ---
 
+### Open Custom X-Callback URL
+
+```
+openCustomXCallbackURL(text url, text ?successKey, text ?cancelKey, text ?errorKey, text ?successURL)
+```
+
 ## Articles
 
-### Get Article from Webpage
+### Get Article
 
-Get article from `webpage` in article.
+Get article from webpage.
 
 ```
 getArticle(text webpage)
@@ -31,7 +37,7 @@ getArticle(text webpage)
 
 ### Get Article Detail
 
-Get `detail` from `article`.
+Get a detail about an article.
 
 ```
 getArticleDetail(variable article, text detail)
@@ -39,39 +45,100 @@ getArticleDetail(variable article, text detail)
 
 ## Giphy
 
+### Get GIFs from Giphy
+
+Gets a number of GIFs from Giphy for a search query.
+
+```
+getGifs(text query, number ?gifs = 1)
+```
+
+---
+
 ### Search Giphy
 
-Search Giphy for `query`.
+Gets GIFs from Giphy for a search query.
 
 ```
 searchGiphy(text query)
 ```
 
----
+## HTTP
 
-### Get Number of Gifs from Giphy
+### Download URL
 
-Get `gifs` number of gifs from Giphy for `query`.
+Download the contents of a URL.
 
 ```
-getGifs(text query, integer ?gifs = 1)
+downloadURL(text url, dictionary ?headers)
+```
+
+---
+
+### File Request
+
+Send a `method` file request to `url` with `body` and optional `headers.
+
+```
+enum HTTPMethod {
+    'POST',
+    'PUT',
+    'PATCH',
+    'DELETE',
+}
+
+fileRequest(text url, HTTPMethod ?method, dictionary ?body, dictionary ?headers)
+```
+
+---
+
+### Form Request
+
+Send a `method` request to `url` with `body` and optional `headers.
+
+```
+enum HTTPMethod {
+    'POST',
+    'PUT',
+    'PATCH',
+    'DELETE',
+}
+
+formRequest(text url, HTTPMethod ?method, dictionary ?body, dictionary ?headers)
+```
+
+---
+
+### JSON Request
+
+Send a `method` JSON request to `url` with `body` and optional `headers.
+
+```
+enum HTTPMethod {
+    'POST',
+    'PUT',
+    'PATCH',
+    'DELETE',
+}
+
+jsonRequest(text url, HTTPMethod ?method, dictionary ?body, dictionary ?headers)
 ```
 
 ## RSS
 
-### Get RSS Feed
+### Get RSS
 
-Get `items` number of items from RSS feed at `url`.
+Get RSS feed contents at URL. Limited by number of items.
 
 ```
-getRSS(integer items, text url)
+getRSS(number items, text url)
 ```
 
 ---
 
-### Get RSS Feed from URL
+### Get RSS Feeds
 
-Get RSS feeds from urls.
+Get feeds from multiple URLs.
 
 ```
 getRSSFeeds(text urls)
@@ -81,17 +148,17 @@ getRSSFeeds(text urls)
 
 ### Add to Reading List
 
-Add `url` to the users reading list.
+Add a link to the reading list.
 
 ```
-addToReadingList(text url)
+addToReadingList(text ...url)
 ```
 
 ---
 
 ### Get Current URL
 
-Get current web page url.
+Get current URL in Safari.
 
 ```
 getCurrentURL()
@@ -99,183 +166,9 @@ getCurrentURL()
 
 ---
 
-### Get Webpage Detail
+### Get Webpage Contents
 
-Get `detail` of `webpage`.
-
-```
-getWebPageDetail(variable webpage, enum detail)
-```
-
-#### Details
-
-- Page Contents
-- Page Selection
-- Page URL
-- Name
-
----
-
-### Open URLs
-
-Open `url` in default browser. Accepts a variable containing multiple URLs.
-
-```
-openURL(text url)
-```
-
----
-
-### Run JavaScript on Current Webpage
-
-Run `script` on currently active tab as JavaScript.
-
-```
-runJavaScriptOnWebpage(text script)
-```
-
----
-
-### Search the Web
-
-Search the web for `query` using `engine`.
-
-```
-searchWeb(enum engine, text query)
-```
-
-#### Engines
-
-- Amazon
-- Bing
-- DuckDuckGo
-- eBay
-- Google
-- Reddit
-- Twitter
-- Yahoo!
-- YouTube
-
----
-
-### Show Webpage
-
-Show the webpage at `url`, optionally with Safari reader enabled.
-
-```
-showWebpage(text url, boolean ?useReader)
-```
-
-## URLs
-
-### Expand URL
-
-Expand `url`. This is generally used for short urls.
-
-```
-expandURL(text url)
-```
-
----
-
-### Get Detail of URL
-
-Get `detail` from `url`.
-
-```
-getURLDetail(text url, enum detail)
-```
-
-#### Details
-
-- Scheme
-- User
-- Password
-- Host
-- Port
-- Path
-- Query
-- Fragment
-
----
-
-### Get URLs from Input
-
-Get URLs from `input`.
-
-```
-getURLs(variable input)
-```
-
----
-
-### URL Value
-
-Create url value of `url`. No limit on `url` arguments.
-
-```
-url(text ...url)
-```
-
-**Example Usage**
-
-```
-url("https://cherrilang.org","https://routinehub.co")
-```
-
-## Web Requests
-
-### Download Contents of URL
-
-Download contents of `url`.
-
-```
-downloadURL(text url, dictionary ?headers)
-```
-
----
-
-### Form Request
-
-Send a `method` request to `url` with `body`.
-
-```
-formRequest(text url, enum ?method = "GET", dictionary ?body, dictionary ?headers)
-```
-
-#### HTTP Methods
-
-- `GET`
-- `POST`
-- `PUT`
-- `PATCH`
-- `DELETE`
-
----
-
-### JSON Request
-
-Send a `method` JSON request to `url` with `body`.
-
-```
-jsonRequest(text url, enum ?method = "GET", dictionary ?body, dictionary ?headers)
-```
-
----
-
-### File Request
-
-Send a `method` file request to `url` with `body`.
-
-```
-fileRequest(text url, enum ?method = "GET", dictionary ?body, dictionary ?headers)
-```
-
----
-
-### Get Contents of Webpage
-
-Get contents of webpage at `url`.
+Get contents of Webpage from Safari.
 
 ```
 getWebpageContents(text url)
@@ -283,10 +176,158 @@ getWebpageContents(text url)
 
 ---
 
+### Get Webpage Detail
+
+Get a detail about a provided webpage.
+
+```
+enum webpageDetail {
+    'Page Contents',
+    'Page Selection',
+    'Page URL',
+    'Name',
+}
+
+getWebPageDetail(variable webpage, webpageDetail detail)
+```
+
+---
+
+### Run JavaScript on Webpage
+
+Run some custom JavaScript on the current webpage in Safari.
+
+```
+runJavaScriptOnWebpage(text javascript)
+```
+
+---
+
+### Search Web
+
+Search the web using a provided search engine and query.
+
+```
+enum searchEngine {
+    'Amazon',
+    'Bing',
+    'DuckDuckGo',
+    'eBay',
+    'Google',
+    'Reddit',
+    'Twitter',
+    'Yahoo!',
+    'YouTube',
+}
+
+searchWeb(searchEngine engine, text query)
+```
+
+---
+
+### Show Webpage
+
+Show webpage using Safari.
+
+```
+showWebpage(text url, bool ?useReader)
+```
+
+## URLs
+
+### Expand URL
+
+Get the expanded version of a URL. For instance, returns the full URL for a short URL, or the URL which a URL immediately redirects to, etc.
+
+```
+expandURL(text url)
+```
+
+---
+
+### Get URL Detail
+
+Get a detail about a URL.
+
+```
+enum URLDetail {
+    'Scheme',
+    'User',
+    'Password',
+    'Host',
+    'Port',
+    'Path',
+    'Query',
+    'Fragment',
+}
+
+getURLDetail(text url, URLDetail detail)
+```
+
+---
+
 ### Get URL Headers
 
-Get headers for `url`.
+Get the headers from a URL.
 
 ```
 getURLHeaders(text url)
+```
+
+---
+
+### Get URLs
+
+Get URLs from `input`.
+
+```
+getURLs(text input): array
+```
+
+---
+
+### Open URL
+
+Open URL in default browser.
+
+```
+openURL(text url)
+```
+
+---
+
+### Open X-Callback URL
+
+```
+openXCallbackURL(text url)
+```
+
+---
+
+### URL
+
+Create a URL value.
+
+```
+url(text ...url)
+```
+
+---
+
+### URL Decode
+
+Decode text from URL encoding.
+
+```
+urlDecode(text input): text
+```
+
+---
+
+### URL Encode
+
+Encode text for a URL.
+
+```
+urlEncode(text input): text
 ```
