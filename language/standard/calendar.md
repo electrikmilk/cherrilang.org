@@ -17,6 +17,8 @@ nav_order: 1
 
 ---
 
+# Calendar Actions
+
 ## Alarms
 
 ### Create Alarm
@@ -69,9 +71,9 @@ turnOffAlarm(variable alarm, bool ?showWhenRun: 'ShowWhenRun' = true)
 
 ---
 
-### Turn Off Alarm
+### Turn On Alarm
 
-Turn off an alarm.
+Turn on an alarm.
 
 ```
 turnOnAlarm(variable alarm, bool ?showWhenRun: 'ShowWhenRun' = true)
@@ -327,4 +329,3 @@ enum timerDuration {
 
 startTimer(number magnitude, timerDuration ?unit = "min")
 ```
-
