@@ -17,113 +17,27 @@ nav_order: 1
 
 ---
 
-## Calendars
-
-### Add Calendar
-
-Create a calendar with `name`.
-
-```
-addCalendar(text name)
-```
-
----
-
-### Open Event in Calendar
-
-```
-showInCalendar(variable event)
-```
-
----
-
-### Edit Event
-
-Edit a detail of an event. Provide an event, a detail to modify, and a new value for that detail.
-
-```
-editEvent(variable event, enum detail, text newValue)
-```
-
-#### Event Details
-
-- Start Date
-- End Date
-- Is All Day
-- Location
-- Duration
-- My Status
-- Attendees
-- URL
-- Title
-- Notes
-- Attachments
-
-_**Note:** Enum values are case-sensitive._
-
----
-
-### Get Event Detail
-
-Get a detail of an event.
-
-```
-getEventDetail(variable event, enum detail)
-```
-
-Details
-
-- Start Date
-- End Date
-- Is All Day
-- Calendar
-- Location
-- Has Alarms
-- Duration
-- Is Canceled
-- My Status
-- Organizer
-- Organizer Is Me
-- Attendees
-- Number of Attendees
-- URL
-- Title
-- Notes
-- Attachments
-- File Size
-- File Extension
-- Creation Date
-- File Path
-- Last Modified Date
-- Name
-
-_**Note:** Enum values are case-sensitive._
-
----
-
-### Remove Events
-
-```
-removeEvents(variable events, bool ?includeFutureEvents = false)
-```
-
-## Reminders
-
-### Open Reminders List
-
-```
-openRemindersList(variable list)
-```
-
----
-
-### Remove Reminders
-
-```
-removeReminders(variable reminders)
-```
-
 ## Alarms
+
+### Create Alarm
+
+Creates an alarm at specific time with a name, snooze allowance and applicable weekdays.
+
+```
+createAlarm(text name, text time: 'dateComponents', bool ?allowsSnooze = true, array ?repeatWeekdays)
+```
+
+---
+
+### Delete Alarm
+
+Deletes an alarm.
+
+```
+deleteAlarm(variable alarm: 'entities')
+```
+
+---
 
 ### Get Alarms
 
@@ -135,24 +49,12 @@ getAlarms()
 
 ---
 
-### Create Alarm
+### Toggle Alarm
 
-Create an alarm.
-
-```
-createAlarm(text name, text time, bool ?allowsSnooze = true, array ?repeatWeekdays)
-```
-
-Weekdays for `repeatWeekdays` are case insensitive.
-
----
-
-### Turn On Alarm
-
-Turn on an alarm.
+Toggle an alarm.
 
 ```
-turnOnAlarm(variable alarm)
+toggleAlarm(variable alarm, bool ?showWhenRun: 'ShowWhenRun' = true)
 ```
 
 ---
@@ -162,52 +64,145 @@ turnOnAlarm(variable alarm)
 Turn off an alarm.
 
 ```
-turnOffAlarm(variable alarm)
+turnOffAlarm(variable alarm, bool ?showWhenRun: 'ShowWhenRun' = true)
 ```
 
 ---
 
-### Toggle Alarm
+### Turn Off Alarm
 
-Toggle an alarm on or off depending on current state.
+Turn off an alarm.
 
 ```
-toggleAlarm(variable alarm)
+turnOnAlarm(variable alarm, bool ?showWhenRun: 'ShowWhenRun' = true)
+```
+
+## Calendars
+
+### Add Calendar
+
+Create a calendar with `name`.
+
+```
+addCalendar(text name: 'CalendarName')
 ```
 
 ---
 
-### Delete Alarm
+### Edit Event
 
-Delete an alarm
-
-```
-deleteAlarm(variable alarm)
-```
-
-## Clock
-
-### Create Timer
-
-Start a timer.
+Edit a detail of an event. Provide an event, a detail to modify, and a new value for that detail.
 
 ```
-startTimer(number magnitude, enum ?unit = "min")
+enum editEventDetail {
+    'Start Date',
+    'End Date',
+    'Is All Day',
+    'Location',
+    'Duration',
+    'My Status',
+    'Attendees',
+    'URL',
+    'Title',
+    'Notes',
+    'Attachments',
+}
+
+editEvent(variable event: 'WFInput', editEventDetail detail: 'WFContentItemPropertyName', text newValue: 'WFCalendarEventContentItemStartDate')
 ```
 
-#### Available units:
+---
 
-- hr
-- min
-- sec
+### Get Event Detail
 
-_**Note:** Enum values are case-sensitive._
+Get a detail of an event.
+
+```
+enum eventDetail {
+    'Start Date',
+    'End Date',
+    'Is All Day',
+    'Calendar',
+    'Location',
+    'Has Alarms',
+    'Duration',
+    'Is Canceled',
+    'My Status',
+    'Organizer',
+    'Organizer Is Me',
+    'Attendees',
+    'Number of Attendees',
+    'URL',
+    'Title',
+    'Notes',
+    'Attachments',
+    'File Size',
+    'File Extension',
+    'Creation Date',
+    'File Path',
+    'Last Modified Date',
+    'Name',
+}
+
+getEventDetail(variable event: 'WFInput', eventDetail detail: 'WFContentItemPropertyName')
+```
+
+---
+
+### Open Event in Calendar
+
+Show `event` in the calendar app.
+
+```
+showInCalendar(variable event: 'WFEvent')
+```
+
+---
+
+### Remove Events
+
+Remove an event.
+
+```
+removeEvents(variable events: 'WFInputEvents', bool ?includeFutureEvents: 'WFCalendarIncludeFutureEvents' = false)
+```
 
 ## Dates
 
+### Adjust Date
+
+Adjust a date or get the start of a time period.
+
+```
+enum dateOperation {
+    'Add',
+    'Subtract',
+    'Get Start of Minute',
+    'Get Start of Hour',
+    'Get Start of Day',
+    'Get Start of Week',
+    'Get Start of Month',
+    'Get Start of Year',
+}
+
+enum dateUnit {
+    'sec',
+    'min',
+    'hr',
+    'days',
+    'weeks',
+    'months',
+    'yr',
+}
+
+adjustDate(text date: 'WFDate', dateOperation operation: 'WFAdjustOperation', number ?magnitude, dateUnit ?unit)
+```
+
+---
+
 ### Current Date
 
-Create a date value with the current date.
+Get the current date.
 
 ```
 currentDate()
@@ -215,119 +210,121 @@ currentDate()
 
 ---
 
-### Specific Date
+### Date
 
-Create a date value from `date`.
+Create a date value from `date`. Example: October 5, 2022.
 
 ```
-date(text date)
-```
-
-**Example Usage**
-
-```ruby
-date("October 5, 2022")
+date(text date: 'WFDateActionDate')
 ```
 
 ---
 
 ### Get Dates
 
-Get dates from value.
+Get dates from input.
 
 ```
-getDates(variable input)
+getDates(variable input: 'WFInput'): array
 ```
 
----
-
-### Add to Date
-
-Add to a date by units of time.
-
-```
-addSeconds(text date, number magnitude)
-addMinutes(text date, number magnitude)
-addHours(text date, number magnitude)
-addDays(text date, number magnitude)
-addWeeks(text date, number magnitude)
-addMonths(text date, number magnitude)
-addYears(text date, number magnitude)
-```
-
----
-
-### Subtract from Date
-
-Subtract from the date by units of time.
-
-```
-subtractSeconds(text date, number magnitude)
-subtractMinutes(text date, number magnitude)
-subtractHours(text date, number magnitude)
-subtractDays(text date, number magnitude)
-subtractWeeks(text date, number magnitude)
-subtractMonths(text date, number magnitude)
-subtractYears(text date, number magnitude)
-```
-
----
-
-### Get Starting Time
-
-Get various starting units of date.
-
-```
-getStartMinute(text date)
-getStartHour(text date)
-getStartWeek(text date)
-getStartMonth(text date)
-getStartYear(text date)
-```
-
----
+## Formatting
 
 ### Format Date
 
+Format a date using a standard or custom format.
+
 ```
-formatDate(variable date, enum ?dateFormat = "Short")
+enum dateFormats {
+    'None',
+    'Short',
+    'Medium',
+    'Long',
+    'Relative',
+    'RFC 2822',
+    'ISO 8601',
+    'Custom',
+}
+
+formatDate(variable date: 'WFDate', dateFormats ?dateFormat: 'WFDateFormatStyle' = "Short", text ?customDateFormat: 'WFDateFormat')
 ```
-
-#### Date Formats
-
-- None
-- Short
-- Medium
-- Long
-- Relative
-- RFC 2822
-- ISO 8601
-- Custom
-
-_**Note:** Enum values are case-sensitive._
 
 ---
 
 ### Format Time
 
+Format a time using a standard or custom format.
+
 ```
-formatTime(variable time, enum ?timeFormat = "Short")
+enum timeFormats {
+    'None',
+    'Short',
+    'Medium',
+    'Long',
+    'Relative',
+}
+
+formatTime(variable time: 'WFDate', timeFormats ?timeFormat: 'WFTimeFormatStyle' = "Short")
 ```
-
-#### Time Formats
-
-- None
-- Short
-- Medium
-- Long
-- Relative
-
-_**Note:** Enum values are case-sensitive._
 
 ---
 
 ### Format Timestamp
 
+Format a timestamp using standard formats and/or a custom date format.
+
 ```
-formatTimestamp(variable date, enum ?dateFormat = "Short", enum ?timeFormat = "Short")
+enum dateFormats {
+    'None',
+    'Short',
+    'Medium',
+    'Long',
+    'Relative',
+    'RFC 2822',
+    'ISO 8601',
+    'Custom',
+}
+
+enum timeFormats {
+    'None',
+    'Short',
+    'Medium',
+    'Long',
+    'Relative',
+}
+
+formatTimestamp(variable date: 'WFDate', dateFormats ?dateFormat: 'WFDateFormatStyle' = "Short", timeFormats ?timeFormat: 'WFTimeFormatStyle' = "Short", text ?customDateFormat: 'WFDateFormat')
 ```
+
+## Reminders
+
+### Open Reminders List
+
+```
+openRemindersList(variable list: 'WFList')
+```
+
+---
+
+### Remove Reminders
+
+```
+removeReminders(variable reminders: 'WFInputReminders')
+```
+
+## Timers
+
+### Create Timer
+
+Creates a new timer.
+
+```
+enum timerDuration {
+    'hr',
+    'min',
+    'sec',
+}
+
+startTimer(number magnitude, timerDuration ?unit = "min")
+```
+
