@@ -3,7 +3,7 @@ title: Math
 layout: default
 grand_parent: Documentation
 parent: Actions
-nav_order: 10
+nav_order: 11
 ---
 
 # Math Actions
