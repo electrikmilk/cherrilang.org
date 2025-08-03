@@ -3,7 +3,7 @@ title: Location
 layout: default
 grand_parent: Documentation
 parent: Actions
-nav_order: 4
+nav_order: 7
 ---
 
 # Location Actions
