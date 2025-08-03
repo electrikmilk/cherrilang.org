@@ -15,125 +15,214 @@ nav_order: 2
 1. TOC
 {:toc}
 
+### Update Contact
+
+```
+enum contactDetail {
+    'First Name',
+    'Middle Name',
+    'Last Name',
+    'Birthday',
+    'Prefix',
+    'Suffix',
+    'Nickname',
+    'Phonetic First Name',
+    'Phonetic Last Name',
+    'Phonetic Middle Name',
+    'Company',
+    'Job Title',
+    'Department',
+    'File Extension',
+    'Creation Date',
+    'File Path',
+    'Last Modified Date',
+    'Name',
+    'Random',
+}
+
+updateContact(variable contact: 'WFInput', contactDetail detail: 'WFContentItemPropertyName', text value)
+```
+
 ## Contacts
-
-### Contact Details
-
-- First Name
-- Middle Name
-- Last Name
-- Birthday
-- Prefix
-- Suffix
-- Nickname
-- Phonetic First Name
-- Phonetic Last Name
-- Phonetic Middle Name
-- Company
-- Job Title
-- Department
-- File Extension
-- Creation Date
-- File Path
-- Last Modified Date
-- Name
-- Random
-
----
 
 ### Add New Contact
 
 Create a new contact.
 
 ```
-newContact(text firstName, text lastName, text phoneNumber, text emailAddress, text company, text notes, boolean ?prompt = false)
-```
-
----
-
-### Edit Contact
-
-Update `detail` of `contact` to `value`.
-
-```
-updateContact(variable contact, enum detail, text value)
-```
-
----
-
-### Remove Contact Detail
-
-Remove `detail` from `contact`.
-
-```
-removeContactDetail(variable contact, enum detail)
+newContact(text firstName: 'WFContactFirstName', text lastName: 'WFContactLastName', text phoneNumber, text emailAddress, text company: 'WFContactCompany', text notes: 'WFContactNotes', bool ?prompt: 'ShowWhenRun' = false)
 ```
 
 ---
 
 ### Filter Contacts
 
-Filter `contacts` by `property` and sort by `sortOrder`, and limit to `limit` number of contacts.
-
 ```
-filterContacts(variable contacts, enum ?sortByProperty, enum ?sortOrder = "A to Z", integer ?limit)
+enum contactDetail {
+    'First Name',
+    'Middle Name',
+    'Last Name',
+    'Birthday',
+    'Prefix',
+    'Suffix',
+    'Nickname',
+    'Phonetic First Name',
+    'Phonetic Last Name',
+    'Phonetic Middle Name',
+    'Company',
+    'Job Title',
+    'Department',
+    'File Extension',
+    'Creation Date',
+    'File Path',
+    'Last Modified Date',
+    'Name',
+    'Random',
+}
+
+enum abcSortOrder {
+    'A to Z',
+    'Z to A',
+}
+
+filterContacts(variable contacts: 'WFContentItemInputParameter', contactDetail ?sortBy: 'WFContentItemSortProperty', abcSortOrder ?sortOrder: 'WFContentItemSortOrder' = "A to Z", number ?limit: 'WFContentItemLimitNumber')
 ```
-
-#### Sort Orders
-
-- A to Z
-- Z to A
 
 ---
 
-### Get Detail of Contacts
+### Get Contacts
 
-Get `property` from `contact`.
+Get contacts from input.
 
 ```
-getContactDetail(variable contact, enum property)
+getContacts(variable input: 'WFInput'): array
+```
+
+---
+
+### Get Detail of Contact
+
+Get a detail about a contact.
+
+```
+enum contactDetail {
+    'First Name',
+    'Middle Name',
+    'Last Name',
+    'Birthday',
+    'Prefix',
+    'Suffix',
+    'Nickname',
+    'Phonetic First Name',
+    'Phonetic Last Name',
+    'Phonetic Middle Name',
+    'Company',
+    'Job Title',
+    'Department',
+    'File Extension',
+    'Creation Date',
+    'File Path',
+    'Last Modified Date',
+    'Name',
+    'Random',
+}
+
+getContactDetail(variable contact: 'WFInput', contactDetail detail: 'WFContentItemPropertyName')
+```
+
+---
+
+### Remove Contact Detail
+
+Remove detail from contact.
+
+```
+enum contactDetails {
+}
+
+removeContactDetail(variable contact: 'WFInput', contactDetails detail: 'WFContentItemPropertyName')
 ```
 
 ---
 
 ### Select Contact
 
-Prompt the user to select a contact(s).
+Prompt the user to select a contact or multiple contacts. Returns selected contact.
 
 ```
-selectContact(boolean ?multiple = false)
+selectContact(bool ?multiple: 'WFSelectMultiple' = false)
+```
+
+## Email
+
+### Email Address
+
+Create an email address value.
+
+```
+emailAddress(text ...email)
+```
+
+---
+
+### Get Emails
+
+Get emails from input.
+
+```
+getEmails(text input: 'WFInput'): array
+```
+
+---
+
+### Select Email Address
+
+Prompt the user to select an email address from their contacts.
+
+```
+selectEmailAddress()
 ```
 
 ## Phone
 
 ### Call
 
-Call a `contact`.
+Call a contact.
 
 ```
-call(variable contact)
+call(variable contact: 'WFCallContact')
 ```
 
 ---
 
 ### FaceTime Call
 
-Facetime `type` call `contact`.
+Starts a FaceTime audio or video call with the contact.
 
 ```
-facetimeCall(variable contact, enum ?type = "Video")
+enum facetimeCallType {
+    'Video',
+    'Audio',
+}
+
+facetimeCall(variable contact: 'WFFaceTimeContact', facetimeCallType ?type: 'WFFaceTimeType' = "Video")
 ```
 
-#### FaceTime call types
+---
 
-- Video
-- Audio
+### Get Phone Numbers
+
+Get phone numbers from input.
+
+```
+getPhoneNumbers(variable input: 'WFInput'): array
+```
 
 ---
 
 ### Phone Number
 
-Create a phone number value of `number`. No limit on `number` arguments.
+Create a phone number value.
 
 ```
 phoneNumber(text ...number)
@@ -143,28 +232,8 @@ phoneNumber(text ...number)
 
 ### Select Phone Number
 
-Prompt the user to select a phone number.
+Prompt the user to select a phone number from their contacts.
 
 ```
 selectPhoneNumber()
-```
-
-## Email
-
-### Email Address
-
-Create an email address value of `email`. No limit on `email` arguments.
-
-```
-emailAddress(text ...email)
-```
-
----
-
-### Select Email Address
-
-Prompt the user to select an email address.
-
-```
-selectEmailAddress()
 ```
