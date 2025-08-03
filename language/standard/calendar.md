@@ -3,7 +3,7 @@ title: Calendar
 layout: default
 grand_parent: Documentation
 parent: Actions
-nav_order: 1
+nav_order: 3
 ---
 
 # Calendar Actions
