@@ -22,7 +22,7 @@ nav_order: 2
 Add an explicit comment.
 
 ```
-comment(rawtext text: 'WFCommentActionText')
+comment(rawtext text)
 ```
 
 ---
@@ -40,7 +40,7 @@ enum countType {
     'Lines',
 }
 
-count(variable input: 'Input', countType ?type: 'WFCountType' = "Items"): number
+count(variable input, countType ?type = "Items"): number
 ```
 
 ---
@@ -50,7 +50,7 @@ count(variable input: 'Input', countType ?type: 'WFCountType' = "Items"): number
 Get the object of `class` from a variable.
 
 ```
-getObjectOfClass(text class: 'Class', variable from: 'Input')
+getObjectOfClass(text class, variable from)
 ```
 
 ---
@@ -60,7 +60,7 @@ getObjectOfClass(text class: 'Class', variable from: 'Input')
 Get the type of input.
 
 ```
-typeOf(variable input: 'WFInput'): text
+typeOf(variable input): text
 ```
 
 ---
@@ -80,7 +80,7 @@ nothing()
 Create a number value.
 
 ```
-number(number number: 'WFNumberActionNumber'): number
+number(number number): number
 ```
 
 ---
@@ -100,7 +100,7 @@ stop()
 Wait a specified number of seconds.
 
 ```
-wait(number seconds: 'WFDelayTime')
+wait(number seconds)
 ```
 
 ---
@@ -129,7 +129,7 @@ enum inputType {
     'Date and Time',
 }
 
-prompt(text prompt: 'WFAskActionPrompt', inputType ?inputType: 'WFInputType' = "Text", text ?defaultValue, text ?multiline: 'WFAllowsMultilineText' = true)
+prompt(text prompt, inputType ?inputType = "Text", text ?defaultValue, text ?multiline = true)
 ```
 
 ## Notifications
@@ -139,7 +139,7 @@ prompt(text prompt: 'WFAskActionPrompt', inputType ?inputType: 'WFInputType' = "
 Shows an alert with text and optional title and an OK button to proceed.
 
 ```
-alert(text alert: 'WFAlertActionMessage', text ?title: 'WFAlertActionTitle')
+alert(text alert, text ?title)
 ```
 
 ---
@@ -149,7 +149,7 @@ alert(text alert: 'WFAlertActionMessage', text ?title: 'WFAlertActionTitle')
 Shows an alert with text and optional title. It displays an OK button to proceed, and a cancel button that stops the Shortcut.
 
 ```
-confirm(text alert: 'WFAlertActionMessage', text ?title: 'WFAlertActionTitle')
+confirm(text alert, text ?title)
 ```
 
 ---
@@ -159,7 +159,7 @@ confirm(text alert: 'WFAlertActionMessage', text ?title: 'WFAlertActionTitle')
 Shows a custom notification message.
 
 ```
-showNotification(text body: 'WFNotificationActionBody', text ?title: 'WFNotificationActionTitle', bool ?playSound: 'WFNotificationActionSound' = true, variable ?attachment: 'WFInput')
+showNotification(text body, text ?title, bool ?playSound = true, variable ?attachment)
 ```
 
 ## Output
@@ -169,7 +169,7 @@ showNotification(text body: 'WFNotificationActionBody', text ?title: 'WFNotifica
 Display input as a content graph.
 
 ```
-contentGraph(variable input: 'WFInput')
+contentGraph(variable input)
 ```
 
 ---
@@ -179,7 +179,7 @@ contentGraph(variable input: 'WFInput')
 Stop and output `output`. Respond with response if there is nowhere to output.
 
 ```
-mustOutput(text output: 'WFOutput', text response: 'WFResponse')
+mustOutput(text output, text response)
 ```
 
 ---
@@ -189,7 +189,7 @@ mustOutput(text output: 'WFOutput', text response: 'WFResponse')
 Stop and output `output`. Copy to the clipboard if there is nowhere to output.
 
 ```
-outputOrClipboard(text output: 'WFOutput')
+outputOrClipboard(text output)
 ```
 
 ---
@@ -199,7 +199,7 @@ outputOrClipboard(text output: 'WFOutput')
 Preview `input` in Quick Look.
 
 ```
-quicklook(variable input: 'WFInput')
+quicklook(variable input)
 ```
 
 ---
@@ -209,7 +209,7 @@ quicklook(variable input: 'WFInput')
 Show `input`.
 
 ```
-show(text input: 'Text')
+show(text input)
 ```
 
 ---
@@ -219,5 +219,5 @@ show(text input: 'Text')
 Stop and output `output`. Do nothing if there is nowhere to output.
 
 ```
-output(text output: 'WFOutput')
+output(text output)
 ```
