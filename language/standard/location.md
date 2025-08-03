@@ -19,36 +19,36 @@ nav_order: 7
 
 ### Get Current Location
 
-Get the users current location.
+Get current user location.
 
 ```
- getCurrentLocation()
- ```
+getCurrentLocation()
+```
 
 ---
 
 ### Get Location Detail
 
-Get `detail` of `location`.
+Get a detail about a location.
 
 ```
-getLocationDetail(variable location, enum detail)
+enum locationDetail {
+    'Name',
+    'URL',
+    'Label',
+    'Phone Number',
+    'Region',
+    'ZIP Code',
+    'State',
+    'City',
+    'Street',
+    'Altitude',
+    'Longitude',
+    'Latitude',
+}
+
+getLocationDetail(variable location, locationDetail detail)
 ```
-
-#### Location Details
-
-- Name
-- URL
-- Label
-- Phone Number
-- Region
-- ZIP Code
-- State
-- City
-- Street
-- Altitude
-- Longitude
-- Latitude
 
 ## Addresses
 
@@ -64,88 +64,98 @@ getAddresses(variable input)
 
 ### Street Address
 
-Create a location value from a specific street address.
+Create a location value with an address.
 
 ```
-streetAddress(text addressLine2, text addressLine2, text city, text state, text country, integer zipCode)
+streetAddress(text addressLine2, text addressLine2, text city, text state, text country, number zipCode)
 ```
 
 ## Maps
 
-### Open in Maps
-
-Open `location` in the default maps app.
-
-```
-openInMaps(variable location)
-```
-
-## Routing
-
 ### Get Halfway Point
 
-Get the halfway point between `firstLocation` and `secondLocation`.
+Get the halfway point between two locations.
 
 ```
 getHalfwayPoint(variable firstLocation, variable secondLocation)
+```
+
+---
+
+### Get Maps Link
+
+Get a link for a location.
+
+```
+getMapsLink(variable location)
+```
+
+---
+
+### Open in Maps
+
+Open a location in maps.
+
+```
+openInMaps(variable location)
 ```
 
 ## Weather
 
 ### Get Current Weather
 
-Get current weather conditions, optionally at a specific location.
+Get the current weather for a location.
 
 ```
-getCurrentWeather(variable ?location = "Current Location")
+getCurrentWeather(text ?location = "Current Location")
+```
+
+---
+
+### Get Weather Detail
+
+Get a detail about a weather forecast.
+
+```
+enum weatherDetail {
+    'Name',
+    'Air Pollutants',
+    'Air Quality Category',
+    'Air Quality Index',
+    'Sunset Time',
+    'Sunrise Time',
+    'UV Index',
+    'Wind Direction',
+    'Wind Speed',
+    'Precipitation Chance',
+    'Precipitation Amount',
+    'Pressure',
+    'Humidity',
+    'Dewpoint',
+    'Visibility',
+    'Condition',
+    'Feels Like',
+    'Low',
+    'High',
+    'Temperature',
+    'Location',
+    'Date',
+}
+
+getWeatherDetail(variable weather, weatherDetail detail)
 ```
 
 ---
 
 ### Get Weather Forecast
 
-Get the weather forecast of `type`, optionally for a `location`.
+Get various types of weather forecast for a location.
 
 ```
-getWeatherForecast(enum ?type = "Daily", variable ?location = "Current Location")
+enum weatherForecastTypes {
+    'Daily',
+    'Hourly',
+}
+
+getWeatherForecast(weatherForecastTypes ?type = "Daily", text ?location = "Current Location")
 ```
-
-#### Forecast Types
-
-- Daily
-- Hourly
-
----
-
-### Get Weather Detail
-
-Get `detail` of `weather`.
-
-```
-getWeatherDetail(variable weather, enum detail)
-```
-
-#### Weather details
-
-- Name
-- Air Pollutants
-- Air Quality Category
-- Air Quality Index
-- Sunset Time
-- Sunrise Time
-- UV Index
-- Wind Direction
-- Wind Speed
-- Precipitation Chance
-- Precipitation Amount
-- Pressure
-- Humidity
-- Dewpoint
-- Visibility
-- Condition
-- Feels Like
-- Low
-- High
-- Temperature
-- Location
-- Date
