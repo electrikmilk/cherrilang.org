@@ -15,8 +15,6 @@ nav_order: 2
 1. TOC
 {:toc}
 
-# Contacts Actions
-
 ### Filter Contacts
 
 ```
