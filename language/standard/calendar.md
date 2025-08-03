@@ -17,8 +17,6 @@ nav_order: 3
 
 ---
 
-# Calendar Actions
-
 ## Alarms
 
 ### Create Alarm
@@ -26,7 +24,7 @@ nav_order: 3
 Creates an alarm at specific time with a name, snooze allowance and applicable weekdays.
 
 ```
-createAlarm(text name, text time: 'dateComponents', bool ?allowsSnooze = true, array ?repeatWeekdays)
+createAlarm(text name, text time, bool ?allowsSnooze = true, array ?repeatWeekdays)
 ```
 
 ---
@@ -36,7 +34,7 @@ createAlarm(text name, text time: 'dateComponents', bool ?allowsSnooze = true, a
 Deletes an alarm.
 
 ```
-deleteAlarm(variable alarm: 'entities')
+deleteAlarm(variable alarm)
 ```
 
 ---
@@ -56,7 +54,7 @@ getAlarms()
 Toggle an alarm.
 
 ```
-toggleAlarm(variable alarm, bool ?showWhenRun: 'ShowWhenRun' = true)
+toggleAlarm(variable alarm, bool ?showWhenRun = true)
 ```
 
 ---
@@ -66,7 +64,7 @@ toggleAlarm(variable alarm, bool ?showWhenRun: 'ShowWhenRun' = true)
 Turn off an alarm.
 
 ```
-turnOffAlarm(variable alarm, bool ?showWhenRun: 'ShowWhenRun' = true)
+turnOffAlarm(variable alarm, bool ?showWhenRun = true)
 ```
 
 ---
@@ -76,7 +74,7 @@ turnOffAlarm(variable alarm, bool ?showWhenRun: 'ShowWhenRun' = true)
 Turn on an alarm.
 
 ```
-turnOnAlarm(variable alarm, bool ?showWhenRun: 'ShowWhenRun' = true)
+turnOnAlarm(variable alarm, bool ?showWhenRun = true)
 ```
 
 ## Calendars
@@ -86,7 +84,7 @@ turnOnAlarm(variable alarm, bool ?showWhenRun: 'ShowWhenRun' = true)
 Create a calendar with `name`.
 
 ```
-addCalendar(text name: 'CalendarName')
+addCalendar(text name)
 ```
 
 ---
@@ -110,7 +108,7 @@ enum editEventDetail {
     'Attachments',
 }
 
-editEvent(variable event: 'WFInput', editEventDetail detail: 'WFContentItemPropertyName', text newValue: 'WFCalendarEventContentItemStartDate')
+editEvent(variable event, editEventDetail detail, text newValue)
 ```
 
 ---
@@ -146,7 +144,7 @@ enum eventDetail {
     'Name',
 }
 
-getEventDetail(variable event: 'WFInput', eventDetail detail: 'WFContentItemPropertyName')
+getEventDetail(variable event, eventDetail detail)
 ```
 
 ---
@@ -156,7 +154,7 @@ getEventDetail(variable event: 'WFInput', eventDetail detail: 'WFContentItemProp
 Show `event` in the calendar app.
 
 ```
-showInCalendar(variable event: 'WFEvent')
+showInCalendar(variable event)
 ```
 
 ---
@@ -166,7 +164,7 @@ showInCalendar(variable event: 'WFEvent')
 Remove an event.
 
 ```
-removeEvents(variable events: 'WFInputEvents', bool ?includeFutureEvents: 'WFCalendarIncludeFutureEvents' = false)
+removeEvents(variable events, bool ?includeFutureEvents = false)
 ```
 
 ## Dates
@@ -197,7 +195,7 @@ enum dateUnit {
     'yr',
 }
 
-adjustDate(text date: 'WFDate', dateOperation operation: 'WFAdjustOperation', number ?magnitude, dateUnit ?unit)
+adjustDate(text date, dateOperation operation, number ?magnitude, dateUnit ?unit)
 ```
 
 ---
@@ -217,7 +215,7 @@ currentDate()
 Create a date value from `date`. Example: October 5, 2022.
 
 ```
-date(text date: 'WFDateActionDate')
+date(text date)
 ```
 
 ---
@@ -227,7 +225,7 @@ date(text date: 'WFDateActionDate')
 Get dates from input.
 
 ```
-getDates(variable input: 'WFInput'): array
+getDates(variable input): array
 ```
 
 ## Formatting
@@ -248,7 +246,7 @@ enum dateFormats {
     'Custom',
 }
 
-formatDate(variable date: 'WFDate', dateFormats ?dateFormat: 'WFDateFormatStyle' = "Short", text ?customDateFormat: 'WFDateFormat')
+formatDate(variable date, dateFormats ?dateFormat = "Short", text ?customDateFormat)
 ```
 
 ---
@@ -266,7 +264,7 @@ enum timeFormats {
     'Relative',
 }
 
-formatTime(variable time: 'WFDate', timeFormats ?timeFormat: 'WFTimeFormatStyle' = "Short")
+formatTime(variable time, timeFormats ?timeFormat = "Short")
 ```
 
 ---
@@ -295,7 +293,7 @@ enum timeFormats {
     'Relative',
 }
 
-formatTimestamp(variable date: 'WFDate', dateFormats ?dateFormat: 'WFDateFormatStyle' = "Short", timeFormats ?timeFormat: 'WFTimeFormatStyle' = "Short", text ?customDateFormat: 'WFDateFormat')
+formatTimestamp(variable date, dateFormats ?dateFormat = "Short", timeFormats ?timeFormat = "Short", text ?customDateFormat)
 ```
 
 ## Reminders
@@ -303,7 +301,7 @@ formatTimestamp(variable date: 'WFDate', dateFormats ?dateFormat: 'WFDateFormatS
 ### Open Reminders List
 
 ```
-openRemindersList(variable list: 'WFList')
+openRemindersList(variable list)
 ```
 
 ---
@@ -311,7 +309,7 @@ openRemindersList(variable list: 'WFList')
 ### Remove Reminders
 
 ```
-removeReminders(variable reminders: 'WFInputReminders')
+removeReminders(variable reminders)
 ```
 
 ## Timers
