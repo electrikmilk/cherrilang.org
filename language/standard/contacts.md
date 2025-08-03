@@ -45,7 +45,7 @@ enum abcSortOrder {
     'Z to A',
 }
 
-filterContacts(variable contacts: 'WFContentItemInputParameter', contactDetail ?sortBy: 'WFContentItemSortProperty', abcSortOrder ?sortOrder: 'WFContentItemSortOrder' = "A to Z", number ?limit: 'WFContentItemLimitNumber')
+filterContacts(variable contacts, contactDetail ?sortBy, abcSortOrder ?sortOrder = "A to Z", number ?limit)
 ```
 
 ---
@@ -55,7 +55,7 @@ filterContacts(variable contacts: 'WFContentItemInputParameter', contactDetail ?
 Get contacts from input.
 
 ```
-getContacts(variable input: 'WFInput'): array
+getContacts(variable input): array
 ```
 
 ---
@@ -87,7 +87,7 @@ enum contactDetail {
     'Random',
 }
 
-getContactDetail(variable contact: 'WFInput', contactDetail detail: 'WFContentItemPropertyName')
+getContactDetail(variable contact, contactDetail detail)
 ```
 
 ---
@@ -97,7 +97,7 @@ getContactDetail(variable contact: 'WFInput', contactDetail detail: 'WFContentIt
 Prompt the user to select a contact or multiple contacts. Returns selected contact.
 
 ```
-selectContact(bool ?multiple: 'WFSelectMultiple' = false)
+selectContact(bool ?multiple = false)
 ```
 
 ---
@@ -127,7 +127,7 @@ enum contactDetail {
     'Random',
 }
 
-updateContact(variable contact: 'WFInput', contactDetail detail: 'WFContentItemPropertyName', text value)
+updateContact(variable contact, contactDetail detail, text value)
 ```
 
 ## Contacts
@@ -137,7 +137,7 @@ updateContact(variable contact: 'WFInput', contactDetail detail: 'WFContentItemP
 Create a new contact.
 
 ```
-newContact(text firstName: 'WFContactFirstName', text lastName: 'WFContactLastName', text phoneNumber, text emailAddress, text company: 'WFContactCompany', text notes: 'WFContactNotes', bool ?prompt: 'ShowWhenRun' = false)
+newContact(text firstName, text lastName, text phoneNumber, text emailAddress, text company, text notes, bool ?prompt = false)
 ```
 
 ---
@@ -150,7 +150,7 @@ Remove detail from contact.
 enum contactDetails {
 }
 
-removeContactDetail(variable contact: 'WFInput', contactDetails detail: 'WFContentItemPropertyName')
+removeContactDetail(variable contact, contactDetails detail)
 ```
 
 ## Email
@@ -170,7 +170,7 @@ emailAddress(text ...email)
 Get emails from input.
 
 ```
-getEmails(text input: 'WFInput'): array
+getEmails(text input): array
 ```
 
 ---
@@ -190,7 +190,7 @@ selectEmailAddress()
 Call a contact.
 
 ```
-call(variable contact: 'WFCallContact')
+call(variable contact)
 ```
 
 ---
@@ -205,7 +205,7 @@ enum facetimeCallType {
     'Audio',
 }
 
-facetimeCall(variable contact: 'WFFaceTimeContact', facetimeCallType ?type: 'WFFaceTimeType' = "Video")
+facetimeCall(variable contact, facetimeCallType ?type = "Video")
 ```
 
 ---
@@ -215,7 +215,7 @@ facetimeCall(variable contact: 'WFFaceTimeContact', facetimeCallType ?type: 'WFF
 Get phone numbers from input.
 
 ```
-getPhoneNumbers(variable input: 'WFInput'): array
+getPhoneNumbers(variable input): array
 ```
 
 ---
