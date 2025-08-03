@@ -3,7 +3,7 @@ title: Contacts
 layout: default
 grand_parent: Documentation
 parent: Actions
-nav_order: 2
+nav_order: 4
 ---
 
 # Contacts Actions
