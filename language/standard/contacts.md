@@ -15,45 +15,7 @@ nav_order: 2
 1. TOC
 {:toc}
 
-### Update Contact
-
-```
-enum contactDetail {
-    'First Name',
-    'Middle Name',
-    'Last Name',
-    'Birthday',
-    'Prefix',
-    'Suffix',
-    'Nickname',
-    'Phonetic First Name',
-    'Phonetic Last Name',
-    'Phonetic Middle Name',
-    'Company',
-    'Job Title',
-    'Department',
-    'File Extension',
-    'Creation Date',
-    'File Path',
-    'Last Modified Date',
-    'Name',
-    'Random',
-}
-
-updateContact(variable contact: 'WFInput', contactDetail detail: 'WFContentItemPropertyName', text value)
-```
-
-## Contacts
-
-### Add New Contact
-
-Create a new contact.
-
-```
-newContact(text firstName: 'WFContactFirstName', text lastName: 'WFContactLastName', text phoneNumber, text emailAddress, text company: 'WFContactCompany', text notes: 'WFContactNotes', bool ?prompt: 'ShowWhenRun' = false)
-```
-
----
+# Contacts Actions
 
 ### Filter Contacts
 
@@ -132,6 +94,56 @@ getContactDetail(variable contact: 'WFInput', contactDetail detail: 'WFContentIt
 
 ---
 
+### Select Contact
+
+Prompt the user to select a contact or multiple contacts. Returns selected contact.
+
+```
+selectContact(bool ?multiple: 'WFSelectMultiple' = false)
+```
+
+---
+
+### Update Contact
+
+```
+enum contactDetail {
+    'First Name',
+    'Middle Name',
+    'Last Name',
+    'Birthday',
+    'Prefix',
+    'Suffix',
+    'Nickname',
+    'Phonetic First Name',
+    'Phonetic Last Name',
+    'Phonetic Middle Name',
+    'Company',
+    'Job Title',
+    'Department',
+    'File Extension',
+    'Creation Date',
+    'File Path',
+    'Last Modified Date',
+    'Name',
+    'Random',
+}
+
+updateContact(variable contact: 'WFInput', contactDetail detail: 'WFContentItemPropertyName', text value)
+```
+
+## Contacts
+
+### Add New Contact
+
+Create a new contact.
+
+```
+newContact(text firstName: 'WFContactFirstName', text lastName: 'WFContactLastName', text phoneNumber, text emailAddress, text company: 'WFContactCompany', text notes: 'WFContactNotes', bool ?prompt: 'ShowWhenRun' = false)
+```
+
+---
+
 ### Remove Contact Detail
 
 Remove detail from contact.
@@ -141,16 +153,6 @@ enum contactDetails {
 }
 
 removeContactDetail(variable contact: 'WFInput', contactDetails detail: 'WFContentItemPropertyName')
-```
-
----
-
-### Select Contact
-
-Prompt the user to select a contact or multiple contacts. Returns selected contact.
-
-```
-selectContact(bool ?multiple: 'WFSelectMultiple' = false)
 ```
 
 ## Email
