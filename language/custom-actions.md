@@ -55,9 +55,6 @@ When calling your custom action, keep in mind that the arguments you use will be
 
 ### Optional
 
-Future release
-{: .label .label-purple }
-
 Add a `?` before the argument name to mark it as optional, meaning it is not required to be filled in. Otherwise, the compiler will complain if the argument is not filled in when the custom action is called.
 
 ```
@@ -68,9 +65,6 @@ action myAction(text ?message) {
 
 ### Literal
 
-Future release
-{: .label .label-purple }
-
 Add a `!` after the type of the argument name to mark it as requiring a literal value, for parameters that do not accept a variable value.
 
 ```
@@ -80,9 +74,6 @@ action myAction(text! message) {
 ```
 
 ### Default Value
-
-Future release
-{: .label .label-purple }
 
 You can optionally use an assignment operator to set a default value for the argument. The compiler will warn against using the default value for this argument, as that will make for a smaller shortcut.
 
@@ -120,10 +111,7 @@ action sum(number op1, number op2): number {
 
 ### Output Type Coersion
 
-Future release
-{: .label .label-purple }
-
-In a future release, type coercion will be done at the action call level, where the output of the action will be put in a type casting action, such as a text or number action, and then assigned to the variable for the return variable but only if there is one.
+Type coercion is be done at the action call level, where the output of the action will be put in a type casting action, such as a text or number action, and then assigned to the variable for the return variable, but only if there is one.
 
 ### Recursion
 
