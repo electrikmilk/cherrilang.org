@@ -21,6 +21,12 @@
     }
 }
 
+@media (min-width: 799px) {
+    .search-input {
+        background: transparent !important
+    }
+}
+
 @import "./color_schemes/dark";
 
 $link-color: $red-100;
@@ -115,10 +121,6 @@ p.note::before, blockquote.note::before {
     100% {
         box-shadow: 0 0 150px #f971dd80;
     }
-}
-
-.search-input {
-    background: transparent !important
 }
 
 .box {
