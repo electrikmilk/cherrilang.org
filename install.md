@@ -7,9 +7,9 @@ nav_order: 1
 
 # Install
 
-## macOS
+## macOS & Linux
 
-The easiest way to use Cherri on a Mac is to download the latest binary release from GitHub.
+The easiest way to use Cherri is to download the latest binary release from GitHub.
 
 {: .note }
 The latest release may not include everything in the newest documentation, and you may run into actions or language features of a future release (other than actions, these should be marked). To use the latest features (which are subject to change or may not work properly) [build from source](#build-from-source).
@@ -18,17 +18,17 @@ The latest release may not include everything in the newest documentation, and y
 
 After downloading and extracting, move the binary to `/usr/local/bin` or execute it in the directory you extracted it from.
 
-You will likely need to allow the binary to run with Gatekeeper. If it gives you too much trouble, [build from source](#build-from-source).
+On macOS, you will likely need to allow the binary to run with Gatekeeper. If it gives you too much trouble, [build from source](#build-from-source).
 
-## Windows, Linux, etc.
+## Windows, *nix, etc.
 
-The official releases are currently only compiled for the arm64 (Apple Silicon) and x86_64 (Intel) macOS platforms, as native AEA signing only exists on macOS.
+Native AEA signing only exists on macOS other than 3rd party implementations, otherwise a signing service is used.
 
 The compiler should work on most Linux or Unix-like OSs that Go runs on, and is built and tested on Ubuntu Linux for commit checks in addition to macOS. However, you can only sign Shortcuts using the HubSign service. 
 
 I haven't tried to run Cherri on other systems like NetBSD or something, and so I do not want to guarantee the binary will work. I have tried to test Windows, but this fails and needs work. Feel free to reach out if Cherri works on your non-macOS, non-Linux system, and I will add it to the list of binaries for release.
 
-However, you can also simply use the Cherri Playground site, which allows using the compiler from any platform and signs Shortcuts when they are shared.
+However, you can also simply use the Cherri Playground site, which allows using the compiler from any platform with a web broser and signs Shortcuts when they are shared.
 
 <a href="[https://github.com/electrikmilk/cherri/releases](https://playground.cherrilang.org/)" class="btn btn-red" target="_blank">Use the Cherri Playground</a>
 
