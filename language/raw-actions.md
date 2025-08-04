@@ -29,7 +29,7 @@ rawAction("is.workflow.actions.alert", {
 
 This defines an alert action with the message `Hello World!`. This action is already defined in Cherri using the `alert()` action. Still, this example demonstrates a simple way actions not implemented in Cherri can be used.
 
-However, there is an alternative called [action definitions](/language/define-actions) in a future release, which creates reusable action definitions.
+However, there is an alternative called [action definitions](/language/define-actions), which creates reusable action definitions.
 
 ## Parsing Shortcut Data
 
@@ -93,9 +93,6 @@ rawAction("is.workflow.actions.setvariable", {
 | array  | array |
 
 ## Variable Values
-
-Future Release
-{: .label .label-purple }
 
 To use a variable value for a parameter that only accepts a variable value, prepend an inline variable reference's brackets in a string value with the character `$`.
 
