@@ -3,7 +3,7 @@ title: Shortcuts
 layout: default
 grand_parent: Documentation
 parent: Actions
-nav_order: 16
+nav_order: 18
 ---
 
 # Shortcuts Actions
