@@ -304,7 +304,7 @@ Setting a variable's value type explicitly also compiles faster than having to i
 @list: array
 @obj: dictionary
 @boolean: bool
-@reference: var
+@reference: variable
 @real: float
 
 @builder: text
