@@ -83,14 +83,14 @@ p.note::before, blockquote.note::before {
   text-align: center;
   background-image: url(/assets/glyphs.png);
   background-repeat: repeat;
-  background-size: cover;
+  background-size: 110%;
   margin: -1rem -1rem 1rem -1rem;
   animation: aurora 7s ease infinite;
   white-space: break-spaces;
   border-radius: 0.7rem;
   border: 0.1rem solid;
   border-color: #667 #555 #444;
-  animation: aurora 7s ease infinite, slide 60s ease infinite
+  animation: aurora 7s ease infinite, slide 90s ease-in-out infinite
 }
 
 @keyframes slide {
