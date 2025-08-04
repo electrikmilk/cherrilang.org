@@ -17,6 +17,15 @@ nav_order: 19
 
 ---
 
+{: .note-title }
+> Required Include
+> 
+> To use actions in this category, use this include statement:
+>
+> ```
+> #include 'actions/shortcuts'
+> ```
+
 ### Create Shortcut Link
 
 ```

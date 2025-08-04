@@ -17,6 +17,15 @@ nav_order: 5
 
 ---
 
+{: .note-title }
+> Required Include
+> 
+> To use actions in this category, use this include statement:
+>
+> ```
+> #include 'actions/crypto'
+> ```
+
 ### Base 64 Decode
 
 Base 64 decodes input.

@@ -17,6 +17,15 @@ nav_order: 10
 
 ---
 
+{: .note-title }
+> Required Include
+> 
+> To use actions in this category, use this include statement:
+>
+> ```
+> #include 'actions/mac'
+> ```
+
 ### Get Apps
 
 Get list of applications.

@@ -17,6 +17,15 @@ nav_order: 7
 
 ---
 
+{: .note-title }
+> Required Include
+> 
+> To use actions in this category, use this include statement:
+>
+> ```
+> #include 'actions/documents'
+> ```
+
 ### Convert to USDZ
 
 ```

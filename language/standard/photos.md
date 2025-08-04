@@ -17,6 +17,15 @@ nav_order: 16
 
 ---
 
+{: .note-title }
+> Required Include
+> 
+> To use actions in this category, use this include statement:
+>
+> ```
+> #include 'actions/photos'
+> ```
+
 ### Create Album
 
 ```

@@ -17,6 +17,15 @@ nav_order: 15
 
 ---
 
+{: .note-title }
+> Required Include
+> 
+> To use actions in this category, use this include statement:
+>
+> ```
+> #include 'actions/pdf'
+> ```
+
 ### Get PDF Text
 
 Get text from PDF.

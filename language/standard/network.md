@@ -17,6 +17,15 @@ nav_order: 14
 
 ---
 
+{: .note-title }
+> Required Include
+> 
+> To use actions in this category, use this include statement:
+>
+> ```
+> #include 'actions/network'
+> ```
+
 ## IP Address
 
 ### Get External IP

@@ -17,6 +17,15 @@ nav_order: 21
 
 ---
 
+{: .note-title }
+> Required Include
+> 
+> To use actions in this category, use this include statement:
+>
+> ```
+> #include 'actions/translation'
+> ```
+
 ### Languages
 
 | Code 	| Language 	|

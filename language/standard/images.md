@@ -17,6 +17,15 @@ nav_order: 8
 
 ---
 
+{: .note-title }
+> Required Include
+> 
+> To use actions in this category, use this include statement:
+>
+> ```
+> #include 'actions/images'
+> ```
+
 ## GIFs
 
 ### Add To GIF

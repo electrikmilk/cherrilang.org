@@ -17,6 +17,15 @@ nav_order: 20
 
 ---
 
+{: .note-title }
+> Required Include
+> 
+> To use actions in this category, use this include statement:
+>
+> ```
+> #include 'actions/text'
+> ```
+
 ### Define
 
 Returns the definition of the word.

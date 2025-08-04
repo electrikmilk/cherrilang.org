@@ -17,6 +17,15 @@ nav_order: 18
 
 ---
 
+{: .note-title }
+> Required Include
+> 
+> To use actions in this category, use this include statement:
+>
+> ```
+> #include 'actions/sharing'
+> ```
+
 ### Share
 
 Prompt the user to share `input`.

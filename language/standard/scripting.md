@@ -17,6 +17,15 @@ nav_order: 17
 
 ---
 
+{: .note-title }
+> Required Include
+> 
+> To use actions in this category, use this include statement:
+>
+> ```
+> #include 'actions/scripting'
+> ```
+
 ## Apps
 
 ### App ID Shorthands

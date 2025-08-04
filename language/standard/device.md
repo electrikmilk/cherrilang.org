@@ -17,6 +17,15 @@ nav_order: 6
 
 ---
 
+{: .note-title }
+> Required Include
+> 
+> To use actions in this category, use this include statement:
+>
+> ```
+> #include 'actions/device'
+> ```
+
 ### Get Device Detail
 
 Get a detail about the current device.

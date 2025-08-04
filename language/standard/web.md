@@ -17,6 +17,15 @@ nav_order: 22
 
 ---
 
+{: .note-title }
+> Required Include
+> 
+> To use actions in this category, use this include statement:
+>
+> ```
+> #include 'actions/web'
+> ```
+
 ### Open Custom X-Callback URL
 
 ```

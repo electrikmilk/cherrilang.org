@@ -17,6 +17,15 @@ nav_order: 12
 
 ---
 
+{: .note-title }
+> Required Include
+> 
+> To use actions in this category, use this include statement:
+>
+> ```
+> #include 'actions/media'
+> ```
+
 ## App Store
 
 ### Find App Store Apps

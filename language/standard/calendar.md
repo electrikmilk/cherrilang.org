@@ -17,6 +17,15 @@ nav_order: 3
 
 ---
 
+{: .note-title }
+> Required Include
+> 
+> To use actions in this category, use this include statement:
+>
+> ```
+> #include 'actions/calendar'
+> ```
+
 ## Alarms
 
 ### Create Alarm

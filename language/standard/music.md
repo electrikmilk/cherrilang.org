@@ -17,6 +17,15 @@ nav_order: 13
 
 ---
 
+{: .note-title }
+> Required Include
+> 
+> To use actions in this category, use this include statement:
+>
+> ```
+> #include 'actions/music'
+> ```
+
 ### Add to Music
 
 Add music to library.

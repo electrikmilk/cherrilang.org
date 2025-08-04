@@ -17,6 +17,15 @@ nav_order: 11
 
 ---
 
+{: .note-title }
+> Required Include
+> 
+> To use actions in this category, use this include statement:
+>
+> ```
+> #include 'actions/math'
+> ```
+
 ### Calculate
 
 Perform various calculation operations using one or two operands.
