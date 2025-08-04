@@ -74,7 +74,7 @@ statistic(statisticOperations operation, variable input)
 
 ### Round
 
-Rounds number up to specified rounding place.
+Rounds number to specified rounding place.
 
 ```
 enum rounding {
