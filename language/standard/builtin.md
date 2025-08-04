@@ -44,7 +44,7 @@ For example, you could enter a file path for an audio file and use **Play Audio*
 Keep in mind you will likely need to decode the contents to use them.
 
 ```
-const audioFile = base64File("music/playme.mp3")
+const audioFile = embedFile("music/playme.mp3")
 const audio = base64Decode(audioFile)
 playSound(audio)
 ```
