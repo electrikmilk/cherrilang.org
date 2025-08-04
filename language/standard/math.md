@@ -51,6 +51,27 @@ calculate(calculationOperation operation, number operandOne, number ?operandTwo)
 
 ---
 
+### Statistic
+
+Perform a statistical operation on `input`.
+
+```
+enum statisticOperations {
+    'Average',
+    'Minimum',
+    'Maximum',
+    'Sum',
+    'Median',
+    'Mode',
+    'Range',
+    'Standard Deviation',
+}
+
+statistic(statisticOperations operation, variable input)
+```
+
+## Rounding
+
 ### Round
 
 Rounds number up to specified rounding place.
@@ -107,25 +128,4 @@ enum rounding {
 }
 
 ceil(number number, rounding ?roundTo = "Ones Place")
-```
-
----
-
-### Statistic
-
-Perform a statistic operation on `input`.
-
-```
-enum statisticOperations {
-    'Average',
-    'Minimum',
-    'Maximum',
-    'Sum',
-    'Median',
-    'Mode',
-    'Range',
-    'Standard Deviation',
-}
-
-statistic(statisticOperations operation, variable input)
 ```
