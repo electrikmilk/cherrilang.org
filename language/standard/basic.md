@@ -17,6 +17,8 @@ nav_order: 2
 
 ---
 
+Actions in this category are automatically included.
+
 ### Comment
 
 Add an explicit comment.
@@ -113,7 +115,17 @@ Wait for the user to return to Shortcuts.
 waitToReturn()
 ```
 
-## Notification
+## Notifications
+
+### Alert
+
+Shows an alert with text and optional title and an OK button to proceed.
+
+```
+alert(text alert, text ?title)
+```
+
+---
 
 ### Ask for Input
 
@@ -130,16 +142,6 @@ enum inputType {
 }
 
 prompt(text prompt, inputType ?inputType = "Text", text ?defaultValue, text ?multiline = true)
-```
-
-## Notifications
-
-### Alert
-
-Shows an alert with text and optional title and an OK button to proceed.
-
-```
-alert(text alert, text ?title)
 ```
 
 ---
