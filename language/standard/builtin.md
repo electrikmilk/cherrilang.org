@@ -51,18 +51,6 @@ playSound(audio)
 
 ---
 
-## Open SpringBoard
-
-Go to the home screen.
-
-```
-springBoard()
-```
-
-This uses the [Open App](/language/standard/scripting#open-app) action to open the SpringBoard or Homescreen.
-
----
-
 ## [Make vCard](/language/vcards)
 
 Create vCards without having to remember the format. Embed local images as an image for a menu item.
