@@ -17,6 +17,16 @@ nav_order: 17
 
 ---
 
+### Share
+
+Prompt the user to share `input`.
+
+```
+share(variable input)
+```
+
+## AirDrop
+
 ### AirDrop
 
 Prompt the user to AirDrop `input`.
@@ -39,16 +49,6 @@ enum airdropReceivingStates {
 }
 
 setAirdropReceiving(airdropReceivingStates ?state = "Everyone")
-```
-
----
-
-### Share
-
-Prompt the user to share `input`.
-
-```
-share(variable input)
 ```
 
 ## Clipboard
