@@ -204,10 +204,7 @@ Actions have output types. View the [actions](/language/actions) documentation t
 
 Some actions have arguments with the type `enum`, accompanied by a set of allowed values. This type only accepts specific string values.
 
-Future release
-{: .label .label-purple }
-
-In the next release, enumerations have been implemented as proper types with values defined in code, so enumerations can have identifiers and be defined easily in code for standard actions and user-defined actions.  
+In the next release, enumerations have been implemented as proper types with values defined in code, allowing them to have identifiers and be easily defined in code for both standard and user-defined actions.  
 
 To define enumerations for use as a type for [custom actions](/language/custom-actions) and [action definitions](/language/define-actions), use the following syntax:
 
@@ -319,7 +316,7 @@ The following types may be used:
 - `dictionary` (default: `{}`)
 - `array` (default: `[]`)
 - `var` (variable reference)
-- `float` (future release)
+- `float`
 
 ## Type Coercion
 
