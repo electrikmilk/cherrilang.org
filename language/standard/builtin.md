@@ -34,7 +34,7 @@ This uses a [Match Text](/language/standard/documents#match-text) action to chec
 ## Base64 Encode File
 
 ```
-base64File(text filePath)
+embedFile(text filePath)
 ```
 
 This built-in action will load the file at `filePath` and encode it to base 64 at compile time. This will result in a **Text** action containing the base 64 encoded contents of the file which Shortcuts can decode for showing an image, playing audio, etc.
