@@ -12,7 +12,8 @@
 
 @media (max-width: 799px) {
     .hero {
-        margin: -1rem -2rem 1rem !important
+        margin: -1rem -2rem 2rem !important;
+        border-radius: none !important
     }
     .hero-button {
         display: block !important;
