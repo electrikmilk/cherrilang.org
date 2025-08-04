@@ -17,13 +17,6 @@ nav_order: 14
 
 ---
 
-To use actions in this category, use this include statement:
-
-```
-#include 'actions/network'
-```
-
-
 ## IP Address
 
 ### Get External IP
