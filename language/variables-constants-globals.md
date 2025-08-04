@@ -171,7 +171,7 @@ Keep in mind that Shortcuts may be picky about the usage of this global for an a
 
 The prompt for an `Ask` used for an action argument can be set using the following syntax:
 
-```
+```ruby
 wait(Ask: 'How many seconds?')
 ```
 
