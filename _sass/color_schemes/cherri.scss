@@ -116,6 +116,10 @@ p.note::before, blockquote.note::before {
     }
 }
 
+.search-input {
+    background: transparent !important
+}
+
 .box {
     background: #333e49;
     border-radius: 0.2rem;
