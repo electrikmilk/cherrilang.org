@@ -169,10 +169,7 @@ Keep in mind that Shortcuts may be picky about the usage of this global for an a
 
 ### Prompt
 
-Future release
-{: .label .label-purple }
-
-In a future release, the prompt for an `Ask` used for an action argument can be set using the following syntax:
+The prompt for an `Ask` used for an action argument can be set using the following syntax:
 
 ```
 wait(Ask: 'How many seconds?')
