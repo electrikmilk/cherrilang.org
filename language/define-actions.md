@@ -7,9 +7,6 @@ nav_order: 13
 
 # Action Definitions
 
-Future Release
-{: .label .label-purple }
-
 ## Definition
 
 To define a Shortcut action raw, in the same reusable way as the [standard Shortcut actions](/language/actions) in the compiler, use the following syntax similar to a [definition](/language/definitions):
