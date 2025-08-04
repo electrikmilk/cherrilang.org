@@ -17,9 +17,7 @@ nav_order: 4
 
 ---
 
-{: .note-title }
-> Required Include
-> 
+{: .warning }
 > To use actions in this category, use this include statement:
 >
 > ```
