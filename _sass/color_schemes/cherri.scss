@@ -112,18 +112,18 @@ p.note::before, blockquote.note::before {
 }
 
 @keyframes aurora {
-  0% {
-    box-shadow: inset 0 0 167px #79312d, 0 3px 20px rgba(0, 0, 0, .5);
-  }
-  25% {
-    box-shadow: inset 0 0 167px rgba(43, 211, 152, 0.5), 0 3px 20px rgba(0, 0, 0, .5);
-  }
-  50% {
-    box-shadow: inset 0 0 167px rgba(52, 163, 232, 0.5), 0 3px 20px rgba(0, 0, 0, .5);
-  }
-  100% {
-    box-shadow: inset 0 0 167px #79312d, 0 3px 20px rgba(0, 0, 0, .5);
-  }
+    0% {
+        box-shadow: inset 0 0 167px #f971dd, 0 3px 20px rgba(0, 0, 0, .5);
+    }
+    25% {
+        box-shadow: inset 0 0 167px #5bd0b4, 0 3px 20px rgba(0, 0, 0, .5);
+    }
+    50% {
+        box-shadow: inset 0 0 167px #2b8df5, 0 3px 20px rgba(0, 0, 0, .5);
+    }
+    100% {
+        box-shadow: inset 0 0 167px #f26c5d, 0 3px 20px rgba(0, 0, 0, .5);
+    }
 }
 
 .box {
