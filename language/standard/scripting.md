@@ -3,7 +3,7 @@ title: Scripting
 layout: default
 grand_parent: Documentation
 parent: Actions
-nav_order: 6
+nav_order: 16
 ---
 
 # Scripting Actions
