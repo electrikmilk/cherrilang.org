@@ -91,11 +91,6 @@ Only two operands will compile to a **Math** action:
 @expression = 54 + 6
 ```
 
-Future Release
-{: .label .label-purple }
-
-In a future release, expression parsing will be much improved. It fixes issues with expressions starting with a parenthesis and expressions being confused with other values containing operators.
-
 ### Boolean
 
 Booleans translate to a number value of `1` for `true` and `0` for `false`.
