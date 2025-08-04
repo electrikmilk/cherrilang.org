@@ -24,6 +24,16 @@ nav_order: 4
 > #include 'actions/contacts'
 > ```
 
+### Add New Contact
+
+Create a new contact.
+
+```
+newContact(text firstName, text lastName, text phoneNumber, text emailAddress, text company, text notes, bool ?prompt = false)
+```
+
+---
+
 ### Filter Contacts
 
 ```
@@ -101,6 +111,19 @@ getContactDetail(variable contact, contactDetail detail)
 
 ---
 
+### Remove Contact Detail
+
+Remove detail from contact.
+
+```
+enum contactDetails {
+}
+
+removeContactDetail(variable contact, contactDetails detail)
+```
+
+---
+
 ### Select Contact
 
 Prompt the user to select a contact or multiple contacts. Returns selected contact.
@@ -137,29 +160,6 @@ enum contactDetail {
 }
 
 updateContact(variable contact, contactDetail detail, text value)
-```
-
-## Contacts
-
-### Add New Contact
-
-Create a new contact.
-
-```
-newContact(text firstName, text lastName, text phoneNumber, text emailAddress, text company, text notes, bool ?prompt = false)
-```
-
----
-
-### Remove Contact Detail
-
-Remove detail from contact.
-
-```
-enum contactDetails {
-}
-
-removeContactDetail(variable contact, contactDetails detail)
 ```
 
 ## Email
