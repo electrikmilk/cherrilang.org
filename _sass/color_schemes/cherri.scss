@@ -93,16 +93,15 @@ p.note::before, blockquote.note::before {
   border-radius: 0.7rem;
   border: 0.1rem solid;
   border-color: #777 #555 #444;
-  animation: aurora 7s ease infinite
+  animation: aurora 7s ease-in-out infinite
 }
 
 .hero-button {
   border: 0.1rem solid $red-100 !important;
   background: none !important;
   color: white !important;
-  box-shadow: 0 1px 17px rgba(248, 100, 91, 1.4) !important;
   font-weight: 500 !important;
-  animation: aurora 7s ease infinite
+  animation: aurora 7s ease-in-out infinite
 }
 
 @keyframes aurora {
