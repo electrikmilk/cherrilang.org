@@ -93,7 +93,7 @@ p.note::before, blockquote.note::before {
   border-radius: 0.7rem;
   border: 0.1rem solid;
   border-color: #777 #555 #444;
-  animation: aurora 7s ease infinite
+  animation: aurora 10s ease-in-out infinite
 }
 
 .hero-button {
@@ -101,8 +101,7 @@ p.note::before, blockquote.note::before {
   background: none !important;
   color: white !important;
   box-shadow: 0 1px 17px rgba(248, 100, 91, 1.4) !important;
-  font-weight: 500 !important;
-  animation: aurora 7s ease infinite
+  font-weight: 500 !important
 }
 
 @keyframes aurora {
@@ -113,10 +112,10 @@ p.note::before, blockquote.note::before {
         box-shadow: -1rem 1rem 150px #5bd0b480;
     }
     50% {
-        box-shadow: 1rem -1rem 150px #2b8df580;
+        box-shadow: 3rem -1rem 150px #2b8df580;
     }
     75% {
-        box-shadow: 2rem -1rem 150px #f26c5d80;
+        box-shadow: 2rem -3rem 150px #f26c5d80;
     }
     100% {
         box-shadow: 0 0 150px #f971dd80;
