@@ -24,111 +24,21 @@ nav_order: 12
 > #include 'actions/media'
 > ```
 
-## App Store
-
-### Find App Store Apps
-
-Search the app store for apps using `query`.
+### Search App Store
 
 ```
 searchAppStore(text query)
 ```
 
-## Audio
-
-### Record Audio
-
-Record some audio.
-
-```
-recordAudio(enum ?quality = "Normal", enum ?start = "On Tap")
-```
-
-#### Qualities
-
-- Normal
-- Very High
-
-#### Start Recording
-
-- On Tap
-- Immediately
-
 ---
 
-### Recognize Music
-
-Use Shazam to recognize music.
+### Show In iTunes
 
 ```
-startShazam(bool ?show = true, bool ?showError = true)
+showIniTunes(variable product)
 ```
 
 ---
-
-### Get Details of Shazam
-
-Get a detail of a Shazam match.
-
-```
-getShazamDetail(variable input, enum detail)
-```
-
-#### Details
-
-- Apple Music ID
-- Artist
-- Title
-- Is Explicit
-- Lyrics Snippet
-- Lyric Snippet Synced
-- Artwork
-- Video URL
-- Shazam URL
-- Apple Music URL
-- Name
-
-_**Note:** Enum values are case-sensitive._
-
-## Camera
-
-### Take Photo
-
-Takes `number` of photo(s).
-
-```
-takePhoto(integer ?count = 1, boolean ?showPreview = true)
-```
-
----
-
-### Take Video
-
-Takes a video using `camera` in `quality`.
-
-```
-takeVideo(enum ?camera = "Front", enum ?quality = "High", enum ?recordingStart = "Immediately")
-```
-
-#### Cameras
-
-- Front
-- Back
-
-#### Qualities
-
-- Low
-- Medium
-- High
-
-#### Start Recording
-
-- On Tap
-- Immediately
-
-_**Note:** Enum values are case-sensitive._
-
-## Device
 
 ### Take Screenshot
 
@@ -136,723 +46,134 @@ _**Note:** Enum values are case-sensitive._
 takeScreenshot(bool ?mainMonitorOnly = false)
 ```
 
-**Note: `mainMonitorOnly` will only apply to a Mac**
+## Audio
 
----
+### Encode Audio
 
-### Take Interactive Screenshot
-
-Take an interactive Screenshot
+Encode audio to a different format and/or speed.
 
 ```
-takeInteractiveScreenshot(enum ?selection = "Window")
-```
+enum audioFormats {
+    'M4A',
+    'AIFF',
+}
 
-#### Selections
+enum audioSpeeds {
+    '0.5X',
+    'Normal',
+    '2X',
+}
 
-- Window
-- Custom
-
-_**Note:** Enum values are case-sensitive._
-
-**Note: Mac-only action**
-
-## GIFs
-
-### Make GIF
-
-Create a GIF.
-
-```
-makeGIF(variable input, text ?delay = "0.3", number ?loops, text ?width, text ?height)
+encodeAudio(variable audio, audioFormats ?format = "M4A", audioSpeeds ?speed = "Normal")
 ```
 
 ---
 
-### Add Frame to GIF
+### Play Audio
 
-Add a frame to a GIF.
-
-```
-addToGIF(text image, text gif, text ?delay = "0.25", bool ?autoSize = true, text ?width, text ?height)
-```
-
-**Note:** `width` and `height` can only be used when `autoSize` is `false`.
-
----
-
-### Make Video from GIF
-
-Make video from `gif`, looping `loops` number of times. Returns GIF as video.
+Play a sound.
 
 ```
-makeVideoFromGIF(variable gif, number ?loops = 1)
+playSound(variable input)
 ```
 
 ---
 
-### Get Frames from Image
+### Record Audio
 
-Get frames from an image.
-
-```
-getImageFrames(variable image)
-```
-
-## Image Editing
-
-### Combine Images
-
-Combine `images` using `mode` with `spacing`.
+Prompt the user to record audio.
 
 ```
-combineImages(variable images, text ?mode = "vertically", number ?spacing = 1)
+enum audioQuality {
+    'Normal',
+    'Very High',
+}
+
+enum audioStart {
+    'On Tap',
+    'Immediately',
+}
+
+recordAudio(audioQuality ?quality = "Normal", audioStart ?start = "On Tap")
 ```
 
-#### Modes
+## Camera
 
-- Horizontally
-- Vertically
-- Grid
+### Take Photo
 
-### Crop Image
-
-Crop `image` at `position` to `width` and `height`. Returns cropped image.
+Prompt the user to start recording a video.
 
 ```
-cropImage(variable image, text ?width = "100", text ?height = "100", enum ?position = "Center", text ?customPositionX, text ?customPositionY)
-```
+enum cameraOrientation {
+    'Front',
+    'Back',
+}
 
-#### Positions
+enum videoQuality {
+    'Low',
+    'Medium',
+    'High',
+}
 
-- Center
-- Top Left
-- Top Right
-- Bottom Left
-- Bottom Right
-- Custom
+enum recordingStart {
+    'On Tap',
+    'Immediately',
+}
 
-_**Note:** Enum values are case-sensitive._
-
----
-
-### Flip Image
-
-Flip `image` in `direction`. Returns the flipped image.
-
-```
-flipImage(variable image, enum direction)
-```
-
-#### Flip Directions
-
-- Horizontal
-- Vertical
-
-_**Note:** Enum values are case-sensitive._
-
----
-
-### Mask Image
-
-Mask an image. The `radius` only applies to the **Rounded Rectangle** type.
-
-```
-maskImage(variable image, enum type, text ?radius)
-```
-
-#### Types
-
-- Rounded Rectangle
-- Ellipse
-- Icon
-
-_**Note:** Enum values are case-sensitive._
-
----
-
-### Custom Image Mask
-
-Put a custom mask on an image.
-
-```
-customImageMask(variable image, variable customMaskImage)
+takeVideo(cameraOrientation ?camera = "Front", videoQuality ?quality = "High", recordingStart ?recordingStart = "Immediately")
 ```
 
 ---
 
-### Overlay Image
+### Take Photo
 
-Shows an image editor to the user to overlay an image onto another image.
-
-```
-overlayImage(variable image, variable overlayImage)
-```
-
----
-
-### Custom Image Overlay
-
-Overlay an image onto another image.
+Prompt the user to take one or more photos.
 
 ```
-customImageOverlay(variable image, variable overlayImage, text ?width, text ?height, text ?rotation = "0", text ?opacity = "100", enum ?position = "Center", text ?customPositionX, text ?customPositionY)
+takePhoto(number ?count = 1, bool ?showPreview = true)
 ```
 
-#### Positions
+## Metadata
 
-- Center
-- Top Left
-- Top Right
-- Bottom Left
-- Bottom Right
-- Custom
-
-_**Note:** Enum values are case-sensitive._
-
----
-
-### Resize Image
-
-Resize an image.
+### Set Media Metadata
 
 ```
-resizeImage(variable image, text width, text ?height)
+setMetadata(variable media, variable ?artwork, text ?title, text ?artist, text ?album, text ?genre, text ?year)
 ```
 
 ---
 
-### Resize Image By Percentage
+### Strip Media Metadata
 
-Resize an image by a percentage.
-
-```
-resizeImageByPercent(variable image, text percentage)
-```
-
----
-
-### Resize Image By Longest Edge
-
-Resize an image by the longest edge.
-
-```
-resizeImageByLongestEdge(variable image, text length)
-```
-
----
-
-### Remove Image Background
-
-Remove the background from an image.
-
-```
-removeBackground(variable image, boolean ?crop = false)
-```
-
----
-
-### Rotate Image or Video
-
-Rotate an image or video by degrees. Returns rotated image.
-
-```
-rotateMedia(variable image, text degrees)
-```
-
-## Images
-
-### Convert Image
-
-Convert an image to another image format.
-
-```
-convertImage(variable image, enum format, float ?quality, bool ?preserveMetadata = true)
-```
-
-#### Image Formats
-
-- TIFF
-- GIF
-- PNG
-- BMP
-- PDF
-- HEIF
-
----
-
-### Convert Image to JPEG
-
-Convert an image to a JPEG.
-
-```
-convertToJPEG(variable image, number ?compressionQuality, bool ?preserveMetadata = true)
-```
-
----
-
-### Strip Image Metadata
-
-Strip metadata from an image.
-
-```
-stripImageMetadata(variable image)
-```
-
----
-
-### Get Image Detail
-
-Get detail from an image.
-
-```
-getImageDetail(variable image, enum detail)
-```
-
-#### Details
-- Album
-- Width
-- Height
-- Date Taken
-- Media Type
-- Photo Type
-- Is a Screenshot
-- Is a Screen Recording
-- Location
-- Duration
-- Frame Rate
-- Orientation
-- Camera Make
-- Camera Model
-- Metadata Dictionary
-- Is Favorite
-- File Size
-- File Extension
-- Creation Date
-- File Path
-- Last Modified Date
-- Name
-
----
-
-### Make Image from PDF Page
-
-Make an image from a PDF page.
-
-```
-makeImageFromPDFPage(variable pdf, enum ?colorSpace = "RGB", text ?pageResolution = "300")
-```
-
-#### Colorspaces
-- RGB
-- Gray
-
----
-
-### Make Image from Rich Text
-
-Make an image from rich text.
-
-```
-makeImageFromRichText(variable pdf, text width, text height)
-```
-
----
-
-### Extract Text from Image
-
-Extract text from an image.
-
-```
-extractImageText(variable image)
-```
-
-## iTunes Store
-
-### Show in iTunes Store
-
-Show `product` in the iTunes Store.
-
-```
-showIniTunes(product)
-```
-
-## Music
-
-### Get Current Song
-
-Gets the current song.
-
-```
-getCurrentSong()
-```
-
----
-
-### Add to Music Library
-
-Add `songs` to music library.
-
-```
-addToMusic(songs)
-```
-
----
-
-### Select Music
-
-Select song(s) from the Music app.
-
-```
-selectMusic(bool ?selectMultiple = false)
-```
-
----
-
-### Play Music
-
-Play `music`.
-
-```
-playMusic( music, enum ?shuffle, enum ?repeat)
-```
-
-#### Shuffles:
-- Off
-- Songs
-
-#### Repeats
-- None
-- One
-- All
-
-_**Note:** Enum values are case-sensitive._
-
----
-
-### Get Music Detail
-
-```
-getMusicDetail(variable music, enum detail)
-```
-
-#### Details
-- Title
-- Album
-- Artist
-- Album Artist
-- Genre
-- Composer
-- Date Added
-- Media Kind
-- Duration
-- Play Count
-- Track Number
-- Disc Number
-- Album Artwork
-- Is Explicit
-- Lyrics
-- Release Date
-- Comments
-- Is Cloud Item
-- Skip Count
-- Last Played Date
-- Rating
-- File Path
-- Name
-
-_**Note:** Enum values are case-sensitive._
-
-## Photos
-
-### Create Photo Album
-
-Create an album named `name` with `photos`.
-
-```
-createAlbum(text name, variable ?images)
-```
-
----
-
-### Delete Photos
-
-Delete `photos` from photo library.
-
-```
-deletePhotos(variable photos)
-```
-
----
-
-### Get Last Import
-
-Gets the latest photo import.
-
-```
-getLastImport()
-```
-
----
-
-### Get Latest Bursts
-
-Get latest photo bursts.
-
-```
-getLatestBursts(number count)
-```
-
----
-
-### Get Latest Live Photos
-
-Get latest live photos.
-
-```
-getLatestLivePhotos(number count)
-```
-
----
-
-### Get Latest Screenshots
-
-Get latest screenshots.
-
-```
-getLatestScreenshots(number count)
-```
-
----
-
-### Get Latest Photos
-
-Get latest photos.
-
-```
-getLatestPhotos(number count, bool ?includeScreenshots = true)
-```
-
----
-
-### Get Latest Videos
-
-Get latest videos.
-
-```
-getlatestVideos(number count)
-```
-
----
-
-### Remove from Photo Album
-
-Remove `photo` to photo album `album`.
-
-```
-removeFromAlbum(variable photo, text album)
-```
-
----
-
-### Save to Photo Album
-
-Save `photo` to photo album `album`.
-
-```
-savePhoto(variable photo, text ?album = "Recents")
-```
-
----
-
-### Select Photos
-
-Select photos from photo library.
-
-```
-selectPhotos(bool ?selectMultiple = false)
-```
-
-## Playback
-
-### Play Music
-
-Play Apple Music on current device.
-
-```
-play()
-```
-
----
-
-### Pause Music
-
-Pause Apple Music on current device.
-
-```
-pause()
-```
-
----
-
-### Toggle Play/Pause Music
-
-Play/Pause Apple Music on current device depending on the current play status.
-
-```
-togglePlayPause()
-```
-
----
-
-### Set Volume
-
-Set device volume to `number`.
-
-```
-setVolume(number number)
-```
-
----
-
-### Seek
-
-Seek currently playing.
-
-```
-seek(number magnitude, enum duration, enum ?behavior = "To Time")
-```
-
-#### Durations
-- hr
-- min
-- sec
-
-
-#### Seek Behaviors
-- To Time
-- Forward By
-- Backward By
-
-_**Note:** Enum values are case-sensitive._
-
----
-
-### Skip Back
-
-Skip back to the previous song.
-
-```
-skipBack()
-```
-
----
-
-### Skip Forward
-
-Skip forward to the next song.
-
-```
-skipFwd()
-```
-
-## Playing Next
-
-### Add to Playing Next
-
-Add `music` as the next to play in the queue.
-
-```
-playNext(variable music)
-```
-
----
-
-### Add to Playing Later
-
-Add `music` as the last to play in the queue.
-
-```
-playLater(variable music)
-```
-
----
-
-### Clear Playing Next
-
-Clears the songs up next.
-
-```
-clearUpNext()
-```
-
-## Playlists
-
-### Add to Playlist
-
-Add `songs` to playlist with `name`.
-
-```
-addToPlaylist(text playlistName, variable songs)
-```
-
----
-
-### Create Playlist
-
-Create a playlist.
-
-```
-createPlaylist(text title, variable ?songs, text ?description, text ?author)
-```
-
----
-
-### Get Songs From Playlist
-
-Get songs in a playlist.
-
 ```
-getPlaylistSongs(variable playlistName)
+stripMediaMetadata(variable media)
 ```
 
 ## Podcasts
 
-### Find Podcasts
-
-Search Apple Podcasts for podcasts using `query`.
+### Get Podcast Detail
 
 ```
-searchPodcasts(text query)
+enum podcastDetail {
+    'Feed URL',
+    'Genre',
+    'Episode Count',
+    'Artist',
+    'Store ID',
+    'Store URL',
+    'Artwork',
+    'Artwork URL',
+    'Name',
+}
+
+getPodcastDetail(variable podcast, podcastDetail detail)
 ```
 
 ---
 
-### Get Detail of Podcast
+### Get Podcasts
 
-```
-getPodcastDetail(variable podcast, enum detail)
-```
-
-#### Details
-
-- Feed URL
-- Genre
-- Episode Count
-- Artist
-- Store ID
-- Store URL
-- Artwork
-- Artwork URL
-- Name
-
-_**Note:** Enum values are case-sensitive._
-
----
-
-### Get Podcasts from Library
-
-Get the user's podcasts from their library.
+Get users podcasts.
 
 ```
 getPodcasts()
@@ -862,78 +183,84 @@ getPodcasts()
 
 ### Play Podcast
 
-Play a podcast.
-
 ```
 playPodcast(variable podcast)
 ```
 
-## Video
+---
 
-### Strip Media Metadata
-
-Strip metadata from video or video.
+### Search Podcasts
 
 ```
-stripMediaMetadata(variable media)
+searchPodcasts(text query)
+```
+
+## Shazam
+
+### Get Shazam Detail
+
+Get a detail about a Shazam result.
+
+```
+enum shazamDetail {
+    'Apple Music ID',
+    'Artist',
+    'Title',
+    'Is Explicit',
+    'Lyrics Snippet',
+    'Lyric Snippet Synced',
+    'Artwork',
+    'Video URL',
+    'Shazam URL',
+    'Apple Music URL',
+    'Name',
+}
+
+getShazamDetail(variable input, shazamDetail detail)
 ```
 
 ---
 
-### Set Media Metadata
+### Start Shazam
 
-Set metadata for a video or audio.
+Prompt the user to play music for Shazam to recognize. Returns Shazam result.
 
 ```
-setMetadata(variable media, variable ?artwork, text ?title, text ?artist, text ?album, text ?genre, text ?year)
+startShazam(bool ?show = true, bool ?showError = true)
 ```
 
----
+## Video Editing
 
 ### Encode Video
 
-Encode a video.
+Encode a video to a different format, size and/or speed.
 
 ```
-encodeVideo(variable video, enum ?size = "Passthrough", enum ?speed = "Normal", boolean ?preserveTransparency = false)
+enum encodeVideoSizes {
+    '640×480',
+    '960×540',
+    '1280×720',
+    '1920×1080',
+    '3840×2160',
+    'HEVC 1920×1080',
+    'HEVC 3840x2160',
+    'ProRes 422',
+}
+
+enum encodeVideoSpeeds {
+    '0.5X',
+    'Normal',
+    '2X',
+}
+
+encodeVideo(variable video, encodeVideoSizes ?size = "Passthrough", encodeVideoSpeeds ?speed = "Normal", bool ?preserveTransparency = false)
 ```
-
-#### Sizes:
-
-- 640×480
-- 960×540
-- 1280×720
-- 1920×1080
-- 3840×2160
-- HEVC 1920×1080
-- HEVC 3840x2160
-- ProRes 422
-
-#### Speeds:
-- 0.5X
-- Normal
-- 2X
-
----
-
-### Encode Audio
-
-Encode audio.
-
-```
-encodeAudio(variable audio, enum ?format = "M4A", enum ?speed = "Normal")
-```
-
-#### Formats
-
-- M4A
-- AIFF
 
 ---
 
 ### Trim Video
 
-Prompts the user to trim `video`. Returns the trimmed video.
+Prompts the user to trim the video.
 
 ```
 trimVideo(variable video)
