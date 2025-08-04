@@ -17,51 +17,9 @@ nav_order: 17
 
 ---
 
-## Clipboard
+### AirDrop
 
-### Get Clipboard
-
-Get the current contents of the clipboard.
-
-```
-getClipboard()
-```
-
----
-
-### Copy to Clipboard
-
-Copy `input` to the clipboard. `local` is a boolean that is `false` by default. `expire` is when the information should leave the clipboard if it hasn't already and is a date as text (e.g. Today at 3pm).
-
-```
-copyToClipboard(variable value, boolean ?local = false, text ?expire)
-```
-
-## Messaging
-
-### Send Email
-
-Send an email to a `contact`.
-
-```
-sendEmail(variable contact, text from, text subject, text body, boolean ?prompt = true, boolean ?draft = false)
-```
-
----
-
-### Send Message
-
-Send a message to a `contact`.
-
-```
-sendMessage(variable contact, text message, boolean ?prompt = true)
-```
-
-## System
-
-### Airdrop
-
-Prompt to AirDrop `input`.
+Prompt the user to AirDrop `input`.
 
 ```
 airdrop(variable input)
@@ -69,25 +27,66 @@ airdrop(variable input)
 
 ---
 
-### Set Airdrop Receiving
+### Set AirDrop Receiving
+
+Set the AirDrop receiving setting.
 
 ```
-setAirdropReceiving(enum ?state = "Everyone")
+enum airdropReceivingStates {
+    'No One',
+    'Contacts Only',
+    'Everyone',
+}
+
+setAirdropReceiving(airdropReceivingStates ?state = "Everyone")
 ```
-
-#### States
-- No One
-- Contacts Only
-- Everyone
-
-_**Note:** Enum values are case-sensitive._
 
 ---
 
 ### Share
 
-Share `input` via the Share Sheet.
+Prompt the user to share `input`.
 
 ```
-share(text input)
+share(variable input)
+```
+
+## Clipboard
+
+### Get Clipboard
+
+Get the contents of the clipboard.
+
+```
+getClipboard()
+```
+
+---
+
+### Set Clipboard
+
+Set the contents of the clipboard.
+
+```
+setClipboard(variable value, bool ?local = false, text ?expire)
+```
+
+## Email & SMS Messaging
+
+### Send Email
+
+Send an email to a contact.
+
+```
+sendEmail(variable contact, text from, text subject, text body, bool ?prompt = true, bool ?draft = false)
+```
+
+---
+
+### Send Message
+
+Send an SMS/iMessage to a contact.
+
+```
+sendMessage(variable contact, text message, bool ?prompt = true)
 ```
