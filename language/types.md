@@ -134,6 +134,8 @@ You can declare a dictionary using valid JSON syntax.
 You can access a dictionary value by key:
 
 ```ruby
+#include 'actions/scripting'
+
 @dictionary = {}
 
 // allows for variable references
@@ -192,6 +194,8 @@ A variable is a type of value that can be accepted for a custom action or define
 Actions have output types. View the [actions](/language/actions) documentation to check the output type of an action, or use the `--action=` argument in the CLI.
 
 ```ruby
+#include 'actions/calendar'
+
 @urls = url("https://apple.com","https://google.com")
 @list = list("Item 1","Item 2","Item 3")
 @email = emailAddress("test@test.org")
@@ -258,6 +262,8 @@ You can use `nil` just about anywhere to cancel out an optional value.
 However, if, due to the value being optional, it has a default, it will be set to its default, not empty.
 
 ```ruby
+#include 'actions/documents'
+
 @var = getFile(nil)
 
 if var == nil {
@@ -339,6 +345,8 @@ To coerce another value to text, simply reference it as an inline variable just 
 Or you can use...
 
 ```ruby
+#include 'actions/text'
+
 @var = 5
 @textVar = getText(var)
 ```
@@ -352,6 +360,8 @@ Or you can use...
 ```
 
 ```ruby
+#include 'actions/scripting'
+
 @textVar = "5"
 @numVar = getNumbers(textVar)
 ```
@@ -366,6 +376,8 @@ The `number()` action should only coerce another value to a number, as an intege
 ### Dictionary
 
 ```ruby
+#include 'actions/scripting'
+
 @var
 @textVar = getDictionary(var)
 ```
@@ -374,7 +386,7 @@ The `number()` action should only coerce another value to a number, as an intege
 
 There is a concept of data types in Shortcuts known as a "content item".
 
-These are defined in Shortcuts, for example `WFAppStoreAppContentItem`.
+These are defined in Shortcuts, for example, `WFAppStoreAppContentItem`.
 
 In Cherri, they are shortened into singular names.
 
