@@ -20,6 +20,8 @@ It uses the arguments at compile time using `title` as the name, the `subtitle` 
 The example below uses this built-in action to make a vCard menu.
 
 ```ruby
+#include 'actions/scripting'
+
 /* Generate items */
 @items = []
 repeat i for 3 {
@@ -49,6 +51,8 @@ This accepts base64 encoded image data.
 To use a local image file, use the output of the built-in [base64File()](/language/standard/builtin#base64-encode-file) action to encode that file then use it in a VCard using a variable reference.
 
 ```ruby
+#include 'actions/device'
+
 /* (Declared for the demo) */
 @batteryIcon: text
 
