@@ -37,11 +37,11 @@ This may work on Windows but has not been tested, so you may experience issues.
 
 You can only run the `shortcuts` binary on macOS, and it relies on private macOS frameworks. However, containerization of macOS is possible with Docker if you prefer another platform.
 
-Additionally, The Hubsign service and emulation are available. However, they are not as fast as native signing due to varying connection speeds and emulation overhead.
+Additionally, HubSign and emulation are available. However, they are not as fast as native signing due to varying connection speeds and emulation overhead.
 
 ### Is it possible to build and run on other platforms?
 
-Of course, you can still build and run the compiler on any platform the Go programming language will compile on. Cherri will skip signing the compiled Shortcut but it will still compile. I don't make builds for those platforms, so that no one is confused and thinks that Shortcuts compiled using Cherri on other platforms will be able to be imported and run on any of their Apple devices.
+Of course, you can still build and run the compiler on any platform that the Go programming language will compile on. Cherri will skip signing the compiled Shortcut, but it will still compile. I don't make builds for those platforms, so that no one is confused and thinks that Shortcuts compiled using Cherri on other platforms will be able to be imported and run on any of their Apple devices.
 
 Also, the compiler is currently developed and tested on macOS only, so it will otherwise work best on a Unix-like system that can compile Go code, like Linux or BSD.
 
