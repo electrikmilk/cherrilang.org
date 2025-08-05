@@ -121,6 +121,8 @@ It is possible to call other custom actions within the body of a custom action. 
 Misuse of recursion can cause a Shortcut to infinitely loop.
 
 ```ruby
+#include 'actions/scripting'
+
 action fibonacci(number n): number {
     if n <= 1 {
         output("{n}")
@@ -146,6 +148,7 @@ This is primarily to still be able to add an instructional or contact comment at
 
 ```ruby
 #include 'stdlib'
+#include 'actions/scripting'
 
 comment('Contact me: brandon@cherrilang.org')
 
@@ -163,6 +166,8 @@ This is a part of the language that does not translate 1-1, but for the function
 The semantics of this may change over time, but it roughly translates to this in Cherri:
 
 ```ruby
+#include 'actions/scripting'
+
 if ShortcutInput {
     const inputType = typeOf(ShortcutInput)
     if inputType == "Dictionary" {
@@ -198,6 +203,8 @@ At the end, just in case no output was defined in the custom action body that wa
 Then, when you reference the action described `add(number, number)`
 
 ```ruby
+#include 'actions/scripting'
+
 action add(number op1, number op2) {
   const result = op1 + op2
   output("{result}")
