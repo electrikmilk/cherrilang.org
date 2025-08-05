@@ -35,8 +35,6 @@ However, there is an alternative called [action definitions](/language/action-de
 
 To use an action from a Shortcut not implemented in Cherri, see [parsing out action data from a raw Shortcut](/faq#how-do-i-use-non-standard-actions).
 
-For how to parse the data from a Shortcut to get an action you want to use, [see this FAQ question](.
-
 ## Variable Values
 
 To use a variable value for a parameter that only accepts a variable value, prepend an inline variable reference's brackets in a string value with the character `$`.
