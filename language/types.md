@@ -195,6 +195,7 @@ Actions have output types. View the [actions](/language/actions) documentation t
 
 ```ruby
 #include 'actions/calendar'
+#include 'actions/location'
 
 @urls = url("https://apple.com","https://google.com")
 @list = list("Item 1","Item 2","Item 3")
