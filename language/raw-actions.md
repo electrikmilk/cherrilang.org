@@ -18,7 +18,7 @@ You can write a raw definition of an action not defined inside Cherri, in Cherri
 
 ## Defining an action
 
-Provide a string of the action `WFWorkflowActionIdentifier`. Then, optionally provide a dictionary for the `WFWorkflowActionParameters`.
+Actions are mostly made up of an identifier and, optionally, parameters. To add an action to your Shortcut raw, provide a string of the action `WFWorkflowActionIdentifier`. Then, optionally provide a dictionary for each of the `WFWorkflowActionParameters`.
 
 ```ruby
 rawAction("is.workflow.actions.alert", {
@@ -33,7 +33,7 @@ However, there is an alternative called [action definitions](/language/action-de
 
 ## Parsing Shortcut Data
 
-To use an action from a Shortcut not implemented in Cherri, see [parsing out action data from a raw Shortcut](/faq#how-do-i-use-non-standard-actions).
+To find the identifier and parameters for an action from a Shortcut not implemented in Cherri, see [parsing out action data from a raw Shortcut](/faq#how-do-i-use-non-standard-actions).
 
 ## Variable Values
 
