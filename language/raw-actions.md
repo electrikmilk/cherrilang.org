@@ -29,68 +29,13 @@ rawAction("is.workflow.actions.alert", {
 
 This defines an alert action with the message `Hello World!`. This action is already defined in Cherri using the `alert()` action. Still, this example demonstrates a simple way actions not implemented in Cherri can be used.
 
-However, there is an alternative called [action definitions](/language/define-actions), which creates reusable action definitions.
+However, there is an alternative called [action definitions](/language/action-definitions), which creates reusable action definitions.
 
 ## Parsing Shortcut Data
 
-To get the parameters for an action in a Shortcut that you want to use, you first need to decode and decrypt it to the property list format.
+To use an action from a Shortcut not implemented in Cherri, see [parsing out action data from a raw Shortcut](/faq#how-do-i-use-non-standard-actions).
 
-Property lists are a key-value-based data format and are relatively easy to parse through if you are familiar with XML data formats, JSON, or at least HTML. If you are unfamiliar, a plist reader is recommended to view these files or to make parsing through them easier.
-
-This is the data format Shortcuts uses to represent the state of the actions used and their parameters in a Shortcut file. However, Shortcut files are generally in a binary (encoded), encrypted (signed) format; they cannot be read without being converted to text and decrypted.
-
-### Decompilation
-
-If the action is not already implemented in Cherri, you can decompile a Shortcut containing the action into a raw action using decompilation.
-
-<a 
-    href="/decompilation"
-    target="_blank"
-    class="btn btn-red">
-    Decompilation Documentation
-</a>
-
-### Download Property List from iCloud
-
-1. Share the Shortcut and copy the iCloud Link to use the iCloud API to download the property list version.
-2. [Here is a Shortcut](https://routinehub.co/shortcut/13252/) written in Cherri that shows how to download the property list using an iCloud Link to the Shortcut.
-
-Look for a node with the key `WFWorkflowActions`. In text, this will be an `<array>` with a `<key>` above it containing `WFWorkflowActions`. Each `<dict>` is an action. Within the dictionary, there are two 
-
-```xml
-<key>WFWorkflowActions</key>
-<array>
-    <!-- Action -->
-    <dict>
-        <key>WFWorkflowActionIdentifier</key>
-        <string>is.workflow.actions.setvariable</string>
-        <key>WFWorkflowActionParameters</key>
-        <dict>
-            <key>WFVariableName</key>
-            <string>x</string>
-        </dict>
-    </dict>
-    <!-- More actions... -->
-</array>
-```
-
-Below is this action in Cherri using a raw action. We use the `WFWorkflowActionParameters` key from above to make a dictionary value containing the same keys and values.
-
-```ruby
-rawAction("is.workflow.actions.setvariable", {
-     "WFVariableName": "x"
-})
-```
-
-### Types 
-
-| Shortcuts | Cherri |
-:--------| --------- |
-| string  | text |
-| integer  | number |
-| real  | float |
-| dictionary  | dictionary |
-| array  | array |
+For how to parse the data from a Shortcut to get an action you want to use, [see this FAQ question](.
 
 ## Variable Values
 
