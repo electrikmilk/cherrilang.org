@@ -57,3 +57,7 @@ To add extra parameters in the same way as a [raw action](/language/raw-actions)
     "WFAskWhereToSave": false
 }
 ```
+
+## Parsing Shortcut Data
+
+To define an action from a Shortcut not implemented in Cherri, see [parsing out action data from a raw Shortcut](/faq#how-do-i-use-non-standard-actions).
