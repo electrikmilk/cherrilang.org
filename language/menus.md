@@ -42,6 +42,8 @@ Like in Shortcuts, each item must be text, but you can still use inline variable
 Then, use the `chooseFromList()` action with the list and prompt.
 
 ```ruby
+#include 'actions/scripting'
+
 @list = list("Item 1", "Item 2", "Item 3")
 @chosenItem = chooseFromList(list,"Choose a item")
 ```
