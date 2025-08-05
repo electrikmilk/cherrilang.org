@@ -30,6 +30,8 @@ Use a `paste` statement to paste the contents of the pasteable on that line befo
 For efficiency, you cannot use `paste` before declaring the `copy` it's using.
 
 ```ruby
+#include 'actions/scripting'
+
 copy carbon {
     alert("Hello!")
 }
