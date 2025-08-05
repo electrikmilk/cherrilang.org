@@ -23,6 +23,10 @@ The only exception to this is for Shortcuts actions that start with `is.workflow
 
 You may see `#builtin` instead of `#define` for an action definition printed by the compiler. These actions are internally defined in the compiler and require compile-time processing that either cannot practically be abstracted to Cherri or hasn't yet been implemented.
 
+## Parsing Shortcut Data
+
+To find the identifier and parameters for an action from a Shortcut not implemented in Cherri, see [parsing out action data from a raw Shortcut](/faq#how-do-i-use-non-standard-actions).
+
 ## Attributes
 
 Attributes may be added in the following order after `#define action`:
@@ -57,7 +61,3 @@ To add extra parameters in the same way as a [raw action](/language/raw-actions)
     "WFAskWhereToSave": false
 }
 ```
-
-## Parsing Shortcut Data
-
-To define an action from a Shortcut not implemented in Cherri, see [parsing out action data from a raw Shortcut](/faq#how-do-i-use-non-standard-actions).
