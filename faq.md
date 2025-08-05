@@ -54,7 +54,7 @@ This is the data format Shortcuts uses to represent the state of the actions use
 
 ### Decompilation
 
-If the action is not already implemented in Cherri, you can decompile a Shortcut containing the action into a raw action using decompilation.
+If the action is not already implemented in Cherri, you can decompile a Shortcut containing the action into a [raw action](/language/raw-actions) using decompilation.
 
 <a 
     href="/decompilation"
