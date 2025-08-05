@@ -17,7 +17,7 @@ To define a Shortcut action raw, in the same reusable way as the [standard Short
 myCustomAction()
 ```
 
-A raw string `WFWorkflowActionIdentifier` is required between `#define action` and the identifier of the action.
+A raw text `WFWorkflowActionIdentifier` is required between `#define action` and the identifier of the action.
 
 The only exception to this is for Shortcuts actions that start with `is.workflow.actions`. If the identifier namespaces are less than 4, we assume it is a classic Shortcuts action for the convenience of defining them.
 
