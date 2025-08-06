@@ -56,10 +56,10 @@ To add extra parameters in the same way as a [raw action](/language/raw-actions)
 #define action 'alert' showAlert(
     text message: 'WFAlertActionMessage',
     text ?title: 'WFAlertActionTitle',
-    bool ?cancelButton: 'WFAlertActionCancelButtonShown' = false
+    bool ?cancelButton: 'WFAlertActionCancelButtonShown' = true
 )
 
 showAlert("Message")
 showAlert("Message", "Title")
-showAlert("Message", "Title", true)
+showAlert("Message", "Title", false)
 ```
