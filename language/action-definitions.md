@@ -52,13 +52,11 @@ myCustomAction(file)
 
 To add extra parameters in the same way as a [raw action](/language/raw-actions), add a dictionary after the definition and an optional output type.
 
-#define action 'dropbox.savefile' saveToDropbox(
-    variable file: 'WFInput',
-    text path: 'WFFileDestinationPath',
-    bool ?overwrite: 'WFSaveFileOverwrite' = false
-) {
-    "WFAskWhereToSave": false
+```
+#define action 'com.example.app.action' myCustomAction(variable file: 'WFInput'): bool {
+    "WFActionParameterName": true
 }
+```
 
 ## Example
 
