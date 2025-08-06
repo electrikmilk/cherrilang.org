@@ -54,6 +54,10 @@ runJS(text script)
 ```ruby
 #include 'stdlib'
 
+#include 'actions/scripting'
+#include 'actions/text'
+#include 'actions/web'
+
 const jsonStr = '{\"name\": \"John\", \"age\": 30\}'
 
 const code = "
