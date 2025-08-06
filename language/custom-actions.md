@@ -148,7 +148,10 @@ This is primarily to still be able to add an instructional or contact comment at
 
 ```ruby
 #include 'stdlib'
+
 #include 'actions/scripting'
+#include 'actions/text'
+#include 'actions/web'
 
 comment('Contact me: brandon@cherrilang.org')
 
