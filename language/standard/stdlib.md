@@ -31,6 +31,10 @@ chooseFromVCard(array items, text prompt)
 ```ruby
 #include 'stdlib'
 
+#include 'actions/scripting'
+#include 'actions/text'
+#include 'actions/web'
+
 @items = []
 repeat i for 3 {
   @items += makeVCard("Title", "Subtitle")
