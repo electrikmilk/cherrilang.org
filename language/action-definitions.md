@@ -52,6 +52,18 @@ myCustomAction(file)
 
 To add extra parameters in the same way as a [raw action](/language/raw-actions), add a dictionary after the definition and an optional output type.
 
+#define action 'dropbox.savefile' saveToDropbox(
+    variable file: 'WFInput',
+    text path: 'WFFileDestinationPath',
+    bool ?overwrite: 'WFSaveFileOverwrite' = false
+) {
+    "WFAskWhereToSave": false
+}
+
+## Example
+
+Below is an example using the **Show Alert** action.
+
 ```ruby
 #define action 'alert' showAlert(
     text message: 'WFAlertActionMessage',
