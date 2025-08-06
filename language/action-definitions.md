@@ -55,7 +55,7 @@ To add extra parameters in the same way as a [raw action](/language/raw-actions)
 ```ruby
 #define action 'alert' showAlert(
     text message: 'WFAlertActionMessage',
-    text ?title: 'WFAlertTitle',
+    text ?title: 'WFAlertActionTitle',
     bool ?cancelButton: 'WFAlertActionCancelButtonShown' = false
 )
 
