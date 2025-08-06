@@ -18,7 +18,7 @@ You can write a raw definition of an action not defined inside Cherri, in Cherri
 
 ## Defining an action
 
-Actions are mostly made up of an identifier and, optionally, parameters. To add an action to your Shortcut raw, provide a string of the action `WFWorkflowActionIdentifier`. Then, optionally provide a dictionary for each of the `WFWorkflowActionParameters`.
+Actions are primarily composed of an identifier and, optionally, parameters. To add an action to your Shortcut raw, provide a string of the action `WFWorkflowActionIdentifier`. Then, optionally provide a dictionary for each of the `WFWorkflowActionParameters`.
 
 ```ruby
 rawAction("is.workflow.actions.alert", {
@@ -39,12 +39,11 @@ To find the identifier and parameters for an action from a Shortcut not implemen
 
 To use a variable value for a parameter that only accepts a variable value, prepend an inline variable reference's brackets in a string value with the character `$`.
 
-```swift
-action saveFile(variable file) {
-    rawAction("is.workflow.actions.documentpicker.save", {
-         "WFInput": "${file}"
-     })
-}
+```ruby
+@file = nil
+rawAction("is.workflow.actions.documentpicker.save", {
+     "WFInput": "${file}"
+})
 ```
 
 Again, just like with the `alert()` action, there is already a `saveFile()` action; this is only an example.
