@@ -79,13 +79,19 @@ This data is an array of strings that define which Workflows this shortcut shoul
 
 This can be found in the UI in the details tab.
 
-![Screenshot 2023-11-05 at 11 35 07](https://github.com/electrikmilk/cherrilang.org/assets/4368524/95ceaed1-f49f-497f-9cf4-0e4c8ba546ff)
+![Pin in Menu Bar
+Show in Share Sheet
+Receive What's On Screen
+Use as Quick Action
+Finder
+Services Menu
+Provide Output](/assets/workflows.png)
 
 ### `MenuBar`
 
 The Shortcut will appear in the Shortcuts menubar menu.
 
-![Screenshot 2023-11-05 at 11 41 34](https://github.com/electrikmilk/cherrilang.org/assets/4368524/0c4a0eb6-77e2-4668-8c29-7f7be57a5084)
+![Menubar Example](/assets/menubar.png)
 
 ### `QuickActions`
 
