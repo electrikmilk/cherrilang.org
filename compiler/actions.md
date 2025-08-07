@@ -11,7 +11,7 @@ nav_order: 4
 
 **Update:** Note that this can be done much more easily using [action definitions](/language/action-definitions). Most standard actions are defined in Cherri files in `/actions/` directory in the project, which can easily be contributed to. However, some actions need additional logic and processing and need to use the more manual method defined below.
 
- ## Built-in Definitions
+## Built-in Definitions
 
 Defining actions is easy, but it might be a little complicated to understand at first. Standard actions are defined in one
 place, [`actions_std.go`](https://github.com/electrikmilk/cherri/blob/main/actions_std.go).
