@@ -14,9 +14,6 @@ Before contributing, please make sure you have read the [contributing guidelines
 {: .warning }
 Apologies, this documentation may be out of date in some places; in those cases, the source code is your friend.
 
-{: .warning }
-Keep in mind that this compiler is currently in beta. It may not always work correctly, and things are subject to change.
-
 ## Shortcut File Format Reference
 
 - [zachary7829](https://github.com/zachary7829)'
