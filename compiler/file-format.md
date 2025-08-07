@@ -91,7 +91,7 @@ Provide Output](/assets/workflows.png)
 
 The Shortcut will appear in the Shortcuts menubar menu.
 
-![Menubar Example](/assets/menubar.png)
+![Menubar Example](/assets/workflows_menubar.png)
 
 ### `QuickActions`
 
