@@ -181,15 +181,19 @@ If you do this, the parameter value for that argument will be done for you; just
 
 ### `addParams`
 
-This is similar to `make`, but instead of determining the parameters output for this action, this only adds to those parameters. This is particularly useful if `make` isn't needed, but you need to set hard coded parameters for the action in addition to the automatic parameters set when `make` is not set.
+This is similar to `make`, but instead of determining the parameters output for this action, this only adds to those parameters. This is particularly useful if `make` isn't needed. Still, you need to set hard coded parameters for the action in addition to the automatic parameters set when `make` is not set.
 
 ### `outputType`
 
 Sets the output type for this action. This is used to type-check the usage of the output.
 
-### `mac`
+### `macOnly`
 
-Sets whether or not this action is a Mac-only action. This is mainly used if `#define mac false` is set, so that we can error out and inform the user they are using a Mac-only action in a non-Mac Shortcut.
+Sets whether or not this action is a macOS-only action. This is mainly used if `#define mac false` is set, so that we can error out and inform the user they are using a Mac-only action in a non-Mac Shortcut.
+
+### `nonMacOnly`
+
+Sets whether or not this action is a iOS/iPadOS-only action. This is mainly used if `#define mac true` is set, so that we can error out and inform the user they are using a non-macOS-only action in a non-Mac Shortcut.
 
 ### `minVersion`
 
