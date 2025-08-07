@@ -9,7 +9,9 @@ nav_order: 2
 
 ## Action Definitions
 
-You can define a reusable action using [action definitions](/language/action-definitions):
+The easiest way to add actions from a 3rd party app or a Shortcuts extension app is to create a Cherri file and define a reusable actions using [action definitions](/language/action-definitions):
+
+**Example:**
 
 ```
 #define action 'is.workflow.actions.setvariable' setVariable(text name: 'WFVariableName', variable input: 'WFInput')
@@ -17,7 +19,7 @@ You can define a reusable action using [action definitions](/language/action-def
 
 ## Raw Actions
 
-The easiest way to add actions from a 3rd party app or a Shortcuts extension app is to create a Cherri file and use either [custom actions](/language/custom-actions) or [pastables](/language/copy-paste) to wrap a [raw action](/language/raw-actions). This file can then be [included](/language/includes) to easily use the 3rd party actions.
+You could also use either [custom actions](/language/custom-actions) or [pastables](/language/copy-paste) to wrap a [raw action](/language/raw-actions). This file can then be [included](/language/includes) to easily use the 3rd party actions.
 
 **Example:**
 
