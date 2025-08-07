@@ -9,13 +9,15 @@ nav_order: 2
 
 ## Action Definitions
 
-The easiest way to add actions from a 3rd party app or a Shortcuts extension app is to create a Cherri file and define reusable actions using [action definitions](/language/action-definitions):
+The easiest way to add actions from a 3rd party app or a Shortcuts extension app is to create a Cherri file and define reusable actions using action definitions:
 
 **Example:**
 
 ```
 #define action 'is.workflow.actions.setvariable' setVariable(text name: 'WFVariableName', variable input: 'WFInput')
 ```
+
+[Learn more](language/action-definitions){: .btn }
 
 ## Raw Actions
 
