@@ -62,8 +62,8 @@ actions["takePhoto"] = actionDefinition{
 			defaultValue: true,
 		},
 	},
-	addParams: func(args []actionArgument) []plistData {
-		return map[string]string{
+	addParams: func(_ []actionArgument) map[string]any {
+		return map[string]any{
 			"WFPhotoCount": 1
 		}
 	},
