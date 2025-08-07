@@ -17,7 +17,7 @@ The easiest way to add actions from a 3rd party app or a Shortcuts extension app
 #define action 'is.workflow.actions.setvariable' setVariable(text name: 'WFVariableName', variable input: 'WFInput')
 ```
 
-[Learn more](language/action-definitions){: .btn }
+[Learn more](/language/action-definitions){: .btn }
 
 ## Raw Actions
 
