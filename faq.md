@@ -21,7 +21,7 @@ A Shortcut is a custom automation created by users on Apple platforms (Mac, iPho
 
 Its primary platform is macOS. The restriction that Shortcuts must be signed, which unfortunately discontinued many iOS app-based Shortcut languages, has shown that a Shortcuts language will likely be more sustainable with fewer restrictions placed on macOS (and only macOS can sign Shortcuts). This also creates a better developer experience (no tiny tapping!).
 
-### Signing Shortcuts on non-macOS Platforms
+## Signing Shortcuts on non-macOS Platforms
 
 You can use the optional `--hubsign` argument on Unix-like systems to specify to use the remote service HubSign provided by [RoutineHub](https://routinehub.co) to sign the compiled Shortcut so you can then move it onto an Apple device through the iCloud web app or a file server. By default, on non-macOS platforms, this service is used.
 
@@ -29,7 +29,7 @@ You can use an alternative or local server running (shortcut-signing-server)[htt
 
 This may work on Windows but has not been tested, so you may experience issues.
 
-### Can I Build & Run On...?
+## Can I Build & Run On...?
 
 Of course, you can still build and run the compiler on any platform that the Go programming language will compile on. Cherri will skip signing the compiled Shortcut, but it will still compile. I don't make builds for those platforms, so that no one is confused and thinks that Shortcuts compiled using Cherri on other platforms will be able to be imported and run on any of their Apple devices.
 
