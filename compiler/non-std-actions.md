@@ -9,7 +9,7 @@ nav_order: 2
 
 ## Action Definitions
 
-The easiest way to add actions from a 3rd party app or a Shortcuts extension app is to create a Cherri file and define a reusable actions using [action definitions](/language/action-definitions):
+The easiest way to add actions from a 3rd party app or a Shortcuts extension app is to create a Cherri file and define reusable actions using [action definitions](/language/action-definitions):
 
 **Example:**
 
