@@ -26,19 +26,24 @@ that returns the parameters for the action.
 
 ```go
 type actionDefinition struct {
+	doc                selfDoc
 	identifier         string
 	appIdentifier      string
 	overrideIdentifier string
 	parameters         []parameterDefinition
 	check              checkFunc
 	make               paramsFunc
+	decomp             func(action *ShortcutAction) (arguments []string)
 	addParams          paramsFunc
 	appIntent          appIntent
 	outputType         tokenType
-	mac                bool
+	defaultAction      bool // Default action for this identifier during decompilation.
+	macOnly            bool
+	nonMacOnly         bool
 	minVersion         float64
 	maxVersion         float64
 	setKey             string
+	builtin            bool // builtin is based on if the action was in the actions map when it was first initialized.
 }
 ```
 
