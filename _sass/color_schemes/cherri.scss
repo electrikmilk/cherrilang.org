@@ -53,7 +53,7 @@ h1,h2,h3,h4,h5 {
 h1,h2,h3 {
     font-weight: bold !important
 }
-
+    
 .color {
     display: inline-block;
     height: 15px;
@@ -64,6 +64,10 @@ h1,h2,h3 {
 
 p.note::before, blockquote.note::before {
     color: #7597ff !important
+}
+
+.code-example {
+    padding-bottom: 0 !important
 }
 
 .language-ruby, .language-javascript {
@@ -80,6 +84,10 @@ p.note::before, blockquote.note::before {
     color: #302d36 !important;
     font-weight: bold !important;
     background-color: $red-100 !important
+}
+
+.btn-red:focus {
+    box-shadow: 0 0 0.5rem #C43226 !important
 }
 
 .header-button {
