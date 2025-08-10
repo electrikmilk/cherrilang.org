@@ -150,8 +150,12 @@ p.note::before, blockquote.note::before {
 }
 
 .box {
-    background: #333e49;
+    background: #44434d;
     border-radius: 0.2rem;
     margin: 1rem 0;
-    padding: 0.1rem 1rem
+    padding: 0.1rem 1rem;
+
+    ul {
+        margin-top: 1rem;
+    }
 }
