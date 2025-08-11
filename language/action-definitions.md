@@ -69,7 +69,7 @@ Below is an example using the **Show Alert** action.
     bool ?cancelButton: 'WFAlertActionCancelButtonShown' = true
 )
 
-showAlert("Message")
+showAlert("Hello, Cherri!")
 showAlert("Hello, Cherri!", "Alert")
 showAlert("Hello, Cherri!", "Alert", false)
 ```
