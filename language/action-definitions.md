@@ -70,6 +70,6 @@ Below is an example using the **Show Alert** action.
 )
 
 showAlert("Message")
-showAlert("Message", "Title")
-showAlert("Message", "Title", false)
+showAlert("Hello, Cherri!", "Alert")
+showAlert("Hello, Cherri!", "Alert", false)
 ```
