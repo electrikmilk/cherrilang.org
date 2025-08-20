@@ -106,6 +106,8 @@ show("{int}")
 ### 🔧 Define custom actions
 
 ```ruby
+#include 'actions/scripting'
+
 action myCustomAction(text test) {
     show("{test}")
 }
@@ -118,6 +120,8 @@ myCustomAction("Test")
 ### 📋 Copy-paste actions automatically
 
 ```ruby
+#include 'actions/network'
+
 copy checkConnection {
     const online = isOnline()
     if !online {
