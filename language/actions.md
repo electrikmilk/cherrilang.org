@@ -19,7 +19,7 @@ alert("Hello!")
 
 ## Standard Actions
 
-Standard actions are always available and do not need to be imported. Below are categories of standard Shortcut actions currently supported.
+Below are categories of standard Shortcut actions currently supported. Keep in mind that actions in each category, other than the basic actions, need to be included.
 
 [Please report incomplete or non-working actions](https://github.com/electrikmilk/cherri/issues)
 
