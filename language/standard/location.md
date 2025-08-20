@@ -109,6 +109,16 @@ openInMaps(variable location)
 
 ## Weather
 
+### Add Location to List
+
+Add location to weather app.
+
+```
+addWeatherLocation(variable location)
+```
+
+---
+
 ### Get Current Weather
 
 Get the current weather for a location.
