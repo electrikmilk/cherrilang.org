@@ -211,7 +211,7 @@ Some actions have arguments with the type `enum`, accompanied by a set of allowe
 
 Enumerations are types with values defined in code, allowing them to have identifiers and be easily defined in code for both standard and user-defined actions.
 
-To define enumerations for use as a type for [custom actions](/language/custom-actions) and [action definitions](/language/define-actions), use the following syntax:
+To define enumerations for use as a type for [custom actions](/language/custom-actions) and [action definitions](/language/action-definitions), use the following syntax:
 
 ```
 enum Color {
