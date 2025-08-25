@@ -13,7 +13,7 @@ Future release
 {: .label .label-purple }
 
 {: .warning }
-Apple's Intelligence actions may be unpredictable due to the current state and uncertain future of the platform.
+The output of Apple's Intelligence actions may be unpredictable. Ensure any hard-coded prompts are simple and iteratively test that their output is relatively consistent with what you expect.
 
 ## Table of contents
 {: .no_toc .text-delta }
