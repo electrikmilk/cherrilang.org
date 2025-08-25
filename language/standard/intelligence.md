@@ -34,16 +34,28 @@ The output of Apple's Intelligence actions may be unpredictable. Ensure any hard
 
 ### Create Image using Image Playground
 
-Generate an image with a prompt using Image Playground.
+Generate an Image with a prompt using the Image Playground app.
 
 ```
+enum imagePlaygroundStyle {
+    'animation',
+    'illustration',
+    'sketch',
+    'chatgpt',
+    'chatgpt_oil_painting',
+    'chatgpt_watercolor',
+    'chatgpt_vector',
+    'chatgpt_anime',
+    'chatgpt_print',
+}
+
 enum saveToPlaygroundBehavior {
     'always',
     'askWhenRun',
     'never',
 }
 
-createImagePlayground(text prompt, saveToPlaygroundBehavior ?saveToPlayground = "always", variable style)
+generateImage(text prompt, variable ?image, imagePlaygroundStyle ?style = "animation", saveToPlaygroundBehavior ?saveToPlayground = "always")
 ```
 
 ## Language Models
