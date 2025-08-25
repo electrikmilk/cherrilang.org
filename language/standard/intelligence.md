@@ -3,7 +3,7 @@ title: Apple Intelligence
 layout: default
 grand_parent: Documentation
 parent: Actions
-nav_order: 23
+nav_order: 2
 ---
 
 # Apple Intelligence Actions
