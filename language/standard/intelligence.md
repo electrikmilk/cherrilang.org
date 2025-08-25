@@ -30,6 +30,8 @@ The output of Apple's Intelligence actions may be unpredictable. Ensure any hard
 > #include 'actions/intelligence'
 > ```
 
+These actions are currently not in the main source as they require beta software. As the release draws near, they may be merged early. To try these actions now, pull the `apple-intelligence-actions` branch.
+
 ## Image Playground
 
 ### Create Image using Image Playground
