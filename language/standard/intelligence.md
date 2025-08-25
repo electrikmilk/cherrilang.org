@@ -94,7 +94,7 @@ askLLM(text prompt, LLMModel ?model = "Private Cloud Compute", bool ?followUp = 
 
 ### Ask On-Device LLM
 
-Ask an on-Device LLM using a prompt. Follow up will open a follow-up prompt to the model.
+Ask an On-Device LLM using a prompt. Follow up will open a follow-up prompt to the model.
 
 ```
 enum generativeResultType {
@@ -201,5 +201,5 @@ generateSummary(text text): text
 Generate a summary of key points of text using Apple Intelligence Writing Tools.
 
 ```
-summarizeKeyPoints(text text): text
+generateKeyPoints(text text): text
 ```
