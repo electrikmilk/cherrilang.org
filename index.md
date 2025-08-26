@@ -76,12 +76,6 @@ Use the glyphs search site to easily generate a Shortcut icon for Cherri outside
 
 </div>
 
----
-
-[![Cherri Merch](/assets/merch_ad.png)](https://cherrilang.redbubble.com/)
-
----
-
 ## How does it work?
 
 ### 🪄 No magic variables syntax, they're constants instead
