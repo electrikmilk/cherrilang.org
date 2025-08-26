@@ -13,7 +13,7 @@ Future release
 {: .label .label-purple }
 
 {: .warning }
-The output of Apple's Intelligence actions may be unpredictable. Ensure any hard-coded prompts are simple and iteratively test that their output is relatively consistent with what you expect.
+The output of Apple Intelligence actions may be unpredictable. Ensure any hard-coded prompts are not overly complex and iteratively test that their output is relatively consistent with what you expect.
 
 ## Table of contents
 {: .no_toc .text-delta }
