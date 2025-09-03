@@ -142,7 +142,7 @@ rawAction("is.workflow.actions.gettext", {
 
 ### 📇 Generate VCards for menus
 
-Creates a text action in the VCard format based on the arguments.
+Creates a text action in the VCard format based on the arguments. It also supports images.
 
 ```ruby
 makeVCard("Title", "Subtitle")
