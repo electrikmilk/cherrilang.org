@@ -99,7 +99,7 @@ show("{int}")
 
 ### 🔧 Define custom actions
 
-```ruby
+```
 #include 'actions/scripting'
 
 action myCustomAction(text test) {
