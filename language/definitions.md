@@ -153,7 +153,7 @@ This will be used as the name of the resulting Shortcut file.
 #define name My Shortcut
 ```
 
-Cherri will ignore the file's name and use the definition instead to create `My Shortcut.` shortcut.
+Cherri will ignore the file's name and use the definition instead to create `My Shortcut.shortcut`.
 
 ## Version
 
