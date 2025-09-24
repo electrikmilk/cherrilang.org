@@ -117,6 +117,13 @@ Commas must separate these values.
 - `watch` - Show on Apple Watch
 - `onscreen` - Receive On-Screen Content
 
+Future release
+{: .label .label-purple }
+- `search` Show in Search/Spotlight
+- `spotlight` Accept input from Spotlight search.
+
+Use the `ShortcutInput` global for Spotlight input.
+
 ## Quick Action Types
 
 To define quick action types, first add `quickactions` to a [`from`](#from-workflows) definition (See above).
