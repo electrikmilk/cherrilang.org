@@ -12,9 +12,27 @@ This document is a work in progress.
 
 A Shortcut is a single file with a `.shortcut` file extension. However, this file is basically a [property list](https://en.wikipedia.org/wiki/Property_list) file.
 
-A property list is a data format file, similar to something like JSON with keys and values. macOS and iOS use it heavily as it comes from nextSTEP, their predecessor.
+A property list is a data format file, similar to JSON, which uses keys and values. macOS and iOS heavily utilize it, as it originates from NextSTEP, their predecessor.
 
 Each value in the body of the property list under the first `<dict>` tag dictates how the Shortcut will look, and behave, what it will do, and where it will appear.
+
+## `WFWorkflowIcon`
+
+This is where the Shortcut icon, comprised of a glyph and color, is set.
+
+In Cherri, these Glyphs are identified with names with their value in hexadecimal or decimal in [`glyphs.go`](https://github.com/electrikmilk/cherri/blob/main/glyphs.go).
+
+Colors are defined in [`metadata.go`](https://github.com/electrikmilk/cherri/blob/main/metadata.go).
+
+```xml
+<key>WFWorkflowIcon</key>
+<dict>
+	<key>WFWorkflowIconGlyphNumber</key>
+	<integer>61440</integer>
+	<key>WFWorkflowIconStartColor</key>
+	<integer>-1263359489</integer>
+</dict>
+```
 
 ## `WFWorkflowActions`
 
