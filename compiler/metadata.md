@@ -15,5 +15,4 @@ Metadata is defined in [`metadata.go`](https://github.com/electrikmilk/cherri/bl
 
 ## Glyphs
 
-Glyphs are defined as hexadecimals in [`glyphs.go`](https://github.com/electrikmilk/cherri/blob/main/glyphs.go) and originate from the ScPL compiler.
-
+Glyphs are defined as hexadecimals and numbers in [`glyphs.go`](https://github.com/electrikmilk/cherri/blob/main/glyphs.go) and originate from the ScPL and Jelly compilers.
