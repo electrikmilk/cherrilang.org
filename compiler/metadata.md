@@ -7,7 +7,7 @@ nav_order: 3
 
 # Metadata
 
-Metadata is defined to check against collected input to ensure a valid value was given for a given input.
+Metadata is defined to verify the validity of collected input, ensuring a valid value was provided for a given input.
 
 ## Colors, Workflows, etc.
 
