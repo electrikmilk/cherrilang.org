@@ -19,10 +19,6 @@ nav_order: 3
 
 Actions in this category are automatically included.
 
-# Basic Actions
-
-Actions in this category are automatically included.
-
 ### Comment
 
 Add an explicit comment.
