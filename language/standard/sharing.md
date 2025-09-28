@@ -24,14 +24,6 @@ nav_order: 18
 > #include 'actions/sharing'
 > ```
 
-# Sharing Actions
-
-To use actions in this category, use this include statement:
-
-```
-#include 'actions/sharing'
-```
-
 ### Share
 
 Prompt the user to share `input`.
