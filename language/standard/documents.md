@@ -356,6 +356,16 @@ Open note in the Notes app.
 openNote(variable note)
 ```
 
+---
+
+### Show Quick Note
+
+Show quick note.
+
+```
+showQuickNote()
+```
+
 ## Printing
 
 ### Print
@@ -378,5 +388,5 @@ enum QRCodeErrorCorrection {
     'High',
 }
 
-makeQRCode(text input, QRCodeErrorCorrection ?errorCorrection = "Medium")
+makeQRCode(text input, QRCodeErrorCorrection ?errorCorrection = "Medium", color ?foregroundColor = [{float 0} {float 0} {float 0} {float 1}], color ?backgroundColor = [{float 2} {float 2} {float 2} {float 1}])
 ```
