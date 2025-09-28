@@ -265,3 +265,11 @@ Prompts the user to trim the video.
 ```
 trimVideo(variable video)
 ```
+
+## Voice Memos
+
+### Search Voice Memos
+
+```
+searchVoiceMemos(text search): array
+```
