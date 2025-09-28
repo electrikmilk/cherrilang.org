@@ -111,7 +111,7 @@ openInMaps(variable location)
 
 ### Add Location to List
 
-Add location to weather app.
+Add a location to Weather app.
 
 ```
 addWeatherLocation(variable location)
@@ -175,4 +175,14 @@ enum weatherForecastTypes {
 }
 
 getWeatherForecast(weatherForecastTypes ?type = "Daily", text ?location = "Current Location")
+```
+
+---
+
+### Remove Location from List
+
+Remove a location from the Weather app.
+
+```
+removeWeatherLocation(variable location)
 ```
