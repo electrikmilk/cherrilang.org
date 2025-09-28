@@ -3,7 +3,8 @@
  */
 
 window.onload = () => {
-    const codes = document.querySelectorAll('.language-ruby, .language-javascript');
+    setTimeout(() => {
+        const codes = document.querySelectorAll('.language-ruby, .language-javascript');
         codes.forEach(highlight => {
             const encodedSrc = encodeURIComponent(highlight.innerText);
             let frameURL = 'https://playground.cherrilang.org/preview?code=' + encodedSrc;
@@ -24,6 +25,7 @@ window.onload = () => {
             const iframe = document.createElement('iframe');
             iframe.frameBorder = '0';
             iframe.loading = 'lazy';
+             iframe.src = frameURL;
             iframe.title = 'Shortcut Preview';
             
             highlight.appendChild(iframe);
@@ -31,9 +33,6 @@ window.onload = () => {
             const parentElement = highlight.parentNode;
             parentElement.insertBefore(wrapper, highlight);
             wrapper.append(highlight, tryMe);
-            
-            setTimeout(() => {
-                iframe.src = frameURL;
-            }, 1000);
         });
+    }, 1500);
 };
