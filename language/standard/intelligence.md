@@ -9,12 +9,11 @@ nav_order: 2
 # Apple Intelligence Actions
 {: .no_toc }
 
-Future release
-{: .label .label-purple }
-
 {: .warning }
 > These actions will only run on devices that support Apple Intelligence.
+>
 > The output of Apple Intelligence actions may be unpredictable.
+>
 > Ensure any hard-coded prompts are not overly complex and iteratively test that their output is relatively consistent with what you expect.
 
 ## Table of contents
