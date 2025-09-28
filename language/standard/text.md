@@ -296,6 +296,16 @@ titleCase(text text): text
 
 ---
 
+### Trim Whitespace
+
+Trim any whitespace from the start and end of `text`.
+
+```
+trimWhitespace(text text): text
+```
+
+---
+
 ### Uppercase
 
 Transforms the text to all uppercase.
