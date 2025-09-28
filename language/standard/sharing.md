@@ -24,6 +24,14 @@ nav_order: 18
 > #include 'actions/sharing'
 > ```
 
+# Sharing Actions
+
+To use actions in this category, use this include statement:
+
+```
+#include 'actions/sharing'
+```
+
 ### Share
 
 Prompt the user to share `input`.
@@ -79,6 +87,36 @@ setClipboard(variable value, bool ?local = false, text ?expire)
 ```
 
 ## Email & SMS Messaging
+
+### Find Conversation
+
+Find SMS/iMessage conversation.
+
+```
+findConversation(text search)
+```
+
+---
+
+### Find Email
+
+Find email.
+
+```
+findEmail(text search)
+```
+
+---
+
+### Find Message
+
+Find SMS/iMessage message.
+
+```
+findMessage(text search)
+```
+
+---
 
 ### Send Email
 
