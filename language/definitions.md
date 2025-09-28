@@ -116,9 +116,6 @@ Commas must separate these values.
 - `sleepmode` - Sleep Mode
 - `watch` - Show on Apple Watch
 - `onscreen` - Receive On-Screen Content
-
-Future release
-{: .label .label-purple }
 - `search` Show in Search/Spotlight
 - `spotlight` Accept input from Spotlight search.
 
