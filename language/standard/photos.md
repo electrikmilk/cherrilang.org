@@ -96,10 +96,26 @@ removeFromAlbum(variable photo, text album)
 
 ---
 
+### Rename Album
+
+```
+renameAlbum(variable album, text newTitle)
+```
+
+---
+
 ### Save Photo to Album
 
 ```
 savePhoto(variable image, text ?album = "Recents")
+```
+
+---
+
+### Search Photos
+
+```
+searchPhotos(text criteria): array
 ```
 
 ---
