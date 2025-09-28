@@ -28,7 +28,7 @@ nav_order: 3
 
 ### Create Alarm
 
-Creates an alarm at specific time with a name, snooze allowance and applicable weekdays.
+Creates an alarm at a specific time with a name, snooze allowance, and applicable weekdays.
 
 ```
 createAlarm(text name, text time, bool ?allowsSnooze = true, array ?repeatWeekdays)
@@ -235,6 +235,71 @@ Get dates from input.
 getDates(variable input): array
 ```
 
+---
+
+### Get Holiday Date
+
+Get the date of a holiday, optionally specifically for a few past or future years.
+
+```
+enum holiday {
+    'April Fools' Day',
+    'Ash Wednesday',
+    'Christmas Day',
+    'Christmas Eve',
+    'Cinco de Mayo',
+    'Columbus Day',
+    'Day of the Dead',
+    'Daylight Saving Time',
+    'Daylight Saving Time End',
+    'Diwali',
+    'Earth Day',
+    'Easter Sunday',
+    'Eid al-Adha',
+    'Eid al-Fitr',
+    'Election Day',
+    'Father's Day',
+    'First Night of Ramadan',
+    'Flag Day',
+    'Good Friday',
+    'Groundhog Day',
+    'Halloween',
+    'Holi',
+    'Inauguration Day',
+    'Independence Day',
+    'Indigenous Peoples' Day',
+    'Juneteenth',
+    'Martin Luther King Jr. Day',
+    'Memorial Day',
+    'Mother's Day',
+    'New Year's Day',
+    'New Year's Eve',
+    'Palm Sunday',
+    'Presidents' Day',
+    'St. Patrick's Day',
+    'Tax Day',
+    'Thanksgiving',
+    'Valentine's Day',
+    'Veterans Day',
+    'Workers' Day',
+}
+
+enum eventOccurrenceMode {
+    'Next Occurrence',
+    'Specified Year',
+}
+
+enum holidayYear {
+    '2023',
+    '2024',
+    '2025',
+    '2026',
+    '2027',
+}
+
+getHolidayDate(holiday holiday, eventOccurrenceMode ?occurrenceMode = "Next Occurrence", holidayYear ?forYear): text
+```
+
 ## Formatting
 
 ### Format Date
@@ -305,6 +370,14 @@ formatTimestamp(variable date, dateFormats ?dateFormat = "Short", timeFormats ?t
 
 ## Reminders
 
+### Add Quick Reminder
+
+```
+addQuickReminder()
+```
+
+---
+
 ### Open Reminders List
 
 ```
@@ -334,3 +407,4 @@ enum timerDuration {
 
 startTimer(number magnitude, timerDuration ?unit = "min")
 ```
+
