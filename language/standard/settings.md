@@ -112,6 +112,67 @@ toggleTrueTone()
 
 ## Notifications
 
+### Get Focus Mode
+
+Get the current Focus Mode.
+
+```
+getFocusMode()
+```
+
+---
+
+### Set Focus Mode
+
+Set a default focus mode on or off. If setting to on, optionally set until with optional arguments for time or event.
+
+```
+enum focusModes {
+    'Do Not Disturb',
+    'Personal',
+    'Work',
+    'Sleep',
+    'Driving',
+}
+
+enum focusUntil {
+    'Turned Off',
+    'Time',
+    'I Leave',
+    'Event Ends',
+}
+
+setFocusMode(focusModes ?focusMode = "Do Not Disturb", focusUntil ?until = "Turned Off", text ?time, variable ?event)
+```
+
+---
+
+### Toggle Do Not Disturb
+
+```
+toggleDND()
+```
+
+---
+
+### Toggle Focus Mode
+
+Toggle a focus mode.
+
+```
+enum focusModes {
+    'Do Not Disturb',
+    'Personal',
+    'Work',
+    'Sleep',
+    'Driving',
+}
+
+toggleFocusMode(focusModes ?focusMode = "Do Not Disturb")
+```
+
+---
+
 ### Turn Off Do Not Disturb
 
 ```
