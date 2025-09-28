@@ -19,6 +19,10 @@ nav_order: 3
 
 Actions in this category are automatically included.
 
+# Basic Actions
+
+Actions in this category are automatically included.
+
 ### Comment
 
 Add an explicit comment.
@@ -82,7 +86,7 @@ nothing()
 Create a number value.
 
 ```
-number(number number): number
+number(variable number): number
 ```
 
 ---
@@ -222,4 +226,14 @@ Stop and output `output`. Do nothing if there is nowhere to output.
 
 ```
 output(text output)
+```
+
+## Search
+
+### Search/Spotlight
+
+Get results from search on iOS or iPadOS, and Spotlight on macOS.
+
+```
+search(text query, number ?limit = 5, array ?resultType = [Calendar Events Contacts Mail Messages Notes Photos Reminders Voice Recordings Bookmarks]): array
 ```
