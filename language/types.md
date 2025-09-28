@@ -246,16 +246,13 @@ enum Colors {'Red','Green','Blue'}
 
 ### Color
 
-Future release
-{: .label .label-purple }
-
-In a future release, to support color values, a color type has been implemented.
+Some actions use a color type for a value. 
 
 ```
 color foreground = color(1.0, 0.0, 0.0, 1.0)
 ```
 
-With the arguments defined as:
+Arguments defined as:
 
 ```
 color(float red = 0.0, float green 0.0, float blue = 0.0, float alpha = 1.0)
