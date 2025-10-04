@@ -12,9 +12,7 @@ nav_order: 2
 {: .warning }
 > These actions will only run on devices that support Apple Intelligence.
 >
-> The output of Apple Intelligence actions may be unpredictable.
->
-> Ensure any hard-coded prompts are not overly complex and iteratively test that their output is relatively consistent with what you expect.
+> The output of Apple Intelligence actions may be unpredictable. Ensure any hard-coded prompts are not overly complex and iteratively test that their output is relatively consistent with what you expect.
 
 ## Table of contents
 {: .no_toc .text-delta }
