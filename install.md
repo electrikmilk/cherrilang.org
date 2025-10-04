@@ -9,10 +9,28 @@ nav_order: 1
 
 ## macOS & Linux
 
-The easiest way to use Cherri is to download the latest binary release from GitHub.
+The easiest way to install Cherri is either via Homebrew or by downloading the latest binary release from GitHub.
 
 {: .note }
 The latest release may not include everything in the newest documentation, and you may run into actions or language features of a future release (other than actions, these should be marked). To use the latest features (which are subject to change or may not work properly) [build from source](#build-from-source).
+
+### Homebrew
+
+You can install Cherri by downloading the latest release or via the Homebrew package manager:
+
+**Add Tap:**
+
+```console
+brew tap electrikmilk/cherri
+```
+
+**Install:**
+
+```console
+brew install electrikmilk/cherri/cherri
+```
+
+### Binaries
 
 <a href="https://github.com/electrikmilk/cherri/releases" class="btn btn-red" target="_blank">Download the Latest Release</a>
 
