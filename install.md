@@ -46,7 +46,7 @@ I haven't tried to run Cherri on other systems like NetBSD or something, and so 
 
 However, you can also simply use the Cherri Playground site, which allows using the compiler from any platform with a web broser and signs Shortcuts when they are shared.
 
-<a href="[https://github.com/electrikmilk/cherri/releases](https://playground.cherrilang.org/)" class="btn btn-red" target="_blank">Use the Cherri Playground</a>
+<a href="https://playground.cherrilang.org/" class="btn btn-red" target="_blank">Use the Cherri Playground</a>
 
 You can also build from source using the instructions below and use the `--hubsign` option to sign the compiled Shortcut using RoutineHub's HubSign service.
 
