@@ -84,11 +84,11 @@ p.note::before, blockquote.note::before {
 }
 
 .code-actions {
-  float: right;
-  margin-top: 1.2rem;
-  margin-right: 2rem;
-  display: flex;
-  gap: 0 1rem;
+    float: right;
+    margin-top: 0.45rem;
+    margin-right: 3rem;
+    display: flex;
+    gap: 0 1rem;
 }
 
 .btn-red {
