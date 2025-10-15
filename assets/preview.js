@@ -4,7 +4,7 @@
 
 window.onload = () => {
     if (window.location.href.includes('#') && window.scrollY === 0) {
-        window.addEventListener('scrollend', loadPreviews)
+        window.addEventListener('scrollend', () => setTimeout(loadPreviews, 1000))
     } else {
         loadPreviews()
     }
