@@ -80,6 +80,14 @@ p.note::before, blockquote.note::before {
     }
 }
 
+.code-actions {
+  float: right;
+  margin-top: 1.2rem;
+  margin-right: 2rem;
+  display: flex;
+  gap: 0 1rem;
+}
+
 .btn-red {
     color: #302d36 !important;
     font-weight: bold !important;
