@@ -18,6 +18,7 @@ window.onload = () => {
     const showPreview = document.createElement("button");
     showPreview.classList.add("btn", "fs-3");
     showPreview.innerHTML = "&#x25B6;";
+    showPreview.title = 'Run Preview';
     showPreview.onclick = () => {
       const iframe = document.createElement("iframe");
       iframe.frameBorder = "0";
@@ -33,7 +34,7 @@ window.onload = () => {
     tryMe.href = "https://playground.cherrilang.org/?code=" + encodedSrc;
     tryMe.target = "_blank";
     tryMe.classList.add("btn", "fs-3");
-    tryMe.innerText = "Edit in Playground";
+    tryMe.innerText = "Edit";
     tryMe.onclick = () => {
       const iframe = document.createElement("iframe");
       iframe.frameBorder = "0";
