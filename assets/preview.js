@@ -37,5 +37,4 @@ function loadPreviews() {
         parentElement.insertBefore(wrapper, highlight);
         wrapper.append(highlight, tryMe);
     });
-    window.removeEventListener('scrollend', loadPreviews)
 }
