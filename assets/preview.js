@@ -50,9 +50,9 @@ window.onload = () => {
     const actions = document.createElement("div");
     actions.className = "code-actions";
     actions.append(showPreview, tryMe);
+    highlight.prepend(actions);
 
     const parentElement = highlight.parentNode;
     parentElement.insertBefore(wrapper, highlight);
-    wrapper.append(actions, highlight);
   });
 };
