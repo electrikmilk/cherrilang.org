@@ -29,6 +29,16 @@ nav_order: 2
 > #include 'actions/intelligence'
 > ```
 
+## Chatbot Example
+
+In this example, we use an LLM action (any LLM action will work) to initially prompt the LLM to be a helpful assistant. The second argument triggers the **Follow Up** feature, basically allowing the user to continue to prompt the model based on the initial prompt. 
+
+```ruby
+#include 'actions/intelligence'
+
+askCloudLLM("You are a helpful assistant.", true)
+```
+
 ## Image Playground
 
 ### Create Image using Image Playground
