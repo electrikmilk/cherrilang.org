@@ -81,9 +81,9 @@ p.note::before, blockquote.note::before {
 }
 
 .code-actions {
-    position: absolute;
-    right: 1rem;
-    top: 0.5rem;
+    float: right;
+    margin-top: 0.5rem;
+    margin-right: 1rem;
     display: flex;
     gap: 0 1rem;
 }
