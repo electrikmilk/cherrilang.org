@@ -16,7 +16,7 @@ window.onload = () => {
     wrapper.className = "code-example";
 
     const showPreview = document.createElement("button");
-    showPreview.classList.add("btn", "fs-3");
+    showPreview.classList.add("btn", "btn-red", "fs-3");
     showPreview.innerHTML = "&#x25B6;";
     showPreview.title = 'Run Preview';
     showPreview.onclick = () => {
