@@ -3,7 +3,7 @@
  */
 
 window.onload = () => {
-    if (window.location.href.includes('#')) {
+    if (window.location.href.includes('#') && window.scrollY === 0) {
         window.addEventListener('scrollend', loadPreviews)
     } else {
         loadPreviews()
