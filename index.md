@@ -7,7 +7,7 @@ nav_order: 1
 
 <div class="hero">
     <br/>
-    <img src="/assets/cherri_hero.png" width="128" height="128" alt="Cherri Hero Image"/>
+    <img src="/assets/cherri_icon.png" width="128" height="128" alt="Cherri Hero Image"/>
     <h1>Scale your Shortcut projects and maintain them long-term.</h1>
     <p style="color: #959396"><strong>Cherri</strong> (pronounced cherry) is a <a href="https://apps.apple.com/us/app/shortcuts/id1462947752" ref="noreferrer noopener" target="_blank">Siri Shortcuts</a> programming language that compiles directly to a signed Shortcut you can then run on your Apple devices.</p>
     <span class="fs-6">
