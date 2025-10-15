@@ -2,10 +2,8 @@
  * Copyright (c) Cherri
  */
 
-window.onload = () => {
-    setTimeout(() => {
-        const codes = document.querySelectorAll('.language-ruby, .language-javascript');
-        codes.forEach(highlight => {
+const codes = document.querySelectorAll('.language-ruby, .language-javascript');
+codes.forEach(highlight => {
             const encodedSrc = encodeURIComponent(highlight.innerText);
             let frameURL = 'https://playground.cherrilang.org/preview?code=' + encodedSrc;
 
@@ -33,6 +31,4 @@ window.onload = () => {
             const parentElement = highlight.parentNode;
             parentElement.insertBefore(wrapper, highlight);
             wrapper.append(highlight, tryMe);
-        });
-    }, 1500);
-};
+});
