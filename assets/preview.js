@@ -19,7 +19,7 @@ window.onload = () => {
     wrapper.className = "code-example";
 
     const showPreview = document.createElement("button");
-    showPreview.classList.add("btn", "btn-outline");
+    showPreview.classList.add("btn");
     showPreview.innerHTML = "&#x25B6;";
     showPreview.onclick = () => {
       const iframe = document.createElement("iframe");
@@ -35,7 +35,7 @@ window.onload = () => {
     const tryMe = document.createElement("a");
     tryMe.href = "https://playground.cherrilang.org/?code=" + encodedSrc;
     tryMe.target = "_blank";
-    tryMe.classList.add("btn", "btn-outline");
+    tryMe.classList.add("btn");
     tryMe.innerText = "Edit in Playground";
     tryMe.onclick = () => {
       const iframe = document.createElement("iframe");
