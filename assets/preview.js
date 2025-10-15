@@ -54,5 +54,6 @@ window.onload = () => {
 
     const parentElement = highlight.parentNode;
     parentElement.insertBefore(wrapper, highlight);
+    wrapper.append(highlight);
   });
 };
