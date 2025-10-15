@@ -3,7 +3,7 @@
  */
 
 window.onload = () => {
-    setTimeout(loadPreviews, 1000)
+    loadPreviews()
 };
 
 function loadPreviews() {
