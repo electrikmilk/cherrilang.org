@@ -29,6 +29,7 @@ window.onload = () => {
       iframe.title = "Shortcut Preview";
 
       highlight.appendChild(iframe);
+      showPreview.remove();
     };
 
     const tryMe = document.createElement("a");
