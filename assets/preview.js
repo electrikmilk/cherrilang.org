@@ -3,13 +3,10 @@
  */
 
 window.onload = () => {
-  const codes = document.querySelectorAll(
-    ".language-ruby, .language-javascript"
-  );
+  const codes = document.querySelectorAll(".language-ruby, .language-javascript");
   codes.forEach((highlight) => {
     const encodedSrc = encodeURIComponent(highlight.innerText);
-    let frameURL =
-      "https://playground.cherrilang.org/preview?code=" + encodedSrc;
+    let frameURL = "https://playground.cherrilang.org/preview?code=" + encodedSrc;
 
     if (highlight.classList.contains("language-javascript")) {
       frameURL += "&header=1";
@@ -19,7 +16,7 @@ window.onload = () => {
     wrapper.className = "code-example";
 
     const showPreview = document.createElement("button");
-    showPreview.classList.add("btn fs-3");
+    showPreview.classList.add("btn", "fs-3");
     showPreview.innerHTML = "&#x25B6;";
     showPreview.onclick = () => {
       const iframe = document.createElement("iframe");
@@ -35,7 +32,7 @@ window.onload = () => {
     const tryMe = document.createElement("a");
     tryMe.href = "https://playground.cherrilang.org/?code=" + encodedSrc;
     tryMe.target = "_blank";
-    tryMe.classList.add("btn fs-3");
+    tryMe.classList.add("btn", "fs-3");
     tryMe.innerText = "Edit in Playground";
     tryMe.onclick = () => {
       const iframe = document.createElement("iframe");
