@@ -3,6 +3,14 @@
  */
 
 window.onload = () => {
+    if (window.location.href.includes('#')) {
+        window.addEventListener('scrollend', loadPreviews)
+    } else {
+        loadPreviews()
+    }
+};
+
+function loadPreviews() {
     const codes = document.querySelectorAll('.language-ruby, .language-javascript');
     codes.forEach(highlight => {
         const encodedSrc = encodeURIComponent(highlight.innerText);
@@ -33,4 +41,4 @@ window.onload = () => {
         parentElement.insertBefore(wrapper, highlight);
         wrapper.append(highlight, tryMe);
     });
-};
+}
