@@ -45,6 +45,8 @@ nav_external_links:
 
 footer_content: "Copyright &copy;. Distributed under the <a href=\"https://github.com/electrikmilk/cherri/blob/main/LICENSE\">GPL-2.0 License.</a> Siri Shortcuts and Mac are registered trademarks of Apple Inc. Apple is not involved in this project in any way. Do not contact Apple Support unless you are having an issue with the Shortcuts app itself."
 
+enable_copy_code_button: false
+
 last_edit_timestamp: true
 last_edit_time_format: "%b %e %Y at %I:%M %p"
 
