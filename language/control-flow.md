@@ -154,6 +154,8 @@ const connectionName = if deviceModel == "iPhone" {
     getWifiDetail("Network Name")
 }
 
+show("{connectionName}")
+
 const deviceDetail = menu "Get Device Detail" {
     item "Battery":
         getBatteryLevel()
