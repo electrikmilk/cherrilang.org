@@ -134,3 +134,45 @@ The globals `RepeatIndex` and `RepeatItem` are still available, but it is recomm
 ## Automatic nothing actions at the end
 
 The `nothing()` actions are automatically added to the ending block of any statement. This ensures the control flow block does not store any output to reduce memory usage.
+
+## Use Control Flow Output
+
+Future release
+{: .label .label-purple }
+
+In a future release, you will be able to prepend an `if`, `menu`, `repeat`, or `for` statement with a `const identifier = ` to assign a reference to the output.
+
+```
+#include 'actions/network'
+#include 'actions/device'
+#include 'actions/sharing'
+
+@deviceModel = "{Device['Model']}"
+const connectionName = if deviceModel == "iPhone" {
+    getCellularDetail("Carrier Name")
+} else {
+    getWifiDetail("Network Name")
+}
+
+const deviceDetail = menu "Get Device Detail" {
+    item "Battery":
+        getBatteryLevel()
+    item "Clipboard":
+        getClipboard()
+}
+
+show("{deviceDetail}")
+
+const repeated = repeat i for 6 {
+    number(i)
+}
+
+show("{repeated}")
+
+@items = ["Item 1", "Item 2", "Item 3"]
+const map = for item in items {
+    number(item)
+}
+
+show("{map}")
+```
