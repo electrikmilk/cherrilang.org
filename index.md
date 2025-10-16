@@ -78,7 +78,11 @@ Use the glyphs search site to easily generate a Shortcut icon for Cherri outside
 
 ## How does it work?
 
-### 🪄 No magic variables syntax, they're constants instead
+Cherri is designed to be easy to learn and use, and is likely similar to a language that you are already familiar with.
+
+### 🪄 Magic variables are constants
+
+As Magic Variables cannot be changed, use the typical constant syntax found in many languages to use the output of an action directly.
 
 ```ruby
 const int = 37
@@ -87,7 +91,9 @@ show("{int}")
 
 [Learn more](language/variables-constants-globals#constants){: .btn }
 
-### #️⃣ Include files within others for large Shortcut projects
+### #️⃣ Includes
+
+Include multiple files and files within folders, etc., to create and maintain large Shortcut projects.
 
 ```
 #include 'other-file.cherri'
@@ -98,6 +104,8 @@ show("{int}")
 [Learn more](language/includes){: .btn }
 
 ### 🔧 Define custom actions
+
+Custom actions are an analog to functions in other languages in Shortcuts.
 
 ```
 #include 'actions/scripting'
@@ -111,7 +119,9 @@ myCustomAction("Test")
 
 [Learn more](language/custom-actions){: .btn }
 
-### 📋 Copy-paste actions automatically
+### 📋 Copy-paste automatically
+
+Macros exist to copy and paste code automatically at compile-time.
 
 ```ruby
 #include 'actions/network'
@@ -130,7 +140,9 @@ paste checkConnection
 
 [Learn more](language/copy-paste){: .btn }
 
-### 🥩 Define raw actions with a custom identifier and parameters
+### 🥩 Add Actions Raw into your Shortcut
+
+Add a single custom-implemented or 3rd party action into your Shortcut with a Raw Action.
 
 ```ruby
 rawAction("is.workflow.actions.gettext", {
@@ -151,6 +163,8 @@ makeVCard("Title", "Subtitle")
 [Learn more](language/vcards){: .btn }
 
 ### 🔢 Type system and type inference
+
+Types are checked to match Shortcuts to ensure the compiled Shortcut will work when run and warn you when your defined types are used incorrectly.
 
 ```ruby
 /* Declared types */
