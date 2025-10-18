@@ -35,15 +35,6 @@ window.onload = () => {
     tryMe.target = "_blank";
     tryMe.classList.add("btn", "fs-3");
     tryMe.innerText = "Edit";
-    tryMe.onclick = () => {
-      const iframe = document.createElement("iframe");
-      iframe.frameBorder = "0";
-      iframe.loading = "lazy";
-      iframe.src = frameURL;
-      iframe.title = "Shortcut Preview";
-
-      highlight.appendChild(iframe);
-    };
 
     const actions = document.createElement("div");
     actions.className = "code-actions";
