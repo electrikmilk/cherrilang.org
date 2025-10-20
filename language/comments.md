@@ -46,7 +46,7 @@ nothing()
 
 ### Slash syntax comments
 
-Use the `-comments` (`-c`) argument to include your comments as actions. If you do, do not add a `*` to the front of a line in multiline comments; it will make its way into the Shortcut.
+Use the `--comments` (`-c`) argument to include your comments as actions. If you do, do not add a `*` to the front of a line in multiline comments; it will make its way into the Shortcut.
 
 ### Explicit comments
 
