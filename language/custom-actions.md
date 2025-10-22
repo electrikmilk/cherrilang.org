@@ -11,11 +11,11 @@ nav_order: 12
 {: .warning }
 In a future release, Custom Actions will be renamed to Functions.
 
-Custom actions are an abstraction on top of Shortcuts that allows you to run Cherri code separately from your main code, even multiple times, recurse within it, and maybe output a value.
+Custom actions are an abstraction on top of Shortcuts that allows you to run Cherri code separately from your main code, even multiple times, recurse within it, and optionally output a value.
 
 You can define custom actions that can be called later in a Shortcut, in the same way as standard actions.
 
-This allows you to not have to repeat yourself and cut down on the total actions in your Shortcut if you have actions doing the same thing in multiple places.
+This allows you to reduce duplicate action code and overall cut down on the total actions in your Shortcut if you have actions doing the same thing in multiple places.
 
 This uses an abstraction that is injected at the top of your Shortcut, [but don't worry, the first comment is preserved](#prioritization-of-instructional-or-contact-comments).
 
