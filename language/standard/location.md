@@ -17,7 +17,7 @@ nav_order: 9
 
 ---
 
-{: .warning }
+{: .note }
 > To use actions in this category, use this include statement:
 >
 > ```

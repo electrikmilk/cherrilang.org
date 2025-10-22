@@ -7,7 +7,7 @@ nav_order: 5
 
 # Shortcut File Format
 
-{: .warning }
+{: .note }
 This document is a work in progress.
 
 A Shortcut is a single file with a `.shortcut` file extension. However, this file is basically a [property list](https://en.wikipedia.org/wiki/Property_list) file.
