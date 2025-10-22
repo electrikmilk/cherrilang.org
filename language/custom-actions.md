@@ -9,7 +9,7 @@ nav_order: 12
 {: .no_toc }
 
 {: .warning }
-In a future release, custom actions will be renamed to Functions.
+In a future release, Custom Actions will be renamed to Functions.
 
 Custom actions are an abstraction on top of Shortcuts that allows you to run Cherri code separately from your main code, even multiple times, recurse within it, and maybe output a value.
 
