@@ -149,6 +149,8 @@ const connectionName = if deviceModel == "iPhone" {
 } else {
     getWifiDetail("Network Name")
 }
+
+show("{connectionName}")
 ```
 
 **Example:**
