@@ -139,6 +139,8 @@ The `nothing()` actions are automatically added to the ending block of any state
 
 Prepend an `if`, `menu`, `repeat`, or `for` statement with a constant statement to assign a reference to the output for later use.
 
+Conditonals can be used to create conditional output to a reference:
+
 ```ruby
 #include 'actions/network'
 
@@ -151,6 +153,8 @@ const connectionName = if deviceModel == "iPhone" {
 
 show("{connectionName}")
 ```
+
+Menus can be used almost like a switch statement but with user input:
 
 ```ruby
 #include 'actions/device'
@@ -165,6 +169,8 @@ const deviceDetail = menu "Get Device Detail" {
 
 show("{deviceDetail}")
 ```
+
+Repeat and For can increment an output or accumulate a value.
 
 ```ruby
 const repeated = repeat i for 6 {
