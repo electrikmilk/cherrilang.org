@@ -135,12 +135,23 @@ The globals `RepeatIndex` and `RepeatItem` are still available, but it is recomm
 
 The `nothing()` actions are automatically added to the ending block of any statement. This ensures the control flow block does not store any output to reduce memory usage.
 
-## Use Control Flow Output
+## Control Flow Output
 
-Future release
-{: .label .label-purple }
+Prepend an `if`, `menu`, `repeat`, or `for` statement with a `const identifier = ` to assign a reference to the output.
 
-In a future release, you will be able to prepend an `if`, `menu`, `repeat`, or `for` statement with a `const identifier = ` to assign a reference to the output.
+
+```ruby
+#include 'actions/network'
+
+@deviceModel = "{Device['Model']}"
+const connectionName = if deviceModel == "iPhone" {
+    getCellularDetail("Carrier Name")
+} else {
+    getWifiDetail("Network Name")
+}
+```
+
+**Example:**
 
 ```
 #include 'actions/network'
