@@ -103,21 +103,34 @@ Include multiple files and files within folders, etc., to create and maintain la
 
 [Learn more](language/includes){: .btn }
 
-### 🔧 Define custom actions
+### 🔄 Define Functions
 
-Custom actions are an analog to functions in other languages in Shortcuts.
+Functions run within their own scope at the top of the Shortcut, called via the Run Shortcut action.
 
 ```
 #include 'actions/scripting'
 
-action myCustomAction(text test) {
-    show("{test}")
+function myFunc(text test) {
+    output("{test}")
 }
 
-myCustomAction("Test")
+@result = myFunc("Test")
+show("{result}")
 ```
 
-[Learn more](language/custom-actions){: .btn }
+[Learn more](language/functions){: .btn }
+
+### 🔧 Define actions
+
+Define your own version of Standard actions or 3rd party actions.
+
+```
+action 'alert' confirm(text alert: 'WFAlertActionMessage')
+
+confirm("Are you sure?")
+```
+
+[Learn more](language/action-definitions){: .btn }
 
 ### 📋 Copy-paste automatically
 
