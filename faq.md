@@ -102,7 +102,7 @@ rawAction("is.workflow.actions.alert", {
 Or, you could define a reusable action using [action definitions](/language/action-definitions):
 
 ```
-#define action 'is.workflow.actions.setvariable' setVariable(text name: 'WFVariableName', variable input: 'WFInput')
+action 'is.workflow.actions.setvariable' setVariable(text name: 'WFVariableName', variable input: 'WFInput')
 ```
 
 ### Types Legend

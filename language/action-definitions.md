@@ -12,12 +12,12 @@ nav_order: 13
 To define a Shortcut action raw, in the same reusable way as the [standard Shortcut actions](/language/actions) in the compiler, use the following syntax similar to a [definition](/language/definitions):
 
 ```
-#define action 'com.example.app.action' myCustomAction()
+action 'com.example.app.action' myCustomAction()
 
 myCustomAction()
 ```
 
-A raw text `WFWorkflowActionIdentifier` is required between `#define action` and the identifier of the action.
+A raw text `WFWorkflowActionIdentifier` is required between `action` and the identifier of the action.
 
 The only exception to this is for Shortcuts actions that start with `is.workflow.actions`. If the identifier namespaces are less than 4, we assume it is a classic Shortcuts action for the convenience of defining them.
 
@@ -29,7 +29,7 @@ To find the identifier and parameters for an action from a Shortcut not implemen
 
 ## Attributes
 
-Attributes may be added in the following order after `#define action`:
+Attributes may be added in the following order after `action`:
 
 - `default` - For decompilation, if multiple action definitions use the same identifier, use this action by default if no other actions match better.
 - `mac`: - macOS-only action _OR_ `!mac`: non macOS action, iOS/iPadOS only.
@@ -42,7 +42,7 @@ The syntax for the action arguments is the same as [custom actions](/language/cu
 One exception is that it requires the key for the parameter that the argument will be used to create. Add a `:` after the argument name, then a raw string with the parameter key:
 
 ```
-#define action 'com.example.app.action' myCustomAction(variable file: 'WFInput'): bool
+action 'com.example.app.action' myCustomAction(variable file: 'WFInput'): bool
 
 @file = selectFile()
 myCustomAction(file)
@@ -53,7 +53,7 @@ myCustomAction(file)
 To add extra parameters in the same way as a [raw action](/language/raw-actions), add a dictionary after the definition and an optional output type.
 
 ```
-#define action 'com.example.app.action' myCustomAction(variable file: 'WFInput'): bool {
+action 'com.example.app.action' myCustomAction(variable file: 'WFInput'): bool {
     "WFActionParameterName": true
 }
 ```
@@ -63,7 +63,7 @@ To add extra parameters in the same way as a [raw action](/language/raw-actions)
 Below is an example using the **Show Alert** action.
 
 ```ruby
-#define action 'alert' showAlert(
+action 'alert' showAlert(
     text message: 'WFAlertActionMessage',
     text ?title: 'WFAlertActionTitle',
     bool ?cancelButton: 'WFAlertActionCancelButtonShown' = true

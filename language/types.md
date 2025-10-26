@@ -220,7 +220,7 @@ enum Color {
     'Blue'
 }
 
-#define action 'com.example.app.action' myCustomAction(Color color)
+action 'com.example.app.action' myCustomAction(Color color)
 
 myCustomAction("Purple") // throws an error
 ```
