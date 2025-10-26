@@ -170,7 +170,7 @@ const deviceDetail = menu "Get Device Detail" {
 show("{deviceDetail}")
 ```
 
-Repeat and For can increment an output or accumulate a value.
+Repeat and For can increment or accumulate a value.
 
 ```ruby
 const repeated = repeat i for 6 {
