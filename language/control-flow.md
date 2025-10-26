@@ -139,7 +139,6 @@ The `nothing()` actions are automatically added to the ending block of any state
 
 Prepend an `if`, `menu`, `repeat`, or `for` statement with a `const identifier = ` to assign a reference to the output.
 
-
 ```ruby
 #include 'actions/network'
 
@@ -153,21 +152,9 @@ const connectionName = if deviceModel == "iPhone" {
 show("{connectionName}")
 ```
 
-**Example:**
-
-```
-#include 'actions/network'
+```ruby
 #include 'actions/device'
 #include 'actions/sharing'
-
-@deviceModel = "{Device['Model']}"
-const connectionName = if deviceModel == "iPhone" {
-    getCellularDetail("Carrier Name")
-} else {
-    getWifiDetail("Network Name")
-}
-
-show("{connectionName}")
 
 const deviceDetail = menu "Get Device Detail" {
     item "Battery":
@@ -177,13 +164,17 @@ const deviceDetail = menu "Get Device Detail" {
 }
 
 show("{deviceDetail}")
+```
 
+```ruby
 const repeated = repeat i for 6 {
     number(i)
 }
 
 show("{repeated}")
+```
 
+```ruby
 @items = ["Item 1", "Item 2", "Item 3"]
 const map = for item in items {
     number(item)
