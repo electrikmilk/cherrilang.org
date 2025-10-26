@@ -1,19 +1,16 @@
 ---
-title: Custom Actions
+title: Functions
 layout: default
 parent: Documentation
 nav_order: 12
 ---
 
-# Custom Actions
+# Functions
 {: .no_toc }
 
-{: .warning }
-In a future release, Custom Actions will be renamed to Functions.
+Functions are an abstraction on top of Shortcuts that allows you to run Cherri code separately from your main code, even multiple times, recurse within it, and optionally output a value.
 
-Custom actions are an abstraction on top of Shortcuts that allows you to run Cherri code separately from your main code, even multiple times, recurse within it, and optionally output a value.
-
-You can define custom actions that can be called later in a Shortcut, in the same way as standard actions.
+You can define functions that can be called later in a Shortcut, in the same way as standard actions.
 
 This allows you to reduce duplicate action code and overall cut down on the total actions in your Shortcut if you have actions doing the same thing in multiple places.
 
@@ -27,12 +24,12 @@ This uses an abstraction that is injected at the top of your Shortcut, [but don'
 
 ## Definition
 
-### Defining a custom action
+### Defining a Function
 
-Define your action, then reference the action to run the contents of the custom action, isolated from the rest of your Shortcut:
+Define your action, then reference the action to run the contents of the function, isolated from the rest of your Shortcut:
 
 ```
-action add(number op1, number op2) {
+function add(number op1, number op2) {
   const result = op1 + op2
   output("{result}")
 }
@@ -40,28 +37,28 @@ action add(number op1, number op2) {
 add(2,2)
 ```
 
-Keep in mind, if a custom action is used, the compiler will inject some actions at the top of your Shortcut to support this feature.
+Keep in mind, if a function is used, the compiler will inject some actions at the top of your Shortcut to support this feature.
 
-### Defining arguments
+### Defining Arguments
 
-You can define arguments for your custom action that you provide later when referencing it.
+You can define arguments for your function that you provide later when referencing it.
 
 ```
-action myAction(text message) {
+function myAction(text message) {
     // ...
 }
 ```
 
 Read the [types](types) reference for all types you can use for arguments.
 
-When calling your custom action, keep in mind that the arguments you use will be type-checked against your type definitions for each of your arguments.
+When calling your function, keep in mind that the arguments you use will be type-checked against your type definitions for each of your arguments.
 
 ### Optional
 
-Add a `?` before the argument name to mark it as optional, meaning it is not required to be filled in. Otherwise, the compiler will complain if the argument is not filled in when the custom action is called.
+Add a `?` before the argument name to mark it as optional, meaning it is not required to be filled in. Otherwise, the compiler will complain if the argument is not filled in when the function is called.
 
 ```
-action myAction(text ?message) {
+function myAction(text ?message) {
     // ...
 }
 ```
@@ -71,7 +68,7 @@ action myAction(text ?message) {
 Add a `!` after the type of the argument name to mark it as requiring a literal value, for parameters that do not accept a variable value.
 
 ```
-action myAction(text! message) {
+function myAction(text! message) {
     // ...
 }
 ```
@@ -81,33 +78,33 @@ action myAction(text! message) {
 You can optionally use an assignment operator to set a default value for the argument. The compiler will warn against using the default value for this argument, as that will make for a smaller shortcut.
 
 ```
-action myAction(text message = "Hello, World!") {
+function myAction(text message = "Hello, World!") {
     // ...
 }
 ```
 
-## Action Behavior
+## Function Behavior
 
 ### Returning a Value
 
-This is not required, but if you would like to return a value from your custom action to a call of your custom action, assign the reference to your custom action to a variable just like you would a standard action.
+This is not required, but if you would like to return a value from your function to a call and assign the reference to a variable, just like you would with a standard action.
 
-Then, inside the body of your custom action, use the `output()` action to return a result.
+Then, inside the body of your function, use the `output()` action to return a result.
 
 ```
-action myCustomAction() {
+function myFunc() {
   output("Hello!")
 }
 
-@result = myCustomAction()
+@result = myFunc()
 ```
 
 ### Output Type
 
-You can define an output type for your custom action so that an error can be thrown if the output is used where that type is not expected.
+You can define an output type for your function so that an error can be thrown if the output is used where that type is not expected.
 
 ```
-action sum(number op1, number op2): number {
+function sum(number op1, number op2): number {
     // ...
 }
 ```
@@ -118,7 +115,7 @@ Type coercion is be done at the action call level, where the output of the actio
 
 ### Recursion
 
-It is possible to call other custom actions within the body of a custom action. You can then use this for recursion, running the same custom action with an eventual breakpoint.
+It is possible to call other functions within the body of a function. You can then use this for recursion, running the same function with an eventual breakpoint.
 
 {: .warning }
 Misuse of recursion can cause a Shortcut to infinitely loop.
@@ -126,7 +123,7 @@ Misuse of recursion can cause a Shortcut to infinitely loop.
 ```ruby
 #include 'actions/scripting'
 
-action fibonacci(number n): number {
+function fibonacci(number n): number {
     if n <= 1 {
         output("{n}")
     } else {
@@ -145,9 +142,9 @@ show("{output}") // 13
 
 ## Prioritization of Instructional or Contact Comments
 
-Note that when the compiler reaches your first explicit comment action, if you are using a custom action, it will push that action to the top of the Shortcut instead of adding it after the injected custom actions abstraction has been added at the top.
+Note that when the compiler reaches your first explicit comment action, if you are using a function, it will push that action to the top of the Shortcut instead of adding it after the injected functions abstraction has been added at the top.
 
-This is primarily to still be able to add an instructional or contact comment at the top of a Shortcut while also using the custom actions abstraction.
+This is primarily to still be able to add an instructional or contact comment at the top of a Shortcut while also using the functions abstraction.
 
 ```ruby
 #include 'stdlib'
@@ -161,9 +158,9 @@ comment('Contact me: brandon@cherrilang.org')
 runJS("console.log('Hello, World!')")
 ```
 
-## How do they work?
+## How Do They Work?
 
-The contents of these actions run separately from your main code inside your Shortcut by using the **Run Shortcut** action and passing a **Dictionary** action containing data that will be detected by the injected Cherri code that contains each of the defined actions that are used in the Cherri code below it.
+The contents of functions run separately from your main code inside your Shortcut by using the **Run Shortcut** action and passing a **Dictionary** action containing data that will be detected by the injected Cherri code that contains each of the defined actions that are used in the Cherri code below it.
 
 This is a part of the language that does not translate 1-1, but for the functionality it provides, it can be a powerful tool.
 
@@ -200,11 +197,11 @@ if ShortcutInput {
 
 The compiler will generate this syntax and inject it into the top of the resulting Shortcut.
 
-It validates that the input we're receiving is a Cherri function call, then filters it down to which action is being called, then we have actions based on the action's definition that coerce the provided argument values from the input into their defined value types, then the injected custom action body is run.
+It validates that the input we're receiving is a Cherri function call, then filters it down to which action is being called, then we have actions based on the action's definition that coerce the provided argument values from the input into their defined value types, then the injected function body is run.
 
-At the end, just in case no output was defined in the custom action body that was called, we output nothing at the end of the action call list.
+At the end, just in case no output was defined in the function body that was called, we output nothing at the end of the action call list.
 
-### Action Calls
+### Function Calls
 
 Then, when you reference the action described `add(number, number)`
 
