@@ -11,7 +11,7 @@ Beta
 
 Import and decompile a Shortcut from a file or iCloud link into Cherri code.
 
-Use the `--import=` argument with an iCloud link or local unsigned Shortcut file path.
+Use the `--import=` argument with an iCloud link or local, unsigned Shortcut file path.
 
 ```console
 cherri --import={URL or PATH}
@@ -46,6 +46,7 @@ Keep in mind this is mainly meant to be a starting point and you may in some cas
 
 These two features are currently not supported in Cherri and so cannot be decompiled:
 
-If a value relies on the output of a Get Variable action, you may need to fix it to reference the variable instead; but in most cases, this may not be an issue.
+- If a value relies on the output of a Get Variable action, you may need to fix it to reference the variable instead, but in most cases, this may not be an issue.
+- Some required includes for standard actions may not be automatically added.
 
 The Shortcut will still decompile, but you may see comments in the code or warnings about these caveats.
