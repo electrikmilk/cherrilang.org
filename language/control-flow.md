@@ -137,7 +137,7 @@ The `nothing()` actions are automatically added to the ending block of any state
 
 ## Control Flow Output
 
-Prepend an `if`, `menu`, `repeat`, or `for` statement with a `const identifier = ` to assign a reference to the output.
+Prepend an `if`, `menu`, `repeat`, or `for` statement with a constant statement to assign a reference to the output for later use.
 
 ```ruby
 #include 'actions/network'
