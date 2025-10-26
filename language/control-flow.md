@@ -27,7 +27,7 @@ if intVar > 6 {
 }
 ```
 
-If statements are not required to contain the else statement but do require the ending curly brace as in other
+If statements are not required to contain the else statement, but do require the ending curly brace, as in other
 languages.
 
 The first operand of the if statement must be a variable. The second can optionally be a variable.
