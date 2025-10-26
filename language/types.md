@@ -187,7 +187,7 @@ Items in an array or added to an array cannot be removed. If you need a new arra
 
 ### Variable
 
-A variable is a type of value that can be accepted for a custom action or defined action argument. For custom actions, this means not coercing the value to any type. For defined actions, it means the value should always be handled as a variable when compiling the value for actions that have a parameter that does not accept only a variable value.
+A variable is a type of value that can be accepted for a custom action or defined action argument. For functions, this means not coercing the value to any type. For defined actions, it means the value should always be handled as a variable when compiling the value for actions that have a parameter that does not accept only a variable value.
 
 ### Action Result
 
@@ -211,7 +211,7 @@ Some actions have arguments with the type `enum`, accompanied by a set of allowe
 
 Enumerations are types with values defined in code, allowing them to have identifiers and be easily defined in code for both standard and user-defined actions.
 
-To define enumerations for use as a type for [custom actions](/language/custom-actions) and [action definitions](/language/action-definitions), use the following syntax:
+To define enumerations for use as a type for [functions](/language/functions) and [action definitions](/language/action-definitions), use the following syntax:
 
 ```
 enum Color {

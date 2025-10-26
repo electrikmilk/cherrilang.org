@@ -21,7 +21,7 @@ action 'is.workflow.actions.setvariable' setVariable(text name: 'WFVariableName'
 
 ## Raw Actions
 
-You could also use either [custom actions](/language/custom-actions) or [pastables](/language/copy-paste) to wrap a [raw action](/language/raw-actions). This file can then be [included](/language/includes) to easily use the 3rd party actions.
+You could also use either [functions](/language/functions) or [pastables](/language/copy-paste) to wrap a [raw action](/language/raw-actions). This file can then be [included](/language/includes) to easily use the 3rd party actions.
 
 ---
 

@@ -37,7 +37,7 @@ Attributes may be added in the following order after `action`:
 
 ## Arguments
 
-The syntax for the action arguments is the same as [custom actions](/language/custom-actions#defining-arguments), and you can also set an [output type](/language/custom-actions#output-type).
+The syntax for the action arguments is the same as [functions](/language/functions#defining-arguments), and you can also set an [output type](/language/custom-actions#output-type).
 
 One exception is that it requires the key for the parameter that the argument will be used to create. Add a `:` after the argument name, then a raw string with the parameter key:
 

@@ -6,15 +6,15 @@ parent: Actions
 nav_order: 24
 ---
 
-# Standard Library of Custom Actions
+# Standard Library of Functions
 
-You can use the Cherri Standard Library of [custom actions](/language/custom-actions) using the following syntax:
+You can use the Cherri Standard Library of [functions](/language/functions) using the following syntax:
 
 ```
 #include 'stdlib'
 ```
 
-This will give you access to the following actions. Note that custom actions are only included with your Shortcut if you use them.
+This will give you access to the following functions. Note that functions are only included with your Shortcut if you use them.
 
 ## Scripting
 

@@ -45,10 +45,10 @@ paste carbon
 
 In the example above, the resulting Shortcut will have an `alert("Hello")` pasted wherever `paste carbon` is used.
 
-## Difference from custom actions and includes
+## Difference from functions and includes
 
-These work differently from [custom actions](/language/custom-actions) in that they reduce the number of actions as custom actions add a lot of actions. If you don't _need_ to use the abstraction of custom actions (you don't need to use arguments) to reuse the same actions if it's not necessary for what you need to reuse.
+These work differently from [functions](/language/functions) in that they reduce the number of actions as functions add a lot of actions. If you don't _need_ to use the abstraction of functions (you don't need to use arguments) to reuse the same actions if it's not necessary for what you need to reuse.
 
-However, depending on how much code is in the pastable and how many times you need to paste it, it may produce fewer actions to use custom actions instead.
+However, depending on how much code is in the pastable and how many times you need to paste it, it may produce fewer actions to use functions instead.
 
 This also allows you to "include" code without needing a separate file. You could include a file with a bunch of pastables to selectively include code from that file.
