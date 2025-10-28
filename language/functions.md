@@ -208,7 +208,7 @@ Then, when you reference the action described `add(number, number)`
 ```ruby
 #include 'actions/scripting'
 
-action add(number op1, number op2) {
+function add(number op1, number op2) {
   const result = op1 + op2
   output("{result}")
 }
