@@ -170,7 +170,7 @@ const deviceDetail = menu "Get Device Detail" {
 show("{deviceDetail}")
 ```
 
-Repeat and For will accumulate a value using the returned values.
+Repeat and For will accumulate an array using the returned values.
 
 ```ruby
 const repeated = repeat i for 6 {
