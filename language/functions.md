@@ -203,7 +203,7 @@ At the end, just in case no output was defined in the function body that was cal
 
 ### Function Calls
 
-Then, when you reference the action described `add(number, number)`
+Then, when you reference the function described `add(number, number)`
 
 ```ruby
 #include 'actions/scripting'
