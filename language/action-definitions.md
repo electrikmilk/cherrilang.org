@@ -9,7 +9,7 @@ nav_order: 13
 
 ## Definition
 
-To define a Shortcut action raw, in the same reusable way as the [standard Shortcut actions](/language/actions) in the compiler, use the following syntax similar to a [definition](/language/definitions):
+To define a Shortcut action raw, in the same reusable way as the [standard Shortcut actions](/language/actions) in the compiler, use the following syntax:
 
 ```
 action 'com.example.app.action' myCustomAction()
@@ -21,7 +21,7 @@ A raw text `WFWorkflowActionIdentifier` is required between `action` and the ide
 
 The only exception to this is for Shortcuts actions that start with `is.workflow.actions`. If the identifier namespaces are less than 4, we assume it is a classic Shortcuts action for the convenience of defining them.
 
-You may see `#builtin` instead of `#define` for an action definition printed by the compiler. These actions are internally defined in the compiler and require compile-time processing that either cannot practically be abstracted to Cherri or hasn't yet been implemented.
+You may see `#builtin` for an action definition printed by the compiler. These actions are internally defined in the compiler and require compile-time processing that either cannot practically be abstracted to Cherri or hasn't yet been implemented.
 
 ## Parsing Shortcut Data
 
