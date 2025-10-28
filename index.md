@@ -125,9 +125,9 @@ show("{result}")
 Define your own version of Standard actions or 3rd party actions.
 
 ```ruby
-action 'alert' confirm(text alert: 'WFAlertActionMessage')
+action 'alert' showConfirm(text alert: 'WFAlertActionMessage')
 
-confirm("Are you sure?")
+showConfirm("Are you sure?")
 ```
 
 [Learn more](language/action-definitions){: .btn }
