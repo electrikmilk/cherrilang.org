@@ -173,7 +173,7 @@ show("{deviceDetail}")
 Repeat and For will accumulate a value using the returned values.
 
 ```ruby
-const map = repeat i for 6 {
+const repeated = repeat i for 6 {
     number(i)
 }
 
