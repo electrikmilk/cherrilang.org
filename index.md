@@ -107,7 +107,7 @@ Include multiple files and files within folders, etc., to create and maintain la
 
 Functions run within their own scope at the top of the Shortcut, called via the Run Shortcut action.
 
-```
+```ruby
 #include 'actions/scripting'
 
 function myFunc(text test) {
@@ -124,7 +124,7 @@ show("{result}")
 
 Define your own version of Standard actions or 3rd party actions.
 
-```
+```ruby
 action 'alert' confirm(text alert: 'WFAlertActionMessage')
 
 confirm("Are you sure?")
