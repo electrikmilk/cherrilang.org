@@ -7,9 +7,6 @@ nav_order: 5
 
 # Shortcut File Format
 
-{: .note }
-This document is a work in progress.
-
 A Shortcut is a single file with a `.shortcut` file extension. However, this file is basically a [property list](https://en.wikipedia.org/wiki/Property_list) file.
 
 A property list is a data format file, similar to JSON, which uses keys and values. macOS and iOS heavily utilize it, as it originates from NextSTEP, their predecessor.
