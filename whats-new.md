@@ -31,7 +31,7 @@ In a future release, Cherri will have a package manager builtin to the CLI based
 
 ---
 
-## Latest Improvements
+## 🚀 Latest Improvements
 
 - Search action definitions in a file - You can now run a Cherri file with the -`-action=` argument to search action definitions defined in that file. Keep in mind, this will also search any included files.
 - Optimized output file size - Shortcut/Plist files are now with fewer lines, with an optimization to remove some empty values at the top level.
