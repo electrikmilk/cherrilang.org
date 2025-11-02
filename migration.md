@@ -104,7 +104,6 @@ Decompiled code is functional but not idiomatic. Let's look at what you might se
 **Decompiled Code:**
 
 ```ruby
-#define name My Shortcut
 #define color yellow
 #define glyph smileyFace
 
