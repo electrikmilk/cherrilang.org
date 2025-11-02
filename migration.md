@@ -419,7 +419,7 @@ nothing()
 
 **Solution:** Add explicit type annotations or check that action inputs match expected types:
 
-```ruby
+```
 @myVar: text  // Explicitly declare type
 ```
 
