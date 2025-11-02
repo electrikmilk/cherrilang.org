@@ -1,7 +1,8 @@
 ---
 title: Migration Guide
 layout: default
-nav_order: 4
+parent: Documentation
+nav_order: 2
 ---
 
 # Migrating Existing Shortcuts to Cherri
@@ -63,7 +64,7 @@ The link will look like: `https://www.icloud.com/shortcuts/abc123def456`
 Use the `--import` flag with the iCloud URL:
 
 ```bash
-cherri --import="https://www.icloud.com/shortcuts/abc123def456"
+cherri --import=https://www.icloud.com/shortcuts/abc123def456
 ```
 
 This will:
