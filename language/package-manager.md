@@ -63,3 +63,7 @@ Force re-install all packages (removes any package directories if they exist):
 ```bash
 cherri --tidy
 ```
+
+## Trusted Packages
+
+When you add a package for the first time on a system, you will be prompted to check if you trust the repository for the package. If you say yes, a file is stored at ~/.cherri/trusted.plist, containing the signatures (e.g., @{gihub_username}/{package_name}) of the trusted packages.
