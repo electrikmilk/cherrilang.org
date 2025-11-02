@@ -16,13 +16,10 @@ In a future release of Cherri, a GitHub repo-based package manager will be built
 ## Create Package
 
 1. Create a GitHub repository following this structure:
-
 ```
 https://github.com/{GITHUB_USER}/cherri-{PACKAGE_NAME}.git
 ```
-
 2. Initialize your package in your project folder:
-
 ```bash
 cherri --init=@{GITHUB_USER}/{PACKAGE_NAME}
 ```
