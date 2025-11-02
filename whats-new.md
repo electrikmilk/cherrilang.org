@@ -22,3 +22,12 @@ Future release
 In a future release, Cherri will have a package manager builtin to the CLI based on GitHub repos.
 
 [Learn more](language/packages){: .btn }
+
+---
+
+## 🛟 Help
+
+Check out the new guides:
+
+- [Getting Started](https://cherrilang.org/language/getting-started)
+- [Migration Guide](https://cherrilang.org/language/migration)
