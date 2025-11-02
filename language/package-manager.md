@@ -8,14 +8,14 @@ nav_order: 13
 # Packages
 {: .no_toc }
 
+Future release
+{: .label .label-purple }
+
 ## Table of contents
 {: .no_toc .text-delta }
 
 1. TOC
 {:toc}
-
-Future release
-{: .label .label-purple }
 
 Cherri includes a built-in GitHub-based package manager that allows you to easily share and reuse code across projects.
 
