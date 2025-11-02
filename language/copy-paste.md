@@ -6,6 +6,13 @@ nav_order: 10
 ---
 
 # Copy/Paste Actions
+{: .no_toc }
+
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
 
 {: .warning }
 Strong caution against the misuse of this syntax, such as long chains of pastables pasting other pastables.
