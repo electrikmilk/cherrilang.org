@@ -180,7 +180,7 @@ Create a new file called `greeting.cherri`:
 #define color purple
 
 // Ask for the user's name
-@name = ask("What's your name?")
+@name = prompt("What's your name?")
 
 // Create a personalized greeting
 if name {
@@ -196,7 +196,7 @@ show("{greeting}")
 **New concepts:**
 
 - **Variables:** `@name` creates a variable (set variable action in Shortcuts)
-- **Ask action:** `ask(...)` prompts the user for input
+- **Prompt action:** `prompt(...)` prompts the user for input
 - **If/else:** Conditional logic to check if the user entered a name
 - **String interpolation:** `{name}` inserts the variable's value into text
 - **Show action:** `show(...)` displays the result as a notification or dialog
