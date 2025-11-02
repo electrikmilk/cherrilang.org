@@ -8,13 +8,13 @@ nav_order: 13
 # Raw Action
 {: .no_toc }
 
+You can write a raw definition of an action not defined inside Cherri, in Cherri.
+
 ## Table of contents
 {: .no_toc .text-delta }
 
 1. TOC
 {:toc}
-
-You can write a raw definition of an action not defined inside Cherri, in Cherri.
 
 ## Defining an action
 
