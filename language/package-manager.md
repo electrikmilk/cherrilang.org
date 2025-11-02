@@ -26,6 +26,8 @@ cherri --init=@{github_user}/{package_name}
 
 This creates an `info.plist` file in the current directory with the provided details.
 
+Note that you can create a package for your project in the current directory and not have the username or package name correspond to an assumed GitHub repository. This is only required for packages that need to be downloaded from GitHub.
+
 ## List Package Info
 
 List the package in the current directory and its immediate dependent packages.
