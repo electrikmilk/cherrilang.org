@@ -6,6 +6,13 @@ nav_order: 9
 ---
 
 # vCard Menus
+{: .no_toc }
+
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
 
 You can easily create a vCard Text action using the built-in action `makeVCard()`.
 
