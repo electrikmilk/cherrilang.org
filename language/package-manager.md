@@ -17,11 +17,11 @@ In a future release of Cherri, a GitHub repo-based package manager will be built
 
 1. Create a GitHub repository following this structure:
 ```
-https://github.com/{GITHUB_USER}/cherri-{PACKAGE_NAME}.git
+https://github.com/{github_user}/cherri-{package_name}.git
 ```
 2. Initialize your package in your project folder:
 ```bash
-cherri --init=@{GITHUB_USER}/{PACKAGE_NAME}
+cherri --init=@{github_user}/{package_name}
 ```
 
 This creates an `info.plist` file in the current directory with the provided details.
@@ -45,7 +45,7 @@ cherri --packages
 To install a package, use the GitHub username and repository name, but with the `cherri-` prefix taken out of the repository name.
 
 ```bash
-cherri --install=@electrikmilk/package-example
+cherri --install=@{github_user}/{package_name}
 ```
 
 This installs the package in a `/packages/` directory.
@@ -53,12 +53,12 @@ This installs the package in a `/packages/` directory.
 ## Uninstall Package
 
 ```bash
-cherri --remove=@electrikmilk/package-example
+cherri --remove=@{github_user}/{package_name}
 ```
 
 ## Tidy
 
-Force re-install all packages (remove any package directories if they exist):
+Force re-install all packages (removes any package directories if they exist):
 
 ```bash
 cherri --tidy
