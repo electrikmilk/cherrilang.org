@@ -11,7 +11,7 @@ Future release
 {: .label .label-purple }
 
 
-In a future release of Cherri, a GitHub repo-based package manager will be built into the CLI.
+In a future release of Cherri, a GitHub repo-based package manager will be built-in to the CLI.
 
 ## Create Package
 
