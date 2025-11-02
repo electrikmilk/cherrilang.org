@@ -332,7 +332,7 @@ If you get type errors, declare variable types explicitly:
 
 If you're experiencing memory issues, add `nothing()` after actions that produce unused output:
 
-```ruby
+```
 someAction()
 nothing()  // Clears the output
 ```
@@ -459,7 +459,7 @@ The Shortcut may not be signed. On non-macOS platforms, use `--hubsign` when com
 
 You may have forgotten to include the necessary action definitions. Add the appropriate `#include` at the top of your file. For example:
 
-```ruby
+```
 #include 'actions/network'  // For web requests
 ```
 
@@ -467,7 +467,7 @@ You may have forgotten to include the necessary action definitions. Add the appr
 
 Check that your variable types match what the action expects. You can explicitly declare types:
 
-```ruby
+```
 @myNumber: number
 @myText: text
 ```
