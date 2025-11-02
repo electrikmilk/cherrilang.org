@@ -334,6 +334,7 @@ If your shortcut uses third-party app actions not in Cherri's standard library, 
 #### Option 1: Keep as Raw Action
 
 ```ruby
+const content = "My note"
 // Third-party action for "Bear" app
 rawAction("net.shinyfrog.bear.create-note", {
     "title": "My Note",
@@ -351,6 +352,7 @@ action 'net.shinyfrog.bear.create-note' createBearNote(
 )
 
 // Use it
+const content = "My note"
 createBearNote("My Note", "{content}")
 ```
 
@@ -362,7 +364,7 @@ During migration, you can optimize for runtime memory:
 
 **Before:**
 
-```ruby
+```
 @temp1 = heavyAction()
 @temp2 = anotherAction()
 // temp1 is never used again but stays in memory
@@ -370,7 +372,7 @@ During migration, you can optimize for runtime memory:
 
 **After:**
 
-```ruby
+```
 const temp1 = heavyAction()
 nothing()  // Clear output
 @temp2 = anotherAction()
@@ -378,16 +380,16 @@ nothing()  // Clear output
 
 Or better yet, only make variables you actually need:
 
-```ruby
+```
 const result = heavyAction()
 // Use result where needed
 ```
 
 or add nothing() after to make sure output is not loaded into memory if never used.
 
-```ruby
+```
 heavyAction()
-// Output is never used so we clear it.
+// Output is never used, so we clear it.
 nothing()
 ```
 
@@ -450,7 +452,7 @@ cherri my-shortcut.cherri --hubsign
 
 Consider simply rewriting your Shortcuts in Cherri instead if:
 
-- The shortcut is very simple (less than 30 actions)
+- The shortcut is very simple (fewer than 30 actions)
 - It uses third-party actions not in Cherri that will need to be replaced in a decompilation.
 
 ---
