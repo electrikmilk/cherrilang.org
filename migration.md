@@ -134,7 +134,7 @@ Standard actions are usually decompiled correctly, but the action includes may n
 **Before:**
 
 ```ruby
-#define name My Shortcut
+// #define name My Shortcut
 #define color blue
 #define glyph hand
 
@@ -147,7 +147,7 @@ getCurrentWeather(location)
 ```ruby
 #include 'actions/location'
 
-#define name My Shortcut
+// #define name My Shortcut
 #define color blue
 #define glyph hand
 
@@ -178,29 +178,7 @@ show("{number}")
 
 **Why?** If a value never changes, use `const` instead of `@variable` for smaller shortcuts and better performance.
 
-### 3.3 Extract Repeated Values to Constants
-
-**Before:**
-
-```ruby
-text("My message")
-alert()
-
-text("My message")
-show()
-```
-
-**After:**
-
-```ruby
-const message = "My message"
-alert("{message}")
-show("{message}")
-```
-
-**Why?** Extract repeated values to named constants to eliminate duplication and make updates easier.
-
-### 3.4 Consolidate Duplicate Code into Functions
+### 3.3 Consolidate Duplicate Code into Functions
 
 **Before:**
 
@@ -231,7 +209,7 @@ const total1 = calculateTotal(10)
 const total2 = calculateTotal(20)
 ```
 
-### 3.5 Use Control Flow Output
+### 3.4 Use Control Flow Output
 
 **Before:**
 
@@ -256,7 +234,7 @@ const result = if condition {
 show("{result}")
 ```
 
-### 3.6 Split Large Shortcuts with Includes
+### 3.5 Split Large Shortcuts with Includes
 
 If your shortcut has distinct sections, split them into separate files:
 
