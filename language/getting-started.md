@@ -435,7 +435,7 @@ Now that you've created your first Shortcuts, here's what to explore next:
 
 ### Migrate Existing Shortcuts
 
-If you have existing Shortcuts you want to convert to Cherri, check out the **[Migration Guide](/migration)**.
+If you have existing Shortcuts you want to convert to Cherri, check out the **[Migration Guide](/language/migration)**.
 
 ### Get Help
 
