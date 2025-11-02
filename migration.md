@@ -131,18 +131,18 @@ Now let's transform the decompiled code into clean, maintainable Cherri.
 
 Standard actions are usually decompiled correctly, but the action includes may not be automatically added. Add the necessary includes at the top of your file:
 
-**Before:**
+**Before (fails):**
 
-```ruby
+```
 // #define name My Shortcut
 #define color blue
 #define glyph hand
 
-getCurrentLocation()
-getCurrentWeather(location)
+const location = getCurrentLocation()
+const weather = getCurrentWeather(location)
 ```
 
-**After:**
+**After (succeeeds):**
 
 ```ruby
 #include 'actions/location'
@@ -151,8 +151,8 @@ getCurrentWeather(location)
 #define color blue
 #define glyph hand
 
-getCurrentLocation()
-getCurrentWeather(location)
+const location = getCurrentLocation()
+const weather = getCurrentWeather(location)
 ```
 
 Check the [Standard Library documentation](/language/standard/stdlib) to find which include file contains each action.
