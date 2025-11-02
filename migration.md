@@ -214,6 +214,7 @@ const total2 = calculateTotal(20)
 **Before:**
 
 ```ruby
+const condition = true
 @result
 if condition {
     @result = "Yes"
@@ -226,6 +227,7 @@ show("{result}")
 **After:**
 
 ```ruby
+const condition = true
 const result = if condition {
     text("Yes")
 } else {
@@ -240,7 +242,7 @@ If your shortcut has distinct sections, split them into separate files:
 
 **main.cherri:**
 
-```ruby
+```
 #include 'config.cherri'
 #include 'helpers.cherri'
 #include 'actions/network'
@@ -251,7 +253,7 @@ If your shortcut has distinct sections, split them into separate files:
 **config.cherri:**
 
 ```ruby
-#define name My Shortcut
+// #define name My Shortcut
 #define color yellow
 #define glyph smileyFace
 
