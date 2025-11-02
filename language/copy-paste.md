@@ -8,16 +8,16 @@ nav_order: 10
 # Copy/Paste Actions
 {: .no_toc }
 
+{: .warning }
+Strong caution against the misuse of this syntax, such as long chains of pastables pasting other pastables.
+
+Cherri has a built-in preprocessing mechanism called "pastables" for copy-pasting commonly used sets of actions, including variables and any other valid Cherri code.
+
 ## Table of contents
 {: .no_toc .text-delta }
 
 1. TOC
 {:toc}
-
-{: .warning }
-Strong caution against the misuse of this syntax, such as long chains of pastables pasting other pastables.
-
-Cherri has a built-in preprocessing mechanism called "pastables" for copy-pasting commonly used sets of actions, including variables and any other valid Cherri code.
 
 ## Setup code to copy
 
