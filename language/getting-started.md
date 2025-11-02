@@ -1,7 +1,7 @@
 ---
 title: Getting Started
 layout: default
-nav_order: 3
+nav_order: 1
 ---
 
 # Getting Started with Cherri
