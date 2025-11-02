@@ -252,8 +252,8 @@ If your shortcut has distinct sections, split them into separate files:
 
 **config.cherri:**
 
-```ruby
-// #define name My Shortcut
+```
+#define name My Shortcut
 #define color yellow
 #define glyph smileyFace
 
@@ -264,7 +264,7 @@ const TIMEOUT = 30
 
 **helpers.cherri:**
 
-```ruby
+```
 #include 'actions/scripting'
 
 function formatDate(date input): text {
