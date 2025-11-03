@@ -86,7 +86,7 @@ Create a new package in the current directory:
 cherri --init=@{github_username}/{package_name}
 ```
 
-This creates an `info.plist` file with the provided details. You can initialize a package for your project without publishing it to GitHub—the username/package format is only required if you plan to share it.
+This creates an `info.plist` file with the provided details. You can initialize a package for your project without publishing it to GitHub—the username/package format is only required to correspond to a repo if you plan to share it.
 
 ### Install a Package
 
@@ -152,7 +152,7 @@ https://github.com/{github_username}/cherri-{package_name}.git
 
 If you answer yes, the package signature is saved to `~/.cherri/trusted.plist`. Future installations of that package won't prompt you again.
 
-**Important**: Review packages before trusting them. Once trusted, packages can execute code in your projects.
+**Important**: Review packages before trusting them. Once trusted, packages can add actions in your Shortcut.
 
 ## Dependencies
 
