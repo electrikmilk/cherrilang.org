@@ -38,9 +38,8 @@ cherri-{package_name}/
 ├── info.plist          # Package metadata (required)
 └── ... other files
 ```
- 
-{ .btn }
-[Example GitHub repo](https://github.com/electrikmilk/cherri-package-example)
+
+[Example GitHub repo](https://github.com/electrikmilk/cherri-package-example){: .btn }
 
 ### Required Files
 
