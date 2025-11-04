@@ -12,6 +12,14 @@ v1.3.2 provides a much-needed hotfix to v1.3.1.
 
 [Learn more](https://github.com/electrikmilk/cherri/releases/tag/v1.3.2){: .btn }
 
+--
+
+## 🔗 Share Cherri Code
+
+Check out the new **Share** option in the Cherri Playground to share Cherri code with anyone!
+
+[Open Playground](https://playground.cherrilang.org/){: .btn }
+
 ---
 
 ## 🔏 Signing is Fixed in Tahoe
