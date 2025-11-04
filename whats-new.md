@@ -12,7 +12,7 @@ v1.3.2 provides a much-needed hotfix to v1.3.1.
 
 [Learn more](https://github.com/electrikmilk/cherri/releases/tag/v1.3.2){: .btn }
 
---
+---
 
 ## 🔗 Share Cherri Code
 
@@ -24,7 +24,7 @@ Check out the new **Share** option in the Cherri Playground to share Cherri code
 
 ## 🔏 Signing is Fixed in Tahoe
 
-Signing seems to have been fixed in macOS 26 Tahoe, so you shouldn't be required to use HubSign if you are on a machine running macOS 26.
+Signing has been fixed in macOS 26 Tahoe, so you shouldn't be required to use HubSign if you are on a machine running macOS 26.
 
 ---
 
@@ -33,7 +33,7 @@ Signing seems to have been fixed in macOS 26 Tahoe, so you shouldn't be required
 Future release
 {: .label .label-purple }
 
-In a future release, Cherri will have a package manager builtin to the CLI based on GitHub repos.
+In a future release, Cherri will have a package manager builtin to the CLI based on GitHub repositories.
 
 [Learn more](language/package-manager){: .btn }
 
