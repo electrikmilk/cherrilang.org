@@ -20,7 +20,7 @@ Ways you can share or distribute your Cherri code.
 Check out the **Share** option in the Cherri Playground to share Cherri code with anyone.
 
 {: .warning }
-Links expire after 5 days.
+Links expire after 5 days. If sharing fails, or takes awile, try shortening your code.
 
 [Open Playground](https://playground.cherrilang.org/){: .btn }
 
