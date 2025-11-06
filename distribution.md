@@ -25,7 +25,7 @@ Links expire after 5 days.
 [Open Playground](https://playground.cherrilang.org/){: .btn }
 
 {: .note }
-Alternatively, you can also use the `?code=` query to share small snippets without expiration, but this may be limited in how much code it can handle.
+Alternatively, you can also use the `?code=` URL parameter to share small snippets without expiration, but this may be limited in how much code it can handle.
 
 ---
 
