@@ -35,4 +35,4 @@ cherri --docs=category --subcat=optional
 
 Subcategories are listed on each category page.
 
-All categories are listed in the help message using `--help`.
+All parent categories are listed in the help message using `--help`.
