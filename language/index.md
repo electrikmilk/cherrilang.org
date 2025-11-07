@@ -21,6 +21,12 @@ You can access the documentation for actions (even ones defined in your project)
 cherri --action=action_name
 ```
 
+Search actions defined in a project:
+
+```bash
+cherri main.cherri --action=action_name
+```
+
 ### All actions
 
 Providing nothing will show all standard actions documentation.
