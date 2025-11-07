@@ -15,6 +15,8 @@ Contributing to this open-source documentation is more than welcome!
 
 ## Offline
 
+For general documentation, you can clone the repo for this site.
+
 You can access the documentation for actions (even ones defined in your project) completely offline from the CLI.
 
 ```bash
