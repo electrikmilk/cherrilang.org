@@ -21,6 +21,8 @@ You can access the documentation for actions (even ones defined in your project)
 cherri --action=action_name
 ```
 
+This will find the action or give suggestions if there is no exact match.
+
 Search actions defined in a project:
 
 ```bash
@@ -31,9 +33,9 @@ cherri main.cherri --action=action_name
 
 Providing nothing will show all standard actions documentation.
 
-This will find the action or give suggestions if there is no exact match.
-
 ### By category
+
+Prints all definitons for actions in the provided category and optionally a subcategory.
 
 ```bash
 cherri --docs=category --subcat=optional
