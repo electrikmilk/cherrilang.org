@@ -244,6 +244,23 @@ enum Colors {
 enum Colors {'Red','Green','Blue'}
 ```
 
+### Quantity Enumeration
+
+Future release
+{: .label .label-purple }
+
+In a future release, you can optionally prefix an enum type usage with a `#` operator to make the value a quantity field value if an action requires it for an argument. The enum will be used as the units for the quantity field value.
+
+```
+enum Durations {
+    'sec',
+    'min',
+    'hr'
+}
+
+action 'com.example.app.action' myCustomAction(#durations: 'WFDuration' = qty(0, "sec"))
+```
+
 ### Color
 
 Some actions use a color type for a value. 
