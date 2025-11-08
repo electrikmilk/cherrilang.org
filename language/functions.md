@@ -8,13 +8,11 @@ nav_order: 12
 # Functions
 {: .no_toc }
 
-Functions are an abstraction on top of Shortcuts that allows you to run Cherri code separately from your main code, even multiple times, recurse within it, and optionally output a value.
-
-You can define functions that can be called later in a Shortcut, in the same way as standard actions.
+Functions are an abstraction on top of your Shortcut that allows you to run actions separately from your main actions, multiple times, and optionally recurse and/or output a value.
 
 This allows you to reduce duplicate action code and overall cut down on the total actions in your Shortcut if you have actions doing the same thing in multiple places.
 
-This uses an abstraction that is injected at the top of your Shortcut, [but don't worry, the first comment is preserved](#prioritization-of-instructional-or-contact-comments).
+This abstraction is injected at the top of your Shortcut. [The first comment is preserved](#prioritization-of-instructional-or-contact-comments).
 
 ## Table of contents
 {: .no_toc .text-delta }
