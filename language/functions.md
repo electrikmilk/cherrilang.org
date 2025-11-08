@@ -27,6 +27,8 @@ This abstraction is injected at the top of your Shortcut. [The first comment is 
 Define your action, then reference the action to run the contents of the function, isolated from the rest of your Shortcut:
 
 ```ruby
+#include 'actions/scripting'
+
 function add(number op1, number op2) {
   const result = op1 + op2
   output("{result}")
