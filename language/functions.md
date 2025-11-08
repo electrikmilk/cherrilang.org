@@ -26,7 +26,7 @@ This abstraction is injected at the top of your Shortcut. [The first comment is 
 
 Define your action, then reference the action to run the contents of the function, isolated from the rest of your Shortcut:
 
-```
+```ruby
 function add(number op1, number op2) {
   const result = op1 + op2
   output("{result}")
@@ -41,7 +41,7 @@ Keep in mind, if a function is used, the compiler will inject some actions at th
 
 You can define arguments for your function that you provide later when referencing it.
 
-```
+```ruby
 function myAction(text message) {
     // ...
 }
@@ -55,7 +55,7 @@ When calling your function, keep in mind that the arguments you use will be type
 
 Add a `?` before the argument name to mark it as optional, meaning it is not required to be filled in. Otherwise, the compiler will complain if the argument is not filled in when the function is called.
 
-```
+```ruby
 function myAction(text ?message) {
     // ...
 }
@@ -65,7 +65,7 @@ function myAction(text ?message) {
 
 Add a `!` after the type of the argument name to mark it as requiring a literal value, for parameters that do not accept a variable value.
 
-```
+```ruby
 function myAction(text! message) {
     // ...
 }
@@ -75,7 +75,7 @@ function myAction(text! message) {
 
 You can optionally use an assignment operator to set a default value for the argument. The compiler will warn against using the default value for this argument, as that will make for a smaller shortcut.
 
-```
+```ruby
 function myAction(text message = "Hello, World!") {
     // ...
 }
