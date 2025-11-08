@@ -13,8 +13,8 @@ actions to reduce the number of arguments and complexity. Some arguments are opt
 
 Actions can be used just like you would call a function in another language
 
-```
-alert("Hello!")
+```ruby
+alert("Hello, Cherri!")
 ```
 
 ## Standard Actions
