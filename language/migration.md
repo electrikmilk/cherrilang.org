@@ -449,15 +449,6 @@ cherri my-shortcut.cherri --hubsign
 
 ---
 
-## When NOT to Decompile
-
-Consider simply rewriting your Shortcuts in Cherri instead if:
-
-- The shortcut is very simple (fewer than 30 actions)
-- It uses third-party actions not in Cherri that will need to be replaced in a decompilation.
-
----
-
 ## Resources
 
 - **[Decompilation Documentation](/decompilation)** - Technical details on the decompilation process
