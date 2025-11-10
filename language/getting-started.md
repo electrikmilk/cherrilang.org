@@ -91,6 +91,34 @@ If you want to try Cherri without installing anything, visit [playground.cherril
 
 ---
 
+## Editor Setup
+
+### VS Code
+
+Install the [Cherri VSCode Extension](https://marketplace.visualstudio.com/items?itemName=electrikmilk.cherri-vscode-extension) for:
+
+- Syntax highlighting
+- File icons
+- Code snippets (coming soon)
+
+**Install from VS Code:**
+
+1. Open VS Code
+2. Go to Extensions (Cmd+Shift+X / Ctrl+Shift+X)
+3. Search for "Cherri"
+4. Click Install
+
+### macOS App
+
+Build the [Cherri macOS app](https://github.com/electrikmilk/cherri-macos-app) for a native GUI experience with:
+
+- Built-in editor
+- One-click compilation
+- File type integration
+- Project management
+
+---
+
 ## Your First Shortcut
 
 Let's create a simple "Hello, World!" Shortcut that displays a greeting.
@@ -376,34 +404,6 @@ Run your own signing server using [shortcut-signing-server](https://github.com/s
 ```bash
 cherri hello.cherri --signing-server=http://your-server:port
 ```
-
----
-
-## Editor Setup
-
-### VS Code (Recommended)
-
-Install the [Cherri VSCode Extension](https://marketplace.visualstudio.com/items?itemName=electrikmilk.cherri-vscode-extension) for:
-
-- Syntax highlighting
-- File icons
-- Code snippets (coming soon)
-
-**Install from VS Code:**
-
-1. Open VS Code
-2. Go to Extensions (Cmd+Shift+X / Ctrl+Shift+X)
-3. Search for "Cherri"
-4. Click Install
-
-### macOS App
-
-Download the [Cherri macOS app](https://github.com/electrikmilk/cherri-macos-app) for a native GUI experience with:
-
-- Built-in editor
-- One-click compilation
-- File type integration
-- Project management
 
 ---
 
