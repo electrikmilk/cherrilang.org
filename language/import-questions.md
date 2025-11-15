@@ -13,19 +13,21 @@ To define import/setup questions, use the following syntax:
 #question identifier "Prompt" "Default Value"
 ```
 
-To assign the question to something, reference the `identifier`. However, this can only be done once in an argument for one of the actions in your Shortcut. It also cannot be used as an inline variable or variable value.
+To assign the question to something, reference the `identifier`. 
+
+However, per Shortcuts, you can only use it once in an action argument. It also cannot be used as an inline variable or variable value.
 
 ### Example
 
-Click on the info circle in the preview and go to the Setup tab to see the defined import question.
+Normally, the title of the alert is empty. Shortcuts display question values this way in their native preview. This is because questions are defined outside of the action.
+
+Click on the info circle in the preview and go to the Setup tab to see the defined import/setup question.
 
 ```ruby
 #question name "Enter Your Name" "Siri"
 
 alert(name, "Hello")
 ```
-
-Normally, the title of the alert is empty. Shortcuts display question values this way in their native preview. This is because questions are defined outside of the action.
 
 ## Storing Question Values
 
