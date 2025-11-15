@@ -383,6 +383,13 @@ Or you can use...
 @textVar = getText(var)
 ```
 
+Or if you need to set the text value explicitly to a variable:
+
+```ruby
+const var = fromAction()
+@textVar = text(var)
+```
+
 ### Number
 
 ```ruby
