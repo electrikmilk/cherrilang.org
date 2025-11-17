@@ -38,19 +38,21 @@ On macOS, you will likely need to allow the binary to run with Gatekeeper. If it
 
 ## Windows, *nix, etc.
 
-Native AEA signing only exists on macOS other than 3rd party implementations, otherwise a signing service is used.
+Native AEA signing only exists on macOS; other than 3rd party implementations, otherwise a signing service is used.
 
 The compiler should work on most Linux or Unix-like OSs that Go runs on, and is built and tested on Ubuntu Linux for commit checks in addition to macOS. However, you can only sign Shortcuts using the HubSign service. 
 
 I haven't tried to run Cherri on other systems like NetBSD or something, and so I do not want to guarantee the binary will work. I have tried to test Windows, but this fails and needs work. Feel free to reach out if Cherri works on your non-macOS, non-Linux system, and I will add it to the list of binaries for release.
 
-However, you can also simply use the Cherri Playground site, which allows using the compiler from any platform with a web broser and signs Shortcuts when they are shared.
+However, you can also simply use the Cherri Playground site, which allows using the compiler from any platform with a web browser and signs Shortcuts when they are shared.
 
 <a href="https://playground.cherrilang.org/" class="btn btn-red" target="_blank">Use the Cherri Playground</a>
 
 You can also build from source using the instructions below and use the `--hubsign` option to sign the compiled Shortcut using RoutineHub's HubSign service.
 
 ## Build from Source
+
+This guide assumes you are on a Unix-based system.
 
 {: .warning }
 Building from source may be unstable, and some features may change unexpectedly.
