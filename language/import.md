@@ -25,6 +25,8 @@ To use the actions for an app, use the following syntax of either the base bundl
 #import 'Color Picker'
 ```
 
+Keep in mind, there is not currently a way to tell if a parameter is required, so you must specify a value for each parameter. To give an empty value, use `nil`.
+
 ## Searching Actions
 
 Actions and their types should now be defined. To use them, look for them using the `--action=` argument.
