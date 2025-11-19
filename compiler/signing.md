@@ -18,3 +18,5 @@ We also pass it the output path (`-o`) for the Shortcut, which is defaulted to w
 And finally, we pass it the signing mode (`-m`,) which is set to `contacts` by default (`people-who-know-me`) but can be set to `anyone` by the user using the `-s=` or `--share=` argument.
 
 If we are not running on Darwin (macOS kernel), then the signing step is skipped and the user is left with the unsigned version of the Shortcut.
+
+However, we will try to use the HubSign signing service that uses the [Shortcut signing server](https://github.com/scaxyz/shortcut-signing-server). The `--signing-server=` argument can be provided a URL to any signing server, even a local one in theory (not tested).
