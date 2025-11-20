@@ -17,7 +17,7 @@ Shortcuts has a local database consisting of the actions installed on the device
 
 ## Importing Actions
 
-To use the actions for an app, use the following syntax of either the base bundle identifier (e.g., `com.apple.shortcuts`) or name in `/Applications/`.
+To use the actions for an app, use the following syntax of either the base bundle identifier (e.g., `com.apple.shortcuts`) or an application name in Shortcuts.
 
 ```
 #import 'com.sindresorhus.Color-Picker'
