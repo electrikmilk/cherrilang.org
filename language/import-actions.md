@@ -7,9 +7,6 @@ nav_order: 11
 
 # Import Actions from your Device
 
-Future release
-{: .label .label-purple }
-
 {: .warning }
 This only applies to macOS.
 
