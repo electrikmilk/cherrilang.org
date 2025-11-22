@@ -8,9 +8,6 @@ nav_order: 13
 # Packages
 {: .no_toc }
 
-Future release
-{: .label .label-purple }
-
 ## Table of contents
 {: .no_toc .text-delta }
 
