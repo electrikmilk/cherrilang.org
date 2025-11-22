@@ -20,7 +20,7 @@ Ways you can share or distribute your Cherri code.
 Check out the **Share** option in the Cherri Playground to share Cherri code with anyone.
 
 {: .warning }
-Links expire after 5 days. If sharing fails, or takes awhile, try shortening your code.
+Links expire after 5 days. If sharing fails or takes a while, try shortening your code.
 
 [Open Playground](https://playground.cherrilang.org/){: .btn }
 
@@ -29,9 +29,6 @@ Alternatively, you can also use the `?code=` URL parameter to share small snippe
 
 ## 📦 Packages
 
-Future release
-{: .label .label-purple }
-
-In a future release, Cherri will have a package manager builtin to the CLI based on GitHub repos.
+In a future release, Cherri will have a package manager built-in to the CLI based on GitHub repos.
 
 [Learn more](language/package-manager){: .btn }
