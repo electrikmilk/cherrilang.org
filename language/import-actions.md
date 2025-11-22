@@ -13,7 +13,7 @@ Future release
 {: .warning }
 This only applies to macOS.
 
-Shortcuts has a local database consisting of the actions installed on the device, including any actions from 3rd-party apps.
+Shortcuts has a local database that consists of the actions installed on the device, including any actions from third-party apps.
 
 ## Importing Actions
 
@@ -41,3 +41,5 @@ cherri file.cherri --action=appname
 ```
 
 This should show the actions defined for the app. Search them individually to see their enumeration types.
+
+Use `--toolkit-locale=` to set the language.
