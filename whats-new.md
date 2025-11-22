@@ -6,11 +6,11 @@ nav_order: 1
 
 # What's New?
 
-## 🔥 Hotfix
+## 🚀 New Release
 
-v1.3.2 provides a much-needed hotfix to v1.3.1.
+v2.0 is now out!
 
-[Learn more](https://github.com/electrikmilk/cherri/releases/tag/v1.3.2){: .btn }
+[Learn more](https://github.com/electrikmilk/cherri/releases/tag/v2.0.0){: .btn }
 
 ---
 
@@ -28,22 +28,19 @@ Signing has been fixed in macOS 26 Tahoe, so you shouldn't be required to use Hu
 
 ---
 
-## 📦 Packages
+## 📱 Import Actions
 
-Future release
-{: .label .label-purple }
+Cherri can now import actions from macOS.
 
-In a future release, Cherri will have a package manager builtin to the CLI based on GitHub repositories.
-
-[Learn more](language/package-manager){: .btn }
+[Learn more](language/import-actions){: .btn }
 
 ---
 
-## 🚀 Latest Improvements
+## 📦 Packages
 
-- Search action definitions in a file - You can now run a Cherri file with the -`-action=` argument to search action definitions defined in that file. Keep in mind, this will also search any included files.
-- Optimized output file size - Shortcut/Plist files are now with fewer lines, with an optimization to remove some empty values at the top level.
-- Supports legacy color codes.
+Cherri now has a package manager built-in to the CLI based on GitHub repositories.
+
+[Learn more](language/package-manager){: .btn }
 
 ---
 
