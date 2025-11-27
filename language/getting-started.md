@@ -167,11 +167,13 @@ If there are any errors during compilation or signing, they will be displayed. O
 
 There are several ways to transfer the compiled Shortcut to your Apple device:
 
-#### Option A: iCloud Sync (macOS only, requires iCloud sync)
+#### Option A: iCloud Sync (macOS only)
 
 1. Import the Shortcut into the Shortcuts app on Mac using the `--open` argument.
 2. Click `hello.shortcut` in Finder to open in Shortcuts
 3. When prompted, click **Import**
+
+iCloud sync must be enabled on both devices and signed into the same iCloud account.
 
 #### Option B: AirDrop (macOS only)
 
