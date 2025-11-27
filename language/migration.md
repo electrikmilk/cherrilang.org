@@ -452,7 +452,7 @@ cherri my-shortcut.cherri --hubsign
 ## Resources
 
 - **[Decompilation Documentation](/decompilation)** - Technical details on the decompilation process
-- **[Standard Library Reference](/language/standard/stdlib)** - All available actions
+- **[Standard Actions Reference](/language/actions)** - All available actions
 - **[Action Definitions](/language/action-definitions)** - Define your own actions
 - **[Best Practices](/language/best-practices)** - Writing efficient Cherri code
 
