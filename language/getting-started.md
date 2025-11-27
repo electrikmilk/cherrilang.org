@@ -167,21 +167,27 @@ If there are any errors during compilation or signing, they will be displayed. O
 
 There are several ways to transfer the compiled Shortcut to your Apple device:
 
-#### Option A: AirDrop (macOS only)
+#### Option A: iCloud Sync (macOS only, requires iCloud sync)
+
+1. Import the Shortcut into the Shortcuts app on Mac using the `--open` argument.
+2. Click `hello.shortcut` in Finder to open in Shortcuts
+3. When prompted, click **Import**
+
+#### Option B: AirDrop (macOS only)
 
 1. Right-click `hello.shortcut` in Finder
 2. Select **Share → AirDrop**
 3. Choose your iPhone or iPad
 4. On your device, tap the notification to open in Shortcuts
 
-#### Option B: iCloud Drive
+#### Option C: iCloud Drive
 
-1. Upload `hello.shortcut` to iCloud Drive from your computer
+1. Upload `hello.shortcut` to iCloud Drive from your computer using a desktop client or iCloud.com
 2. On your device, open the **Files** app
 3. Navigate to **iCloud Drive**
 4. Tap `hello.shortcut` to import it into Shortcuts
 
-#### Option C: Email / Messages
+#### Option D: Email / Messages
 
 1. Attach `hello.shortcut` to an email or message
 2. Send it to yourself
