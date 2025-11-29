@@ -22,11 +22,15 @@ To use the actions for an app, use the following syntax of either the base bundl
 #import 'Color Picker'
 ```
 
-For instance, to import the standard Shortcuts actions, use:
+### Standard Actions
+
+To import the standard Shortcuts actions, use:
 
 ```
 #import 'is.workflow.actions'
 ```
+
+It is generally recommended to use the standard actions written mostly in Cherri instead, which define actions in a way that is much easier to use.
 
 ## Searching Actions
 
