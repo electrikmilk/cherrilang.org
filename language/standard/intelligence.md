@@ -31,12 +31,24 @@ nav_order: 2
 
 ## Chatbot Example
 
-In this example, we use an LLM action (any LLM action will work) to initially prompt the LLM to be a helpful assistant. The second argument triggers the **Follow Up** feature, basically allowing the user to continue to prompt the model based on the initial prompt. 
+In this example, we use an LLM action (any LLM action will work) to prompt the LLM to be a helpful assistant initially. The second argument triggers the **Follow Up** feature, essentially allowing the user to continue prompting the model based on the initial prompt.
 
 ```ruby
 #include 'actions/intelligence'
 
 askCloudLLM("You are a helpful assistant.", true)
+```
+
+
+## Chaining Example
+
+Chain multiple LLMs together to do multiple steps of private inference.
+
+```ruby
+#include 'actions/intelligence'
+
+const clipboardSummary = askCloudLLM("Summarize the following text: {Clipboard}")
+const topic = askCloudLLM("Return the topic of the described in the text: {clibpoardSummary}")
 ```
 
 ## Image Playground
