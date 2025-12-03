@@ -48,7 +48,7 @@ Chain multiple LLMs together to do multiple steps of private inference.
 #include 'actions/intelligence'
 
 const clipboardSummary = askCloudLLM("Summarize the following text: {Clipboard}")
-const topic = askCloudLLM("Return the topic of the described in the text: {clibpoardSummary}")
+const topic = askCloudLLM("Return the topic of the described in the text: {clipboardSummary}")
 ```
 
 ## Image Playground
