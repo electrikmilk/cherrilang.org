@@ -318,7 +318,7 @@ enum dateFormats {
     'Custom',
 }
 
-formatDate(variable date, dateFormats ?dateFormat = "Short", text ?customDateFormat)
+formatDate(text date, dateFormats ?dateFormat = "Short", text ?customDateFormat)
 ```
 
 ---
@@ -336,7 +336,7 @@ enum timeFormats {
     'Relative',
 }
 
-formatTime(variable time, timeFormats ?timeFormat = "Short")
+formatTime(text time, timeFormats ?timeFormat = "Short")
 ```
 
 ---
@@ -365,7 +365,7 @@ enum timeFormats {
     'Relative',
 }
 
-formatTimestamp(variable date, dateFormats ?dateFormat = "Short", timeFormats ?timeFormat = "Short", text ?customDateFormat)
+formatTimestamp(text date, dateFormats ?dateFormat = "Short", timeFormats ?timeFormat = "Short", text ?customDateFormat)
 ```
 
 ## Reminders
