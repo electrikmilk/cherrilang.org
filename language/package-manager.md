@@ -14,12 +14,12 @@ nav_order: 13
 1. TOC
 {:toc}
 
-Cherri includes a built-in GitHub-based package manager that allows you to easily share and reuse code across projects.
+Cherri includes a built-in remote Git-based package manager that allows you to easily share and reuse code across projects.
 
 ## Overview
 
 The package manager:
-- Downloads packages from GitHub repositories
+- Downloads packages from remote Git repositories
 - Manages dependencies automatically (including nested dependencies)
 - Provides a trust system for security
 - Generates deterministic builds
@@ -35,6 +35,8 @@ cherri-{package_name}/
 ├── info.plist          # Package metadata (required)
 └── ... other files
 ```
+
+Here is an example on GitHub:
 
 [Example GitHub repo](https://github.com/electrikmilk/cherri-package-example){: .btn }
 
@@ -52,7 +54,7 @@ cherri-{package_name}/
     <key>Name</key>
     <string>package_name</string>
     <key>User</key>
-    <string>github_username</string>
+    <string>package_author</string>
     <key>Packages</key>
     <array>
         <!-- Dependencies go here -->
@@ -63,17 +65,17 @@ cherri-{package_name}/
 
 ## Package Naming
 
-Packages follow the format `@{github_username}/{package_name}` where:
-- **Username**: Your GitHub username (alphanumeric, underscores, hyphens, and dots allowed)
+Packages follow the format `@{package_author}/{package_name}` where:
+- **Username**: Platform username or package author (alphanumeric, underscores, hyphens, and dots allowed)
 - **Package name**: The repository name without the `cherri-` prefix (same character restrictions)
 
-### GitHub Repository Structure
+### Repository Structure
 
 Your repository must be named: `cherri-{package_name}`
 
 Example:
 - Package signature: `@electrikmilk/example`
-- GitHub repository: `https://github.com/electrikmilk/cherri-example.git`
+- Repository: `https://{host}/electrikmilk/cherri-example.git`
 
 ## Commands
 
@@ -82,22 +84,22 @@ Example:
 Create a new package in the current directory:
 
 ```bash
-cherri --init=@{github_username}/{package_name}
+cherri --init=@{package_author}/{package_name}
 ```
 
-This creates an `info.plist` file with the provided details. You can initialize a package for your project without publishing it to GitHub—the username/package format is only required to correspond to a repo if you plan to share it.
+This creates an `info.plist` file with the provided details. You can initialize a package for your project without publishing it—the username/package format is only required to correspond to a repo if you plan to share it.
 
 ### Install a Package
 
 Install a package and its dependencies:
 
 ```bash
-cherri --install=@{github_username}/{package_name}
+cherri --install=@{package_author}/{package_name}
 ```
 
 **What happens:**
 1. If this is the first time installing this package on your system, you'll be prompted to trust it
-2. The package is cloned from GitHub to `./packages/@{github_username}/{package_name}/`
+2. The package is cloned from the remote Git repository to `./packages/@{package_author}/{package_name}/`
 3. Any dependencies listed in the package's `info.plist` are automatically installed
 4. The package's `main.cherri` is automatically included at compile time
 
@@ -120,7 +122,7 @@ cherri --packages
 Uninstall a package:
 
 ```bash
-cherri --remove=@{github_username}/{package_name}
+cherri --remove=@{package_author}/{package_name}
 ```
 
 This removes the package directory and updates your `info.plist`.
@@ -145,8 +147,8 @@ The first time you install a package on your system, you'll see a trust prompt:
 ```
 Do you trust this package?
 
-This will download this GitHub repository and automatically include it in this project:
-https://github.com/{github_username}/cherri-{package_name}.git
+This will download this remote Git repository and automatically include it in this project:
+https://{uri}/{package_author}/cherri-{package_name}.git
 ```
 
 If you answer yes, the package signature is saved to `~/.cherri/trusted.plist`. Future installations of that package won't prompt you again.
@@ -219,7 +221,7 @@ This deterministic ordering ensures consistent builds.
 
 ### For Package Users
 
-1. **Review before trusting**: Check the GitHub repository before trusting a package
+1. **Review before trusting**: Check the Git repository before trusting a package
 2. **Keep packages updated**: Run `cherri --tidy` periodically to refresh packages
 3. **Pin critical projects**: For production code, consider forking dependencies
 4. **Document dependencies**: Comment why you need each package
@@ -258,7 +260,7 @@ Your package name doesn't match `@{username}/{package_name}`. Ensure:
 
 ### Creating and Publishing a Package
 
-1. Create a GitHub repository: `cherri-math-helpers`
+1. Create a Git repository: `cherri-math-helpers`
 2. Add `main.cherri` and `info.plist`
 3. Users install it with: `cherri --install=@yourusername/math-helpers`
 
