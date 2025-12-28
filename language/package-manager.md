@@ -77,6 +77,8 @@ Example:
 - Package signature: `@electrikmilk/example`
 - Repository: `https://{host}/electrikmilk/cherri-example.git`
 
+The host will be assumed to be github.com if the package is not initialized with a host. To add a host to an existing package, use the `--add-uri=` argument (e.g. `--add-uri=codeberg.org`).
+
 ## Commands
 
 ### Initialize a Package
