@@ -11,7 +11,7 @@ Beta
 
 Import and decompile a Shortcut from a file or iCloud link into Cherri code.
 
-Use the `--import=` argument with an iCloud link or local, unsigned Shortcut file path.
+Use the `--import=` argument with an iCloud link or a local, unsigned Shortcut file path.
 
 ```console
 cherri --import={URL or PATH}
@@ -40,7 +40,7 @@ This feature is currently in **Beta** and is not ready for production use, but m
 
 The import feature works best with an iCloud link, as decompiling signed Shortcut files is not supported for the time being.
 
-Keep in mind this is mainly meant to be a starting point and you may in some cases need to do some modification to get it working.
+Keep in mind this is mainly meant to be a starting point, and you may in some cases need to do some modifications to get it working.
 
 ### Caveats
 
@@ -50,3 +50,9 @@ These two features are currently not supported in Cherri and so cannot be decomp
 - Some required includes for standard actions may not be automatically added.
 
 The Shortcut will still decompile, but you may see comments in the code or warnings about these caveats.
+
+## Toolkit Database
+
+The Shortcuts Toolkit DB is used to import actions from apps installed on macOS or a toolkit DB path given using the `--toolkit=` argument.
+
+To always use raw actions for 3rd party actions, use the `--no-toolkit` argument.
