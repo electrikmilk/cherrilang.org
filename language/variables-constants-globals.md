@@ -44,7 +44,7 @@ Variables are not required to be assigned a value:
 @getAs = variable['Name']
 ```
 
-### Type Coersion
+### Type Coercion
 
 ```ruby
 @text = "five 5"
