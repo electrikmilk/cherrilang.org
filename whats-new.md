@@ -8,9 +8,9 @@ nav_order: 1
 
 ## 🚀 New Release
 
-v2.0 is now out!
+v2.1 is now out!
 
-[Learn more](https://github.com/electrikmilk/cherri/releases/tag/v2.0.0){: .btn }
+[Learn more](https://github.com/electrikmilk/cherri/releases/tag/v2.1.0){: .btn }
 
 ---
 
