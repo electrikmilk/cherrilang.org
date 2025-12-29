@@ -109,7 +109,7 @@ function sum(number op1, number op2): number {
 }
 ```
 
-### Output Type Coersion
+### Output Type Coercion
 
 Type coercion is be done at the action call level, where the output of the action will be put in a type casting action, such as a text or number action, and then assigned to the variable for the return variable, but only if there is one.
 
