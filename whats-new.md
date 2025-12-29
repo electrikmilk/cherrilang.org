@@ -38,7 +38,7 @@ Cherri can now import actions from macOS.
 
 ## 📦 Packages
 
-Cherri now has a package manager built-in to the CLI based on GitHub repositories.
+Cherri now has a package manager built-in to the CLI based on remote Git repositories.
 
 [Learn more](language/package-manager){: .btn }
 
