@@ -33,57 +33,9 @@ While you can compile Shortcuts on any platform, **macOS is recommended** for th
 
 ## Installation
 
-### macOS (Recommended)
+### Install on your machine (Recommended)
 
-The easiest way to install Cherri on macOS is using [Homebrew](https://brew.sh):
-
-**1. Add the Cherri tap:**
-
-```bash
-brew tap electrikmilk/cherri
-```
-
-**2. Install Cherri:**
-
-```bash
-brew install electrikmilk/cherri/cherri
-```
-
-**3. Verify installation:**
-
-```bash
-cherri --version
-```
-
-### Linux / Windows
-
-**1. Download the latest release:**
-
-Visit the [GitHub Releases page](https://github.com/electrikmilk/cherri/releases) and download the appropriate binary for your platform.
-
-**2. Make it executable (Linux only):**
-
-```bash
-chmod +x cherri
-```
-
-**3. Move to your PATH:**
-
-```bash
-# Linux
-sudo mv cherri /usr/local/bin/
-
-# Windows: Move cherri.exe to a directory in your PATH
-```
-
-**4. Verify installation:**
-
-```bash
-cherri --version
-```
-
-{: .warning }
-On non-macOS platforms, Shortcuts will be compiled but not signed. You'll need to use `--hubsign` or `--signing-server=` to sign them. See [Signing Options](#signing-options) below.
+Install the [Cherri](https://cherrilang.org/install) binary on your machine to run from a Terminal or IDE.
 
 ### Alternative: Try the Web Playground
 
