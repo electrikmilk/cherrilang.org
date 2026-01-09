@@ -181,7 +181,7 @@ removeEvents(variable events, bool ?includeFutureEvents = false)
 Adjust a date or get the start of a time period.
 
 ```
-enum dateOperation {
+enum dateAdjustOperation {
     'Add',
     'Subtract',
     'Get Start of Minute',
@@ -202,7 +202,7 @@ enum dateUnit {
     'yr',
 }
 
-adjustDate(text date, dateOperation operation, number ?magnitude, dateUnit ?unit)
+adjustDate(text date, dateAdjustOperation operation, #dateUnit (qty)?unit)
 ```
 
 ---
@@ -405,6 +405,6 @@ enum timerDuration {
     'sec',
 }
 
-startTimer(number magnitude, timerDuration ?unit = "min")
+startTimer(#timerDuration (qty)?duration = qty(0, "min"))
 ```
 
