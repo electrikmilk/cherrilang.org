@@ -37,7 +37,7 @@ function add(number op1, number op2) {
 add(2,2)
 ```
 
-Keep in mind, if a function is used, the compiler will inject some actions at the top of your Shortcut to support this feature.
+Keep in mind that if a function is used, the compiler will inject some actions at the top of your Shortcut to support this feature.
 
 ### Defining Arguments
 
@@ -52,6 +52,8 @@ function myAction(text message) {
 Read the [types](types) reference for all types you can use for arguments.
 
 When calling your function, keep in mind that the arguments you use will be type-checked against your type definitions for each of your arguments.
+
+Each argument is currently defined and treated as a variable.
 
 ### Optional
 
