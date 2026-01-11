@@ -22,7 +22,7 @@ Check out the **Share** option in the Cherri Playground to share Cherri code wit
 {: .warning }
 Links expire after 5 days. If sharing fails or takes a while, try shortening your code.
 
-[Open Playground](https://playground.cherrilang.org/){: .btn }
+[Open Playground](https://playground.cherrilang.org/){: .btn .btn-red }
 
 {: .note }
 Alternatively, you can also use the `?code=` URL parameter to share small snippets without expiration, but this may be limited in how much code it can handle.
