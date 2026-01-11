@@ -8,7 +8,7 @@ nav_order: 11
 # Import Actions from your Device
 
 {: .warning }
-This only applies to macOS.
+This works natively on macOS. You could pull the Shortcuts toolkit DB from a macOS Docker container, etc., and use that database for development on another platform like Linux using the `--toolkit=` argument.
 
 Shortcuts has a local database that consists of the actions installed on the device, including any actions from third-party apps.
 
