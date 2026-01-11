@@ -324,20 +324,6 @@ someAction()
 nothing()  // Clears the output
 ```
 
-### Read Compiler Errors Carefully
-
-Cherri provides helpful error messages. For example:
-
-```
-Undefined reference 'name'
-
------ hello.cherri:5:3
-```
-
-This tells you exactly where the problem is.
-
----
-
 ## Signing Options
 
 ### macOS (Automatic)
