@@ -66,7 +66,7 @@ To use a local image file, use the output of the built-in [embedFile()](/languag
 /*
 #include 'icons.cherri'
 * Include icons.cherri contents:
-* @batteryIcon = base64Encode("path/to/battery.png")
+* @batteryIcon = embedFile("path/to/battery.png")
 */
 
 const batteryLevel = getBatteryLevel()
