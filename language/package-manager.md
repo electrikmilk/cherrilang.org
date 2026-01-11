@@ -8,22 +8,21 @@ nav_order: 13
 # Packages
 {: .no_toc }
 
-## Table of contents
-{: .no_toc .text-delta }
-
-1. TOC
-{:toc}
-
 Cherri includes a built-in remote Git-based package manager that allows you to easily share and reuse code across projects.
 
 ## Overview
 
-The package manager:
 - Downloads packages from remote Git repositories
 - Manages dependencies automatically (including nested dependencies)
 - Provides a trust system for security
 - Generates deterministic builds
 - Stores packages in user-scoped directories to prevent naming conflicts
+
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
 
 ## Package Structure
 
