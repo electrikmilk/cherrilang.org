@@ -106,7 +106,7 @@ repeat i for 6 {
 }
 ```
 
-The number of times to repeat can also be a variable as long as it evaluates to a number value.
+The number of repetitions can also be a variable, as long as it evaluates to a number.
 
 ### Repeat With Each
 
