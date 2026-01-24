@@ -28,6 +28,8 @@ Variables are not required to be assigned a value:
 @identifier
 ```
 
+Identifiers may include any letter, digit, or underscore. This includes any Unicode letter from any language as well.
+
 ### Inline Variables
 
 ```ruby
