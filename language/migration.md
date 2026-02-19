@@ -79,17 +79,10 @@ If the decompilation is successful, you'll see no output (following Unix convent
 
 Open the generated `.cherri` file in your editor:
 
-```bash
-code "My Shortcut_decompiled.cherri"  # VS Code
-# or
-open "My Shortcut_decompiled.cherri"  # Default editor
-```
-
 The decompiled code will contain:
 - Metadata (`#define` statements for name, color, glyph)
 - All actions from your shortcut
 - Raw actions for any actions not in Cherri's standard library
-- Comments indicating action names
 
 ---
 
