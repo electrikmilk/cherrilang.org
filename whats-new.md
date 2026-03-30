@@ -6,11 +6,11 @@ nav_order: 1
 
 # What's New?
 
-## 🚀 New Release
+## 🔥 New Release
 
-v2.1 is now out!
+v2.1.1 is now out!
 
-[Learn more](https://github.com/electrikmilk/cherri/releases/tag/v2.1.0){: .btn }
+[Learn more](https://github.com/electrikmilk/cherri/releases/tag/v2.1.1){: .btn }
 
 ---
 
@@ -38,7 +38,7 @@ Cherri can now import actions from macOS.
 
 ## 📦 Packages
 
-Cherri now has a package manager built-in to the CLI based on remote Git repositories.
+Cherri now has a package manager built into the CLI based on remote Git repositories.
 
 [Learn more](language/package-manager){: .btn }
 
