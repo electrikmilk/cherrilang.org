@@ -22,7 +22,7 @@ nav_order: 1
 #define color yellow
 
 @message = "Hello!"
-alert("Message: {message}", "Alert")
+alert("Message: {@message}", "Alert")
 ```
 
 ## Why Cherri?
@@ -117,7 +117,7 @@ function myFunc(text test) {
 }
 
 @result = myFunc("Test")
-show("{result}")
+show("{@result}")
 ```
 
 [Learn more](language/functions){: .btn }

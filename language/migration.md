@@ -160,7 +160,7 @@ If you encounter `rawAction(...)` for a standard Shortcuts action, it may be mis
 
 ```ruby
 @number = 42
-show("{number}")
+show("{@number}")
 ```
 
 **After:**
@@ -179,13 +179,13 @@ show("{number}")
 ```ruby
 // Calculate total for item 1
 @price1 = 10
-@tax1 = price1 * 0.08
-@total1 = price1 + tax1
+@tax1 = @price1 * 0.08
+@total1 = @price1 + @tax1
 
 // Calculate total for item 2
 @price2 = 20
-@tax2 = price2 * 0.08
-@total2 = price2 + tax2
+@tax2 = @price2 * 0.08
+@total2 = @price2 + @tax2
 ```
 
 **After:**
@@ -194,8 +194,8 @@ show("{number}")
 #include 'actions/scripting'
 
 function calculateTotal(number price): number {
-    const tax = price * 0.08
-    const total = price + tax
+    const tax = @price * 0.08
+    const total = @price + @tax
     output("{total}")
 }
 
@@ -215,7 +215,7 @@ if condition {
 } else {
     @result = "No"
 }
-show("{result}")
+show("{@result}")
 ```
 
 **After:**
@@ -361,7 +361,7 @@ During migration, you can optimize for runtime memory:
 ```
 @temp1 = heavyAction()
 @temp2 = anotherAction()
-// temp1 is never used again but stays in memory
+// @temp1 is never used again but stays in memory
 ```
 
 **After:**

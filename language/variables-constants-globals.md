@@ -34,7 +34,7 @@ Identifiers may include any letter, digit, or underscore. This includes any Unic
 
 ```ruby
 @text = "value"
-@inserted = "Value: {text}"
+@inserted = "Value: {@text}"
 ```
 
 ### Get Key
@@ -43,14 +43,14 @@ Identifiers may include any letter, digit, or underscore. This includes any Unic
 @deviceOS = "OS: {Device['OS']}"
 
 @variable = {"Name":"test"}
-@getAs = variable['Name']
+@getAs = @variable['Name']
 ```
 
 ### Type Coercion
 
 ```ruby
 @text = "five 5"
-@number = "Number: {text.number}"
+@number = "Number: {@text.number}"
 ```
 
 See [value types](types#value-types) and [content item types](types#content-item-types) for available value types.
@@ -59,15 +59,15 @@ Note that you can get a key and also type coerce the value, for example:
 
 ```ruby
 @variable = {"n":5}
-@getAs = variable['Name'].number
-@number = "Number: {variable['Name'].number}"
+@getAs = @variable['Name'].number
+@number = "Number: {@variable['Name'].number}"
 ```
 
 ### Variable as a Value
 
 ```ruby
 @variable = 5
-@ref = variable
+@ref = @variable
 ```
 
 Check the [value types](types#value-types) reference to learn more about variable value types.
@@ -130,7 +130,7 @@ const immutable = 5
 alert("{immutable}")
 
 @mutable = 5
-alert("{mutable}")
+alert("{@mutable}")
 ```
 
 Constants can be used just like variables, except that they cannot be redefined or appended to, or the compiler will throw an error.

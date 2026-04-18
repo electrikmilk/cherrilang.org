@@ -172,13 +172,13 @@ Create a new file called `greeting.cherri`:
 
 // Create a personalized greeting
 if name {
-    @greeting = "Hello, {name}! Welcome to Cherri."
+    @greeting = "Hello, {@name}! Welcome to Cherri."
 } else {
     @greeting = "Hello there! Welcome to Cherri."
 }
 
 // Show the greeting
-show("{greeting}")
+show("{@greeting}")
 ```
 
 **New concepts:**
@@ -224,7 +224,7 @@ OS: {osVersion}
 Battery: {battery}%"
 
 // Display it
-show("{info}")
+show("{@info}")
 ```
 
 **New concepts:**
@@ -301,7 +301,7 @@ Insert `show(...)` actions to display variable values:
 
 ```ruby
 @number = 42
-show("Debug: number = {number}")  // Check the value
+show("Debug: number = {@number}")  // Check the value
 ```
 
 ### Check Variable Types

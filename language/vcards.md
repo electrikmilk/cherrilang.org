@@ -32,23 +32,23 @@ The example below uses this built-in action to make a vCard menu.
 /* Generate items */
 @items = []
 repeat i for 3 {
-    @items += makeVCard("Title {i}", "Subtitle {i}")
+    @items += makeVCard("Title {@i}", "Subtitle {@i}")
 }
 
 /* Flatten items to text */
-@menuItems = "{items}"
+@menuItems = "{@items}"
 
 /* Create contact card file */
-@vcf = setName(menuItems, "menu.vcf")
+@vcf = setName(@menuItems, "menu.vcf")
 
 /* Coerce type to contact */
-@contact = vcf.contact
+@contact = @vcf.contact
 
 /* Use chooseFromList to prompt the user with our menu */
-@chosenItem = chooseFromList(contact, "Prompt")
+@chosenItem = chooseFromList(@contact, "Prompt")
 
 /* chosenItem contains the title of the chosen item */
-alert(chosenItem, "You chose:")
+alert(@chosenItem, "You chose:")
 ```
 
 ## Photo
@@ -61,12 +61,12 @@ To use a local image file, use the output of the built-in [embedFile()](/languag
 #include 'actions/device'
 
 /* (Declared for the demo) */
-@batteryIcon: text
+const batteryIcon = ""
 
 /*
 #include 'icons.cherri'
 * Include icons.cherri contents:
-* @batteryIcon = embedFile("path/to/battery.png")
+* const batteryIcon = embedFile("path/to/battery.png")
 */
 
 const batteryLevel = getBatteryLevel()

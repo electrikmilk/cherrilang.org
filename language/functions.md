@@ -126,11 +126,11 @@ Misuse of recursion can cause a Shortcut to infinitely loop.
 #include 'actions/scripting'
 
 function fibonacci(number n): number {
-    if n <= 1 {
-        output("{n}")
+    if @n <= 1 {
+        output("{@n}")
     } else {
-        const minusOne = n - 1
-        const minusTwo = n - 2
+        const minusOne = @n - 1
+        const minusTwo = @n - 2
         const fib1 = fibonacci(minusOne)
         const fib2 = fibonacci(minusTwo)
         const added = fib1 + fib2

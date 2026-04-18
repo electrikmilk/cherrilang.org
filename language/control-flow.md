@@ -20,10 +20,10 @@ Use the following syntax:
 
 ```ruby
 @intVar = 5
-if intVar > 6 {
-    
+if @intVar > 6 {
+
 } else {
-    
+
 }
 ```
 
@@ -52,12 +52,12 @@ For these conditional operators, you can compare the reference, or if checking f
 ```ruby
 @variable: text
 /* Has Any Value */
-if variable {
-    
+if @variable {
+
 }
 /* Does not have any value */
-if !variable {
-    
+if !@variable {
+
 }
 ```
 
@@ -67,8 +67,8 @@ This checks if `intVar` is between `5` and `7`.
 
 ```ruby
 @intVar = 5
-if intVar <> 5 7 {
-    
+if @intVar <> 5 7 {
+
 }
 ```
 
@@ -84,11 +84,11 @@ To be clear, this is a limitation of how this has been implemented in Shortcuts;
 ```ruby
 @textVar = "test"
 @intVar = 1
-if textVar == "test" && intVar == 1 {
+if @textVar == "test" && @intVar == 1 {
     // ...
 }
 
-if textVar == "test" || intVar == 1 {
+if @textVar == "test" || @intVar == 1 {
     // ...
 }
 ```
@@ -102,7 +102,7 @@ Use the following syntax:
 ```ruby
 @items: array
 repeat i for 6 {
-    @items += "Item {i}"
+    @items += "Item {@i}"
 }
 ```
 
@@ -135,8 +135,8 @@ Use the following syntax:
 
 ```ruby
 @items = list("item 1","item 2","item 3")
-for item in items {
-    alert(item)
+for item in @items {
+    alert(@item)
 }
 ```
 
@@ -166,7 +166,7 @@ Conditonals can be used to create conditional output to a reference:
 #include 'actions/network'
 
 @deviceModel = "{Device['Model']}"
-const connectionName = if deviceModel == "iPhone" {
+const connectionName = if @deviceModel == "iPhone" {
     getCellularDetail("Carrier Name")
 } else {
     getWifiDetail("Network Name")
@@ -195,7 +195,7 @@ Repeat and For will accumulate an array using the returned values.
 
 ```ruby
 const repeated = repeat i for 6 {
-    number(i)
+    number(@i)
 }
 
 show("{repeated}")
@@ -203,8 +203,8 @@ show("{repeated}")
 
 ```ruby
 @items = ["Item 1", "Item 2", "Item 3"]
-const map = for item in items {
-    number(item)
+const map = for item in @items {
+    number(@item)
 }
 
 show("{map}")

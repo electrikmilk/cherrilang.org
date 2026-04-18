@@ -20,7 +20,7 @@ nav_order: 5
 
 ```ruby
 @variable = "text"
-@text = "text {variable} \n"
+@text = "text {@variable} \n"
 ```
 
 Text literals support the interpolation of variables and escape characters.
@@ -81,8 +81,8 @@ Expressions are numeric values or variable references that are separated by any 
 ```ruby
 @expression = 54 + (6 * 7)
 @number = 42
-@number = 54 * number + (6 * 7)
-@expression = number + number
+@number = 54 * @number + (6 * 7)
+@expression = @number + @number
 ```
 
 Only two operands will compile to a **Math** action:
@@ -120,7 +120,7 @@ You can declare a dictionary using valid JSON syntax.
 
 @text = "text"
 @dictionary = {
-    "key1": "value {text}",
+    "key1": "value {@text}",
     "key2": 5,
     "key3": true,
     "key4": [
@@ -139,10 +139,10 @@ You can access a dictionary value by key:
 @dictionary = {}
 
 // allows for variable references
-getValue(dictionary, "key")
+getValue(@dictionary, "key")
 
 // must be a raw string, so no variable references are allowed.
-@value = dictionary['key']
+@value = @dictionary['key']
 ```
 
 ### Array
@@ -157,7 +157,7 @@ The contents of an array value must be valid JSON syntax.
 @y = []
 
 @int = 42
-@array = [5, "test", {"test":5}, "{int}"]
+@array = [5, "test", {"test":5}, "{@int}"]
 
 /* Add a value to the array variable */
 @array += "another test"
@@ -167,7 +167,7 @@ You can use the [`for`](control-flow#repeat-with-each) statement to iterate over
 
 ```ruby
 @items = ["Item 1","Item 2"]
-for item in items {
+for item in @items {
     /* ... */
 }
 ```
@@ -340,7 +340,7 @@ for item in list {
 }
 
 /* This would have thrown an error if `@builder` was not of type text. */
-show(builder)
+show(@builder)
 ```
 
 The following types may be used:
@@ -361,14 +361,14 @@ You can do the following type coercions. See [value types](#value-types) and [co
 
 ```ruby
 @var = 5
-@textVar = var.text
+@textVar = @var.text
 ```
 
 To coerce another value to text, simply reference it as an inline variable just as you would in Shortcuts.
 
 ```ruby
 @var = 5
-@textVar = "{var}"
+@textVar = "{@var}"
 ```
 
 Or you can use...
@@ -377,7 +377,7 @@ Or you can use...
 #include 'actions/text'
 
 @var = 5
-@textVar = getText(var)
+@textVar = getText(@var)
 ```
 
 Or if you need to set the text value explicitly to a variable:
@@ -392,22 +392,22 @@ const var = number(@n)
 
 ```ruby
 @var = "5"
-@textVar = var.number
-@inlineVar = "{var.number}"
+@textVar = @var.number
+@inlineVar = "{@var.number}"
 ```
 
 ```ruby
 #include 'actions/scripting'
 
 @textVar = "5"
-@numVar = getNumbers(textVar)
+@numVar = getNumbers(@textVar)
 ```
 
 The `number()` action should only coerce another value to a number, as an integer produces the same output.
 
 ```ruby
 @textVar = "5"
-@numVar = number(textVar)
+@numVar = number(@textVar)
 ```
 
 ### Dictionary
@@ -416,7 +416,7 @@ The `number()` action should only coerce another value to a number, as an intege
 #include 'actions/scripting'
 
 @var
-@textVar = getDictionary(var)
+@textVar = getDictionary(@var)
 ```
 
 ## Content Item Types

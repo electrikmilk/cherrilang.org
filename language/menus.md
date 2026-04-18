@@ -45,7 +45,7 @@ Then, use the `chooseFromList()` action with the list and prompt.
 #include 'actions/scripting'
 
 @list = list("Item 1", "Item 2", "Item 3")
-@chosenItem = chooseFromList(list,"Choose a item")
+@chosenItem = chooseFromList(@list,"Choose a item")
 ```
 
 The variable `chosenItem` in the example would hold the item chosen from your list by the user.

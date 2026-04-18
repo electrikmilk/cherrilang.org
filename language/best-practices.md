@@ -63,7 +63,7 @@ Setting a value that will never change to a variable uses more actions and likel
 
 ```ruby
 @mutable = 5
-show("Number result: {mutable}")
+show("Number result: {@mutable}")
 ```
 
 ### Default or optional values

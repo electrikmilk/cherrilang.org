@@ -52,7 +52,7 @@ One exception is that it requires the key for the parameter that the argument wi
 action 'com.example.app.action' myCustomAction(variable file: 'WFInput'): bool
 
 @file = selectFile()
-myCustomAction(file)
+myCustomAction(@file)
 ```
 
 ## Add Parameters

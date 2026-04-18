@@ -42,7 +42,7 @@ To use a variable value for a parameter that only accepts a variable value, prep
 ```ruby
 @file = nil
 rawAction("is.workflow.actions.documentpicker.save", {
-     "WFInput": "${file}"
+     "WFInput": "${@file}"
 })
 ```
 
