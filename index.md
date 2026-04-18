@@ -29,6 +29,8 @@ alert("Message: {message}", "Alert")
 
 <div class="box" markdown="1">
 - 🖥️ Laptop/Desktop based development
+- 🚧 Easily maintain large Shortcut tool projects with file includes and helpful abstractions.
+- 🗂️ Version control your project and never lose work again!
 - 🎓 Easy to learn and syntax similar to other languages
 - 🐞 1-1 translation to Shortcut actions as much as possible to make debugging easier
 - 🪶 Optimized to create as small as possible Shortcuts and reduces memory usage at runtime
