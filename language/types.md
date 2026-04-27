@@ -383,8 +383,9 @@ Or you can use...
 Or if you need to set the text value explicitly to a variable:
 
 ```ruby
-const var = number(5)
-@textVar = text(var)
+@n = 5
+const var = number(@n)
+@textVar = text("{var}")
 ```
 
 ### Number
