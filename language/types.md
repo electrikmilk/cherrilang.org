@@ -383,7 +383,7 @@ Or you can use...
 Or if you need to set the text value explicitly to a variable:
 
 ```ruby
-const var = fromAction()
+const var = number(5)
 @textVar = text(var)
 ```
 
