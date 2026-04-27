@@ -106,6 +106,27 @@ repeat i for 6 {
 }
 ```
 
+**Example:**
+
+```
+repeat i for 20 {
+	const divThree = @i % 3
+	const divFive = @i % 5
+	if divThree == 0 && divFive == 0 {
+		alert("FizzBuzz")
+    }
+	if divThree == 0 && divFive != 0 {
+		alert("Fizz")
+    }
+	if divFive == 0 && divThree != 0 {
+		alert("Buzz")
+    }
+	if divThree != 0 && divFive != 0 {
+		alert("{@i}")
+    }
+}
+```
+
 The number of repetitions can also be a variable, as long as it evaluates to a number.
 
 ### Repeat With Each
