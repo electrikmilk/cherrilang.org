@@ -108,7 +108,7 @@ repeat i for 6 {
 
 **Example:**
 
-```
+```ruby
 repeat i for 20 {
 	const divThree = @i % 3
 	const divFive = @i % 5
