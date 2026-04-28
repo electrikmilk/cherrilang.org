@@ -104,7 +104,7 @@ Boolean variables can be used in conditionals.
 
 ```ruby
 @boolVarTrue = true
-if boolVarTrue == true {
+if @boolVarTrue == true {
     /* ... */
 }
 ```
@@ -335,8 +335,8 @@ Setting a variable's value type explicitly also compiles faster than having to i
 @real: float
 
 @builder: text
-for item in list {
-    @builder += "{item}"
+for item in @list {
+    @builder += "{@item}"
 }
 
 /* This would have thrown an error if `@builder` was not of type text. */

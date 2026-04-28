@@ -30,7 +30,7 @@ Define your action, then reference the action to run the contents of the functio
 #include 'actions/scripting'
 
 function add(number op1, number op2) {
-  const result = op1 + op2
+  const result = @op1 + @op2
   output("{result}")
 }
 
@@ -188,7 +188,7 @@ if ShortcutInput {
                 const arg2 = getListItem(args, 1)
                 const op1 = number(arg1)
                 const op2 = number(arg2)
-                const result = op1 + op2
+                const result = @op1 + @op2
                 output("{result}")
             }
             output(nil)
@@ -211,7 +211,7 @@ Then, when you reference the function described `add(number, number)`
 #include 'actions/scripting'
 
 function add(number op1, number op2) {
-  const result = op1 + op2
+  const result = @op1 + @op2
   output("{result}")
 }
 

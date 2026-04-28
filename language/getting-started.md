@@ -171,7 +171,7 @@ Create a new file called `greeting.cherri`:
 @name = prompt("What's your name?")
 
 // Create a personalized greeting
-if name {
+if @name {
     @greeting = "Hello, {@name}! Welcome to Cherri."
 } else {
     @greeting = "Hello there! Welcome to Cherri."
@@ -186,7 +186,7 @@ show("{@greeting}")
 - **Variables:** `@name` creates a variable (set variable action in Shortcuts)
 - **Prompt action:** `prompt(...)` prompts the user for input
 - **If/else:** Conditional logic to check if the user entered a name
-- **String interpolation:** `{name}` inserts the variable's value into text
+- **String interpolation:** `{@name}` inserts the variable's value into text
 - **Show action:** `show(...)` displays the result as a notification or dialog
 
 Compile and run:
@@ -251,13 +251,13 @@ Create `calculator.cherri`:
 
 // Define a function to add two numbers
 function add(number a, number b): number {
-    const s = a + b
+    const s = @a + @b
     output("{s}")
 }
 
 // Define a function to multiply
 function multiply(number a, number b): number {
-    const p = a * b
+    const p = @a * @b
     output("{p}")
 }
 

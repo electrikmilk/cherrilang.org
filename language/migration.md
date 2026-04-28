@@ -195,7 +195,7 @@ show("{number}")
 
 function calculateTotal(number price): number {
     const tax = @price * 0.08
-    const total = @price + @tax
+    const total = @price + tax
     output("{total}")
 }
 

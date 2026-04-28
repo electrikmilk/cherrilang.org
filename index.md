@@ -113,7 +113,7 @@ Functions run within their own scope at the top of the Shortcut, called via the 
 #include 'actions/scripting'
 
 function myFunc(text test) {
-    output("{test}")
+    output("{@test}")
 }
 
 @result = myFunc("Test")
