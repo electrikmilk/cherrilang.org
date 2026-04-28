@@ -394,17 +394,16 @@ removeReminders(variable reminders)
 
 ## Timers
 
-### Create Timer
+### Start Timer
 
 Creates a new timer.
 
 ```
-enum timerDuration {
+enum timeDuration {
     'hr',
     'min',
     'sec',
 }
 
-startTimer(#timerDuration (qty)?duration = qty(0, "min"))
+startTimer(#timeDuration (qty)?duration = qty(0, "min"))
 ```
-

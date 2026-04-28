@@ -166,7 +166,7 @@ playLater(variable music)
 Seek the currently playing media.
 
 ```
-enum timerDuration {
+enum timeDuration {
     'hr',
     'min',
     'sec',
@@ -178,7 +178,7 @@ enum seekBehavior {
     'Backward By',
 }
 
-seek(number magnitude, timerDuration duration, seekBehavior ?behavior = "To Time")
+seek(#timeDuration (qty)?timeInterval = qty(0, "sec"), seekBehavior ?behavior = "To Time")
 ```
 
 ---

@@ -24,9 +24,17 @@ nav_order: 9
 > #include 'actions/location'
 > ```
 
-### Get Current Location
+### Current Location
 
 Get current user location.
+
+```
+currentLocation()
+```
+
+---
+
+### Get Current Location
 
 ```
 getCurrentLocation()
@@ -55,6 +63,16 @@ enum locationDetail {
 }
 
 getLocationDetail(variable location, locationDetail detail)
+```
+
+---
+
+### Location
+
+Create a location value.
+
+```
+location(variable location)
 ```
 
 ## Addresses

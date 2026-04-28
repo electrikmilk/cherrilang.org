@@ -44,12 +44,24 @@ makeDiskImage(text name, variable contents, bool ?encrypt = false)
 
 ---
 
-### Make Size Disk Image
+### Make Sized Disk Image
 
-Make a sized disk image.
+Create a new disk image of a specific size.
 
 ```
-makeSizedDiskImage(text name, variable contents, text ?size = "1 GB", bool ?encrypt = false)
+enum storageUnit {
+    'bytes',
+    'KB',
+    'MB',
+    'GB',
+    'TB',
+    'PB',
+    'EB',
+    'ZB',
+    'Y',
+}
+
+makeSizedDiskImage(text name, variable contents, #storageUnit (qty)?diskSize = qty(1, "GB"), bool ?encrypt = false)
 ```
 
 ---

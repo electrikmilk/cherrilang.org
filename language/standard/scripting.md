@@ -102,8 +102,6 @@ Open an app.
 openApp(text appID)
 ```
 
-_Contributed by [JosephShenton](https://github.com/JosephShenton)_.
-
 ---
 
 ### Quit All Apps

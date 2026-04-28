@@ -26,7 +26,7 @@ nav_order: 6
 
 ### Get Device Detail
 
-Get a detail about the current device.
+Get a detail about current device.
 
 ```
 enum deviceDetail {
@@ -149,4 +149,29 @@ Determines if the device is currently charging.
 
 ```
 isCharging(): bool
+```
+
+## Screen Time
+
+### Get Website & App Activity
+
+```
+enum deviceUsageType {
+    'all',
+    'app',
+    'website',
+}
+
+enum usageDuration {
+    'today',
+    'yesterday',
+    'lastWeek',
+    'thisWeek',
+    'thisMonth',
+    'thisYear',
+    'specifiedDay',
+    'inBetween',
+}
+
+getDeviceUsage(deviceUsageType ?usageType = "all", variable ?device, usageDuration ?during = "today", text ?startTime, text ?startTime)
 ```
