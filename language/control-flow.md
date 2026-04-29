@@ -44,6 +44,7 @@ The first operand of the if statement must be a variable. The second can optiona
 - `>=` Greater or Equal
 - `<` Less Than
 - `<=` Less or Equal
+- `isToday` For date comparisons, check if a date is today.
 
 ### Has Value/Does Not
 
