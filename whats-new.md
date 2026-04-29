@@ -8,9 +8,9 @@ nav_order: 1
 
 ## 🔥 New Release
 
-v2.1.1 is now out!
+v2.2.0 is now out!
 
-[Learn more](https://github.com/electrikmilk/cherri/releases/tag/v2.1.1){: .btn }
+[Learn more](https://github.com/electrikmilk/cherri/releases/tag/v2.2.0){: .btn }
 
 ---
 
@@ -19,12 +19,6 @@ v2.1.1 is now out!
 Check out the new **Share** option in the Cherri Playground to share Cherri code with anyone!
 
 [Open Playground](https://playground.cherrilang.org/){: .btn }
-
----
-
-## 🔏 Signing is Fixed in Tahoe
-
-Signing has been fixed in macOS 26 Tahoe, so you shouldn't be required to use HubSign if you are on a machine running macOS 26.
 
 ---
 
