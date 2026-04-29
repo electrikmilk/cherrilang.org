@@ -110,7 +110,7 @@ startScreensaver()
 ### Run Apple Script
 
 ```
-runAppleScript(variable input, text script)
+runAppleScript(rawtext script, variable input)
 ```
 
 ---
