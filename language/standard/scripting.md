@@ -184,7 +184,7 @@ getValues(dictionary dictionary): array
 Set the value of `key` to `value` in `dictionary`.
 
 ```
-setValue(variable dictionary, text key, text value)
+setValue(variable dictionary, text key, text value): dictionary
 ```
 
 ## Items
@@ -392,3 +392,14 @@ Dismisses Siri.
 ```
 dismissSiri()
 ```
+
+---
+### Return to Home Screen
+
+Returns to the device home screen.
+
+```
+returnToHomescreen()
+```
+
+**Only supported on iOS/iPadOS.**

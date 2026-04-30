@@ -121,6 +121,18 @@ Vibrate the device. Only applies to Apple devices with the haptic engine.
 vibrate()
 ```
 
+**Only supported on iOS/iPadOS.**
+
+### Show Control Center
+
+Open the control center on the device.
+
+```
+showControlCenter()
+```
+
+---
+
 ## Battery
 
 ### Connected to Charger

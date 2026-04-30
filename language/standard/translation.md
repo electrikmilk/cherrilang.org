@@ -65,7 +65,7 @@ detectLanguage(text input): text
 Translate text.
 
 ```
-enum language {
+enum translationLanguage {
     'ar_AE',
     'zh_CN',
     'zh_TW',
@@ -87,5 +87,5 @@ enum language {
     'vn_VN',
 }
 
-translate(text text, language to, language ?from = "Detected language"): text
+translate(text text, translationLanguage to, translationLanguage ?from = "Detected language"): text
 ```

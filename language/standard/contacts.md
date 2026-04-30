@@ -113,13 +113,32 @@ getContactDetail(variable contact, contactDetail detail)
 
 ### Remove Contact Detail
 
-Remove detail from contact.
+Remove a detail from a contact.
 
 ```
-enum contactDetails {
+enum contactDetail {
+    'First Name',
+    'Middle Name',
+    'Last Name',
+    'Birthday',
+    'Prefix',
+    'Suffix',
+    'Nickname',
+    'Phonetic First Name',
+    'Phonetic Last Name',
+    'Phonetic Middle Name',
+    'Company',
+    'Job Title',
+    'Department',
+    'File Extension',
+    'Creation Date',
+    'File Path',
+    'Last Modified Date',
+    'Name',
+    'Random',
 }
 
-removeContactDetail(variable contact, contactDetails detail)
+removeContactDetail(variable contact, contactDetail detail)
 ```
 
 ---

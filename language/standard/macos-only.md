@@ -32,6 +32,8 @@ Get list of applications.
 getApps(): array
 ```
 
+**Only supported on macOS.**
+
 ---
 
 ### Make Disk Image
@@ -41,6 +43,8 @@ Create a new disk image.
 ```
 makeDiskImage(text name, variable contents, bool ?encrypt = false)
 ```
+
+**Only supported on macOS.**
 
 ---
 
@@ -64,6 +68,8 @@ enum storageUnit {
 makeSizedDiskImage(text name, variable contents, #storageUnit (qty)?diskSize = qty(1, "GB"), bool ?encrypt = false)
 ```
 
+**Only supported on macOS.**
+
 ---
 
 ### Take Interactive Screenshot
@@ -77,6 +83,8 @@ enum screenshotSelection {
 takeInteractiveScreenshot(screenshotSelection ?selection = "Window")
 ```
 
+**Only supported on macOS.**
+
 ## Device
 
 ### Display Sleep
@@ -86,6 +94,8 @@ Only puts the Mac display to sleep, device remains awake.
 ```
 displaySleep()
 ```
+
+**Only supported on macOS.**
 
 ---
 
@@ -97,6 +107,8 @@ Puts the Mac to sleep.
 sleep()
 ```
 
+**Only supported on macOS.**
+
 ---
 
 ### Start Screensaver
@@ -104,6 +116,8 @@ sleep()
 ```
 startScreensaver()
 ```
+
+**Only supported on macOS.**
 
 ## Scripts
 
@@ -113,6 +127,8 @@ startScreensaver()
 runAppleScript(rawtext script, variable input)
 ```
 
+**Only supported on macOS.**
+
 ---
 
 ### Run JavaScript for Automation
@@ -121,6 +137,8 @@ runAppleScript(rawtext script, variable input)
 runJSAutomation(variable input, text script)
 ```
 
+**Only supported on macOS.**
+
 ---
 
 ### Run Shell Script
@@ -128,6 +146,8 @@ runJSAutomation(variable input, text script)
 ```
 runShellScript(text script, variable input, text ?shell = "/bin/zsh", text ?inputMode = "to stdin")
 ```
+
+**Only supported on macOS.**
 
 ## Windows
 
@@ -154,6 +174,8 @@ enum sortOrder {
 getWindows(windowSorting ?sortBy, sortOrder ?orderBy, number ?limit)
 ```
 
+**Only supported on macOS.**
+
 ---
 
 ### Move Window
@@ -177,6 +199,8 @@ enum windowPosition {
 moveWindow(variable window, windowPosition position, bool ?bringToFront = true)
 ```
 
+**Only supported on macOS.**
+
 ---
 
 ### Resize Window
@@ -199,3 +223,5 @@ enum windowSize {
 
 resizeWindow(variable window, windowSize configuration)
 ```
+
+**Only supported on macOS.**

@@ -336,6 +336,16 @@ Prompt the user to select one or optionally multiple folders.
 selectFolder(bool ?selectMultiple = false)
 ```
 
+### Get Folder Contents
+
+Get contents of a folder.
+
+```
+getFolderContents(variable folder, bool ?recursive = false)
+```
+
+---
+
 ## Notes
 
 ### Append Note

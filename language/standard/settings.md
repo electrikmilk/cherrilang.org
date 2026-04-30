@@ -197,6 +197,8 @@ Get current device wallpaper.
 getWallpaper()
 ```
 
+**Only supported on iOS/iPadOS.**
+
 ---
 
 ### Get Wallpapers
@@ -206,6 +208,8 @@ Get device wallpapers.
 ```
 getAllWallpapers(): array
 ```
+
+**Only supported on iOS/iPadOS.**
 
 ---
 
@@ -249,8 +253,6 @@ setWifi(bool status)
 toggleBluetooth()
 ```
 
----
-
 ### Toggle Cellular Data
 
 ```
@@ -263,4 +265,11 @@ toggleCellularData()
 
 ```
 toggleWifi()
+```
+## Multitasking
+
+### Set Multitasking Mode
+
+```
+setMultitaskingMode(bool ?automaticallyShowAndHideDock = true)
 ```

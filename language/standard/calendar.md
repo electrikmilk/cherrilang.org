@@ -202,7 +202,7 @@ enum dateUnit {
     'yr',
 }
 
-adjustDate(text date, dateAdjustOperation operation, #dateUnit (qty)?unit)
+adjustDate(text date, dateAdjustOperation operation, #dateUnit (qty)?unit): date
 ```
 
 ---
@@ -212,7 +212,7 @@ adjustDate(text date, dateAdjustOperation operation, #dateUnit (qty)?unit)
 Get the current date.
 
 ```
-currentDate()
+currentDate(): date
 ```
 
 ---
@@ -222,7 +222,7 @@ currentDate()
 Create a date value from `date`. Example: October 5, 2022.
 
 ```
-date(text date)
+date(text date): date
 ```
 
 ---
@@ -232,7 +232,7 @@ date(text date)
 Get dates from input.
 
 ```
-getDates(variable input): array
+getDates(variable input)
 ```
 
 ---
@@ -297,7 +297,7 @@ enum holidayYear {
     '2027',
 }
 
-getHolidayDate(holiday holiday, eventOccurrenceMode ?occurrenceMode = "Next Occurrence", holidayYear ?forYear): text
+getHolidayDate(holiday holiday, eventOccurrenceMode ?occurrenceMode = "Next Occurrence", holidayYear ?forYear): date
 ```
 
 ## Formatting
@@ -318,7 +318,7 @@ enum dateFormats {
     'Custom',
 }
 
-formatDate(text date, dateFormats ?dateFormat = "Short", text ?customDateFormat)
+formatDate(text date, dateFormats ?dateFormat = "Short", text ?customDateFormat): text
 ```
 
 ---
@@ -336,7 +336,7 @@ enum timeFormats {
     'Relative',
 }
 
-formatTime(text time, timeFormats ?timeFormat = "Short")
+formatTime(text time, timeFormats ?timeFormat = "Short"): text
 ```
 
 ---
@@ -365,7 +365,7 @@ enum timeFormats {
     'Relative',
 }
 
-formatTimestamp(text date, dateFormats ?dateFormat = "Short", timeFormats ?timeFormat = "Short", text ?customDateFormat)
+formatTimestamp(text date, dateFormats ?dateFormat = "Short", timeFormats ?timeFormat = "Short", text ?customDateFormat): text
 ```
 
 ## Reminders

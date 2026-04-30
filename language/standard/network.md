@@ -128,3 +128,26 @@ enum wifiDetail {
 
 getWifiDetail(wifiDetail detail)
 ```
+## HotSpot
+
+### Get Hotspot Password
+
+Get the password for your personal hotspot.
+
+```
+getHotspotPassword(): text
+```
+
+**Only supported on iOS/iPadOS.**
+
+---
+
+### Set Personal Hotspot Password
+
+Update the password to your personal hotspot.
+
+```
+setHotspotPassword(text newPassword)
+```
+
+**Only supported on iOS/iPadOS.**
