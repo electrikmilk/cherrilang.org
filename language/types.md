@@ -185,6 +185,8 @@ So `x` now contains 1 item with a number value of `5`.
 
 Items in an array or added to an array cannot be removed. If you need a new array of items, iterate the array using `for`  and add only specific items using a conditional to a new array.
 
+Note that a [`list()`](/language/standard/scripting#list) action result is not an array — it is immutable and does not support `+=`. Use an `array` variable when you need to build a collection dynamically.
+
 ### Variable
 
 A variable is a type of value that can be accepted for a custom action or defined action argument. For functions, this means not coercing the value to any type. For defined actions, it means the value should always be handled as a variable when compiling the value for actions that have a parameter that does not accept only a variable value.

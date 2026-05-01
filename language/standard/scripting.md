@@ -277,6 +277,8 @@ Create a list.
 list(text ...listItem)
 ```
 
+A list is immutable — there is no action or syntax to add items to it after creation. If you need to build a dynamic collection, use an [`array`](/language/types#array) variable, which supports the `+=` operator.
+
 ## Measurement
 
 ### Convert Measurement
