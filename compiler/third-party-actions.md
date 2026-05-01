@@ -24,10 +24,15 @@ action 'is.workflow.actions.setvariable' setVariable(text name: 'WFVariableName'
 ## Raw Actions
 
 You could also use either [functions](/language/functions) or [pastables](/language/copy-paste) to wrap a [raw action](/language/raw-actions). This file can then be [included](/language/includes) to easily use the 3rd party actions.
+
+
 ---
-Note:
+
+{: .note }
 When contributing actions, if an action has a complex number of arguments, try your best to split the action into
 multiple actions to reduce the number of arguments and complexity.
+
+---
 
 ## Glyphs
 
