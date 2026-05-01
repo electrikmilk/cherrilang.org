@@ -30,7 +30,7 @@ You could also use either [functions](/language/functions) or [pastables](/langu
 
 {: .note }
 When contributing actions, if an action has a complex number of arguments, try your best to split the action into
-multiple actions to reduce the number of arguments and complexity.
+multiple actions using the `default` keyword to reduce the number of arguments and complexity.
 
 ---
 
