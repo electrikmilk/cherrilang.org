@@ -28,8 +28,9 @@ You could also use either [functions](/language/functions) or [pastables](/langu
 
 ## Built-in Definitions
 
-Defining actions is easy, but it might be a little complicated to understand at first. Standard actions are defined in one
-place, [`actions_std.go`](https://github.com/electrikmilk/cherri/blob/main/actions_std.go).
+If an action needs additional logic, conditional parameters, etc., then it will need to be defined in code in the compiler, which will require some understanding of Go.
+
+It might be a little complicated to understand at first, but it's mostly an analog to action definitions, just in a Go struct. Standard actions are defined in one place, [`actions_std.go`](https://github.com/electrikmilk/cherri/blob/main/actions_std.go).
 
 Non-standard actions should be added to a new or existing file for those actions.
 
