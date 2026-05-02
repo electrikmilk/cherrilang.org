@@ -5,10 +5,10 @@ parent: Documentation
 nav_order: 13
 ---
 
-# Raw Action
+# Raw Actions
 {: .no_toc }
 
-You can write a raw definition of an action not defined inside Cherri, in Cherri.
+You can write a singular definition of an action with custom parameters not defined inside Cherri, in Cherri.
 
 ## Table of contents
 {: .no_toc .text-delta }
@@ -18,7 +18,7 @@ You can write a raw definition of an action not defined inside Cherri, in Cherri
 
 ## Defining an action
 
-Actions are primarily composed of an identifier and, optionally, parameters. To add an action to your Shortcut raw, provide a string of the action `WFWorkflowActionIdentifier`. Then, optionally provide a dictionary for each of the `WFWorkflowActionParameters`.
+Actions are primarily composed of an identifier and, optionally, parameters. To add an action to your Shortcut raw, provide a string of the action `WFWorkflowActionIdentifier`. Then, optionally provide a dictionary for each of the required `WFWorkflowActionParameters` of the action.
 
 ```ruby
 rawAction("is.workflow.actions.alert", {
@@ -29,7 +29,7 @@ rawAction("is.workflow.actions.alert", {
 
 This defines an alert action with the message `Hello World!`. This action is already defined in Cherri using the `alert()` action. Still, this example demonstrates a simple way actions not implemented in Cherri can be used.
 
-However, there is an alternative called [action definitions](/language/action-definitions), which creates reusable action definitions.
+However, there is an alternative called [action definitions](/language/action-definitions), which creates reusable action definitions in the same way as the standard actions.
 
 ## Parsing Shortcut Data
 
