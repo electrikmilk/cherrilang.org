@@ -5,7 +5,7 @@ parent: Contributing
 nav_order: 2
 ---
 
-# Defining Missing Actions
+# Defining Actions
 
 ## Action Definitions
 
@@ -24,7 +24,15 @@ When contributing actions, if an action has a complex number of arguments, try y
 
 ## Raw Actions
 
-You could also use either [functions](/language/functions) or [pastables](/language/copy-paste) to wrap a [raw action](/language/raw-actions). This file can then be [included](/language/includes) to easily use the 3rd party actions.
+You could also use either [functions](/language/functions) or [pastables](/language/copy-paste) to wrap a [raw action](/language/raw-actions).
+
+## 3rd-party Distribution
+
+Action definitions, raw actions wrapped in functions, or copy-pastes can then be included in a Cherri file and included either by our package manager, file sharing, or even git submodules.
+
+[Learn more](/distribution){: .btn }
+
+---
 
 ## Built-in Definitions
 
