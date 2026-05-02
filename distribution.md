@@ -29,6 +29,6 @@ Alternatively, you can also use the `?code=` URL parameter to share small snippe
 
 ## 📦 Packages
 
-In a future release, Cherri will have a package manager built-in to the CLI based on GitHub repos.
+Cherri has a package manager built into the CLI based on remote Git repos.
 
 [Learn more](language/package-manager){: .btn }
