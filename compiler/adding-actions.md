@@ -1,5 +1,5 @@
 ---
-title: Adding Actions & More
+title: Adding Actions
 layout: default
 parent: Contributing
 nav_order: 2
@@ -25,15 +25,7 @@ action 'is.workflow.actions.setvariable' setVariable(text name: 'WFVariableName'
 
 You could also use either [functions](/language/functions) or [pastables](/language/copy-paste) to wrap a [raw action](/language/raw-actions). This file can then be [included](/language/includes) to easily use the 3rd party actions.
 
-
 ---
 
 {: .note }
-When contributing actions, if an action has a complex number of arguments, try your best to split the action into
-multiple actions using the `default` keyword to reduce the number of arguments and complexity.
-
----
-
-## Glyphs
-
-Glyphs are simply defined in glyphs.go and only require a name and the number used an exported Shortcut that uses that glyph. It is the same for colors, but those change less often.
+When contributing actions, if an action has a complex number of arguments, try your best to split the action into multiple actions using the `default` keyword to reduce the number of arguments and complexity.
