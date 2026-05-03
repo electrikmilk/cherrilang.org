@@ -1,7 +1,6 @@
 ---
 title: Getting Started
 layout: default
-parent: Documentation
 nav_order: 4
 ---
 
