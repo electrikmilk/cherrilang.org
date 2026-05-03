@@ -7,7 +7,7 @@ nav_order: 4
 # Migrating Existing Shortcuts to Cherri
 {: .no_toc }
 
-This guide will help you convert your existing Shortcuts into Cherri code, making them easier to maintain, version control, and scale.
+Convert your existing Shortcuts into Cherri code for version control, modularity, and easier maintenance.
 
 ## Table of contents
 {: .no_toc .text-delta }
@@ -17,116 +17,47 @@ This guide will help you convert your existing Shortcuts into Cherri code, makin
 
 ---
 
-## Why Migrate?
-
-Converting your existing Shortcuts to Cherri offers several benefits:
-
-- 📝 **Version Control** - Track changes with Git, collaborate with others
-- 🔍 **Code Review** - Review changes in pull requests before deploying
-- 🧩 **Modularity** - Split large Shortcuts into multiple files with `#include`
-- 🔄 **Reusability** - Create functions to eliminate duplicate actions
-- 🐛 **Easier Debugging** - Read and understand code faster than visual blocks
-- 📏 **Code Style** - Enforce consistent formatting and patterns
-- 🤝 **Team Collaboration** - Multiple people can work on the same Shortcut
-
----
-
-## Migration Process Overview
-
-The migration process consists of four main steps:
-
-1. **Decompile** - Convert your `.shortcut` file to Cherri code
-2. **Review** - Understand the generated code and identify improvement areas
-3. **Refactor** - Apply Cherri best practices and idioms
-4. **Test** - Compile and verify the migrated Shortcut works correctly
-
----
-
-## Step 1: Decompile Your Shortcut
-
-Cherri can automatically convert existing Shortcuts into Cherri code using the `--import` flag.
+## Decompile Your Shortcut
 
 ### Get the Shortcut URL
 
-First, you need an iCloud link to your shortcut:
-
 1. Open the **Shortcuts** app on your device
-2. Find the shortcut you want to migrate
-3. Tap the **info icon (ⓘ)** on the shortcut
-4. Tap **Share**
-5. Choose **Copy iCloud Link**
+2. Tap the **info icon (ⓘ)** on the shortcut you want to migrate
+3. Tap **Share → Copy iCloud Link**
 
 The link will look like: `https://www.icloud.com/shortcuts/abc123def456`
 
 ### Decompile with Cherri
 
-Use the `--import` flag with the iCloud URL:
+Beta
+{: .label .label-yellow }
 
-```bash
+Use `--import` with the iCloud URL or a local unsigned `.shortcut` file path:
+
+```console
 cherri --import=https://www.icloud.com/shortcuts/abc123def456
 ```
 
-This will:
-- Download the shortcut from iCloud
-- Parse the `.plist` format
-- Generate Cherri code
-- Save it as a `.cherri` file
+No output means success. The decompiled `.cherri` file will be created in your current directory.
 
-If the decompilation is successful, you'll see no output (following Unix conventions). The decompiled `.cherri` file will be created in your current directory.
+### What to Expect
 
-### Review the Generated Code
+The generated code will be functional but not yet idiomatic:
 
-Open the generated `.cherri` file in your editor:
-
-The decompiled code will contain:
-- Metadata (`#define` statements for name, color, glyph)
-- All actions from your shortcut
-- Raw actions for any actions not in Cherri's standard library
-
----
-
-## Step 2: Understanding Decompiled Code
-
-Decompiled code is functional but not idiomatic. Let's look at what you might see.
-
-### Example: Simple Shortcut
-
-**Original Shortcut:**
-- Show alert "Hello, World!"
-
-**Decompiled Code:**
-
-```ruby
-#define color yellow
-#define glyph smileyFace
-
-alert("Hello, World!")
-```
-
-### What to Notice
-
-1. **Standard Actions Matched** - Most standard actions are automatically matched to their Cherri equivalents
-2. **Third-Party Actions** - Only 3rd party actions not defined in Cherri will appear as `rawAction(...)` 
-3. **Missing Includes** - Action includes may not be automatically added (this is a known issue), so you may need to add them manually
-4. **No Variables** - Magic variables may appear as raw variable references
-5. **No Functions** - Duplicate action sequences aren't consolidated
-6. **Verbose** - The code may be longer than necessary
-
-The decompiler generates functional code that matches most standard actions correctly, but it's your job to make it idiomatic Cherri by adding includes, using better variable patterns, and consolidating duplicate code.
+- Standard actions are matched to their Cherri equivalents
+- Third-party actions not in Cherri's standard library appear as `rawAction(...)`
+- Action includes may not be added automatically — you may need to add them manually
+- Magic variables appear as raw references; duplicate action sequences aren't consolidated into functions
 
 ---
 
 ## Refactoring to Idiomatic Cherri
 
-Now let's transform the decompiled code into clean, maintainable Cherri.
-
-### 3.1 Add Missing Action Includes
-
-Standard actions are usually decompiled correctly, but the action includes may not be automatically added. Add the necessary includes at the top of your file:
+### Add Missing Action Includes
 
 **Before (fails):**
 
-```
+```ruby
 // #define name My Shortcut
 #define color blue
 #define glyph hand
@@ -135,7 +66,7 @@ const location = getCurrentLocation()
 const weather = getCurrentWeather(location)
 ```
 
-**After (succeeeds):**
+**After (succeeds):**
 
 ```ruby
 #include 'actions/location'
@@ -153,7 +84,7 @@ Check the [Standard Library documentation](/language/standard/stdlib) to find wh
 {: .note }
 If you encounter `rawAction(...)` for a standard Shortcuts action, it may be missing from Cherri's standard library. Consider defining it as a custom action or reporting it as an issue.
 
-### 3.2 Use Constants for Immutable Values
+### Use Constants for Immutable Values
 
 **Before:**
 
@@ -169,19 +100,17 @@ const number = 42
 show("{number}")
 ```
 
-**Why?** If a value never changes, use `const` instead of `@variable` for smaller shortcuts and better performance.
+If a value never changes, `const` produces a smaller Shortcut with better performance than `@variable`.
 
-### 3.3 Consolidate Duplicate Code into Functions
+### Consolidate Duplicate Code into Functions
 
 **Before:**
 
 ```ruby
-// Calculate total for item 1
 @price1 = 10
 @tax1 = @price1 * 0.08
 @total1 = @price1 + @tax1
 
-// Calculate total for item 2
 @price2 = 20
 @tax2 = @price2 * 0.08
 @total2 = @price2 + @tax2
@@ -202,7 +131,7 @@ const total1 = calculateTotal(10)
 const total2 = calculateTotal(20)
 ```
 
-### 3.4 Use Control Flow Output
+### Use Control Flow Output
 
 **Before:**
 
@@ -229,7 +158,7 @@ const result = if condition {
 show("{result}")
 ```
 
-### 3.5 Split Large Shortcuts with Includes
+### Split Large Shortcuts with Includes
 
 If your shortcut has distinct sections, split them into separate files:
 
@@ -250,7 +179,6 @@ If your shortcut has distinct sections, split them into separate files:
 #define color yellow
 #define glyph smileyFace
 
-// Configuration constants
 const API_URL = "https://api.example.com"
 const TIMEOUT = 30
 ```
@@ -261,193 +189,110 @@ const TIMEOUT = 30
 #include 'actions/scripting'
 
 function formatDate(date input): text {
-    // Date formatting logic
     output("{formattedDate}")
 }
 
-function validateInput(text input): boolean {
-    // Validation logic
+function validateInput(text input): bool {
     output("{isValid}")
 }
 ```
 
----
+### Handle Third-Party Actions
 
-## Testing Your Migrated Shortcut
+If your shortcut uses app actions not in Cherri's standard library, keep them as raw actions or define them for reuse:
 
-After refactoring, it's crucial to test that your shortcut still works correctly.
-
-### Step 1: Compile
-
-```bash
-cherri my-shortcut.cherri
-```
-
-Fix any compilation errors.
-
-### Step 2: Compare Actions
-
-If you want to compare the actions:
-
-**Before:** Note the actions in your original Shortcut
-
-**After:** Compile with debug mode to output a plist file for comparison with the original plist file.
-
-```bash
-cherri my-shortcut.cherri --debug
-```
-
-### Step 3: Test on Device
-
-Transfer the compiled Shortcut to your device and test all functionality:
-
-- ✅ Test with valid inputs
-- ✅ Test with edge cases (empty values, large numbers, etc.)
-- ✅ Test all conditional branches
-- ✅ Test all menu options
-- ✅ Compare output with original Shortcut
-
-### Step 4: Debug Issues
-
-If something doesn't work:
-
-1. **Compare outputs:** Run both Shortcuts with the same input and compare results
-2. **Add debug statements:** Insert `show("{variable}")` to inspect values
-3. **Check the .plist:** Compile with `--debug` or `-d` and inspect the generated `.plist`
-4. **Review raw actions:** Ensure raw action parameters match the original
-
----
-
-## Advanced Migration Techniques
-
-### Handling Third-Party Actions
-
-If your shortcut uses third-party app actions not in Cherri's standard library, you have two options:
-
-#### Option 1: Keep as Raw Action
+**Raw action:**
 
 ```ruby
-const content = "My note"
-// Third-party action for "Bear" app
 rawAction("net.shinyfrog.bear.create-note", {
     "title": "My Note",
     "text": "{content}"
 })
 ```
 
-#### Option 2: Define Custom Action
+**Custom action definition:**
 
 ```ruby
-// Define once, reuse many times
 action 'net.shinyfrog.bear.create-note' createBearNote(
     text title: 'title',
     text content: 'text'
 )
 
-// Use it
-const content = "My note"
 createBearNote("My Note", "{content}")
 ```
 
 See [Action Definitions](/language/action-definitions) for more details.
 
-### Optimizing Memory Usage
+### Clear Unused Output
 
-During migration, you can optimize for runtime memory:
+If an action produces output that no subsequent action consumes, add `nothing()` to prevent Shortcuts from implicitly passing it forward as input:
 
-**Before:**
-
-```
-@temp1 = heavyAction()
-@temp2 = anotherAction()
-// @temp1 is never used again but stays in memory
-```
-
-**After:**
-
-```
-const temp1 = heavyAction()
-nothing()  // Clear output
-@temp2 = anotherAction()
-```
-
-Or better yet, only make variables you actually need:
-
-```
-const result = heavyAction()
-// Use result where needed
-```
-
-or add nothing() after to make sure output is not loaded into memory if never used.
-
-```
+```ruby
 heavyAction()
-// Output is never used, so we clear it.
 nothing()
 ```
 
-## Troubleshooting Migration Issues
+---
 
-### Issue: Raw Actions for Standard Actions
+## Testing
 
-**Problem:** After decompiling, a standard Shortcuts action appears as `rawAction(...)` instead of its Cherri equivalent.
+### Compile
 
-**Solution:** This is rare but can happen if the action is missing from Cherri's standard library. You can either define it as a custom action using [action definitions](/language/action-definitions) or keep it as a raw action. Consider reporting it as an issue on GitHub.
-
-### Issue: Variables Not Working
-
-**Problem:** Variables from the original Shortcut don't work in Cherri code.
-
-**Solution:** Ensure you're using `@variable` for mutable variables and `const` for constants. Check variable names for typos.
-
-### Issue: Control Flow Broken
-
-**Problem:** If/else or loops don't work as expected.
-
-**Solution:** Review the control flow structure. Cherri's syntax differs slightly from Shortcuts' visual representation. See [Control Flow documentation](/language/control-flow).
-
-### Issue: Type Errors
-
-**Problem:** Compilation fails with type mismatch errors.
-
-**Solution:** Add explicit type annotations or check that action inputs match expected types:
-
-```
-@myVar: text  // Explicitly declare type
+```console
+cherri my-shortcut.cherri
 ```
 
-### Issue: Shortcut Won't Import on Device
+Fix any compilation errors before testing on device.
 
-**Problem:** The compiled Shortcut won't import into the Shortcuts app.
+### Compare Against Original
 
-**Solution:** Ensure it's signed. On non-macOS platforms, use `--hubsign`:
+Compile with `--debug` to generate a `.plist` file you can diff against the original:
 
-```bash
+```console
+cherri my-shortcut.cherri --debug
+```
+
+### Test on Device
+
+Transfer the compiled Shortcut to your device and verify:
+
+- Test with valid inputs and edge cases
+- Test all conditional branches and menu options
+- Compare output with the original Shortcut
+
+---
+
+## Troubleshooting
+
+### Raw actions for standard Shortcuts actions
+
+The action may be missing from Cherri's standard library. Define it as a custom action using [action definitions](/language/action-definitions) or keep it as a raw action and report the issue on GitHub.
+
+### Missing action includes
+
+Add the appropriate `#include` at the top of the file. Check the [Standard Library documentation](/language/standard/stdlib) for which file each action belongs to.
+
+### Type errors
+
+Add explicit type annotations:
+
+```
+@myVar: text
+```
+
+### Shortcut won't import on device
+
+Ensure the Shortcut is signed. On non-macOS platforms, add `--hubsign`:
+
+```console
 cherri my-shortcut.cherri --hubsign
 ```
 
 ---
 
-## Migration Best Practices
-
-1. **Start with Simple Shortcuts** - Migrate simple Shortcuts first to learn the patterns
-2. **Keep the Original** - Don't delete your original Shortcut until you've fully tested the migrated version
-3. **Migrate Incrementally** - For large Shortcuts, migrate section by section
-4. **Document Changes** - Add comments explaining non-obvious refactorings
-5. **Use Version Control** - Commit after each refactoring step so you can revert if needed
-6. **Test Thoroughly** - Test all code paths and edge cases
-7. **Refactor Gradually** - First make it work (decompiled code), then make it better (refactored)
-8. **Learn the Standard Library** - Familiarize yourself with available actions to avoid raw actions
-
----
-
 ## Resources
 
-- **[Decompilation Documentation](/decompilation)** - Technical details on the decompilation process
-- **[Standard Actions Reference](/language/actions)** - All available actions
-- **[Action Definitions](/language/action-definitions)** - Define your own actions
-- **[Best Practices](/language/best-practices)** - Writing efficient Cherri code
-
-**Ready to migrate?** Start with a simple Shortcut, follow the refactoring checklist, and gradually work your way up to more complex migrations.
-
-If you need help, check the [FAQ](/faq) or [open an issue on GitHub](https://github.com/electrikmilk/cherri/issues). Happy migrating! 🍒
+- [Import Shortcut documentation](/decompilation)
+- [Standard Actions Reference](/language/actions)
+- [Action Definitions](/language/action-definitions)
+- [Best Practices](/language/best-practices)
