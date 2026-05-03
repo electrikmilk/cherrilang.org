@@ -2,7 +2,7 @@
 title: Migration Guide
 layout: default
 parent: Documentation
-nav_order: 2
+nav_order: 5
 ---
 
 # Migrating Existing Shortcuts to Cherri
