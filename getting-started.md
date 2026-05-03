@@ -2,7 +2,7 @@
 title: Getting Started
 layout: default
 parent: Documentation
-nav_order: 1
+nav_order: 4
 ---
 
 # Getting Started with Cherri
