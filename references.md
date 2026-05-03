@@ -1,6 +1,7 @@
 ---
 title: Content References
 layout: default
+parent: Documentation
 nav_order: 5
 ---
 
