@@ -115,6 +115,24 @@ function sum(number op1, number op2): number {
 
 Type coercion is be done at the action call level, where the output of the action will be put in a type casting action, such as a text or number action, and then assigned to the variable for the return variable, but only if there is one.
 
+### Isolated Scope
+
+Functions run in a completely separate Shortcut instance via `runSelf()`. Variables from the outer Shortcut are not accessible inside a function body — the new instance starts with no state.
+
+{: .important }
+All data a function needs must be passed as arguments. Referencing an outer `@variable` inside a function body will produce a compiler error.
+
+```ruby
+@greeting = "Hello"
+
+function greet(text name) {
+    // @greeting is NOT accessible here
+    output("Hi, {@name}!")
+}
+
+greet("World")
+```
+
 ### Recursion
 
 It is possible to call other functions within the body of a function. You can then use this for recursion, running the same function with an eventual breakpoint.

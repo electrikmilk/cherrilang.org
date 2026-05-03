@@ -207,6 +207,31 @@ Actions have output types. View the [actions](/language/actions) documentation t
 @location = getCurrentLocation()
 ```
 
+### Quantity
+
+A quantity pairs a numeric value with a unit string. Actions that take duration, size, or similar measured arguments use this type.
+
+```ruby
+qty(number value, text unit)
+```
+
+```ruby
+#include 'actions/calendar'
+
+adjustDate("October 5, 2022", "Add", qty(3, "hr"))
+```
+
+The unit string must match what the action expects. See each action's parameter definition for accepted units.
+
+Quantity values support comparison operators in conditionals:
+
+```ruby
+@elapsed: number
+if @elapsed > qty(30, "sec") {
+    /* ... */
+}
+```
+
 ### Enumerations
 
 Some actions have arguments with the type `enum`, accompanied by a set of allowed values. This type only accepts specific string values.
@@ -419,6 +444,24 @@ The `number()` action should only coerce another value to a number, as an intege
 
 @var
 @textVar = getDictionary(@var)
+```
+
+### Content Item Types
+
+Any type from the [Content Item Types](#content-item-types) table can be used as a coercion suffix, not just `text` and `number`.
+
+```ruby
+@contact = @var.contact
+@dated = @var.date
+@linked = @var.url
+@img = @var.image
+@doc = @var.file
+```
+
+This also composes with dictionary key access:
+
+```ruby
+@getAs = @dictionary['Name'].contact
 ```
 
 ## Content Item Types
