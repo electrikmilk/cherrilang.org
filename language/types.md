@@ -451,6 +451,7 @@ The `number()` action should only coerce another value to a number, as an intege
 Any type from the [Content Item Types](#content-item-types) table can be used as a coercion suffix, not just `text` and `number`.
 
 ```ruby
+@var
 @contact = @var.contact
 @dated = @var.date
 @linked = @var.url
