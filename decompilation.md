@@ -1,7 +1,7 @@
 ---
 title: Import Shortcut
 layout: default
-nav_order: 3
+nav_order: 5
 ---
 
 # Convert Shortcut to Cherri
