@@ -60,7 +60,7 @@ Each identifier is derived from the file's display name or the media item's name
 
 Pass the reference identifier as an argument to any action that accepts it:
 
-```ruby
+```
 #ref GoLogo_Bluesvg eyJmaWxlbmFtZSI6IkdvLUxvZ29fQmx1ZS5zdmciLCJka...
 
 getFileFromFolder(GoLogo_Bluesvg)
