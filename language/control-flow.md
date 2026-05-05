@@ -163,6 +163,8 @@ Prepend an `if`, `menu`, `repeat`, or `for` statement with a constant statement 
 
 Conditonals can be used to create conditional output to a reference:
 
+This is functionally equivilent to a ternary expression.
+
 ```ruby
 #include 'actions/network'
 
