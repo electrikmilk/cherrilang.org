@@ -66,6 +66,8 @@ Pass the reference identifier as an argument to any action that accepts it:
 getFileFromFolder(GoLogo_Bluesvg)
 ```
 
+An arguments type will be prefixed with `&` in its definition if it accepts a reference.
+
 The compiler decodes the hash and injects the original device-specific value into the compiled Shortcut at that parameter position.
 
 {: .important }
