@@ -117,8 +117,6 @@ If a value never changes, `const` produces a smaller Shortcut with better perfor
 **After:**
 
 ```ruby
-#include 'actions/scripting'
-
 function calculateTotal(number price): number {
     const tax = @price * 0.08
     const total = @price + tax
