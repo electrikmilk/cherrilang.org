@@ -27,8 +27,6 @@ This abstraction is injected at the top of your Shortcut. [The first comment is 
 Define your action, then reference the action to run the contents of the function, isolated from the rest of your Shortcut:
 
 ```ruby
-#include 'actions/scripting'
-
 function add(number op1, number op2) {
   const result = @op1 + @op2
   output("{result}")
@@ -141,8 +139,6 @@ It is possible to call other functions within the body of a function. You can th
 Misuse of recursion can cause a Shortcut to infinitely loop.
 
 ```ruby
-#include 'actions/scripting'
-
 function fibonacci(number n): number {
     if @n <= 1 {
         output("{@n}")
@@ -169,7 +165,6 @@ This is primarily to still be able to add an instructional or contact comment at
 ```ruby
 #include 'stdlib'
 
-#include 'actions/scripting'
 #include 'actions/text'
 #include 'actions/web'
 
@@ -226,8 +221,6 @@ At the end, just in case no output was defined in the function body that was cal
 Then, when you reference the function described `add(number, number)`
 
 ```ruby
-#include 'actions/scripting'
-
 function add(number op1, number op2) {
   const result = @op1 + @op2
   output("{result}")
