@@ -1,5 +1,5 @@
 ---
-title: Standard Library
+title: Standard Functions
 layout: default
 grand_parent: Documentation
 parent: Actions
