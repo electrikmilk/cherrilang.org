@@ -266,7 +266,7 @@ The action may be missing from Cherri's standard library. Define it as a custom 
 
 ### Missing action includes
 
-Add the appropriate `#include` at the top of the file. Check the [Standard Library documentation](/language/standard) for which file each action belongs to.
+Add the appropriate `#include` at the top of the file. Check the [standard actions](/language/standard) for which file each action belongs to.
 
 ### Type errors
 
