@@ -182,8 +182,6 @@ const TIMEOUT = 30
 **helpers.cherri:**
 
 ```
-#include 'actions/scripting'
-
 function formatDate(date input): text {
     output("{formattedDate}")
 }
