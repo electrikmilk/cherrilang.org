@@ -79,8 +79,6 @@ const location = getCurrentLocation()
 const weather = getCurrentWeather(location)
 ```
 
-Check the [Standard Library documentation](/language/standard/stdlib) to find which include file contains each action.
-
 {: .note }
 If you encounter `rawAction(...)` for a standard Shortcuts action, it may be missing from Cherri's standard library. Consider defining it as a custom action or reporting it as an issue.
 
