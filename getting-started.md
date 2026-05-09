@@ -121,7 +121,7 @@ Compile and transfer to your device — it will ask for your name and greet you 
 
 ---
 
-## Using Standard Library Actions
+## Using Standard Actions
 
 ```ruby
 #include 'actions/device'
@@ -136,8 +136,6 @@ const battery = getBatteryLevel()
 
 show("Device: {deviceName}\nModel: {model}\nOS: {osVersion}\nBattery: {battery}%")
 ```
-
-See the [Standard Library documentation](/language/standard/stdlib) for all available actions.
 
 ---
 
