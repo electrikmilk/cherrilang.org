@@ -1,5 +1,5 @@
 ---
-title: Raw Action
+title: Raw Actions
 layout: default
 parent: Documentation
 nav_order: 13
