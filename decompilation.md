@@ -42,6 +42,22 @@ The import feature works best with an iCloud link, as decompiling signed Shortcu
 
 Keep in mind this is mainly meant to be a starting point, and you may in some cases need to do some modifications to get it working.
 
+## Standard Action Output
+
+When Cherri recognizes a standard action, import output uses the standard Cherri syntax instead of `rawAction(...)`.
+For example, a Shortcut that logs blood pressure to Health decompiles to:
+
+```ruby
+#include 'actions/health'
+
+const systolic = prompt("Systolic", "Number")
+const diastolic = prompt("Diastolic", "Number")
+
+logBloodPressure(qty(systolic, "mmHg"), qty(diastolic, "mmHg"))
+```
+
+If an action is not implemented in Cherri, import will keep it as a [raw action](/language/raw-actions).
+
 ### Caveats
 
 These two features are currently not supported in Cherri and so cannot be decompiled:
