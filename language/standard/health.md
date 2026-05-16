@@ -35,7 +35,7 @@ const diastolic = prompt("Diastolic", "Number")
 logBloodPressure(qty(systolic, "mmHg"), qty(diastolic, "mmHg"))
 ```
 
-The generated Shortcut writes the reading to Health using the Shortcuts Health sample action. The macOS HealthKit SDK used for validation exposes 120 quantity identifiers, 70 category identifiers, 2 correlation identifiers, and 84 workout activity types.
+The generated Shortcut writes the reading to Health using Shortcuts' Health actions. The macOS HealthKit SDK used for validation exposes 120 quantity identifiers, 70 category identifiers, 2 correlation identifiers, and 84 workout activity types. Cherri also supports the Health app navigation intents available in Shortcuts, including opening views, data types, categories, records, search, tabs, and the sleep schedule.
 
 ## Samples
 
@@ -195,6 +195,25 @@ findHealthSamples(steps)
 
 ---
 
+### Get Details of Health Sample
+
+Get a detail from a Health sample returned by a Health action.
+
+```
+getHealthSampleDetail(variable sample, text detail)
+```
+
+**Example Usage**
+
+```ruby
+#include 'actions/health'
+
+const steps = logHealthQuantity(qty(20, "count"), "Steps", CurrentDate)
+getHealthSampleDetail(steps, "Value")
+```
+
+---
+
 ### Open Health View
 
 Open a Health category view. The identifier is Apple's Health target identifier, and the optional title and symbol are used by the Shortcuts action target payload.
@@ -227,16 +246,118 @@ openHealthData("HKDisplayTypeIdentifierForcedVitalCapacity", "Forced Vital Capac
 
 ---
 
+### Open Health Category
+
+Open a Health category.
+
+```
+openHealthCategory(text identifier, text ?title, text ?symbol)
+```
+
+**Example Usage**
+
+```ruby
+openHealthCategory("HKDisplayCategoryIdentifier_13", "Respiratory", "lungs.fill")
+```
+
+---
+
+### Open Health Records
+
+Open a records section in Health.
+
+```
+openHealthRecords(text identifier, text ?title, text ?symbol)
+```
+
+**Example Usage**
+
+```ruby
+openHealthRecords("labs", "Lab Results", "cross.case.fill")
+```
+
+---
+
+### Search in Health
+
+Open Health and search for text.
+
+```
+openHealthSearch(text query)
+```
+
+**Example Usage**
+
+```ruby
+openHealthSearch("steps")
+```
+
+---
+
+### Open Sleep Schedule
+
+Open the sleep schedule in Health.
+
+```
+openSleepSchedule()
+openSleepScheduleLegacy()
+```
+
+**Example Usage**
+
+```ruby
+openSleepSchedule()
+```
+
+---
+
+### Open Health Tab
+
+Open a tab in Health.
+
+```
+openHealthTab(text identifier, text ?title, text ?symbol)
+```
+
+**Example Usage**
+
+```ruby
+openHealthTab("summary", "Summary", "heart.text.square")
+```
+
+---
+
 ### Log Workout
 
 Log a workout to Health.
 
 ```
-logWorkout(text workoutType, #healthQuantityUnit (qty)?calories)
+logWorkout(text workoutType, #healthQuantityUnit (qty)?calories, variable ?date, #healthQuantityUnit (qty)?duration, #healthQuantityUnit (qty)?distance)
 ```
 
 **Example Usage**
 
 ```ruby
 logWorkout("Basketball", qty(500, "Cal"))
+logWorkout("Basketball", qty(500, "Cal"), CurrentDate, qty(30, "min"), qty(1, "km"))
+```
+
+---
+
+## Activity
+
+### Get Physical Activity
+
+Get the current physical activity detected by the system.
+
+```
+getPhysicalActivity(): text
+```
+
+The result is one of `Unknown`, `Stationary`, `Walking`, `Running`, `Cycling`, `In a Stationary Vehicle`, `In a Moving Vehicle`, or `Moving`.
+
+**Example Usage**
+
+```ruby
+getPhysicalActivity()
 ```
