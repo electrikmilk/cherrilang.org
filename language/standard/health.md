@@ -62,7 +62,7 @@ logBloodPressure(qty(120, "mmHg"), qty(80, "mmHg"), CurrentDate)
 
 ---
 
-### Log Health Quantity
+### Log Health Quantity Sample
 
 Log a single quantity sample to Health.
 
@@ -135,7 +135,7 @@ enum healthQuantitySampleType {
     'Diastolic Blood Pressure',
 }
 
-logHealthQuantity(#healthQuantityUnit (qty)?quantity, healthQuantitySampleType sampleType, variable ?date)
+logHealthQuantitySample(#healthQuantityUnit (qty)?quantity, healthQuantitySampleType sampleType, variable ?date)
 ```
 
 **Example Usage**
@@ -143,16 +143,16 @@ logHealthQuantity(#healthQuantityUnit (qty)?quantity, healthQuantitySampleType s
 ```ruby
 #include 'actions/health'
 
-logHealthQuantity(qty(72, "count/min"), "Heart Rate")
-logHealthQuantity(qty(70, "kg"), "Body Mass")
-logHealthQuantity(qty(20, "count"), "Steps", CurrentDate)
+logHealthQuantitySample(qty(72, "count/min"), "Heart Rate")
+logHealthQuantitySample(qty(70, "kg"), "Body Mass")
+logHealthQuantitySample(qty(20, "count"), "Steps", CurrentDate)
 ```
 
 If you are logging blood pressure, prefer `logBloodPressure()` so the systolic and diastolic values are recorded together.
 
 ---
 
-### Log Health Category
+### Log Health Category Sample
 
 Log a category sample, such as a symptom, mindful session, or sleep analysis, to Health. The `value` and optional `additionalValue` strings map directly to Shortcuts' Health category picker values.
 
@@ -165,13 +165,13 @@ enum healthCategorySampleType {
     'Mindful Session',
 }
 
-logHealthCategory(healthCategorySampleType sampleType, text value, text ?additionalValue, variable ?startDate, variable ?endDate)
+logHealthCategorySample(healthCategorySampleType sampleType, text value, text ?additionalValue, variable ?startDate, variable ?endDate)
 ```
 
 **Example Usage**
 
 ```ruby
-logHealthCategory("Acne", "Present", nil, CurrentDate, CurrentDate)
+logHealthCategorySample("Acne", "Present", nil, CurrentDate, CurrentDate)
 ```
 
 ---
@@ -189,7 +189,7 @@ findHealthSamples(variable input): array
 ```ruby
 #include 'actions/health'
 
-const steps = logHealthQuantity(qty(20, "count"), "Steps", CurrentDate)
+const steps = logHealthQuantitySample(qty(20, "count"), "Steps", CurrentDate)
 findHealthSamples(steps)
 ```
 
@@ -208,7 +208,7 @@ getHealthSampleDetail(variable sample, text detail)
 ```ruby
 #include 'actions/health'
 
-const steps = logHealthQuantity(qty(20, "count"), "Steps", CurrentDate)
+const steps = logHealthQuantitySample(qty(20, "count"), "Steps", CurrentDate)
 getHealthSampleDetail(steps, "Value")
 ```
 
