@@ -115,7 +115,7 @@ https://{uri}/{package_author}/cherri-{package_name}.git
 If you answer yes, the package signature is saved to `~/.cherri/trusted.plist` and future installs of that package won't prompt again.
 
 {: .warning }
-Review packages before trusting them. Once trusted, a package can add actions to your Shortcut.
+Review packages before trusting them. Once trusted, a package can add to your Shortcut.
 
 ## Dependencies
 
