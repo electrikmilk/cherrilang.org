@@ -142,8 +142,6 @@ show("Device: {deviceName}\nModel: {model}\nOS: {osVersion}\nBattery: {battery}%
 ## Working with Functions
 
 ```ruby
-#include 'actions/scripting'
-
 #define glyph calculator
 #define color green
 
