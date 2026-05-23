@@ -1,5 +1,5 @@
 ---
-title: Enums
+title: Enumerations
 layout: default
 parent: Documentation
 nav_order: 6
@@ -8,7 +8,7 @@ nav_order: 6
 # Enums
 {: .no_toc }
 
-Enums define a named set of accepted string values for use in action parameters.
+Enumerations define a named set of accepted string values for use in action parameters.
 
 ## Table of contents
 {: .no_toc .text-delta }
