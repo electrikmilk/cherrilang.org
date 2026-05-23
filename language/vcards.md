@@ -27,8 +27,6 @@ It uses the arguments at compile time using `title` as the name, the `subtitle` 
 The example below uses this built-in action to make a vCard menu.
 
 ```ruby
-#include 'actions/scripting'
-
 /* Generate items */
 @items = []
 repeat i for 3 {
