@@ -29,7 +29,7 @@ nav_order: 5
 Base 64 decodes input.
 
 ```
-base64Decode(variable input): text
+base64Decode(variable input): variable
 ```
 
 ---

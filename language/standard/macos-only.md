@@ -124,7 +124,7 @@ startScreensaver()
 ### Run Apple Script
 
 ```
-runAppleScript(rawtext script, variable input)
+runAppleScript(rawtext script, variable ?input)
 ```
 
 **Only supported on macOS.**
@@ -134,7 +134,7 @@ runAppleScript(rawtext script, variable input)
 ### Run JavaScript for Automation
 
 ```
-runJSAutomation(variable input, text script)
+runJSAutomation(text script, variable ?input)
 ```
 
 **Only supported on macOS.**
@@ -144,7 +144,7 @@ runJSAutomation(variable input, text script)
 ### Run Shell Script
 
 ```
-runShellScript(text script, variable input, text ?shell = "/bin/zsh", text ?inputMode = "to stdin")
+runShellScript(text script, variable ?input, text ?shell = "/bin/zsh", text ?inputMode = "to stdin")
 ```
 
 **Only supported on macOS.**

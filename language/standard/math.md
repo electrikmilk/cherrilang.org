@@ -77,17 +77,27 @@ statistic(statisticOperations operation, variable input)
 Rounds number to specified rounding place.
 
 ```
-enum rounding {
-    'Ones Place',
-    'Tens Place',
-    'Hundreds Place',
-    'Thousands',
-    'Ten Thousands',
-    'Hundred Thousands',
+enum roundingPlace {
     'Millions',
+    'Hundred Thousands',
+    'Ten Thousands',
+    'Thousands',
+    'Hundreds',
+    'Tens',
+    'Integer',
+    'Tenths',
+    'Hundredths',
+    'Thousandths',
+    'Ten-Thousandths',
+    'Hundred-Thousandths',
+    'Millionths',
+    'Ten-Millionths',
+    'Hundred-Millionths',
+    'Billionths',
+    '10^',
 }
 
-round(number number, rounding ?roundTo = "Ones Place")
+round(number number, roundingPlace ?roundTo = "Integer"): number
 ```
 
 ---
@@ -97,17 +107,27 @@ round(number number, rounding ?roundTo = "Ones Place")
 Always round a number down to a specified rounding place.
 
 ```
-enum rounding {
-    'Ones Place',
-    'Tens Place',
-    'Hundreds Place',
-    'Thousands',
-    'Ten Thousands',
-    'Hundred Thousands',
+enum roundingPlace {
     'Millions',
+    'Hundred Thousands',
+    'Ten Thousands',
+    'Thousands',
+    'Hundreds',
+    'Tens',
+    'Integer',
+    'Tenths',
+    'Hundredths',
+    'Thousandths',
+    'Ten-Thousandths',
+    'Hundred-Thousandths',
+    'Millionths',
+    'Ten-Millionths',
+    'Hundred-Millionths',
+    'Billionths',
+    '10^',
 }
 
-floor(number number, rounding ?roundTo = "Ones Place")
+floor(number number, roundingPlace ?roundTo = "Integer"): number
 ```
 
 ---
@@ -117,15 +137,91 @@ floor(number number, rounding ?roundTo = "Ones Place")
 Always round a number up to a specified rounding place.
 
 ```
-enum rounding {
-    'Ones Place',
-    'Tens Place',
-    'Hundreds Place',
-    'Thousands',
-    'Ten Thousands',
-    'Hundred Thousands',
+enum roundingPlace {
     'Millions',
+    'Hundred Thousands',
+    'Ten Thousands',
+    'Thousands',
+    'Hundreds',
+    'Tens',
+    'Integer',
+    'Tenths',
+    'Hundredths',
+    'Thousandths',
+    'Ten-Thousandths',
+    'Hundred-Thousandths',
+    'Millionths',
+    'Ten-Millionths',
+    'Hundred-Millionths',
+    'Billionths',
+    '10^',
 }
 
-ceil(number number, rounding ?roundTo = "Ones Place")
+ceil(number number, roundingPlace ?roundTo = "Integer"): number
 ```
+## Measurement
+
+### Convert Measurement
+
+```
+enum measurementUnitType {
+    'Acceleration',
+    'Angle',
+    'Area',
+    'Concentration Mass',
+    'Dispersion',
+    'Duration',
+    'Electric Charge',
+    'Electric Current',
+    'Electric Potential Difference',
+    'V Electric Resistance',
+    'Energy',
+    'Frequency',
+    'Fuel Efficiency',
+    'Illuminance',
+    'Information Storage',
+    'Length',
+    'Mass',
+    'Power',
+    'Pressure',
+    'Speed',
+    'Temperature',
+    'Volume',
+}
+
+convertMeasurement(variable measurement, measurementUnitType unitType, text unit)
+```
+
+---
+
+### Create Measurement
+
+```
+enum measurementUnitType {
+    'Acceleration',
+    'Angle',
+    'Area',
+    'Concentration Mass',
+    'Dispersion',
+    'Duration',
+    'Electric Charge',
+    'Electric Current',
+    'Electric Potential Difference',
+    'V Electric Resistance',
+    'Energy',
+    'Frequency',
+    'Fuel Efficiency',
+    'Illuminance',
+    'Information Storage',
+    'Length',
+    'Mass',
+    'Power',
+    'Pressure',
+    'Speed',
+    'Temperature',
+    'Volume',
+}
+
+measurement(text magnitude, measurementUnitType unitType, text unit)
+```
+

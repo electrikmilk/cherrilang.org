@@ -152,7 +152,7 @@ getMatchGroups(variable matches)
 
 ### Match Text
 
-Use regular expressions to match text.
+Use regular expressions to match text. Use raw text (single quotes) to match using an regular expression with braces to avoid conflicts with the regular expression syntax.
 
 ```
 matchText(text regexPattern, text text, bool ?caseSensitive = true)
@@ -268,7 +268,7 @@ lowercase(text text): text
 
 ### Replace Text
 
-Replace `find` in `subject`, optionally using a regular expression or case insensitive search.
+Replace `find` in `subject`, optionally using a regular expression or case insensitive search. Use raw text (single quotes) to match using an regular expression with braces to avoid conflicts with the regular expression syntax.
 
 ```
 replaceText(text find, text replacement, text subject, bool ?caseSensitive = true, bool ?regExp = false): text

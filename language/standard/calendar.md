@@ -202,7 +202,7 @@ enum dateUnit {
     'yr',
 }
 
-adjustDate(text date, dateAdjustOperation operation, #dateUnit (qty)?unit): date
+adjustDate(text date, dateAdjustOperation operation, dateUnit ?unit): date
 ```
 
 ---
@@ -405,5 +405,5 @@ enum timeDuration {
     'sec',
 }
 
-startTimer(#timeDuration (qty)?duration = qty(0, "min"))
+startTimer(timeDuration ?duration = qty(0, "min"))
 ```

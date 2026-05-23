@@ -233,3 +233,183 @@ Get results from search on iOS or iPadOS, and Spotlight on macOS.
 ```
 search(text query, number ?limit = 5, array ?resultType = [Calendar Events Contacts Mail Messages Notes Photos Reminders Voice Recordings Bookmarks]): array
 ```
+## Dictionaries
+
+### Get Dictionary
+
+Get the dictionary from `input`.
+
+```
+getDictionary(variable input): dictionary
+```
+
+---
+
+### Get Keys from Dictionary
+
+Get only the keys from the `dictionary`.
+
+```
+getKeys(dictionary dictionary): array
+```
+
+---
+
+### Get Value from Dictionary
+
+For constants only, otherwise `dictionary['key']` syntax should be used.
+
+```
+getValue(dictionary dictionary, text key): variable
+```
+
+---
+
+### Get Values from Dictionary
+
+Get only the values from the `dictionary`.
+
+```
+getValues(dictionary dictionary): array
+```
+
+---
+
+### Set Value in Dictionary
+
+Set the value of `key` to `value` in `dictionary`.
+
+```
+setValue(variable dictionary, text key, text value): dictionary
+```
+
+## Items
+
+### Get Name
+
+Get the name of an item.
+
+```
+getName(variable item)
+```
+
+---
+
+### Set Name
+
+Set the name of an item.
+
+```
+setName(variable item, text name, bool ?includeFileExtension = false)
+```
+
+## Lists
+
+### Choose from List
+
+Prompts the user to choose from a list.
+
+```
+chooseFromList(variable list, text ?prompt, bool ?selectMultiple = false, bool ?selectAll = false)
+```
+
+---
+
+### Get First Item
+
+Get first item in a list.
+
+```
+getFirstItem(variable list): variable
+```
+
+---
+
+### Get Last Item
+
+Get the last item in a list.
+
+```
+getLastItem(variable list): variable
+```
+
+---
+
+### Get List Item
+
+Get item from `list` at `index`. Keep in mind Shortcuts starts counting indexes at 1.
+
+```
+getListItem(variable list, number index): variable
+```
+
+---
+
+### Get List Items
+
+Get items from a `list` between two indexes. Keep in mind Shortcuts starts counting indexes at 1.
+
+```
+getListItems(variable list, number start, number end): array
+```
+
+---
+
+### Get Random Item
+
+Get random item from list.
+
+```
+getRandomItem(variable list): variable
+```
+
+---
+
+### List
+
+Create an immutable array of text.
+
+```
+list(text ...listItem)
+```
+
+## Numbers
+
+### Format Number
+
+Format number based on decimal place.
+
+```
+formatNumber(number number, number ?decimalPlaces = 2): number
+```
+
+---
+
+### Get Numbers
+
+Get numbers from input.
+
+```
+getNumbers(variable input): number
+```
+
+---
+
+### Number
+
+Create a number value.
+
+```
+number(variable number): number
+```
+
+---
+
+### Random Number
+
+Returns a random number between `min` and `max`.
+
+```
+randomNumber(number min, number max): number
+```
+

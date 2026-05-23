@@ -272,4 +272,30 @@ toggleWifi()
 
 ```
 setMultitaskingMode(bool ?automaticallyShowAndHideDock = true)
+```### Get Multitasking Mode
+
+Get the current multitasking mode.
+
+```
+getMultitaskingMode(): text
+```
+
+---
+
+### Set Stage Manager Multitasking Mode
+
+Set the multitasking mode to Stage Manager. Applies to iPadOS and macOS only.
+
+```
+setStageManagerMultitasking(bool ?automaticallyShowAndHideDock, bool ?showRecentApps)
+```
+
+---
+
+### Set Windowed Multitasking Mode
+
+Set the multitasking mode to windowed. Applies to iPadOS and macOS only.
+
+```
+setWindowedMultitasking(bool ?automaticallyShowAndHideDock)
 ```

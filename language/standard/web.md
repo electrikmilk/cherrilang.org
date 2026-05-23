@@ -77,7 +77,7 @@ searchGiphy(text query)
 Download the contents of a URL.
 
 ```
-downloadURL(text url, dictionary ?headers)
+downloadURL(text url, dictionary ?headers): variable
 ```
 
 ---

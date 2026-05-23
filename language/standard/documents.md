@@ -88,17 +88,17 @@ markup(variable document)
 Append text to a file.
 
 ```
-appendToFile(text filePath, text text)
+appendToFile(text filePath, &variable text)
 ```
 
 ---
 
 ### Create Folder
 
-Create a folder.
+Create a folder within the Shortcuts folder or within a `#ref` to a folder.
 
 ```
-createFolder(text path)
+createFolder(text path, &variable ?folder)
 ```
 
 ---
@@ -108,7 +108,7 @@ createFolder(text path)
 Delete a file or multiple files.
 
 ```
-deleteFiles(variable input, bool ?immediately = false)
+deleteFiles(&variable input, bool ?immediately = false)
 ```
 
 ---
@@ -131,7 +131,7 @@ enum fileSizeFormat {
     'Yottabytes',
 }
 
-fileSize(variable file, fileSizeFormat format)
+fileSize(text file, fileSizeFormat format)
 ```
 
 ---
@@ -167,10 +167,10 @@ filterFiles(variable files, number ?limit, filesSortBy ?sortBy, fileOrderings ?o
 
 ### Get File
 
-Get file from a path in the Shortcuts folder.
+Get file from a path in the Shortcuts folder or within a `#ref` to a folder.
 
 ```
-getFile(text path, bool ?errorIfNotFound = true)
+getFile(text path, &variable ?folder, bool ?errorIfNotFound = true)
 ```
 
 ---
@@ -196,7 +196,7 @@ getFileDetail(variable file, fileDetail detail)
 
 ### Get File From Folder
 
-Get a file from a folder.
+Get a file from a folder. Prepend path with a `~` to access the home folder on macOS.
 
 ```
 getFileFromFolder(text folder, text path, bool ?errorIfNotFound = true)
@@ -229,7 +229,7 @@ getFolderContents(variable folder, bool ?recursive = false)
 Get the parent directory of the input directory.
 
 ```
-getParentDirectory(variable input)
+getParentDirectory(&variable input)
 ```
 
 ---
@@ -267,7 +267,7 @@ labelFile(variable file, fileLabel color)
 Open a file.
 
 ```
-openFile(variable file, bool ?askWhenRun = false)
+openFile(&variable file, bool ?askWhenRun = false)
 ```
 
 ---
@@ -277,7 +277,7 @@ openFile(variable file, bool ?askWhenRun = false)
 Prepend text to a file.
 
 ```
-prependToFile(text filePath, text text)
+prependToFile(text filePath, &variable text)
 ```
 
 ---
@@ -285,7 +285,7 @@ prependToFile(text filePath, text text)
 ### Rename File
 
 ```
-rename(variable file, text newName)
+rename(&variable file, text newName)
 ```
 
 ---
@@ -293,7 +293,7 @@ rename(variable file, text newName)
 ### Reveal in Finder
 
 ```
-reveal(variable files)
+reveal(&variable files)
 ```
 
 ---
@@ -303,7 +303,7 @@ reveal(variable files)
 Save contents to a file at the specified path.
 
 ```
-saveFile(text path, variable content, bool ?overwrite = false)
+saveFile(text path, &variable content, bool ?overwrite = false)
 ```
 
 ---
@@ -341,7 +341,17 @@ selectFolder(bool ?selectMultiple = false)
 Get contents of a folder.
 
 ```
-getFolderContents(variable folder, bool ?recursive = false)
+getFolderContents(&variable folder, bool ?recursive = false)
+```
+
+---
+
+### File
+
+Insert a `#ref` to a file.
+
+```
+file(&variable file): variable
 ```
 
 ---

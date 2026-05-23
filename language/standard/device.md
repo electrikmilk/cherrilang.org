@@ -163,6 +163,36 @@ Determines if the device is currently charging.
 isCharging(): bool
 ```
 
+---
+
+### Charge Limit
+
+Returns the current charge limit of the device battery.
+
+```
+getChargeLimit(): number
+```
+
+---
+
+### Set Low Power Mode
+
+```
+setLowPowerMode(bool status)
+```
+
+**Only supported on iOS/iPadOS.**
+
+---
+
+### Toggle Low Power Mode
+
+```
+toggleLowPowerMode()
+```
+
+**Only supported on iOS/iPadOS.**
+
 ## Screen Time
 
 ### Get Website & App Activity
@@ -187,3 +217,247 @@ enum usageDuration {
 
 getDeviceUsage(deviceUsageType ?usageType = "all", variable ?device, usageDuration ?during = "today", text ?startTime, text ?startTime)
 ```
+## Apps
+
+### Hide App
+
+Hide an app.
+
+```
+hideApp(text appID)
+```
+
+---
+
+### Hide Apps
+
+Hide multiple apps. Allows exception.
+
+```
+hideAllApps(text ...?except)
+```
+
+---
+
+### Kill All Apps
+
+{: .warning }
+This will quit all the apps running on the device without asking to save changes!
+
+Kills all apps. Allows exceptions.
+
+```
+killAllApps(text ...?except)
+```
+
+---
+
+### Kill App
+
+{: .warning }
+This will not ask to save changes!
+
+Kill an app.
+
+```
+killApp(text appID)
+```
+
+---
+
+### Open App
+
+Open an app.
+
+```
+openApp(text appID)
+```
+
+---
+
+### Quit All Apps
+
+Quits all apps. Allows exceptions.
+
+```
+quitAllApps(text ...?except)
+```
+
+---
+
+### Quit App
+
+Quit an app.
+
+```
+quitApp(text appID)
+```
+
+---
+
+### Split Apps
+
+Split apps across the screen.
+
+```
+enum appSplitRatio {
+    'half',
+    'thirdByTwo',
+}
+
+splitApps(text firstAppID, text secondAppID, appSplitRatio ?ratio = "half")
+```
+
+## Connectivity
+
+### Set Airplane Mode
+
+```
+setAirplaneMode(bool status)
+```
+
+---
+
+### Set Bluetooth
+
+```
+setBluetooth(bool status)
+```
+
+---
+
+### Set Cellular Data
+
+```
+setCellularData(bool status)
+```
+
+---
+
+### Set Wifi
+
+```
+setWifi(bool status)
+```
+
+---
+
+### Toggle Airplane Mode
+
+```
+toggleAirplaneMode()
+```
+
+---
+
+### Toggle Bluetooth
+
+```
+toggleBluetooth()
+```
+
+---
+
+### Toggle Cellular Data
+
+```
+toggleCellularData()
+```
+
+---
+
+### Toggle Wifi
+
+```
+toggleWifi()
+```
+
+## Display
+
+### Get Orientation
+
+Get the current orientation of the device.
+
+```
+getOrientation(): text
+```
+
+---
+
+### Set Brightness
+
+```
+setBrightness(float brightness)
+```
+
+---
+
+### Set Orientation Lock
+
+```
+setOrientationLock(bool status)
+```
+
+**Only supported on iOS/iPadOS.**
+
+---
+
+### Toggle Orientation Lock
+
+```
+toggleOrientationLock()
+```
+
+**Only supported on iOS/iPadOS.**
+
+## Passwords
+
+### Search Passwords
+
+Searches passwords in the Passwords app.
+
+```
+searchPasswords(text query)
+```
+
+## Personal Hotspot
+
+### Set Personal Hotspot
+
+```
+setHotspot(bool status)
+```
+
+**Only supported on iOS/iPadOS.**
+
+---
+
+### Toggle Personal Hotspot
+
+```
+toggleHotspot()
+```
+
+**Only supported on iOS/iPadOS.**
+
+## System
+
+### Dismiss Siri
+
+Dismisses Siri.
+
+```
+dismissSiri()
+```
+
+---
+
+### Return to Home Screen
+
+Returns to the device home screen.
+
+```
+returnToHomescreen()
+```
+
+**Only supported on iOS/iPadOS.**

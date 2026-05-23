@@ -178,7 +178,7 @@ enum seekBehavior {
     'Backward By',
 }
 
-seek(#timeDuration (qty)?timeInterval = qty(0, "sec"), seekBehavior ?behavior = "To Time")
+seek(timeDuration ?timeInterval = qty(0, "sec"), seekBehavior ?behavior = "To Time")
 ```
 
 ---
