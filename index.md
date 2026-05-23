@@ -143,7 +143,7 @@ Macros exist to copy and paste code automatically at compile-time.
 copy checkConnection {
     const online = isOnline()
     if !online {
-        alert("No internet connection!")
+        alert("No internet connection")
     }
 }
 
