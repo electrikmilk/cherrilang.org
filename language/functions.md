@@ -184,8 +184,6 @@ This is a part of the language that does not translate 1-1, but for the function
 The semantics of this may change over time, but it roughly translates to this in Cherri:
 
 ```ruby
-#include 'actions/scripting'
-
 if ShortcutInput {
     const inputType = typeOf(ShortcutInput)
     if inputType == "Dictionary" {
