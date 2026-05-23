@@ -49,6 +49,7 @@ Calling the action with an enum value:
 ```ruby
 #include 'actions/crypto'
 
+@input = "Hello, Cherri!"
 const result = hash(@input, "SHA256")
 ```
 
