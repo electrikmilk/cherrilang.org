@@ -29,6 +29,16 @@ You can use an alternative or local server running (shortcut-signing-server)[htt
 
 This may work on Windows but has not been tested, so you may experience issues.
 
+## How Do I Get Reproducible Compiled Output?
+
+By default, every compilation assigns random UUIDs to each action inside the `.shortcut` file. This means re-compiling the same source produces a binary-different file even when nothing changed, which makes version control diffs noisy and CI comparisons unreliable.
+
+Pass `--derive-uuids` to make those UUIDs deterministic. They are derived from the workflow name and action salt using a content hash, so the same source always produces the same output.
+
+```console
+cherri --derive-uuids main.cherri
+```
+
 ## Can I Build & Run On...?
 
 Of course, you can still build and run the compiler on any platform that the Go programming language will compile on. Cherri will skip signing the compiled Shortcut, but it will still compile. I don't make builds for those platforms, so that no one is confused and thinks that Shortcuts compiled using Cherri on other platforms will be able to be imported and run on any of their Apple devices.
