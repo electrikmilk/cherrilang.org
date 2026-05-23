@@ -45,16 +45,6 @@ Keep in mind this is mainly meant to be a starting point, and you may in some ca
 ## Standard Action Output
 
 When Cherri recognizes a standard action, import output uses the standard Cherri syntax instead of `rawAction(...)`.
-For example, a Shortcut that logs blood pressure to Health decompiles to:
-
-```ruby
-#include 'actions/health'
-
-const systolic = prompt("Systolic", "Number")
-const diastolic = prompt("Diastolic", "Number")
-
-logBloodPressure(qty(systolic, "mmHg"), qty(diastolic, "mmHg"))
-```
 
 If an action is not implemented in Cherri, import will keep it as a [raw action](/language/raw-actions).
 
