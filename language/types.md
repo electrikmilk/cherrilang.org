@@ -134,8 +134,6 @@ You can declare a dictionary using valid JSON syntax.
 You can access a dictionary value by key:
 
 ```ruby
-#include 'actions/scripting'
-
 @dictionary = {}
 
 // allows for variable references
