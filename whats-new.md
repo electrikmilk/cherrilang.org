@@ -6,35 +6,19 @@ nav_order: 1
 
 # What's New?
 
-## 🔥 New Release
+## 🚀 New Release
 
-v2.2.0 is now out!
+v2.3.0 is now out!
 
-[Learn more](https://github.com/electrikmilk/cherri/releases/tag/v2.2.0){: .btn }
-
----
-
-## 🔗 Share Cherri Code
-
-Check out the new **Share** option in the Cherri Playground to share Cherri code with anyone!
-
-[Open Playground](https://playground.cherrilang.org/){: .btn }
+[Learn more](https://github.com/electrikmilk/cherri/releases/tag/v2.3.0){: .btn }
 
 ---
 
-## 📱 Import Actions
+## 📂 Content References
 
-Cherri can now import actions from macOS.
+Include device-specific references to files or music.
 
-[Learn more](language/import-actions){: .btn }
-
----
-
-## 📦 Packages
-
-Cherri now has a package manager built into the CLI based on remote Git repositories.
-
-[Learn more](language/package-manager){: .btn }
+[Learn more](language/references){: .btn }
 
 ---
 
