@@ -19,12 +19,3 @@ v2.3.0 is now out!
 Include device-specific references to files or music.
 
 [Learn more](language/references){: .btn }
-
----
-
-## 🛟 Help
-
-Check out the new guides:
-
-- [Getting Started](https://cherrilang.org/language/getting-started)
-- [Migration Guide](https://cherrilang.org/language/migration)
