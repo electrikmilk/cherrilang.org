@@ -111,8 +111,6 @@ Include multiple files and files within folders, etc., to create and maintain la
 Functions run within their own scope at the top of the Shortcut, called via the Run Shortcut action.
 
 ```ruby
-#include 'actions/scripting'
-
 function myFunc(text test) {
     output("{@test}")
 }
