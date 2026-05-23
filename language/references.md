@@ -8,9 +8,6 @@ nav_order: 5
 # Content References
 {: .no_toc }
 
-Future release
-{: .label .label-purple }
-
 Embed device-specific file and media references from a Shortcut so they can be declared and used in Cherri code.
 
 Some Shortcut actions accept files or media items that are bound to a specific device — for example, a specific file in iCloud Drive or a song in your Music library. These values cannot be written by hand; they must be captured from a Shortcut that already has them configured.
