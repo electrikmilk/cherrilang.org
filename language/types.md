@@ -100,7 +100,7 @@ Booleans translate to a number value of `1` for `true` and `0` for `false`.
 @boolVarFalse = false
 ```
 
-Boolean variables can be used in conditionals.
+Booleans can be used in conditionals.
 
 ```ruby
 @boolVarTrue = true
@@ -211,7 +211,7 @@ Actions have output types. View the [actions](/language/actions) documentation t
 
 A quantity pairs a numeric value with a unit string. Actions that take duration, size, or similar measured arguments use this type.
 
-```ruby
+```
 qty(number value, text unit)
 ```
 
