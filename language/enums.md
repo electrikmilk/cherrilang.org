@@ -5,7 +5,7 @@ parent: Documentation
 nav_order: 6
 ---
 
-# Enums
+# Enumerations
 {: .no_toc }
 
 Enumerations define a named set of accepted string values for use in action parameters.
