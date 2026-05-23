@@ -57,7 +57,7 @@ const result = hash(@input, "SHA256")
 
 The standard library action pages show the enum definition inline alongside each action that uses one. These enums are defined inside the Cherri compiler - you do not need to define them yourself when using standard library actions.
 
-For example, from the [Crypto](/language/standard/crypto) page:
+For example, from the [Crypto](/language/standard/crypto) actions:
 
 ```
 enum hashAlgorithm {
