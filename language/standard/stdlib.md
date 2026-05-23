@@ -31,7 +31,6 @@ chooseFromVCard(array items, text prompt)
 ```ruby
 #include 'stdlib'
 
-#include 'actions/scripting'
 #include 'actions/text'
 #include 'actions/web'
 
