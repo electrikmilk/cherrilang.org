@@ -23,11 +23,11 @@ Enums define a named set of accepted string values for use in action parameters.
 ```
 enum typeName {
     'Option1',
-    'Option2',
+    'Option2'
 }
 ```
 
-Each value is a quoted string. A trailing comma after the last value is allowed.
+Each value is raw text (single quoted string). A trailing comma after the last value is allowed.
 
 ## Using enums in action definitions
 
