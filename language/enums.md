@@ -34,7 +34,7 @@ Each value is raw text (single quoted string). A trailing comma after the last v
 Enums are used as parameter types in [action definitions](/language/action-definitions). When an action parameter has an enum type, only the declared values are accepted.
 
 ```
-enum hashAlgorithm {
+enum hashType {
     'MD5',
     'SHA1',
     'SHA256',
@@ -60,7 +60,7 @@ The standard library action pages show the enum definition inline alongside each
 For example, from the [Crypto](/language/standard/crypto) actions:
 
 ```
-enum hashAlgorithm {
+enum hashType {
     'MD5',
     'SHA1',
     'SHA256',
