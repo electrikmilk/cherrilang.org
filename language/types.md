@@ -424,8 +424,6 @@ const var = number(@n)
 ```
 
 ```ruby
-#include 'actions/scripting'
-
 @textVar = "5"
 @numVar = getNumbers(@textVar)
 ```
@@ -440,8 +438,6 @@ The `number()` action should only coerce another value to a number, as an intege
 ### Dictionary
 
 ```ruby
-#include 'actions/scripting'
-
 @var
 @textVar = getDictionary(@var)
 ```
