@@ -3,7 +3,7 @@ title: Text
 layout: default
 grand_parent: Documentation
 parent: Actions
-nav_order: 20
+nav_order: 21
 ---
 
 # Text Actions
