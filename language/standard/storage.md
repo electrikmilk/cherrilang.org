@@ -30,6 +30,9 @@ These actions are only available on Apple platforms (iOS, macOS, etc.) version 2
 > #include 'actions/storage'
 > ```
 
+{: .important }
+There is currently no method of adding preset storage values as you can in the Shortcuts app; you must set initial values at the top of your Shortcut using `storeValue()` below.
+
 ### Store Content
 
 Store content by a key, optionally globally or specific to the Shortcut.
