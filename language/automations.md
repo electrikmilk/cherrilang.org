@@ -2,7 +2,7 @@
 title: Automations
 layout: default
 parent: Documentation
-nav_order: 16
+nav_order: 5
 ---
 
 # Automations
