@@ -9,7 +9,7 @@ nav_order: 2
 
 ## macOS & Linux
 
-You can install Cherri by downloading the latest release or via the Homebrew package manager:
+You can install Cherri by downloading the latest release or via the Homebrew or Nix package manager:
 
 {: .note }
 The latest release may not include everything in the newest documentation, and you may run into actions or language features of a future release (other than actions; these should be marked). To use the latest features (which are subject to change or may not work properly), [build from source](#build-from-source).
@@ -30,11 +30,13 @@ brew install electrikmilk/cherri/cherri
 
 ### Nix
 
-If you have Nix installed, you can run:
+**Install**
 
 ```bash
 nix profile install github:electrikmilk/cherri
 ```
+
+**Isolated Installation**
 
 Alternatively, you can use `nix-direnv` to get an isolated, [effortless dev environment](https://determinate.systems/blog/nix-direnv/) where `cherri` is available based on which directory you're in. Then you would `use_flake` and add Cherri to `flake.nix`:
 
