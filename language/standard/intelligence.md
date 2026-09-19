@@ -239,8 +239,6 @@ askDeviceModel(text prompt, bool ?followUp = false, generativeResultType ?result
 
 **Requires version 26 or later.**
 
----
-
 ## Writing Tools
 
 ### Adjust Text Tone

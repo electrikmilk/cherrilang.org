@@ -199,6 +199,8 @@ getWallpaper()
 
 **Only supported on iOS/iPadOS.**
 
+**Requires version 16.2 or later.**
+
 ---
 
 ### Get Wallpapers
@@ -210,6 +212,8 @@ getAllWallpapers(): array
 ```
 
 **Only supported on iOS/iPadOS.**
+
+**Requires version 16.2 or later.**
 
 ---
 
@@ -290,6 +294,8 @@ Set the multitasking mode to Stage Manager. Applies to iPadOS and macOS only.
 setStageManagerMultitasking(bool ?automaticallyShowAndHideDock, bool ?showRecentApps)
 ```
 
+**Requires version 26 or later.**
+
 ---
 
 ### Set Windowed Multitasking Mode
@@ -299,3 +305,17 @@ Set the multitasking mode to windowed. Applies to iPadOS and macOS only.
 ```
 setWindowedMultitasking(bool ?automaticallyShowAndHideDock)
 ```
+
+**Requires version 26 or later.**
+
+---
+
+### Get Multitasking Mode
+
+Get the current multitasking mode.
+
+```
+getMultitaskingMode(): text
+```
+
+**Requires version 26 or later.**

@@ -71,6 +71,8 @@ Create a shortcut.
 makeShortcut(text name, bool ?open = true)
 ```
 
+**Requires version 16.4 or later.**
+
 ---
 
 ### Open Shortcut
@@ -110,3 +112,5 @@ Search the users Shortcuts.
 ```
 searchShortcuts(text query)
 ```
+
+**Requires version 16.4 or later.**

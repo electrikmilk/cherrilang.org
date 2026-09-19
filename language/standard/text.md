@@ -128,6 +128,8 @@ Transcribes text from the provided audio.
 transcribeText(variable audio): text
 ```
 
+**Requires version 17 or later.**
+
 ## Regular Expressions
 
 ### Get Match Group

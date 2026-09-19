@@ -75,6 +75,8 @@ Lock the device screen.
 lockScreen()
 ```
 
+**Requires version 17 or later.**
+
 ---
 
 ### Reboot
@@ -84,6 +86,8 @@ Power off the device, then power it on again.
 ```
 reboot()
 ```
+
+**Requires version 17 or later.**
 
 ---
 
@@ -102,6 +106,8 @@ Power off the device.
 ```
 shutdown()
 ```
+
+**Requires version 17 or later.**
 
 ---
 
@@ -133,6 +139,50 @@ showControlCenter()
 
 ---
 
+### Set Volume
+
+```
+setVolume(float volume)
+```
+
+---
+
+### Toggle On Flashlight
+
+Toggle the flashlight on the device with optional brightness setting.
+
+```
+toggleFlashlight(float ?brightness = 0.5)
+```
+
+**Only supported on iOS/iPadOS.**
+
+---
+
+### Turn Off Flashlight
+
+Turn off the flashlight on the device.
+
+```
+flashlightOff()
+```
+
+**Only supported on iOS/iPadOS.**
+
+---
+
+### Turn On Flashlight
+
+Turn on the flashlight on the device with optional brightness setting.
+
+```
+flashlightOn(float ?brightness = 0.5)
+```
+
+**Only supported on iOS/iPadOS.**
+
+---
+
 ## Battery
 
 ### Connected to Charger
@@ -142,6 +192,8 @@ Determines if the device is currently connected to a charger.
 ```
 connectedToCharger(): bool
 ```
+
+**Requires version 16.2 or later.**
 
 ---
 
@@ -163,6 +215,8 @@ Determines if the device is currently charging.
 isCharging(): bool
 ```
 
+**Requires version 16.2 or later.**
+
 ---
 
 ### Charge Limit
@@ -172,6 +226,8 @@ Returns the current charge limit of the device battery.
 ```
 getChargeLimit(): number
 ```
+
+**Requires version 26 or later.**
 
 ---
 

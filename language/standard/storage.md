@@ -41,6 +41,8 @@ Store content by a key, optionally globally or specific to the Shortcut.
 storeValue(text key, text value, bool ?global = false)
 ```
 
+**Requires version 27 or later.**
+
 ---
 
 ### Get Stored Content
@@ -51,6 +53,8 @@ Get previously stored content, optionally globally or specific to the Shortcut.
 getStoredValue(text key, bool ?global = false)
 ```
 
+**Requires version 27 or later.**
+
 ---
 
 ### Delete Stored Content
@@ -60,3 +64,5 @@ Delete previously stored content, optionally globally or specific to the Shortcu
 ```
 deleteStoredValue(text key, bool ?global = false)
 ```
+
+**Requires version 27 or later.**
