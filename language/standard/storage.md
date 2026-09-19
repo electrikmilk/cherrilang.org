@@ -9,6 +9,9 @@ nav_order: 20
 # Storage Actions
 {: .no_toc }
 
+Future release
+{: .label .label-purple }
+
 {: .warning }
 These actions are only available on Apple platforms (iOS, macOS, etc.) version 27 or greater.
 
