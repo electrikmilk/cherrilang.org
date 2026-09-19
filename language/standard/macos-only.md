@@ -34,6 +34,8 @@ getApps(): array
 
 **Only supported on macOS.**
 
+**Requires version 18 or later.**
+
 ---
 
 ### Make Disk Image
@@ -45,6 +47,8 @@ makeDiskImage(text name, variable contents, bool ?encrypt = false)
 ```
 
 **Only supported on macOS.**
+
+**Requires version 15 or later.**
 
 ---
 
@@ -65,10 +69,12 @@ enum storageUnit {
     'Y',
 }
 
-makeSizedDiskImage(text name, variable contents, #storageUnit (qty)?diskSize = qty(1, "GB"), bool ?encrypt = false)
+makeSizedDiskImage(text name, variable contents, storageUnit ?diskSize = qty(1, "GB"), bool ?encrypt = false)
 ```
 
 **Only supported on macOS.**
+
+**Requires version 15 or later.**
 
 ---
 
@@ -97,6 +103,8 @@ displaySleep()
 
 **Only supported on macOS.**
 
+**Requires version 17 or later.**
+
 ---
 
 ### Sleep
@@ -108,6 +116,8 @@ sleep()
 ```
 
 **Only supported on macOS.**
+
+**Requires version 17 or later.**
 
 ---
 
