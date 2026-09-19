@@ -12,7 +12,7 @@ nav_order: 2
 You can install Cherri by downloading the latest release or via the Homebrew package manager:
 
 {: .note }
-The latest release may not include everything in the newest documentation, and you may run into actions or language features of a future release (other than actions, these should be marked). To use the latest features (which are subject to change or may not work properly) [build from source](#build-from-source).
+The latest release may not include everything in the newest documentation, and you may run into actions or language features of a future release (other than actions; these should be marked). To use the latest features (which are subject to change or may not work properly), [build from source](#build-from-source).
 
 ### Homebrew
 
@@ -27,6 +27,31 @@ brew tap electrikmilk/cherri
 ```console
 brew install electrikmilk/cherri/cherri
 ```
+
+### Nix
+
+If you have Nix installed, you can run:
+
+```bash
+nix profile install github:electrikmilk/cherri
+```
+
+Alternatively, you can use `nix-direnv` to get an isolated, [effortless dev environment](https://determinate.systems/blog/nix-direnv/) where `cherri` is available based on which directory you're in. Then you would `use_flake` and add Cherri to `flake.nix`:
+
+```nix
+{
+  inputs.cherri.url = "github:electrikmilk/cherri";
+
+
+  { # outputs.packages.${system}.default = pkgs.mkShell etc - omitted for brevity
+    buildInputs = [
+      inputs.cherri.packages.${system}.cherri
+    ]
+  }
+}
+```
+
+Then run `direnv allow` in the directory with the `flake.nix` file.
 
 ### Binaries
 
