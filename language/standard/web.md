@@ -94,7 +94,7 @@ enum HTTPMethod {
     'DELETE',
 }
 
-fileRequest(text url, HTTPMethod ?method, dictionary ?body, dictionary ?headers)
+fileRequest(text url, HTTPMethod ?method, variable ?body, dictionary ?headers)
 ```
 
 ---

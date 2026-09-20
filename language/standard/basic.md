@@ -412,4 +412,3 @@ Returns a random number between `min` and `max`.
 ```
 randomNumber(number min, number max): number
 ```
-

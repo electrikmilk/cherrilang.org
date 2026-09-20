@@ -72,7 +72,7 @@ getLocationDetail(variable location, locationDetail detail)
 Create a location value.
 
 ```
-location(variable location)
+location(text location)
 ```
 
 ## Addresses

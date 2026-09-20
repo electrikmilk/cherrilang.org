@@ -354,8 +354,6 @@ Insert a `#ref` to a file.
 file(&variable file): variable
 ```
 
----
-
 ## Notes
 
 ### Append Note

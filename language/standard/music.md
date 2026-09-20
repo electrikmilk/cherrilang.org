@@ -96,7 +96,7 @@ enum repeatMode {
     'All',
 }
 
-playMusic(variable music, shuffleMode ?shuffle, repeatMode ?repeat)
+playMusic(&variable music, shuffleMode ?shuffle, repeatMode ?repeat)
 ```
 
 ---
