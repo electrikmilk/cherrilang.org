@@ -98,11 +98,13 @@ enum generativeResultType {
 askChatGPT(text prompt, bool ?followUp = false, generativeResultType ?resultType = "Automatic")
 ```
 
+**Requires version 26 or later.**
+
 ---
 
 ### Ask LLM
 
-Ask a specific LLM using a prompt. Follow up will open a follow-up prompt to the model.
+Ask a Cloud AI model using a prompt. Follow up will open a follow-up prompt to the model.
 
 ```
 enum LLMModel {
@@ -122,6 +124,77 @@ enum generativeResultType {
 
 askLLM(text prompt, LLMModel ?model = "Private Cloud Compute", bool ?followUp = false, generativeResultType ?resultType = "Automatic")
 ```
+
+**Deprecated as of version 26.**
+
+---
+
+### Ask Private Cloud Compute LLM
+
+Ask a private cloud compute LLM using a prompt. Follow up will open a follow-up prompt to the model.
+
+```
+enum generativeResultType {
+    'Text',
+    'Number',
+    'Date',
+    'Boolean',
+    'List',
+    'Dictionary',
+}
+
+askCloudLLM(text prompt, bool ?followUp = false, generativeResultType ?resultType = "Automatic")
+```
+
+**Deprecated as of version 26.**
+
+---
+
+### Ask Cloud Model
+
+Future release
+{: .label .label-purple }
+
+Ask a Private Cloud AI model using a prompt. Follow up will open a follow-up prompt to the model. Allow search uses Broad World Knowledge, allowing the model to search the web for up-to-date information.
+
+```
+enum generativeResultType {
+    'Text',
+    'Number',
+    'Date',
+    'Boolean',
+    'List',
+    'Dictionary',
+}
+
+askModel(text prompt, bool ?followUp = false, bool ?allowSearch = false, generativeResultType ?resultType = "Automatic")
+```
+
+**Requires version 27 or later.**
+
+---
+
+### Ask Cloud Pro Model
+
+Future release
+{: .label .label-purple }
+
+Ask a Private Cloud Pro AI model with increased reasoning using a prompt. May require subscription. Follow up will open a follow-up prompt to the model. Allow search uses Broad World Knowledge, allowing the model to search the web for up-to-date information.
+
+```
+enum generativeResultType {
+    'Text',
+    'Number',
+    'Date',
+    'Boolean',
+    'List',
+    'Dictionary',
+}
+
+askProModel(text prompt, bool ?followUp = false, bool ?allowSearch = false, generativeResultType ?resultType = "Automatic")
+```
+
+**Requires version 27 or later.**
 
 ---
 
@@ -144,9 +217,12 @@ askDeviceLLM(text prompt, bool ?followUp = false, generativeResultType ?resultTy
 
 ---
 
-### Ask Private Cloud Compute LLM
+### Ask On-Device Model
 
-Ask a private cloud compute LLM using a prompt. Follow up will open a follow-up prompt to the model.
+Future release
+{: .label .label-purple }
+
+Ask an On-Device LLM using a prompt. Follow up will open a follow-up prompt to the model.
 
 ```
 enum generativeResultType {
@@ -158,8 +234,12 @@ enum generativeResultType {
     'Dictionary',
 }
 
-askCloudLLM(text prompt, bool ?followUp = false, generativeResultType ?resultType = "Automatic")
+askDeviceModel(text prompt, bool ?followUp = false, generativeResultType ?resultType = "Automatic")
 ```
+
+**Requires version 26 or later.**
+
+---
 
 ## Writing Tools
 
