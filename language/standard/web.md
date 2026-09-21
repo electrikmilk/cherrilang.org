@@ -77,7 +77,7 @@ searchGiphy(text query)
 Download the contents of a URL.
 
 ```
-downloadURL(text url, dictionary ?headers): variable
+downloadURL(text url, dictionary! ?headers): variable
 ```
 
 ---
@@ -94,7 +94,7 @@ enum HTTPMethod {
     'DELETE',
 }
 
-fileRequest(text url, HTTPMethod ?method, dictionary ?body, dictionary ?headers)
+fileRequest(text url, HTTPMethod ?method, dictionary ?body, dictionary! ?headers)
 ```
 
 ---
@@ -111,7 +111,7 @@ enum HTTPMethod {
     'DELETE',
 }
 
-formRequest(text url, HTTPMethod ?method, dictionary ?body, dictionary ?headers)
+formRequest(text url, HTTPMethod ?method, dictionary! ?body, dictionary! ?headers)
 ```
 
 ---
@@ -128,7 +128,7 @@ enum HTTPMethod {
     'DELETE',
 }
 
-jsonRequest(text url, HTTPMethod ?method, dictionary ?body, dictionary ?headers)
+jsonRequest(text url, HTTPMethod ?method, dictionary! ?body, dictionary! ?headers)
 ```
 
 ## RSS
