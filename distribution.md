@@ -32,3 +32,9 @@ Alternatively, you can also use the `?code=` URL parameter to share small snippe
 Cherri has a package manager built into the CLI based on remote Git repos.
 
 [Learn more](language/package-manager){: .btn }
+
+## RoutineHub
+
+RoutineHub currently offers submitting Cherri code that can be downloaded and built on their site. It comes with versioning, and you can even sell your Cherri code if you want to and get paid for your work.
+
+[Submit your Cherri code]([language/package-manager](https://routinehub.co/cherri/create)){: .btn }
