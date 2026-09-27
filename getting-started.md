@@ -193,7 +193,7 @@ show("Debug: number = {@number}")
 
 If an action produces output that nothing else consumes, add `nothing()` to prevent Shortcuts from implicitly passing the result forward as input:
 
-```ruby
+```
 someAction()
 nothing()  // discard unused output
 ```
