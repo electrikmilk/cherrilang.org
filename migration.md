@@ -57,8 +57,7 @@ The generated code will be functional but not yet idiomatic:
 
 **Before (fails):**
 
-```ruby
-// #define name My Shortcut
+```
 #define color blue
 #define glyph hand
 
@@ -71,7 +70,6 @@ const weather = getCurrentWeather(location)
 ```ruby
 #include 'actions/location'
 
-// #define name My Shortcut
 #define color blue
 #define glyph hand
 
@@ -200,7 +198,7 @@ If your shortcut uses app actions not in Cherri's standard library, keep them as
 ```ruby
 rawAction("net.shinyfrog.bear.create-note", {
     "title": "My Note",
-    "text": "{content}"
+    "text": "Content"
 })
 ```
 
@@ -212,7 +210,7 @@ action 'net.shinyfrog.bear.create-note' createBearNote(
     text content: 'text'
 )
 
-createBearNote("My Note", "{content}")
+createBearNote("My Note", "Content")
 ```
 
 See [Action Definitions](/language/action-definitions) for more details.
@@ -221,7 +219,7 @@ See [Action Definitions](/language/action-definitions) for more details.
 
 If an action produces output that no subsequent action consumes, add `nothing()` to prevent Shortcuts from implicitly passing it forward as input:
 
-```ruby
+```
 heavyAction()
 nothing()
 ```
