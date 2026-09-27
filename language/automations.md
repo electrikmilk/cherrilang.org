@@ -54,7 +54,7 @@ Fires when a screenshot is taken. `value` is a comma-separated list of where the
 - `files`
 - `clipboard`
 
-```ruby
+```
 #trigger screenshot photos, files
 
 alert("Screenshot taken")
@@ -64,7 +64,7 @@ alert("Screenshot taken")
 
 Fires when the battery reaches a given percentage. `value` is a whole number.
 
-```ruby
+```
 #trigger battery 30
 
 alert("Battery is at 30%")
@@ -78,7 +78,7 @@ Fires when Stage Manager is toggled. `value` is one of:
 - `off`
 - `both`
 
-```ruby
+```
 #trigger stageManager on
 
 alert("Stage Manager turned on")
@@ -92,7 +92,7 @@ Fires when the device joins or disconnects from a Wi-Fi network. `value` is one 
 - `disconnected`
 - `both`
 
-```ruby
+```
 #trigger wifi joined
 
 alert("Joined a Wi-Fi network")
@@ -106,7 +106,7 @@ Fires when a Bluetooth device connects or disconnects. `value` is one of:
 - `disconnect`
 - `both`
 
-```ruby
+```
 #trigger bluetooth connect
 
 alert("Bluetooth device connected")
@@ -120,7 +120,7 @@ Fires when an external display connects or disconnects. `value` is one of:
 - `disconnect`
 - `both`
 
-```ruby
+```
 #trigger display connect
 
 alert("External display connected")
@@ -134,7 +134,7 @@ Fires when the device starts or stops charging. `value` is one of:
 - `disconnect`
 - `both`
 
-```ruby
+```
 #trigger charging connect
 
 alert("Started charging")
@@ -144,7 +144,7 @@ alert("Started charging")
 
 Fires when the given app is opened or brought into focus. `value` is an app name (e.g. `safari`) or a full bundle identifier (e.g. `com.apple.mobilesafari`).
 
-```ruby
+```
 #trigger app safari
 
 alert("Safari opened")
