@@ -320,7 +320,7 @@ However, if, due to the value being optional, it has a default, it will be set t
 
 @var = getFile(nil)
 
-if var == nil {
+if @var == nil {
 
 }
 
