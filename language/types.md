@@ -438,6 +438,7 @@ Any type from the [Content Item Types](#content-item-types) table can be used as
 This also composes with dictionary key access:
 
 ```ruby
+@dictionary = {"Name": "John"}
 @getAs = @dictionary['Name'].contact
 ```
 
