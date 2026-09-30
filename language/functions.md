@@ -199,7 +199,7 @@ if ShortcutInput {
                 const arg2 = getListItem(args, 1)
                 const op1 = number(arg1)
                 const op2 = number(arg2)
-                const result = @op1 + @op2
+                const result = op1 + op2
                 output("{result}")
             }
             output(nil)
