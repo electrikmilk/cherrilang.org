@@ -26,6 +26,8 @@ Click on the info circle in the preview and go to the Setup tab to see the defin
 ```ruby
 #question name "Enter Your Name" "Siri"
 
+prompt("Are you sure?")
+
 alert(name, "Hello")
 ```
 
