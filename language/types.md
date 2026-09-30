@@ -164,8 +164,8 @@ The contents of an array value must be valid JSON syntax.
 You can use the [`for`](control-flow#repeat-with-each) statement to iterate over the values contained in the array variable.
 
 ```ruby
-@items = ["Item 1","Item 2"]
-for item in @items {
+const items = list("Item 1","Item 2")
+for item in items {
     /* ... */
 }
 ```
@@ -314,24 +314,6 @@ Or more explicitly, set the value as `nil`
 You can use `nil` just about anywhere to cancel out an optional value.
 
 However, if, due to the value being optional, it has a default, it will be set to its default, not empty.
-
-```ruby
-#include 'actions/documents'
-
-@var = getFile(nil)
-
-if @var == nil {
-
-}
-
-repeat i for nil {
-
-}
-
-for item in nil {
-
-}
-```
 
 `nil` can skip an argument that is optional to set an argument after it.
 
