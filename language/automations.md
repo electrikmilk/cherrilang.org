@@ -37,7 +37,7 @@ Define personal automation triggers so your Shortcut runs on its own, without ne
 
 Add more than one `#trigger` directive to fire the automation from multiple events.
 
-```ruby
+```
 #trigger wifi joined
 #trigger bluetooth connect
 
