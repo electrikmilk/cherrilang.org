@@ -164,11 +164,14 @@ The contents of an array value must be valid JSON syntax.
 You can use the [`for`](control-flow#repeat-with-each) statement to iterate over the values contained in the array variable.
 
 ```ruby
-const items = list("Item 1","Item 2")
-for item in items {
+@items = ["Item 1", "Item 2"]
+for item in @items {
     /* ... */
 }
 ```
+
+{: .note }
+It is recommended to use a list() action instead of an array if you do not need to modify the list or include types other than strings.
 
 You can easily append to an array using the `+=` syntax.
 
