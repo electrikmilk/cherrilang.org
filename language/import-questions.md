@@ -38,5 +38,7 @@ To store the value of a question in a variable, use the action `text()` to store
 ```
 #question store "Question" "Default"
 
+alert("Welcome")
+
 const test = text(store)
 ```
