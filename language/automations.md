@@ -139,13 +139,3 @@ Fires when the device starts or stops charging. `value` is one of:
 
 alert("Started charging")
 ```
-
-### App
-
-Fires when the given app is opened or brought into focus. `value` is an app name (e.g. `safari`) or a full bundle identifier (e.g. `com.apple.mobilesafari`).
-
-```
-#trigger app safari
-
-alert("Safari opened")
-```
