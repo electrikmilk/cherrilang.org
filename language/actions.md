@@ -34,14 +34,11 @@ downloadURL(text url, dictionary! ?headers): variable
 | Part | Meaning |
 |---|---|
 | `?` before the name | The argument is optional. |
-| `!` after the type | The argument requires a literal value — you cannot pass a variable here. |
+| `!` after the type | The argument requires a literal value — passing a variable here throws a compiler error. |
 | `&` before the type | A [content reference](/language/references) can be passed to this argument. |
 | `...` before the name | The argument accepts multiple values. |
 | `name = value` | The default value used when the argument is omitted. |
 | `: type` after `()` | The type of value the action outputs, if any. |
-
-{: .note }
-Passing a variable where a `!` argument is expected throws a compile error, so it's worth checking for `!` before you wire up a variable there.
 
 ## Can I contribute actions, even non-standard actions?
 
