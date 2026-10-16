@@ -34,7 +34,7 @@ downloadURL(text url, dictionary! ?headers): variable
 | Part | Meaning |
 |---|---|
 | `?` before the name | The argument is optional. |
-| `!` after the type | The argument requires a literal value — passing a variable here throws a compiler error. |
+| `!` after the type | The argument requires a literal value — passing a reference here throws a compiler error. |
 | `&` before the type | A [content reference](/language/references) can be passed to this argument. |
 | `...` before the name | The argument accepts multiple values. |
 | `name = value` | The default value used when the argument is omitted. |
