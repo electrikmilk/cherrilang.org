@@ -47,7 +47,7 @@ Also, the compiler is currently developed and tested on macOS only, so it will o
 
 ## Why No iOS App?
 
-Partly, Cherri is primarily binary intentionally to try to avoid issues past app-based Shortcuts programming projects have had.
+Partly, Cherri is primarily a sole binary intentionally to try to avoid issues past app-based Shortcuts programming projects have had.
 
 A few Shortcuts DSL projects were infamously abandoned by the Apple platforms requiring signing in 2015 for example. Jellycuts, and our own playground site and Linux binaries only get around through the Shortcuts signing service HubSign.
 
