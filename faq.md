@@ -45,13 +45,13 @@ Of course, you can still build and run the compiler on any platform that the Go 
 
 Also, the compiler is currently developed and tested on macOS only, so it will otherwise work best on a Unix-like system that can compile Go code, like Linux or BSD.
 
-## Why No iOS App?
+## Why No Mobile App?
 
 Cherri is largely a single binary, chosen partly to prevent problems seen in earlier app-based Shortcuts projects.  
 
 A key issue involved several Shortcuts DSL projects that were abandoned after Apple required signing in 2015; Shortcuts compiled since have required a macOS-specific binary that uses a proprietary archive format in order to run. Cherri is macOS-based, so as long as you are signed into iCloud, the `shortcuts` binary is currently bundled with macOS. Jellycuts, our playground site, and Linux binaries bypass this only through the HubSign signing service.
 
-Any apps that do not bundle Cherri as a binary are required to be open source by our license. Cherri cannot be installed on Apple mobile devices, and so would need to be statically bundled with an app, which I have only personally gotten working on macOS and have not attempted for an iOS or iPadOS app. However, hosting an App Store app on Apple’s platforms carries costs I cannot justify personally at this time.
+Our license requires any apps that don't bundle Cherri as a binary to be open source. Cherri cannot be installed on Apple mobile devices, and so would need to be statically bundled with an app, which I have only personally gotten working on macOS and have not attempted for an iOS or iPadOS app. However, hosting an App Store app on Apple’s platforms carries costs I cannot justify personally at this time.
 
 Cherri aims to give developers freedom to build Shortcuts on the desktop with familiar tools, independent of Apple platforms so that Apple cannot suspend or ban Cherri.  
 
