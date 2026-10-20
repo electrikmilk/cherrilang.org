@@ -19,17 +19,21 @@ A Shortcut is a custom automation created by users on Apple platforms (Mac, iPho
 
 ## What makes Cherri different from other Shortcuts programming languages?
 
-Its primary platform is macOS. The restriction that Shortcuts must be signed, which unfortunately discontinued many iOS app-based Shortcut languages, has shown that a Shortcuts language will likely be more sustainable with fewer restrictions placed on macOS (and only macOS can sign Shortcuts). This also creates a better developer experience (no tiny tapping!).
+Its primary platform is macOS. The restriction that Shortcuts must be signed, which unfortunately discontinued many iOS app-based Shortcut languages, has shown that a Shortcuts language will likely be more sustainable with fewer restrictions placed on macOS, as macOS can be used to sign Shortcuts.
 
-Cherri aims to give developers freedom to build Shortcuts on the desktop with familiar tools, relatively independent of Apple platforms, in that it still requires signing, but Apple cannot prevent the Cherri project from being used entirely.
+This also creates a better developer experience, allowing Shortcuts to be built using the same desktop-class tools they are already familiar with (no tiny tapping only!).
+
+This makes the project relatively independent of Apple platforms, in that it still requires signing, but Apple cannot prevent the Cherri project from being used entirely as they can with an app-based project.
 
 ## Signing Shortcuts on non-macOS Platforms
+
+Apple required signing in 2015; Shortcuts compiled since have required a macOS-specific binary that uses a proprietary archive format in order to run. Cherri is macOS-based, so as long as you are signed into iCloud, the `shortcuts` binary is currently bundled with macOS. Jellycuts, our playground site, and Linux binaries bypass this only through the HubSign signing service.
 
 You can use the optional `--hubsign` argument on Unix-like systems to specify to use the remote service HubSign provided by [RoutineHub](https://routinehub.co) to sign the compiled Shortcut so you can then move it onto an Apple device through the iCloud web app or a file server. By default, on non-macOS platforms, this service is used.
 
 You can use an alternative or local server running [shortcut-signing-server](https://github.com/scaxyz/shortcut-signing-server) using the `--signing-server=` argument.
 
-This may work on Windows but has not been tested, so you may experience issues.
+This may not work on Windows; you may experience issues.
 
 ## How Do I Get Reproducible Compiled Output?
 
@@ -43,15 +47,13 @@ cherri --derive-uuids main.cherri
 
 ## Can I Build & Run On...?
 
-Of course, you can still build and run the compiler on any platform that the Go programming language will compile on. Cherri will skip signing the compiled Shortcut, but it will still compile. I don't make builds for those platforms, so that no one is confused and thinks that Shortcuts compiled using Cherri on other platforms will be able to be imported and run on any of their Apple devices.
+Of course, you can still build and run the compiler on any platform that the Go programming language will compile on. Cherri will skip signing the compiled Shortcut, but it will still compile. I don't build for those platforms, so no one gets confused and thinks Shortcuts compiled with Cherri on other platforms can be imported and run on any Apple device.
 
 Also, the compiler is currently developed and tested on macOS only, so it will otherwise work best on a Unix-like system that can compile Go code, like Linux or BSD.
 
 ## Why No Mobile App?
 
 Cherri is largely a single binary, chosen partly to prevent problems seen in earlier app-based Shortcuts projects.  
-
-A key issue involved several Shortcuts DSL projects that were abandoned after Apple required signing in 2015; Shortcuts compiled since have required a macOS-specific binary that uses a proprietary archive format in order to run. Cherri is macOS-based, so as long as you are signed into iCloud, the `shortcuts` binary is currently bundled with macOS. Jellycuts, our playground site, and Linux binaries bypass this only through the HubSign signing service.
 
 Our license requires any apps that don't bundle Cherri as a binary to be open source. Cherri cannot be installed on Apple mobile devices, and so would need to be statically bundled with an app, which I have only personally gotten working on macOS and have not attempted for an iOS or iPadOS app. However, hosting an App Store app on Apple’s platforms carries costs I cannot justify personally at this time.
 
