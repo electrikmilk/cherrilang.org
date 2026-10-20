@@ -21,6 +21,8 @@ A Shortcut is a custom automation created by users on Apple platforms (Mac, iPho
 
 Its primary platform is macOS. The restriction that Shortcuts must be signed, which unfortunately discontinued many iOS app-based Shortcut languages, has shown that a Shortcuts language will likely be more sustainable with fewer restrictions placed on macOS (and only macOS can sign Shortcuts). This also creates a better developer experience (no tiny tapping!).
 
+Cherri aims to give developers freedom to build Shortcuts on the desktop with familiar tools, relatively independent of Apple platforms, in that it still requires signing, but Apple cannot prevent the Cherri project from being used entirely.
+
 ## Signing Shortcuts on non-macOS Platforms
 
 You can use the optional `--hubsign` argument on Unix-like systems to specify to use the remote service HubSign provided by [RoutineHub](https://routinehub.co) to sign the compiled Shortcut so you can then move it onto an Apple device through the iCloud web app or a file server. By default, on non-macOS platforms, this service is used.
@@ -52,8 +54,6 @@ Cherri is largely a single binary, chosen partly to prevent problems seen in ear
 A key issue involved several Shortcuts DSL projects that were abandoned after Apple required signing in 2015; Shortcuts compiled since have required a macOS-specific binary that uses a proprietary archive format in order to run. Cherri is macOS-based, so as long as you are signed into iCloud, the `shortcuts` binary is currently bundled with macOS. Jellycuts, our playground site, and Linux binaries bypass this only through the HubSign signing service.
 
 Our license requires any apps that don't bundle Cherri as a binary to be open source. Cherri cannot be installed on Apple mobile devices, and so would need to be statically bundled with an app, which I have only personally gotten working on macOS and have not attempted for an iOS or iPadOS app. However, hosting an App Store app on Apple’s platforms carries costs I cannot justify personally at this time.
-
-Cherri aims to give developers freedom to build Shortcuts on the desktop with familiar tools, independent of Apple platforms so that Apple cannot suspend or ban Cherri.  
 
 The [playground.cherrilang.org](https://playground.cherrilang.org) site addresses this issue in most cases. You can use it on any device, including mobile devices or any browser-equipped system. It exports Shortcuts via HubSign, enabling use on any Apple platform device.
 
