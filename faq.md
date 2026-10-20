@@ -55,7 +55,7 @@ Our license requires any apps that don't bundle Cherri as a binary to be open so
 
 Cherri aims to give developers freedom to build Shortcuts on the desktop with familiar tools, independent of Apple platforms so that Apple cannot suspend or ban Cherri.  
 
-The [playground.cherrilang.org](https://playground.cherrilang.org) site addresses part of this issue. You can use it on any device, including mobile devices or any browser-equipped system. It exports Shortcuts via HubSign, enabling use on any Apple platform device.
+The [playground.cherrilang.org](https://playground.cherrilang.org) site addresses this issue in most cases. You can use it on any device, including mobile devices or any browser-equipped system. It exports Shortcuts via HubSign, enabling use on any Apple platform device.
 
 ## How Do I Use Non-Standard Actions?
 
