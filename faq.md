@@ -47,15 +47,15 @@ Also, the compiler is currently developed and tested on macOS only, so it will o
 
 ## Why No iOS App?
 
-Partly, Cherri is primarily a sole binary intentionally to try to avoid issues past app-based Shortcuts programming projects have had.
+Cherri is largely a single binary, chosen partly to prevent problems seen in earlier app-based Shortcuts projects.  
 
-A few Shortcuts DSL projects were infamously abandoned by the Apple platforms requiring signing in 2015 for example. Jellycuts, and our own playground site and Linux binaries only get around through the Shortcuts signing service HubSign.
+A key issue involved several Shortcuts DSL projects that were abandoned after Apple required signing in 2015; Shortcuts compiled since have required a macOS-specific binary that uses a proprietary archive format in order to run. Cherri is macOS-based, so as long as you are signed into iCloud, the `shortcuts` binary is currently bundled with macOS. Jellycuts, our playground site, and Linux binaries bypass this only through the HubSign signing service.
 
-The other part of this is the cost of hosting a App Store app on Apple's platforms, which I currently cannot personally financially justify.
+Any apps that do not bundle Cherri as a binary are required to be open source by our license. Cherri cannot be installed on Apple mobile devices, and so would need to be statically bundled with an app, which I have only personally gotten working on macOS and have not attempted for an iOS or iPadOS app. However, hosting an App Store app on Apple’s platforms carries costs I cannot justify personally at this time.
 
-Cherri’s intent is to give developers the freedom to develop Shortcuts easily on the desktop with desktop-class tools they already enjoy without relying too heavily or being based on Apple platforms.
+Cherri aims to give developers freedom to build Shortcuts on the desktop with familiar tools, independent of Apple platforms so that Apple cannot suspend or ban Cherri.  
 
-The [playground.cherrilang.org](https://playground.cherrilang.org) site partially solves this problem. You can use it on any device that has a web browser and export Shortcuts you can then use on any Apple platform device.
+The [playground.cherrilang.org](https://playground.cherrilang.org) site addresses part of this issue. You can use it on any device, including mobile devices or any browser-equipped system. It exports Shortcuts via HubSign, enabling use on any Apple platform device.
 
 ## How Do I Use Non-Standard Actions?
 
