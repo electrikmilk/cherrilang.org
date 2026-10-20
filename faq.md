@@ -47,12 +47,15 @@ Also, the compiler is currently developed and tested on macOS only, so it will o
 
 ## Why No iOS App?
 
-- Compiling on a remote machine via the app would be slow if iOS doesn't want to bundle the compiler.
-- I cannot at present justify the cost of the developer program to publish a possible iOS app.
+Partly, Cherri is primarily binary intentionally to try to avoid issues past app-based Shortcuts programming projects have had.
 
-Cherri’s primary platform is also macOS, and this is on purpose. The intent is to give developers the freedom to develop Shortcuts easily on the desktop with desktop-class tools they already enjoy.
+A few Shortcuts DSL projects were infamously abandoned by the Apple platforms requiring signing in 2015 for example. Jellycuts, and our own playground site and Linux binaries only get around through the Shortcuts signing service HubSign.
 
-However, [playground.cherrilang.org](https://playground.cherrilang.org) solves this problem. You can use it on any platform you prefer that has a web browser and load Shortcuts onto any Apple platform device.
+The other part of this is the cost of hosting a App Store app on Apple's platforms, which I currently cannot personally financially justify.
+
+Cherri’s intent is to give developers the freedom to develop Shortcuts easily on the desktop with desktop-class tools they already enjoy without relying too heavily or being based on Apple platforms.
+
+The [playground.cherrilang.org](https://playground.cherrilang.org) site partially solves this problem. You can use it on any device that has a web browser and export Shortcuts you can then use on any Apple platform device.
 
 ## How Do I Use Non-Standard Actions?
 
