@@ -25,7 +25,7 @@ Its primary platform is macOS. The restriction that Shortcuts must be signed, wh
 
 You can use the optional `--hubsign` argument on Unix-like systems to specify to use the remote service HubSign provided by [RoutineHub](https://routinehub.co) to sign the compiled Shortcut so you can then move it onto an Apple device through the iCloud web app or a file server. By default, on non-macOS platforms, this service is used.
 
-You can use an alternative or local server running (shortcut-signing-server)[https://github.com/scaxyz/shortcut-signing-server] using the `--signing-server=` argument.
+You can use an alternative or local server running [shortcut-signing-server](https://github.com/scaxyz/shortcut-signing-server) using the `--signing-server=` argument.
 
 This may work on Windows but has not been tested, so you may experience issues.
 
