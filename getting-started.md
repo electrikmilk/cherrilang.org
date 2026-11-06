@@ -235,7 +235,7 @@ Declare types explicitly:
 - [Control Flow](/language/control-flow)
 - [Functions](/language/functions)
 - [Types](/language/types)
-- [Standard Library](/language/standard/stdlib)
+- [Standard Library](/language/standard/stdfunc)
 - [Action Definitions](/language/action-definitions)
 - [Best Practices](/language/best-practices)
 - [Migration Guide](/migration) — convert existing Shortcuts to Cherri

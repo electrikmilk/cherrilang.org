@@ -163,7 +163,7 @@ Note that when the compiler reaches your first explicit comment action, if you a
 This is primarily to still be able to add an instructional or contact comment at the top of a Shortcut while also using the functions abstraction.
 
 ```ruby
-#include 'stdlib'
+#include 'stdfunc'
 
 #include 'actions/text'
 #include 'actions/web'

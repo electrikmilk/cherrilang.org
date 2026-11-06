@@ -11,7 +11,7 @@ nav_order: 24
 You can use the Cherri Standard Library of [functions](/language/functions) using the following syntax:
 
 ```
-#include 'stdlib'
+#include 'stdfunc'
 ```
 
 This will give you access to the following functions. Note that functions are only included with your Shortcut if you use them.
@@ -29,7 +29,7 @@ chooseFromVCard(array items, text prompt)
 **Example Usage**
 
 ```ruby
-#include 'stdlib'
+#include 'stdfunc'
 
 #include 'actions/text'
 #include 'actions/web'
@@ -55,7 +55,7 @@ runJS(text script)
 **Basic Usage**
 
 ```ruby
-#include 'stdlib'
+#include 'stdfunc'
 
 #include 'actions/scripting'
 #include 'actions/text'
@@ -88,7 +88,7 @@ output('Hello, World!');
 
 `js.cherri`
 ```
-#include 'stdlib'
+#include 'stdfunc'
 
 const jsFile = base64File("path/to/index.js")
 const jsCode = base64Decode(jsFile)
