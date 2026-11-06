@@ -8,9 +8,6 @@ nav_order: 5
 # Automations
 {: .no_toc }
 
-Future release
-{: .label .label-purple }
-
 {: .warning }
 This syntax only applies to devices running Apple platforms (iOS, macOS, etc.) version 27 or greater.
 

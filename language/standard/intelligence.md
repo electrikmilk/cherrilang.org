@@ -152,9 +152,6 @@ askCloudLLM(text prompt, bool ?followUp = false, generativeResultType ?resultTyp
 
 ### Ask Cloud Model
 
-Future release
-{: .label .label-purple }
-
 Ask a Private Cloud AI model using a prompt. Follow up will open a follow-up prompt to the model. Allow search uses Broad World Knowledge, allowing the model to search the web for up-to-date information.
 
 ```
@@ -175,9 +172,6 @@ askModel(text prompt, bool ?followUp = false, bool ?allowSearch = false, generat
 ---
 
 ### Ask Cloud Pro Model
-
-Future release
-{: .label .label-purple }
 
 Ask a Private Cloud Pro AI model with increased reasoning using a prompt. May require subscription. Follow up will open a follow-up prompt to the model. Allow search uses Broad World Knowledge, allowing the model to search the web for up-to-date information.
 
@@ -218,9 +212,6 @@ askDeviceLLM(text prompt, bool ?followUp = false, generativeResultType ?resultTy
 ---
 
 ### Ask On-Device Model
-
-Future release
-{: .label .label-purple }
 
 Ask an On-Device LLM using a prompt. Follow up will open a follow-up prompt to the model.
 
