@@ -21,9 +21,9 @@ A Shortcut is a custom automation created by users on Apple platforms (Mac, iPho
 
 Its primary platform is macOS. The restriction that Shortcuts must be signed, which unfortunately discontinued many iOS app-based Shortcut languages, has shown that a Shortcuts language will likely be more sustainable with fewer restrictions placed on macOS, as macOS can be used to sign Shortcuts.
 
-This also creates a better developer experience, allowing Shortcuts to be built using the same desktop-class tools they are already familiar with (no tiny tapping only!).
+This also creates a better developer experience, allowing Shortcuts to be built using the same desktop-class tools you are already familiar with (no tiny tapping only!).
 
-This makes the project relatively independent of Apple platforms, in that it still requires signing, but Apple cannot prevent the Cherri project from being used entirely as they can with an app-based project.
+This makes the project relatively independent of Apple platforms, in that it still requires signing, an app could be rejected, but the Cherri project cannot be prevented from being used to create Shortcuts in general.
 
 ## Signing Shortcuts on non-macOS Platforms
 
