@@ -23,7 +23,7 @@ Its primary platform is macOS. The restriction that Shortcuts must be signed, wh
 
 This also creates a better developer experience, allowing Shortcuts to be built using the same desktop-class tools you are already familiar with (no tiny tapping only!).
 
-This makes the project relatively independent of Apple platforms, in that it still requires signing, an app could be rejected, but the Cherri project cannot be prevented from being used to create Shortcuts in general.
+This makes the project relatively independent of Apple platforms, as while it still requires signing, an app could be rejected, but the Cherri project cannot be prevented from being used to create Shortcuts in general.
 
 ## Signing Shortcuts on non-macOS Platforms
 
