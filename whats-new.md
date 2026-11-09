@@ -8,11 +8,19 @@ nav_order: 1
 
 ## 🚀 New Release
 
-v2.3.0 is now out!
+v2.4.0 is now out! This version primarily introduces Apple platform version 27 support.
 
-[Learn more](https://github.com/electrikmilk/cherri/releases/tag/v2.3.0){: .btn }
+[Learn more](https://github.com/electrikmilk/cherri/releases/tag/v2.4.0){: .btn }
 
 ---
+
+## ⚙️ Automations
+
+Cherri now has support for inline automations added in Apple platform version 27.
+
+[Learn more](language/automations){: .btn }
+
+There are some limitations, and some automations have yet to be implemented due to their device-specific nature or complexity.
 
 ## 📂 Content References
 
