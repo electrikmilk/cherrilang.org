@@ -9,7 +9,7 @@ nav_order: 5
 {: .no_toc }
 
 {: .warning }
-This syntax only applies to devices running Apple platforms (iOS, macOS, etc.) version 27 or greater.
+This syntax only applies to devices running Apple platforms (iOS, macOS, etc.) version 27 or greater. Additionally, automations must be enabled manually upon import, as well as other internal settings like "Notify", as these are not embedded in the Shortcut data.
 
 Define personal automation triggers so your Shortcut runs on its own, without needing to configure the automation manually in the Shortcuts app.
 
