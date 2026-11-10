@@ -59,7 +59,7 @@ To use a local image file, use the output of the built-in [embedFile()](/languag
 #include 'actions/device'
 
 /* (Declared for the demo) */
-const batteryIcon = ""
+const batteryIcon = "path/to/image"
 
 /*
 #include 'icons.cherri'
