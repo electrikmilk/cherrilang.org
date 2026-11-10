@@ -42,6 +42,45 @@ Attributes may be added in the following order after `action`:
 - `mac`: - macOS-only action _OR_ `!mac`: non macOS action, iOS/iPadOS only.
 - `v{version}` - Max 2: Specify an iOS version number restriction. Optionally append `>` for minimum and `<` for maximum, defaults to minimum if no suffix is added.
 
+## App intents
+
+Future release
+{: .label .label-purple }
+
+Some actions are App Intents, which Shortcuts stores with an `AppIntentDescriptor` parameter. To define one, declare the app and its intents with `app`, then reference an intent with `#App.Intent` after the attributes and before the optional quoted identifier.
+
+```
+app Fantastical 'com.flexibits.fantastical2.iphone' { 'CreateEventIntent', 'OpenCalendarIntent' }
+
+action #Fantastical.CreateEventIntent createEvent(text title: 'title')
+
+createEvent("Lunch")
+```
+
+An app declaration is the app name, the bundle identifier, then the intent identifiers as raw strings between `{` and `}`.
+
+If an action definition has no quoted identifier, the action identifier is the bundle identifier followed by the intent identifier. In the example above, that is `com.flexibits.fantastical2.iphone.CreateEventIntent`. If the action identifier is something else, keep it after the intent:
+
+```
+action #Notes.OpenNoteLinkAction 'shownote' openNote(variable note: 'WFInput')
+```
+
+### Display name
+
+The app name in the descriptor is the declared name. If it needs spaces, add the display name after the declared name with a `:`:
+
+```
+app ImagePlayground:'Image Playground' 'com.apple.GenerativePlaygroundApp' { 'GenerateImageIntent' }
+```
+
+### Declaring more intents
+
+The same app can list more intents in another declaration, as long as it has the same bundle identifier and display name. Declaring the same intent twice is an error.
+
+### Errors
+
+Referencing an app that was not declared, or an intent that is not in that app's own list, is an error that lists what is available.
+
 ## Arguments
 
 The syntax for the action arguments is the same as [functions](/language/functions#defining-arguments), and you can also set an [output type](/language/custom-actions#output-type).
