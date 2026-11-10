@@ -40,6 +40,11 @@ This feature is currently in **Beta** and is not ready for production use, but m
 
 The import feature works best with an iCloud link, as decompiling signed Shortcut files is not supported for the time being.
 
+Future release
+{: .label .label-purple }
+
+Signed local Shortcuts will be supported in a future release.
+
 Keep in mind this is mainly meant to be a starting point, and you may in some cases need to do some modifications to get it working.
 
 ### Caveats
