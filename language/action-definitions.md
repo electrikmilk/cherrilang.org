@@ -50,14 +50,17 @@ Future release
 Some actions are App Intents, which Shortcuts stores with an `AppIntentDescriptor` parameter. To define one, declare the app and its intents with `app`, then reference an intent with `#App.Intent` after the attributes and before the optional quoted identifier.
 
 ```
-app Fantastical 'com.flexibits.fantastical2.iphone' { 'CreateEventIntent', 'OpenCalendarIntent' }
+app Fantastical 'com.flexibits.fantastical2.iphone' {
+    'CreateEventIntent',
+    'OpenCalendarIntent'
+}
 
 action #Fantastical.CreateEventIntent createEvent(text title: 'title')
 
 createEvent("Lunch")
 ```
 
-An app declaration is the app name, the bundle identifier, then the intent identifiers as raw strings between `{` and `}`.
+An app declaration is the app name, the bundle identifier, then the intent identifiers as raw strings between `{` and `}`, one on each line and separated by commas.
 
 If an action definition has no quoted identifier, the action identifier is the bundle identifier followed by the intent identifier. In the example above, that is `com.flexibits.fantastical2.iphone.CreateEventIntent`. If the action identifier is something else, keep it after the intent:
 
@@ -70,7 +73,9 @@ action #Notes.OpenNoteLinkAction 'shownote' openNote(variable note: 'WFInput')
 The app name in the descriptor is the declared name. If it needs spaces, add the display name after the declared name with a `:`:
 
 ```
-app ImagePlayground:'Image Playground' 'com.apple.GenerativePlaygroundApp' { 'GenerateImageIntent' }
+app ImagePlayground:'Image Playground' 'com.apple.GenerativePlaygroundApp' {
+    'GenerateImageIntent'
+}
 ```
 
 ### Declaring more intents
