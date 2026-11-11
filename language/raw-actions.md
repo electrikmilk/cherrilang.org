@@ -49,3 +49,8 @@ rawAction("is.workflow.actions.documentpicker.save", {
 Again, just like with the `alert()` action, there is already a `saveFile()` action; this is only an example.
 
 Only a single variable is allowed; if this is not detected, the compiler treats the value as a string with inline variable references.
+
+Future release
+{: .label .label-purple }
+
+The `formRequest()` action also uses this syntax in its `body` to send a variable as a file. See [file fields](/language/standard/web#file-fields).

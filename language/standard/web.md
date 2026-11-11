@@ -114,6 +114,23 @@ enum HTTPMethod {
 formRequest(text url, HTTPMethod ?method, dictionary! ?body, dictionary! ?headers)
 ```
 
+#### File fields
+
+Future release
+{: .label .label-purple }
+
+A `body` value that is only a variable reference prefixed with `$` is sent as a file instead of text. This is the same `$` syntax [raw actions](/language/raw-actions#variable-values) use for variable values.
+
+```
+@file = ShortcutInput
+formRequest("https://example.com/upload", "POST", {
+    "file": "${@file}",
+    "title": "Photo"
+})
+```
+
+Use `{@file}` instead to send the variable as text. File fields are only supported at the top level of `body`, and a value that starts with `${` but is not a single variable reference is an error.
+
 ---
 
 ### JSON Request
