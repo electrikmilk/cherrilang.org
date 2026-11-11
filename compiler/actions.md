@@ -40,7 +40,7 @@ If an action needs additional logic, conditional parameters, etc., then it will 
 
 It might be a little complicated to understand at first, but it's mostly an analog to action definitions, just in a Go struct. Standard actions are defined in one place, [`actions_std.go`](https://github.com/electrikmilk/cherri/blob/main/actions_std.go).
 
-Non-standard actions should be added to a new or existing file for those actions.
+Only standard actions should be defined in the compiler. Do not add 3rd-party actions as Go code, as they would become outdated. Define them with [action definitions](/language/action-definitions) in a Cherri package instead.
 
 Actions are added to a map that accepts a key of type `string` and a value of type `actionDefinition`.
 
@@ -104,7 +104,7 @@ actions["identifier"] = actionDefinition{}
 
 This sets the base bundle identifier of the action that will be prepended to the `identifier`. By default, this is `is.workflow.actions`, as most standard Shortcuts actions have this base identifier.
 
-This is meant for stock apps not defined in Shortcuts or 3rd-party actions from user-installed apps. 3rd-party actions should be defined in their own Go file outside of `actions_std.go`.
+This is meant for stock apps not defined in Shortcuts. 3rd-party actions from user-installed apps should not be added to the compiler. Define them with action definitions in a Cherri package instead.
 
 ### `overrideIdentifer`
 
