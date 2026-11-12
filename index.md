@@ -133,6 +133,30 @@ showConfirm("Are you sure?")
 
 [Learn more](language/action-definitions){: .btn }
 
+### 📦 Create packages
+
+Create 3rd party packages to share logic, functions, actions and more. Define 3rd party actions once in a package, and anyone can install it from your Git repo.
+
+```ruby
+/* main.cherri in @electrikmilk/example */
+action 'com.example.app.action' myCustomAction(text input: 'WFInput')
+
+function myFunc(text test) {
+    output("{@test}")
+}
+```
+
+```console
+cherri --install=@electrikmilk/example
+```
+
+```ruby
+/* Included automatically when you compile */
+myCustomAction("Test")
+```
+
+[Learn more](language/package-manager){: .btn }
+
 ### 📋 Copy-paste automatically
 
 Macros exist to copy and paste code automatically at compile-time.
