@@ -137,7 +137,7 @@ showConfirm("Are you sure?")
 
 Create 3rd party packages to share logic, functions, actions and more. Define 3rd party actions once in a package, and anyone can install it from your Git repo.
 
-```ruby
+```
 /* main.cherri in @electrikmilk/example */
 action 'com.example.app.action' myCustomAction(text input: 'WFInput')
 
@@ -150,7 +150,7 @@ function myFunc(text test) {
 cherri --install=@electrikmilk/example
 ```
 
-```ruby
+```
 /* Included automatically when you compile */
 myCustomAction("Test")
 ```
