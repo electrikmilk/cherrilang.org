@@ -26,6 +26,8 @@ nav_order: 19
 
 ### Create Shortcut Link
 
+Create an iCloud link to a Shortcut.
+
 ```
 createShortcutLink(variable shortcut)
 ```
