@@ -132,7 +132,7 @@ const total2 = calculateTotal(20)
 ```ruby
 const condition = true
 @result
-if condition {
+if condition == true {
     @result = "Yes"
 } else {
     @result = "No"
@@ -144,7 +144,7 @@ show("{@result}")
 
 ```ruby
 const condition = true
-const result = if condition {
+const result = if condition == true {
     text("Yes")
 } else {
     text("No")
