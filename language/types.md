@@ -227,6 +227,8 @@ The unit string must match what the action expects. See each action's parameter 
 Quantity values support comparison operators in conditionals:
 
 ```ruby
+#include 'actions/calendar'
+
 @elapsed = currentDate()
 if @elapsed > qty(30, "sec") {
     /* ... */
