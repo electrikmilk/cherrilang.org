@@ -81,75 +81,6 @@ generateImage(text prompt, variable ?image, imagePlaygroundStyle ?style = "anima
 
 ## Language Models
 
-### Ask Chat GPT
-
-Ask Chat GPT using a prompt. Follow up will open a follow-up prompt to the model.
-
-```
-enum generativeResultType {
-    'Text',
-    'Number',
-    'Date',
-    'Boolean',
-    'List',
-    'Dictionary',
-}
-
-askChatGPT(text prompt, bool ?followUp = false, generativeResultType ?resultType = "Automatic")
-```
-
-**Requires version 26 or later.**
-
----
-
-### Ask LLM
-
-Ask a Cloud AI model using a prompt. Follow up will open a follow-up prompt to the model.
-
-```
-enum LLMModel {
-    'Private Cloud Compute',
-    'Apple Intelligence on Device',
-    'ChatGPT',
-}
-
-enum generativeResultType {
-    'Text',
-    'Number',
-    'Date',
-    'Boolean',
-    'List',
-    'Dictionary',
-}
-
-askLLM(text prompt, LLMModel ?model = "Private Cloud Compute", bool ?followUp = false, generativeResultType ?resultType = "Automatic")
-```
-
-**Deprecated as of version 26.**
-
----
-
-### Ask Private Cloud Compute LLM
-
-Ask a private cloud compute LLM using a prompt. Follow up will open a follow-up prompt to the model.
-
-```
-enum generativeResultType {
-    'Text',
-    'Number',
-    'Date',
-    'Boolean',
-    'List',
-    'Dictionary',
-}
-
-askCloudLLM(text prompt, bool ?followUp = false, generativeResultType ?resultType = "Automatic")
-```
-
-**Deprecated as of version 26.**
-
----
-
 ### Ask Cloud Model
 
 Ask a Private Cloud AI model using a prompt. Follow up will open a follow-up prompt to the model. Allow search uses Broad World Knowledge, allowing the model to search the web for up-to-date information.
@@ -229,6 +160,75 @@ askDeviceModel(text prompt, bool ?followUp = false, generativeResultType ?result
 ```
 
 **Requires version 26 or later.**
+
+---
+
+### Ask Chat GPT
+
+Ask Chat GPT using a prompt. Follow up will open a follow-up prompt to the model.
+
+```
+enum generativeResultType {
+    'Text',
+    'Number',
+    'Date',
+    'Boolean',
+    'List',
+    'Dictionary',
+}
+
+askChatGPT(text prompt, bool ?followUp = false, generativeResultType ?resultType = "Automatic")
+```
+
+**Requires version 26 or later.**
+
+---
+
+### Ask LLM
+
+Ask a Cloud AI model using a prompt. Follow up will open a follow-up prompt to the model.
+
+```
+enum LLMModel {
+    'Private Cloud Compute',
+    'Apple Intelligence on Device',
+    'ChatGPT',
+}
+
+enum generativeResultType {
+    'Text',
+    'Number',
+    'Date',
+    'Boolean',
+    'List',
+    'Dictionary',
+}
+
+askLLM(text prompt, LLMModel ?model = "Private Cloud Compute", bool ?followUp = false, generativeResultType ?resultType = "Automatic")
+```
+
+**Deprecated as of version 26.**
+
+---
+
+### Ask Private Cloud Compute LLM
+
+Ask a private cloud compute LLM using a prompt. Follow up will open a follow-up prompt to the model.
+
+```
+enum generativeResultType {
+    'Text',
+    'Number',
+    'Date',
+    'Boolean',
+    'List',
+    'Dictionary',
+}
+
+askCloudLLM(text prompt, bool ?followUp = false, generativeResultType ?resultType = "Automatic")
+```
+
+**Deprecated as of version 26.**
 
 ## Writing Tools
 
