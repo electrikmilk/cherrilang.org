@@ -145,3 +145,29 @@ enum QRCodeErrorCorrection {
 
 makeQRCode(text input, QRCodeErrorCorrection ?errorCorrection = "Medium", color ?foregroundColor = [{float 0} {float 0} {float 0} {float 1}], color ?backgroundColor = [{float 2} {float 2} {float 2} {float 1}])
 ```
+
+---
+
+### Scan QR or Barcode
+
+Future release
+{: .label .label-purple }
+
+Scan a QR code or barcode using the camera.
+
+```
+scanCode(): variable
+```
+
+---
+
+### Scan QR or Barcode in Image
+
+Future release
+{: .label .label-purple }
+
+Scan a QR code or barcode in `image`.
+
+```
+scanCodeInImage(variable image): variable
+```
