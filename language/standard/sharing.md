@@ -127,3 +127,21 @@ Send an SMS/iMessage to a contact.
 ```
 sendMessage(variable contact, text message, bool ?prompt = true)
 ```
+
+## QR Codes
+
+### Make QR Code
+
+Future release
+{: .label .label-purple }
+
+```
+enum QRCodeErrorCorrection {
+    'Low',
+    'Medium',
+    'Quartile',
+    'High',
+}
+
+makeQRCode(text input, QRCodeErrorCorrection ?errorCorrection = "Medium", color ?foregroundColor = [{float 0} {float 0} {float 0} {float 1}], color ?backgroundColor = [{float 2} {float 2} {float 2} {float 1}])
+```
