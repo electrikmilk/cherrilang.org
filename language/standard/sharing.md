@@ -143,7 +143,7 @@ enum QRCodeErrorCorrection {
     'High',
 }
 
-makeQRCode(text input, QRCodeErrorCorrection ?errorCorrection = "Medium", color ?foregroundColor = [{float 0} {float 0} {float 0} {float 1}], color ?backgroundColor = [{float 2} {float 2} {float 2} {float 1}])
+makeQRCode(text input, QRCodeErrorCorrection ?errorCorrection = "Medium", color ?foregroundColor = color(0.0, 0.0, 0.0, 1.0), color ?backgroundColor = color(2.0, 2.0, 2.0, 1.0))
 ```
 
 ---
