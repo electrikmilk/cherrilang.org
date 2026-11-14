@@ -128,7 +128,7 @@ Send an SMS/iMessage to a contact.
 sendMessage(variable contact, text message, bool ?prompt = true)
 ```
 
-## QR Codes
+## QR Code
 
 ### Make QR Code
 
