@@ -57,7 +57,11 @@ Cherri is largely a single binary, chosen partly to prevent problems seen in ear
 
 Our license requires any apps that don't bundle Cherri as a binary to be open source. Cherri cannot be installed on Apple mobile devices, and so would need to be statically bundled with an app, which I have only personally gotten working on macOS and have not attempted for an iOS or iPadOS app. However, hosting an App Store app on Apple’s platforms carries costs I cannot justify personally at this time.
 
+I also do not want updates to be delayed by app reviews ending in rejection, possibly based on it being a Shortcuts builder signed by a 3rd party service.
+
 The [playground.cherrilang.org](https://playground.cherrilang.org) site addresses this issue in most cases. You can use it on any device, including mobile devices or any browser-equipped system. It exports Shortcuts via HubSign, enabling use on any Apple platform device.
+
+There is an unofficial Cherri iOS app, but it is not maintained alongside Cherri like the macOS app is, it comes with no official support or guarantees.
 
 ## How Do I Use Non-Standard Actions?
 
