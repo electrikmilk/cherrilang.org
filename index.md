@@ -153,6 +153,7 @@ cherri --install=@electrikmilk/example
 ```
 /* Included automatically when you compile */
 myCustomAction("Test")
+myFunc("Test")
 ```
 
 [Learn more](language/package-manager){: .btn }
