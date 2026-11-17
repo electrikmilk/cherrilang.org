@@ -22,6 +22,8 @@ Cherri now has support for inline automations added in Apple platform version 27
 
 There are some limitations, and some automations have yet to be implemented due to their device-specific nature or complexity.
 
+---
+
 ## 📂 Content References
 
 Include device-specific references to files or music.
