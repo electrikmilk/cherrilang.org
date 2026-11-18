@@ -46,6 +46,54 @@ Both operands can be variables:
 const result = @a % @b
 ```
 
+Future release
+{: .label .label-purple }
+
+An expression can start with a variable or a constant, no parentheses needed:
+
+```ruby
+@a = 10
+const result = @a % 3
+const scaled = result * 2
+```
+
+Parentheses set the order of operations, at the start of an expression or after an operator.
+
+```ruby
+@a = 10
+const grouped = (@a + 5) * 2
+const groupedAfterOperator = 2 * (@a + 5)
+```
+
+An action call can be used as an operand. The action runs first and its output is used in the expression:
+
+```ruby
+@items = list("a", "b", "c")
+const nextCount = count(@items) + 1
+```
+
+Expressions can be used wherever a value is expected, including action arguments, array and dictionary items, and repeat counts.
+
+```ruby
+@a = 10
+const doubled = number(@a * 2)
+@values = [@a + 1, @a + 2]
+repeat i for 3 + 1 {
+    show("{i}")
+}
+```
+
+An expression used inside another statement is added as its own action just before that statement, and the statement uses that action's output. One operation between two operands uses a **Math** action. Anything longer uses a **Calculate Expression** action.
+
+Expressions also work as conditional values:
+
+```ruby
+@a = 10
+if @a + 1 > 10 {
+    show("Greater")
+}
+```
+
 ## Assignment
 
 Assignment operators modify a variable in place.
@@ -64,6 +112,21 @@ Assignment operators modify a variable in place.
 @n -= 2
 @n *= 3
 @n /= 2
+```
+
+Future release
+{: .label .label-purple }
+
+The value can also be a variable, an expression, or an action call:
+
+```ruby
+@n = 10
+@a = 3
+@items = list("a", "b")
+@n += @a
+@n -= 1 + 1
+@n += @n * 2
+@n *= count(@items)
 ```
 
 ### Array append

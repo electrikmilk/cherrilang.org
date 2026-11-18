@@ -85,6 +85,11 @@ Expressions are numeric values or variable references that are separated by any 
 @expression = @number + @number
 ```
 
+Future release
+{: .label .label-purple }
+
+Expressions can also contain action calls. See [Operators](/language/operators) for expressions used inside other statements.
+
 Only two operands will compile to a **Math** action:
 
 ```ruby
