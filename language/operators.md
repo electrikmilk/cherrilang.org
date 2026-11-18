@@ -65,13 +65,6 @@ const grouped = (@a + 5) * 2
 const groupedAfterOperator = 2 * (@a + 5)
 ```
 
-An action call can be used as an operand. The action runs first and its output is used in the expression:
-
-```ruby
-@items = list("a", "b", "c")
-const nextCount = count(@items) + 1
-```
-
 Expressions can be used wherever a value is expected, including action arguments, array and dictionary items, and repeat counts.
 
 ```ruby
@@ -92,6 +85,18 @@ Expressions also work as conditional values:
 if @a + 1 > 10 {
     show("Greater")
 }
+```
+
+### Action calls
+
+Future release
+{: .label .label-purple }
+
+In a future release, an action call can be used as an operand. The action runs first and its output is used in the expression:
+
+```ruby
+@items = list("a", "b", "c")
+const nextCount = count(@items) + 1
 ```
 
 ## Assignment
