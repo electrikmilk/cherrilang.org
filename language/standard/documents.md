@@ -366,6 +366,36 @@ appendNote(text note, text input)
 
 ---
 
+### Filter Notes
+
+Future release
+{: .label .label-purple }
+
+Get notes from the Notes library, sorted by `sortBy` in `orderBy` order, up to `limit` notes.
+
+```
+enum notesSortBy {
+    'Creation Date',
+    'Folder',
+    'Last Modified Date',
+    'Name',
+    'Random',
+}
+
+enum notesOrderings {
+    'Latest First',
+    'Oldest First',
+    'A to Z',
+    'Z to A',
+    'Ascending',
+    'Descending',
+}
+
+filterNotes(notesSortBy ?sortBy, notesOrderings ?orderBy, number ?limit): array
+```
+
+---
+
 ### Open Note
 
 Open note in the Notes app.
